@@ -1,22 +1,22 @@
  {% include head.html %}
+{% feed_meta %}
 
-
-  {% if page.body %}  
+  {% if page.body %}
   <body  class="layout-reverse {{ page.body }}">
-    {% elsif post.body %}  
+    {% elsif post.body %}
   <body  class="layout-reverse {{ page.body }}">
     {% else %}
       <body  class="layout-reverse">
     {% endif %}
-    
+
     <header class="masthead">
       <div class="masthead-inner">
-     {% include sidebar.html %} 
+     {% include sidebar.html %}
       </div>
     </header>
 
     <div class="content container">
- 
+
       {{ content }}
     </div>
 
