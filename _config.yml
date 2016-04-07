@@ -45,7 +45,8 @@ owner:
 
 categories: [video, tech, photos, articles, blog]
 
-
+feed:
+  path: atom.xml
 
 
 # https://github.com/mdo/hyde
