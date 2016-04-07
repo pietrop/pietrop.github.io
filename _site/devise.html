@@ -36,8 +36,8 @@
 
 
 
-    
-  <body  class="layout-reverse theme-base-0d">
+  
+      <body  class="layout-reverse">
     
     
     <header class="masthead">
@@ -168,56 +168,73 @@ class="icon-list-alt"
    
 <hr>
   <div class="videoWrapper">
-<iframe width="560" height="315" src="//www.youtube.com/embed/AAym7UF6Dr0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/AAym7UF6Dr0" frameborder="0" allowfullscreen=""></iframe>
 </div>
 
 <p><a href="http://guides.railsgirls.com/devise/">Rails girls devise guide</a></p>
 
 <ol>
-<li><p>add gem 
-<code>gem &#39;devise&#39;</code></p></li>
-<li><p>bundle install
-<code>bundle install</code></p></li>
-<li><p>add devise
-<code>rails g devise:install</code></p></li>
-<li><p>ad config for development
-inf <code>config/environments/development.rb</code> add</p></li>
-</ol>
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="n">config</span><span class="o">.</span><span class="n">action_mailer</span><span class="o">.</span><span class="n">default_url_options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">:host</span> <span class="o">=&gt;</span> <span class="s1">&#39;localhost:3000&#39;</span> <span class="p">}</span>
-</code></pre></div>
-<ol>
-<li>ad flash notifications</li>
+  <li>
+    <p>add gem 
+<code>gem 'devise'</code></p>
+  </li>
+  <li>
+    <p>bundle install
+<code>bundle install</code></p>
+  </li>
+  <li>
+    <p>add devise
+<code>rails g devise:install</code></p>
+  </li>
+  <li>
+    <p>ad config for development
+inf <code>config/environments/development.rb</code> add</p>
+  </li>
 </ol>
 
-<p>in <code>app/views/layouts/application.html.erb</code> above <code>&lt;%= yield %&gt;</code></p>
-<div class="highlight"><pre><code class="language-erb" data-lang="erb"><span class="x">   </span><span class="cp">&lt;%</span> <span class="k">if</span> <span class="n">notice</span> <span class="cp">%&gt;</span><span class="x"></span>
-<span class="x">      &lt;p class=&quot;alert alert-success&quot;&gt;</span><span class="cp">&lt;%=</span> <span class="n">notice</span> <span class="cp">%&gt;</span><span class="x">&lt;/p&gt;</span>
-<span class="x">    </span><span class="cp">&lt;%</span> <span class="k">end</span> <span class="cp">%&gt;</span><span class="x"></span>
-<span class="x">    </span><span class="cp">&lt;%</span> <span class="k">if</span> <span class="n">alert</span> <span class="cp">%&gt;</span><span class="x"></span>
-<span class="x">       &lt;p class=&quot;alert alert-danger&quot;&gt;</span><span class="cp">&lt;%=</span> <span class="n">alert</span> <span class="cp">%&gt;</span><span class="x">&lt;/p&gt;</span>
-<span class="x">     </span><span class="cp">&lt;%</span> <span class="k">end</span> <span class="o">%</span>
-</code></pre></div>
+<pre><code class="language-ruby">    config.action_mailer.default_url_options = { :host =&gt; 'localhost:3000' }
+```
+
+5. ad flash notifications
+
+in ``` app/views/layouts/application.html.erb``` above ``&lt;%= yield %&gt;``
+
+`````erb
+   &lt;% if notice %&gt;
+      &lt;p class="alert alert-success"&gt;&lt;%= notice %&gt;&lt;/p&gt;
+    &lt;% end %&gt;
+    &lt;% if alert %&gt;
+       &lt;p class="alert alert-danger"&gt;&lt;%= alert %&gt;&lt;/p&gt;
+     &lt;% end %
+</code></pre>
+
 <ol>
-<li><p>add user  model 
-<code>rails g devise user</code></p></li>
-<li><p>update db
-<code>rake db:migrate</code></p></li>
+  <li>
+    <p>add user  model 
+<code>rails g devise user</code></p>
+  </li>
+  <li>
+    <p>update db
+<code>rake db:migrate</code></p>
+  </li>
 </ol>
 
 <p>9.update/check routes
 i found that <code>devise_for :users</code> needs to be right under top of the page, like this:</p>
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby">    <span class="no">Rails</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">routes</span><span class="o">.</span><span class="n">draw</span> <span class="k">do</span>
-    <span class="n">devise_for</span> <span class="ss">:users</span>
 
-    <span class="c1">#some other routes code</span>
-    <span class="k">end</span>
-</code></pre></div>
+<pre><code class="language-ruby">    Rails.application.routes.draw do
+    devise_for :users
+
+    #some other routes code
+    end
+</code></pre>
+
 <p>10.check if it works
 run server (<code>rails s</code>) and visit <code>http://localhost:3000/users/sign_up</code>
 you can check rails console (<code>rails c</code>) to see if the user has been created i.e. <code>User.all</code>.</p>
 
 <ol>
-<li>add links sign in/out/up
+  <li>add links sign in/out/up
 see rest of rails guide to add links <a href="http://guides.railsgirls.com/devise/">here</a></li>
 </ol>
 
@@ -228,6 +245,15 @@ see rest of rails guide to add links <a href="http://guides.railsgirls.com/devis
 <div class="related">
   <h3>Related Posts</h3>
   <ul class="related-posts">
+    
+      <li>
+        <h5>
+          <a href="/blog/articles/2016/04/07/hyper_video_on_the_web/">
+            Hyper Video On the Web
+            <small>07 Apr 2016</small>
+          </a>
+        </h5>
+      </li>
     
       <li>
         <h5>
@@ -243,15 +269,6 @@ see rest of rails guide to add links <a href="http://guides.railsgirls.com/devis
           <a href="/blog/articles/2015/06/16/helloWorld/">
             Hello World
             <small>16 Jun 2015</small>
-          </a>
-        </h5>
-      </li>
-    
-      <li>
-        <h5>
-          <a href="/oneStory.html">
-            OneStory at BBC #newsHack
-            <small>04 Jun 2015</small>
           </a>
         </h5>
       </li>

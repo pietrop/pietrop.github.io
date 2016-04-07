@@ -36,8 +36,8 @@
 
 
 
-    
-  <body  class="layout-reverse theme-base-0c">
+  
+      <body  class="layout-reverse">
     
     
     <header class="masthead">
@@ -172,8 +172,7 @@
 <img class="thumb img-round img-responsive" src="/img/BuildTheNews/hackaton2.png" alt="photo" />
 </a>
 </div>
-
-<p><br>
+<p><br />
 For the Times Build the news hackathon we decided to do system that given a video would generate transcription, identify the different speakers, provide summary of main topics and keywords as well as emotional charge of the speaker.</p>
 
 <p>We decided to use the upcoming elections debate  as a use case, but this could be generalised to other interview based video content.</p>
@@ -187,10 +186,10 @@ For the Times Build the news hackathon we decided to do system that given a vide
 <p>And provide a analytics dashboard for the journalist to view a heat map of:</p>
 
 <ul>
-<li>most viewed </li>
-<li>most commented</li>
-<li>most shared</li>
-<li>emotions</li>
+  <li>most viewed</li>
+  <li>most commented</li>
+  <li>most shared</li>
+  <li>emotions</li>
 </ul>
 
 <p>of the viewers engagement with the piece.</p>
@@ -200,25 +199,22 @@ For the Times Build the news hackathon we decided to do system that given a vide
 <img class="thumb img-round img-responsive" src="/img/BuildTheNews/dashboard.png" alt="photo" />
 </a>
 </div>
-
-<p><br>
+<p><br />
  This we felt is also very important. For instance,   if you are a journalist writing on that debate looking at this data could give you clues about what your readers are already thinking about it, and make it easier to engage in a conversation them in your next article. As well as other possible use cases where analytics  of this kind would be useful.</p>
 
 <div class="videoWrapper">
-<iframe width="560" height="315" src="//www.youtube.com/embed/nn6VvKA4sjI" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/nn6VvKA4sjI" frameborder="0" allowfullscreen=""></iframe>
 </div>
 
-<iframe src="https://docs.google.com/presentation/d/1DLjz__UifA39VrqUQM3-RP7s8ZDBMZWWhuR4qX80Deg/embed?start=false&loop=false&delayms=5000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/1DLjz__UifA39VrqUQM3-RP7s8ZDBMZWWhuR4qX80Deg/embed?start=false&amp;loop=false&amp;delayms=5000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<h2>The Concept</h2>
-
+<h2 id="the-concept">The Concept</h2>
 <p>In terms of the analyses of the video based interview the ambition was that of using existing technology a round natural language processing, and sentiment analysis technology to give an insight into the <a href="http://en.wikipedia.org/wiki/Subtext">subtext</a> of an interview.</p>
 
 <p>on the morning of the hackathon I was reading through <a href="http://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/">the New York Times innovation report</a> for some inspiration, when it mentioned that very often interactive project for the news are done as a one off, and that a more sustainable approach would be to create structures where form and content could be separated to make it reusable.</p>
 
-<h2>Technology used</h2>
-
-<p>We drew on a number of open source technology, APIs and libraries </p>
+<h2 id="technology-used">Technology used</h2>
+<p>We drew on a number of open source technology, APIs and libraries</p>
 
 <p>We used ruby on rails and bootstrap as underlying framework, as well as  HTML, CSS, and javascript for the front end.
 But considered the tight turnaround we didn’t have time to integrate the various API with our system, so we decided to treat it like an R&amp;D project (Research and Development) where you find all the components and make sure they integrate before actually building the product. So we processed all the various system calls one at a time passing the output a round between the various components , and then hardcoded an interactive high fidelity mockup.  And all that was left then was to bring it all together into a full fledge application.</p>
@@ -226,58 +222,53 @@ But considered the tight turnaround we didn’t have time to integrate the vario
 <p>These are some of the technologies we used:</p>
 
 <ul>
-<li>Speech to Text  (<a href="https://developers.google.com/youtube/v3/docs/captions">Youtube Captioning</a>)</li>
-<li><a href="http://www-lium.univ-lemans.fr/diarization/doku.php">Speaker diarization  (Lium - same library used by BBC)</a> </li>
-<li>Sentiment Analysis Topic &amp; Keywords  (<a href="http://www.monkeylearn.com">Monkey Learn</a> ) </li>
-<li>Summarization  (<a href="http://autosummarizer.com">Text Summarization API</a> )</li>
-<li><a href="https://github.com/maboa/hyperaudioconverter">Srt → HTML (library)</a><br></li>
-<li><a href="https://github.com/maboa/uselect">Social media Share (library)</a> </li>
-<li><a href="https://github.com/maboa/uselect">Interactive transcriptions</a> , using <a href="http://popcornjs.org">popcorn library</a> . from opensource <a href="http://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html?k=economy&amp;t=1000">Aljazeera US Election Debate Hyperaudio</a> . </li>
+  <li>Speech to Text  (<a href="https://developers.google.com/youtube/v3/docs/captions">Youtube Captioning</a>)</li>
+  <li><a href="http://www-lium.univ-lemans.fr/diarization/doku.php">Speaker diarization  (Lium - same library used by BBC)</a></li>
+  <li>Sentiment Analysis Topic &amp; Keywords  (<a href="http://www.monkeylearn.com">Monkey Learn</a> )</li>
+  <li>Summarization  (<a href="http://autosummarizer.com">Text Summarization API</a> )</li>
+  <li><a href="https://github.com/maboa/hyperaudioconverter">Srt → HTML (library)</a></li>
+  <li><a href="https://github.com/maboa/uselect">Social media Share (library)</a></li>
+  <li><a href="https://github.com/maboa/uselect">Interactive transcriptions</a> , using <a href="http://popcornjs.org">popcorn library</a> . from opensource <a href="http://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html?k=economy&amp;t=1000">Aljazeera US Election Debate Hyperaudio</a> .</li>
 </ul>
 
-<p><br></p>
+<p><br /></p>
 
 <div class="image-wrapper">
 <a href="/img/BuildTheNews/sharing.png" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton">
 <img class="thumb img-round img-responsive" src="/img/BuildTheNews/sharing.png" alt="photo" />
 </a>
 </div>
-
-<p><br></p>
+<p><br /></p>
 
 <div class="image-wrapper">
 <a href="/img/BuildTheNews/presentation.png" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton, photo credit @MattieTK">
 <img class="thumb img-round img-responsive" src="/img/BuildTheNews/presentation.png" alt="photo" />
 </a>
 </div>
-
-<p><br></p>
+<p><br /></p>
 
 <div class="image-wrapper">
 <a href="/img/BuildTheNews/presentation2.png" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton, photo credit @MattieTK">
 <img class="thumb img-round img-responsive" src="/img/BuildTheNews/presentation2.png" alt="photo" />
 </a>
 </div>
-
-<p><br></p>
+<p><br /></p>
 
 <div class="image-wrapper">
 <a href="/img/BuildTheNews/hackaton.png" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton, photo credit @MattieTK">
 <img class="thumb img-round img-responsive" src="/img/BuildTheNews/hackaton.png" alt="photo" />
 </a>
 </div>
-
-<p><br></p>
+<p><br /></p>
 
 <p><small>photo credit <a href="https://twitter.com/mattietk">@MattieTK</a></small></p>
 
 <div class="image-wrapper">
-<a href="https://www.journalism.co.uk/news/5-digital-storytelling-ideas-from-build-the-news/s2/a564659/"  title="Article on journalism.co.uk">
+<a href="https://www.journalism.co.uk/news/5-digital-storytelling-ideas-from-build-the-news/s2/a564659/" title="Article on journalism.co.uk">
 <img class="thumb img-round img-responsive" src="/img/BuildTheNews/journalismuk.png" alt="photo" />
 </a>
 </div>
-
-<p><br></p>
+<p><br /></p>
 
 <!-- 
 - gist of the project 1 paragraph
@@ -287,12 +278,22 @@ ie: provided a video it would generate all these things in automatic using exter
 - opensource project used (aljazeera hyperaudio hypertranscript, srt to hypertranscript, etc.. see team google doc )
  -->
 
+
 </div>
 
 <hr>
 <div class="related">
   <h3>Related Posts</h3>
   <ul class="related-posts">
+    
+      <li>
+        <h5>
+          <a href="/blog/articles/2016/04/07/hyper_video_on_the_web/">
+            Hyper Video On the Web
+            <small>07 Apr 2016</small>
+          </a>
+        </h5>
+      </li>
     
       <li>
         <h5>
@@ -308,15 +309,6 @@ ie: provided a video it would generate all these things in automatic using exter
           <a href="/blog/articles/2015/06/16/helloWorld/">
             Hello World
             <small>16 Jun 2015</small>
-          </a>
-        </h5>
-      </li>
-    
-      <li>
-        <h5>
-          <a href="/oneStory.html">
-            OneStory at BBC #newsHack
-            <small>04 Jun 2015</small>
           </a>
         </h5>
       </li>

@@ -36,8 +36,8 @@
 
 
 
-    
-  <body  class="layout-reverse theme-base-0c">
+  
+      <body  class="layout-reverse">
     
     
     <header class="masthead">
@@ -166,7 +166,7 @@
 
    
 <hr>
-  <p><strong>Problem</strong>: I wanted to read the <a href="http://issuu.com/swroblewska/docs/j64913_sheff_doc_fest_inner_whole_s">Sheffield DocFest &quot;Decision Makers Guide 2014&quot;</a> but can&#39;t stand having to read of <code>issu.com</code>, just wanted a nice downloadable pdf, but the pdf download option that is generally under the share button was disabled.</p>
+  <p><strong>Problem</strong>: I wanted to read the <a href="http://issuu.com/swroblewska/docs/j64913_sheff_doc_fest_inner_whole_s">Sheffield DocFest “Decision Makers Guide 2014”</a> but can’t stand having to read of <code>issu.com</code>, just wanted a nice downloadable pdf, but the pdf download option that is generally under the share button was disabled.</p>
 
 <p><strong>Solution</strong>: I decide to see if I could extract the images that make up the flash object of the site and combine them into a pdf.
 First thing first identifying the element id. clicking on white part of the page and inspecting the page in chrome, I found the <code>id=readerreader</code></p>
@@ -175,17 +175,17 @@ First thing first identifying the element id. clicking on white part of the page
     <img src="http://1.bp.blogspot.com/-Bu2Bw7_tHjs/U683ZFxKIfI/AAAAAAAAFdM/e_3_4rqBQSc/s1600/Screen+Shot+2014-06-28+at+22.25.43.png" alt="" />
 </div>
 
-<p>and under the object <code>type=&quot;application/x-shockwave-flash&quot;</code> I found the <code>documentId=140601160255-3a4c0f75ec731801ef369f5000f03104</code></p>
+<p>and under the object <code>type="application/x-shockwave-flash"</code> I found the <code>documentId=140601160255-3a4c0f75ec731801ef369f5000f03104</code></p>
 
 <p>Looking on stack overflow I worked out the following URL: <code>http://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_5.jpg</code> , where <code>140601160255-3a4c0f75ec731801ef369f5000f03104</code> is the id of the article, gives you each page as a jpg file that builds up the online magazine on <code>issue.com</code> named with an incremental count.</p>
 
 <p>And what follows is the code I wrote in ruby and run from terminal</p>
 
-<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="nv">$ruby</span> <span class="n">issuu_downloader</span><span class="p">.</span><span class="n">rb</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span class="nv">$ruby</span> <span class="n">issuu_downloader</span><span class="p">.</span><span class="n">rb</span></code></pre></figure>
 
 <p>I used the <code>Mechanize Gem</code> to download the images, and the <code>prawn gem</code> to combine them into a pdf.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;mechanize&#39;</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;mechanize&#39;</span>
 <span class="nb">require</span> <span class="s1">&#39;prawn&#39;</span>
 
 <span class="c1">########1.Looping through the page to download them</span>
@@ -208,22 +208,26 @@ First thing first identifying the element id. clicking on white part of the page
     <span class="n">pdf</span><span class="o">.</span><span class="n">image</span> <span class="s2">&quot;page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">,</span> <span class="ss">:at</span> <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">750</span><span class="o">]</span><span class="p">,</span> <span class="ss">:width</span> <span class="o">=&gt;</span> <span class="mi">530</span>
 <span class="n">pdf</span><span class="o">.</span><span class="n">start_new_page</span>
 <span class="k">end</span><span class="c1">#end of loop</span>
-<span class="k">end</span><span class="c1">#end of prawn</span></code></pre></div>
+<span class="k">end</span><span class="c1">#end of prawn</span></code></pre></figure>
 
-<p>Let&#39;s just break it down in pseudo code for a second, as we can see it articulates into two parts</p>
+<p>Let’s just break it down in pseudo code for a second, as we can see it articulates into two parts</p>
 
 <ol>
-<li><p>Loop through page numbers substituting them in the URL, and save locally.
-(after all without this script this is what I would have done manually)</p></li>
-<li><p>combine all the downloaded images into a pdf
-(again I would have probably done this with preview or automator on os x &quot;manually&quot;</p></li>
+  <li>
+    <p>Loop through page numbers substituting them in the URL, and save locally.
+(after all without this script this is what I would have done manually)</p>
+  </li>
+  <li>
+    <p>combine all the downloaded images into a pdf
+(again I would have probably done this with preview or automator on os x “manually”</p>
+  </li>
 </ol>
 
-<h2>1. Downloading the Images</h2>
+<h2 id="downloading-the-images">1. Downloading the Images</h2>
 
-<p>Let&#39;s look at the first part first, downloading the images.</p>
+<p>Let’s look at the first part first, downloading the images.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;mechanize&#39;</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;mechanize&#39;</span>
 
 <span class="c1">########Looping through the page to download them</span>
 <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">104</span>
@@ -232,36 +236,36 @@ First thing first identifying the element id. clicking on white part of the page
 <span class="n">link</span> <span class="o">=</span> <span class="s2">&quot;http://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span>
 <span class="n">agent</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">)</span><span class="o">.</span><span class="n">save</span> <span class="s2">&quot;page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span>
 <span class="nb">print</span> <span class="s2">&quot;downloaded</span><span class="se">\t</span><span class="s2">page n </span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
-<span class="k">end</span></code></pre></div>
+<span class="k">end</span></code></pre></figure>
 
-<p>print &quot;images from 1 to 104 downloaded as jpg\n&quot;</p>
+<p>print “images from 1 to 104 downloaded as jpg\n”</p>
 
 <p>I knew the pages where 104, so I fought a loop would have been a good fit.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">104</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">104</span>
    <span class="c1">#change the URL with string interpolation #{i} to change the page number</span>
-<span class="k">end</span></code></pre></div>
+<span class="k">end</span> </code></pre></figure>
 
 <p>I then added the mechanise gem at the top with</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;mechanise&#39;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;mechanise&#39;</span></code></pre></figure>
 
 <p>within the loop I created a new mechanise object and assigned it to a variable agent</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">agent</span> <span class="o">=</span> <span class="no">Mechanize</span><span class="o">.</span><span class="n">new</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">agent</span> <span class="o">=</span> <span class="no">Mechanize</span><span class="o">.</span><span class="n">new</span></code></pre></figure>
 
-<p>and also within the loop assigned the link to a variable link, where i is the number in the loop, and I&#39;ve added a .to_s method to convert it to string to avoid any problem in the parsing of the URL.</p>
+<p>and also within the loop assigned the link to a variable link, where i is the number in the loop, and I’ve added a .to_s method to convert it to string to avoid any problem in the parsing of the URL.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">link</span> <span class="o">=</span> <span class="s2">&quot;http://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">link</span> <span class="o">=</span> <span class="s2">&quot;http://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span></code></pre></figure>
 
 <p>with these two key elements in place, I went about using the mechanise method get on the link, and then saving it, giving it the page name, using the string interpolation of the loop number for the page name.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="s2">&quot;page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span>
-<span class="n">agent</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">)</span><span class="o">.</span><span class="n">save</span> <span class="s2">&quot;page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="s2">&quot;page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span>
+<span class="n">agent</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">)</span><span class="o">.</span><span class="n">save</span> <span class="s2">&quot;page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span></code></pre></figure>
 
 <p>I then added a couple of comments to print out what was going on to get some feedback in terminal while the program was running, and here it is this first part of the problem solved.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;mechanize&#39;</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;mechanize&#39;</span>
 
 <span class="c1">########Looping through the page to download them</span>
 <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">104</span>
@@ -272,26 +276,26 @@ First thing first identifying the element id. clicking on white part of the page
 <span class="nb">print</span> <span class="s2">&quot;downloaded</span><span class="se">\t</span><span class="s2">page n </span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
 <span class="k">end</span>
 
-<span class="nb">print</span> <span class="s2">&quot;images from 1 to 104 downloaded as jpg</span><span class="se">\n</span><span class="s2">&quot;</span></code></pre></div>
+<span class="nb">print</span> <span class="s2">&quot;images from 1 to 104 downloaded as jpg</span><span class="se">\n</span><span class="s2">&quot;</span></code></pre></figure>
 
-<h2>2. Combining images into one pdf</h2>
+<h2 id="combining-images-into-one-pdf">2. Combining images into one pdf</h2>
 
 <p>Then for the second part of the problem, combining the images into a pdf I decided to use the gem prawn.
-require &#39;prawn&#39;
+require ‘prawn’
 and the idea here is that first you generate a pdf, setting, page layout as portrait,</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">Prawn</span><span class="o">::</span><span class="no">Document</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="s2">&quot;DocFest_Decision Makers Guide 2014.pdf&quot;</span><span class="p">,</span> <span class="ss">:page_layout</span> <span class="o">=&gt;</span> <span class="ss">:portrait</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">pdf</span><span class="o">|</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">Prawn</span><span class="o">::</span><span class="no">Document</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="s2">&quot;DocFest_Decision Makers Guide 2014.pdf&quot;</span><span class="p">,</span> <span class="ss">:page_layout</span> <span class="o">=&gt;</span> <span class="ss">:portrait</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">pdf</span><span class="o">|</span></code></pre></figure>
 
 <p>then I looped through the page number range, adding the jpeg files I saved in the first half of the problem to the pdf object I am creating.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">104</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
-    <span class="n">pdf</span><span class="o">.</span><span class="n">image</span> <span class="s2">&quot;page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">,</span> <span class="ss">:at</span> <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">750</span><span class="o">]</span><span class="p">,</span> <span class="ss">:width</span> <span class="o">=&gt;</span> <span class="mi">530</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">104</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+    <span class="n">pdf</span><span class="o">.</span><span class="n">image</span> <span class="s2">&quot;page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">,</span> <span class="ss">:at</span> <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">750</span><span class="o">]</span><span class="p">,</span> <span class="ss">:width</span> <span class="o">=&gt;</span> <span class="mi">530</span></code></pre></figure>
 
 <p>after each page is created I used the method <code>start_new_page</code> on the pdf object.
 <code>pdf.start_new_page</code>
 And here it is the second half of the solution all together.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;prawn&#39;</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;prawn&#39;</span>
 
 <span class="c1">########to combine all the images into a pdf</span>
 
@@ -301,14 +305,14 @@ And here it is the second half of the solution all together.</p>
     <span class="n">pdf</span><span class="o">.</span><span class="n">image</span> <span class="s2">&quot;page_</span><span class="si">#{</span><span class="n">i</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2">.jpg&quot;</span><span class="p">,</span> <span class="ss">:at</span> <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">750</span><span class="o">]</span><span class="p">,</span> <span class="ss">:width</span> <span class="o">=&gt;</span> <span class="mi">530</span>
 <span class="n">pdf</span><span class="o">.</span><span class="n">start_new_page</span>
 <span class="k">end</span><span class="c1">#end of loop</span>
-<span class="k">end</span><span class="c1">#end of prawn</span></code></pre></div>
+<span class="k">end</span><span class="c1">#end of prawn</span></code></pre></figure>
 
-<h3>Generalising the solution</h3>
+<h3 id="generalising-the-solution">Generalising the solution</h3>
 
 <p>Last but not least I decided to change the code so that if I want to use it for another magazine on issue.com I can get the prompt from the terminal to add magazine name, page count, and document-id and therefore generalised the solution to the initial problem.
 The resulting code is as follow (also on <a href="https://github.com/pietrop/issuu.com-downloader">github</a>):</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;mechanize&#39;</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;mechanize&#39;</span>
 <span class="nb">require</span> <span class="s1">&#39;prawn&#39;</span>
 <span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;&gt; &quot;</span>
 
@@ -353,7 +357,7 @@ The resulting code is as follow (also on <a href="https://github.com/pietrop/iss
 <span class="k">end</span><span class="c1">#end of prawn</span>
 
 <span class="nb">print</span> <span class="s2">&quot;images from 1 to </span><span class="si">#{</span><span class="n">page_number</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2"> deleted </span><span class="se">\n</span><span class="s2">&quot;</span>
-<span class="c1"># print &quot;your pdf #{magazine_name}.pdf is in: \n #{Dir.pwd}&quot;</span></code></pre></div>
+<span class="c1"># print &quot;your pdf #{magazine_name}.pdf is in: \n #{Dir.pwd}&quot;</span></code></pre></figure>
 
 </div>
 
@@ -361,6 +365,15 @@ The resulting code is as follow (also on <a href="https://github.com/pietrop/iss
 <div class="related">
   <h3>Related Posts</h3>
   <ul class="related-posts">
+    
+      <li>
+        <h5>
+          <a href="/blog/articles/2016/04/07/hyper_video_on_the_web/">
+            Hyper Video On the Web
+            <small>07 Apr 2016</small>
+          </a>
+        </h5>
+      </li>
     
       <li>
         <h5>
@@ -376,15 +389,6 @@ The resulting code is as follow (also on <a href="https://github.com/pietrop/iss
           <a href="/blog/articles/2015/06/16/helloWorld/">
             Hello World
             <small>16 Jun 2015</small>
-          </a>
-        </h5>
-      </li>
-    
-      <li>
-        <h5>
-          <a href="/oneStory.html">
-            OneStory at BBC #newsHack
-            <small>04 Jun 2015</small>
           </a>
         </h5>
       </li>

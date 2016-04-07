@@ -1,0 +1,11 @@
+/Users/pietropassarelli/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20160407-7010-yq7o6t.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling posix-spawn.c
+linking shared-object posix_spawn_ext.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 posix_spawn_ext.bundle ./.gem.20160407-7010-udbvji
