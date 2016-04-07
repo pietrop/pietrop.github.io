@@ -6,3 +6,6 @@ gem 'jekyll'
 
 
 gem 'pygments.rb'
+
+
+gem "jekyll-feed"

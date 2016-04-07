@@ -4,10 +4,11 @@ description:  "Tips Tricks & Quick Fix by <a href='http://twitter.com/pietropass
 url:          http://pietropassarelli.com
 #http://pietropassarelli.com
 #http://localhost:4000
+time: ""
 version:      1.1.1
 author:
-  name:       ''
-  email:      ''
+  name:       'Pietro'
+  email:      'pietro.passarelli@gmail.com'
 markdown: kramdown
 kramdown:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
@@ -43,6 +44,7 @@ owner:
   videocolor:     theme-base-0f
 
 categories: [video, tech, photos, articles, blog]
+
 
 
 
