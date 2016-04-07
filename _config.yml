@@ -1,21 +1,66 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+title:            Tips and Tricks
+tagline:          Mostly documentary production tips and tricks but als web dev stuff.
+description:      Mostly documentary production tips and tricks but als web dev stuff.
+#Comment out url when working locally to resolve base urls correctly
+# url:              http://your-site.com
 
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# Owner/author information
+owner:
+  name:           Pietro Passarelli
+  avatar:         bio-photo.jpg
+  bio:            "Freelance Broadcast Shooting Researcher, learning to code."
+  email:          pietro.passarelli@gmail.com
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  twitter:        pietropassarell
+  facebook:       pietro.passarelli
+  github:         pietrop
+  linkedin:       pietropassarelli
+  instagram:      
+  lastfm:         
+  tumblr:         
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    
 
-# Build settings
-markdown: kramdown
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:        
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /about
+  - title: Articles
+    url: /articles
+ 
+  # - title: Made Mistakes
+  #   url: http://mademistakes.com
+  #   external: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/London
+future:      true
+pygments:    true
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

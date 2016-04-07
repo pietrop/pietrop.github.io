@@ -1,0 +1,297 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Dev Enviroment setup &#8211; Tips and Tricks</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/">
+<meta name="twitter:title" content="Dev Enviroment setup">
+<meta name="twitter:description" content="Mostly documentary production tips and tricks but als web dev stuff.">
+<meta name="twitter:creator" content="@pietropassarell">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Dev Enviroment setup">
+<meta property="og:description" content="Mostly documentary production tips and tricks but als web dev stuff.">
+<meta property="og:url" content="/code/articles/dev-setup">
+<meta property="og:site_name" content="Tips and Tricks">
+
+
+
+
+
+<link rel="canonical" href="/code/articles/dev-setup">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Tips and Tricks Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Webfonts -->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.min.css">
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="/assets/css/ie.min.css">
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="article" itemscope itemtype="http://schema.org/WebPage">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="">Tips and Tricks</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+		    <ul>
+		        
+				<li><a href="/about" >About</a></li>
+		        
+				<li><a href="/articles" >Articles</a></li>
+		        
+		        <li><i class="icon-feed"></i> <a href="/feed.xml" title="Atom/RSS feed">Feed</a>
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+  <div class="article-author-top">
+    <img src="/images/bio-photo.jpg" class="bio-photo" alt="Pietro Passarelli bio photo"></a>
+<h3>Pietro Passarelli</h3>
+<p>Freelance Broadcast Shooting Researcher, learning to code.</p>
+
+
+
+<a href="mailto:pietro.passarelli@gmail.com?Subject=Tips%20and%20Tricks&body=Hi Pietro, %0D%0A Was reading your Blog Tips and Tricks, and I've got a question..." class="author-social" target="_blank"><i class="icon-mail"></i> e-mail</a>
+
+
+<a href="http://facebook.com/pietro.passarelli" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
+
+<a href="http://twitter.com/pietropassarell" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
+
+<a href="http://linkedin.com/in/pietropassarelli" class="author-social" target="_blank"><i class="icon-linkedin"></i> LinkedIn</a>
+
+
+
+<a href="http://github.com/pietrop" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+
+
+
+
+
+
+
+  </div>
+  <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <div class="headline-wrap">
+      <h1 itemprop="name">Dev Enviroment setup</h1>
+      <h2></h2>
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap" itemprop="text">
+      <section id="table-of-contents" class="toc">
+  <header>
+    <h3>Contents</h3>
+  </header>
+<div id="drawer">
+<ul id="markdown-toc">
+  <li><a href="#a-compiler-xcode">A compiler: Xcode</a></li>
+  <li><a href="#language-ruby">Language: Ruby</a></li>
+  <li><a href="#web-mvc-framework-rails">Web MVC Framework: Rails</a></li>
+  <li><a href="#relational-database-postgresql">Relational Database: PostgreSQL</a></li>
+  <li><a href="#version-control-and-deployment-heroku-toolbelt-includes-git">Version Control and Deployment: Heroku Toolbelt (includes Git)</a></li>
+  <li><a href="#software-package-management-home-brew">Software Package Management: Home Brew</a></li>
+  <li><a href="#text-editor-sublime-text">Text Editor: Sublime Text</a></li>
+  <li><a href="#browser-with-devtoolbar-chrome">Browser with devtoolbar: Chrome</a></li>
+</ul>
+
+  </div>
+</section>
+<!-- /#table-of-contents -->
+
+<p>Here is what you’ll need to setup your mac to get started with ruby on rails.
+You will need:</p>
+
+<h1 id="a-compiler-xcode">A compiler: Xcode</h1>
+<p>On a mac <a href="https://developer.apple.com/technologies/tools/"><strong>Xcode</strong></a> or if you have Xcode 4.4(os x mountain lion) you’ll need to add the Xcode command line tools, which contains a <a href="http://en.wikipedia.org/wiki/Compiler">compiler</a> install ruby.  </p>
+
+<pre><code>    xcode-&gt;preferences-&gt;Downloads
+</code></pre>
+
+<p>Top of the list,  command line tools. (118.5mb)  click install.</p>
+
+<figure>
+	<a href="/images/dev-setup/xcode-install.png"><img src="/images/dev-setup/xcode-install.png" /></a>
+	<figcaption><a href="/images/dev-setup/xcode-install.png" title="Xcode downloading"></a>.</figcaption>
+</figure>
+
+<h1 id="language-ruby">Language: Ruby</h1>
+<p>Install <a href="https://rvm.io"><strong>RVM</strong>(Ruby Version Manager)</a> and ruby<br />
+        in terminal type:  </p>
+
+<div class="highlight"><pre><code class="bash">    <span class="nv">$curl</span> -Lk https://get.rvm.io | bash -s stable --ruby
+    
+</code></pre></div>
+
+<p><strong>Ruby 2.0</strong> (installed through RVM in previous point)</p>
+
+<pre><code>check it has gone through, in command line:
+</code></pre>
+
+<div class="highlight"><pre><code class="bash">        <span class="nv">$ </span>ruby -v
+        
+</code></pre></div>
+
+<pre><code>you should get in return
+</code></pre>
+
+<div class="highlight"><pre><code class="bash">	<span class="nv">$ </span>ruby 2.0.0p247 <span class="o">(</span>2013-06-27 revision 41674<span class="o">)</span> <span class="o">[</span>x86_64-darwin12.3.0<span class="o">]</span>
+</code></pre></div>
+
+<h1 id="web-mvc-framework-rails">Web MVC Framework: Rails</h1>
+<p><strong>Rails</strong> , in your terminal type:  </p>
+
+<div class="highlight"><pre><code class="bash">        <span class="nv">$ </span>gem install rails  
+</code></pre></div>
+
+<pre><code>    once again,when the installation is completed write 
+</code></pre>
+
+<div class="highlight"><pre><code class="bash">        <span class="nv">$ </span>rails -v
+</code></pre></div>
+
+<pre><code>    in your terminal ad you should get in response:
+</code></pre>
+
+<div class="highlight"><pre><code class="bash">        Rails 4.0.0
+</code></pre></div>
+
+<h1 id="relational-database-postgresql">Relational Database: PostgreSQL</h1>
+<p><a href="http://postgresapp.com/"><strong>Postgress.app</strong></a>, SQL database, for production. Rails uses SQL3 for development, and sometimes it might be easier to user postgress in development too to avoid problems further down the ile.</p>
+
+<h1 id="version-control-and-deployment-heroku-toolbelt-includes-git">Version Control and Deployment: Heroku Toolbelt (includes Git)</h1>
+<p><a href="https://toolbelt.heroku.com"><strong>Heroku Toolbelt</strong></a> (includes, an heroku comment line client to manager your apps, foreman a local server to check out your app locally, and the easiest way to install <strong>Git</strong> version control that you’ll also use to push the app to heroku)</p>
+
+<h1 id="software-package-management-home-brew">Software Package Management: Home Brew</h1>
+<p><a href="http://mxcl.github.io/homebrew/"><strong>Homebrew</strong></a>, a package management software to simplify installation of gems and libraries.</p>
+
+<h1 id="text-editor-sublime-text">Text Editor: Sublime Text</h1>
+<p>a Text Editor, like <a href="https://www.sublimetext.com"><strong>SublimeTxt2</strong></a> is a good choise, other options are Vim, textmate,  textwrangler. Sublime is not free, but the version you download does not stop working after trial is expired, it just keeps reminding you to buy it every once on a while, but if you are on a budget it will do just fine.</p>
+
+<h1 id="browser-with-devtoolbar-chrome">Browser with devtoolbar: Chrome</h1>
+<p>Google <a href="https://www.google.com/intl/en/chrome/browser/"><strong>Chrome</strong></a>(to use developer toolbar, to inspect your front end, and various other features).<br />
+Alternatevly you can use <strong>Firefox</strong>, with has his own developer tools as well.<br />
+<strong>Safari</strong> has a developer toolbar as well, but needs to be activated.     </p>
+
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          <img src="/images/bio-photo.jpg" class="bio-photo" alt="Pietro Passarelli bio photo"></a>
+<h3>Pietro Passarelli</h3>
+<p>Freelance Broadcast Shooting Researcher, learning to code.</p>
+
+
+
+<a href="mailto:pietro.passarelli@gmail.com?Subject=Tips%20and%20Tricks&body=Hi Pietro, %0D%0A Was reading your Blog Tips and Tricks, and I've got a question..." class="author-social" target="_blank"><i class="icon-mail"></i> e-mail</a>
+
+
+<a href="http://facebook.com/pietro.passarelli" class="author-social" target="_blank"><i class="icon-facebook"></i> Facebook</a>
+
+<a href="http://twitter.com/pietropassarell" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
+
+<a href="http://linkedin.com/in/pietropassarelli" class="author-social" target="_blank"><i class="icon-linkedin"></i> LinkedIn</a>
+
+
+
+<a href="http://github.com/pietrop" class="author-social" target="_blank"><i class="icon-github"></i> Github</a>
+
+
+
+
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>Dev Enviroment setup</strong> was published on <time datetime="2013-09-13T15:09:10+01:00" itemprop="datePublished">September 13, 2013</time> by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="/about" title="About Pietro Passarelli" itemprop="url">Pietro Passarelli</a></span></span>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="/articles">View all articles</a>)</small></h4>
+    <ul>
+    
+      
+      
+      
+    
+      
+      
+      
+      <li><a href="/media/articles/cv-sailing" title="CV for maretime industry">CV for maretime industry</a></li>
+      
+    
+      
+      
+      
+      <li><a href="/media/articles/cv-read" title="how recruiters read your CV">how recruiters read your CV</a></li>
+      
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    <span>&copy; 2013 Pietro Passarelli. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+	        
+
+</body>
+</html>

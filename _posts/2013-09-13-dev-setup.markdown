@@ -1,0 +1,100 @@
+---
+layout: post
+title:  "Dev Enviroment setup"
+date:   2013-09-13 14:09:10
+categories: 
+- Code
+- Articles 
+---
+<section id="table-of-contents" class="toc">
+  <header>
+    <h3>Contents</h3>
+  </header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section><!-- /#table-of-contents -->
+
+Here is what you'll need to setup your mac to get started with ruby on rails.
+You will need:
+
+# A compiler: Xcode
+On a mac [**Xcode**](<https://developer.apple.com/technologies/tools/>) or if you have Xcode 4.4(os x mountain lion) you'll need to add the Xcode command line tools, which contains a [compiler](<http://en.wikipedia.org/wiki/Compiler>) install ruby.  
+ 
+
+
+        xcode->preferences->Downloads
+
+  Top of the list,  command line tools. (118.5mb)  click install.
+
+<figure>
+	<a href="{{ site.url }}/images/dev-setup/xcode-install.png"><img src="{{ site.url }}/images/dev-setup/xcode-install.png"></a>
+	<figcaption><a href="{{ site.url }}/images/dev-setup/xcode-install.png" title="Xcode downloading"></a>.</figcaption>
+</figure>
+
+# Language: Ruby 
+ Install [**RVM**(Ruby Version Manager)](<https://rvm.io>) and ruby  
+        in terminal type:  
+    
+    {% highlight bash %}
+    $curl -Lk https://get.rvm.io | bash -s stable --ruby
+    {% endhighlight %}
+      
+    
+      
+ **Ruby 2.0** (installed through RVM in previous point)
+
+    check it has gone through, in command line:
+        {% highlight bash %}
+        $ ruby -v
+        {% endhighlight %}
+
+    you should get in return
+{% highlight bash %}
+	$ ruby 2.0.0p247 (2013-06-27 revision 41674) [x86_64-darwin12.3.0]
+{% endhighlight %}
+    
+# Web MVC Framework: Rails
+  **Rails** , in your terminal type:  
+{% highlight bash %}
+        $ gem install rails  
+{% endhighlight %}
+        once again,when the installation is completed write 
+{% highlight bash %}
+        $ rails -v
+{% endhighlight %}
+        in your terminal ad you should get in response:
+{% highlight bash %}
+        Rails 4.0.0
+{% endhighlight %}
+
+      
+#Relational Database: PostgreSQL    
+   [**Postgress.app**](<http://postgresapp.com/>), SQL database, for production. Rails uses SQL3 for development, and sometimes it might be easier to user postgress in development too to avoid problems further down the ile.
+ 
+
+
+# Version Control and Deployment: Heroku Toolbelt (includes Git)
+[**Heroku Toolbelt**](<https://toolbelt.heroku.com>) (includes, an heroku comment line client to manager your apps, foreman a local server to check out your app locally, and the easiest way to install **Git** version control that you'll also use to push the app to heroku)
+
+
+# Software Package Management: Home Brew
+[**Homebrew**](<http://mxcl.github.io/homebrew/>), a package management software to simplify installation of gems and libraries.
+
+
+# Text Editor: Sublime Text
+a Text Editor, like [**SublimeTxt2**](<https://www.sublimetext.com>) is a good choise, other options are Vim, textmate,  textwrangler. Sublime is not free, but the version you download does not stop working after trial is expired, it just keeps reminding you to buy it every once on a while, but if you are on a budget it will do just fine.
+    
+
+# Browser with devtoolbar: Chrome  
+Google [**Chrome**](<https://www.google.com/intl/en/chrome/browser/>)(to use developer toolbar, to inspect your front end, and various other features).  
+Alternatevly you can use **Firefox**, with has his own developer tools as well.  
+**Safari** has a developer toolbar as well, but needs to be activated.     
+  
+   
+
+
+
+
+
