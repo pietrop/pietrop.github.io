@@ -189,33 +189,38 @@ Such as <code>01:17:23.736</code>  where the milliseconds that can be represente
 
 <p>So just by looking at our timecode string <code>01:17:23.736</code>  <code>hh:mm:ss.mmm</code> we can already describe it as:</p>
 
-<pre><code class="language-javascript">/\d\d:\d\d:\d\d.\d\d\d/
-</code></pre>
+<p><code>javascript
+/\d\d:\d\d:\d\d.\d\d\d/
+</code></p>
 
 <p>This can be refactored using the notation <code>{number}</code> defines how many time the instance is expected to occur. so where writing <code>\d{2}</code> is equivalent to write <code>\d\d</code>, where we are expecting two digits one after the other.</p>
 
-<pre><code class="language-javascript">/\d{2}:\d{2}:\d{2}.\d{3}/
-</code></pre>
+<p><code>javascript
+/\d{2}:\d{2}:\d{2}.\d{3}/
+</code></p>
 
 <p>Square brackets such as <code>[something somethingElse]</code> means any <code>something</code> or <code>somethingElse</code>. And any character in brackets loose it’s special value.</p>
 
 <p>So if we want to see milliseconds with <code>,</code> and milliseconds with <code>,</code> we would write</p>
 
-<pre><code class="language-javascript">/\d{2}:\d{2}:\d{2}[ . ,]\d{3}/
-</code></pre>
+<p><code>javascript
+/\d{2}:\d{2}:\d{2}[ . ,]\d{3}/
+</code></p>
 
 <p>Which in JavaScript you would run by defining a variable with the regex pattern, and the method <code>.test</code> on that variable passing the string you want to test as argument.  Last but not least using <code>console.log</code> to print out the outcome.</p>
 
-<pre><code class="language-javascript">var timeCode =  /\d{2}:\d{2}:\d{2}[ . ,]\d{3}/;
+<p>```javascript
+var timeCode =  /\d{2}:\d{2}:\d{2}[ . ,]\d{3}/;</p>
 
-console.log(timeCode.test("01:17:23.736"));
-</code></pre>
+<p>console.log(timeCode.test(“01:17:23.736”));
+```</p>
 
 <p>This is also equivalent to writing it without using the variable declaration if you want to have a one liner.</p>
 
-<pre><code class="language-javascript">console.log( /\d{2}:\d{2}:\d{2}[ . ,]\d{3}/.test("01:17:23.736"));
-</code></pre>
-<p>## a more sensible approach</p>
+<p><code>javascript
+console.log( /\d{2}:\d{2}:\d{2}[ . ,]\d{3}/.test("01:17:23.736"));
+</code>
+## a more sensible approach</p>
 
 <p>Now you might have noticed that I got carried away and didn’t realy follow the approach I set out to show you and the code is not very readable especilly in the last one liner, I didn’t define variables with regex patterns and combined those to make it more manageable and readable, as well as flexible if the timecode I am looking for where to change.</p>
 
@@ -227,33 +232,38 @@ console.log(timeCode.test("01:17:23.736"));
 
 <p>So I could start to write a pattern to match that</p>
 
-<pre><code class="language-javascript">var twoDigit = /\d{2}/;
-</code></pre>
-<p>Then we see we got milliseconds which is a 3 digit characters.</p>
+<p><code>javascript
+var twoDigit = /\d{2}/;
+</code>
+Then we see we got milliseconds which is a 3 digit characters.</p>
 
-<pre><code class="language-javascript">var mmm = /\d{3}/;
-</code></pre>
+<p><code>javascript
+var mmm = /\d{3}/;
+</code></p>
 
 <p>which we could already write as</p>
 
-<pre><code class="language-javascript">var timeCode = /twoDigit:twoDigit:twoDigit.mmm/;
-</code></pre>
+<p><code>javascript
+var timeCode = /twoDigit:twoDigit:twoDigit.mmm/;
+</code></p>
 
 <p>which would look like:</p>
 
-<pre><code class="language-javascript">// a simple readable approach to writing regex using variables.
+<p><code>javascript
+// a simple readable approach to writing regex using variables.
 var twoDigit = /\d{2}/;
 var mmm = /\d{3}/;
 var timeCode = /twoDigit:twoDigit:twoDigit.mmm/;
 console.log(timeCode.test("01:17:23.736"));
-</code></pre>
+</code></p>
 
 <h2 id="but-timecode-come-in-pairs">but timecode come in pairs</h2>
 <p>but generally timecode, for example in subtitles files come in pairs, for example in an srt file, so here’s in an example of how we did a regex, but now need to expand on it to match a larger string.</p>
 
-<pre><code class="language-ruby">00:00:06,500 --&gt; 00:00:10,790
+<p><code>ruby
+00:00:06,500 --&gt; 00:00:10,790
 some text from a subtitle file srt 
-</code></pre>
+</code></p>
 
 <p>it can be usefull</p>
 
@@ -264,30 +274,34 @@ some text from a subtitle file srt
 
 <p>for this example if we just consider the string with the timecodes, let’s say we have parsed it and isolated it into its own string.</p>
 
-<pre><code class="language-ruby">00:00:06,500 --&gt; 00:00:10,790
-</code></pre>
+<p><code>ruby
+00:00:06,500 --&gt; 00:00:10,790
+</code></p>
 
 <p>considering the code written in the previous section, we can now add to it as follow:</p>
 
-<pre><code class="language-javascript">// a simple readable approach to writing regex using variables.
+<p>```javascript
+// a simple readable approach to writing regex using variables.
 var twoDigit = /\d{2}/;
 var mmm = /\d{3}/;
-var timeCode = /twoDigit:twoDigit:twoDigit,mmm/;
+var timeCode = /twoDigit:twoDigit:twoDigit,mmm/;</p>
 
-var twoTimeCodes = /timeCode --&gt; timeCode/;
+<p>var twoTimeCodes = /timeCode –&gt; timeCode/;</p>
 
-console.log(twoTimeCodes.test("00:00:06,500 --&gt; 00:00:10,790"));
-</code></pre>
+<p>console.log(twoTimeCodes.test(“00:00:06,500 –&gt; 00:00:10,790”));
+```</p>
 
 <p>how much easyer was that? we just had to add this line:</p>
 
-<pre><code class="language-javascript">var twoTimeCodes = /timeCode --&gt; timeCode/;
-</code></pre>
+<p><code>javascript
+var twoTimeCodes = /timeCode --&gt; timeCode/;
+</code></p>
 
 <p>and change what var we were using to run the test to this last one.</p>
 
-<pre><code class="language-javascript">console.log(twoTimeCodes.test("00:00:06,500 --&gt; 00:00:10,790"));
-</code></pre>
+<p><code>javascript
+console.log(twoTimeCodes.test("00:00:06,500 --&gt; 00:00:10,790"));
+</code></p>
 
 </div>
 
@@ -296,15 +310,6 @@ console.log(twoTimeCodes.test("00:00:06,500 --&gt; 00:00:10,790"));
 <div class="related">
   <h3>Related Posts</h3>
   <ul class="related-posts">
-    
-      <li>
-        <h5>
-          <a href="/blog/articles/2016/04/07/hyper_video_on_the_web/">
-            Hyper Video On the Web
-            <small>07 Apr 2016</small>
-          </a>
-        </h5>
-      </li>
     
       <li>
         <h5>
@@ -317,9 +322,18 @@ console.log(twoTimeCodes.test("00:00:06,500 --&gt; 00:00:10,790"));
     
       <li>
         <h5>
-          <a href="/blog/articles/2015/06/16/helloWorld/">
-            Hello World
-            <small>16 Jun 2015</small>
+          <a href="/oneStory.html">
+            OneStory at BBC #newsHack
+            <small>04 Jun 2015</small>
+          </a>
+        </h5>
+      </li>
+    
+      <li>
+        <h5>
+          <a href="/jekyll-fenced-block.html">
+            use fenced code blocks in jekyll
+            <small>31 May 2015</small>
           </a>
         </h5>
       </li>

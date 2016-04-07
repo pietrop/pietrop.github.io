@@ -194,81 +194,85 @@ print “hello world” <br />
 
 <p>and both would render the code like this</p>
 
-<pre><code class="language-ruby">print "hello world" 
-</code></pre>
+<p><code>ruby
+print "hello world" 
+</code></p>
 
 <h2 id="quick-install">Quick install</h2>
 
-<p>###1.gem install redcarpet</p>
+<h3 id="gem-install-redcarpet">1.gem install redcarpet</h3>
 
 <p>in terminal:</p>
 
-<pre><code class="language-bash">gem install redcarpet
-</code></pre>
+<p><code>bash 
+gem install redcarpet
+</code></p>
 
-<p>###2.add redcarpet plugin in your jekyll project.</p>
+<h3 id="add-redcarpet-plugin-in-your-jekyll-project">2.add redcarpet plugin in your jekyll project.</h3>
 
 <p>Then you need to add <code>redcarpet2</code> plugin in your jekyll project. which as simple as saving <a href="https://github.com/nono/Jekyll-plugins">redcarpet2_markdown.rb</a> in the <code>_plugins</code> folder(if you don’t have the folder, just create one and remember te <code>_</code>).</p>
 
-<pre><code class="language-ruby">require 'fileutils'
-require 'digest/md5'
-require 'redcarpet'
-require 'albino'
+<p>```ruby
+require ‘fileutils’
+require ‘digest/md5’
+require ‘redcarpet’
+require ‘albino’</p>
 
-PYGMENTS_CACHE_DIR = File.expand_path('../../_cache', __FILE__)
-FileUtils.mkdir_p(PYGMENTS_CACHE_DIR)
+<p>PYGMENTS_CACHE_DIR = File.expand_path(‘../../_cache’, <strong>FILE</strong>)
+FileUtils.mkdir_p(PYGMENTS_CACHE_DIR)</p>
 
-class Redcarpet2Markdown &lt; Redcarpet::Render::HTML
+<p>class Redcarpet2Markdown &lt; Redcarpet::Render::HTML
   def block_code(code, lang)
-    lang = lang || "text"
-    path = File.join(PYGMENTS_CACHE_DIR, "#{lang}-#{Digest::MD5.hexdigest code}.html")
+    lang = lang || “text”
+    path = File.join(PYGMENTS_CACHE_DIR, “#{lang}-#{Digest::MD5.hexdigest code}.html”)
     cache(path) do
       colorized = Albino.colorize(code, lang.downcase)
       add_code_tags(colorized, lang)
     end
-  end
+  end</p>
 
-  def add_code_tags(code, lang)
-    code.sub(/&lt;pre&gt;/, "&lt;pre&gt;&lt;code class=\"#{lang}\"&gt;").
-         sub(/&lt;\/pre&gt;/, "&lt;/code&gt;&lt;/pre&gt;")
-  end
+<p>def add_code_tags(code, lang)
+    code.sub(/&lt;pre&gt;/, “&lt;pre&gt;&lt;code class="#{lang}"&gt;”).
+         sub(/&lt;\/pre&gt;/, “&lt;/code&gt;&lt;/pre&gt;”)
+  end</p>
 
-  def cache(path)
+<p>def cache(path)
     if File.exist?(path)
       File.read(path)
     else
       content = yield
-      File.open(path, 'w') {|f| f.print(content) }
+      File.open(path, ‘w’) {|f| f.print(content) }
       content
     end
   end
-end
+end</p>
 
-class Jekyll::MarkdownConverter
+<p>class Jekyll::MarkdownConverter
   def extensions
-    Hash[ *@config['redcarpet']['extensions'].map {|e| [e.to_sym, true] }.flatten ]
-  end
+    Hash[ *@config[‘redcarpet’][‘extensions’].map {|e| [e.to_sym, true] }.flatten ]
+  end</p>
 
-  def markdown
+<p>def markdown
     @markdown ||= Redcarpet::Markdown.new(Redcarpet2Markdown.new(extensions), extensions)
-  end
+  end</p>
 
-  def convert(content)
-    return super unless @config['markdown'] == 'redcarpet2'
+<p>def convert(content)
+    return super unless @config[‘markdown’] == ‘redcarpet2’
     markdown.render(content)
   end
-end
+end</p>
 
-</code></pre>
+<p>```</p>
 
-<p>###3.change config file
-then in your config <code>_config.yml</code> file you need to add:</p>
+<h3 id="change-config-file">3.change config file</h3>
+<p>then in your config <code>_config.yml</code> file you need to add:</p>
 
-<pre><code class="language-ruby">markdown: redcarpet
+<p>```ruby 
+markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+  extensions: [“no_intra_emphasis”, “fenced_code_blocks”, “autolink”, “strikethrough”, “superscript”]</p>
 
-</code></pre>
+<p>```</p>
 
 <p>…and your done.</p>
 
@@ -290,15 +294,6 @@ redcarpet:
     
       <li>
         <h5>
-          <a href="/blog/articles/2016/04/07/hyper_video_on_the_web/">
-            Hyper Video On the Web
-            <small>07 Apr 2016</small>
-          </a>
-        </h5>
-      </li>
-    
-      <li>
-        <h5>
           <a href="/quickQuote.html">
             quickQuote - Times & Sunday Times
             <small>21 Jul 2015</small>
@@ -308,9 +303,18 @@ redcarpet:
     
       <li>
         <h5>
-          <a href="/blog/articles/2015/06/16/helloWorld/">
-            Hello World
-            <small>16 Jun 2015</small>
+          <a href="/oneStory.html">
+            OneStory at BBC #newsHack
+            <small>04 Jun 2015</small>
+          </a>
+        </h5>
+      </li>
+    
+      <li>
+        <h5>
+          <a href="/laravel-installation.html">
+            Php - installing Laravel MVC Framework
+            <small>31 May 2015</small>
           </a>
         </h5>
       </li>

@@ -6,7 +6,7 @@
   <link href="http://gmpg.org/xfn/11" rel="profile">
 
   <title>
-    Rails - installing Devise Gem &middot; 
+    Hello World &middot; 
     Tips Tricks & Quick Fix
   </title>
 
@@ -137,13 +137,12 @@
 class="icon-list-alt"
   
 
-  > Rails - installing Devise Gem </h1>
-  <span class="post-date">26 May 2015 		
+  > Hello World </h1>
+  <span class="post-date">07 Apr 2013 		
 
 		
 
-         <a 
-         class="icon-youtube" href="https://youtu.be/AAym7UF6Dr0"  target="_blank"></a>
+         
 
          
 
@@ -152,7 +151,7 @@ class="icon-list-alt"
           
 
           <small>/ </small></span>
-  <p class="lead">A quick step by step to install the devise user authentication gem in rails  </p>
+  <p class="lead">Hello World </p>
 
 
 
@@ -167,80 +166,7 @@ class="icon-list-alt"
 
    
 <hr>
-  <div class="videoWrapper">
-<iframe width="560" height="315" src="//www.youtube.com/embed/AAym7UF6Dr0" frameborder="0" allowfullscreen=""></iframe>
-</div>
-
-<p><a href="http://guides.railsgirls.com/devise/">Rails girls devise guide</a></p>
-
-<ol>
-  <li>
-    <p>add gem 
-<code>gem 'devise'</code></p>
-  </li>
-  <li>
-    <p>bundle install
-<code>bundle install</code></p>
-  </li>
-  <li>
-    <p>add devise
-<code>rails g devise:install</code></p>
-  </li>
-  <li>
-    <p>ad config for development
-inf <code>config/environments/development.rb</code> add</p>
-  </li>
-</ol>
-
-<p>````ruby
-    config.action_mailer.default_url_options = { :host =&gt; ‘localhost:3000’ }
-```</p>
-
-<ol>
-  <li>ad flash notifications</li>
-</ol>
-
-<p>in <code>app/views/layouts/application.html.erb</code> above <code>&lt;%= yield %&gt;</code></p>
-
-<p>`````erb
-   &lt;% if notice %&gt;
-      &lt;p class="alert alert-success"&gt;&lt;%= notice %&gt;&lt;/p&gt;
-    &lt;% end %&gt;
-    &lt;% if alert %&gt;
-       &lt;p class="alert alert-danger"&gt;&lt;%= alert %&gt;&lt;/p&gt;
-     &lt;% end %
-````</p>
-
-<ol>
-  <li>
-    <p>add user  model 
-<code>rails g devise user</code></p>
-  </li>
-  <li>
-    <p>update db
-<code>rake db:migrate</code></p>
-  </li>
-</ol>
-
-<p>9.update/check routes
-i found that <code>devise_for :users</code> needs to be right under top of the page, like this:</p>
-
-<p>```ruby
-    Rails.application.routes.draw do
-    devise_for :users</p>
-
-<pre><code>#some other routes code
-end `````
-</code></pre>
-
-<p>10.check if it works
-run server (<code>rails s</code>) and visit <code>http://localhost:3000/users/sign_up</code>
-you can check rails console (<code>rails c</code>) to see if the user has been created i.e. <code>User.all</code>.</p>
-
-<ol>
-  <li>add links sign in/out/up
-see rest of rails guide to add links <a href="http://guides.railsgirls.com/devise/">here</a></li>
-</ol>
+  
 
 </div>
 

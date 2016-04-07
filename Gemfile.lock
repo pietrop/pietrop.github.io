@@ -135,6 +135,7 @@ DEPENDENCIES
   github-pages
   jekyll
   jekyll-feed
+  kramdown
   pygments.rb
 
 BUNDLED WITH
