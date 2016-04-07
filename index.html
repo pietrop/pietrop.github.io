@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="posts">
+<style>
+.img-responsive {
+  max-width: 70%;
+  }
+</style>
+
+
+   {% for page in site.categories.articles %}
+
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+      <h3  
+
+   {% if page.categories contains 'tech') %}
+ class="icon-laptop" 
+{% elsif page.categories contains 'video') %}
+ class="icon-film" 
+ {% elsif page.categories contains 'photos') %}
+ class="icon-camera"
+  {% elsif page.categories contains 'blog') %}
+class="icon-pencil"
+{% elsif page.categories contains 'articles') %}
+class="icon-list-alt"
+  {% endif %}
+
+
+
+
+      >
+        <a  href="{{ site.url }}{{ page.url }}">
+        {{ page.title }}  </a>
+
+        {% if page.vimeo  %}<a class="icon-vimeo" href="{{ page.vimeo }}"  target="_blank"></a>{% endif %}</h3> 
+
+      <span class="post-date">
+      {{ page.date | date_to_string }}
+      </span>
+     
+       <a  href="{{ site.url }}{{ page.url }}">
+      <img class="thumb img-round img-responsive" src="{{ page.image }}"> </a>
+      <small> <b>{{ page.duration }}</b></small>
+       <p>{{ page.description }} <p>
+    
+         <!--   {% if page.tools %}<small>  {{ page.tools | array_to_sentence_string }}.</small><br>{% endif  %}  -->
+       <a  href="{{ site.url }}{{ page.url }}", class="btn btn-primary btn-xs">
+            View  &raquo;
+          </a></p>
+</div>
+  <hr>    
+{% endfor %}

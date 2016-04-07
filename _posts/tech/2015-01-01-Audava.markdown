@@ -1,0 +1,51 @@
+---
+layout: portfolioelementTech
+title: "Audava London based Startup, online audio stories"
+description: "For the Audava london based startup, as part of one of the UCL Msc industry projects, inspired by soundcloud, a audio story recording/sharing application."
+duration:
+permalink: "/audava.html"
+image: /img/audava/audava_01.jpeg
+image-sketch: /img/audava/audava-sketch.jpg
+github: 
+
+tech: ['Ruby on Rails', 'Bootstrap', 'Bootstrap Watch','HTML','CSS', 'Heroku', 'Git', 'GitHub', 'javascript','record.js', 'Amazon S3']
+appurl: http://audava.herokuapp.com/
+link: http://audava.herokuapp.com/
+categories: 
+- tech
+tags:
+---
+
+<!-- TBC, screenshots from report. + paragraphs from report hilighting cool tech used to make it, ie encripting etc.. 
+
+also mentioned won UCL app award 2015.
+-->
+
+<div class="image-wrapper">
+<a href="{{site.url}}/img/audava/audava-sketch.jpeg" data-lightbox="Audava" title="Audava">
+
+<img src="{{site.url}}/img/audava/audava-sketch.jpeg" alt="photo" />
+
+</a>
+
+</div>
+
+
+Using [Record.Js]() the user can either record audio directly from the application or upload an audio file. The application let's the user playback the file using [audio.js]() and provides an encripted URL to securily share the audio recording with others (who may not be users of the application).
+
+This was a group project in a team of 3, and also included an HCI component of making sketches and mockups and establishing user requirements.
+
+One of the most interesting part was implementing the encripted URL, to allow users to share their audio with 'non-users' of the application.
+
+{% for i in (2..9) %}
+<div class="image-wrapper">
+<a href="{{site.url}}/img/audava/audava_0{{ i }}.jpeg" data-lightbox="Audava" title="Audava">
+
+<img src="{{site.url}}/img/audava/audava_0{{ i }}.jpeg" alt="photo" />
+
+</a>
+
+</div>
+<hr>
+
+{% endfor %}

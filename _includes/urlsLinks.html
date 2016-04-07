@@ -1,0 +1,14 @@
+		{% if page.github  %}<a class="icon-github" href="https://github.com/{{ page.github }}"  target="_blank"></a>{% endif %}
+
+		{% if page.vimeo  %}<a class="icon-vimeo" href="http://vimeo.com/{{ page.vimeo }}"  target="_blank"></a>{% endif %}
+
+         {% if page.youtube  %}<a 
+         class="icon-youtube" href="https://youtu.be/{{ page.youtube }}"  target="_blank"></a>{% endif %}
+
+         {% if page.videourl  %}<a class="icon-video" href="{{ page.url }}"  target="_blank"></a>{% endif %}
+
+          {% if page.link  %}<a class="icon-link" href="{{ page.link }}"  target="_blank"></a>{% endif %}
+
+          {% if page.flickr  %}<a class="icon-flickr" href="{{ page.flickr }}"  target="_blank"></a>{% endif %}
+
+          <small>/ {{ page.duration }}</small>

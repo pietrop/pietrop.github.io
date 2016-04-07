@@ -1,0 +1,33 @@
+
+
+<div class="post">
+  <h1
+  {% if page.categories contains 'tech') %}
+ class="icon-laptop" 
+{% elsif page.categories contains 'video') %}
+ class="icon-film" 
+ {% elsif page.categories contains 'photos') %}
+ class="icon-camera"
+  {% elsif page.categories contains 'articles') %}
+class="icon-list-alt"
+  {% endif %}
+
+  > {{ page.title }} </h1>
+  <span class="post-date">{{ page.date | date_to_string }} {% include urlsLinks.html %}</span>
+  <p class="lead">{{ page.description }} </p>
+
+
+{% if page.appurl  %}<a href="{{ page.appurl  }}" target="_blank"><button type="button" class="btn-custom">{{ page.appurl  }}</button></a>{% endif %}
+
+
+{% if page.github %}<br><a class="icon-github" href="https://github.com/{{ page.github }}" target="_blank"> Code on GitHub</a>{% endif %}
+
+  {% if page.camera %}<small> Camera: {{ page.camera | array_to_sentence_string }}.</small><br>{% endif  %} 
+
+  <!-- {% if page.tools %}<small> Camera: {{ page.tools | array_to_sentence_string }}.</small><br>{% endif  %} 
+ -->
+
+  {% if page.tech %}<br><small> Tech: {{ page.tech | array_to_sentence_string }}.</small><br>{% endif  %} 
+<hr>
+  {{ content }}
+</div>

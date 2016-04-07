@@ -1,0 +1,56 @@
+---
+layout: portfolioelementTech
+title: "Ca'Lamma B&B"
+description: "One Page layout site for Ca'Lamma Bed & Breakfast"
+duration: 
+permalink: "/Calamma.html"
+image: /img/calamma/calammaindex.jpeg
+image2: /img/calamma/aboutcalamma.jpeg
+image3: /img/calamma/rooms.jpeg
+image4: /img/calamma/contacts.jpeg
+image5: /img/calamma/lightbox.jpeg
+link: http://calamma.com
+appurl: http://calamma.com
+github: 
+tech: ['HTML','CSS', 'Bootstrap','Rails']
+categories: 
+- tech
+tags:
+---
+
+I could have used jeklyll or some other site generator sistem, but since it was such a simple site, I decided to make it directly in HTML using bootstrap with sublime text 2. 
+Using bootstrap, and speficifying responsivness for differnt screensizes and adding that to image tag.
+
+
+
+<img class="thumb img-round img-responsive" src="{{ page.image}}">
+
+<br>
+
+# One Page Responsive Site
+also using anchor tag in the sections and setting menubar  links to those ids, one page scroll layout.
+
+
+
+<img class="thumb img-round img-responsive" src="{{ page.image2}}">
+
+## Working with images 
+
+used bootstrap columns  and rows to create a responsive a picture grid.
+	
+<img class="thumb img-round img-responsive" src="{{ page.image3}}">
+
+also used lightbox javascript plugin.
+
+<img class="thumb img-round img-responsive" src="{{ page.image5}}">
+
+## Contact form
+
+I decided to use google forms, and style the front facing HTML.
+
+Making the phone number cliccacable, as the advantage that if viewing from mobile devises you can call with one tap.
+
+I made the e-mail link pre-populated.
+
+unrelated from the form I also added a get directions field, that integrates with google maps.
+<img class="thumb img-round img-responsive" src="{{ page.image4}}">

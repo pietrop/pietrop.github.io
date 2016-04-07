@@ -1,0 +1,310 @@
+ <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <title>
+    Regex - an easyer approach &middot; 
+    Tips Tricks & Quick Fix
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="http://pietropassarelli.com/public/css/hyde.css">
+  <link rel="stylesheet" href="http://pietropassarelli.com/public/css/syntax.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
+<!-- Glyhpicons? -->
+<link rel="stylesheet" href="/public/css/elusive-webfont.css">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="http://pietropassarelli.com/public/css/bootstrap.css">
+<link rel="stylesheet" href="http://pietropassarelli.com/public/css/image.css">
+  <!-- Icons -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/touch-icon-144-precomposed.png"> -->
+  <link rel="shortcut icon" href="http://pietropassarelli.com/public/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+<!-- lightbox -->
+<script src="http://pietropassarelli.com/public/js/jquery-1.10.2.min.js"></script>
+<script src="http://pietropassarelli.com/public/js/lightbox-2.6.min.js"></script>
+<link href="http://pietropassarelli.com/public/css/lightbox.css" rel="stylesheet" />
+
+
+</head>
+
+
+
+    
+  <body  class="layout-reverse theme-base-0d">
+    
+    
+    <header class="masthead">
+      <div class="masthead-inner">
+     
+ 
+
+<h1  id="top">TTQF</h1>
+<p class="lead">Tips Tricks & Quick Fix by <a href='http://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
+<!-- <p class="colophon">Developer/film-maker.</p> -->
+<div class="colophon">
+  <ul class="colophon-links">
+  	<a class="icon-home" href="/"> Home</a>
+  	<a class="icon-user" href="/about"> About</a>
+    <a class="icon-pencil" href="/blog"> Blog</a><br>
+
+  	<a class="icon-list-alt" href="/ttqf/"> Tips,Tricks&Quick Fix</a><br>
+  	<h3 id="top">My:</h3>
+  	<a class="icon-film" href="/portfolio/video"> Video</a>
+  	<a class="icon-laptop" href="/portfolio/tech">Tech</a>
+  	<a class="icon-camera"  href="/portfolio/photo"> Photo</a>
+  <h3  id="top">Contact:</h3>
+ 
+<!-- <div class="row">
+  <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">  -->
+
+<!-- <h5>Pietro Passarelli</h5> -->
+
+<!--   -->
+
+
+
+<ul class="nav nav-pills nav-stacked" style="list-style-type: none">
+<li><a class="icon-envelope" href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..." class="author-social" target="_blank"><i class="icon-mail"></i> e-mail</a> <span ></span></li>
+
+
+<li><a class="icon-phone" href="tel:00447936180742"> Phone</a></li>
+
+
+<li><a  class="icon-skype" href="skype:jasszz?call"> Skype</a></li>
+
+
+<li><a class="icon-facebook" href="https://www.facebook.com/pietro.passarelli"  target="_blank"> Facebook</a></li>
+
+
+
+<li><a class="icon-linkedin" href="http://uk.linkedin.com/in/pietropassarelli"  target="_blank"> Linkedin</a></li>
+
+<li><a class="icon-twitter" href="https://twitter.com/pietropassarell"  target="_blank"> Twitter</a></li>
+
+
+
+
+
+
+<li><a class="icon-github" href="https://github.com/pietrop"  target="_blank"> GitHub</a></li>
+
+
+
+<li><a class="icon-vimeo" href="https://vimeo.com/pietropassarelli"  target="_blank"> Vimeo</a></li>
+
+<li><a class="icon-youtube" href="https://www.youtube.com/user/jaszjasm"  target="_blank"> YouTube </a></li>
+
+
+
+
+
+
+
+
+</ul>
+
+<!--  </div> 
+
+  </div> --> <!-- row -->
+
+ 
+
+  </ul>
+ 
+</div>
+
+
+
+
+ 
+      </div>
+    </header>
+
+    <div class="content container">
+ 
+      
+
+<div class="post">
+  <h1
+  
+class="icon-list-alt"
+  
+
+  > Regex - an easyer approach </h1>
+  <span class="post-date">17 May 2015 		
+
+		
+
+         
+
+         
+
+          
+
+          
+
+          <small>/ </small></span>
+  <p class="lead">How to build more complex regex without going insane </p>
+
+
+
+
+
+
+
+   
+
+  <!--  
+ -->
+
+   
+<hr>
+  <p>Regex - an &quot;easyer&quot; approach</p>
+
+<p>“Regular expressions are a way to describe patterns in string data.”</p>
+
+<p>Excerpt From: Haverbeke, Marijn. “Eloquent JavaScript.” iBooks. 
+This material may be protected by copyright.</p>
+
+<h2>defining the problem</h2>
+
+<p>Let&#39;s say we want to write a regex to match timecodes, to test a given timecode has a valid format</p>
+
+<p>We consider the notation hours, minutes, seconds, milliseconds.
+Such as <code>01:17:23.736</code>  where the milliseconds that can be represented either with a <code>.</code> or a <code>,</code>  <code>hh:mm:ss.mmm</code>  Or <code>hh:mm:ss,mmm</code>.</p>
+
+<p>When writing a regex you&#39;d be tempted to mash all the symbols together, test it and tweak it until it works, and get it done and over with asap. An alaternative approach is [ giving var to patterns and then combining those patterns this makes it easyer to read, easyer to write, and most importantly easyer to think about in a systematic way.</p>
+
+<h2>exploring the problem</h2>
+
+<p>For this example I&#39;m using JavaScript, but most languages have support for regex with only minor tweaks to transpose them from one language to another.</p>
+
+<p>We know that  <code>\d</code> is equivalent to any digit caracther <code>[0-9]</code>.</p>
+
+<p>So just by looking at our timecode string <code>01:17:23.736</code>  <code>hh:mm:ss.mmm</code> we can already describe it as:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="sr">/\d\d:\d\d:\d\d.\d\d\d/</span>
+</code></pre></div>
+<p>This can be refactored using the notation <code>{number}</code> defines how many time the instance is expected to occur. so where writing <code>\d{2}</code> is equivalent to write <code>\d\d</code>, where we are expecting two digits one after the other.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="sr">/\d{2}:\d{2}:\d{2}.\d{3}/</span>
+</code></pre></div>
+<p>Square brackets such as <code>[something somethingElse]</code> means any <code>something</code> or <code>somethingElse</code>. And any character in brackets loose it&#39;s special value.</p>
+
+<p>So if we want to see milliseconds with <code>,</code> and milliseconds with <code>,</code> we would write </p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="sr">/\d{2}:\d{2}:\d{2}[ . ,]\d{3}/</span>
+</code></pre></div>
+<p>Which in JavaScript you would run by defining a variable with the regex pattern, and the method <code>.test</code> on that variable passing the string you want to test as argument.  Last but not least using <code>console.log</code> to print out the outcome.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">timeCode</span> <span class="o">=</span>  <span class="sr">/\d{2}:\d{2}:\d{2}[ . ,]\d{3}/</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">timeCode</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;01:17:23.736&quot;</span><span class="p">));</span>
+</code></pre></div>
+<p>This is also equivalent to writing it without using the variable declaration if you want to have a one liner.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="sr">/\d{2}:\d{2}:\d{2}[ . ,]\d{3}/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;01:17:23.736&quot;</span><span class="p">));</span>
+</code></pre></div>
+<h2>a more sensible approach</h2>
+
+<p>Now you might have noticed that I got carried away and didn&#39;t realy follow the approach I set out to show you and the code is not very readable especilly in the last one liner, I didn&#39;t define variables with regex patterns and combined those to make it more manageable and readable, as well as flexible if the timecode I am looking for where to change.</p>
+
+<p>So here&#39;s how you&#39;d go about following this more sensible approach.</p>
+
+<p>Once again you got your  timecode string <code>01:17:23.736</code>  <code>hh:mm:ss.mmm</code> </p>
+
+<p>Now you think, what have you got as smallest unit. We got hours,minutes, and milliseconds that are all 2 digit characters.</p>
+
+<p>So I could start to write a pattern to match that</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">twoDigit</span> <span class="o">=</span> <span class="sr">/\d{2}/</span><span class="p">;</span>
+</code></pre></div>
+<p>Then we see we got milliseconds which is a 3 digit characters.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">mmm</span> <span class="o">=</span> <span class="sr">/\d{3}/</span><span class="p">;</span>
+</code></pre></div>
+<p>which we could already write as </p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">timeCode</span> <span class="o">=</span> <span class="sr">/twoDigit:twoDigit:twoDigit.mmm/</span><span class="p">;</span>
+</code></pre></div>
+<p>which would look like:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// a simple readable approach to writing regex using variables.</span>
+<span class="kd">var</span> <span class="nx">twoDigit</span> <span class="o">=</span> <span class="sr">/\d{2}/</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">mmm</span> <span class="o">=</span> <span class="sr">/\d{3}/</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">timeCode</span> <span class="o">=</span> <span class="sr">/twoDigit:twoDigit:twoDigit.mmm/</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">timeCode</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;01:17:23.736&quot;</span><span class="p">));</span>
+</code></pre></div>
+<h2>but timecode come in pairs</h2>
+
+<p>but generally timecode, for example in subtitles files come in pairs, for example in an srt file, so here&#39;s in an example of how we did a regex, but now need to expand on it to match a larger string.</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mo">00</span><span class="p">:</span><span class="mo">00</span><span class="p">:</span><span class="mo">06</span><span class="p">,</span><span class="mi">500</span> <span class="o">--&gt;</span> <span class="mo">00</span><span class="p">:</span><span class="mo">00</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span><span class="mi">790</span>
+<span class="n">some</span> <span class="n">text</span> <span class="n">from</span> <span class="n">a</span> <span class="n">subtitle</span> <span class="n">file</span> <span class="n">srt</span> 
+</code></pre></div>
+<p>it can be usefull </p>
+
+<blockquote>
+<p>“A part of a regular expression that is surrounded in parentheses counts as a single element as far as the operators following it are concerned.”
+  - Excerpt From: Haverbeke, Marijn. “Eloquent JavaScript.”</p>
+</blockquote>
+
+<p>for this example if we just consider the string with the timecodes, let&#39;s say we have parsed it and isolated it into its own string.</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mo">00</span><span class="p">:</span><span class="mo">00</span><span class="p">:</span><span class="mo">06</span><span class="p">,</span><span class="mi">500</span> <span class="o">--&gt;</span> <span class="mo">00</span><span class="p">:</span><span class="mo">00</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span><span class="mi">790</span>
+</code></pre></div>
+<p>considering the code written in the previous section, we can now add to it as follow:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// a simple readable approach to writing regex using variables.</span>
+<span class="kd">var</span> <span class="nx">twoDigit</span> <span class="o">=</span> <span class="sr">/\d{2}/</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">mmm</span> <span class="o">=</span> <span class="sr">/\d{3}/</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">timeCode</span> <span class="o">=</span> <span class="sr">/twoDigit:twoDigit:twoDigit,mmm/</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">twoTimeCodes</span> <span class="o">=</span> <span class="sr">/timeCode --&gt; timeCode/</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">twoTimeCodes</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;00:00:06,500 --&gt; 00:00:10,790&quot;</span><span class="p">));</span>
+</code></pre></div>
+<p>how much easyer was that? we just had to add this line:</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">twoTimeCodes</span> <span class="o">=</span> <span class="sr">/timeCode --&gt; timeCode/</span><span class="p">;</span>
+</code></pre></div>
+<p>and change what var we were using to run the test to this last one.</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">twoTimeCodes</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;00:00:06,500 --&gt; 00:00:10,790&quot;</span><span class="p">));</span>
+</code></pre></div>
+</div>
+
+
+<hr>
+<div class="related">
+  <h3>Related Posts</h3>
+  <ul class="related-posts">
+    
+      <li>
+        <h5>
+          <a href="/quickQuote.html">
+            quickQuote - Times & Sunday Times
+            <small>21 Jul 2015</small>
+          </a>
+        </h5>
+      </li>
+    
+      <li>
+        <h5>
+          <a href="/blog/articles/2015/06/16/helloWorld/">
+            Hello World
+            <small>16 Jun 2015</small>
+          </a>
+        </h5>
+      </li>
+    
+      <li>
+        <h5>
+          <a href="/oneStory.html">
+            OneStory at BBC #newsHack
+            <small>04 Jun 2015</small>
+          </a>
+        </h5>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+
+  </body>
+</html>

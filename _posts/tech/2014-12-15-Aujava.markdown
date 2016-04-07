@@ -1,0 +1,41 @@
+---
+layout: portfolioelementTech
+title: "Aujava, High fidelity prototype in java swing"
+description: "For the Audava london based startup, as part of one of the UCL Msc industry projects, inspired by soundcloud, a audio story recording/sharing application."
+duration:
+permalink: "/aujava.html"
+image: /img/aujava/aujavaHome.png
+github: 
+
+tech: ['Java', 'Java-Swing','xml']
+images: ['aujavaHome.png','aujavaAboutUs.png','aujavaRecord.png','aujavaTrack.png','aujavaTracks.png','aujavaXML.png']
+appurl: 
+link: 
+categories: 
+- tech
+tags:
+---
+
+<!-- TBC, screenshots from report. + paragraphs from report hilighting cool tech used to make it, ie encripting etc.. 
+
+also mentioned won UCL app award 2015.
+-->
+
+
+This was a group project in a team of 3, and also included an HCI component of making sketches and mockups and establishing user requirements.
+
+This was the high fidelity java mockup using swing [before implementing the app in ruby on rails]({{site.url}}/Audava.html) as part of the UCL Msc CS course requirements.
+
+
+It used an XML as database to store the application state in between sessions.
+
+{% for i in page.images %}
+<div class="image-wrapper">
+<a href="{{site.url}}/img/aujava/{{i}}" data-lightbox="Aujava" title="Aujava">
+<img src="{{site.url}}/img/aujava/{{i}}" alt="photo" />
+</a>
+
+</div>
+<hr>
+
+{% endfor %}

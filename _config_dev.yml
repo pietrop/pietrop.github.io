@@ -1,0 +1,6 @@
+url: https://localhost/
+baseurl: ""
+
+
+# to be able to use url for production and development without need to change them for build.
+#$ jekyll build --config _config.yml,_config_dev.yml --watch

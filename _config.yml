@@ -1,66 +1,49 @@
-title:            Tips and Tricks
-tagline:          Mostly documentary production tips and tricks but als web dev stuff.
-description:      Mostly documentary production tips and tricks but als web dev stuff.
-#Comment out url when working locally to resolve base urls correctly
-# url:              http://your-site.com
+title:        TTQF
+tagline:      'Tips Tricks & Quick Fix'
+description:  "Tips Tricks & Quick Fix by <a href='http://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i."
+url:          http://pietropassarelli.com
+#http://pietropassarelli.com
+#http://localhost:4000
+version:      1.1.1
+author:
+  name:       ''
+  email:      ''
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+permalink:    pretty
+highlighter:  pygments
+paginate:     5
 
 # Owner/author information
 owner:
-  name:           Pietro Passarelli
-  avatar:         bio-photo.jpg
-  bio:            "Freelance Broadcast Shooting Researcher, learning to code."
+  name:           Pietro 
+  last_name:      Passarelli
+  # avatar:         bio-photo.jpg
+  bio:            "Developer/film-maker."# Working in the intersection between factual/documentary production and software development."
+  # extended_bio:   "Developer/film-maker. Working in the intersection between factual/documentary production and software development."
   email:          pietro.passarelli@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        pietropassarell
   facebook:       pietro.passarelli
   github:         pietrop
   linkedin:       pietropassarelli
-  instagram:      
-  lastfm:         
-  tumblr:         
+  # flickr:         jasz 
+  vimeo:          pietropassarelli  
+  # talent_manager: "6010/pietro-passarelli" # or just 6010 visit your profile URL to find out the number.
+  tumblr:    
+  lastfm:
+  youtube:        jaszjasm 
+  skype:         "jasszz"        
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
+  # google_plus:   "+PietroPassarelli" #works with custum url
+  phone:         "00447936180742"   #needs to be put between ""
+  #about image in about page /img/
+  about:          ubiq/pietro.jpeg
+  videocolor:     theme-base-0f
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:        
+categories: [video, tech, photos, articles, blog]
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: About
-    url: /about
-  - title: Articles
-    url: /articles
- 
-  # - title: Made Mistakes
-  #   url: http://mademistakes.com
-  #   external: true
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Europe/London
-future:      true
-pygments:    true
-markdown:    kramdown
 
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+# https://github.com/mdo/hyde

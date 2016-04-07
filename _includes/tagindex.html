@@ -1,0 +1,17 @@
+{% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+
+<h4>{{ t | capitalize }}</h4>
+<ul>
+{% for post in posts %}
+  {% if post.tags contains t %}
+  <li style="list-style-type: none">
+    <a  class="icon-list-alt" href="{{ post.url }}"> {{ post.title }}</a>
+    <span class="date"> <small><small> - {{ post.date | date: "%B %-d, %Y"  }}</small></small></span>
+     <br><small>{{ post.description }}</small>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+{% endfor %}

@@ -1,0 +1,29 @@
+
+ {% if ownerImage %} 
+ {% include ownerImage.html %}
+{% endif %}
+
+<h1  id="top">{{ site.title }}</h1>
+<p class="lead">{{ site.description }}</p>
+<!-- <p class="colophon">{{ site.owner.bio }}</p> -->
+<div class="colophon">
+  <ul class="colophon-links">
+  	<a class="icon-home" href="/"> Home</a>
+  	<a class="icon-user" href="/about"> About</a>
+    <a class="icon-pencil" href="/blog"> Blog</a><br>
+
+  	<a class="icon-list-alt" href="/ttqf/"> Tips,Tricks&Quick Fix</a><br>
+  	<h3 id="top">My:</h3>
+  	<a class="icon-film" href="/portfolio/video"> Video</a>
+  	<a class="icon-laptop" href="/portfolio/tech">Tech</a>
+  	<a class="icon-camera"  href="/portfolio/photo"> Photo</a>
+  <h3  id="top">Contact:</h3>
+ {% include socialmedia.html %} 
+
+  </ul>
+ 
+</div>
+
+
+
+
