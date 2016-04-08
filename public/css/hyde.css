@@ -180,7 +180,8 @@ img {
   display: block;
   margin: 0 0 15px;
   border-radius: 5px;
-  width: 100%!important;
+  width: 100%;
+  /*width: 100%!important;*/
 }
 
 /*a note here*/
