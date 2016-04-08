@@ -180,8 +180,10 @@ img {
   display: block;
   margin: 0 0 15px;
   border-radius: 5px;
+  width: 100%!important;
 }
 
+/*a note here*/
 
 /*
  * Custom type
@@ -263,7 +265,7 @@ a:focus {
   .masthead-inner {
     padding: 40px;
   }
-  
+
 }
 /* li customization inline */
 @media (max-width: 990px) {
