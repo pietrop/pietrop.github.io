@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "'Hyper-Video' On the Web"
+title: "Beyond 'video as black boxes'"
 image:
 date: '2013-04-08T01:30:00.000+01:00'
-description: "Various forms of hyper video on the web, both in form of tools and interactive docs"
+description: "Various interesting uses of video on the web, both in form of tools and editorial projects."
 published: true
+permalink: "/videoBox.html"
 categories:
 - blog
 - articles
