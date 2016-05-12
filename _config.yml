@@ -1,5 +1,6 @@
 title:        TTQF
 tagline:      'Tips Tricks & Quick Fix'
+name:         'Tips Tricks & Quick Fix'
 description:  "Tips Tricks & Quick Fix by <a href='http://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i."
 url:          http://pietropassarelli.com
 #http://pietropassarelli.com
@@ -27,15 +28,15 @@ owner:
   github:         pietrop
   linkedin:       pietropassarelli
   # flickr:         jasz
-  vimeo:          pietropassarelli
+  # vimeo:          pietropassarelli
   # talent_manager: "6010/pietro-passarelli" # or just 6010 visit your profile URL to find out the number.
-  tumblr:
-  lastfm:
-  youtube:        jaszjasm
-  skype:         "jasszz"
+  # tumblr:
+  # lastfm:
+  # youtube:        jaszjasm
+  # skype:         "jasszz"
   # For Google Authorship https://plus.google.com/authorship
   # google_plus:   "+PietroPassarelli" #works with custum url
-  phone:         "00447936180742"   #needs to be put between ""
+  # phone:         "00447936180742"   #needs to be put between ""
   #about image in about page /img/
   about:          ubiq/pietro.jpeg
   videocolor:     theme-base-0f

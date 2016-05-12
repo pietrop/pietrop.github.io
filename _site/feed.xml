@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips Tricks &amp; Quick Fix</title>
+    <description>Tips Tricks &amp; Quick Fix by &lt;a href=&#39;http://twitter.com/pietropassarell&#39; target=&#39;_blank&#39;&gt;@pietropassarell&lt;/a&gt;i.</description>
+    <link>http://pietropassarelli.com</link>
+    <atom:link href="http://pietropassarelli.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>quickQuote - Times &amp; Sunday Times</title>
+        <description>&lt;p&gt;This project was done while working as newsroom developer at the &lt;a href=&quot;https://twitter.com/TimesDevelops&quot;&gt;Times &amp;amp; Sunday Times&lt;/a&gt; as part of a summer placement for the final project of the UCL Msc in Computer Science.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	&lt;a href=&quot;/img/TimesAndSundayTimesQuickQuote/home.png&quot; data-lightbox=&quot;aName&quot; title=&quot;aName&quot;&gt;
+		&lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/home.png&quot; alt=&quot;photo&quot; /&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;On The &lt;a href=&quot;https://medium.com/digital-times/it-s-time-to-rethink-how-we-do-x-in-quotes-pieces-on-the-web-1328f1ccf039&quot;&gt;Times Digital blog&lt;/a&gt; I wrote about the thinking behind the project.&lt;/p&gt;
+
+&lt;p&gt;In a nutshell if we take the coverage of the Republican presidential candidate debate on Fox News most news outlet merely copied the quotes verbatim and them paired them with photos of the candidates.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-video-screencast-example&quot;&gt; A video screencast example&lt;/h2&gt;
+
+&lt;p&gt;Here’s a screencast of a demo of an alternative “interactive video quote” a journalist could embed in a news article.&lt;/p&gt;
+
+&lt;div class=&quot;videoWrapper&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/axH_dKOpqaA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;an-interactive-example&quot;&gt; An interactive example&lt;/h2&gt;
+&lt;p&gt;And here is the quote you see in the video above embedded in this page.
+Followed by the  HTML, CSS and JS code.&lt;/p&gt;
+
+&lt;div class=&quot;video-quote&quot; id=&quot;videoQuoteText-id-n&quot;&gt;
+  &lt;span class=&quot;glyphicon glyphicon-play-circle&quot;&gt;&lt;/span&gt;
+  &lt;blockquote&gt;
+     &lt;small&gt;►  Watch Video &lt;/small&gt;&lt;br /&gt;&lt;br /&gt;
+    A five billion dollar web site, I have so many websites, I have them all over the place. I hire people they do a web site, it costs me three dollars.
+    &lt;br /&gt;&lt;cite id=&quot;authorVideoQuote&quot;&gt;Donald Trump&lt;/cite&gt;
+  &lt;/blockquote&gt;&lt;/div&gt;
+&lt;div id=&quot;video-wrap-n&quot; class=&quot;video-wrap video-wrap--closed&quot;&gt;
+    &lt;video class=&quot; video-js vjs-default-skin&quot; id=&quot;video-quote&quot; controls=&quot;&quot; preload=&quot;auto&quot; width=&quot;100%&quot; height=&quot;auto&quot; poster=&quot;&quot; data-setup=&quot;{}&quot;&gt;
+      &lt;source src=&quot;http://times.github.io/quickQuote/media/snippet_54.mp4&quot; id=&quot;snippetURLVideo&quot; type=&quot;video/mp4&quot; /&gt;
+    &lt;/video&gt;
+&lt;/div&gt;
+&lt;style&gt;
+/*styling of the video quote*/
+     .video-quote  blockquote {
+         background: #FAFAFC;
+         border-left: 10px solid #E8E8F2;
+         margin: 1.5em 10px;
+         padding: 0.5em 10px;
+         quotes: &quot;\201C&quot;&quot;\201D&quot;&quot;\2018&quot;&quot;\2019&quot;;
+          cursor:pointer;
+     }
+     .video-quote  blockquote:before {
+         color: #3D5266;
+         content: &#39;“&#39;;
+         font-family: Times!important;
+         font-size: 4em;
+         line-height: 0.1em;
+         margin-right: 0.25em;
+         vertical-align: -0.4em;
+     }
+     .video-quote blockquote p {
+         display: inline;
+     }
+     cite#authorVideoQuote {
+        font-style: italic;
+     }
+     /*classes to show hide video element*/
+     .video-wrap {
+         overflow: hidden;
+         height: auto;
+         -webkit-transition: height 0.3s ease;
+     }
+
+     .video-wrap--closed {
+         height: 0;
+     }
+&lt;/style&gt;
+
+&lt;script&gt;
+/*script for dropdown on video*/
+  document.getElementById(&#39;videoQuoteText-id-n&#39;).onclick = function() {
+      if (document.getElementById(&#39;video-wrap-n&#39;).classList.contains(&#39;video-wrap--closed&#39;)) {
+          document.getElementById(&#39;video-wrap-n&#39;).classList.remove(&#39;video-wrap--closed&#39;);
+         document.getElementById(&#39;video-quote&#39;).play();
+      } else {
+          document.getElementById(&#39;video-wrap-n&#39;).classList.add(&#39;video-wrap--closed&#39;);
+            document.getElementById(&#39;video-quote&#39;).pause();
+      }
+  };
+
+&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+## The embed code for a video quote
+&lt;br /&gt;
+HTML&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;video-quote&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;videoQuoteText-id-n&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;glyphicon glyphicon-play-circle&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;blockquote&amp;gt;&lt;/span&gt;
+     &lt;span class=&quot;nt&quot;&gt;&amp;lt;small&amp;gt;&lt;/span&gt;►  Watch Video &lt;span class=&quot;nt&quot;&gt;&amp;lt;/small&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&lt;/span&gt;
+    A five billion dollar web site, I have so many websites, I have them all over the place. I hire people they do a web site, it costs me three dollars.
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&amp;lt;cite&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;authorVideoQuote&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Donald Trump&lt;span class=&quot;nt&quot;&gt;&amp;lt;/cite&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/blockquote&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt;  &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;video-wrap-n&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;video-wrap video-wrap--closed&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;video&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39; video-js vjs-default-skin&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;video-quote&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;controls&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;preload=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;auto&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;100%&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;auto&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;poster=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-setup=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;{}&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;source&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;http://nuk-tnl-edtl-videoanalyser-dev.s3.amazonaws.com/videos/quotes/54/snippet_54.mp4&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;snippetURLVideo&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;video/mp4&amp;#39;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;CSS&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;      &lt;span class=&quot;nc&quot;&gt;.video-quote&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#FAFAFC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;border-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#E8E8F2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1.5em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.5em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;quotes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;\201C&amp;quot;&amp;quot;\201D&amp;quot;&amp;quot;\2018&amp;quot;&amp;quot;\2019&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+           &lt;span class=&quot;k&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pointer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;.video-quote&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#3D5266&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;“&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Times&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;!important&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;margin-right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.25em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;vertical-align&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-0.4em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;.video-quote&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;blockquote&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;inline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;cite&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;#authorVideoQuote&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;k&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;italic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;.video-wrap&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.3s&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ease&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;nc&quot;&gt;.video-wrap--closed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;JS&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;  &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;videoQuoteText-id-n&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onclick&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;video-wrap-n&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;classList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;video-wrap--closed&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;video-wrap-n&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;classList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;video-wrap--closed&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+         &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;video-quote&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;video-wrap-n&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;classList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;video-wrap--closed&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;video-quote&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In the following video you can see how a user can, once a video as been uploaded an processed by the speech to text API, search through the text, select a quote, edit it, preview and export it.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;videoWrapper&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/7apk4Hx7g3s&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;project-links&quot;&gt;Project Links&lt;/h2&gt;
+
+&lt;p&gt;The code for an interactive video quote is not particularly complex.&lt;/p&gt;
+
+&lt;p&gt;But what is interesting in the quickQuote project is how we programmatically generate this embed code once a journalist has made a quote selection.&lt;/p&gt;
+
+&lt;p&gt;For more details on this check out the &lt;a href=&quot;http://times.github.io/quickQuote&quot;&gt;project page&lt;/a&gt;, &lt;a href=&quot;https://github.com/times/quickQuote&quot;&gt;the github repository&lt;/a&gt;, &lt;a href=&quot;http://times.github.io/quickQuote/userManual.html&quot;&gt;user manual&lt;/a&gt; and &lt;a href=&quot;http://www.rubydoc.info/github/times/quickQuote/master&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Or checkout the &lt;a href=&quot;https://leanpub.com/quickquote&quot;&gt;the report I wrote for  UCL&lt;/a&gt;, which details investigation into the problem domain, similar open source projects, as well as application design and architecture.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-main-features-in-screenshots&quot;&gt;The main features in Screenshots&lt;/h2&gt;
+
+&lt;p&gt;Two way sync between video and corresponding transcription&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	&lt;a href=&quot;/img/TimesAndSundayTimesQuickQuote/hypertranscript.png&quot; data-lightbox=&quot;aName&quot; title=&quot;aName&quot;&gt;
+		&lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/hypertranscript.png&quot; alt=&quot;photo&quot; /&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Search transcription for keywords&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	&lt;a href=&quot;/img/TimesAndSundayTimesQuickQuote/search.png&quot; data-lightbox=&quot;aName&quot; title=&quot;aName&quot;&gt;
+		&lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/search.png&quot; alt=&quot;photo&quot; /&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Select text grabs in and out point of corresponding video&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	&lt;a href=&quot;/img/TimesAndSundayTimesQuickQuote/select.png&quot; data-lightbox=&quot;aName&quot; title=&quot;aName&quot;&gt;
+		&lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/select.png&quot; alt=&quot;photo&quot; /&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Edit automatically generated transcription from speech to text API &lt;em&gt;if it’s not 100% accurate&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	&lt;a href=&quot;/img/TimesAndSundayTimesQuickQuote/edit_quote.png&quot; data-lightbox=&quot;aName&quot; title=&quot;aName&quot;&gt;
+		&lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/edit_quote.png&quot; alt=&quot;photo&quot; /&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;See a preview of the video quote&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	&lt;a href=&quot;/img/TimesAndSundayTimesQuickQuote/preview.png&quot; data-lightbox=&quot;aName&quot; title=&quot;aName&quot;&gt;
+		&lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/preview.png&quot; alt=&quot;photo&quot; /&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;With dropdown&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	&lt;a href=&quot;/img/TimesAndSundayTimesQuickQuote/preview_dropdown.png&quot; data-lightbox=&quot;aName&quot; title=&quot;aName&quot;&gt;
+		&lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/preview_dropdown.png&quot; alt=&quot;photo&quot; /&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Export HTML, CSS, JS code to embed in news article.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	&lt;a href=&quot;/img/TimesAndSundayTimesQuickQuote/export_code.png&quot; data-lightbox=&quot;aName&quot; title=&quot;aName&quot;&gt;
+		&lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/export_code.png&quot; alt=&quot;photo&quot; /&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And here is &lt;a href=&quot;http://jsfiddle.net/pietrops/yazkqg2s/&quot;&gt;a preview of the embed code using JS Fiddle&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	&lt;a href=&quot;/img/TimesAndSundayTimesQuickQuote/export_quote_w3.png&quot; data-lightbox=&quot;aName&quot; title=&quot;aName&quot;&gt;
+		&lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/export_quote_w3.png&quot; alt=&quot;photo&quot; /&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+	&lt;a href=&quot;/img/TimesAndSundayTimesQuickQuote/export_dropdown_w3.png&quot; data-lightbox=&quot;aName&quot; title=&quot;aName&quot;&gt;
+		&lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/export_dropdown_w3.png&quot; alt=&quot;photo&quot; /&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;on-social-media&quot;&gt;On Social Media&lt;/h1&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;This. Changes. Everything. “&lt;a href=&quot;https://twitter.com/NiemanLab&quot;&gt;@NiemanLab&lt;/a&gt;: new tool fromTimes of London lets you detect and capture quotes from a video &lt;a href=&quot;http://t.co/v7ZGPcXCkl&quot;&gt;http://t.co/v7ZGPcXCkl&lt;/a&gt;”&lt;/p&gt;&amp;mdash; Paul Adams (@padams29) &lt;a href=&quot;https://twitter.com/padams29/status/643133038327521281&quot;&gt;September 13, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Sometimes a new digital news tool comes along &amp;amp; reminds us how far we are from doing it right &lt;a href=&quot;http://t.co/xqiioyAVET&quot;&gt;http://t.co/xqiioyAVET&lt;/a&gt; &lt;a href=&quot;http://t.co/T2vyi8G0W6&quot;&gt;pic.twitter.com/T2vyi8G0W6&lt;/a&gt;&lt;/p&gt;&amp;mdash; Greg Emerson (@emersongreg) &lt;a href=&quot;https://twitter.com/emersongreg/status/643388636063469568&quot;&gt;September 14, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;A new tool from The Times of London lets you easily detect and capture quotes from a video &lt;a href=&quot;http://t.co/r6pGJzKycx&quot;&gt;http://t.co/r6pGJzKycx&lt;/a&gt;&lt;/p&gt;&amp;mdash; Nieman Lab (@NiemanLab) &lt;a href=&quot;https://twitter.com/NiemanLab/status/643132545593311232&quot;&gt;September 13, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;press-mentions&quot;&gt;Press Mentions&lt;/h1&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    &lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/NiemanLab-quickQuote.png&quot; alt=&quot;/img/TimesAndSundayTimesQuickQuote/NiemanLab-quickQuote.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    &lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/journalism_co_uk_quickQuote.png&quot; alt=&quot;/img/TimesAndSundayTimesQuickQuote/journalism_co_uk_quickQuote.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    &lt;img src=&quot;/img/TimesAndSundayTimesQuickQuote/ClasesdePeriodismo_quickQuote.png&quot; alt=&quot;/img/TimesAndSundayTimesQuickQuote/ClasesdePeriodismo_quickQuote.png&quot; /&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 21 Jul 2015 00:00:00 -0400</pubDate>
+        <link>http://pietropassarelli.com//quickQuote.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//quickQuote.html</guid>
+      </item>
+    
+      <item>
+        <title>OneStory at BBC #newsHack</title>
+        <description>&lt;p&gt;As part of the &lt;a href=&quot;https://twitter.com/TimesDevelops&quot;&gt;Times team&lt;/a&gt; we won the first prize of the &lt;a href=&quot;http://newshack.co.uk/newshack-viii-the-2015-news-industry-accelerator&quot;&gt;BBC News Hack VIII&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;the-prototype&quot;&gt;The Prototype&lt;/h1&gt;
+
+&lt;!-- &lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/newsHackOneStory/OneStory_01_Home.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;&quot; alt=&quot;photo&quot; /&gt; --&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    &lt;img src=&quot;/img/newsHackOneStory/OneStory_01_Home.png&quot; alt=&quot;/img/newsHackOneStory/OneStory_01_Home.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It’s a system that allows a journalist easily make a podcast version of a given article. And for the user/viewer, he/she can seamlessly switch between the written article and podcast.&lt;/p&gt;
+
+&lt;p&gt;see &lt;a href=&quot;http://pietropassarelli.com/oneStory.html#presVideo&quot;&gt;video of presentation for more details&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    &lt;img src=&quot;/img/newsHackOneStory/OneStory_02_Podcast.png&quot; alt=&quot;/img/newsHackOneStory/OneStory_01_Home.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    &lt;img src=&quot;/img/newsHackOneStory/OneStoryQuotes.png&quot; alt=&quot;/img/newsHackOneStory/OneStory_01_Home.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;team&quot;&gt;Team&lt;/h2&gt;
+&lt;p&gt;Journalist - &lt;a href=&quot;https://twitter.com/MattieTK&quot; class=&quot;twitter-follow-button&quot; data-show-count=&quot;false&quot;&gt; @MattieTK&lt;/a&gt; &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&#39;http&#39;:&#39;https&#39;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&#39;://platform.twitter.com/widgets.js&#39;;fjs.parentNode.insertBefore(js,fjs);}}(document, &#39;script&#39;, &#39;twitter-wjs&#39;);&lt;/script&gt;. 
+Designer - &lt;a href=&quot;https://twitter.com/EoinTunstead&quot; class=&quot;twitter-follow-button&quot; data-show-count=&quot;false&quot;&gt; @EoinTunstead&lt;/a&gt; &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&#39;http&#39;:&#39;https&#39;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&#39;://platform.twitter.com/widgets.js&#39;;fjs.parentNode.insertBefore(js,fjs);}}(document, &#39;script&#39;, &#39;twitter-wjs&#39;);&lt;/script&gt;. 
+Developer - &lt;a href=&quot;https://twitter.com/pietropassarell&quot; class=&quot;twitter-follow-button&quot; data-show-count=&quot;false&quot;&gt; @pietropassarell&lt;/a&gt; &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&#39;http&#39;:&#39;https&#39;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&#39;://platform.twitter.com/widgets.js&#39;;fjs.parentNode.insertBefore(js,fjs);}}(document, &#39;script&#39;, &#39;twitter-wjs&#39;);&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;presVideo&quot;&gt;Presentation&lt;/h2&gt;
+
+&lt;div class=&quot;videoWrapper&quot;&gt;
+&lt;iframe src=&quot;//player.vimeo.com/video/129888695?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 04 Jun 2015 00:00:00 -0400</pubDate>
+        <link>http://pietropassarelli.com//oneStory.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//oneStory.html</guid>
+      </item>
+    
+      <item>
+        <title>use fenced code blocks in jekyll</title>
+        <description>&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;First, thing first, why? I use markdown a lot, pretty much instead of using word, I write in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;markdown&lt;/a&gt; and export mostly into &lt;code&gt;rtf&lt;/code&gt;, &lt;code&gt;.docx&lt;/code&gt;, or &lt;code&gt;.pdf&lt;/code&gt; using &lt;a href=&quot;http://pandoc.org/&quot;&gt;pandoc&lt;/a&gt; (blog post on this workflowto come soon), and being able to just draft something, without having to think about whether I need to use liquid tags or fended blocks, depending on whether I will then publish it onto my &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyll site&lt;/a&gt; (jekyll is a static site generator).&lt;/p&gt;
+
+&lt;p&gt;So decided to install &lt;a href=&quot;https://github.com/nono/Jekyll-plugins&quot;&gt;a plugin from the jekyll site&lt;/a&gt; to enable it, but it wasn’t quiet working, enche the post here.&lt;/p&gt;
+
+&lt;h2 id=&quot;fenced-code-blocks-and-liquid-tags&quot;&gt;Fenced code blocks and liquid tags&lt;/h2&gt;
+&lt;p&gt;Let’s look at how to use fenced code blocks instead of liquid tags in jekyll.
+But first, what’s what?&lt;/p&gt;
+
+&lt;p&gt;These are liquid tags and their default way for jekyll to display code with syntax hilight:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;{% highlight ruby %} &lt;br /&gt;
+print “hello world” &lt;br /&gt;
+{% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;these are fenced code blocks&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;```ruby&lt;/p&gt;
+&lt;p&gt;print &quot;hello world&quot; &lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;and both would render the code like this&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+print &quot;hello world&quot; 
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;quick-install&quot;&gt;Quick install&lt;/h2&gt;
+
+&lt;h3 id=&quot;gem-install-redcarpet&quot;&gt;1.gem install redcarpet&lt;/h3&gt;
+
+&lt;p&gt;in terminal:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash 
+gem install redcarpet
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;add-redcarpet-plugin-in-your-jekyll-project&quot;&gt;2.add redcarpet plugin in your jekyll project.&lt;/h3&gt;
+
+&lt;p&gt;Then you need to add &lt;code&gt;redcarpet2&lt;/code&gt; plugin in your jekyll project. which as simple as saving &lt;a href=&quot;https://github.com/nono/Jekyll-plugins&quot;&gt;redcarpet2_markdown.rb&lt;/a&gt; in the &lt;code&gt;_plugins&lt;/code&gt; folder(if you don’t have the folder, just create one and remember te &lt;code&gt;_&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;```ruby
+require ‘fileutils’
+require ‘digest/md5’
+require ‘redcarpet’
+require ‘albino’&lt;/p&gt;
+
+&lt;p&gt;PYGMENTS_CACHE_DIR = File.expand_path(‘../../_cache’, &lt;strong&gt;FILE&lt;/strong&gt;)
+FileUtils.mkdir_p(PYGMENTS_CACHE_DIR)&lt;/p&gt;
+
+&lt;p&gt;class Redcarpet2Markdown &amp;lt; Redcarpet::Render::HTML
+  def block_code(code, lang)
+    lang = lang || “text”
+    path = File.join(PYGMENTS_CACHE_DIR, “#{lang}-#{Digest::MD5.hexdigest code}.html”)
+    cache(path) do
+      colorized = Albino.colorize(code, lang.downcase)
+      add_code_tags(colorized, lang)
+    end
+  end&lt;/p&gt;
+
+&lt;p&gt;def add_code_tags(code, lang)
+    code.sub(/&amp;lt;pre&amp;gt;/, “&amp;lt;pre&amp;gt;&amp;lt;code class=&quot;#{lang}&quot;&amp;gt;”).
+         sub(/&amp;lt;\/pre&amp;gt;/, “&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;”)
+  end&lt;/p&gt;
+
+&lt;p&gt;def cache(path)
+    if File.exist?(path)
+      File.read(path)
+    else
+      content = yield
+      File.open(path, ‘w’) {|f| f.print(content) }
+      content
+    end
+  end
+end&lt;/p&gt;
+
+&lt;p&gt;class Jekyll::MarkdownConverter
+  def extensions
+    Hash[ *@config[‘redcarpet’][‘extensions’].map {|e| [e.to_sym, true] }.flatten ]
+  end&lt;/p&gt;
+
+&lt;p&gt;def markdown
+    @markdown ||= Redcarpet::Markdown.new(Redcarpet2Markdown.new(extensions), extensions)
+  end&lt;/p&gt;
+
+&lt;p&gt;def convert(content)
+    return super unless @config[‘markdown’] == ‘redcarpet2’
+    markdown.render(content)
+  end
+end&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;h3 id=&quot;change-config-file&quot;&gt;3.change config file&lt;/h3&gt;
+&lt;p&gt;then in your config &lt;code&gt;_config.yml&lt;/code&gt; file you need to add:&lt;/p&gt;
+
+&lt;p&gt;```ruby 
+markdown: redcarpet
+redcarpet:
+  extensions: [“no_intra_emphasis”, “fenced_code_blocks”, “autolink”, “strikethrough”, “superscript”]&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;…and your done.&lt;/p&gt;
+
+&lt;h2 id=&quot;end-notes&quot;&gt;End notes&lt;/h2&gt;
+&lt;p&gt;I took most of these installation steps are taken from &lt;a href=&quot;http://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll&quot;&gt;stack overflow&lt;/a&gt; however there the sudgestion was to write in the config file &lt;code&gt;markdown: redcarpet2&lt;/code&gt; and it wasn’t working for me, so I found that &lt;a href=&quot;https://github.com/clayallsopp/rubymotion-tutorial/issues/30&quot;&gt;it has been raised elsewhere&lt;/a&gt; that you can just write &lt;code&gt;markdown: redcarpet&lt;/code&gt; and it works just fine.&lt;/p&gt;
+
+&lt;p&gt;Also, I’ve noticed that with this set up you can use both liquid tags and fenced blocks.&lt;/p&gt;
+
+&lt;!-- Links --&gt;
+
+</description>
+        <pubDate>Sun, 31 May 2015 13:02:00 -0400</pubDate>
+        <link>http://pietropassarelli.com//jekyll-fenced-block.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//jekyll-fenced-block.html</guid>
+      </item>
+    
+      <item>
+        <title>Php - installing Laravel MVC Framework</title>
+        <description>&lt;p&gt;Following a long the &lt;a href=&quot;https://www.google.it/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0CCIQFjAA&amp;amp;url=http%3A%2F%2Fwww.lynda.com%2FLaravel-tutorials%2FLaravel-4-Essential-Training%2F181242-2.html&amp;amp;ei=OzVrVdKHKIizswGCwYKIAQ&amp;amp;usg=AFQjCNGFzx8u1HwwxAGHDAg3NxBFAnrW_w&amp;amp;bvm=bv.94455598,d.bGg&quot;&gt;Lynda.com Essential Training Laravel 4&lt;/a&gt; I found that the given instruction to install laravel did not work for me.&lt;/p&gt;
+
+&lt;p&gt;I found some that did in this &lt;a href=&quot;http://jacurtis.com/easily-install-mcrypt-php-mavericks-yosemite/&quot;&gt;blog post&lt;/a&gt;, I think it was mostly due to the fact that on lynda.com they refer you to another course on installing the &lt;a href=&quot;http://www.lynda.com/MySQL-tutorials/PHP-MySQL-Essential-Training/119003-2.html&quot;&gt;php stack&lt;/a&gt;, and if you don’t have &lt;code&gt;php 5.6&lt;/code&gt; previous versions require &lt;code&gt;mycript&lt;/code&gt; laravel dependencie to be installed separatly, and that turned out to be rather tedius.&lt;/p&gt;
+
+&lt;p&gt;So here is a short step by stem that worked for me on OS X Yosemite.&lt;/p&gt;
+
+&lt;h2 id=&quot;install-composer&quot;&gt;1.Install Composer&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://getcomposer.org/download/&quot;&gt;Install composer&lt;/a&gt; to then install php laravel.&lt;/p&gt;
+
+&lt;p&gt;using &lt;code&gt;curl&lt;/code&gt; in terminal&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;php
+ curl -sS https://getcomposer.org/installer | php
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To user composer globally,  you’ll need to move it to it’s own folder in user local bin.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+sudo mv composer.phar /usr/local/bin/composer
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;phar&lt;/code&gt; stands for php archive, and we are creating the &lt;code&gt;composer&lt;/code&gt; folder as part of this comand. You’ll be prompted for password.&lt;/p&gt;
+
+&lt;h2 id=&quot;install-php-56&quot;&gt;2.install php 5.6&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+curl -s http://php-osx.liip.ch/install.sh | bash -s 5.6
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;this installs new php 5.6, which comes with &lt;code&gt;mycript&lt;/code&gt; which you will need for &lt;code&gt;laravel&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;add this to &lt;code&gt;.bash_profile&lt;/code&gt; to tell the system where you installed the new PHP.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+vim .bash_profile
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and then write the followin in &lt;code&gt;.bash_profile&lt;/code&gt; which tells your system which php to use:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+#PHP location
+export PATH=/usr/local/php5/bin:$PATH
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;restart terminal.&lt;/p&gt;
+
+&lt;h2 id=&quot;test-laravel&quot;&gt;3.test laravel&lt;/h2&gt;
+
+&lt;p&gt;to setup a new laravel project&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+composer create-project laravel/laravel=4.2.0 /Users/urUserName/Desktop/laravelTest --prefer-dist
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where &lt;code&gt;/Users/yourUserName/Desktop/laravelTest&lt;/code&gt; is the path where you want your project folder to be.&lt;/p&gt;
+
+&lt;p&gt;and finally to launch laravel, &lt;code&gt;cd&lt;/code&gt; into that folder and run from terminal:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+php artisan serve
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;!-- links --&gt;
+
+</description>
+        <pubDate>Sun, 31 May 2015 12:38:00 -0400</pubDate>
+        <link>http://pietropassarelli.com//laravel-installation.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//laravel-installation.html</guid>
+      </item>
+    
+      <item>
+        <title>Rails - installing Devise Gem</title>
+        <description>&lt;div class=&quot;videoWrapper&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/AAym7UF6Dr0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://guides.railsgirls.com/devise/&quot;&gt;Rails girls devise guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;add gem 
+&lt;code&gt;gem &#39;devise&#39;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;bundle install
+&lt;code&gt;bundle install&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;add devise
+&lt;code&gt;rails g devise:install&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ad config for development
+inf &lt;code&gt;config/environments/development.rb&lt;/code&gt; add&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;````ruby
+    config.action_mailer.default_url_options = { :host =&amp;gt; ‘localhost:3000’ }
+```&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ad flash notifications&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;in &lt;code&gt;app/views/layouts/application.html.erb&lt;/code&gt; above &lt;code&gt;&amp;lt;%= yield %&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;`````erb
+   &amp;lt;% if notice %&amp;gt;
+      &amp;lt;p class=&quot;alert alert-success&quot;&amp;gt;&amp;lt;%= notice %&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;% end %&amp;gt;
+    &amp;lt;% if alert %&amp;gt;
+       &amp;lt;p class=&quot;alert alert-danger&quot;&amp;gt;&amp;lt;%= alert %&amp;gt;&amp;lt;/p&amp;gt;
+     &amp;lt;% end %
+````&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;add user  model 
+&lt;code&gt;rails g devise user&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;update db
+&lt;code&gt;rake db:migrate&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;9.update/check routes
+i found that &lt;code&gt;devise_for :users&lt;/code&gt; needs to be right under top of the page, like this:&lt;/p&gt;
+
+&lt;p&gt;```ruby
+    Rails.application.routes.draw do
+    devise_for :users&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#some other routes code
+end `````
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;10.check if it works
+run server (&lt;code&gt;rails s&lt;/code&gt;) and visit &lt;code&gt;http://localhost:3000/users/sign_up&lt;/code&gt;
+you can check rails console (&lt;code&gt;rails c&lt;/code&gt;) to see if the user has been created i.e. &lt;code&gt;User.all&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;add links sign in/out/up
+see rest of rails guide to add links &lt;a href=&quot;http://guides.railsgirls.com/devise/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 26 May 2015 12:35:00 -0400</pubDate>
+        <link>http://pietropassarelli.com//devise.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//devise.html</guid>
+      </item>
+    
+      <item>
+        <title>Create multiple folders and subfolders from bash script</title>
+        <description>&lt;p&gt;Let’s say I want to create a bunch of folders with subfolders, to structure some workspace, but don’t want to have to create them all individually, or even to duplicate and rename a template.&lt;/p&gt;
+
+&lt;p&gt;As an example, I want to create a folder structure for a number of courses, &lt;code&gt;GC01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99&lt;/code&gt;  and I want all of them to have the following subfolders inside &lt;code&gt;readings,notes,past_exam_papers,slides&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-bash-script-in-terminal&quot;&gt;A bash script in terminal&lt;/h2&gt;
+&lt;p&gt;We can write a bash script that will do just that, first things first,let’s try it from terminal:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir -p &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;GC01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;/&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;readings,notes,past_exam_papers,slides&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Note, that the &lt;code&gt;touch&lt;/code&gt; comand with the &lt;code&gt;{&lt;/code&gt; does not allow for spaces in between the words and the &lt;code&gt;,&lt;/code&gt; comma.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;/&lt;/code&gt; delineates a &lt;code&gt;folder/subfolder&lt;/code&gt; relation in the comand.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;-p&lt;/code&gt; allows for the folder/subfolder.&lt;/p&gt;
+
+&lt;p&gt;This gives me 9 folders, starting with &lt;code&gt;C01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99&lt;/code&gt;, where each of thse contain 5 subfolders, named &lt;code&gt;readings,notes,past_exam_papers,slides&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/bash_script/subfolders.png&quot; data-lightbox=&quot;folders &quot; title=&quot;folders/subfolders &quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/bash_script/subfolders.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;folders-and-subfolders-vs-appending-names&quot;&gt;Folders and subfolders vs appending names&lt;/h2&gt;
+
+&lt;p&gt;if I’ve had &lt;code&gt;_&lt;/code&gt; instead of &lt;code&gt;/&lt;/code&gt; then it would have looked like&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir -p &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;GC01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;_&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;readings,notes,past_exam_papers,slides&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and there would have been no subfolders, but instead it would have appended the names, with all possible combinations, ie &lt;code&gt;GC01_readings&lt;/code&gt;,&lt;code&gt;GC02_readings&lt;/code&gt; etc.. all at the same folder level.&lt;/p&gt;
+
+&lt;p&gt;This can be usefull if you append &lt;code&gt;{1..10}&lt;/code&gt; to the file, that could give them some kind of numbering, and same thing can be done with letters &lt;code&gt;{A..Z}&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;perhaps more usefull if you want/need to create a whole bunch of files.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;touch &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;image,pic,still,photo&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;_&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;1..100&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;.txt&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;this would give you the following files&lt;code&gt;image_1.txt, image_2.txt, image_3.txt, image_4.txt etc..&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;even more usefull, you could create a folder with that contains a bunch of folders, numbered within a range, all containing another folder, that contains a text file.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;mkdir -p images/&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;100..110&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;/192x128 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; touch images/&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;100..110&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;/192x128/index.md&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;in this case the main a folder  is &lt;code&gt;images&lt;/code&gt; and it contains a bunch of folders, numbered within a range from &lt;code&gt;100..110&lt;/code&gt;, all containing another folder &lt;code&gt;192x128&lt;/code&gt; , then we use pipe &lt;code&gt;|&lt;/code&gt; and the &lt;code&gt;touch&lt;/code&gt; comand to create a file, navigate back through path of directories we just created &lt;code&gt;images/{100..110}/192x128/&lt;/code&gt;, and create a &lt;code&gt;index.md&lt;/code&gt; in there.&lt;/p&gt;
+
+&lt;p&gt;And where &lt;code&gt;.md&lt;/code&gt; is a plain text &lt;a href=&quot;http://en.wikipedia.org/wiki/Markdown&quot;&gt;markdown file&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/bash_script/subfoldersWithImages.png&quot; data-lightbox=&quot;folders &quot; title=&quot;folders/subfolders/file &quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/bash_script/subfoldersWithImages.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;But enough with this digression, back to our bash script.&lt;/p&gt;
+
+&lt;h2 id=&quot;bash-script&quot;&gt;Bash Script&lt;/h2&gt;
+
+&lt;p&gt;We can now write it into a ascript using &lt;code&gt;vim&lt;/code&gt; in terminal, or any other editor, as long as you give &lt;code&gt;.sh&lt;/code&gt; extension to the file.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;vim folderSubfoldersScript.sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# A bash script to create folders with subfolders all in one go.&lt;/span&gt;
+
+mkdir -p &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;GC01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;/&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;readings,notes,past_exam_papers,slides&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;where &lt;code&gt;#!/bin/bash&lt;/code&gt; is saying where to find the bash shell to execute the sccript.&lt;/p&gt;
+
+&lt;p&gt;to run it you simply write in terminal&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;bash folderSubfoldersScript.sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;executable-bash-script&quot;&gt;Executable bash script&lt;/h2&gt;
+
+&lt;p&gt;if you want to make it into an executable file so that you don’t need to write &lt;code&gt;bash&lt;/code&gt; in front of &lt;code&gt;folderSubfoldersScript.sh&lt;/code&gt;. Then you just need to use &lt;code&gt;chmod&lt;/code&gt; to change the file’s permissions.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;chmod +x folderSubfoldersScript.sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;where &lt;code&gt;+x&lt;/code&gt; makes the file executable.&lt;/p&gt;
+
+&lt;p&gt;Now that it’s an executable file, to run it from terminal you just write&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./folderSubfoldersScript.sh&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;using &lt;code&gt;./&lt;/code&gt; to run the file.&lt;/p&gt;
+
+&lt;h2 id=&quot;sources-and-resources&quot;&gt;Sources and Resources&lt;/h2&gt;
+
+&lt;p&gt;from &lt;a href=&quot;http://www.lynda.com/Bash-tutorials/Up-Running-Bash-Scripting/142989-2.html&quot;&gt;Lynda.com up and running with bash script&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 25 May 2015 10:09:10 -0400</pubDate>
+        <link>http://pietropassarelli.com//bash_script.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//bash_script.html</guid>
+      </item>
+    
+      <item>
+        <title>Regex - an easyer approach</title>
+        <description>&lt;p&gt;Regex - an “easyer” approach&lt;/p&gt;
+
+&lt;p&gt;“Regular expressions are a way to describe patterns in string data.”&lt;/p&gt;
+
+&lt;p&gt;Excerpt From: Haverbeke, Marijn. “Eloquent JavaScript.” iBooks. 
+This material may be protected by copyright.&lt;/p&gt;
+
+&lt;h2 id=&quot;defining-the-problem&quot;&gt;defining the problem&lt;/h2&gt;
+&lt;p&gt;Let’s say we want to write a regex to match timecodes, to test a given timecode has a valid format&lt;/p&gt;
+
+&lt;p&gt;We consider the notation hours, minutes, seconds, milliseconds.
+Such as &lt;code&gt;01:17:23.736&lt;/code&gt;  where the milliseconds that can be represented either with a &lt;code&gt;.&lt;/code&gt; or a &lt;code&gt;,&lt;/code&gt;  &lt;code&gt;hh:mm:ss.mmm&lt;/code&gt;  Or &lt;code&gt;hh:mm:ss,mmm&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;When writing a regex you’d be tempted to mash all the symbols together, test it and tweak it until it works, and get it done and over with asap. An alaternative approach is [ giving var to patterns and then combining those patterns this makes it easyer to read, easyer to write, and most importantly easyer to think about in a systematic way.&lt;/p&gt;
+
+&lt;h2 id=&quot;exploring-the-problem&quot;&gt;exploring the problem&lt;/h2&gt;
+
+&lt;p&gt;For this example I’m using JavaScript, but most languages have support for regex with only minor tweaks to transpose them from one language to another.&lt;/p&gt;
+
+&lt;p&gt;We know that  &lt;code&gt;\d&lt;/code&gt; is equivalent to any digit caracther ` [0-9]`.&lt;/p&gt;
+
+&lt;p&gt;So just by looking at our timecode string &lt;code&gt;01:17:23.736&lt;/code&gt;  &lt;code&gt;hh:mm:ss.mmm&lt;/code&gt; we can already describe it as:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+/\d\d:\d\d:\d\d.\d\d\d/
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This can be refactored using the notation &lt;code&gt;{number}&lt;/code&gt; defines how many time the instance is expected to occur. so where writing &lt;code&gt;\d{2}&lt;/code&gt; is equivalent to write &lt;code&gt;\d\d&lt;/code&gt;, where we are expecting two digits one after the other.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+/\d{2}:\d{2}:\d{2}.\d{3}/
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Square brackets such as &lt;code&gt;[something somethingElse]&lt;/code&gt; means any &lt;code&gt;something&lt;/code&gt; or &lt;code&gt;somethingElse&lt;/code&gt;. And any character in brackets loose it’s special value.&lt;/p&gt;
+
+&lt;p&gt;So if we want to see milliseconds with &lt;code&gt;,&lt;/code&gt; and milliseconds with &lt;code&gt;,&lt;/code&gt; we would write&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+/\d{2}:\d{2}:\d{2}[ . ,]\d{3}/
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Which in JavaScript you would run by defining a variable with the regex pattern, and the method &lt;code&gt;.test&lt;/code&gt; on that variable passing the string you want to test as argument.  Last but not least using &lt;code&gt;console.log&lt;/code&gt; to print out the outcome.&lt;/p&gt;
+
+&lt;p&gt;```javascript
+var timeCode =  /\d{2}:\d{2}:\d{2}[ . ,]\d{3}/;&lt;/p&gt;
+
+&lt;p&gt;console.log(timeCode.test(“01:17:23.736”));
+```&lt;/p&gt;
+
+&lt;p&gt;This is also equivalent to writing it without using the variable declaration if you want to have a one liner.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+console.log( /\d{2}:\d{2}:\d{2}[ . ,]\d{3}/.test(&quot;01:17:23.736&quot;));
+&lt;/code&gt;
+## a more sensible approach&lt;/p&gt;
+
+&lt;p&gt;Now you might have noticed that I got carried away and didn’t realy follow the approach I set out to show you and the code is not very readable especilly in the last one liner, I didn’t define variables with regex patterns and combined those to make it more manageable and readable, as well as flexible if the timecode I am looking for where to change.&lt;/p&gt;
+
+&lt;p&gt;So here’s how you’d go about following this more sensible approach.&lt;/p&gt;
+
+&lt;p&gt;Once again you got your  timecode string &lt;code&gt;01:17:23.736&lt;/code&gt;  &lt;code&gt;hh:mm:ss.mmm&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you think, what have you got as smallest unit. We got hours,minutes, and milliseconds that are all 2 digit characters.&lt;/p&gt;
+
+&lt;p&gt;So I could start to write a pattern to match that&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+var twoDigit = /\d{2}/;
+&lt;/code&gt;
+Then we see we got milliseconds which is a 3 digit characters.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+var mmm = /\d{3}/;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;which we could already write as&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+var timeCode = /twoDigit:twoDigit:twoDigit.mmm/;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;which would look like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+// a simple readable approach to writing regex using variables.
+var twoDigit = /\d{2}/;
+var mmm = /\d{3}/;
+var timeCode = /twoDigit:twoDigit:twoDigit.mmm/;
+console.log(timeCode.test(&quot;01:17:23.736&quot;));
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;but-timecode-come-in-pairs&quot;&gt;but timecode come in pairs&lt;/h2&gt;
+&lt;p&gt;but generally timecode, for example in subtitles files come in pairs, for example in an srt file, so here’s in an example of how we did a regex, but now need to expand on it to match a larger string.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+00:00:06,500 --&amp;gt; 00:00:10,790
+some text from a subtitle file srt 
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;it can be usefull&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“A part of a regular expression that is surrounded in parentheses counts as a single element as far as the operators following it are concerned.”
+	- Excerpt From: Haverbeke, Marijn. “Eloquent JavaScript.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;for this example if we just consider the string with the timecodes, let’s say we have parsed it and isolated it into its own string.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+00:00:06,500 --&amp;gt; 00:00:10,790
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;considering the code written in the previous section, we can now add to it as follow:&lt;/p&gt;
+
+&lt;p&gt;```javascript
+// a simple readable approach to writing regex using variables.
+var twoDigit = /\d{2}/;
+var mmm = /\d{3}/;
+var timeCode = /twoDigit:twoDigit:twoDigit,mmm/;&lt;/p&gt;
+
+&lt;p&gt;var twoTimeCodes = /timeCode –&amp;gt; timeCode/;&lt;/p&gt;
+
+&lt;p&gt;console.log(twoTimeCodes.test(“00:00:06,500 –&amp;gt; 00:00:10,790”));
+```&lt;/p&gt;
+
+&lt;p&gt;how much easyer was that? we just had to add this line:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+var twoTimeCodes = /timeCode --&amp;gt; timeCode/;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and change what var we were using to run the test to this last one.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+console.log(twoTimeCodes.test(&quot;00:00:06,500 --&amp;gt; 00:00:10,790&quot;));
+&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 May 2015 10:15:00 -0400</pubDate>
+        <link>http://pietropassarelli.com//regex.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//regex.html</guid>
+      </item>
+    
+      <item>
+        <title>Interactive databate #buildTheNews</title>
+        <description>&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/hackaton2.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/hackaton2.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+For the Times Build the news hackathon we decided to do system that given a video would generate transcription, identify the different speakers, provide summary of main topics and keywords as well as emotional charge of the speaker.&lt;/p&gt;
+
+&lt;p&gt;We decided to use the upcoming elections debate  as a use case, but this could be generalised to other interview based video content.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/interactive_debate.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/interactive_debate.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And provide a analytics dashboard for the journalist to view a heat map of:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;most viewed&lt;/li&gt;
+  &lt;li&gt;most commented&lt;/li&gt;
+  &lt;li&gt;most shared&lt;/li&gt;
+  &lt;li&gt;emotions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;of the viewers engagement with the piece.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/dashboard.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/dashboard.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+ This we felt is also very important. For instance,   if you are a journalist writing on that debate looking at this data could give you clues about what your readers are already thinking about it, and make it easier to engage in a conversation them in your next article. As well as other possible use cases where analytics  of this kind would be useful.&lt;/p&gt;
+
+&lt;div class=&quot;videoWrapper&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/nn6VvKA4sjI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/1DLjz__UifA39VrqUQM3-RP7s8ZDBMZWWhuR4qX80Deg/embed?start=false&amp;amp;loop=false&amp;amp;delayms=5000&quot; frameborder=&quot;0&quot; width=&quot;480&quot; height=&quot;389&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;the-concept&quot;&gt;The Concept&lt;/h2&gt;
+&lt;p&gt;In terms of the analyses of the video based interview the ambition was that of using existing technology a round natural language processing, and sentiment analysis technology to give an insight into the &lt;a href=&quot;http://en.wikipedia.org/wiki/Subtext&quot;&gt;subtext&lt;/a&gt; of an interview.&lt;/p&gt;
+
+&lt;p&gt;on the morning of the hackathon I was reading through &lt;a href=&quot;http://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/&quot;&gt;the New York Times innovation report&lt;/a&gt; for some inspiration, when it mentioned that very often interactive project for the news are done as a one off, and that a more sustainable approach would be to create structures where form and content could be separated to make it reusable.&lt;/p&gt;
+
+&lt;h2 id=&quot;technology-used&quot;&gt;Technology used&lt;/h2&gt;
+&lt;p&gt;We drew on a number of open source technology, APIs and libraries&lt;/p&gt;
+
+&lt;p&gt;We used ruby on rails and bootstrap as underlying framework, as well as  HTML, CSS, and javascript for the front end.
+But considered the tight turnaround we didn’t have time to integrate the various API with our system, so we decided to treat it like an R&amp;amp;D project (Research and Development) where you find all the components and make sure they integrate before actually building the product. So we processed all the various system calls one at a time passing the output a round between the various components , and then hardcoded an interactive high fidelity mockup.  And all that was left then was to bring it all together into a full fledge application.&lt;/p&gt;
+
+&lt;p&gt;These are some of the technologies we used:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Speech to Text  (&lt;a href=&quot;https://developers.google.com/youtube/v3/docs/captions&quot;&gt;Youtube Captioning&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www-lium.univ-lemans.fr/diarization/doku.php&quot;&gt;Speaker diarization  (Lium - same library used by BBC)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Sentiment Analysis Topic &amp;amp; Keywords  (&lt;a href=&quot;http://www.monkeylearn.com&quot;&gt;Monkey Learn&lt;/a&gt; )&lt;/li&gt;
+  &lt;li&gt;Summarization  (&lt;a href=&quot;http://autosummarizer.com&quot;&gt;Text Summarization API&lt;/a&gt; )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/maboa/hyperaudioconverter&quot;&gt;Srt → HTML (library)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/maboa/uselect&quot;&gt;Social media Share (library)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/maboa/uselect&quot;&gt;Interactive transcriptions&lt;/a&gt; , using &lt;a href=&quot;http://popcornjs.org&quot;&gt;popcorn library&lt;/a&gt; . from opensource &lt;a href=&quot;http://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html?k=economy&amp;amp;t=1000&quot;&gt;Aljazeera US Election Debate Hyperaudio&lt;/a&gt; .&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/sharing.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/sharing.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/presentation.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/presentation.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/presentation2.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/presentation2.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/hackaton.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/hackaton.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;photo credit &lt;a href=&quot;https://twitter.com/mattietk&quot;&gt;@MattieTK&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;https://www.journalism.co.uk/news/5-digital-storytelling-ideas-from-build-the-news/s2/a564659/&quot; title=&quot;Article on journalism.co.uk&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/journalismuk.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;!-- 
+- gist of the project 1 paragraph
+ie: provided a video it would generate all these things in automatic using external APIs(see google doc for newspaper article)
+- inspiration from NY times innovation report, snow builder.
+- tech used
+- opensource project used (aljazeera hyperaudio hypertranscript, srt to hypertranscript, etc.. see team google doc )
+ --&gt;
+
+</description>
+        <pubDate>Wed, 29 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://pietropassarelli.com//buildTheNews.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//buildTheNews.html</guid>
+      </item>
+    
+      <item>
+        <title>autoEdit, digital paper-editing</title>
+        <description>&lt;p&gt;Landing page promo&lt;/p&gt;
+&lt;div class=&quot;videoWrapper&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/BHvq99OOUVo&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;25th March 2015 autoEdit at Hacks/Hackers London Meetup, Twitter.&lt;/p&gt;
+
+&lt;div class=&quot;videoWrapper&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/tNytt0WA5C0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;We have all been there, you got some great interviews and you are finally starting post-production. But no time to paper edit, let alone to work with transcriptions, and crafting the story out of the footage becomes a struggle, like wrestling with a bear.
+This is where autoEdit comes in, to simplify and speed-up video editing interviews.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/autoEdit/autoEditLandingPageFinal.png&quot; data-lightbox=&quot;autoEdit&quot; title=&quot;autoEdit&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/autoEdit/autoEditLandingPageFinal.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It’s a digital paper editing software. For those less familiar with it, a paper edit is a script made from a selection of lines from the transcriptions of interviews.&lt;/p&gt;
+
+&lt;p&gt;With autoEdit, you can analyse your transcripts and mark them with tags&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/autoEdit/autoEditScreenShot_05.png&quot; data-lightbox=&quot;autoEdit&quot; title=&quot;autoEdit&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/autoEdit/autoEditScreenShot_05.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;and create a paper edit,&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/autoEdit/autoEditScreenShot_08.png&quot; data-lightbox=&quot;autoEdit&quot; title=&quot;autoEdit&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/autoEdit/autoEditScreenShot_08.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;that you can then export as an EDL.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/autoEdit/autoEditScreenShot_09.png&quot; data-lightbox=&quot;autoEdit&quot; title=&quot;autoEdit&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/autoEdit/autoEditScreenShot_09.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can then open in the editing software of your choice to reconnect the corresponding video into a sequence,&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/autoEdit/autoEditScreenShot_10.png&quot; data-lightbox=&quot;autoEdit&quot; title=&quot;autoEdit&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/autoEdit/autoEditScreenShot_10.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+and finish working on your rough-cut assembly.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/autoEdit/autoEditScreenShot_11.png&quot; data-lightbox=&quot;autoEdit&quot; title=&quot;autoEdit&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/autoEdit/autoEditScreenShot_11.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For the transcriptions, autoEdit, takes .sbv and .srt subtitles files.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/autoEdit/autoEditScreenShot_02.png&quot; data-lightbox=&quot;autoEdit&quot; title=&quot;autoEdit&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/autoEdit/autoEditScreenShot_02.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;and the suggested workflow is to use youtube semi-automated captioning, to get a first draft of the timecoded transcriptions, that you can then proofread. Google/Youtube is very accurate at putting timecodes at the end of sentences, which is one less thing to do.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/autoEdit/autoEditScreenShot_01.png&quot; data-lightbox=&quot;autoEdit&quot; title=&quot;autoEdit&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/autoEdit/autoEditScreenShot_01.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Initially prototyped using two ruby scripts to convert from &lt;a href=&quot;https://github.com/pietrop/sbv-to-csv&quot;&gt;SBV to CSV&lt;/a&gt; and from &lt;a href=&quot;https://github.com/pietrop/csv_to_edl&quot;&gt;CSV to EDL&lt;/a&gt; and using Google Spreedsheet for paper-editing &lt;a href=&quot;http://pietropassarelli.com/tech/articles/2013/12/02/sbv-csv/&quot; target=&quot;_blank&quot;&gt;see this post for more on this&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.autoEdit.io&quot; target=&quot;_blank&quot;&gt;
+Sign up&lt;/a&gt; to find out more and start using autoEdit.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://pietropassarelli.com//autoEdit.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//autoEdit.html</guid>
+      </item>
+    
+      <item>
+        <title>Audava London based Startup, online audio stories</title>
+        <description>&lt;!-- TBC, screenshots from report. + paragraphs from report hilighting cool tech used to make it, ie encripting etc.. 
+
+also mentioned won UCL app award 2015.
+--&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;http://pietropassarelli.com/img/audava/audava-sketch.jpeg&quot; data-lightbox=&quot;Audava&quot; title=&quot;Audava&quot;&gt;
+
+&lt;img src=&quot;http://pietropassarelli.com/img/audava/audava-sketch.jpeg&quot; alt=&quot;photo&quot; /&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Using &lt;a href=&quot;&quot;&gt;Record.Js&lt;/a&gt; the user can either record audio directly from the application or upload an audio file. The application let’s the user playback the file using &lt;a href=&quot;&quot;&gt;audio.js&lt;/a&gt; and provides an encripted URL to securily share the audio recording with others (who may not be users of the application).&lt;/p&gt;
+
+&lt;p&gt;This was a group project in a team of 3, and also included an HCI component of making sketches and mockups and establishing user requirements.&lt;/p&gt;
+
+&lt;p&gt;One of the most interesting part was implementing the encripted URL, to allow users to share their audio with ‘non-users’ of the application.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;http://pietropassarelli.com/img/audava/audava_02.jpeg&quot; data-lightbox=&quot;Audava&quot; title=&quot;Audava&quot;&gt;
+
+&lt;img src=&quot;http://pietropassarelli.com/img/audava/audava_02.jpeg&quot; alt=&quot;photo&quot; /&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;http://pietropassarelli.com/img/audava/audava_03.jpeg&quot; data-lightbox=&quot;Audava&quot; title=&quot;Audava&quot;&gt;
+
+&lt;img src=&quot;http://pietropassarelli.com/img/audava/audava_03.jpeg&quot; alt=&quot;photo&quot; /&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;http://pietropassarelli.com/img/audava/audava_04.jpeg&quot; data-lightbox=&quot;Audava&quot; title=&quot;Audava&quot;&gt;
+
+&lt;img src=&quot;http://pietropassarelli.com/img/audava/audava_04.jpeg&quot; alt=&quot;photo&quot; /&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;http://pietropassarelli.com/img/audava/audava_05.jpeg&quot; data-lightbox=&quot;Audava&quot; title=&quot;Audava&quot;&gt;
+
+&lt;img src=&quot;http://pietropassarelli.com/img/audava/audava_05.jpeg&quot; alt=&quot;photo&quot; /&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;http://pietropassarelli.com/img/audava/audava_06.jpeg&quot; data-lightbox=&quot;Audava&quot; title=&quot;Audava&quot;&gt;
+
+&lt;img src=&quot;http://pietropassarelli.com/img/audava/audava_06.jpeg&quot; alt=&quot;photo&quot; /&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;http://pietropassarelli.com/img/audava/audava_07.jpeg&quot; data-lightbox=&quot;Audava&quot; title=&quot;Audava&quot;&gt;
+
+&lt;img src=&quot;http://pietropassarelli.com/img/audava/audava_07.jpeg&quot; alt=&quot;photo&quot; /&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;http://pietropassarelli.com/img/audava/audava_08.jpeg&quot; data-lightbox=&quot;Audava&quot; title=&quot;Audava&quot;&gt;
+
+&lt;img src=&quot;http://pietropassarelli.com/img/audava/audava_08.jpeg&quot; alt=&quot;photo&quot; /&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;http://pietropassarelli.com/img/audava/audava_09.jpeg&quot; data-lightbox=&quot;Audava&quot; title=&quot;Audava&quot;&gt;
+
+&lt;img src=&quot;http://pietropassarelli.com/img/audava/audava_09.jpeg&quot; alt=&quot;photo&quot; /&gt;
+
+&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;hr /&gt;
+
+</description>
+        <pubDate>Thu, 01 Jan 2015 00:00:00 -0500</pubDate>
+        <link>http://pietropassarelli.com//audava.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//audava.html</guid>
+      </item>
+    
+  </channel>
+</rss>

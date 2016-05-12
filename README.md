@@ -114,7 +114,7 @@ if you give images a sequential name, you can use ruby and liquid tag to loop th
 
 use `<div class="videoWrapper">`
 
-### Vimeo 
+### Vimeo
 ```html
 <div class="videoWrapper">
 <iframe src="//player.vimeo.com/video/{{page.vimeo}}?title=0&amp;byline=0&amp;portrait=0" width="560" height="315" frameborder="0" ></iframe>
@@ -127,7 +127,7 @@ use `<div class="videoWrapper">`
 <iframe width="560" height="315" src="//www.youtube.com/embed/{{page.youtube}}" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## link 
+## link
 
 Using `[text](www.url.com){:target="_blank"}` equivalent to open in new tab.
 
@@ -143,7 +143,7 @@ Using `[text](www.url.com){:target="_blank"}` equivalent to open in new tab.
 [order by tag](http://www.minddust.com/post/tags-and-categories-on-github-pages/)
 
 
-## Draft 
+## Draft
 using `published: false` in yalm header you can treat some posts as drafts.
 
 <!-- ## Can also setup a draft true  field
@@ -257,3 +257,11 @@ Hyde's page orientation can be reversed with a single class.
 Open sourced under the [MIT license](LICENSE.md).
 
 <3
+
+
+
+<!-- https://stackoverflow.com/questions/35167549/jekyll-dependency-error-when-upgrading-from-2-x-to-3-x
+
+bundle install
+
+bundle exec jekyll serve -->

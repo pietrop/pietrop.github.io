@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link href="http://gmpg.org/xfn/11" rel="profile">
 
+
+
   <title>
     Beyond 'video as black boxes' &middot; 
     Tips Tricks & Quick Fix
@@ -73,10 +75,10 @@
 <li><a class="icon-envelope" href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..." class="author-social" target="_blank"><i class="icon-mail"></i> e-mail</a> <span ></span></li>
 
 
-<li><a class="icon-phone" href="tel:00447936180742"> Phone</a></li>
 
 
-<li><a  class="icon-skype" href="skype:jasszz?call"> Skype</a></li>
+
+
 
 
 <li><a class="icon-facebook" href="https://www.facebook.com/pietro.passarelli"  target="_blank"> Facebook</a></li>
@@ -96,9 +98,9 @@
 
 
 
-<li><a class="icon-vimeo" href="https://vimeo.com/pietropassarelli"  target="_blank"> Vimeo</a></li>
 
-<li><a class="icon-youtube" href="https://www.youtube.com/user/jaszjasm"  target="_blank"> YouTube </a></li>
+
+
 
 
 
@@ -165,33 +167,37 @@ class="icon-list-alt"
 
    
 <hr>
-  <p>This is a modified version of the second chapter, literature review, of the final project dissertation I did for UCL Msc in CS (2015).</p>
+  <p>This is a modified version of <a href="https://dl.dropboxusercontent.com/u/449999/dissertation_report_github_repo_link/pietro_passarelli_2015COMPGC99G_.pdf">the second chapter, literature review, of the final project dissertation I did for UCL Msc in CS (2015)</a>.</p>
 
 <p>The project consisted of identifying a problem statment, and developing a software application as part of a placement at The Times &amp; Sunday Times in London.</p>
 
 <p>The resulting application was <a href="http://pietropassarelli.com/quickQuote.html">quickQuote, a tool to easily identify and share video quotes, you can read more about it here</a>.</p>
 
-<p>The porpuse of this blog post is to keep an up to date list of projects that are doing interesting things to do with video on the web. I am mostly interested in projects were we go behinnd video as black box on the web, and get a programmatic access into the video. Often times this is done with the use of time-coded transcriptions.</p>
+<p>The porpuse of this blog post is to keep an up to date list of projects that are doing interesting things to do with video on the web. I am mostly interested in projects were we go beyond “videos as black boxes” on the web, and get a programmatic access into the video. Often times this is done with the use of time-coded transcriptions.</p>
+
+<hr />
 
 <h2 id="background">Background</h2>
 
 <h3 id="newsroom-challenges">Newsroom challenges</h3>
-<p>To best understand the challenges in developing software in a news environment, I referred to the leaked New York Times Innovation report.
+<p>To best understand the challenges in developing software in a news environment, I referred to the <a href="http://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/">leaked New York Times Innovation report</a>.
  <!-- ref --></p>
 
 <!-- expand -->
-<p>The biggest issue highlighted in the report was that flagship projects such as snow fall <!-- ref -->
+<p>The biggest issue highlighted in the report was that flagship projects such as <a href="http://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek">snow falls</a>  <!-- ref -->
 were time consuming and a lot of effort went into the making of a one of piece with a relatively short life span.</p>
 
 <blockquote>
-  <p>We are focused on building tools to create <a href="http://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek">snow falls</a> every day, and getting them as close to reporters as possible. I’d rather have a snow-fall builder then a snowfall.
-- Kevin Delaney, editor of Quartz <a href="http://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/">p36 NY Times Innovation report on NiemLab</a></p>
+  <p>We are focused on building tools to create snow fall every day, and getting them as close to reporters as possible. I’d rather have a snow-fall builder then a snowfall.
+- Kevin Delaney, editor of Quartz <a href="http://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/">p36 NY Times Innovation report</a></p>
 </blockquote>
 
 <p>The NY Times competitors such as BuzzFeed, were instead able to separate form from content. The best example is a <a href="http://www.nytimes.com/interactive/2013/12/20/sunday-review/dialect-quiz-map.html?_r=0">dialect quiz by the NY Times</a>, that was widely popular, and BuzzFeed, inspired by the format made a <a href="http://www.buzzfeed.com/ariellecalderon/buzzfeed-quiz-guide#.tt6LgemGe">“Quizz builder”</a>
 and after the first release, published 20 variations with minimal effort.</p>
 
 <p>This consideration of building a system rather then a one of editorial piece is the initial inspiration behind most of the projects I’ve been working on, which you can read more about here: <a href="http://pietropassarelli.com/autoEdit.html">autoEdit</a>, <a href="http://pietropassarelli.com/buildTheNews.html">Interactive databate #buildTheNews</a>, <a href="http://pietropassarelli.com/oneStory.html">OneStory at BBC #newsHack</a>, <a href="http://pietropassarelli.com/quickQuote.html">quickQuote - Times &amp; Sunday Times</a>.</p>
+
+<p>At the end of this post, I’ll give a summary of each one of these in relation to the other projects described below.</p>
 
 <h3 id="vark">V.A.R.K.</h3>
 <p>The other consideration that guides most of the projects I work on comes from <a href="http://vark-learn.com/the-vark-questionnaire/">VARK</a>, idea of the variety of learning styles.</p>
@@ -201,15 +207,15 @@ Applying this consideration to the publishing of news article, forces  us to re-
 
 <p>As a practicl example, in the making of <a href="http://pietropassarelli.com/quickQuote.html">quickQuote</a> this consideration guided a lot of the assumptions to test through the investigation of the problem. And in fact in the final web application the process of adding the corresponding video segment to a text quote, is taking into account the variety of learning styles. As the viewer is being delivered information both through auditory and reading and writing.</p>
 
-<h2 id="projects">Projects</h2>
+<hr />
 
 <p>I am now going to consider similar solutions and different approaches to working with video transcriptions on the web.
 These are going to be divided into tools, and editorial.
 Tools are those projects that allow the user to make something, such as provided a video and returning transcriptions. While editorial are those projects that are more about the content and the delivery of information. I will start with the editorial project as we will see, in this context  they often are a starting point for developing tools.</p>
 
-<h3 id="editorial">Editorial</h3>
+<h2 id="editorial-projects">Editorial Projects</h2>
 
-<h5 id="aljazeera-debate-obama---romney">Aljazeera Debate Obama - Romney</h5>
+<h3 id="aljazeera-debate-obama---romney">Aljazeera Debate Obama - Romney</h3>
 
 <p><a href="http://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html"><img src="/img/img_chp2_context/aljazeera_obama_romney.png" alt="Aljazeera Obama-Romney Debate - Mark Boas" /></a></p>
 
@@ -221,10 +227,10 @@ Tools are those projects that allow the user to make something, such as provided
 
 <p>I looked into the code from this open source project by <a href="https://twitter.com/maboa">Mark Boas</a>  both at <a href="pietropassarelli.com/buildTheNews.html">The Times Build the news hackaton</a> and at <a href="pietropassarelli.com/oneStory.html">BBC news hackaton</a>.</p>
 
-<p>Some of the differences from my implementation are due to the technology that was available at the time it was implemented.
-It uses <a href="http://jplayer.org/">JPlayer</a>, it’s not responsive, and does not use <a href="getbootstrap.com">bootstrap</a>.
-It uses <a href="http://popcornjs.org">popcorn js</a> to make the hypertranscript connection with the video.
-While I decided to make the most of the <a href="http://www.html5rocks.com/en/tutorials/video/basics/">HTML5 Video tag</a> for that feature.</p>
+<p>Some of the constraints in this implementation are due to the technology that was available at the time it was implemented.
+It uses <a href="http://jplayer.org/">JPlayer</a>, it’s not responsive, and it uses <a href="http://popcornjs.org">popcorn js</a> to make the hypertranscript connection with the video.</p>
+
+<!-- To use more up to date technology the [HTML5 Video tag](http://www.html5rocks.com/en/tutorials/video/basics/) can be used to achieve the same hypertranscript. -->
 
 <p>It’s also interesting about this project that the developer put an <a href="https://en.wikipedia.org/wiki/Easter_egg_(media)#Software">“Easter egg”</a> that would let the user play only the sentences with a certain word in it, adding the query in the URL <code>?k=economy&amp;t=1000</code>.
 Where “economy” could be any keyword, and <code>t</code> is for the time interval we wish to assign to each sentence.</p>
@@ -235,7 +241,7 @@ Where “economy” could be any keyword, and <code>t</code> is for the time int
 
 <p>This feature is similar to the <code>video grep</code> project discussed below.</p>
 
-<h5 id="aljazeera-obama-state-of-the-union-archive">Aljazeera Obama state of the union archive</h5>
+<h3 id="aljazeera-obama-state-of-the-union-archive">Aljazeera Obama state of the union archive</h3>
 <p>This project generalises the previous one at an archive level.
 But again as far as I am aware no automation was used to deal with the transcriptions or the different video input.</p>
 
@@ -245,15 +251,14 @@ But again as far as I am aware no automation was used to deal with the transcrip
 
 <p>Also interesting about this project, is that there is a section providing a summary for each video.</p>
 
-<h5 id="palestinian-remix">Palestinian remix</h5>
+<h3 id="palestinian-remix">Palestinian remix</h3>
 
 <p><img src="/img/img_chp2_context/palestineremixer.png" alt="Hyperaudio" />
-<a href="http://interactive.aljazeera.com/aje/PalestineRemix">Palestinian remix</a>
-It’s an archive of documentary film about palestine, that allows the viewer/user to create their own text based edit. See <a href="http://interactive.aljazeera.com/aje/PalestineRemix/remix_main.html#!/1">demo</a></p>
+<a href="http://interactive.aljazeera.com/aje/PalestineRemix">Palestinian remix</a> by Aljazeera is an archive of documentary film about palestine, that allows the viewer/user to create their own text based edit. See <a href="http://interactive.aljazeera.com/aje/PalestineRemix/remix_main.html#!/1">demo</a></p>
 
 <p>However the “final cut” cannot be exported as video file, but can be shared online.</p>
 
-<h5 id="mandela-speech">Mandela speech</h5>
+<h3 id="mandela-speech">Mandela speech</h3>
 <p>The Times &amp; Sunday Times newsroom develoepr <a href="https://twitter.com/aendrew">Ændrew Rininsland</a> made piece about Mandela (paywall).
 The Hypertranscript was done using using <a href="http://hyperaud.io/converter/">hyper audio converter</a> (<a href="https://github.com/hyperaudio/ha-converter">code on gihub</a>) component of hyperaudio,
 But the transcription was done manually using  VLC and Notepad and subsequently a software to make subtitles, adding the text with in and out points, to then get an srt to convert in hypertranscript maker. Which as you can imagine was a time consuming process.</p>
@@ -264,104 +269,17 @@ But the transcription was done manually using  VLC and Notepad and subsequently 
 
 <p>Built with a Google docs-based back-end using <a href="https://github.com/times/doctop">doctop</a> and <a href="Bootstrap">getbootstrap.com</a> front-end.</p>
 
+<!-- and [popcornjs.org] for hypertranscript -->
+
 <p>However the project relying on google doc as a backend, through <a href="https://github.com/times/doctop">doctop</a> or <a href="https://github.com/jsoma/tabletop">tabletop</a> are at risk of being effected by google changes in the API.</p>
 
 <p>Perhaps better solution to make the most of the convenience of using google docs as a CMS for the journalist would be to keep google docs in sync with a database that updates the application. this way if the connection between the database and google docs where to drop due to changes in the API the front end of the application would not be effected.</p>
 
-<h4 id="tools">Tools</h4>
+<hr />
 
-<h5 id="f5-transcription">F5 Transcription</h5>
+<h2 id="tools">Tools</h2>
 
-<p><a href="https://www.audiotranskription.de/english/f4.htm">F5</a> is a transcription tool, made by German academics. It allows the user to transcribe a video manually, with a convenient interface the application provides timecode stamps on new line input.</p>
-
-<p><img src="/img/img_chp2_context/F5_transcription.png" alt="F5 Transcriptions" /></p>
-
-<h5 id="f4-analyses">F4 Analyses</h5>
-<p>in subsequent versions of F5 they released F4 analyse, which allows to takes those same transcriptions and add human tagging to it for qualitative analyses.</p>
-
-<p>Very interesting is the idea of providing insight into text of transcription coding it’s content with tags, and adding summary, this however is done manually by the user, while during the investigation I was interested in automating this part.</p>
-
-<h5 id="otranscribe">oTranscribe</h5>
-<p>Made by newsroom developer at WSJ <a href="https://twitter.com/elliot_bentley">Elliot Bentley</a> it’s very popular with journalists.
-<!-- ref http://otranscribe.com --></p>
-
-<p>It facilitates manual transcriptions of video and audio, with intuitive interface and a few keyboards short-cuts.</p>
-
-<p><img src="/img/img_chp2_context/oTranscribe.png" alt="oTranscribe - WSJ" /></p>
-
-<p>No automation of the transcription process thou.</p>
-
-<p>supports adding time stamps similarly to F5, and it lets the user export as markdown, plain text or json. As well as to save to Google drive.</p>
-
-<h5 id="youtube-captioning">YouTube captioning</h5>
-<p>YouTube has a captioning service and clickable transcriptions.
-However their transcription is mostly aimed at subtitles and even in the transcription view, it’s not word accurate, it’s line accurate, perhaps because it uses the subtitle file generated during the captioning to model the hyper-transcript.</p>
-
-<p><img src="/img/img_chp2_context/youtube_captioning_transcriptions.png" alt="YouTube Captioning Transcriptions" /></p>
-
-<p><img src="/img/img_chp2_context/youtube_captions.png" alt="YouTube editor to edit captions" /></p>
-
-<p>The advantage of YouTube automated captioning is that it is constantly improving and becoming more and more accurate. The screenshots above might in fact be out of date already and is worth looking it up for yourself to see if anything interesting as changed from the time of writing.</p>
-
-<p>YouTube also provides a <a href="https://developers.google.com/youtube/v3/docs/captions/download">data API</a>to retrieve captions.
-however it was not clear how you would go about retrieve automatically generated captions through the API, as these need for the language to be set before the caption is generated.</p>
-
-<p>But most importantly the disadvantage is that, in version two google announced it was going to discontinue access to the captioning service through the API.</p>
-
-<p>However despite this still being available through version 3 of the API.</p>
-
-<p>Google/YouTube might have no commitment on their part in maintaining this service as part of the API long term, as they have recently launched launched <a href="https://cloud.google.com/speech/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=2015-q2-cloud-na-solutions-bkws-freetrial-en&amp;gclid=Cj0KEQjwrZ24BRC098fr-OqnuMkBEiQAKQ9lgJaRlwhGeDmdGPm8XAJSXwEal7jlBEy6DH1Tyt2g3VUaAm6S8P8HAQ">Cloud Speech API</a>.</p>
-
-<p>Automatically generated transcriptions are a big component of these type of project. Therefore is sensible to define an interface for the speech to text API component in order to be able to change speech to text provider in the future should the service being discontinued, or found a better solution.</p>
-
-<h5 id="spoken-data">Spoken data</h5>
-
-<p><img src="/img/img_chp2_context/spokendata.png" alt="spokendata" /></p>
-
-<!-- Despite having used YouTube captioning for great part of the prototyping of projects mentioned at the beginning of the post, to get the `srt` file of the transcription as in input to the application before integrating the speech to text api component. when it come to implement such component Spoken data turned out to be a better fit. -->
-
-<p>Spoken data is mostly tailored at small teams of professional transcribers, but also individuals requiring transcriptions.
-<!-- ref --></p>
-
-<p>With it being a smaller company they were more responsive in making changes.
-For instance I needed to be able to delete a video uploaded to their system through the API,(to avoid issues of duplicates in their dashboard if the user uploads, deleted and uploads again the same video in my application) and they were very quick at implementing that feature.</p>
-
-<p>They also provided other functionalities such as a view to edit the transcription, with a defined URL that can be accessed with the <code>uid</code> of the video. This could be useful to give the users of my app a way to edit automated transcriptions without having to implement it from scratch.</p>
-
-<p><code>
-http://spokendata.com/transcription/5937
-</code></p>
-
-<p>For more on their <a href="https://spokendata.com/api-for-developers">API see here</a>, which also provides speaker diarization.</p>
-
-<p>Spoken data also offer the option to pay a human through their system to go over the transcriptions and make them 100% accurate. Which is a great option if you want to outsource your transcriptions completly but retain some control over the process.</p>
-
-<p>Checkout the <a href="https://spokendata.com/demo/start">demo account</a>.</p>
-
-<h5 id="trint">Trint</h5>
-
-<p>If you are looking for a semi automated workflow when working with transcription, where a first draft is generated for you automatically and you can then review and polish it up, <a href="https://trint.com/">Trint</a> has probably the best, easiest user experience.</p>
-
-<p><img src="/img/img_chp2_context/trint.png" alt="Trint" /></p>
-
-<p>However Trint is not open source and it is a commercial project. But they do give you some free time to begin with if you want to check it out.</p>
-
-<p>Interesting is the possibility, borrowed from the autoEdit export to EDL component, to export selections as EDL.</p>
-
-<h5 id="hypertrasncript-converter">Hypertrasncript converter</h5>
-<p><a href="https://twitter.com/maboa">Mark Boas</a> has automated the process of parsing srt files into an hypertranscript with an <a href="https://github.com/maboa/hyperaudioconverter">hypertranscript converter</a> written in JavaScript, this library was developed to support hyperaudio pad project .</p>
-
-<p>It’s all  client facing javascript</p>
-
-<p><img src="/img/img_chp2_context/hyperaudio_converter.png" alt="hyperaudio converter - Mark Boas" /></p>
-
-<p>From the line accurate time code of the srt file it works out a word accurate hypertranscript, with each word in a span tag with a relative time attribute.</p>
-
-<p>The parses was initially from the <a href="https://github.com/mozilla/popcorn-js/blob/master/parsers/parserSRT/popcorn.parserSRT.js">popcorn library <code>popcorn.parserSRT.js</code></a></p>
-
-<!-- an analyses of this algorithm, can be found in the appendix, as this was converted from js to ruby to move this conversion logic in the back end of the application. -->
-
-<h5 id="video-grep">Video grep</h5>
+<h3 id="video-grep-open-source">Video grep (open source)</h3>
 
 <p>A project by <a href="https://twitter.com/sam_lavigne">Sam Lavine</a> (<a href="http://lav.io/">blog</a>), as name suggests <a href="http://lav.io/2014/06/videogrep-automatic-supercuts-with-python/">video grep</a> (<a href="https://github.com/antiboredom/videogrep">code on github</a> ) it’s a command line utility to search audio or video file and return a file with cut segment.</p>
 
@@ -392,7 +310,7 @@ you can search and <a href="https://www.youtube.com/watch?v=PQMzOUeprlk">return 
 It is a long time. The original Apprentice video, we were working on it on and off for a couple of months. This new one we’ve done is well over a month. If you think about just watching the material, say a boardroom scene lasts half an hour, it will actually take an hour, an hour and half to get through it the first time around. You just keep stopping it, taking samples of bits that might be useful, filing them and then categorising them. So you can only do a few episodes per day.</p>
 </blockquote>
 
-<h5 id="bbc-snipets">BBC Snipets</h5>
+<h3 id="bbc-snipets-internal-to-bbc">BBC Snipets (internal to BBC)</h3>
 <p>It allows BBC employees to search for programs in the BBC Archive(going back only to the last 5 years), searching across the text of the subtitles. It uses a form of hyper-transcript  to keep audio and video in sync, and allows to cut video segment from BBC archive.</p>
 
 <p><img src="/img/img_chp2_context/BBC_snippets.jpg" alt="BBC Snipets " /></p>
@@ -404,7 +322,7 @@ It is a long time. The original Apprentice video, we were working on it on and o
 <p>No form of analyses on transcription, auto tagging, summarization provided.
 most importantly the cutting of the video segment is done at the level of the video time-line. and not of the text.</p>
 
-<h5 id="moments----prototype">moments  - prototype</h5>
+<h3 id="moments----prototype-open-source">Moments  - prototype (open source)</h3>
 
 <p><a href="https://github.com/times/moments">Moments</a> is a web application proof of concept that allows a user to add an inline drop-down video snippet to a text article. It uses a CMS for the journalist and has a published view for the viewer. It does not use transcriptions.
 From this project I initially got the idea for an inline text dropdown of a video element for quickQuote.</p>
@@ -413,7 +331,7 @@ From this project I initially got the idea for an inline text dropdown of a vide
 
 <p>It was prototyped by the <a href="https://github.com/times">(London) Times Digital Team</a> and is the winner of the 2014 Editors Lab at GENSummit2014. However as mentioned this is a proof of concept and not a fully working application.</p>
 
-<h5 id="hyperaudio">hyperaudio</h5>
+<h3 id="hyperaudio-open-source">hyperaudio (open source)</h3>
 
 <p><img src="/img/img_chp2_context/hyperaudio.png" alt="Hyperaudio" /></p>
 
@@ -428,7 +346,7 @@ From this project I initially got the idea for an inline text dropdown of a vide
 <p>You can however upload a srt file to convert it into an hypertranscript.
 and you can transcribe a video to create an hypertrnascript using their system.</p>
 
-<h5 id="predit">prEdit</h5>
+<h3 id="preditpayed">prEdit(payed)</h3>
 
 <p><img src="/img/img_chp2_context/prEdit.png" alt="prEdit" /></p>
 
@@ -443,6 +361,218 @@ and you can transcribe a video to create an hypertrnascript using their system.<
 <p><a href="http://www.philiphodgetts.com/2012/01/text-is-the-new-timecode/">Interesting article on the idea behind it</a>.</p>
 
 <!-- RELATED WORK-->
+
+<hr />
+
+<h2 id="transcriptions-tools">Transcriptions Tools</h2>
+
+<h3 id="otranscribe-open-source">oTranscribe (open source)</h3>
+<p>Made by newsroom developer at WSJ <a href="https://twitter.com/elliot_bentley">Elliot Bentley</a> it’s very popular with journalists.
+<!-- ref http://otranscribe.com --></p>
+
+<p>It facilitates manual transcriptions of video and audio, with intuitive interface and a few keyboards short-cuts.</p>
+
+<p><img src="/img/img_chp2_context/oTranscribe.png" alt="oTranscribe - WSJ" /></p>
+
+<p>No automation of the transcription process thou.</p>
+
+<p>supports adding time stamps similarly to F5, and it lets the user export as markdown, plain text or json. As well as t</p>
+
+<h3 id="hypertrasncript-converteropen-source">Hypertrasncript converter(open source)</h3>
+<p>The developers from hyperaudio have automated the process of parsing srt files into an hypertranscript with an <a href="https://github.com/maboa/hyperaudioconverter">hypertranscript converter</a> written in JavaScript, this library was developed to support hyperaudio pad project .</p>
+
+<p>It’s all  client facing javascript</p>
+
+<p><img src="/img/img_chp2_context/hyperaudio_converter.png" alt="hyperaudio converter - Mark Boas" /></p>
+
+<p>From the line accurate time code of the srt file it works out a word accurate hypertranscript, with each word in a span tag with a relative time attribute.</p>
+
+<p>The parses was initially from the <a href="https://github.com/mozilla/popcorn-js/blob/master/parsers/parserSRT/popcorn.parserSRT.js">popcorn library <code>popcorn.parserSRT.js</code></a></p>
+
+<h3 id="pocketsphinx-open-source">Pocketsphinx (open source)</h3>
+
+<p>Based on <a href="http://cmusphinx.sourceforge.net/">CMU sphinx</a> <a href="https://github.com/cmusphinx/pocketsphinx">pocketsphinx</a> can be used to make your own speech to text recognition system.</p>
+
+<p>A great example of this implementation can be found inside video grep Mac OS X electron app <a href="http://saaaam.s3.amazonaws.com/VideoGrep.app.zip">http://saaaam.s3.amazonaws.com/VideoGrep.app.zip</a>.</p>
+
+<!-- To view this you need to download the file, and do right click to show package content, to find the node calling on the pocketsphinx library. The dictionary is setup for american english. -->
+
+<h3 id="f5-transcription-payedfree-trial">F5 Transcription (payed+free trial)</h3>
+
+<p><a href="https://www.audiotranskription.de/english/f4.htm">F5</a> is a desktop transcription tool, made by German academics. It allows the user to transcribe a video manually, with a convenient interface the application provides timecode stamps on new line input.</p>
+
+<p><img src="/img/img_chp2_context/F5_transcription.png" alt="F5 Transcriptions" /></p>
+
+<h3 id="f4-analyses-payedfree-trial">F4 Analyses (payed+free trial)</h3>
+<p>In subsequent versions of F5 they released F4 analyse, which allows to takes those same transcriptions and add human tagging to it for qualitative analyses.</p>
+
+<p>Very interesting is the idea of providing insight into text of transcription coding it’s content with tags, and adding summary, this however is done manually by the user, while using NLP APIs this part could be automated.</p>
+
+<h3 id="youtube-captioning-free">YouTube captioning (free)</h3>
+<p>YouTube has a captioning service and clickable transcriptions.
+However their transcription is mostly aimed at subtitles and even in the transcription view, it’s not word accurate, it’s line accurate, perhaps because it uses the subtitle file generated during the captioning to model the hyper-transcript.</p>
+
+<p><img src="/img/img_chp2_context/youtube_captioning_transcriptions.png" alt="YouTube Captioning Transcriptions" /></p>
+
+<p><img src="/img/img_chp2_context/youtube_captions.png" alt="YouTube editor to edit captions" /></p>
+
+<p>The advantage of YouTube automated captioning is that it is constantly improving and becoming more and more accurate. And supports a variery of languages. The screenshots above might in fact be out of date already and is worth looking it up for yourself to see if anything interesting as changed from the time of writing.</p>
+
+<p>YouTube also provides a <a href="https://developers.google.com/youtube/v3/docs/captions/download">data API</a>to retrieve captions.
+however it was not clear how you would go about retrieve automatically generated captions through the API, as these need for the language to be set before the caption is generated.</p>
+
+<p>But most importantly the disadvantage is that, in version two google announced it was going to discontinue access to the captioning service through the API.</p>
+
+<p>However despite this still being available through version 3 of the API.</p>
+
+<p>Google/YouTube might have no commitment on their part in maintaining this service as part of the API long term, as they have recently launched launched <a href="https://cloud.google.com/speech/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=2015-q2-cloud-na-solutions-bkws-freetrial-en&amp;gclid=Cj0KEQjwrZ24BRC098fr-OqnuMkBEiQAKQ9lgJaRlwhGeDmdGPm8XAJSXwEal7jlBEy6DH1Tyt2g3VUaAm6S8P8HAQ">Cloud Speech API</a>.</p>
+
+<p>Automatically generated transcriptions are a big component of these type of project. Therefore is sensible to define an interface for the speech to text API component in order to be able to change speech to text provider in the future should the service being discontinued, or found a better solution.</p>
+
+<h3 id="spoken-data-payedfree-trial">Spoken data (payed+free trial)</h3>
+
+<p><img src="/img/img_chp2_context/spokendata.png" alt="spokendata" /></p>
+
+<!-- Despite having used YouTube captioning for great part of the prototyping of projects mentioned at the beginning of the post, to get the `srt` file of the transcription as in input to the application before integrating the speech to text api component. when it come to implement such component Spoken data turned out to be a better fit. -->
+
+<p>Spoken data is mostly tailored at small teams of professional transcribers, but also individuals requiring transcriptions.
+<!-- ref --></p>
+
+<p>With it being a smaller company they were more responsive in making changes.
+For instance I needed to be able to delete a video uploaded to their system through the API,(to avoid issues of duplicates in their dashboard if the user uploads, deleted and uploads again the same video in quickQuote) and they were very quick at implementing that feature.</p>
+
+<p>They also provided other functionalities such as a view to edit the transcription, with a defined URL that can be accessed with the <code>uid</code> of the video. This could be useful to give the users of my app a way to edit automated transcriptions without having to implement it from scratch.</p>
+
+<p><code>
+http://spokendata.com/transcription/5937
+</code></p>
+
+<p>For more on their <a href="https://spokendata.com/api-for-developers">API see here</a>, which also provides speaker diarization.</p>
+
+<p>Spoken data also offer the option to pay a human through their system to go over the transcriptions and make them 100% accurate. Which is a great option if you want to outsource your transcriptions completly but retain some control over the process.</p>
+
+<p>Checkout the <a href="https://spokendata.com/demo/start">demo account</a>.</p>
+
+<h3 id="trint-payedfree-trial">Trint (payed+free trial)</h3>
+
+<p>If you are looking for a semi automated workflow when working with transcription, where a first draft is generated for you automatically and you can then review and polish it up, <a href="https://trint.com/">Trint</a> has probably the best, easiest user experience.</p>
+
+<p><img src="/img/img_chp2_context/trint.png" alt="Trint" /></p>
+
+<p>However Trint is not open source and it is a commercial project. But they do give you some free time to begin with if you want to check it out.</p>
+
+<p>Interesting is the possibility, borrowed from the autoEdit export to EDL component, to export selections as EDL.</p>
+
+<!-- an analyses of this algorithm, can be found in the appendix, as this was converted from js to ruby to move this conversion logic in the back end of the application. -->
+
+<h3 id="ibm-watson-developer-cloudpayedfree-trial">IBM Watson Developer Cloud(payed+free trial)</h3>
+<p>IBM Watson Developer Cloud, <a href="https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/speech-to-text.html">speech to text</a></p>
+
+<blockquote>
+  <p>Check out the Speech to Text demo and choose from pre-recorded audio, upload a WAV file, or record on the fly in US English, UK English, Japanese, Spanish, Brazilian Portuguese, Modern Standard Arabic, or Mandarin and watch the service in action. The API returns metadata providing timestamps, confidence, and alternative hypothesis. The demo also includes options to help Watson learn and improve.</p>
+</blockquote>
+
+<p><a href="https://speech-to-text-demo.mybluemix.net/">demo</a></p>
+
+<p><a href="https://youtu.be/Zm60MRIAY9I">demo video review</a></p>
+
+<p><a href="https://github.com/watson-developer-cloud/speech-to-text-nodejs">node library on github</a></p>
+
+<p>It seems to also work with a live audio stream, which would make it great for live video/audio applications.</p>
+
+<blockquote>
+  <p>First thousand minutes per month are FREE. Additional minutes are $0.02 per minute.</p>
+</blockquote>
+
+<p>It provides word accurate time stamps.</p>
+
+<p>In chrome and firefox you can also use the computer’s microphone through the browser, if you are working on a use case that might need that, eg user narration on a video.</p>
+
+<p>It also identifies keywords, and makes a note of the timecode they accour at.</p>
+
+<hr />
+
+<h2 id="my-projects">My Projects</h2>
+
+<p>With a background in documentary production, I have a long standing interest for story crafting, and working with transcriptions effectivly, so here are some of my projects that came out of this exploration.</p>
+
+<h3 id="autoedit">autoEdit</h3>
+<p><a href="http://pietropassarelli.com/autoEdit.html">autoEdit</a>, fast text based editing of video interviews. Is a “Digital paper editing” software.
+To make a script from a selection of lines from the transcriptions of interviews.
+You can then export as an EDL. This can be opened with the editing software of your choice to reconnect the corresponding video into a sequence, and finish working on your rough-cut assembly.</p>
+
+<!-- ref http://pietropassarelli.com/autoEdit.html -->
+<p>I am currently working on this, and have various prototypes, with different stack at different stages of development as I am trying out different approaches.</p>
+
+<h4 id="initial-prototype">Initial prototype</h4>
+<p>The initial prototype for autoEdit, consisted of two scripts. <a href="http://pietropassarelli.com/tech/articles/2013/12/02/sbv-csv/">one to parse sbv subtitles files made with youtube into a csv file</a>. to upload to google spreadsheet. And the <a href="https://github.com/pietrop/csv_to_edl">other to convert the csv file into an EDL</a>.</p>
+
+<p>I used that in an actual production I was working on, and while I saw that i worked and saved me a ton of time,  I knew it was worth spending some refining this.</p>
+
+<h4 id="rails--mvp-working-version">rails  MVP working version</h4>
+<p>The rails version in beta is available in beta at <a href="www.autoedit.io">autoedit.io</a> <a href="https://github.com/pietrop/autoEdit">code on github </a> and more detailed explanation <a href="http://pietropassarelli.com/autoEdit.html">here</a></p>
+
+<p><img src="/img/img_chp2_context/autoEdit.png" alt="autoEdit" /></p>
+
+<p>In this version the transcript is modeled after the srt file, and therefore the granularity is at line level and not work level.</p>
+
+<p>The user uplaods an srt file, makes a text based assembly and export an EDL file, that can be used to continue the editing in the video editing software of choice(Premiere, Avid, FCP7).</p>
+
+<h4 id="nodejs--nwj-prototype">nodejs + NWJ prototype</h4>
+
+<p>I am currently trying a new approach using node and nwjs to make it as a web app that can run on desktop offline, to see if this could give more flexibility to the implementation, and when working with broadcast quality footage.</p>
+
+<p>The <a href="https://github.com/pietrop/autoEdit_desktop-alpha">code is on github</a> however as I am still working on it, it’s in need of refactoring and documentation. But if you are interested do drop me an e-mail.</p>
+
+<!-- find autoEdit description somewhere else
+ -->
+
+<h3 id="build-the-news-debate-analyser-proof-of-concept">Build the news “debate analyser” proof of concept</h3>
+<p>This was a proof of concept for a system that given a video would generate transcription, identify the different speakers, provide summary of main topics and keywords as well as emotional charge of the speaker. Using the UK elections debate as a use case. Was winner of the Times “Build The News Hackaton” <!-- ref  --></p>
+
+<p><img src="http://pietropassarelli.com/img/BuildTheNews/interactive_debate.png" alt="BuildTheNewsPrototype" /></p>
+
+<p>More details <a href="http://pietropassarelli.com/buildTheNews.html">here</a>.</p>
+
+<p>The proof of concept was more of a R&amp;D research, into the feasibility of the various component, with an interactive demo.</p>
+
+<p>To see if we could find points of contacts to bring togethere from various APIs
+- automated transcriptions
+- speaker diarization
+- summarization
+- keywords extraction
+- sentiment analyses</p>
+
+<p>The code from the Obama-Romney Aljazeera debate was used as a starting point.</p>
+
+<p>This is concept could either be applied to the annotation view of autoEdit, or for projects where working with an audio or video Archive we want to get some programmatic insight into the content of the material.</p>
+
+<h3 id="onestory">oneStory</h3>
+
+<p><a href="http://pietropassarelli.com/oneStory.html">oneStory</a> came ouf of the idea of the variety of learning style V.A.R.K. as mentioned at the top of the article.</p>
+
+<p>The underlying assumption is that you could create a story editor CMS, where with defined equivalence points, the viewer could switch “medium”.</p>
+
+<p>For instance you start reading your story as an article, switch to as a podcast while you get on the bus as you are standing, switch again to it as video while you step into the tube, and finally switch to it as multimedia piece once you reach the office. Through the “app” knows where you at with the story when you make the shift.</p>
+
+<p>For more on this <a href="http://pietropassarelli.com/oneStory.html">here</a></p>
+
+<p><img src="http://pietropassarelli.com/img/newsHackOneStory/OneStory_02_Podcast.png" alt="OneStory" /></p>
+
+<p>at the Hackaton only the switch from article to podcast was demonstrated.</p>
+
+<h3 id="quickquote">quickQuote</h3>
+
+<p><a href="http://pietropassarelli.com/quickQuote.html">quickQuote</a> given a video, it sends it to spoken data speech to text API to get a transcription.</p>
+
+<p>When the transcription is done it generates a hypertranscript, that can be used to select a quote.
+Exporting a text quote, trims the corresponding video.</p>
+
+<p><img src="http://pietropassarelli.com/img/TimesAndSundayTimesQuickQuote/select.png" alt="quickquote select" /></p>
+
+<p>This can be exported either as an interactive video quote or to the twitter video API.</p>
+
+<p>I’ve since refactored the project from the original rails implementation to Node, (<a href="https://github.com/pietrop/quickQuoteNode">code on github</a>) and added suport to export/publish the video snippet to twitter, through the twitter video API.</p>
 
 </div>
 
