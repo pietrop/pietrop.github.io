@@ -4,9 +4,6 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link href="http://gmpg.org/xfn/11" rel="profile">
-
-
-
   <title>
     Create multiple folders and subfolders from bash script &middot; 
     Tips Tricks & Quick Fix
@@ -135,7 +132,7 @@
 <div class="post">
   <h1
   
-class="icon-list-alt"
+  class="icon-list-alt"
   
 
   > Create multiple folders and subfolders from bash script </h1>
@@ -155,24 +152,37 @@ class="icon-list-alt"
   <p class="lead">How to create multiple folders in one go with a bash script </p>
 
 
+  
+
+
+  
+
+  
+
+  <!-- 
+-->
 
 
 
 
+<!-- from http://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ -->
+<!-- https://medium.com/the-story/read-time-and-you-bc2048ab620c#.jwg9ar78o -->
+<span class="reading-time" title="Estimated read time">
+  
+  
+<small>    2 mins reading time <small>(based on 275 words per minute)</small> </small>
+  
+</span>
 
-   
 
-  <!--  
- -->
-
-   
 <hr>
-  <p>Let’s say I want to create a bunch of folders with subfolders, to structure some workspace, but don’t want to have to create them all individually, or even to duplicate and rename a template.</p>
+<p>Let&#39;s say I want to create a bunch of folders with subfolders, to structure some workspace, but don&#39;t want to have to create them all individually, or even to duplicate and rename a template.</p>
 
 <p>As an example, I want to create a folder structure for a number of courses, <code>GC01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99</code>  and I want all of them to have the following subfolders inside <code>readings,notes,past_exam_papers,slides</code>.</p>
 
-<h2 id="a-bash-script-in-terminal">A bash script in terminal</h2>
-<p>We can write a bash script that will do just that, first things first,let’s try it from terminal:</p>
+<h2>A bash script in terminal</h2>
+
+<p>We can write a bash script that will do just that, first things first,let&#39;s try it from terminal:</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>mkdir -p <span class="o">{</span>GC01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99<span class="o">}</span>/<span class="o">{</span>readings,notes,past_exam_papers,slides<span class="o">}</span></code></pre></figure>
 
@@ -189,17 +199,18 @@ class="icon-list-alt"
 <img class="thumb img-round img-responsive" src="/img/bash_script/subfolders.png" alt="photo" />
 </a>
 </div>
-<p><br /></p>
 
-<h2 id="folders-and-subfolders-vs-appending-names">Folders and subfolders vs appending names</h2>
+<p><br></p>
 
-<p>if I’ve had <code>_</code> instead of <code>/</code> then it would have looked like</p>
+<h2>Folders and subfolders vs appending names</h2>
+
+<p>if I&#39;ve had <code>_</code> instead of <code>/</code> then it would have looked like </p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>mkdir -p <span class="o">{</span>GC01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99<span class="o">}</span>_<span class="o">{</span>readings,notes,past_exam_papers,slides<span class="o">}</span></code></pre></figure>
 
 <p>and there would have been no subfolders, but instead it would have appended the names, with all possible combinations, ie <code>GC01_readings</code>,<code>GC02_readings</code> etc.. all at the same folder level.</p>
 
-<p>This can be usefull if you append <code>{1..10}</code> to the file, that could give them some kind of numbering, and same thing can be done with letters <code>{A..Z}</code>.</p>
+<p>This can be usefull if you append <code>{1..10}</code> to the file, that could give them some kind of numbering, and same thing can be done with letters <code>{A..Z}</code>. </p>
 
 <p>perhaps more usefull if you want/need to create a whole bunch of files.</p>
 
@@ -220,11 +231,12 @@ class="icon-list-alt"
 <img class="thumb img-round img-responsive" src="/img/bash_script/subfoldersWithImages.png" alt="photo" />
 </a>
 </div>
-<p><br /></p>
+
+<p><br></p>
 
 <p>But enough with this digression, back to our bash script.</p>
 
-<h2 id="bash-script">Bash Script</h2>
+<h2>Bash Script</h2>
 
 <p>We can now write it into a ascript using <code>vim</code> in terminal, or any other editor, as long as you give <code>.sh</code> extension to the file.</p>
 
@@ -241,55 +253,56 @@ mkdir -p <span class="o">{</span>GC01,GC02,GC03,GC04,GC05,GC06,GC16,GC18,GC99<sp
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">bash folderSubfoldersScript.sh</code></pre></figure>
 
-<h2 id="executable-bash-script">Executable bash script</h2>
+<h2>Executable bash script</h2>
 
-<p>if you want to make it into an executable file so that you don’t need to write <code>bash</code> in front of <code>folderSubfoldersScript.sh</code>. Then you just need to use <code>chmod</code> to change the file’s permissions.</p>
+<p>if you want to make it into an executable file so that you don&#39;t need to write <code>bash</code> in front of <code>folderSubfoldersScript.sh</code>. Then you just need to use <code>chmod</code> to change the file&#39;s permissions.</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">chmod +x folderSubfoldersScript.sh</code></pre></figure>
 
 <p>where <code>+x</code> makes the file executable.</p>
 
-<p>Now that it’s an executable file, to run it from terminal you just write</p>
+<p>Now that it&#39;s an executable file, to run it from terminal you just write</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">./folderSubfoldersScript.sh</code></pre></figure>
 
 <p>using <code>./</code> to run the file.</p>
 
-<h2 id="sources-and-resources">Sources and Resources</h2>
+<h2>Sources and Resources</h2>
 
 <p>from <a href="http://www.lynda.com/Bash-tutorials/Up-Running-Bash-Scripting/142989-2.html">Lynda.com up and running with bash script</a></p>
 
 </div>
 
 
-<hr>
+
+
 <div class="related">
   <h3>Related Posts</h3>
   <ul class="related-posts">
     
       <li>
         <h5>
-          <a href="/quickQuote.html">
-            quickQuote - Times & Sunday Times
-            <small>21 Jul 2015</small>
+          <a href="/wip_london_july2016.html">
+            How to craft compelling stories out of video interviews?
+            <small>17 Jul 2016</small>
           </a>
         </h5>
       </li>
     
       <li>
         <h5>
-          <a href="/oneStory.html">
-            OneStory at BBC #newsHack
-            <small>04 Jun 2015</small>
+          <a href="/articles/2016/05/26/how_to_find_out_github_release_downloads/">
+            How to know your projects github releases downloads
+            <small>26 May 2016</small>
           </a>
         </h5>
       </li>
     
       <li>
         <h5>
-          <a href="/jekyll-fenced-block.html">
-            use fenced code blocks in jekyll
-            <small>31 May 2015</small>
+          <a href="/2016/05/26/defining_hypertranscript_specs/">
+            Defining_hypertranscript_specs
+            <small>26 May 2016</small>
           </a>
         </h5>
       </li>

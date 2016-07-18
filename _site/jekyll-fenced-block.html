@@ -4,9 +4,6 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link href="http://gmpg.org/xfn/11" rel="profile">
-
-
-
   <title>
     use fenced code blocks in jekyll &middot; 
     Tips Tricks & Quick Fix
@@ -135,7 +132,7 @@
 <div class="post">
   <h1
   
-class="icon-list-alt"
+  class="icon-list-alt"
   
 
   > use fenced code blocks in jekyll </h1>
@@ -155,167 +152,170 @@ class="icon-list-alt"
   <p class="lead">A quick step by step how to use fenced code blocks in jekyll instead of liquid tags </p>
 
 
+  
+
+
+  
+
+  
+
+  <!-- 
+-->
 
 
 
 
+<!-- from http://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ -->
+<!-- https://medium.com/the-story/read-time-and-you-bc2048ab620c#.jwg9ar78o -->
+<span class="reading-time" title="Estimated read time">
+  
+  
+<small>    2 mins reading time <small>(based on 275 words per minute)</small> </small>
+  
+</span>
 
-   
 
-  <!--  
- -->
-
-   
 <hr>
-  <h2 id="why">Why?</h2>
+<h2>Why?</h2>
 
 <p>First, thing first, why? I use markdown a lot, pretty much instead of using word, I write in <a href="http://daringfireball.net/projects/markdown/">markdown</a> and export mostly into <code>rtf</code>, <code>.docx</code>, or <code>.pdf</code> using <a href="http://pandoc.org/">pandoc</a> (blog post on this workflowto come soon), and being able to just draft something, without having to think about whether I need to use liquid tags or fended blocks, depending on whether I will then publish it onto my <a href="http://jekyllrb.com/">jekyll site</a> (jekyll is a static site generator).</p>
 
-<p>So decided to install <a href="https://github.com/nono/Jekyll-plugins">a plugin from the jekyll site</a> to enable it, but it wasn’t quiet working, enche the post here.</p>
+<p>So decided to install <a href="https://github.com/nono/Jekyll-plugins">a plugin from the jekyll site</a> to enable it, but it wasn&#39;t quiet working, enche the post here.</p>
 
-<h2 id="fenced-code-blocks-and-liquid-tags">Fenced code blocks and liquid tags</h2>
-<p>Let’s look at how to use fenced code blocks instead of liquid tags in jekyll.
-But first, what’s what?</p>
+<h2>Fenced code blocks and liquid tags</h2>
+
+<p>Let&#39;s look at how to use fenced code blocks instead of liquid tags in jekyll.
+But first, what&#39;s what? </p>
 
 <p>These are liquid tags and their default way for jekyll to display code with syntax hilight:</p>
 
-<hr />
+<p><hr></p>
 
-<p>{% highlight ruby %} <br />
-print “hello world” <br />
-{% endhighlight %}</p>
+<p>{% highlight ruby %}<br>
+print &quot;hello world&quot;<br>
+{% endhighlight %}   </p>
 
-<p>these are fenced code blocks</p>
-<hr />
+<p>these are fenced code blocks
+<hr></p>
 
-<p>```ruby</p>
-<p>print "hello world" </p>
-<p>```</p>
-<hr />
+<p>```ruby</p>   
 
-<p>and both would render the code like this</p>
+<p>print "hello world" </p>  
 
-<p><code>ruby
-print "hello world" 
-</code></p>
+<p>```</p>   
 
-<h2 id="quick-install">Quick install</h2>
+<p><hr>
+and both would render the code like this </p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">print</span> <span class="s2">&quot;hello world&quot;</span> 
+</code></pre></div>
+<h2>Quick install</h2>
 
-<h3 id="gem-install-redcarpet">1.gem install redcarpet</h3>
+<h3>1.gem install redcarpet</h3>
 
 <p>in terminal:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">gem install redcarpet
+</code></pre></div>
+<h3>2.add redcarpet plugin in your jekyll project.</h3>
 
-<p><code>bash 
-gem install redcarpet
-</code></p>
+<p>Then you need to add <code>redcarpet2</code> plugin in your jekyll project. which as simple as saving <a href="https://github.com/nono/Jekyll-plugins">redcarpet2_markdown.rb</a> in the <code>_plugins</code> folder(if you don&#39;t have the folder, just create one and remember te <code>_</code>).</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;fileutils&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;digest/md5&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;redcarpet&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;albino&#39;</span>
 
-<h3 id="add-redcarpet-plugin-in-your-jekyll-project">2.add redcarpet plugin in your jekyll project.</h3>
+<span class="no">PYGMENTS_CACHE_DIR</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">expand_path</span><span class="p">(</span><span class="s1">&#39;../../_cache&#39;</span><span class="p">,</span> <span class="bp">__FILE__</span><span class="p">)</span>
+<span class="no">FileUtils</span><span class="o">.</span><span class="n">mkdir_p</span><span class="p">(</span><span class="no">PYGMENTS_CACHE_DIR</span><span class="p">)</span>
 
-<p>Then you need to add <code>redcarpet2</code> plugin in your jekyll project. which as simple as saving <a href="https://github.com/nono/Jekyll-plugins">redcarpet2_markdown.rb</a> in the <code>_plugins</code> folder(if you don’t have the folder, just create one and remember te <code>_</code>).</p>
+<span class="k">class</span> <span class="nc">Redcarpet2Markdown</span> <span class="o">&lt;</span> <span class="no">Redcarpet</span><span class="o">::</span><span class="no">Render</span><span class="o">::</span><span class="no">HTML</span>
+  <span class="k">def</span> <span class="nf">block_code</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">lang</span><span class="p">)</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">lang</span> <span class="o">||</span> <span class="s2">&quot;text&quot;</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="no">PYGMENTS_CACHE_DIR</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">lang</span><span class="si">}</span><span class="s2">-</span><span class="si">#{</span><span class="no">Digest</span><span class="o">::</span><span class="no">MD5</span><span class="o">.</span><span class="n">hexdigest</span> <span class="n">code</span><span class="si">}</span><span class="s2">.html&quot;</span><span class="p">)</span>
+    <span class="n">cache</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="k">do</span>
+      <span class="n">colorized</span> <span class="o">=</span> <span class="no">Albino</span><span class="o">.</span><span class="n">colorize</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">lang</span><span class="o">.</span><span class="n">downcase</span><span class="p">)</span>
+      <span class="n">add_code_tags</span><span class="p">(</span><span class="n">colorized</span><span class="p">,</span> <span class="n">lang</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
 
-<p>```ruby
-require ‘fileutils’
-require ‘digest/md5’
-require ‘redcarpet’
-require ‘albino’</p>
+  <span class="k">def</span> <span class="nf">add_code_tags</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">lang</span><span class="p">)</span>
+    <span class="n">code</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sr">/&lt;pre&gt;/</span><span class="p">,</span> <span class="s2">&quot;&lt;pre&gt;&lt;code class=</span><span class="se">\&quot;</span><span class="si">#{</span><span class="n">lang</span><span class="si">}</span><span class="se">\&quot;</span><span class="s2">&gt;&quot;</span><span class="p">)</span><span class="o">.</span>
+         <span class="nb">sub</span><span class="p">(</span><span class="sr">/&lt;\/pre&gt;/</span><span class="p">,</span> <span class="s2">&quot;&lt;/code&gt;&lt;/pre&gt;&quot;</span><span class="p">)</span>
+  <span class="k">end</span>
 
-<p>PYGMENTS_CACHE_DIR = File.expand_path(‘../../_cache’, <strong>FILE</strong>)
-FileUtils.mkdir_p(PYGMENTS_CACHE_DIR)</p>
+  <span class="k">def</span> <span class="nf">cache</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">if</span> <span class="no">File</span><span class="o">.</span><span class="n">exist?</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+      <span class="no">File</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">else</span>
+      <span class="n">content</span> <span class="o">=</span> <span class="k">yield</span>
+      <span class="no">File</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="p">{</span><span class="o">|</span><span class="n">f</span><span class="o">|</span> <span class="n">f</span><span class="o">.</span><span class="n">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span> <span class="p">}</span>
+      <span class="n">content</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<p>class Redcarpet2Markdown &lt; Redcarpet::Render::HTML
-  def block_code(code, lang)
-    lang = lang || “text”
-    path = File.join(PYGMENTS_CACHE_DIR, “#{lang}-#{Digest::MD5.hexdigest code}.html”)
-    cache(path) do
-      colorized = Albino.colorize(code, lang.downcase)
-      add_code_tags(colorized, lang)
-    end
-  end</p>
+<span class="k">class</span> <span class="nc">Jekyll</span><span class="o">::</span><span class="no">MarkdownConverter</span>
+  <span class="k">def</span> <span class="nf">extensions</span>
+    <span class="no">Hash</span><span class="o">[</span> <span class="o">*</span><span class="vi">@config</span><span class="o">[</span><span class="s1">&#39;redcarpet&#39;</span><span class="o">][</span><span class="s1">&#39;extensions&#39;</span><span class="o">].</span><span class="n">map</span> <span class="p">{</span><span class="o">|</span><span class="n">e</span><span class="o">|</span> <span class="o">[</span><span class="n">e</span><span class="o">.</span><span class="n">to_sym</span><span class="p">,</span> <span class="kp">true</span><span class="o">]</span> <span class="p">}</span><span class="o">.</span><span class="n">flatten</span> <span class="o">]</span>
+  <span class="k">end</span>
 
-<p>def add_code_tags(code, lang)
-    code.sub(/&lt;pre&gt;/, “&lt;pre&gt;&lt;code class="#{lang}"&gt;”).
-         sub(/&lt;\/pre&gt;/, “&lt;/code&gt;&lt;/pre&gt;”)
-  end</p>
+  <span class="k">def</span> <span class="nf">markdown</span>
+    <span class="vi">@markdown</span> <span class="o">||=</span> <span class="no">Redcarpet</span><span class="o">::</span><span class="no">Markdown</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="no">Redcarpet2Markdown</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">extensions</span><span class="p">),</span> <span class="n">extensions</span><span class="p">)</span>
+  <span class="k">end</span>
 
-<p>def cache(path)
-    if File.exist?(path)
-      File.read(path)
-    else
-      content = yield
-      File.open(path, ‘w’) {|f| f.print(content) }
-      content
-    end
-  end
-end</p>
+  <span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+    <span class="k">return</span> <span class="k">super</span> <span class="k">unless</span> <span class="vi">@config</span><span class="o">[</span><span class="s1">&#39;markdown&#39;</span><span class="o">]</span> <span class="o">==</span> <span class="s1">&#39;redcarpet2&#39;</span>
+    <span class="n">markdown</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+<h3>3.change config file</h3>
 
-<p>class Jekyll::MarkdownConverter
-  def extensions
-    Hash[ *@config[‘redcarpet’][‘extensions’].map {|e| [e.to_sym, true] }.flatten ]
-  end</p>
-
-<p>def markdown
-    @markdown ||= Redcarpet::Markdown.new(Redcarpet2Markdown.new(extensions), extensions)
-  end</p>
-
-<p>def convert(content)
-    return super unless @config[‘markdown’] == ‘redcarpet2’
-    markdown.render(content)
-  end
-end</p>
-
-<p>```</p>
-
-<h3 id="change-config-file">3.change config file</h3>
 <p>then in your config <code>_config.yml</code> file you need to add:</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="ss">markdown</span><span class="p">:</span> <span class="n">redcarpet</span>
+<span class="ss">redcarpet</span><span class="p">:</span>
+  <span class="ss">extensions</span><span class="p">:</span> <span class="o">[</span><span class="s2">&quot;no_intra_emphasis&quot;</span><span class="p">,</span> <span class="s2">&quot;fenced_code_blocks&quot;</span><span class="p">,</span> <span class="s2">&quot;autolink&quot;</span><span class="p">,</span> <span class="s2">&quot;strikethrough&quot;</span><span class="p">,</span> <span class="s2">&quot;superscript&quot;</span><span class="o">]</span>
+</code></pre></div>
+<p>...and your done.</p>
 
-<p>```ruby 
-markdown: redcarpet
-redcarpet:
-  extensions: [“no_intra_emphasis”, “fenced_code_blocks”, “autolink”, “strikethrough”, “superscript”]</p>
+<h2>End notes</h2>
 
-<p>```</p>
+<p>I took most of these installation steps are taken from <a href="http://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll">stack overflow</a> however there the sudgestion was to write in the config file <code>markdown: redcarpet2</code> and it wasn&#39;t working for me, so I found that <a href="https://github.com/clayallsopp/rubymotion-tutorial/issues/30">it has been raised elsewhere</a> that you can just write <code>markdown: redcarpet</code> and it works just fine. </p>
 
-<p>…and your done.</p>
-
-<h2 id="end-notes">End notes</h2>
-<p>I took most of these installation steps are taken from <a href="http://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll">stack overflow</a> however there the sudgestion was to write in the config file <code>markdown: redcarpet2</code> and it wasn’t working for me, so I found that <a href="https://github.com/clayallsopp/rubymotion-tutorial/issues/30">it has been raised elsewhere</a> that you can just write <code>markdown: redcarpet</code> and it works just fine.</p>
-
-<p>Also, I’ve noticed that with this set up you can use both liquid tags and fenced blocks.</p>
+<p>Also, I&#39;ve noticed that with this set up you can use both liquid tags and fenced blocks.</p>
 
 <!-- Links -->
-
 
 </div>
 
 
-<hr>
+
+
 <div class="related">
   <h3>Related Posts</h3>
   <ul class="related-posts">
     
       <li>
         <h5>
-          <a href="/quickQuote.html">
-            quickQuote - Times & Sunday Times
-            <small>21 Jul 2015</small>
+          <a href="/wip_london_july2016.html">
+            How to craft compelling stories out of video interviews?
+            <small>17 Jul 2016</small>
           </a>
         </h5>
       </li>
     
       <li>
         <h5>
-          <a href="/oneStory.html">
-            OneStory at BBC #newsHack
-            <small>04 Jun 2015</small>
+          <a href="/articles/2016/05/26/how_to_find_out_github_release_downloads/">
+            How to know your projects github releases downloads
+            <small>26 May 2016</small>
           </a>
         </h5>
       </li>
     
       <li>
         <h5>
-          <a href="/laravel-installation.html">
-            Php - installing Laravel MVC Framework
-            <small>31 May 2015</small>
+          <a href="/2016/05/26/defining_hypertranscript_specs/">
+            Defining_hypertranscript_specs
+            <small>26 May 2016</small>
           </a>
         </h5>
       </li>

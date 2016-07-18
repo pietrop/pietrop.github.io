@@ -4,9 +4,6 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link href="http://gmpg.org/xfn/11" rel="profile">
-
-
-
   <title>
     quickQuote - Times & Sunday Times &middot; 
     Tips Tricks & Quick Fix
@@ -135,8 +132,8 @@
 <div class="post">
   <h1
   
- class="icon-laptop" 
-
+  class="icon-laptop"
+  
 
   > quickQuote - Times & Sunday Times </h1>
   <span class="post-date">21 Jul 2015 		<a class="icon-github" href="https://github.com/times/quickQuote"  target="_blank"></a>
@@ -156,54 +153,68 @@
   <p class="lead">A tool for journalists to easily find and add video quotes to news articles </p>
 
 
+  
 
 
+  <br><a class="icon-github" href="https://github.com/times/quickQuote" target="_blank"> Code on GitHub</a>
 
-<br><a class="icon-github" href="https://github.com/times/quickQuote" target="_blank"> Code on GitHub</a>
+  
 
-   
+  <!-- 
+-->
 
-  <!--  
- -->
+<br><small> Tech: Video JS, JQuery, Ruby, Rails, Spoken Data API, Bootstrap, HTML5, CSS, Git, and Javascript.</small><br>
 
-  <br><small> Tech: Video JS, JQuery, Ruby, Rails, Spoken Data API, Bootstrap, HTML5, CSS, Git, and Javascript.</small><br> 
+
+<!-- from http://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ -->
+<!-- https://medium.com/the-story/read-time-and-you-bc2048ab620c#.jwg9ar78o -->
+<span class="reading-time" title="Estimated read time">
+  
+  
+<small>    4 mins reading time <small>(based on 275 words per minute)</small> </small>
+  
+</span>
+
+
 <hr>
-  <p>This project was done while working as newsroom developer at the <a href="https://twitter.com/TimesDevelops">Times &amp; Sunday Times</a> as part of a summer placement for the final project of the UCL Msc in Computer Science.</p>
+<p>This project was done while working as newsroom developer at the <a href="https://twitter.com/TimesDevelops">Times &amp; Sunday Times</a> as part of a summer placement for the final project of the UCL Msc in Computer Science.</p>
 
 <div class="image-wrapper">
-	<a href="/img/TimesAndSundayTimesQuickQuote/home.png" data-lightbox="aName" title="aName">
-		<img src="/img/TimesAndSundayTimesQuickQuote/home.png" alt="photo" />
-	</a>
+    <a href="/img/TimesAndSundayTimesQuickQuote/home.png" data-lightbox="aName" title="aName">
+        <img src="/img/TimesAndSundayTimesQuickQuote/home.png" alt="photo" />
+    </a>
 </div>
 
 <p>On The <a href="https://medium.com/digital-times/it-s-time-to-rethink-how-we-do-x-in-quotes-pieces-on-the-web-1328f1ccf039">Times Digital blog</a> I wrote about the thinking behind the project.</p>
 
 <p>In a nutshell if we take the coverage of the Republican presidential candidate debate on Fox News most news outlet merely copied the quotes verbatim and them paired them with photos of the candidates.</p>
 
-<h2 id="a-video-screencast-example"> A video screencast example</h2>
+<h2> A video screencast example</h2>
 
-<p>Here’s a screencast of a demo of an alternative “interactive video quote” a journalist could embed in a news article.</p>
+<p>Here&#39;s a screencast of a demo of an alternative &quot;interactive video quote&quot; a journalist could embed in a news article.</p>
 
 <div class="videoWrapper">
-<iframe width="560" height="315" src="//www.youtube.com/embed/axH_dKOpqaA" frameborder="0" allowfullscreen=""></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/axH_dKOpqaA" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<h2 id="an-interactive-example"> An interactive example</h2>
+<h2> An interactive example</h2>
+
 <p>And here is the quote you see in the video above embedded in this page.
 Followed by the  HTML, CSS and JS code.</p>
 
-<div class="video-quote" id="videoQuoteText-id-n">
-  <span class="glyphicon glyphicon-play-circle"></span>
+<div class='video-quote' id='videoQuoteText-id-n'>
+  <span class='glyphicon glyphicon-play-circle'></span>
   <blockquote>
-     <small>►  Watch Video </small><br /><br />
+     <small>►  Watch Video </small><br><br>
     A five billion dollar web site, I have so many websites, I have them all over the place. I hire people they do a web site, it costs me three dollars.
-    <br /><cite id="authorVideoQuote">Donald Trump</cite>
+    <br><cite id='authorVideoQuote'>Donald Trump</cite>
   </blockquote></div>
-<div id="video-wrap-n" class="video-wrap video-wrap--closed">
-    <video class=" video-js vjs-default-skin" id="video-quote" controls="" preload="auto" width="100%" height="auto" poster="" data-setup="{}">
-      <source src="http://times.github.io/quickQuote/media/snippet_54.mp4" id="snippetURLVideo" type="video/mp4" />
+  <div  id='video-wrap-n' class='video-wrap video-wrap--closed'>
+    <video class=' video-js vjs-default-skin' id='video-quote' controls preload='auto' width='100%' height='auto' poster='' data-setup='{}'>
+      <source src='http://times.github.io/quickQuote/media/snippet_54.mp4' id='snippetURLVideo' type='video/mp4' />
     </video>
 </div>
+
 <style>
 /*styling of the video quote*/
      .video-quote  blockquote {
@@ -255,11 +266,13 @@ Followed by the  HTML, CSS and JS code.</p>
 
 </script>
 
-<p><br /></p>
+<p><br></p>
 
-<p><br />
-## The embed code for a video quote
-<br />
+<p><br></p>
+
+<h2>The embed code for a video quote</h2>
+
+<p><br>
 HTML</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;video-quote&#39;</span> <span class="na">id=</span><span class="s">&#39;videoQuoteText-id-n&#39;</span><span class="nt">&gt;</span>
@@ -275,11 +288,11 @@ HTML</p>
     <span class="nt">&lt;/video&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p><br /></p>
+<p><br></p>
 
 <p>CSS</p>
 
-<p><br /></p>
+<p><br></p>
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css">      <span class="nc">.video-quote</span>  <span class="nt">blockquote</span> <span class="p">{</span>
           <span class="k">background</span><span class="o">:</span> <span class="m">#FAFAFC</span><span class="p">;</span>
@@ -326,122 +339,120 @@ HTML</p>
       <span class="p">}</span>
   <span class="p">};</span></code></pre></figure>
 
-<hr />
+<p><hr></p>
 
 <p>In the following video you can see how a user can, once a video as been uploaded an processed by the speech to text API, search through the text, select a quote, edit it, preview and export it.</p>
 
-<p><br /></p>
+<p><br>
 <div class="videoWrapper">
-<iframe width="560" height="315" src="//www.youtube.com/embed/7apk4Hx7g3s" frameborder="0" allowfullscreen=""></iframe>
-</div>
+<iframe width="560" height="315" src="//www.youtube.com/embed/7apk4Hx7g3s" frameborder="0" allowfullscreen></iframe>
+</div></p>
 
-<h2 id="project-links">Project Links</h2>
+<h2>Project Links</h2>
 
 <p>The code for an interactive video quote is not particularly complex.</p>
 
-<p>But what is interesting in the quickQuote project is how we programmatically generate this embed code once a journalist has made a quote selection.</p>
+<p>But what is interesting in the quickQuote project is how we programmatically generate this embed code once a journalist has made a quote selection.       </p>
 
 <p>For more details on this check out the <a href="http://times.github.io/quickQuote">project page</a>, <a href="https://github.com/times/quickQuote">the github repository</a>, <a href="http://times.github.io/quickQuote/userManual.html">user manual</a> and <a href="http://www.rubydoc.info/github/times/quickQuote/master">documentation</a>.</p>
 
 <p>Or checkout the <a href="https://leanpub.com/quickquote">the report I wrote for  UCL</a>, which details investigation into the problem domain, similar open source projects, as well as application design and architecture.</p>
 
-<h2 id="the-main-features-in-screenshots">The main features in Screenshots</h2>
+<h2>The main features in Screenshots</h2>
 
 <p>Two way sync between video and corresponding transcription</p>
 
 <div class="image-wrapper">
-	<a href="/img/TimesAndSundayTimesQuickQuote/hypertranscript.png" data-lightbox="aName" title="aName">
-		<img src="/img/TimesAndSundayTimesQuickQuote/hypertranscript.png" alt="photo" />
-	</a>
+    <a href="/img/TimesAndSundayTimesQuickQuote/hypertranscript.png" data-lightbox="aName" title="aName">
+        <img src="/img/TimesAndSundayTimesQuickQuote/hypertranscript.png" alt="photo" />
+    </a>
 </div>
 
 <p>Search transcription for keywords</p>
 
 <div class="image-wrapper">
-	<a href="/img/TimesAndSundayTimesQuickQuote/search.png" data-lightbox="aName" title="aName">
-		<img src="/img/TimesAndSundayTimesQuickQuote/search.png" alt="photo" />
-	</a>
+    <a href="/img/TimesAndSundayTimesQuickQuote/search.png" data-lightbox="aName" title="aName">
+        <img src="/img/TimesAndSundayTimesQuickQuote/search.png" alt="photo" />
+    </a>
 </div>
 
 <p>Select text grabs in and out point of corresponding video</p>
 
 <div class="image-wrapper">
-	<a href="/img/TimesAndSundayTimesQuickQuote/select.png" data-lightbox="aName" title="aName">
-		<img src="/img/TimesAndSundayTimesQuickQuote/select.png" alt="photo" />
-	</a>
+    <a href="/img/TimesAndSundayTimesQuickQuote/select.png" data-lightbox="aName" title="aName">
+        <img src="/img/TimesAndSundayTimesQuickQuote/select.png" alt="photo" />
+    </a>
 </div>
 
-<p>Edit automatically generated transcription from speech to text API <em>if it’s not 100% accurate</em></p>
+<p>Edit automatically generated transcription from speech to text API <em>if it&#39;s not 100% accurate</em></p>
 
 <div class="image-wrapper">
-	<a href="/img/TimesAndSundayTimesQuickQuote/edit_quote.png" data-lightbox="aName" title="aName">
-		<img src="/img/TimesAndSundayTimesQuickQuote/edit_quote.png" alt="photo" />
-	</a>
+    <a href="/img/TimesAndSundayTimesQuickQuote/edit_quote.png" data-lightbox="aName" title="aName">
+        <img src="/img/TimesAndSundayTimesQuickQuote/edit_quote.png" alt="photo" />
+    </a>
 </div>
 
 <p>See a preview of the video quote</p>
 
 <div class="image-wrapper">
-	<a href="/img/TimesAndSundayTimesQuickQuote/preview.png" data-lightbox="aName" title="aName">
-		<img src="/img/TimesAndSundayTimesQuickQuote/preview.png" alt="photo" />
-	</a>
+    <a href="/img/TimesAndSundayTimesQuickQuote/preview.png" data-lightbox="aName" title="aName">
+        <img src="/img/TimesAndSundayTimesQuickQuote/preview.png" alt="photo" />
+    </a>
 </div>
 
 <p>With dropdown</p>
 
 <div class="image-wrapper">
-	<a href="/img/TimesAndSundayTimesQuickQuote/preview_dropdown.png" data-lightbox="aName" title="aName">
-		<img src="/img/TimesAndSundayTimesQuickQuote/preview_dropdown.png" alt="photo" />
-	</a>
+    <a href="/img/TimesAndSundayTimesQuickQuote/preview_dropdown.png" data-lightbox="aName" title="aName">
+        <img src="/img/TimesAndSundayTimesQuickQuote/preview_dropdown.png" alt="photo" />
+    </a>
 </div>
 
 <p>Export HTML, CSS, JS code to embed in news article.</p>
 
 <div class="image-wrapper">
-	<a href="/img/TimesAndSundayTimesQuickQuote/export_code.png" data-lightbox="aName" title="aName">
-		<img src="/img/TimesAndSundayTimesQuickQuote/export_code.png" alt="photo" />
-	</a>
+    <a href="/img/TimesAndSundayTimesQuickQuote/export_code.png" data-lightbox="aName" title="aName">
+        <img src="/img/TimesAndSundayTimesQuickQuote/export_code.png" alt="photo" />
+    </a>
 </div>
 
 <p>And here is <a href="http://jsfiddle.net/pietrops/yazkqg2s/">a preview of the embed code using JS Fiddle</a></p>
 
 <div class="image-wrapper">
-	<a href="/img/TimesAndSundayTimesQuickQuote/export_quote_w3.png" data-lightbox="aName" title="aName">
-		<img src="/img/TimesAndSundayTimesQuickQuote/export_quote_w3.png" alt="photo" />
-	</a>
+    <a href="/img/TimesAndSundayTimesQuickQuote/export_quote_w3.png" data-lightbox="aName" title="aName">
+        <img src="/img/TimesAndSundayTimesQuickQuote/export_quote_w3.png" alt="photo" />
+    </a>
 </div>
 
 <div class="image-wrapper">
-	<a href="/img/TimesAndSundayTimesQuickQuote/export_dropdown_w3.png" data-lightbox="aName" title="aName">
-		<img src="/img/TimesAndSundayTimesQuickQuote/export_dropdown_w3.png" alt="photo" />
-	</a>
+    <a href="/img/TimesAndSundayTimesQuickQuote/export_dropdown_w3.png" data-lightbox="aName" title="aName">
+        <img src="/img/TimesAndSundayTimesQuickQuote/export_dropdown_w3.png" alt="photo" />
+    </a>
 </div>
 
-<h1 id="on-social-media">On Social Media</h1>
+<h1>On Social Media</h1>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">This. Changes. Everything. “<a href="https://twitter.com/NiemanLab">@NiemanLab</a>: new tool fromTimes of London lets you detect and capture quotes from a video <a href="http://t.co/v7ZGPcXCkl">http://t.co/v7ZGPcXCkl</a>”</p>&mdash; Paul Adams (@padams29) <a href="https://twitter.com/padams29/status/643133038327521281">September 13, 2015</a></blockquote>
-<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">This. Changes. Everything. “<a href="https://twitter.com/NiemanLab">@NiemanLab</a>: new tool fromTimes of London lets you detect and capture quotes from a video <a href="http://t.co/v7ZGPcXCkl">http://t.co/v7ZGPcXCkl</a>”</p>&mdash; Paul Adams (@padams29) <a href="https://twitter.com/padams29/status/643133038327521281">September 13, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Sometimes a new digital news tool comes along &amp; reminds us how far we are from doing it right <a href="http://t.co/xqiioyAVET">http://t.co/xqiioyAVET</a> <a href="http://t.co/T2vyi8G0W6">pic.twitter.com/T2vyi8G0W6</a></p>&mdash; Greg Emerson (@emersongreg) <a href="https://twitter.com/emersongreg/status/643388636063469568">September 14, 2015</a></blockquote>
-<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Sometimes a new digital news tool comes along &amp; reminds us how far we are from doing it right <a href="http://t.co/xqiioyAVET">http://t.co/xqiioyAVET</a> <a href="http://t.co/T2vyi8G0W6">pic.twitter.com/T2vyi8G0W6</a></p>&mdash; Greg Emerson (@emersongreg) <a href="https://twitter.com/emersongreg/status/643388636063469568">September 14, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">A new tool from The Times of London lets you easily detect and capture quotes from a video <a href="http://t.co/r6pGJzKycx">http://t.co/r6pGJzKycx</a></p>&mdash; Nieman Lab (@NiemanLab) <a href="https://twitter.com/NiemanLab/status/643132545593311232">September 13, 2015</a></blockquote>
-<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">A new tool from The Times of London lets you easily detect and capture quotes from a video <a href="http://t.co/r6pGJzKycx">http://t.co/r6pGJzKycx</a></p>&mdash; Nieman Lab (@NiemanLab) <a href="https://twitter.com/NiemanLab/status/643132545593311232">September 13, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 
-<hr />
+<p><hr></p>
 
-<h1 id="press-mentions">Press Mentions</h1>
+<h1>Press Mentions</h1>
+
 <div class="image-wrapper">
     <img src="/img/TimesAndSundayTimesQuickQuote/NiemanLab-quickQuote.png" alt="/img/TimesAndSundayTimesQuickQuote/NiemanLab-quickQuote.png" />
 </div>
 
-<hr />
+<p><hr></p>
 
 <div class="image-wrapper">
     <img src="/img/TimesAndSundayTimesQuickQuote/journalism_co_uk_quickQuote.png" alt="/img/TimesAndSundayTimesQuickQuote/journalism_co_uk_quickQuote.png" />
 </div>
 
-<hr />
+<p><hr></p>
 
 <div class="image-wrapper">
     <img src="/img/TimesAndSundayTimesQuickQuote/ClasesdePeriodismo_quickQuote.png" alt="/img/TimesAndSundayTimesQuickQuote/ClasesdePeriodismo_quickQuote.png" />
@@ -449,34 +460,35 @@ HTML</p>
 
 </div>
 
-<hr>
+
+
 <div class="related">
   <h3>Related Posts</h3>
   <ul class="related-posts">
     
       <li>
         <h5>
-          <a href="/oneStory.html">
-            OneStory at BBC #newsHack
-            <small>04 Jun 2015</small>
+          <a href="/wip_london_july2016.html">
+            How to craft compelling stories out of video interviews?
+            <small>17 Jul 2016</small>
           </a>
         </h5>
       </li>
     
       <li>
         <h5>
-          <a href="/jekyll-fenced-block.html">
-            use fenced code blocks in jekyll
-            <small>31 May 2015</small>
+          <a href="/articles/2016/05/26/how_to_find_out_github_release_downloads/">
+            How to know your projects github releases downloads
+            <small>26 May 2016</small>
           </a>
         </h5>
       </li>
     
       <li>
         <h5>
-          <a href="/laravel-installation.html">
-            Php - installing Laravel MVC Framework
-            <small>31 May 2015</small>
+          <a href="/2016/05/26/defining_hypertranscript_specs/">
+            Defining_hypertranscript_specs
+            <small>26 May 2016</small>
           </a>
         </h5>
       </li>

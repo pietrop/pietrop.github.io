@@ -4,7 +4,7 @@
 ## Tags and Categories
 
 ### Categories & Portfolio stuff
-3 **`Category`**  in _post folder `video`, `tech`, `photo`.
+3 **`Category`**  in `_post` folder `video`, `tech`, `photo`.
 **`Category`** `- articles` are the once that land on the `home page`.
 
 #### Tags

@@ -1,0 +1,10 @@
+<!-- from http://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ -->
+<!-- https://medium.com/the-story/read-time-and-you-bc2048ab620c#.jwg9ar78o -->
+<span class="reading-time" title="Estimated read time">
+  {% assign words = content | number_of_words %}
+  {% if words < 360 %}
+  <small>  1 min reading time </small>
+  {% else %}
+<small>    {{ words | divided_by:275 }} mins reading time <small>(based on 275 words per minute)</small> </small>
+  {% endif %}
+</span>

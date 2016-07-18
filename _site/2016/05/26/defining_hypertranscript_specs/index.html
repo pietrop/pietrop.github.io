@@ -1,0 +1,57 @@
+<h1>Towards defining an hyper-transcript specification?</h1>
+
+<p>API json </p>
+
+<p>not to bothered by the names of the attributes at this point, but rather by what info to have in it.</p>
+
+<p>comparison of existing transcriptions </p>
+
+<ul>
+<li><p>srt to json 
+with file size for one hour</p></li>
+<li><p>IBM 
+with file size for one hour</p></li>
+<li><p>Gentle 
+with file size for one hour</p></li>
+<li><p>Spoken data XML -&gt; to Json
+with file size for one hour</p></li>
+<li><p>Google?</p></li>
+<li><p>Hyperaudio/trint </p></li>
+<li><p>my spec defined in autoEdit sails notes </p></li>
+<li><p>Others to keep in mind 
+BBC Video compositor JSON</p></li>
+</ul>
+
+<h2>basic - array</h2>
+
+<p>most basic is an array of words with the time in seconds or milliseconds?</p>
+
+<p>[{in: 00, out: 00, text: &quot;some text&quot;}, …]</p>
+
+<h2>Lines?</h2>
+
+<p>if you wanted to account for lines, you could have a nested array of words. to group words together into lines.</p>
+
+<p>[
+[{in: 00, out: 00, text: &quot;some text&quot;}, …]
+[..]
+…
+]</p>
+
+<h2>Object?</h2>
+
+<p>In previous suggestion if we want to get all the text at once, we have to loop through the
+whole of the data structure. This is not time consuming if done programmatically. 
+But there’s an argument for having an object with a transcription attribute in plain text</p>
+
+<p>{transcription: &quot;some text…&quot;,
+words:[
+…
+]
+}</p>
+
+<p>however this might increase the size of the file for long transcriptions (? as seen in previous examples) </p>
+
+<h2> Tag agnostic</h2>
+
+<p>?</p>

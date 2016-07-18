@@ -1,0 +1,403 @@
+ <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <title>
+    How to know your projects github releases downloads &middot; 
+    Tips Tricks & Quick Fix
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="http://pietropassarelli.com/public/css/hyde.css">
+  <link rel="stylesheet" href="http://pietropassarelli.com/public/css/syntax.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
+<!-- Glyhpicons? -->
+<link rel="stylesheet" href="/public/css/elusive-webfont.css">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="http://pietropassarelli.com/public/css/bootstrap.css">
+<link rel="stylesheet" href="http://pietropassarelli.com/public/css/image.css">
+  <!-- Icons -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/touch-icon-144-precomposed.png"> -->
+  <link rel="shortcut icon" href="http://pietropassarelli.com/public/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+<!-- lightbox -->
+<script src="http://pietropassarelli.com/public/js/jquery-1.10.2.min.js"></script>
+<script src="http://pietropassarelli.com/public/js/lightbox-2.6.min.js"></script>
+<link href="http://pietropassarelli.com/public/css/lightbox.css" rel="stylesheet" />
+
+
+</head>
+
+
+  
+      <body  class="layout-reverse">
+    
+
+    <header class="masthead">
+      <div class="masthead-inner">
+     
+ 
+
+<h1  id="top">TTQF</h1>
+<p class="lead">Tips Tricks & Quick Fix by <a href='http://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
+<!-- <p class="colophon">Developer/film-maker.</p> -->
+<div class="colophon">
+  <ul class="colophon-links">
+  	<a class="icon-home" href="/"> Home</a>
+  	<a class="icon-user" href="/about"> About</a>
+    <a class="icon-pencil" href="/blog"> Blog</a><br>
+
+  	<a class="icon-list-alt" href="/ttqf/"> Tips,Tricks&Quick Fix</a><br>
+  	<h3 id="top">My:</h3>
+  	<a class="icon-film" href="/portfolio/video"> Video</a>
+  	<a class="icon-laptop" href="/portfolio/tech">Tech</a>
+  	<a class="icon-camera"  href="/portfolio/photo"> Photo</a>
+  <h3  id="top">Contact:</h3>
+ 
+<!-- <div class="row">
+  <div class="col-xs-6 col-sm-12 col-md-12 col-lg-12">  -->
+
+<!-- <h5>Pietro Passarelli</h5> -->
+
+<!--   -->
+
+
+
+<ul class="nav nav-pills nav-stacked" style="list-style-type: none">
+<li><a class="icon-envelope" href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..." class="author-social" target="_blank"><i class="icon-mail"></i> e-mail</a> <span ></span></li>
+
+
+
+
+
+
+
+
+<li><a class="icon-facebook" href="https://www.facebook.com/pietro.passarelli"  target="_blank"> Facebook</a></li>
+
+
+
+<li><a class="icon-linkedin" href="http://uk.linkedin.com/in/pietropassarelli"  target="_blank"> Linkedin</a></li>
+
+<li><a class="icon-twitter" href="https://twitter.com/pietropassarell"  target="_blank"> Twitter</a></li>
+
+
+
+
+
+
+<li><a class="icon-github" href="https://github.com/pietrop"  target="_blank"> GitHub</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+<!--  </div> 
+
+  </div> --> <!-- row -->
+
+ 
+
+  </ul>
+ 
+</div>
+
+
+
+
+
+      </div>
+    </header>
+
+    <div class="content container">
+
+      
+
+<div class="post">
+  <h1
+  
+  class="icon-list-alt"
+  
+
+  > How to know your projects github releases downloads </h1>
+  <span class="post-date">26 May 2016 		
+
+		
+
+         
+
+         
+
+          
+
+          
+
+          <small>/ </small></span>
+  <p class="lead"> </p>
+
+
+  
+
+
+  
+
+  
+
+  <!-- 
+-->
+
+
+
+
+<!-- from http://carlosbecker.com/posts/jekyll-reading-time-without-plugins/ -->
+<!-- https://medium.com/the-story/read-time-and-you-bc2048ab620c#.jwg9ar78o -->
+<span class="reading-time" title="Estimated read time">
+  
+  
+<small>    4 mins reading time <small>(based on 275 words per minute)</small> </small>
+  
+</span>
+
+
+<hr>
+<h1>How to know your projects github releases downloads</h1>
+
+<p>Here’s a quick &quot;how to&quot; to see how many people have downloaded your project release on github.</p>
+
+<p>This can only be done through the github API,but if your API hasn’t exceeded the request limit you can do it without authenticating. (chances are that if you are at work they might have already exceeded the limit, so you may want to do this from a different wifi).</p>
+
+<p>I am going to use a project I worked on a while back <a href="http://pietropassarelli.com/alpaca_speech"><code>http://pietropassarelli.com/alpaca_speech</code></a> that I use everyday but I am curious to see how many people use the packaged up in the release section of github.</p>
+
+<p>We are going to be making get requests with <a href="https://www.getpostman.com/">postman</a>, but you could use curl or whatever you prefer.</p>
+
+<h2>Identify release id.</h2>
+
+<p>First things first get the release id</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">https://api.github.com/repos/pietrop/alpaca_speech/releases
+</code></pre></div>
+<p>This will give you a json like so</p>
+<div class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/2605107&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;assets_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/2605107/assets&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;upload_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://uploads.github.com/repos/pietrop/alpaca_speech/releases/2605107/assets{?name,label}&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;html_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/pietrop/alpaca_speech/releases/tag/v1.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2605107</span><span class="p">,</span>
+    <span class="nt">&quot;tag_name&quot;</span><span class="p">:</span> <span class="s2">&quot;v1.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;target_commitish&quot;</span><span class="p">:</span> <span class="s2">&quot;master&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;AlpacaSpeech&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;draft&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;login&quot;</span><span class="p">:</span> <span class="s2">&quot;pietrop&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">4661975</span><span class="p">,</span>
+      <span class="nt">&quot;avatar_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://avatars.githubusercontent.com/u/4661975?v=3&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;gravatar_id&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;html_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/pietrop&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;followers_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/followers&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;following_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/following{/other_user}&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;gists_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/gists{/gist_id}&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;starred_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/starred{/owner}{/repo}&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;subscriptions_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/subscriptions&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;organizations_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/orgs&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;repos_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/repos&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;events_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/events{/privacy}&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;received_events_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/received_events&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;User&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;site_admin&quot;</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;prerelease&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-01-04T22:14:20Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;published_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-02-12T19:22:54Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;assets&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/assets/1306014&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1306014</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;alpacaSpeech.app.zip&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;uploader&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;login&quot;</span><span class="p">:</span> <span class="s2">&quot;pietrop&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">4661975</span><span class="p">,</span>
+          <span class="nt">&quot;avatar_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://avatars.githubusercontent.com/u/4661975?v=3&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;gravatar_id&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;html_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/pietrop&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;followers_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/followers&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;following_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/following{/other_user}&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;gists_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/gists{/gist_id}&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;starred_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/starred{/owner}{/repo}&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;subscriptions_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/subscriptions&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;organizations_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/orgs&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;repos_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/repos&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;events_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/events{/privacy}&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;received_events_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/received_events&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;User&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;site_admin&quot;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;content_type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/zip&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;uploaded&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">36909597</span><span class="p">,</span>
+        <span class="nt">&quot;download_count&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-02-12T19:17:43Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;updated_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-02-12T19:18:22Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;browser_download_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/pietrop/alpaca_speech/releases/download/v1.0/alpacaSpeech.app.zip&quot;</span>
+      <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;tarball_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/repos/pietrop/alpaca_speech/tarball/v1.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;zipball_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/repos/pietrop/alpaca_speech/zipball/v1.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;body&quot;</span><span class="p">:</span> <span class="s2">&quot;Working version of Alpaca speech.\r\nText to speech, using OS X default voices. \r\n\r\n### Keyboards shortcuts\r\n\r\n#### Reading shortcuts\r\n\r\n`cmd` +`e`   `Read/Stop`\r\n`cmd` +`ArrowUp`   `Increase voice speed`\r\n`cmd` +`ArrowDown`   `decrease voice speed`\r\n\r\n#### Change languages\r\n\r\n`cmd` +`1`   `English - Alex`\r\n`cmd` +`2`   `Italian - Luca`\r\n`cmd` +`3`   `Spanish - Jorge`\r\n`cmd` +`4`   `French - Thomas`\r\n\r\n\r\n\r\n#### OS X System Shortcuts\r\nadded minimise mac keyboard shortcut `cmd` + `m` and quit `cmd` + `q`.\r\nAs well as possibility to read voices available on system and populate the list with that.&quot;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>In this case it’s easy coz I only have one release.  But if I had more then one we could look for the version number in the tag name v1.0 and from there get the corresponding id.</p>
+<div class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">&quot;id&quot;</span><span class="err">:</span> <span class="mi">2605107</span><span class="err">,</span>
+<span class="s2">&quot;tag_name&quot;</span><span class="err">:</span> <span class="s2">&quot;v1.0&quot;</span><span class="err">,</span>
+</code></pre></div>
+<h2>Search release by id</h2>
+
+<p>we can then add that to our query</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">https://api.github.com/repos/pietrop/alpaca_speech/releases/2605107
+</code></pre></div>
+<p>which returns</p>
+<div class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span>
+  <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/2605107&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;assets_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/2605107/assets&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;upload_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://uploads.github.com/repos/pietrop/alpaca_speech/releases/2605107/assets{?name,label}&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;html_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/pietrop/alpaca_speech/releases/tag/v1.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2605107</span><span class="p">,</span>
+  <span class="nt">&quot;tag_name&quot;</span><span class="p">:</span> <span class="s2">&quot;v1.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;target_commitish&quot;</span><span class="p">:</span> <span class="s2">&quot;master&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;AlpacaSpeech&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;draft&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;login&quot;</span><span class="p">:</span> <span class="s2">&quot;pietrop&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">4661975</span><span class="p">,</span>
+    <span class="nt">&quot;avatar_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://avatars.githubusercontent.com/u/4661975?v=3&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gravatar_id&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;html_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/pietrop&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;followers_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/followers&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;following_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/following{/other_user}&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;gists_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/gists{/gist_id}&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;starred_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/starred{/owner}{/repo}&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;subscriptions_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/subscriptions&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;organizations_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/orgs&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;repos_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/repos&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;events_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/events{/privacy}&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;received_events_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/received_events&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;User&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;site_admin&quot;</span><span class="p">:</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;prerelease&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-01-04T22:14:20Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;published_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-02-12T19:22:54Z&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;assets&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/assets/1306014&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1306014</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;alpacaSpeech.app.zip&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+      <span class="nt">&quot;uploader&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;login&quot;</span><span class="p">:</span> <span class="s2">&quot;pietrop&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">4661975</span><span class="p">,</span>
+        <span class="nt">&quot;avatar_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://avatars.githubusercontent.com/u/4661975?v=3&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;gravatar_id&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;html_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/pietrop&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;followers_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/followers&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;following_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/following{/other_user}&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;gists_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/gists{/gist_id}&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;starred_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/starred{/owner}{/repo}&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;subscriptions_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/subscriptions&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;organizations_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/orgs&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;repos_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/repos&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;events_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/events{/privacy}&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;received_events_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/users/pietrop/received_events&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;User&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;site_admin&quot;</span><span class="p">:</span> <span class="kc">false</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;content_type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/zip&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;uploaded&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">36909597</span><span class="p">,</span>
+      <span class="nt">&quot;download_count&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+      <span class="nt">&quot;created_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-02-12T19:17:43Z&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;updated_at&quot;</span><span class="p">:</span> <span class="s2">&quot;2016-02-12T19:18:22Z&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;browser_download_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://github.com/pietrop/alpaca_speech/releases/download/v1.0/alpacaSpeech.app.zip&quot;</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;tarball_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/repos/pietrop/alpaca_speech/tarball/v1.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;zipball_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://api.github.com/repos/pietrop/alpaca_speech/zipball/v1.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;body&quot;</span><span class="p">:</span> <span class="s2">&quot;Working version of Alpaca speech.\r\nText to speech, using OS X default voices. \r\n\r\n### Keyboards shortcuts\r\n\r\n#### Reading shortcuts\r\n\r\n`cmd` +`e`   `Read/Stop`\r\n`cmd` +`ArrowUp`   `Increase voice speed`\r\n`cmd` +`ArrowDown`   `decrease voice speed`\r\n\r\n#### Change languages\r\n\r\n`cmd` +`1`   `English - Alex`\r\n`cmd` +`2`   `Italian - Luca`\r\n`cmd` +`3`   `Spanish - Jorge`\r\n`cmd` +`4`   `French - Thomas`\r\n\r\n\r\n\r\n#### OS X System Shortcuts\r\nadded minimise mac keyboard shortcut `cmd` + `m` and quit `cmd` + `q`.\r\nAs well as possibility to read voices available on system and populate the list with that.&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2>Find download count</h2>
+
+<p>and what we are looking for is  <code>download_count</code></p>
+
+<p>in this case</p>
+<div class="highlight"><pre><code class="language-json" data-lang="json"><span class="s2">&quot;download_count&quot;</span><span class="err">:</span> <span class="mi">8</span><span class="err">,</span>
+</code></pre></div>
+<p>Done.</p>
+
+<p>Here are some more links from the <a href="https://developer.github.com/v3/">github api</a> <a href="https://developer.github.com/v3/repos/releases/#get-a-single-release">documentation</a></p>
+
+</div>
+
+
+
+
+<div class="related">
+  <h3>Related Posts</h3>
+  <ul class="related-posts">
+    
+      <li>
+        <h5>
+          <a href="/wip_london_july2016.html">
+            How to craft compelling stories out of video interviews?
+            <small>17 Jul 2016</small>
+          </a>
+        </h5>
+      </li>
+    
+      <li>
+        <h5>
+          <a href="/2016/05/26/defining_hypertranscript_specs/">
+            Defining_hypertranscript_specs
+            <small>26 May 2016</small>
+          </a>
+        </h5>
+      </li>
+    
+      <li>
+        <h5>
+          <a href="/quickQuote.html">
+            quickQuote - Times & Sunday Times
+            <small>21 Jul 2015</small>
+          </a>
+        </h5>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+
+  </body>
+</html>
