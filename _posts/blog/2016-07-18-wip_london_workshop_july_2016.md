@@ -65,7 +65,7 @@ We provided paper transcriptions for interviews, roughly an hour each, with
 - Annie Machon [pdf]({{page.transcriptions_am}})
 
 
-As well as [link to web version mobile responsive interactive transcription of the interview]({{page.web_version_interviews_link}}) altho participants were strongly encouraged to work of the paper transcriptions.
+As well as a [link to web version mobile responsive interactive transcription of the interview]({{page.web_version_interviews_link}}) altho participants were strongly encouraged to work of the paper transcriptions.
 
 ![]({{page.web_version_interviews_screenshot}})
 
