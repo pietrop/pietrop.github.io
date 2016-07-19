@@ -44,7 +44,7 @@
 &lt;li&gt;Annie Machon &lt;a href=&quot;/img/wip_london_workshop_july_2016/AAA_AM.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;As well as &lt;a href=&quot;https://dl.dropboxusercontent.com/u/449999/WIP_Workshop/frontEnd/index.html#transcriptions&quot;&gt;link to web version mobile responsive interactive transcription of the interview&lt;/a&gt; altho participants were strongly encouraged to work of the paper transcriptions.&lt;/p&gt;
+&lt;p&gt;As well as a &lt;a href=&quot;https://dl.dropboxusercontent.com/u/449999/WIP_Workshop/frontEnd/index.html#transcriptions&quot;&gt;link to web version mobile responsive interactive transcription of the interview&lt;/a&gt; altho participants were strongly encouraged to work of the paper transcriptions.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/wip_london_workshop_july_2016/interactive_transcript_jr.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 
@@ -257,71 +257,6 @@
         <pubDate>Thu, 26 May 2016 09:55:00 -0400</pubDate>
         <link>http://pietropassarelli.com//articles/2016/05/26/how_to_find_out_github_release_downloads/</link>
         <guid isPermaLink="true">http://pietropassarelli.com//articles/2016/05/26/how_to_find_out_github_release_downloads/</guid>
-      </item>
-    
-      <item>
-        <title>Defining_hypertranscript_specs</title>
-        <description>&lt;h1&gt;Towards defining an hyper-transcript specification?&lt;/h1&gt;
-
-&lt;p&gt;API json &lt;/p&gt;
-
-&lt;p&gt;not to bothered by the names of the attributes at this point, but rather by what info to have in it.&lt;/p&gt;
-
-&lt;p&gt;comparison of existing transcriptions &lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;srt to json 
-with file size for one hour&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;IBM 
-with file size for one hour&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Gentle 
-with file size for one hour&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Spoken data XML -&amp;gt; to Json
-with file size for one hour&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Google?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Hyperaudio/trint &lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;my spec defined in autoEdit sails notes &lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Others to keep in mind 
-BBC Video compositor JSON&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;basic - array&lt;/h2&gt;
-
-&lt;p&gt;most basic is an array of words with the time in seconds or milliseconds?&lt;/p&gt;
-
-&lt;p&gt;[{in: 00, out: 00, text: &amp;quot;some text&amp;quot;}, …]&lt;/p&gt;
-
-&lt;h2&gt;Lines?&lt;/h2&gt;
-
-&lt;p&gt;if you wanted to account for lines, you could have a nested array of words. to group words together into lines.&lt;/p&gt;
-
-&lt;p&gt;[
-[{in: 00, out: 00, text: &amp;quot;some text&amp;quot;}, …]
-[..]
-…
-]&lt;/p&gt;
-
-&lt;h2&gt;Object?&lt;/h2&gt;
-
-&lt;p&gt;In previous suggestion if we want to get all the text at once, we have to loop through the
-whole of the data structure. This is not time consuming if done programmatically. 
-But there’s an argument for having an object with a transcription attribute in plain text&lt;/p&gt;
-
-&lt;p&gt;{transcription: &amp;quot;some text…&amp;quot;,
-words:[
-…
-]
-}&lt;/p&gt;
-
-&lt;p&gt;however this might increase the size of the file for long transcriptions (? as seen in previous examples) &lt;/p&gt;
-
-&lt;h2&gt; Tag agnostic&lt;/h2&gt;
-
-&lt;p&gt;?&lt;/p&gt;
-</description>
-        <pubDate>Thu, 26 May 2016 00:00:00 -0400</pubDate>
-        <link>http://pietropassarelli.com//2016/05/26/defining_hypertranscript_specs/</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//2016/05/26/defining_hypertranscript_specs/</guid>
       </item>
     
       <item>
@@ -1088,6 +1023,133 @@ Such as &lt;code&gt;01:17:23.736&lt;/code&gt;  where the milliseconds that can b
         <pubDate>Sun, 17 May 2015 10:15:00 -0400</pubDate>
         <link>http://pietropassarelli.com//regex.html</link>
         <guid isPermaLink="true">http://pietropassarelli.com//regex.html</guid>
+      </item>
+    
+      <item>
+        <title>Interactive databate #buildTheNews</title>
+        <description>&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/hackaton2.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/hackaton2.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;
+For the Times Build the news hackathon we decided to do system that given a video would generate transcription, identify the different speakers, provide summary of main topics and keywords as well as emotional charge of the speaker.&lt;/p&gt;
+
+&lt;p&gt;We decided to use the upcoming elections debate  as a use case, but this could be generalised to other interview based video content.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/interactive_debate.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/interactive_debate.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And provide a analytics dashboard for the journalist to view a heat map of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;most viewed &lt;/li&gt;
+&lt;li&gt;most commented&lt;/li&gt;
+&lt;li&gt;most shared&lt;/li&gt;
+&lt;li&gt;emotions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;of the viewers engagement with the piece.&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/dashboard.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/dashboard.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;
+ This we felt is also very important. For instance,   if you are a journalist writing on that debate looking at this data could give you clues about what your readers are already thinking about it, and make it easier to engage in a conversation them in your next article. As well as other possible use cases where analytics  of this kind would be useful.&lt;/p&gt;
+
+&lt;div class=&quot;videoWrapper&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/nn6VvKA4sjI&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/1DLjz__UifA39VrqUQM3-RP7s8ZDBMZWWhuR4qX80Deg/embed?start=false&amp;loop=false&amp;delayms=5000&quot; frameborder=&quot;0&quot; width=&quot;480&quot; height=&quot;389&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;The Concept&lt;/h2&gt;
+
+&lt;p&gt;In terms of the analyses of the video based interview the ambition was that of using existing technology a round natural language processing, and sentiment analysis technology to give an insight into the &lt;a href=&quot;http://en.wikipedia.org/wiki/Subtext&quot;&gt;subtext&lt;/a&gt; of an interview.&lt;/p&gt;
+
+&lt;p&gt;on the morning of the hackathon I was reading through &lt;a href=&quot;http://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/&quot;&gt;the New York Times innovation report&lt;/a&gt; for some inspiration, when it mentioned that very often interactive project for the news are done as a one off, and that a more sustainable approach would be to create structures where form and content could be separated to make it reusable.&lt;/p&gt;
+
+&lt;h2&gt;Technology used&lt;/h2&gt;
+
+&lt;p&gt;We drew on a number of open source technology, APIs and libraries &lt;/p&gt;
+
+&lt;p&gt;We used ruby on rails and bootstrap as underlying framework, as well as  HTML, CSS, and javascript for the front end.
+But considered the tight turnaround we didn’t have time to integrate the various API with our system, so we decided to treat it like an R&amp;amp;D project (Research and Development) where you find all the components and make sure they integrate before actually building the product. So we processed all the various system calls one at a time passing the output a round between the various components , and then hardcoded an interactive high fidelity mockup.  And all that was left then was to bring it all together into a full fledge application.&lt;/p&gt;
+
+&lt;p&gt;These are some of the technologies we used:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Speech to Text  (&lt;a href=&quot;https://developers.google.com/youtube/v3/docs/captions&quot;&gt;Youtube Captioning&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www-lium.univ-lemans.fr/diarization/doku.php&quot;&gt;Speaker diarization  (Lium - same library used by BBC)&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Sentiment Analysis Topic &amp;amp; Keywords  (&lt;a href=&quot;http://www.monkeylearn.com&quot;&gt;Monkey Learn&lt;/a&gt; ) &lt;/li&gt;
+&lt;li&gt;Summarization  (&lt;a href=&quot;http://autosummarizer.com&quot;&gt;Text Summarization API&lt;/a&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/maboa/hyperaudioconverter&quot;&gt;Srt → HTML (library)&lt;/a&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/maboa/uselect&quot;&gt;Social media Share (library)&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/maboa/uselect&quot;&gt;Interactive transcriptions&lt;/a&gt; , using &lt;a href=&quot;http://popcornjs.org&quot;&gt;popcorn library&lt;/a&gt; . from opensource &lt;a href=&quot;http://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html?k=economy&amp;amp;t=1000&quot;&gt;Aljazeera US Election Debate Hyperaudio&lt;/a&gt; . &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/sharing.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/sharing.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/presentation.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/presentation.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/presentation2.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/presentation2.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;/img/BuildTheNews/hackaton.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/hackaton.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;photo credit &lt;a href=&quot;https://twitter.com/mattietk&quot;&gt;@MattieTK&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;div class=&quot;image-wrapper&quot;&gt;
+&lt;a href=&quot;https://www.journalism.co.uk/news/5-digital-storytelling-ideas-from-build-the-news/s2/a564659/&quot;  title=&quot;Article on journalism.co.uk&quot;&gt;
+&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/journalismuk.png&quot; alt=&quot;photo&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;!-- 
+- gist of the project 1 paragraph
+ie: provided a video it would generate all these things in automatic using external APIs(see google doc for newspaper article)
+- inspiration from NY times innovation report, snow builder.
+- tech used
+- opensource project used (aljazeera hyperaudio hypertranscript, srt to hypertranscript, etc.. see team google doc )
+ --&gt;
+</description>
+        <pubDate>Wed, 29 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://pietropassarelli.com//buildTheNews.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//buildTheNews.html</guid>
       </item>
     
   </channel>

@@ -210,7 +210,7 @@ img {
  * is linked to `:hover` for basic accessibility.
  */
 
-a {
+/*a {
   font-weight: 600;
   color: #222;
   text-decoration: none;
@@ -218,8 +218,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: underline;
-}
-
+}*/
 
 /*
  * Masthead
