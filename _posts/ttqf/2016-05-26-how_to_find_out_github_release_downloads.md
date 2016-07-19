@@ -13,8 +13,6 @@ tags:
 - github
 ---
 
-# How to know your projects github releases downloads
-
 Here’s a quick "how to" to see how many people have downloaded your project release on github.
 
 This can only be done through the github API,but if your API hasn’t exceeded the request limit you can do it without authenticating. (chances are that if you are at work they might have already exceeded the limit, so you may want to do this from a different wifi).
