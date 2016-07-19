@@ -27,10 +27,15 @@ The porpuse of this blog post is to keep an up to date list of projects that are
 
 ### Newsroom challenges
 To best understand the challenges in developing software in a news environment, I referred to the [leaked New York Times Innovation report](http://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/).
- <!-- ref -->
+
+<!-- ref -->
 
 <!-- expand -->
-The biggest issue highlighted in the report was that flagship projects such as [snow falls](http://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek)  <!-- ref -->
+
+The biggest issue highlighted in the report was that flagship projects such as [snow falls](http://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek)  
+
+<!-- ref -->
+
 were time consuming and a lot of effort went into the making of a one of piece with a relatively short life span.
 
 >We are focused on building tools to create snow fall every day, and getting them as close to reporters as possible. I'd rather have a snow-fall builder then a snowfall.
