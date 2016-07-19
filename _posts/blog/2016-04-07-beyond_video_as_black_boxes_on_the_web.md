@@ -72,7 +72,9 @@ In [the Aljazeera Obama - Romney debate](http://www.aljazeera.com/indepth/intera
 
 What I like about this project is that it gives a way into the video, allowing to search the text, and provide some basic infographic, through a pie chart, on the search terms, you can see how many time the respective candidates have mentioned a certain word.
 
-You can see the code [open source on github](https://github.com/maboa/uselect) <!-- ref to github project -->
+You can see the code [open source on github](https://github.com/maboa/uselect)
+
+<!-- ref to github project -->
 
 I looked into the code from this open source project by [Mark Boas](https://twitter.com/maboa)  both at [The Times Build the news hackaton](pietropassarelli.com/buildTheNews.html) and at [BBC news hackaton](pietropassarelli.com/oneStory.html).
 
@@ -142,7 +144,9 @@ A project by [Sam Lavine](https://twitter.com/sam_lavigne) ([blog](http://lav.io
 There is also a [audio grep](https://github.com/antiboredom/audiogrep) version.
 
 It seems to be composed of a Python library that given a video media ([code on github](https://github.com/antiboredom/videogrep) [lib doc](https://pypi.python.org/pypi/videogrep/0.4.4))
+
 <!-- ref video grep example  -->
+
 you can search and [return all the sentences where the word "time" is mentioned from a film](https://www.youtube.com/watch?v=PQMzOUeprlk )  or this example where using same tool it extracted [all the parts in the speech where Jay Carney, the former Press Secretary says “what I can tell”](https://www.youtube.com/watch?v=D7pymdCU5NQ).  this does use our subtitle file associated with the video as a starting point and then Video Using FFMPEG.
 
 >videogrep requires the subtitle track and the video file to have the exact same name, up to the extension
@@ -225,6 +229,7 @@ The presence of tagging, and categorization system is an interesting feature but
 
 ### oTranscribe (open source)
 Made by newsroom developer at WSJ [Elliot Bentley](https://twitter.com/elliot_bentley) it's very popular with journalists.
+
 <!-- ref http://otranscribe.com -->
 
 It facilitates manual transcriptions of video and audio, with intuitive interface and a few keyboards short-cuts.
@@ -301,6 +306,7 @@ Automatically generated transcriptions are a big component of these type of proj
 <!-- Despite having used YouTube captioning for great part of the prototyping of projects mentioned at the beginning of the post, to get the `srt` file of the transcription as in input to the application before integrating the speech to text api component. when it come to implement such component Spoken data turned out to be a better fit. -->
 
 Spoken data is mostly tailored at small teams of professional transcribers, but also individuals requiring transcriptions.
+
 <!-- ref -->
 
 With it being a smaller company they were more responsive in making changes.
@@ -368,6 +374,7 @@ To make a script from a selection of lines from the transcriptions of interviews
 You can then export as an EDL. This can be opened with the editing software of your choice to reconnect the corresponding video into a sequence, and finish working on your rough-cut assembly.
 
 <!-- ref http://pietropassarelli.com/autoEdit.html -->
+
 I am currently working on this, and have various prototypes, with different stack at different stages of development as I am trying out different approaches.
 
 #### Initial prototype
@@ -395,7 +402,9 @@ The [code is on github](https://github.com/pietrop/autoEdit_desktop-alpha) howev
  -->
 
 ### Build the news "debate analyser" proof of concept
-This was a proof of concept for a system that given a video would generate transcription, identify the different speakers, provide summary of main topics and keywords as well as emotional charge of the speaker. Using the UK elections debate as a use case. Was winner of the Times “Build The News Hackaton” <!-- ref  -->
+This was a proof of concept for a system that given a video would generate transcription, identify the different speakers, provide summary of main topics and keywords as well as emotional charge of the speaker. Using the UK elections debate as a use case. Was winner of the Times “Build The News Hackaton”
+
+<!-- ref  -->
 
 ![BuildTheNewsPrototype](http://pietropassarelli.com/img/BuildTheNews/interactive_debate.png)
 
