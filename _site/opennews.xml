@@ -3,9 +3,9 @@
   <channel>
     <title>Tips Tricks &amp; Quick Fix</title>
     <description>Tips Tricks &amp; Quick Fix by &lt;a href=&#39;http://twitter.com/pietropassarell&#39; target=&#39;_blank&#39;&gt;@pietropassarell&lt;/a&gt;i.</description>
-    <link>http://pietropassarelli.com</link>
+    <link>http://127.0.0.1:4000</link>
 
-    <atom:link href="http://pietropassarelli.com/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml" />
     
     <test>blogarticlesopennews</test>
     <item>
@@ -69,8 +69,8 @@
 &lt;p&gt;To assemble the sequence from their paper-edit within the time constraints I used a version of my first attempt at making a &lt;a href=&quot;/autoEdit.html&quot;&gt;digital paper-editing software&lt;/a&gt;.&lt;/p&gt;
 </description>
       <pubDate>Sun, 17 Jul 2016 20:30:00 -0400</pubDate>
-      <link>http://pietropassarelli.com//wip_london_july2016.html</link>
-      <guid isPermaLink="true">http://pietropassarelli.com//wip_london_july2016.html</guid>
+      <link>http://127.0.0.1:4000//wip_london_july2016.html</link>
+      <guid isPermaLink="true">http://127.0.0.1:4000//wip_london_july2016.html</guid>
     </item>
     
     <test>blogarticlesopennews</test>
@@ -497,8 +497,8 @@ Exporting a text quote, trims the corresponding video.&lt;/p&gt;
 &lt;p&gt;I&amp;#39;ve since refactored the project from the original rails implementation to Node, (&lt;a href=&quot;https://github.com/pietrop/quickQuoteNode&quot;&gt;code on github&lt;/a&gt;) and added suport to export/publish the video snippet to twitter, through the twitter video API.&lt;/p&gt;
 </description>
       <pubDate>Sun, 07 Apr 2013 20:30:00 -0400</pubDate>
-      <link>http://pietropassarelli.com//videoBox.html</link>
-      <guid isPermaLink="true">http://pietropassarelli.com//videoBox.html</guid>
+      <link>http://127.0.0.1:4000//videoBox.html</link>
+      <guid isPermaLink="true">http://127.0.0.1:4000//videoBox.html</guid>
     </item>
     
   </channel>

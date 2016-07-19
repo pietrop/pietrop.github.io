@@ -3,8 +3,8 @@
   <channel>
     <title>Tips Tricks &amp; Quick Fix</title>
     <description>Tips Tricks &amp; Quick Fix by &lt;a href=&#39;http://twitter.com/pietropassarell&#39; target=&#39;_blank&#39;&gt;@pietropassarell&lt;/a&gt;i.</description>
-    <link>http://pietropassarelli.com</link>
-    <atom:link href="http://pietropassarelli.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://127.0.0.1:4000</link>
+    <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>How to craft compelling stories out of video interviews?</title>
@@ -67,8 +67,8 @@
 &lt;p&gt;To assemble the sequence from their paper-edit within the time constraints I used a version of my first attempt at making a &lt;a href=&quot;/autoEdit.html&quot;&gt;digital paper-editing software&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 17 Jul 2016 20:30:00 -0400</pubDate>
-        <link>http://pietropassarelli.com//wip_london_july2016.html</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//wip_london_july2016.html</guid>
+        <link>http://127.0.0.1:4000//wip_london_july2016.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//wip_london_july2016.html</guid>
       </item>
     
       <item>
@@ -255,8 +255,8 @@
 &lt;p&gt;Here are some more links from the &lt;a href=&quot;https://developer.github.com/v3/&quot;&gt;github api&lt;/a&gt; &lt;a href=&quot;https://developer.github.com/v3/repos/releases/#get-a-single-release&quot;&gt;documentation&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 May 2016 09:55:00 -0400</pubDate>
-        <link>http://pietropassarelli.com//articles/2016/05/26/how_to_find_out_github_release_downloads/</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//articles/2016/05/26/how_to_find_out_github_release_downloads/</guid>
+        <link>http://127.0.0.1:4000//articles/2016/05/26/how_to_find_out_github_release_downloads/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//articles/2016/05/26/how_to_find_out_github_release_downloads/</guid>
       </item>
     
       <item>
@@ -543,8 +543,8 @@ HTML&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 21 Jul 2015 00:00:00 -0400</pubDate>
-        <link>http://pietropassarelli.com//quickQuote.html</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//quickQuote.html</guid>
+        <link>http://127.0.0.1:4000//quickQuote.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//quickQuote.html</guid>
       </item>
     
       <item>
@@ -563,7 +563,7 @@ HTML&lt;/p&gt;
 
 &lt;p&gt;It&amp;#39;s a system that allows a journalist easily make a podcast version of a given article. And for the user/viewer, he/she can seamlessly switch between the written article and podcast.&lt;/p&gt;
 
-&lt;p&gt;see &lt;a href=&quot;http://pietropassarelli.com/oneStory.html#presVideo&quot;&gt;video of presentation for more details&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;see &lt;a href=&quot;http://127.0.0.1:4000/oneStory.html#presVideo&quot;&gt;video of presentation for more details&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;image-wrapper&quot;&gt;
     &lt;img src=&quot;/img/newsHackOneStory/OneStory_02_Podcast.png&quot; alt=&quot;/img/newsHackOneStory/OneStory_01_Home.png&quot; /&gt;
@@ -586,8 +586,8 @@ Developer - &lt;a href=&quot;https://twitter.com/pietropassarell&quot; class=&qu
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 04 Jun 2015 00:00:00 -0400</pubDate>
-        <link>http://pietropassarelli.com//oneStory.html</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//oneStory.html</guid>
+        <link>http://127.0.0.1:4000//oneStory.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//oneStory.html</guid>
       </item>
     
       <item>
@@ -701,8 +701,8 @@ and both would render the code like this &lt;/p&gt;
 &lt;!-- Links --&gt;
 </description>
         <pubDate>Sun, 31 May 2015 13:02:00 -0400</pubDate>
-        <link>http://pietropassarelli.com//jekyll-fenced-block.html</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//jekyll-fenced-block.html</guid>
+        <link>http://127.0.0.1:4000//jekyll-fenced-block.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//jekyll-fenced-block.html</guid>
       </item>
     
       <item>
@@ -752,8 +752,8 @@ and both would render the code like this &lt;/p&gt;
 &lt;!-- links --&gt;
 </description>
         <pubDate>Sun, 31 May 2015 12:38:00 -0400</pubDate>
-        <link>http://pietropassarelli.com//laravel-installation.html</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//laravel-installation.html</guid>
+        <link>http://127.0.0.1:4000//laravel-installation.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//laravel-installation.html</guid>
       </item>
     
       <item>
@@ -813,8 +813,8 @@ see rest of rails guide to add links &lt;a href=&quot;http://guides.railsgirls.c
 &lt;/ol&gt;
 </description>
         <pubDate>Tue, 26 May 2015 12:35:00 -0400</pubDate>
-        <link>http://pietropassarelli.com//devise.html</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//devise.html</guid>
+        <link>http://127.0.0.1:4000//devise.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//devise.html</guid>
       </item>
     
       <item>
@@ -915,8 +915,8 @@ mkdir -p &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;GC01,GC02,GC03,GC04,GC05,
 &lt;p&gt;from &lt;a href=&quot;http://www.lynda.com/Bash-tutorials/Up-Running-Bash-Scripting/142989-2.html&quot;&gt;Lynda.com up and running with bash script&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 25 May 2015 10:09:10 -0400</pubDate>
-        <link>http://pietropassarelli.com//bash_script.html</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//bash_script.html</guid>
+        <link>http://127.0.0.1:4000//bash_script.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//bash_script.html</guid>
       </item>
     
       <item>
@@ -1021,8 +1021,8 @@ Such as &lt;code&gt;01:17:23.736&lt;/code&gt;  where the milliseconds that can b
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;twoTimeCodes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;00:00:06,500 --&amp;gt; 00:00:10,790&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         <pubDate>Sun, 17 May 2015 10:15:00 -0400</pubDate>
-        <link>http://pietropassarelli.com//regex.html</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//regex.html</guid>
+        <link>http://127.0.0.1:4000//regex.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//regex.html</guid>
       </item>
     
       <item>
@@ -1148,8 +1148,8 @@ ie: provided a video it would generate all these things in automatic using exter
  --&gt;
 </description>
         <pubDate>Wed, 29 Apr 2015 00:00:00 -0400</pubDate>
-        <link>http://pietropassarelli.com//buildTheNews.html</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//buildTheNews.html</guid>
+        <link>http://127.0.0.1:4000//buildTheNews.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//buildTheNews.html</guid>
       </item>
     
   </channel>

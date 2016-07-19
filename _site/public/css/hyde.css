@@ -210,7 +210,7 @@ img {
  * is linked to `:hover` for basic accessibility.
  */
 
-/*a {
+a {
   font-weight: 600;
   color: #222;
   text-decoration: none;
@@ -218,7 +218,24 @@ img {
 a:hover,
 a:focus {
   text-decoration: underline;
-}*/
+  /*background-color: #ffc966;*/
+}
+
+
+p.lead a:hover {
+    color: white;
+    text-decoration: underline;;
+}
+
+
+p a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+::selection {
+    background-color: #ffc966;
+}
 
 /*
  * Masthead

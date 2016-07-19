@@ -37,8 +37,11 @@ class="icon-list-alt"
       {{ page.date | date_to_string }}
       </span>
 
+      {% if page.image %}
        <a  href="{{ site.url }}{{ page.url }}">
       <img class="thumb img-round img-responsive" src="{{ page.image }}"> </a>
+      {% endif %}
+
       <small> <b>{{ page.duration }}</b></small>
        <p>{{ page.description }} <p>
 
