@@ -78,11 +78,7 @@ In [the Aljazeera Obama - Romney debate](http://www.aljazeera.com/indepth/intera
 
 What I like about this project is that it gives a way into the video, allowing to search the text, and provide some basic infographic, through a pie chart, on the search terms, you can see how many time the respective candidates have mentioned a certain word.
 
-You can see the code [open source on github](https://github.com/maboa/uselect)
-
-
-
-<!-- ref to github project -->
+You can see the code [open source on github](https://github.com/maboa/uselect)     
 
 I looked into the code from this open source project by [Mark Boas](https://twitter.com/maboa)  both at [The Times Build the news hackaton](pietropassarelli.com/buildTheNews.html) and at [BBC news hackaton](pietropassarelli.com/oneStory.html).
 
@@ -137,7 +133,6 @@ The piece used audio only. what I like about it, is that the text changes color 
 Built with a Google docs-based back-end using [doctop](https://github.com/times/doctop) and [getbootstrap.com](Bootstrap) front-end.
 
 
-
 <!-- and [popcornjs.org] for hypertranscript -->
 
 However the project relying on google doc as a backend, through [doctop](https://github.com/times/doctop) or [tabletop](https://github.com/jsoma/tabletop) are at risk of being effected by google changes in the API.
@@ -155,9 +150,7 @@ A project by [Sam Lavine](https://twitter.com/sam_lavigne) ([blog](http://lav.io
 
 There is also a [audio grep](https://github.com/antiboredom/audiogrep) version.
 
-It seems to be composed of a Python library that given a video media ([code on github](https://github.com/antiboredom/videogrep) [lib doc](https://pypi.python.org/pypi/videogrep/0.4.4))
-
-
+It seems to be composed of a Python library that given a video media ([code on github](https://github.com/antiboredom/videogrep) [lib doc](https://pypi.python.org/pypi/videogrep/0.4.4))     
 
 <!-- ref video grep example  -->
 
@@ -246,10 +239,6 @@ The presence of tagging, and categorization system is an interesting feature but
 ### oTranscribe (open source)
 Made by newsroom developer at WSJ [Elliot Bentley](https://twitter.com/elliot_bentley) it's very popular with journalists.
 
-
-
-<!-- ref http://otranscribe.com -->
-
 It facilitates manual transcriptions of video and audio, with intuitive interface and a few keyboards short-cuts.
 
 ![oTranscribe - WSJ](/img/img_chp2_context/oTranscribe.png)
@@ -327,9 +316,7 @@ Automatically generated transcriptions are a big component of these type of proj
 
 <!-- Despite having used YouTube captioning for great part of the prototyping of projects mentioned at the beginning of the post, to get the `srt` file of the transcription as in input to the application before integrating the speech to text api component. when it come to implement such component Spoken data turned out to be a better fit. -->
 
-Spoken data is mostly tailored at small teams of professional transcribers, but also individuals requiring transcriptions.     
-
-
+Spoken data is mostly tailored at small teams of professional transcribers, but also individuals requiring transcriptions.           
 
 <!-- ref -->
 
@@ -357,10 +344,7 @@ If you are looking for a semi automated workflow when working with transcription
 
 However Trint is not open source and it is a commercial project. But they do give you some free time to begin with if you want to check it out.
 
-Interesting is the possibility, borrowed from the autoEdit export to EDL component, to export selections as EDL.
-
-
-
+Interesting is the possibility, borrowed from the autoEdit export to EDL component, to export selections as EDL.     
 
 <!-- an analyses of this algorithm, can be found in the appendix, as this was converted from js to ruby to move this conversion logic in the back end of the application. -->
 
@@ -481,4 +465,4 @@ Exporting a text quote, trims the corresponding video.
 
 This can be exported either as an interactive video quote or to the twitter video API.
 
-I've since refactored the project from the original rails implementation to Node, ([code on github](https://github.com/pietrop/quickQuoteNode)) and added suport to export/publish the video snippet to twitter, through the twitter video API.
+I've since refactored the project from the original rails implementation to Node, ([code on github](https://github.com/pietrop/quickQuoteNode)) and added support to export/publish the video snippet to twitter, through the twitter video API.

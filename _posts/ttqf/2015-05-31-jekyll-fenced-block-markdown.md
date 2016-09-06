@@ -4,8 +4,8 @@ title:  "use fenced code blocks in jekyll"
 date:   2015-05-31 17:02:00
 permalink: "/jekyll-fenced-block.html"
 description:  "A quick step by step how to use fenced code blocks in jekyll instead of liquid tags"
-youtube: 
-categories: 
+youtube:
+categories:
 - articles
 tags:
 - markdown
@@ -19,12 +19,12 @@ So decided to install [a plugin from the jekyll site][plugin] to enable it, but 
 
 ## Fenced code blocks and liquid tags
 Let's look at how to use fenced code blocks instead of liquid tags in jekyll.
-But first, what's what? 
+But first, what's what?
 
 These are liquid tags and their default way for jekyll to display code with syntax hilight:
 
 <hr>
-{% raw %} 
+{% raw %}
 {% highlight ruby %}   
 print "hello world"   
 {% endhighlight %}   
@@ -37,21 +37,21 @@ these are fenced code blocks
 <p>print "hello world" </p>  
 <p>```</p>   
 <hr>
-and both would render the code like this 
+and both would render the code like this
 
 ```ruby
-print "hello world" 
+print "hello world"
 ```
 
 
 
-## Quick install 
+## Quick install
 
 ###1.gem install redcarpet
 
 in terminal:
 
-```bash 
+```bash
 gem install redcarpet
 ```
 
@@ -114,7 +114,7 @@ end
 ###3.change config file
 then in your config `_config.yml` file you need to add:
 
-```ruby 
+```ruby
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
@@ -124,9 +124,36 @@ redcarpet:
 ...and your done.
 
 ## End notes
-I took most of these installation steps are taken from [stack overflow][stack] however there the sudgestion was to write in the config file `markdown: redcarpet2` and it wasn't working for me, so I found that [it has been raised elsewhere][elsewhere] that you can just write `markdown: redcarpet` and it works just fine. 
+I took most of these installation steps are taken from [stack overflow][stack] however there the sudgestion was to write in the config file `markdown: redcarpet2` and it wasn't working for me, so I found that [it has been raised elsewhere][elsewhere] that you can just write `markdown: redcarpet` and it works just fine.
 
 Also, I've noticed that with this set up you can use both liquid tags and fenced blocks.
+
+
+## Updated
+Github does nto support redcarpet anymore, uses kramdown by the default so I followed this to update and retain same settings described above.
+
+"[Updating from redcarpet and Pygments to Kramdown and Rouge on Github Pages](http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/)"
+
+In a nutshell
+
+in `_config.yml` change this
+
+```yml
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
+```
+to this
+
+```yml
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+```
 
 <!-- Links -->
 
@@ -136,5 +163,3 @@ Also, I've noticed that with this set up you can use both liquid tags and fenced
 [elsewhere]:https://github.com/clayallsopp/rubymotion-tutorial/issues/30
 [plugin]:https://github.com/nono/Jekyll-plugins
 [pandoc]:http://pandoc.org/
-
-
