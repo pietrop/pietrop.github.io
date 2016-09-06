@@ -3,9 +3,9 @@ layout: post
 title: "So you want to learn to code … - draft"
 image:
 date: '2015-11-23T01:30:00.000+01:00'
-previousSite:
 description: "For my friends who have been asked me how to learn to code"
 published: true
+permalink: "/learnToCode101.html"
 categories:
 - blog
 - articles

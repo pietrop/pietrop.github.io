@@ -282,6 +282,202 @@
       </item>
     
       <item>
+        <title>So you want to learn to code … - draft</title>
+        <description>&lt;!-- # So you want to learn to code … 
+*blog post for Farrah and Nick* --&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones.     &lt;br /&gt;
+Donald Knuth     &lt;br /&gt;
+from &lt;a href=&quot;http://eloquentjavascript.net/03_functions.html&quot;&gt;&lt;strong&gt;eloquent Javascript&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;first-thing-first&quot;&gt;first thing first&lt;/h2&gt;
+&lt;p&gt;Forget everything you heard about coding and learning to code and get ready to make your mind up about it.&lt;/p&gt;
+
+&lt;p&gt;( I’m referring to the good hold “you need to have started when you were five or there is no point” utter nonsense )&lt;/p&gt;
+
+&lt;p&gt;If you are curious about the pedagogy of learning to code, check out &lt;a href=&quot;http://worrydream.com/LearnableProgramming/&quot;&gt;victor Brent “learnable programming” essay&lt;/a&gt;, for an insight into how to evaluate the best resources out there and take charge of your learning.&lt;/p&gt;
+
+&lt;p&gt;Also consider this about the 20 hours learning, rather then the 3 years myth for mastering a new skill.  &lt;br /&gt;
+&lt;a href=&quot;https://youtu.be/5MgBikgcWnY&quot;&gt;Learn anything in 20 hours&lt;/a&gt;&lt;br /&gt;
+Key points are&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Deconstruct the skills&lt;/strong&gt; - what you want to be able to do, and break it down into smaller and smaller pieces.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Learn enough to self correct&lt;/strong&gt; - using 3 to 5 resources on the subject. learning to notice when making a mistake and self correct. prioritising practice&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Remove practice barriers&lt;/strong&gt; -  distractions.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Practice for at least 20 hour&lt;/strong&gt; - to get over initial frustration barrier.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Knowing, what we don’t know, figuring out limit of knowledge and work with that.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://qz.com/535443/the-best-way-to-understand-math-is-learning-how-to-fail-productively/&quot;&gt;“The best way to learn math is to learn how to fail productively&lt;br /&gt;
+“&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;figure out three critical things: what they know, the limits of what they know, and exactly what they do not know.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This increases&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;conceptual understanding—understanding what it means and possessing the ability to adapt the information&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;of-turtles-and-black-boxes&quot;&gt;Of turtles and black boxes&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://worrydream.com/LearnableProgramming/&quot;&gt;Learnable programming&lt;/a&gt; - &lt;a href=&quot;https://youtu.be/BTd3N5Oj2jk&quot;&gt;The Turtle&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Graham first chapter of developing java software&lt;/li&gt;
+  &lt;li&gt;stanford &lt;a href=&quot;https://see.stanford.edu/Course/CS106A&quot;&gt;CS106A - Programming Methodology&lt;/a&gt; - &lt;strong&gt;“Karel and Java”&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;getting-started---books-and-resources&quot;&gt;Getting started - books and resources&lt;/h2&gt;
+
+&lt;p&gt;Main books I’d recommend to get a digital or physical copy to have in your CS library, for short and long term are:&lt;/p&gt;
+
+&lt;h3 id=&quot;books&quot;&gt;Books&lt;/h3&gt;
+
+&lt;h4 id=&quot;c-book&quot;&gt;C book&lt;/h4&gt;
+&lt;p&gt;C for beginners, CS50 recommended text book &lt;br /&gt;
+Optional, When you are comfortable on topics, you can then re-visit same topics on this more advanced book on C.&lt;/p&gt;
+
+&lt;h4 id=&quot;developing-java-software---graham-roberts&quot;&gt;Developing Java software - Graham Roberts&lt;/h4&gt;
+&lt;p&gt;First n chapters cover the 3 months intro to Java for UCL MSc and First year Bsc at UCL.&lt;br /&gt;
+Following part is more relevant to software projects, covering testing, gathering requirements etc( which maps nicely to the Msc CS third term summer project )&lt;/p&gt;
+
+&lt;p&gt;In particularly the Java swing projects to make a desktop app can be quiet fun, and the GUI structure of swing is similar to most of the GUI structures in other languages, &lt;br /&gt;
+For example event listeners are similar in the Dom for javacript and HTML browsers.&lt;/p&gt;
+
+&lt;p&gt;You can also integrate HTML with Java, which is interesting.&lt;br /&gt;
+( this Java swing project is final project of gc02 msc CS coursework)&lt;/p&gt;
+
+&lt;p&gt;This is very similar curriculum to Stanford Java intro to programming ( on YouTube, if get tired of reading can watch this).&lt;/p&gt;
+
+&lt;p&gt;Unfortunately the book does not have syntax highlighting for code snipes but if you navigate to the website you can get the code used download it and open it in your text editor of choice ( atom is a good choice)&lt;/p&gt;
+
+&lt;p&gt;There’s also a section on testing (explaining the different types) and TDD, worth doing a simple through away project to try that out, as that is how unit testing works in most languages. Increasingly you’ll be asked to write something in TDD at non whiteboard interviews.( more as a sing you took your coding seriously)&lt;/p&gt;
+
+&lt;h3 id=&quot;htmlcss-visual-book&quot;&gt;Html/CSS visual book&lt;/h3&gt;
+
+&lt;h3 id=&quot;js-visual-book&quot;&gt;JS visual book&lt;/h3&gt;
+
+&lt;h3 id=&quot;eloquent-js&quot;&gt;Eloquent js&lt;/h3&gt;
+&lt;p&gt;Online, skip chapter on life simulation.&lt;/p&gt;
+
+&lt;h3 id=&quot;algo-spirit-of&quot;&gt;Algo spirit of&lt;/h3&gt;
+&lt;p&gt;Intro to algo&lt;br /&gt;
+Other algo book used in interviews&lt;/p&gt;
+
+&lt;h3 id=&quot;cracking-coding-interview&quot;&gt;Cracking coding interview&lt;/h3&gt;
+&lt;p&gt;Book used to prep for interviews in tech companies.&lt;br /&gt;
+Might feel daunting but what looks like gibberish now, in a year from now it will make sense. &lt;br /&gt;
+I reckon getting it now because you could refer back to it as you go a long to see how what you learning as you going along is relevant for that level of competency, sort of like a checklist of things to cover.&lt;br /&gt;
+Or if you prefer do as I did, get it a year for now and be pleasantly surprised.&lt;/p&gt;
+
+&lt;h3 id=&quot;online-courses&quot;&gt;Online courses&lt;/h3&gt;
+
+&lt;h3 id=&quot;cs50&quot;&gt;CS50&lt;/h3&gt;
+&lt;p&gt;Full disclosure I am big fan of CS50, and especially if you are completely new  I’d recommend starting with CS50.&lt;br /&gt;
+It gives you quiet a lot of, much needed context, to ease into CS and the wonderful world of programming.&lt;br /&gt;
+As you go along is a good idea to the problem sets, and perhaps setup a study group or meet up with some friends to compare solution and sustain motivation. Or you can always join the Facebook and redding group of people taking the course online which is quiet active.&lt;/p&gt;
+
+&lt;p&gt;If 2014 seems a bit cheasy American in style, 2013, is a bit more to the point, and still very much to the point with the right level of entertainment , seriously the production value is soo good is like watching a TV series.&lt;/p&gt;
+
+&lt;p&gt;[ short videos, lectures summary etc..]&lt;/p&gt;
+
+&lt;p&gt;Outline of course, &lt;br /&gt;
+Scratch, C, quiet deep in C, php, etc..&lt;br /&gt;
+Also Seminar videos archive good intro to other CS topics.&lt;/p&gt;
+
+&lt;h3 id=&quot;code-academy&quot;&gt;Code academy&lt;/h3&gt;
+&lt;p&gt;As you go along, if you wanna test if you know something it’s a good idea to find and do the corresponding code academy track.&lt;br /&gt;
+Ie when you get started with HTML/CSS, if you do these tracks and they make sense and perhaps feel boring it’s a good sign you are getting it otherwise it’s time to rewind , revisit and consolidate.&lt;/p&gt;
+
+&lt;h3 id=&quot;w3-school&quot;&gt;w3 school&lt;/h3&gt;
+&lt;p&gt;Great, with the interactive examples.&lt;/p&gt;
+
+&lt;h2 id=&quot;other&quot;&gt;other&lt;/h2&gt;
+&lt;p&gt;Get excited about open source, &lt;br /&gt;
+Watch revolution Os doc, one and two.&lt;br /&gt;
++ watch stalman talk to understand difference between free software as he intended  and open source.&lt;br /&gt;
+It’s an interesting one to be aware for it’s own sake.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-strategy&quot;&gt;The strategy&lt;/h2&gt;
+&lt;p&gt;As you know I’ve been through a boot camp, done an Msc CS conversion course at UCL and so here is my suggestion to I would go about if I had to do it all over:&lt;/p&gt;
+
+&lt;p&gt;Start with CS50, &lt;br /&gt;
+It’s a fairly gentle intro with scratch, which by removing the syntax with the visual blocks allows you concentrate on familiarising and getting your head a round conditions, control flow etc..&lt;/p&gt;
+
+&lt;p&gt;If you think “this is easy I’ll skip it” which was my initial thought at the time, suspend judgement and just give it a try, if it is easier you’ll tick that box more quickly and move on the next thing, but I’d advise to look at other people’s code on scratch.&lt;br /&gt;
+Make your own easy project, something like it be good to have a cat and mouse style game with a shark eating a diver ( link to mine) or someone else you don’t quiet know how to do but think it be cool to try.&lt;br /&gt;
+Then do a medium one, and if you feel like a hard one, worth trying writing a program that uses threading( threading in scratch).&lt;/p&gt;
+
+&lt;p&gt;Then from scratch cs50 introduces C, through the parallels between the two even C feels like it makes more sense.&lt;/p&gt;
+
+&lt;p&gt;This is a good time to mention another key consideration of this strategy, learn the evergreens.&lt;br /&gt;
+Evergreens,like  learning C will make it easier to learn C based languages, and learning something like Python, Ruby, JavaScript , Java or Php will make more sense.&lt;/p&gt;
+
+&lt;p&gt;Chances are that if you are using a Mac or a Unix based Linux system, your operating system is built in C [ link ]&lt;/p&gt;
+
+&lt;p&gt;C is lower level then Ruby and other languages mentioned above, which you need to do things like managing memory and etc.. Which in itself is not probably something you are going to want to use for most of your projects but it gives you a great insight into the working of a programming language and of your computer.&lt;/p&gt;
+
+&lt;p&gt;Technology changes at a crazy fast rate, but if you look more closes the underlying principles are not evolving quiet as fast, and that, is what I would bet on, identify and learn the evergreen.&lt;br /&gt;
+For example you learn C you get an insight into how your computer works, the “thinking” a round how things are setup, and familiarising with C like syntax makes you enjoy higher level languages as things becomes easier to do.&lt;/p&gt;
+
+&lt;p&gt;Another good example is learning the terminal. To navigate between folders, move files, delete etc.. Bash, and bash scripting might seem daunting now but can be great in speeding up and automating repetitive task( for example in deployment and or testing, further down the line)&lt;/p&gt;
+
+&lt;p&gt;Last example is HTTP requests,&lt;br /&gt;
+( guy talking about http as resources rather then pages) &lt;br /&gt;
+If you learn them for their own sake ( http page in CS group) Then you’d find API calls and AJAx requests make a lot more sense, regardless of the syntax of the language being used.&lt;/p&gt;
+
+&lt;p&gt;Some people prefer to start with Ruby or Python or javascript type languages and dive into object oriented languages, which is the equivalent of a sugar rush because you feel like you can get up to speed to get things done more quickly,such as running simple scripts, scraping or web development.&lt;/p&gt;
+
+&lt;p&gt;But I think this approach, starting from C,will also set you up to be more language agnostic and full stack, which seems to be an increasing trend where things are going.&lt;br /&gt;
+[what does that mean? Right tool for right job]&lt;/p&gt;
+
+&lt;p&gt;And don’t worry you will get to those higher level languages, but taking a slightly longer more solid route, will pay off on the long run, when you want stretch them to do things they are not immediately obvious.&lt;br /&gt;
+For example recently I wanted to cut a video, file with Ruby within a Ruby on Rails application  and the gems that wrap ffmpeg where not quiet right, with the methods I needed to do a trim.&lt;br /&gt;
+So once I figured out how you run the command I want from terminal with ffmpeg, I then worked out how to make a system call within Ruby (which simply means running a terminal command from the Ruby language to the underlying operating system) with a bit of string interpolation and that worked like a charm. I would have not thought of that if I stayed on the high level of abstraction of Ruby and thought that the C based library ffmpeg was behind my reach without the right wrapper ruby gem.&lt;/p&gt;
+
+&lt;p&gt;Then cs50 dives into the working of w computer while introducing more advanced features in C, such as pointers and pointers arithmetic.&lt;/p&gt;
+
+&lt;p&gt;Cs50 eventually introduces php, Which is where we can start to play a round with the web.&lt;br /&gt;
+Now php is an horrible bloated language &lt;br /&gt;
+( initially personal page then different acronyms) but none the less if you suspend judgement and embrace it, making a simple web app in php with no framework , perhaps even connecting to a MySQL database is a good time to learn about the inner workings &lt;br /&gt;
+Of web apps a granularity that requires pretty much everything from scratch, login, security connection to db etc. this set you up to give you a much better appreciation of web frameworks such as Ruby on Rails, django, laravel php etc..&lt;br /&gt;
+( Lynda.com php and sql)&lt;br /&gt;
+( this is equivalent to CompGC06 coursework for UCL msc.&lt;/p&gt;
+
+&lt;p&gt;Again this is an evergreen, frameworks come and go, but server and client side web apps stay the same.&lt;/p&gt;
+
+&lt;p&gt;[bonus point Learn about what is a server. And how you would make a simple one from scratch - Dave malland YouTube videos ]&lt;/p&gt;
+
+&lt;p&gt;Now, re-factor this into object oriented php, ( Lynda.com course )&lt;/p&gt;
+
+&lt;p&gt;This is also a good time to ad some client side interactivity with JavaScript. &lt;br /&gt;
+Playing a round with event listeners etc..&lt;/p&gt;
+
+&lt;p&gt;This is also a great time to learn about version control and Git/ GitHub.&lt;br /&gt;
+Force yourself to use it from terminal , perhaps ignore branches to begin with.&lt;br /&gt;
+Read the documentation.&lt;br /&gt;
+Both for git and php great time to familiarise with reading and understanding documentations.&lt;/p&gt;
+
+&lt;p&gt;Make small through away projects to test what you are learning, narrow it down to specific things you want to learn or see if you understood. Then can iterate and expand on it.&lt;/p&gt;
+
+&lt;p&gt;And keep log notes.&lt;/p&gt;
+
+&lt;p&gt;Approach to app design, sketches and requirement gathering + object oriented analyses and design ( described by Graham)&lt;/p&gt;
+
+&lt;p&gt;Another evergreen arrays and loop &lt;br /&gt;
++ nested arrays and nested loops.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Nov 2015 19:30:00 -0500</pubDate>
+        <link>http://pietropassarelli.com//learnToCode101.html</link>
+        <guid isPermaLink="true">http://pietropassarelli.com//learnToCode101.html</guid>
+      </item>
+    
+      <item>
         <title>quickQuote - Times &amp; Sunday Times</title>
         <description>&lt;p&gt;This project was done while working as newsroom developer at the &lt;a href=&quot;https://twitter.com/TimesDevelops&quot;&gt;Times &amp;amp; Sunday Times&lt;/a&gt; as part of a summer placement for the final project of the UCL Msc in Computer Science.&lt;/p&gt;
 
@@ -1154,125 +1350,6 @@ Such as &lt;code class=&quot;highlighter-rouge&quot;&gt;01:17:23.736&lt;/code&gt
         <pubDate>Sun, 17 May 2015 10:15:00 -0400</pubDate>
         <link>http://pietropassarelli.com//regex.html</link>
         <guid isPermaLink="true">http://pietropassarelli.com//regex.html</guid>
-      </item>
-    
-      <item>
-        <title>Interactive databate #buildTheNews</title>
-        <description>&lt;div class=&quot;image-wrapper&quot;&gt;
-&lt;a href=&quot;/img/BuildTheNews/hackaton2.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
-&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/hackaton2.png&quot; alt=&quot;photo&quot; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
-For the Times Build the news hackathon we decided to do system that given a video would generate transcription, identify the different speakers, provide summary of main topics and keywords as well as emotional charge of the speaker.&lt;/p&gt;
-
-&lt;p&gt;We decided to use the upcoming elections debate  as a use case, but this could be generalised to other interview based video content.&lt;/p&gt;
-
-&lt;div class=&quot;image-wrapper&quot;&gt;
-&lt;a href=&quot;/img/BuildTheNews/interactive_debate.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton&quot;&gt;
-&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/interactive_debate.png&quot; alt=&quot;photo&quot; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;And provide a analytics dashboard for the journalist to view a heat map of:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;most viewed&lt;/li&gt;
-  &lt;li&gt;most commented&lt;/li&gt;
-  &lt;li&gt;most shared&lt;/li&gt;
-  &lt;li&gt;emotions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;of the viewers engagement with the piece.&lt;/p&gt;
-
-&lt;div class=&quot;image-wrapper&quot;&gt;
-&lt;a href=&quot;/img/BuildTheNews/dashboard.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton&quot;&gt;
-&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/dashboard.png&quot; alt=&quot;photo&quot; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
- This we felt is also very important. For instance,   if you are a journalist writing on that debate looking at this data could give you clues about what your readers are already thinking about it, and make it easier to engage in a conversation them in your next article. As well as other possible use cases where analytics  of this kind would be useful.&lt;/p&gt;
-
-&lt;div class=&quot;videoWrapper&quot;&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/nn6VvKA4sjI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;iframe src=&quot;https://docs.google.com/presentation/d/1DLjz__UifA39VrqUQM3-RP7s8ZDBMZWWhuR4qX80Deg/embed?start=false&amp;amp;loop=false&amp;amp;delayms=5000&quot; frameborder=&quot;0&quot; width=&quot;480&quot; height=&quot;389&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;the-concept&quot;&gt;The Concept&lt;/h2&gt;
-&lt;p&gt;In terms of the analyses of the video based interview the ambition was that of using existing technology a round natural language processing, and sentiment analysis technology to give an insight into the &lt;a href=&quot;http://en.wikipedia.org/wiki/Subtext&quot;&gt;subtext&lt;/a&gt; of an interview.&lt;/p&gt;
-
-&lt;p&gt;on the morning of the hackathon I was reading through &lt;a href=&quot;http://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/&quot;&gt;the New York Times innovation report&lt;/a&gt; for some inspiration, when it mentioned that very often interactive project for the news are done as a one off, and that a more sustainable approach would be to create structures where form and content could be separated to make it reusable.&lt;/p&gt;
-
-&lt;h2 id=&quot;technology-used&quot;&gt;Technology used&lt;/h2&gt;
-&lt;p&gt;We drew on a number of open source technology, APIs and libraries&lt;/p&gt;
-
-&lt;p&gt;We used ruby on rails and bootstrap as underlying framework, as well as  HTML, CSS, and javascript for the front end.&lt;br /&gt;
-But considered the tight turnaround we didn’t have time to integrate the various API with our system, so we decided to treat it like an R&amp;amp;D project (Research and Development) where you find all the components and make sure they integrate before actually building the product. So we processed all the various system calls one at a time passing the output a round between the various components , and then hardcoded an interactive high fidelity mockup.  And all that was left then was to bring it all together into a full fledge application.&lt;/p&gt;
-
-&lt;p&gt;These are some of the technologies we used:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Speech to Text  (&lt;a href=&quot;https://developers.google.com/youtube/v3/docs/captions&quot;&gt;Youtube Captioning&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www-lium.univ-lemans.fr/diarization/doku.php&quot;&gt;Speaker diarization  (Lium - same library used by BBC)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Sentiment Analysis Topic &amp;amp; Keywords  (&lt;a href=&quot;http://www.monkeylearn.com&quot;&gt;Monkey Learn&lt;/a&gt; )&lt;/li&gt;
-  &lt;li&gt;Summarization  (&lt;a href=&quot;http://autosummarizer.com&quot;&gt;Text Summarization API&lt;/a&gt; )&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/maboa/hyperaudioconverter&quot;&gt;Srt → HTML (library)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/maboa/uselect&quot;&gt;Social media Share (library)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/maboa/uselect&quot;&gt;Interactive transcriptions&lt;/a&gt; , using &lt;a href=&quot;http://popcornjs.org&quot;&gt;popcorn library&lt;/a&gt; . from opensource &lt;a href=&quot;http://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html?k=economy&amp;amp;t=1000&quot;&gt;Aljazeera US Election Debate Hyperaudio&lt;/a&gt; .&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;image-wrapper&quot;&gt;
-&lt;a href=&quot;/img/BuildTheNews/sharing.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton&quot;&gt;
-&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/sharing.png&quot; alt=&quot;photo&quot; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;image-wrapper&quot;&gt;
-&lt;a href=&quot;/img/BuildTheNews/presentation.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
-&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/presentation.png&quot; alt=&quot;photo&quot; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;image-wrapper&quot;&gt;
-&lt;a href=&quot;/img/BuildTheNews/presentation2.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
-&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/presentation2.png&quot; alt=&quot;photo&quot; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;image-wrapper&quot;&gt;
-&lt;a href=&quot;/img/BuildTheNews/hackaton.png&quot; data-lightbox=&quot;buildTheNews&quot; title=&quot;#BuildTheNews Hackaton, photo credit @MattieTK&quot;&gt;
-&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/hackaton.png&quot; alt=&quot;photo&quot; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;photo credit &lt;a href=&quot;https://twitter.com/mattietk&quot;&gt;@MattieTK&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-
-&lt;div class=&quot;image-wrapper&quot;&gt;
-&lt;a href=&quot;https://www.journalism.co.uk/news/5-digital-storytelling-ideas-from-build-the-news/s2/a564659/&quot; title=&quot;Article on journalism.co.uk&quot;&gt;
-&lt;img class=&quot;thumb img-round img-responsive&quot; src=&quot;/img/BuildTheNews/journalismuk.png&quot; alt=&quot;photo&quot; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;!-- 
-- gist of the project 1 paragraph
-ie: provided a video it would generate all these things in automatic using external APIs(see google doc for newspaper article)
-- inspiration from NY times innovation report, snow builder.
-- tech used
-- opensource project used (aljazeera hyperaudio hypertranscript, srt to hypertranscript, etc.. see team google doc )
- --&gt;
-
-</description>
-        <pubDate>Wed, 29 Apr 2015 00:00:00 -0400</pubDate>
-        <link>http://pietropassarelli.com//buildTheNews.html</link>
-        <guid isPermaLink="true">http://pietropassarelli.com//buildTheNews.html</guid>
       </item>
     
   </channel>
