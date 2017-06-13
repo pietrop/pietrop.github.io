@@ -1,10 +1,10 @@
-title:        TTQF
-tagline:      'Tips Tricks & Quick Fix'
+title:        Pietro
+tagline:      'Passarelli'
 name:         'Tips Tricks & Quick Fix'
 description:  "Tips Tricks & Quick Fix by <a href='http://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i."
-url:          http://pietropassarelli.com
+# url:          http://pietropassarelli.com
 #http://pietropassarelli.com
-#http://localhost:4000
+#url: http://localhost:4000
 version:      1.1.1
 author:
   name:       'Pietro'
@@ -23,6 +23,17 @@ kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
+# redcarpet:
+#     extensions: [
+#         'no_intra_emphasis',
+#         'fenced_code_blocks',
+#         'autolink',
+#         'strikethrough',
+#         'superscript',
+#         'with_toc_data',
+#         'tables',
+#         'hardwrap'
+#     ]
 
 # Owner/author information
 owner:
@@ -51,7 +62,7 @@ owner:
   about:          ubiq/pietro.jpeg
   videocolor:     theme-base-0f
 
-categories: [video, tech, photos, articles, blog]
+categories: [video, tech, photos, articles]
 
 
 # https://github.com/mdo/hyde

@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementVideo
+layout: post
 title: "SwingRowers"
 description: "The SwingRowers live UK tour and Radio interview at Resonace"
 duration: "7min 40 sec"

@@ -8,8 +8,6 @@ published: true
 permalink: "/videoBox.html"
 categories:
 - blog
-- articles
-- opennews
 tags:
 ---
 

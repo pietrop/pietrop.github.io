@@ -8,7 +8,6 @@ description: "Some resources to get a good grasp of Javascript / Node"
 published: false
 categories:
 - blog
-- articles
 tags:
 ---
 

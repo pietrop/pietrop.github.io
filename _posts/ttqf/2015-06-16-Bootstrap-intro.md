@@ -11,7 +11,7 @@ bootstrap1-hilight: /img/bootstrap-intro/bootstrap-intro-hilight.png
 bootstrap2: /img/bootstrap-intro/bootstrap-intro-samplePage2.png
 published: false
 categories:
-- articles
+- ttqf
 tags:
 - bootstrap
 ---

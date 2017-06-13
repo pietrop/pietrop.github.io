@@ -3,7 +3,7 @@ layout: post
 title: "Making a CV For The Broadcast Industry"
 description: "how to make a CV for the Broadcast industry"
 categories: 
-- Articles
+- ttqf
 tags:
 - cv
 ---

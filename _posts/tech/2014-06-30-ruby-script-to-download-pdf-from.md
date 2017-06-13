@@ -1,9 +1,9 @@
 ---
-layout: portfolioelementTech
+layout: post
 title: issu.com pdf downloader
 date: '2014-06-29T19:28:00.001+01:00'
 author: Pietro Passarelli
-permalink: "/issuu.html"
+permalink: /issuu.html
 modified_time: '2014-06-29T19:34:37.387+01:00'
 thumbnail: http://1.bp.blogspot.com/-Bu2Bw7_tHjs/U683ZFxKIfI/AAAAAAAAFdM/e_3_4rqBQSc/s72-c/Screen+Shot+2014-06-28+at+22.25.43.png
 blogger_id: tag:blogger.com,1999:blog-3556210610913027832.post-8186486077367353300
@@ -14,7 +14,6 @@ github: pietrop/issuu.com-downloader
 tags:
 - ruby
 category:
-- articles
 - tech
 ---
 

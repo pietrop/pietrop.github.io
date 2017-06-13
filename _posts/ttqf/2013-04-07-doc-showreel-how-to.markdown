@@ -6,7 +6,7 @@ permalink: "/showreel.html"
 description:  "How to make a documentary showreel"
 image: /img/showreel/doc-showreel.png
 categories: 
-- articles
+- ttqf
 tags:
 - showreel
 ---

@@ -8,8 +8,6 @@ published: false
 permalink:
 categories:
 - blog
-- articles
-- opennews
 tags:
 ---
 

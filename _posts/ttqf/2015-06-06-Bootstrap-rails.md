@@ -8,7 +8,7 @@ youtube:
 image: https://dl.dropboxusercontent.com/u/449999/GC02_AudavaWebApp_Wiki/bootstrap101.jpg
 published: false
 categories: 
-- articles
+- ttqf
 tags:
 - rails
 ---

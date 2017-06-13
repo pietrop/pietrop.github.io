@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementVideo
+layout: post
 title: "Difformazione"
 description: "Plans to build a biomass powerstation treatn the local comunity"
 duration: "32min 26sec"

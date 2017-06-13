@@ -1,0 +1,11 @@
+---
+layout: page
+title: Blog
+body: theme-base-0c
+---
+
+
+{% for post in site.categories.blog %}
+	{% include post_element.html image=post.image title=post.title url=post.url date=post.date description=post.description content=post.content %} 
+{% endfor %}
+

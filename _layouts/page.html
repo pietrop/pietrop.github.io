@@ -2,25 +2,14 @@
 layout: default
 ---
 
-<style>
-.img-responsive {
-  max-width: 70%;
-  }
-</style>
-
 <div class="page">
-  <h1 
- {% if page.title =="Video" %}
-  class="icon-film"
-   {% elsif page.title =="Photos" %}
-class="icon-camera"
-   {% elsif page.title =="Tech" %}
-class="icon-laptop"
-  {% endif %}
-
-
-  class="page-title"> {{ page.title }}  </h1>
-
- 
-  {{ content }}
+  <h1 class="page-title">
+  	{% if page.title == 'Ttqf'  %}
+  		Tips Tricks and Quick Fix
+  	{% else %}
+  		{{page.title}}
+  	{% endif %}
+  </h1>
+  <hr>
+	{{ content }}
 </div>

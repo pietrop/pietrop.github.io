@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementVideo
+layout: post
 title: "RAI5 UBIQ - 3D Printing"
 description: "UBIQ - 'Racconti' del 31/10/2013 RAI 5"
 duration: "4min 48sec"

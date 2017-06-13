@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementTech
+layout: post
 title: "Ca'Lamma B&B"
 description: "One Page layout site for Ca'Lamma Bed & Breakfast"
 duration: 

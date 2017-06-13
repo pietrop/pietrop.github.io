@@ -22,8 +22,6 @@ web_version_interviews_link: "https://dl.dropboxusercontent.com/u/449999/WIP_Wor
 web_version_interviews_screenshot: /img/wip_london_workshop_july_2016/interactive_transcript_jr.png
 categories:
 - blog
-- articles
-- opennews
 tags:
 ---
 

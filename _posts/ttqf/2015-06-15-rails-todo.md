@@ -8,7 +8,7 @@ youtube:
 image: 
 published: false
 categories: 
-- articles
+- ttqf
 tags:
 - rails
 ---

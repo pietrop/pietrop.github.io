@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementVideo
+layout: post
 title: "Producer/Director - Making of the BBC 'Life and Death Row Series'"
 description: "Behind the scene of the BBC3 'Life and Death Row Series'"
 permalink: "/BBCLDRS-pd.html"  

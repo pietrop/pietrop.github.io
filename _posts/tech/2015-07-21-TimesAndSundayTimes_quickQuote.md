@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementTech
+layout: post
 title: "quickQuote - Times & Sunday Times"
 description: "A tool for journalists to easily find and add video quotes to news articles"
 duration:

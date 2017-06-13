@@ -1,0 +1,15 @@
+<div >
+	<h3 >
+		<a href="{{ include.url }}">
+			{{ include.title }}
+		</a>
+	</h3>
+	<small><span >{{ include.date | date_to_string }} </span></small>
+	{%if include.image %}
+		<a href="{{ include.url }}">
+			<img src={{include.image}}>
+		</a>
+	{%endif%}
+	<p>{{ include.description }}</p>
+	<a href="{{ include.url }}"><small>More  &raquo;</small></a>
+</div>

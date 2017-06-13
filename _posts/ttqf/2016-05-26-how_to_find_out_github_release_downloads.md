@@ -8,7 +8,7 @@ youtube:
 image:
 published: true
 categories:
-- articles
+- ttqf
 tags:
 - github
 ---

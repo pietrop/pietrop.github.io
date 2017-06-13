@@ -8,7 +8,6 @@ description: "Some resources to get a good intro on algo and data structures"
 published: false
 categories:
 - blog
-- articles
 tags:
 ---
 

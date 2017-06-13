@@ -7,7 +7,7 @@ description:  "How to create multiple folders in one go with a bash script"
 image: /img/bash_script/subfolders.png
 image2: /img/bash_script/subfoldersWithImages.png
 categories: 
-- articles
+- ttqf
 tags:
 - bash_script
 ---

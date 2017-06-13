@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementTech
+layout: post
 title: "Simple Invoice"
 description: "A simple invoicing application for freelancers"
 duration: 

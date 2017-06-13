@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementTech
+layout: post
 title: "Do Ashtanga Yoga Website"
 description: "Promotional Website for London Based Do Asthanga Yoga"
 duration:

@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementPhoto
+layout: post
 title: "Auschwitz"
 image: /img/aus/aus1.jpeg
 description: 

@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementTech
+layout: post
 title: "Audava London based Startup, online audio stories"
 description: "For the Audava london based startup, as part of one of the UCL Msc industry projects, inspired by soundcloud, a audio story recording/sharing application."
 duration:

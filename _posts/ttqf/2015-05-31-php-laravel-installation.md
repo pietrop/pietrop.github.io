@@ -7,7 +7,7 @@ description:  "A quick step by step to install Laravel php MVC framework"
 youtube: 
 image: 
 categories: 
-- articles
+- ttqf
 tags:
 - php
 ---

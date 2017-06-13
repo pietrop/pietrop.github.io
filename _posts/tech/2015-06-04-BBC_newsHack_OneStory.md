@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementTech
+layout: post
 title: "OneStory at BBC #newsHack"
 description: "at #EditorsLab BBC #newsHack hackaton"
 duration:

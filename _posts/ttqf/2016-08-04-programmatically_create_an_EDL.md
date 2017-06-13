@@ -8,7 +8,7 @@ youtube:
 published: false
 image: 
 categories: 
-- articles
+- ttqf
 tags:
 - EDL
 ---
@@ -102,13 +102,13 @@ var edlSqDemo = {
       { "id":1,
         "startTime": 10, // in deconds 
         "endTime": 20,
-        "reelName":"SomeReelName",
+        "reelName":"SomeReelName", //optional
         "clipName":"Something.mov"
       },
       { "id":2,
         "startTime": 45,
         "endTime": 55,
-        "reelName":"SomeOtherReelName",
+        "reelName":"SomeOtherReelName", //optional 
         "clipName":"SomethingElse.mov"
       }
     ]
@@ -126,9 +126,10 @@ This assumes that `C` and `AA/V` don't change. but this could be added to out ED
 
 More on EDL specs in [Apple documentation](https://documentation.apple.com/en/finalcutpro/usermanual/index.html#chapter=96%26section=1%26tasks=true) and [here](http://edlmax.com/MAXGUIDE.HTML)
 
-<!-- 
 
-## Futute work - adding Title event
+
+## Optional `ReelName`
+If the video/audio file does not come directly from a comcorder the reel name might not be present, in that case it should be replaced with `AX`.
 
 ```edl
 001  AX       V     C        01:00:00:00 01:00:05:00 00:00:00:00 00:00:05:00
@@ -140,5 +141,3 @@ More on EDL specs in [Apple documentation](https://documentation.apple.com/en/fi
 - only V channel 
 - normal cut `C`
 - need to decide on duration to make in and out of source. in will always be `00:00:00:00` 
-
-TODO: try this in FCP7 -->

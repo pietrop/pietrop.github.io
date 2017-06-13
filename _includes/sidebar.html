@@ -1,29 +1,44 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+ styles, `#sidebar-checkbox` for behavior. -->
+ <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
- {% if ownerImage %} 
- {% include ownerImage.html %}
-{% endif %}
+ <!-- Toggleable sidebar -->
+ <div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>{{ site.description }}</p>
+  </div>
 
-<h1  id="top">{{ site.title }}</h1>
-<p class="lead">{{ site.description }}</p>
-<!-- <p class="colophon">{{ site.owner.bio }}</p> -->
-<div class="colophon">
-  <ul class="colophon-links">
-  	<a class="icon-home" href="/"> Home</a>
-  	<a class="icon-user" href="/about"> About</a>
-    <a class="icon-pencil" href="/blog"> Blog</a><br>
+  <nav class="sidebar-nav">
 
-  	<a class="icon-list-alt" href="/ttqf/"> Tips,Tricks&Quick Fix</a><br>
-  	<h3 id="top">My:</h3>
-  	<a class="icon-film" href="/portfolio/video"> Video</a>
-  	<a class="icon-laptop" href="/portfolio/tech">Tech</a>
-  	<a class="icon-camera"  href="/portfolio/photo"> Photo</a>
-  <h3  id="top">Contact:</h3>
- {% include socialmedia.html %} 
+    {% comment %}
+    The code below dynamically generates a sidebar nav of pages with
+    `layout: page` in the front-matter. See readme for usage.
+    {% endcomment %}
 
-  </ul>
- 
-</div>
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/"><i class="fa fa-user" aria-hidden="true"></i> About</a>
+
+    {% for item in site.categories | sort %}
+    <a class="sidebar-nav-item{% if page.url == item[0] %} active{% endif %}" href="/categories/{{  item[0] }}">
+      {% if  item[0] == 'ttqf' %}
+      <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+      {% elsif item[0] == 'video' %}
+      <i class="fa fa-film" aria-hidden="true"></i> {{  item[0] | capitalize }}
+      {% elsif item[0] == 'photos' %}
+      <i class="fa fa-camera-retro" aria-hidden="true"></i> {{  item[0] | capitalize }}
+      {% elsif item[0] == 'tech' %}
+      <i class="fa fa-laptop" aria-hidden="true"></i> {{  item[0] | capitalize }}
+      {% elsif item[0] == 'blog' %}
+      <i class="fa fa-pencil" aria-hidden="true"></i> {{  item[0] | capitalize }}
+      {% endif %}
+    </a>
+
+    {% endfor %}
+
+    {% if site.owner.email %}<a class="icon-envelope  sidebar-nav-item" href="mailto:{{ site.owner.email }}?Subject=Hello&body=Hi {{ site.owner.name }}, %0D%0A Was reading your website, and I've got a question..." class="author-social" target="_blank"><i class="icon-mail"></i><i class="fa fa-envelope-o" aria-hidden="true"></i> E-mail</a>{% endif %} <span ></span>
 
 
+    {% if site.owner.twitter %}<a class="icon-twitter  sidebar-nav-item " href="https://twitter.com/{{ site.owner.twitter }}"  target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>{% endif %}
 
+    {% if site.owner.github %}<a class="icon-github sidebar-nav-item " href="https://github.com/{{ site.owner.github }}"  target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>{% endif %}
 
+  </div>

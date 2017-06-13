@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementVideo
+layout: post
 title: "Editor - Making of the BBC 'Life and Death Row Series'"
 description: "Behind the scene of the BBC3 'Life and Death Row Series'"
 longdescription: "Interviews with the Editor of the BBC3 'Life and Death Row Series', to gain an insight into the making of observational documentaries at the BBC, for the BBC Academy, College of Production."

@@ -1,5 +1,5 @@
 ---
-layout: portfolioelementTech
+layout: post
 title: "Interactive databate #buildTheNews"
 description: "at Times and Sunday Times #buildTheNews hackaton"
 duration: 

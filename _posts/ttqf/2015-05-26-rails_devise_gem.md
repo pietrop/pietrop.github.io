@@ -6,7 +6,7 @@ permalink: "/devise.html"
 description:  "A quick step by step to install the devise user authentication gem in rails "
 youtube: AAym7UF6Dr0
 categories: 
-- articles
+- ttqf
 tags:
 - rails
 ---

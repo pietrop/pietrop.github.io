@@ -6,7 +6,7 @@ permalink: "/jekyll-fenced-block.html"
 description:  "A quick step by step how to use fenced code blocks in jekyll instead of liquid tags"
 youtube:
 categories:
-- articles
+- ttqf
 tags:
 - markdown
 ---
@@ -47,7 +47,7 @@ print "hello world"
 
 ## Quick install
 
-###1.gem install redcarpet
+### 1.gem install redcarpet
 
 in terminal:
 
@@ -55,7 +55,7 @@ in terminal:
 gem install redcarpet
 ```
 
-###2.add redcarpet plugin in your jekyll project.
+### 2.add redcarpet plugin in your jekyll project.
 
 Then you need to add `redcarpet2` plugin in your jekyll project. which as simple as saving [redcarpet2_markdown.rb](https://github.com/nono/Jekyll-plugins) in the `_plugins` folder(if you don't have the folder, just create one and remember te `_`).
 
@@ -111,7 +111,7 @@ end
 
 ```
 
-###3.change config file
+### 3.change config file
 then in your config `_config.yml` file you need to add:
 
 ```ruby
