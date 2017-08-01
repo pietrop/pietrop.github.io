@@ -4,7 +4,7 @@ title: About
 body: theme-base-08
 ---
 
-Hi, I'm <a href="http://uk.linkedin.com/in/{{ site.owner.linkedin }}"  target="_blank"> Pietro</a>, I am a <a href="/categories/tech">developer</a> /<a href="/categories/video"> documentary film-maker</a>. I take  <a href="/categories/photo"> photos</a>, and write up <a href="/categories/ttqf"> 'how-tos' "Tips Tricks & Quick Fix"</a> and <a href="/categories/blog"> blog posts</a>.
+Hi, I'm <a href="http://uk.linkedin.com/in/{{ site.owner.linkedin }}"  target="_blank"> Pietro</a>, I am a <a href="/categories/tech">developer</a> /<a href="/categories/video"> documentary film-maker</a>. I take  <a href="/categories/photos"> photos</a>, and write up <a href="/categories/ttqf"> 'how-tos' "Tips Tricks & Quick Fix"</a> and <a href="/categories/blog"> blog posts</a>.
 
 
 <!-- Picture from BA media party with mic -->
