@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips Tricks &amp; Quick Fix</title>
+    <description>Tips Tricks &amp; Quick Fix by &lt;a href=&#39;http://twitter.com/pietropassarell&#39; target=&#39;_blank&#39;&gt;@pietropassarell&lt;/a&gt;i.</description>
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Opened Captions Annotated article system</title>
+        <description>&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+
+&lt;!-- 
+
+Opened Captions Annotated article 
+
+[gitbook notes](https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles)
+
+slides from SRCCON&#39;17 presentation](https://docs.google.com/presentation/d/1yI6SkJi-RqV11_fFImfh44iG011hPlgtwNzYcF2P1_U/edit?usp=sharing)
+
+[github repo that syncs with gitbook](https://github.com/pietrop/Opened-Captions-for-Annotated-Articles)
+
+[youtube video of SRCCON&#39;17 presentaiton, me and David Eads](https://youtu.be/HFcEr3KKwZk)
+
+ --&gt;
+</description>
+        <pubDate>Mon, 24 Jul 2017 00:00:00 -0400</pubDate>
+        <link>//opened-captions-annotated-article-rig.html</link>
+        <guid isPermaLink="true">//opened-captions-annotated-article-rig.html</guid>
+      </item>
+    
+      <item>
+        <title>Captioning app [Working Title]</title>
+        <description>&lt;!-- TODO move from  --&gt;
+
+&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/DF7ytQ7VoAA1ry2.jpg:large&quot; alt=&quot;captioning app screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;During the &lt;a href=&quot;http://pietropassarelli.com/textAV.html&quot;&gt;textAV&lt;/a&gt; event with a small team we did the &lt;a href=&quot;https://pietropassarelli.gitbooks.io/textav/content/unconference-projects/captioning-workflow-system.html&quot;&gt;requirements gathering &lt;/a&gt; based on &lt;a href=&quot;https://pietropassarelli.gitbooks.io/textav/content/remote-presentations/captioning-workflow.html&quot;&gt;Joseph Polizzotto’s presentation&lt;/a&gt; and &lt;a href=&quot;https://github.com/oTranscribe/oTranscribe&quot;&gt;oTranscribe&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the following weekend I built an app that considerably speeds up and simplify the captioning workflow.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It auto transcribes&lt;/li&gt;
+  &lt;li&gt;It adds punctuation automatically&lt;/li&gt;
+  &lt;li&gt;User can then correct the text&lt;/li&gt;
+  &lt;li&gt;It auto segments and aligns to create caption file.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
+
+&lt;p&gt;See &lt;a href=&quot;http://pietropassarelli.com/captions-maker&quot;&gt;demo here&lt;/a&gt; for demonstration purposes (click &lt;strong&gt;load&lt;/strong&gt; and then &lt;strong&gt;align&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;It auto transcribes using speech to text service to give you a first draft, it auto adds the punctuations, you can review and correct, and when you click &lt;strong&gt;align&lt;/strong&gt; it segments and auto  aligns(very fast) to create a caption file (srt but could support more format) similar to youtube captioning editor.&lt;/p&gt;
+
+&lt;p&gt;Gives you a preview of the caption file, with clicable timecodes that take you to that point in the video.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/JPolizzotto&quot;&gt;@JPolizzotto&lt;/a&gt; &lt;a href=&quot;https://twitter.com/GidsG&quot;&gt;@GidsG&lt;/a&gt; auto transcribe, auto punctuation, auto srt lines alignment... &lt;a href=&quot;https://twitter.com/hashtag/textAV?src=hash&quot;&gt;#textAV&lt;/a&gt;.tech &lt;a href=&quot;https://t.co/mbW799QYnr&quot;&gt;pic.twitter.com/mbW799QYnr&lt;/a&gt;&lt;/p&gt;&amp;mdash; Pietro (@pietropassarell) &lt;a href=&quot;https://twitter.com/pietropassarell/status/889321437504385024&quot;&gt;July 24, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Mon, 24 Jul 2017 00:00:00 -0400</pubDate>
+        <link>//captioning-app.html</link>
+        <guid isPermaLink="true">//captioning-app.html</guid>
+      </item>
+    
+      <item>
+        <title>textAV event</title>
+        <description>&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;More details &lt;br /&gt;
+- &lt;a href=&quot;https://pietropassarelli.gitbooks.io/textav/content/&quot;&gt;Video presentations and notes from event&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://textAV.tech&quot;&gt;Event website&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sites.google.com/view/textav/confirmed-participants&quot;&gt;Line up of participants&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://trello.com/b/tyIWiHOE/text-a-v-event-topics&quot;&gt;Trello board with projects&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://textav.hyperaud.io/pad&quot;&gt;hyperaud.io repo of the talks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- TODO: add Molly&#39;s post from Source when available.
+
+TODO: add a bit about rational of the event, knowledge share to get people up to speed + unconference to hack on project. 
+
+But not an hackaton, goal to grow and streghten the ecosystem.
+
+ --&gt;
+
+&lt;hr /&gt;
+
+&lt;!--  
+
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;What a morning view from &lt;a href=&quot;https://t.co/x9UQL7s0K4&quot;&gt;https://t.co/x9UQL7s0K4&lt;/a&gt; event space &lt;a href=&quot;https://twitter.com/NyuTisch&quot;&gt;@NyuTisch&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/TextAV?src=hash&quot;&gt;#TextAV&lt;/a&gt; &lt;a href=&quot;https://t.co/Y5ixZqk0Bd&quot;&gt;pic.twitter.com/Y5ixZqk0Bd&lt;/a&gt;&lt;/p&gt;&amp;mdash; Joscha Jaeger (@OpenHypervideo) &lt;a href=&quot;https://twitter.com/OpenHypervideo/status/887660076999335936&quot;&gt;July 19, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Lots of news bout &lt;a href=&quot;https://twitter.com/PopUpArchive&quot;&gt;@PopUpArchive&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/audiosearchfm&quot;&gt;@audiosearchfm&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/baileyspace&quot;&gt;@baileyspace&lt;/a&gt; at &lt;a href=&quot;https://twitter.com/hashtag/textav?src=hash&quot;&gt;#textav&lt;/a&gt;. 💁 &lt;a href=&quot;https://t.co/9hiTuGMzv4&quot;&gt;pic.twitter.com/9hiTuGMzv4&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dave Rice (@dericed) &lt;a href=&quot;https://twitter.com/dericed/status/887739052182700032&quot;&gt;July 19, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Archive problems with &lt;a href=&quot;https://twitter.com/dericed&quot;&gt;@dericed&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/villereal&quot;&gt;@villereal&lt;/a&gt; at &lt;a href=&quot;https://twitter.com/hashtag/textav?src=hash&quot;&gt;#textav&lt;/a&gt; &lt;a href=&quot;https://t.co/ByyEa58k2W&quot;&gt;pic.twitter.com/ByyEa58k2W&lt;/a&gt;&lt;/p&gt;&amp;mdash; amymonte (@amymonte) &lt;a href=&quot;https://twitter.com/amymonte/status/887769074561937408&quot;&gt;July 19, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Yes here we go: &amp;quot;archive problems&amp;quot; with &lt;a href=&quot;https://twitter.com/dericed&quot;&gt;@dericed&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/villereal&quot;&gt;@villereal&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/textav?src=hash&quot;&gt;#textav&lt;/a&gt; &lt;a href=&quot;https://t.co/KO5yh7MuYP&quot;&gt;pic.twitter.com/KO5yh7MuYP&lt;/a&gt;&lt;/p&gt;&amp;mdash; Molly Schwartz (@mollyfication) &lt;a href=&quot;https://twitter.com/mollyfication/status/887768871448580096&quot;&gt;July 19, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;judge for yourself &lt;a href=&quot;https://t.co/5DaekoV4XE&quot;&gt;pic.twitter.com/5DaekoV4XE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dave Rice (@dericed) &lt;a href=&quot;https://twitter.com/dericed/status/887691814123261952&quot;&gt;July 19, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+--&gt;
+
+&lt;!-- 
+
+
+Captions burner 
+https://voxmedia.github.io/captions_burner/ 
+Needs testing with vtt to see if it supports styling. 
+
+
+ --&gt;
+</description>
+        <pubDate>Wed, 19 Jul 2017 00:00:00 -0400</pubDate>
+        <link>//textAV.html</link>
+        <guid isPermaLink="true">//textAV.html</guid>
+      </item>
+    
+      <item>
+        <title>Gitbook: How to tell compelling stories out of video interviews</title>
+        <description>&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Inspired by &lt;a href=&quot;http://pietropassarelli.com/wip_london_july2016.html&quot;&gt;series of workshops&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There is &lt;a href=&quot;https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/paper-editing/key-concepts-in-documentary-theory.html&quot;&gt;a section on documentary representation&lt;/a&gt; that I think it’s interesting/relevant in the accountability debate that has been raised with the new issues around fake news, the increasing need for transparency and interests by the viewers to see the source material.&lt;/p&gt;
+
+&lt;!-- 
+
+
+Captions burner 
+https://voxmedia.github.io/captions_burner/ 
+Needs testing with vtt to see if it supports styling. 
+
+
+ --&gt;
+</description>
+        <pubDate>Fri, 07 Jul 2017 00:00:00 -0400</pubDate>
+        <link>//paper-edit-gitbook.html</link>
+        <guid isPermaLink="true">//paper-edit-gitbook.html</guid>
+      </item>
+    
+      <item>
+        <title>autoEdit2</title>
+        <description>&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+
+&lt;!-- 
+
+http://www.autoedit.io/
+
+- http://www.niemanlab.org/2016/10/try-out-this-open-source-tool-for-editing-video-and-audio-transcripts/ 
+
+- https://www.journalism.co.uk/news/tool-for-journalists-autoedit-to-edit-videos-quicker-using-transcriptions/s2/a684359/
+
+- https://product.voxmedia.com/2016/11/22/13669486/faster-video-editing
+
+- https://source.opennews.org/articles/video-editing-made-better-introducing-autoedit/ 
+
+TODO: link to computational journalism paper once you publish in blog section
+
+ --&gt;
+</description>
+        <pubDate>Tue, 04 Apr 2017 00:00:00 -0400</pubDate>
+        <link>//autoEdit2.html</link>
+        <guid isPermaLink="true">//autoEdit2.html</guid>
+      </item>
+    
+      <item>
+        <title>Whistleblower Interview Archive</title>
+        <description>&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+
+&lt;!-- TODO: add img 
+
+
+--&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/wip_archive/wip_archive_t.png&quot; alt=&quot;screenshot of layout &quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tech&quot;&gt;Tech&lt;/h2&gt;
+
+&lt;p&gt;It is using a modified version of the system that generates the demo site for autoEdit github page.&lt;/p&gt;
+
+&lt;p&gt;See the &lt;a href=&quot;https://github.com/pietrop/WIP_archive&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;README&lt;/code&gt; for more info&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It also used &lt;a href=&quot;www.autoEdit.io&quot;&gt;autoEdit&lt;/a&gt; to generate the transcriptions.&lt;/p&gt;
+
+&lt;!-- 
+
+
+Captions burner 
+https://voxmedia.github.io/captions_burner/ 
+Needs testing with vtt to see if it supports styling. 
+
+
+ --&gt;
+</description>
+        <pubDate>Mon, 20 Feb 2017 00:00:00 -0500</pubDate>
+        <link>//wip.html</link>
+        <guid isPermaLink="true">//wip.html</guid>
+      </item>
+    
+      <item>
+        <title>Transcriber - prototype</title>
+        <description>&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Purpose of this working prototype was to test whether users(and which user segment) would be accepting of the quality of the speech to text service by IBM Watson. Before introducing &lt;a href=&quot;http://pietropassarelli.com/autoEdit2.html&quot;&gt;autoEdit 2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s not a production ready app, but rather a throwaway intermediate project. Altho users kept using it until the introduciton of autoEdit2, you can read &lt;a href=&quot;https://source.opennews.org/articles/video-editing-made-better-introducing-autoedit/&quot;&gt;more about this process here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/voxmedia/Transcriber/master/img/transciber.png&quot; alt=&quot;Transcriber 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/voxmedia/Transcriber/master/img/demo.png&quot; alt=&quot;Transcriber&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- 
+
+
+Captions burner 
+https://voxmedia.github.io/captions_burner/ 
+Needs testing with vtt to see if it supports styling. 
+
+
+ --&gt;
+</description>
+        <pubDate>Thu, 01 Sep 2016 00:00:00 -0400</pubDate>
+        <link>//Transcriber-prototype.html</link>
+        <guid isPermaLink="true">//Transcriber-prototype.html</guid>
+      </item>
+    
+      <item>
+        <title>Workshop: How to craft compelling stories out of video interviews?</title>
+        <description>&lt;!-- ![](/img/wip_london_workshop_july_2016/) --&gt;
+
+&lt;p&gt;On Saturday July 9th 2016 I run a hands on workshop titled “How to craft compelling stories out of video interviews?”. This was in collaboration with &lt;a href=&quot;https://twitter.com/insofar_media&quot;&gt;Niels Ladefoged&lt;/a&gt; who has been curating the &lt;a href=&quot;https://vimeo.com/whistleblowers&quot;&gt;Whistle Blower Interview Project&lt;/a&gt; in collaboration with &lt;a href=&quot;http://www.tcij.org/whistleblowers/whistleblower-interview-project&quot;&gt;the centre for investigative journalism in London&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/wip_london_workshop_july_2016/wip_london_workshop_2016_2.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This was the &lt;a href=&quot;https://www.eventbrite.com/e/how-to-craft-compelling-stories-out-of-video-interviews-hands-on-workshop-tickets-25940608057#&quot;&gt;description of the workshop on eventbrite&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Using some of the videos from the Whistle Blowers Interview Archive, we’ll take an hands on approach to explore key concepts, ideas and techniques to identify narrative points, test out story ideas, and craft a compelling story.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This workshop focusses on the underlying evergreen storytelling principles that transcend the medium, so no knowledge of video editing required, just curiosity towards story telling principles and techniques.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Participants will be divided into groups of 3 to 4 people. The aim for each group is to produce a 3 to 5 minutes video, given 3 short video interviews (roughly 15 min each) accompanied by their corresponding time-coded transcriptions.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Key story telling principles and techniques will be introduced to facilitate the process.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The aim of the workshop is for the participants to gain an hands on insight into the process of interviewed based documentary story crafting rather then producing a polished final product.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/wip_london_workshop_july_2016/wip_london_workshop_2016_presentation.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;These were the &lt;a href=&quot;https://docs.google.com/presentation/d/1cJjvrGrGxrqaZhk5IKYOcld82PulGE9iF_LjQVL-zes/edit?usp=sharing&quot;&gt;slides&lt;/a&gt; used for the workshop.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/1cJjvrGrGxrqaZhk5IKYOcld82PulGE9iF_LjQVL-zes/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;569&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The key idea was to guide the participant to an old school (paper, scissors and tape) paper-edit while introducing key story crafting concepts from relevant literature and personal experience.&lt;/p&gt;
+
+&lt;p&gt;We provided paper transcriptions for interviews, roughly an hour each, with&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Jesselyn Radack &lt;a href=&quot;/img/wip_london_workshop_july_2016/AAA_JR.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Thomas Drake &lt;a href=&quot;/img/wip_london_workshop_july_2016/AAA_TD.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Annie Machon &lt;a href=&quot;/img/wip_london_workshop_july_2016/AAA_AM.pdf&quot;&gt;pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As well as a &lt;a href=&quot;https://dl.dropboxusercontent.com/u/449999/WIP_Workshop/frontEnd/index.html#transcriptions&quot;&gt;link to web version mobile responsive interactive transcription of the interview&lt;/a&gt; altho participants were strongly encouraged to work of the paper transcriptions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/wip_london_workshop_july_2016/interactive_transcript_jr.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I was very impressed with how everyone was incredibly switched on, and the groups worked together bouncing ideas of each other in a very collaborative spirit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/wip_london_workshop_july_2016/wip_london_workshop_2016_hands_on_1.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/wip_london_workshop_july_2016/wip_london_workshop_2016_hands_on_2.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/wip_london_workshop_july_2016/wip_london_workshop_2016_hands_on_3.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/wip_london_workshop_july_2016/wip_london_workshop_2016_hands_on_4.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/wip_london_workshop_july_2016/wip_london_workshop_paperediting.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At the end of the workshop we showed what one of the paper-edit from one of the groups would have looked like as a video sequence.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/wip_london_workshop_july_2016/wip_london_workshop_2016_preview.JPG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To assemble the sequence from their paper-edit within the time constraints I used a version of my first attempt at making a &lt;a href=&quot;/autoEdit.html&quot;&gt;digital paper-editing software&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 17 Jul 2016 20:30:00 -0400</pubDate>
+        <link>//wip_london_july2016.html</link>
+        <guid isPermaLink="true">//wip_london_july2016.html</guid>
+      </item>
+    
+      <item>
+        <title>Captions Burner</title>
+        <description>&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/voxmedia/captions_burner/raw/master/img/captions_burner.png&quot; alt=&quot;captions_burner&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/voxmedia/captions_burner/raw/master/img/example_captions.png&quot; alt=&quot;captions_burner example&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- 
+
+
+Captions burner 
+https://voxmedia.github.io/captions_burner/ 
+Needs testing with vtt to see if it supports styling. 
+
+
+ --&gt;
+</description>
+        <pubDate>Thu, 02 Jun 2016 00:00:00 -0400</pubDate>
+        <link>//captions-burner.html</link>
+        <guid isPermaLink="true">//captions-burner.html</guid>
+      </item>
+    
+      <item>
+        <title>How to know your projects github releases downloads</title>
+        <description>&lt;p&gt;Here’s a quick “how to” to see how many people have downloaded your project release on github.&lt;/p&gt;
+
+&lt;p&gt;This can only be done through the github API,but if your API hasn’t exceeded the request limit you can do it without authenticating. (chances are that if you are at work they might have already exceeded the limit, so you may want to do this from a different wifi).&lt;/p&gt;
+
+&lt;p&gt;I am going to use a project I worked on a while back &lt;a href=&quot;http://pietropassarelli.com/alpaca_speech&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://pietropassarelli.com/alpaca_speech&lt;/code&gt;&lt;/a&gt; that I use everyday but I am curious to see how many people use the packaged up in the release section of github.&lt;/p&gt;
+
+&lt;p&gt;We are going to be making get requests with &lt;a href=&quot;https://www.getpostman.com/&quot;&gt;postman&lt;/a&gt;, but you could use curl or whatever you prefer.&lt;/p&gt;
+
+&lt;h2 id=&quot;identify-release-id&quot;&gt;Identify release id.&lt;/h2&gt;
+
+&lt;p&gt;First things first get the release id&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://api.github.com/repos/pietrop/alpaca_speech/releases
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will give you a json like so&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/2605107&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;assets_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/2605107/assets&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;upload_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://uploads.github.com/repos/pietrop/alpaca_speech/releases/2605107/assets{?name,label}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;html_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://github.com/pietrop/alpaca_speech/releases/tag/v1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2605107&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;tag_name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;v1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;target_commitish&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;master&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;AlpacaSpeech&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;draft&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;login&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4661975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;avatar_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://avatars.githubusercontent.com/u/4661975?v=3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;gravatar_id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;html_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://github.com/pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;followers_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/followers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;following_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/following{/other_user}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;gists_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/gists{/gist_id}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;starred_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/starred{/owner}{/repo}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;subscriptions_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/subscriptions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;organizations_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/orgs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;repos_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/repos&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;events_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/events{/privacy}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;received_events_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/received_events&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;User&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;site_admin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;prerelease&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;created_at&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2016-01-04T22:14:20Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;published_at&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2016-02-12T19:22:54Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;assets&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/assets/1306014&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1306014&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;alpacaSpeech.app.zip&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;label&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;uploader&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;login&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4661975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;avatar_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://avatars.githubusercontent.com/u/4661975?v=3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;gravatar_id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;html_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://github.com/pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;followers_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/followers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;following_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/following{/other_user}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;gists_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/gists{/gist_id}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;starred_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/starred{/owner}{/repo}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;subscriptions_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/subscriptions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;organizations_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/orgs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;repos_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/repos&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;events_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/events{/privacy}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;received_events_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/received_events&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;User&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;site_admin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;content_type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;application/zip&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;state&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;uploaded&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;36909597&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;download_count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;created_at&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2016-02-12T19:17:43Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;updated_at&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2016-02-12T19:18:22Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;browser_download_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://github.com/pietrop/alpaca_speech/releases/download/v1.0/alpacaSpeech.app.zip&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;tarball_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/repos/pietrop/alpaca_speech/tarball/v1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;zipball_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/repos/pietrop/alpaca_speech/zipball/v1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;body&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Working version of Alpaca speech.\r\nText to speech, using OS X default voices. \r\n\r\n### Keyboards shortcuts\r\n\r\n#### Reading shortcuts\r\n\r\n`cmd` +`e`   `Read/Stop`\r\n`cmd` +`ArrowUp`   `Increase voice speed`\r\n`cmd` +`ArrowDown`   `decrease voice speed`\r\n\r\n#### Change languages\r\n\r\n`cmd` +`1`   `English - Alex`\r\n`cmd` +`2`   `Italian - Luca`\r\n`cmd` +`3`   `Spanish - Jorge`\r\n`cmd` +`4`   `French - Thomas`\r\n\r\n\r\n\r\n#### OS X System Shortcuts\r\nadded minimise mac keyboard shortcut `cmd` + `m` and quit `cmd` + `q`.\r\nAs well as possibility to read voices available on system and populate the list with that.&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In this case it’s easy coz I only have one release.  But if I had more then one we could look for the version number in the tag name v1.0 and from there get the corresponding id.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;json
+&quot;id&quot;: 2605107,
+&quot;tag_name&quot;: &quot;v1.0&quot;,
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;search-release-by-id&quot;&gt;Search release by id&lt;/h2&gt;
+&lt;p&gt;we can then add that to our query&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://api.github.com/repos/pietrop/alpaca_speech/releases/2605107
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;which returns&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/2605107&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;assets_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/2605107/assets&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;upload_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://uploads.github.com/repos/pietrop/alpaca_speech/releases/2605107/assets{?name,label}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;html_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://github.com/pietrop/alpaca_speech/releases/tag/v1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2605107&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;tag_name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;v1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;target_commitish&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;master&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;AlpacaSpeech&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;draft&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;login&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4661975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;avatar_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://avatars.githubusercontent.com/u/4661975?v=3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;gravatar_id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;html_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://github.com/pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;followers_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/followers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;following_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/following{/other_user}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;gists_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/gists{/gist_id}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;starred_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/starred{/owner}{/repo}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;subscriptions_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/subscriptions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;organizations_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/orgs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;repos_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/repos&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;events_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/events{/privacy}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;received_events_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/received_events&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;User&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;site_admin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;prerelease&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;created_at&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2016-01-04T22:14:20Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;published_at&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2016-02-12T19:22:54Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;assets&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/repos/pietrop/alpaca_speech/releases/assets/1306014&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1306014&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;alpacaSpeech.app.zip&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;label&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;uploader&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;login&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4661975&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;avatar_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://avatars.githubusercontent.com/u/4661975?v=3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;gravatar_id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;html_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://github.com/pietrop&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;followers_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/followers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;following_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/following{/other_user}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;gists_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/gists{/gist_id}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;starred_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/starred{/owner}{/repo}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;subscriptions_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/subscriptions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;organizations_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/orgs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;repos_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/repos&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;events_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/events{/privacy}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;received_events_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/users/pietrop/received_events&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;User&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;site_admin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;content_type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;application/zip&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;state&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;uploaded&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;36909597&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;download_count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;created_at&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2016-02-12T19:17:43Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;updated_at&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2016-02-12T19:18:22Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+      &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;browser_download_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://github.com/pietrop/alpaca_speech/releases/download/v1.0/alpacaSpeech.app.zip&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;tarball_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/repos/pietrop/alpaca_speech/tarball/v1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;zipball_url&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://api.github.com/repos/pietrop/alpaca_speech/zipball/v1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;body&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Working version of Alpaca speech.\r\nText to speech, using OS X default voices. \r\n\r\n### Keyboards shortcuts\r\n\r\n#### Reading shortcuts\r\n\r\n`cmd` +`e`   `Read/Stop`\r\n`cmd` +`ArrowUp`   `Increase voice speed`\r\n`cmd` +`ArrowDown`   `decrease voice speed`\r\n\r\n#### Change languages\r\n\r\n`cmd` +`1`   `English - Alex`\r\n`cmd` +`2`   `Italian - Luca`\r\n`cmd` +`3`   `Spanish - Jorge`\r\n`cmd` +`4`   `French - Thomas`\r\n\r\n\r\n\r\n#### OS X System Shortcuts\r\nadded minimise mac keyboard shortcut `cmd` + `m` and quit `cmd` + `q`.\r\nAs well as possibility to read voices available on system and populate the list with that.&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;find-download-count&quot;&gt;Find download count&lt;/h2&gt;
+&lt;p&gt;and what we are looking for is  &lt;code class=&quot;highlighter-rouge&quot;&gt;download_count&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;in this case&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;download_count&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Done.&lt;/p&gt;
+
+&lt;p&gt;Here are some more links from the &lt;a href=&quot;https://developer.github.com/v3/&quot;&gt;github api&lt;/a&gt; &lt;a href=&quot;https://developer.github.com/v3/repos/releases/#get-a-single-release&quot;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 26 May 2016 09:55:00 -0400</pubDate>
+        <link>//ttqf/2016/05/26/how_to_find_out_github_release_downloads/</link>
+        <guid isPermaLink="true">//ttqf/2016/05/26/how_to_find_out_github_release_downloads/</guid>
+      </item>
+    
+  </channel>
+</rss>

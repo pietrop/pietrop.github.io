@@ -3,6 +3,7 @@ layout: post
 title: "BBC #newsHACK"
 description: "Short video for BBC News Labs #newsHack Hackaton event"
 duration: "3min 43sec"
+permalink: "/bbcnewslabs.html"
 image: /img/bbcnewslab/bbcnewslab.png
 tools: ['FCP7']
 youtube: tSgQNB8IzBM

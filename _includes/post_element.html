@@ -1,24 +1,72 @@
 <div class="post">
 <h3 class="post-title">
   <a href="{{ include.url }}">
-    {{ include.title }}
+    {{ include.title }} 
   </a>
 </h3>
 
 <!-- {{include include.content | size }} -->
+<small><span class="post-date">{{ include.date | date_to_string }}  
 
-<small><span class="post-date">{{ include.date | date_to_string }} </span></small>
+{% if post.duration %}
+| <strong>Duration:</strong> {{ post.duration }}
+{% endif %}
 
+</span></small>
+
+
+<!-- description -->
+<p>{{ include.description }}</p>
+<!-- Link to post -->
+  <a href="{{ include.url }}">
+ 	<small 	<small>More  &raquo;</small></small>
+  </a><br>
+
+<!-- image -->
 {%if include.image %}
 	<a href="{{ include.url }}">
 		<img src={{include.image}}>
 	</a>
 {%endif%}
+   <!-- optional github link -->
+   {% if post.github %}<small><a class="icon-github " href="https://github.com/{{ post.github }}"  target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>,</small>{% endif %}
 
-<p>{{ include.description }}</p>
-  <a href="{{ include.url }}">
-  	<small>More  &raquo;</small>
-  </a>
+   <!-- optional gitbook link -->
+     {% if post.gitbook %}<small><a class="icon-gitbook" href="{{ post.gitbook }}"  target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitBook</a>,</small>{% endif %}
+
+<!-- project page link  -->
+{% if post.link %}<small>
+ <a href="{{ post.link }}"  target="_blank">Url</a>
+</small>
+{% endif %}
+
+{% if post.youtube %}<small>
+ <a href="htttp://youtu.be/{{ post.youtube }}"  target="_blank">Youtube</a>
+</small>
+{% endif %}
+
+{% if post.vimeo  %}<small>
+ <a href="htttp://vimeo.com/{{ post.youtube }}"  target="_blank">Vimeo</a>
+</small>
+{% endif %}
+
+
+<br>
+<!-- tech stack  -->
+{% if post.tech %}<small><strong>Stack: </strong>
+	{% for t in post.tech %}
+	    {{ t }},
+	{% endfor %}
+	</small>
+{% endif %}
+
+
+
+
+
+
+
+
 <!--   <hr> -->
 </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to craft compelling stories out of video interviews?"
+title: "Workshop: How to craft compelling stories out of video interviews?"
 image: /img/wip_london_workshop_july_2016/wip_thomas.png
 date: '2016-07-18T01:30:00.000+01:00'
 description: "Hands on Workshop in London with the Whistleblower Interview Archive"

@@ -32,13 +32,12 @@ tags:
 ---
 
 
-
 This project was done while working as newsroom developer at the [Times & Sunday Times](https://twitter.com/TimesDevelops) as part of a summer placement for the final project of the UCL Msc in Computer Science.
 
 <div class="image-wrapper">
-	<a href="{{ page.image }}" data-lightbox="aName" title="aName">
-		<img src="{{ page.image }}" alt="photo" />
-	</a>
+  <a href="{{ page.image }}" data-lightbox="aName" title="aName">
+    <img src="{{ page.image }}" alt="photo" />
+  </a>
 </div>
 
 
@@ -47,7 +46,7 @@ On The [Times Digital blog](https://medium.com/digital-times/it-s-time-to-rethin
 
 In a nutshell if we take the coverage of the Republican presidential candidate debate on Fox News most news outlet merely copied the quotes verbatim and them paired them with photos of the candidates.
 
-## A video screencast example
+## A video screencast example
 
 Here's a screencast of a demo of an alternative "interactive video quote" a journalist could embed in a news article.
 
@@ -55,7 +54,8 @@ Here's a screencast of a demo of an alternative "interactive video quote" a jour
 <iframe width="560" height="315" src="//www.youtube.com/embed/axH_dKOpqaA" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## An interactive example
+## An interactive example
+
 And here is the quote you see in the video above embedded in this page.
 Followed by the  HTML, CSS and JS code.
 
@@ -124,7 +124,14 @@ Followed by the  HTML, CSS and JS code.
 <br>
 
 <br>
+
+## An in context example
+
+See this demo [before](https://times.github.io/quickQuote/demo/static_quotes.html) and [after](https://times.github.io/quickQuote/demo/interactive_quotes.html) for an example of how it could change the way users experience quotes in an article.
+
+
 ## The embed code for a video quote
+
 <br>
 HTML
 
