@@ -219,6 +219,7 @@ published: false
 link: 
 image: 
 github: 
+gitbook: 
 youtube: 
 tech: ['node']
 categories:

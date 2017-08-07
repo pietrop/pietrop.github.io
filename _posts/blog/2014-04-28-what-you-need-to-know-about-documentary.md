@@ -13,9 +13,9 @@ categories:
 ---
 
 
-_This [is an extract](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/paper-editing/key-concepts-in-documentary-theory.html) from [gitbook 'ow to tell compelling stories out of video interviews'](https://www.gitbook.com/book/pietropassarelli/how-to-tell-compelling-stories-out-of-video-inter/details)._
+_This [is an extract](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/paper-editing/key-concepts-in-documentary-theory.html) from [gitbook 'how to tell compelling stories out of video interviews'](https://www.gitbook.com/book/pietropassarelli/how-to-tell-compelling-stories-out-of-video-inter/details)._     
 
-   
+---
 
 # Representing Reality: Key ideas in documentary theory and practice
 
@@ -52,7 +52,7 @@ But rather then dive straight into the key historic moments, it might be worth w
 Before we dive into it, it's worth considering that it's [in infancies, documentaries, started as slide-shows of travel expeditions](https://vimeo.com/10354481), lectures, travelogues, where the explore would narrate over his slide show in front of a live audience. Crafting it into a compelling story as much as possible.
 
 
-![Magic Lantern movies](/assets/omlj-dvd-cover.jpg)
+![Magic Lantern movies](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/assets/omlj-dvd-cover.jpg)
 
 
 Magic lanterns where used as projectors to entrataine audiences.
