@@ -18,7 +18,7 @@ tags:
 _draft: more coming soon_
 
 Used autoEdit2 to speed up the  making of the hypertranscript.
- [see R&D Notes for more info](https://github.com/pietrop/BattleSounds/blob/master/notes.md).
+Using github pages, and a google spreadsheet as "backend", [see R&D Notes for more info](https://github.com/pietrop/BattleSounds/blob/master/notes.md).
 
 
 <!-- 
