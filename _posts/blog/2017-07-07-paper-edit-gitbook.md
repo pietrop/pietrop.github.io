@@ -7,6 +7,7 @@ date: "2017-07-07"
 link: https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/
 image: 
 github: pietrop/book-how-to-tell-compelling-stories-out-of-video-interviews
+gitbook: https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/
 youtube: 
 tech: 
 categories:
