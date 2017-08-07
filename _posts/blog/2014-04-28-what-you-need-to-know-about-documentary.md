@@ -339,7 +339,7 @@ And the reason why I say this is that this last point overshadows to a certain e
 
 Sure it's a given that story telling and story crafting might come easier to some, but none the less it's a craft, and as such it can be learned.
 
-And whit this thought in mind I'll leave you with a clip from [Adaptation](http://en.wikipedia.org/wiki/Adaptation_(film) where [Robert Mckee](http://en.wikipedia.org/wiki/Robert_McKee) answers to the question:
+And whit this thought in mind I'll leave you with a clip from [Adaptation](http://en.wikipedia.org/wiki/Adaptation_(film)) where [Robert Mckee](http://en.wikipedia.org/wiki/Robert_McKee) answers to the question:
 
 >"What if the writer is attempting to create a story where nothing much happens?[…] more of a reflection of the real world?"
 
