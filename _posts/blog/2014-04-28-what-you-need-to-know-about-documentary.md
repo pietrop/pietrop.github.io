@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  Documentary films must know
+title:  Representing Reality: Key ideas in documentary theory and practice
+permalink: " m"
 date: '2014-04-28T10:08:00.000+01:00'
 author: Pietro Passarelli
 modified_time: '2014-04-28T18:30:20.846+01:00'
@@ -16,8 +17,6 @@ categories:
 _This [is an extract](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/paper-editing/key-concepts-in-documentary-theory.html) from [gitbook 'how to tell compelling stories out of video interviews'](https://www.gitbook.com/book/pietropassarelli/how-to-tell-compelling-stories-out-of-video-inter/details)._     
 
 ---
-
-# Representing Reality: Key ideas in documentary theory and practice
 
 <!-- TODO: add bibliography at the end using UCL sytem. -->
 
