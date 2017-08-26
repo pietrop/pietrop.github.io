@@ -15,7 +15,7 @@ tags:
 
 <!-- TODO move from  -->
 
-_draft: more coming soon_
+<!-- _draft: more coming soon_ -->
 
 ![captioning app screenshot](https://pbs.twimg.com/media/DF7ytQ7VoAA1ry2.jpg:large)
 

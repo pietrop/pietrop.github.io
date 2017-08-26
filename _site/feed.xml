@@ -312,9 +312,9 @@ tmp use this extract --&gt;
 &lt;iframe width=&quot;100%&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/o2fz_elzjF4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 </description>
-        <pubDate>Fri, 25 Aug 2017 19:39:03 +0800</pubDate>
-        <link>//2017/08/25/2014-04-28-what-you-need-to-know-about-documentary/</link>
-        <guid isPermaLink="true">//2017/08/25/2014-04-28-what-you-need-to-know-about-documentary/</guid>
+        <pubDate>Sat, 26 Aug 2017 17:01:49 +0800</pubDate>
+        <link>//2017/08/26/2014-04-28-what-you-need-to-know-about-documentary/</link>
+        <guid isPermaLink="true">//2017/08/26/2014-04-28-what-you-need-to-know-about-documentary/</guid>
       </item>
     
       <item>
@@ -490,21 +490,17 @@ science, I have developed a skill set of applying my skills and knowledge collec
     
       <item>
         <title>Opened Captions Annotated article system</title>
-        <description>&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+        <description>&lt;!-- _draft: more coming soon_ --&gt;
 
-&lt;!-- 
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles&quot;&gt;gitbook notes and video of presentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/1yI6SkJi-RqV11_fFImfh44iG011hPlgtwNzYcF2P1_U/edit?usp=sharing&quot;&gt;slides from SRCCON’17 presentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/pietrop/Opened-Captions-for-Annotated-Articles&quot;&gt;github repo that syncs with gitbook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-Opened Captions Annotated article 
+&lt;p&gt;Also made a working proof of concept for an app to replace the rig, to make it easier for the end user to use without the supervision of a newsroom developer. See screenshot below&lt;/p&gt;
 
-[gitbook notes](https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles)
-
-slides from SRCCON&#39;17 presentation](https://docs.google.com/presentation/d/1yI6SkJi-RqV11_fFImfh44iG011hPlgtwNzYcF2P1_U/edit?usp=sharing)
-
-[github repo that syncs with gitbook](https://github.com/pietrop/Opened-Captions-for-Annotated-Articles)
-
-[youtube video of SRCCON&#39;17 presentaiton, me and David Eads](https://youtu.be/HFcEr3KKwZk)
-
- --&gt;
+&lt;p&gt;&lt;img src=&quot;/img/opened_caption_app/opened_caption_annotation_app.png&quot; alt=&quot;screenshot of layout &quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Jul 2017 00:00:00 +0800</pubDate>
         <link>//opened-captions-annotated-article-rig.html</link>
@@ -515,7 +511,7 @@ slides from SRCCON&#39;17 presentation](https://docs.google.com/presentation/d/1
         <title>Captioning app [Working Title]</title>
         <description>&lt;!-- TODO move from  --&gt;
 
-&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+&lt;!-- _draft: more coming soon_ --&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/DF7ytQ7VoAA1ry2.jpg:large&quot; alt=&quot;captioning app screenshot&quot; /&gt;&lt;/p&gt;
 
@@ -549,17 +545,14 @@ slides from SRCCON&#39;17 presentation](https://docs.google.com/presentation/d/1
     
       <item>
         <title>textAV event</title>
-        <description>&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+        <description>&lt;!-- _draft: more coming soon_ --&gt;
 
 &lt;p&gt;More details &lt;br /&gt;
-- &lt;a href=&quot;https://pietropassarelli.gitbooks.io/textav/content/&quot;&gt;Video presentations and notes from event&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://textAV.tech&quot;&gt;Event website&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://sites.google.com/view/textav/confirmed-participants&quot;&gt;Line up of participants&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://trello.com/b/tyIWiHOE/text-a-v-event-topics&quot;&gt;Trello board with projects&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://textav.hyperaud.io/pad&quot;&gt;hyperaud.io repo of the talks&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+- &lt;a href=&quot;https://pietropassarelli.gitbooks.io/textav/content/&quot;&gt;Video presentations and notes from event&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&quot;http://textAV.tech&quot;&gt;Event website&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&quot;https://sites.google.com/view/textav/confirmed-participants&quot;&gt;Line up of participants&lt;/a&gt;&lt;br /&gt;
+- &lt;a href=&quot;https://trello.com/b/tyIWiHOE/text-a-v-event-topics&quot;&gt;Trello board with projects&lt;/a&gt; &lt;br /&gt;
+- &lt;a href=&quot;http://textav.hyperaud.io/pad&quot;&gt;hyperaud.io repo of the talks&lt;/a&gt;&lt;/p&gt;
 
 &lt;!-- TODO: add Molly&#39;s post from Source when available.
 
@@ -635,7 +628,9 @@ Needs testing with vtt to see if it supports styling.
     
       <item>
         <title>autoEdit2</title>
-        <description>&lt;p&gt;&lt;em&gt;draft: more coming soon&lt;/em&gt;&lt;/p&gt;
+        <description>&lt;!-- _draft: more coming soon_ --&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.autoedit.io/img/3_transcription.gif&quot; alt=&quot;autoEdit&quot; /&gt;&lt;/p&gt;
 
 &lt;!-- 
 
