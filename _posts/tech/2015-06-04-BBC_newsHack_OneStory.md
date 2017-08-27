@@ -46,8 +46,15 @@ see [video of presentation for more details]({{site.url}}{{page.permalink}}#pres
 
 
 ## Team 
+
 Journalist - <a href="https://twitter.com/MattieTK" class="twitter-follow-button" data-show-count="false"> @MattieTK</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>. 
+
+<br>
+
 Designer - <a href="https://twitter.com/EoinTunstead" class="twitter-follow-button" data-show-count="false"> @EoinTunstead</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>. 
+
+<br>
+
 Developer - <a href="https://twitter.com/pietropassarell" class="twitter-follow-button" data-show-count="false"> @pietropassarell</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 
