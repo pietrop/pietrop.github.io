@@ -25,6 +25,6 @@ tags:
 - [github repo that syncs with gitbook](https://github.com/pietrop/Opened-Captions-for-Annotated-Articles)
 
 
-Also made a working proof of concept for an app to replace the rig, to make it easier for the end user to use without the supervision of a newsroom developer. See screenshot below
+Also recently made a working proof of concept for an app to replace the rig, to make it easier for the end user to use without the supervision of a newsroom developer. See screenshot below
 
 ![screenshot of layout ]({{page.image}})
