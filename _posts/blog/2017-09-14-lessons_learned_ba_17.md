@@ -17,6 +17,10 @@ tags:
 ---
 
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/jryiz5kC1V8?rel=0" frameborder="0" allowfullscreen></iframe>
+<!-- <iframe width="100%" height="400" src="https://www.youtube.com/embed/jryiz5kC1V8?rel=0" frameborder="0" allowfullscreen></iframe> -->
+
+
+<iframe src="https://player.vimeo.com/video/234150382" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 
 Video presentation version of ["10 Lessons from building video product tools in the newsroom"](/10-lessons-video-tools.html) originally as a paper I've written for the computational journalism conference '17.
