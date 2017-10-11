@@ -34,8 +34,7 @@ I also take  <a href="/categories/photos"> photos</a>,  <a href="/categories/vid
 
 <small><i>( [IBM Watson Personality Insight Twitter Demo](http://tweetmewatson.mybluemix.net/) ) </i></small>
 
-
-<small><a href="{{ site.url }}/UBIQInteractive.html" target="_blank">
-<img src="{{ site.url }}/img/{{ site.owner.about }}" alt="{{ site.owner.name }} bio photo" class="img-rounded  img-responsive ">Screenshoot from making of RAI5 UBIQ documentary 2012 </a></small>
+<i><small><a href="{{ site.url }}/UBIQInteractive.html" target="_blank">
+<img src="{{ site.url }}/img/{{ site.owner.about }}" alt="{{ site.owner.name }} bio photo" class="img-rounded  img-responsive ">Screenshoot from making of RAI5 UBIQ documentary 2012 </a></small></i>
 
 
