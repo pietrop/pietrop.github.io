@@ -29,36 +29,36 @@
 	</a>
 {%endif%}
    <!-- optional github link -->
-   {% if post.github %}<small><a class="icon-github " href="https://github.com/{{ post.github }}"  target="_blank">
+   {% if post.github %}<small><a  href="https://github.com/{{ post.github }}"  target="_blank">
    <i class="fa fa-github" aria-hidden="true"></i> 
    GitHub</a>,</small>{% endif %}
 
    <!-- optional gitbook link -->
-     {% if post.gitbook %}<small><a class="icon-gitbook" href="{{ post.gitbook }}"  target="_blank">
+     {% if post.gitbook %}<small><a  href="{{ post.gitbook }}"  target="_blank">
      <i class="fa fa-github" aria-hidden="true"></i> 
      GitBook</a>,</small>{% endif %}
 
-<!-- project page link  -->
-{% if post.link %}<small>
- <a href="{{ post.link }}"  target="_blank">
-  <i class="fa fa-external-link" aria-hidden="true"></i>
-  Url</a>
-</small>
-{% endif %}
+  <!-- project page link  -->
+  {% if post.link %}<small>
+   <a href="{{ post.link }}"  target="_blank">
+    <i class="fa fa-external-link" aria-hidden="true"></i>
+    Url</a>
+  </small>
+  {% endif %}
 
-{% if post.youtube %}<small>
- <a href="htttp://youtu.be/{{ post.youtube }}"  target="_blank">
-  <i class="fa fa-youtube" aria-hidden="true"></i>
-  Youtube</a>
-</small>
-{% endif %}
+  {% if post.youtube %}<small>
+   <a href="htttp://youtu.be/{{ post.youtube }}"  target="_blank">
+    <i class="fa fa-youtube" aria-hidden="true"></i>
+    Youtube</a>
+  </small>
+  {% endif %}
 
-{% if post.vimeo  %}<small>
- <a href="htttp://vimeo.com/{{ post.vimeo }}"  target="_blank"> 
-  <i class="fa fa-vimeo-square" aria-hidden="true"></i> 
-  Vimeo</a>
-</small>
-{% endif %}
+  {% if post.vimeo  %}<small>
+   <a href="htttp://vimeo.com/{{ post.vimeo }}"  target="_blank"> 
+    <i class="fa fa-vimeo-square" aria-hidden="true"></i> 
+    Vimeo</a>
+  </small>
+  {% endif %}
 
 
 <br>
