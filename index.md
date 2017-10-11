@@ -13,14 +13,12 @@ I also take  <a href="/categories/photos"> photos</a>,  <a href="/categories/vid
 
 <!-- Picture from BA media party with mic -->
 
-![Pietro Buenos Aires Media Party Keynote](/img/about/pietro_8.jpg)
-<i><small>Picture from 2017 Buenos Aires Hacks/Hackers Media Party, while giving keynote talk ["How to craft compelling stories out of video interviews?"](/lessons_learned_ba_17.html)</small></i>
-
-
 ![Pietro Buenos Aires Media Party Workshop](/img/about/pietro_ba.png)
 <i><small>Picture from 2016 Buenos Aires Hacks/Hackers Media Party, while giving workshop ["10 Lessons from building video product tools in the newsroom"](/wip_london_july2016.html)</small></i>
 
-
+<!-- BA 17 -->
+![Pietro Buenos Aires Media Party Keynote](/img/about/pietro_8.jpg)
+<i><small>Picture from 2017 Buenos Aires Hacks/Hackers Media Party, while giving keynote talk ["How to craft compelling stories out of video interviews?"](/lessons_learned_ba_17.html)</small></i>
 
 
 
