@@ -16,20 +16,25 @@ layout: default
 <!-- optional gitbook link -->
 {% if page.gitbook %}<small><a  href="{{ page.gitbook }}"  target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitBook</a>,</small>{% endif %}
 
-
  <!-- project page -->
 {% if page.link %}<small>
- <a href="{{ page.link }}"  target="_blank">Url</a>
+ <a href="{{ page.link }}"  target="_blank">
+ <i class="fa fa-external-link" aria-hidden="true"></i>
+ 	Url</a>
 </small>
 {% endif %}
 
 {% if page.youtube %}<small>| 
- <a href="htttp://youtu.be/{{ page.youtube }}"  target="_blank">Youtube </a>
+ <a href="htttp://youtu.be/{{ page.youtube }}"  target="_blank">
+ 	<i class="fa fa-youtube" aria-hidden="true"></i>
+ 	Youtube </a>
 </small>
 {% endif %}
 
 {% if page.vimeo  %}<small>| 
- <a href="htttp://vimeo.com/{{ page.youtube }}"  target="_blank"> Vimeo</a>
+ <a href="htttp://vimeo.com/{{ page.youtube }}"  target="_blank">
+ <i class="fa fa-vimeo-square" aria-hidden="true"></i> 
+  Vimeo</a>
 </small>
 {% endif %}
 
