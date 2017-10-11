@@ -9,7 +9,8 @@ link:
 image: 
 github:
 gitbook: 
-youtube: 
+youtube: https://youtu.be/jryiz5kC1V8
+vimeo: 234150382
 tech: 
 categories:
 - blog
