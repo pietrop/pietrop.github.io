@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "10 Lessons from building video product tools in the newsroom."
-description: "I got asked to write a paper for the computational journalism conference '17"
+description: "Was invited to write a paper for the computational journalism conference '17"
 permalink: "/10-lessons-video-tools.html"
 date: "2017-08-01"
 published: true

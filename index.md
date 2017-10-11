@@ -18,7 +18,7 @@ I also take  <a href="/categories/photos"> photos</a>,  <a href="/categories/vid
 
 <!-- BA 17 -->
 ![Pietro Buenos Aires Media Party Keynote](/img/about/pietro_8.jpg)
-<i><small>Picture from 2017 Buenos Aires Hacks/Hackers Media Party, while giving keynote talk ["10 Lessons from building video product tools in the newsroom"](/lessons_learned_ba_17.html)</small></i>
+<i><small>Picture from 2017 Buenos Aires Hacks/Hackers Media Party, while giving keynote talk ["10 Lessons from building video product tools in the newsroom"](/10-lessons-video-tools-ba.html)</small></i>
 
 
 ---
