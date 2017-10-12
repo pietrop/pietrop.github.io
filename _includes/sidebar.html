@@ -1,11 +1,13 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
  styles, `#sidebar-checkbox` for behavior. -->
- <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"{% if page.path contains '_posts' || page.title == 'About' %} {% else %} checked{% endif %}>
+ <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"{% if page.path contains '_posts' or page.title == 'About' %} {% else %} checked{% endif %}>
 
  <!-- Toggleable sidebar -->
  <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
     <p>{{ site.description }}</p>
+
+    {{ page.title }}
   </div>
 
   <nav class="sidebar-nav">
