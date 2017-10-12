@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fact2 Transcriptions Text Editor"
-description: "Largely inspired by oTranscribe a client side transcriptions text editor for to proofread and correct the text before re-alignement back on the server."
+description: "Largely inspired by oTranscribe a client side transcriptions text editor for Fact2's proofreaders to correct automatically generated text from speech to text services"
 permalink: "/fact2_transcription_editor.html"
 date: "2017-10-11"
 link: 
@@ -34,6 +34,10 @@ _open sourcing soon_
 - supports HTML5 audio and video 
 <!-- add list -->
 
+- hypertranscript: double click on a word takes you to corresponding part in the media (audio / video).
+	- with customizable interval, default at 3 seconds before
+	- in text indication of media time 
+
 - Rollback button, with custumizable variable, default at 15 seconds 
 - puase while typing toggle, with customizable interval, default at 3 sec. 
 - hide video toggle, (for when concentrating on transcribing/proofreading and it gets distracting)
@@ -44,11 +48,6 @@ _open sourcing soon_
 - speed controls, and display of playback rate 
 
 - shortcut to display keyboard shortcuts, and display of keyboard shortcuts along side interface 
-
-
-- hypertranscript: double click on a word takes you to corresponding part in the media (audio / video).
-	- with customizable interval, default at 3 seconds before
-	- in text indication of media time 
 
 - seamless/plain text editing experience. 
 
