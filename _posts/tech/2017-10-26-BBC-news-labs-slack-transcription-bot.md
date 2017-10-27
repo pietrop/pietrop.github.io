@@ -24,6 +24,7 @@ Our team got an honorable mention at the [BBC News Labs conversational user inte
 ## Prototype
 User uploads audio file onto slack channel, slack bot handles transcriptions, and allows user to query transcription, for questions, answers, both, and insight into the text.
 
+![Slackbot Screenshot]({{page.image}})
 
 ## Presentation 
 
@@ -38,6 +39,10 @@ User uploads audio file onto slack channel, slack bot handles transcriptions, an
 
 
 See [github repo `README` for more info]({{page.github}}).
+
+
+
+
 
 <!-- ## Screenshots
 
