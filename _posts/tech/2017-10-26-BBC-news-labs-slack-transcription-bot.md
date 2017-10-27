@@ -29,9 +29,8 @@ User uploads audio file onto slack channel, slack bot handles transcriptions, an
 ## Presentation 
 
 <div class="videoWrapper">
-	<iframe src="https://player.vimeo.com/video/240180260" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<iframe src="https://player.vimeo.com/video/240180260?title=0&byline=0&portrait=0" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
-
 
 
 - [slides](https://docs.google.com/presentation/d/1ky52Q9UJ9VV_gl6hKQWBS5GrOIARIqogwSZbkswXcY0/edit?usp=sharing)
