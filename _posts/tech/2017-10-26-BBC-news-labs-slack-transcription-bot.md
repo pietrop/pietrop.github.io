@@ -3,7 +3,7 @@ layout: post
 title: "BBC #newsHack '17 @TranscriptionBot"
 description: "Proof of concept demo of chatbot conversational interface for transcription service."
 permalink: "/BBCnewslabs_slack_transcription_bot.html"
-date: "017-10-26"
+date: "2017-10-26"
 link: 
 image: /img/BBCnewslabs_slack_transcription_bot/1_add_audio.png
 gitbook:  
