@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "BBC #newsHack '17 @TranscriptionBot"
+title: "BBC #newsHack '17 `@TranscriptionBot`"
 description: "Proof of concept demo of chatbot conversational interface for transcription service."
 permalink: "/BBCnewslabs_slack_transcription_bot.html"
 date: "2017-10-26"
 link: 
 image: /img/BBCnewslabs_slack_transcription_bot/1_add_audio.png
 gitbook:  
-github: "https://github.com/OpenNewsLabs/chatbot_BBCNewsHack17"
+github: OpenNewsLabs/chatbot_BBCNewsHack17
 youtube: 
 vimeo: 240180260
 tech: ['node','Botkit.ai','Slack API','Question generation component']
@@ -18,8 +18,8 @@ tags:
 
 
 ## Use case
-Journalist working with audio interviews, recorded on their smartphone, for a text article. 
-Our team got an honorable mention at the [BBC News Labs conversational user interface `#newsHACK`](https://medium.com/bbc-news-labs/12-ideas-from-our-conversational-user-interface-newshack-8c1ef22ff515)
+Journalist working with audio interviews, recorded on their smartphone, for a text article.     
+Our team got an honorable mention at the [BBC News Labs conversational user interface `#newsHACK`](https://medium.com/bbc-news-labs/12-ideas-from-our-conversational-user-interface-newshack-8c1ef22ff515).
 
 ## Prototype
 User uploads audio file onto slack channel, slack bot handles transcriptions, and allows user to query transcription, for questions, answers, both, and insight into the text.
