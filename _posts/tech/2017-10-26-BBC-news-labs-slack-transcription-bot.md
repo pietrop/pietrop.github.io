@@ -18,7 +18,8 @@ tags:
 
 
 ## Use case
-Journalist working with audio interviews, recorded on their smartphone, for a text article.   
+Journalist working with audio interviews, recorded on their smartphone, for a text article. 
+Our team got an honorable mention at the [BBC News Labs conversational user interface `#newsHACK`](https://medium.com/bbc-news-labs/12-ideas-from-our-conversational-user-interface-newshack-8c1ef22ff515)
 
 ## Prototype
 User uploads audio file onto slack channel, slack bot handles transcriptions, and allows user to query transcription, for questions, answers, both, and insight into the text.
