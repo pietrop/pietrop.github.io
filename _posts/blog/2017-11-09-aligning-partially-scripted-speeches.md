@@ -97,7 +97,7 @@ To speed up part one and part 3 [as you can see in the autoEdit code](https://gi
 
 ## Optimization 2 - words 
 
-If you are worried about chunking in the middle of a word, you can use ffmpeg, to detect silence, and try trim in between words as much as possible. But I'd leave that for later optimization. I think the [FT Lab transcription service had played around with that idea]  ](https://github.com/ftlabs/transcription-service) see [textAV presentation here](https://pietropassarelli.gitbooks.io/textav/remote-presentations/transcription-service-at-the-ft.html)
+If you are worried about chunking in the middle of a word, you can use ffmpeg, to detect silence, and try trim in between words as much as possible. But I'd leave that for later optimization. I think the [FT Lab transcription service had played around with that idea](https://github.com/ftlabs/transcription-service) see [textAV presentation here](https://pietropassarelli.gitbooks.io/textav/remote-presentations/transcription-service-at-the-ft.html)
 
 ## Get in touch
 
