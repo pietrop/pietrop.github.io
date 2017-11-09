@@ -1,0 +1,1 @@
+2017-11-09-aligning-partially-scripted-speeches.md
