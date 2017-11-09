@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Aligning partially scripted speeches, R&D Notes"
-description: "Initially started as an email response to someone asking about this, then decided to convert into a blog post"
+description: "Initially started as an email response to someone asking about this, then decided to convert into a blog post, so these are my R&D Notes on how I would go about doing it with the technology available today."
 permalink: "/aligning-partially-scripted-speeches.html"
 date: "2017-11-09"
 published: true
@@ -85,9 +85,9 @@ With that info you can then do part two with Aeneas only on the "on script" sect
 
 Obviously I strongly suggest converting the original media you are trying to align to audio at the beginning of the process, because it then becomes a lot faster to do all these splitting etc..
 
-The transcriber module in autoEdit and some of its components could be of interest for some of these operations if you are working in node
+[The transcriber module in autoEdit](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator/transcriber ) and some of its components could be of interest for some of these operations if you are working in node.
 
-https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator/transcriber 
+
 
 ## Optimization 1 - Speed
 
@@ -97,7 +97,7 @@ To speed up part one and part 3 [as you can see in the autoEdit code](https://gi
 
 ## Optimization 2 - words 
 
-If you are worried about chunking in the middle of a word, you can use ffmpeg, to detect silence, and try trim in between words as much as possible. But I'd leave that for later optimization. I think the [FT Lab transcription service had played around with that idea]  ](https://github.com/ftlabs/transcription-service) see [textAV presentation here]( https://pietropassarelli.gitbooks.io/textav/remote-presentations/transcription-service-at-the-ft.html)
+If you are worried about chunking in the middle of a word, you can use ffmpeg, to detect silence, and try trim in between words as much as possible. But I'd leave that for later optimization. I think the [FT Lab transcription service had played around with that idea]  ](https://github.com/ftlabs/transcription-service) see [textAV presentation here](https://pietropassarelli.gitbooks.io/textav/remote-presentations/transcription-service-at-the-ft.html)
 
 ## Get in touch
 
