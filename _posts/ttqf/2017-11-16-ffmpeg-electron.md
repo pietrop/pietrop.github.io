@@ -23,7 +23,7 @@ I am going to use the code from the implementation of[ autoEdit.io](http://autoE
 
 For those not familiar with it autoEdit is a text based video editing app for mac os x,[ check out the website](http://autoEdit.io) , [README](https://github.com/OpenNewsLabs/autoEdit_2) and[ user manual ](https://pietropassarelli.gitbooks.io/autoedit2-user-manual/content/)for more details.
 
-## What’s what?
+## What’s what? 
 
 First things first let’s introduce the components will need to make sure you are familiar with it.
 
