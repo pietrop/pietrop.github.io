@@ -149,13 +149,14 @@ On the plus side this is a pretty straightforward implementation but some of itâ
 
 Letâ€™s consider a more involved example that gives more flexibility.
 
-## Cross platform example: [autoEdit 2](http://autoedit.io)
+## Cross platform setup example: [autoEdit 2](http://autoedit.io)
 
-In [autoEdit](http://autoedit.io) the audio/video conversion to obtain an audio that meets the STT API specs is a bit more involeved and handled with a series of components. 
+In [autoEdit](http://autoedit.io) the audio/video conversion to obtain an audio that meets the STT API specs is a bit more involved and handled with a series of components. 
 
-Without getting too deep into the low level implementation, there's an [`interactive_transcription_generator`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator) that uses other components to create a transcription, read metadata, and create a video preview.  The [`transcriber`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator/transcriber) components handles the communication with the STT APIs. and uses other modules to split the media into 5 minutes chunks to speed up the transcription time.
+Without getting too deep into the low level implementation, there's an [`interactive_transcription_generator`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator) module that uses other components to create a transcription, read metadata, and create a video preview.  It delegates the communication with the STT APIs to the [`transcriber`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator/transcriber) component. Which uses other modules to split the media into 5 minutes chunks to speed up the transcription time.
 
-Such as the [`trimmer`, module which trims a video or audio file.](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/transcriber/trimmer.js#L45) 
+Such as the [`trimmer`, module which trims a video or audio file.](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/transcriber/trimmer.js#L45) as part of this process. 
+
 
 
 
