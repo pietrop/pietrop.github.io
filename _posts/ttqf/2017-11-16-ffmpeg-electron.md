@@ -135,7 +135,11 @@ module.exports = convertToWav;
 
 ```
 
-As you can see [at line 12](https://github.com/voxmedia/Transcriber/blob/master/video_to_audio_processing/video_to_audio.js#L12) we are setting the path to the ffmpeg binary. `ffmpeg.setFfmpegPath("./bin/ffmpeg")`
+As you can see [at line 12](https://github.com/voxmedia/Transcriber/blob/master/video_to_audio_processing/video_to_audio.js#L12) we are setting the path to the ffmpeg binary. 
+
+```js
+ffmpeg.setFfmpegPath("./bin/ffmpeg")
+```
 
 Where [`bin/ffmpeg` corresponded to the path](https://github.com/voxmedia/Transcriber/tree/master/bin) where the ffmpeg binary for Mac OS X is located. 
 
