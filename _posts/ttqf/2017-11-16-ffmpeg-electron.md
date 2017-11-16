@@ -89,7 +89,7 @@ Disclaimer: It was a throwaway project to test that hypothesis [see issues in re
 
 This project also uses [nwjs](https://nwjs.io/) (formerly "node web-kit") while autoEdit was later refactored to use electron. But for the purpose of adding support for ffmpeg this is irrelevant for now.
 
-Back to our point, in this use case, when working with STT a common problem is converting audio or video to the audio file format that meets the specs of the STT API. In this working prototype I had a module to do just that `[video_to_audio.js](https://github.com/voxmedia/Transcriber/blob/master/video_to_audio_processing/video_to_audio.js)`.
+Back to our point, in this use case, when working with STT a common problem is converting audio or video to the audio file format that meets the specs of the STT API. In this working prototype I had a module to do just that [`video_to_audio.js`](https://github.com/voxmedia/Transcriber/blob/master/video_to_audio_processing/video_to_audio.js).
 
 ```js
 /*
