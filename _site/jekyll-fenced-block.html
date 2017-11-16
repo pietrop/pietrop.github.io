@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      use fenced code blocks in jekyll &middot; Pietro
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+    <!-- ////////// Favicon ////////// -->
+      <!-- For old IEs -->
+    <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" />
+
+    <!-- For new browsers - multisize ico  -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico">
+
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png">
+
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png">
+
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png">
+
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png">
+
+    <!-- For iPhone 6+ -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png">
+
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png">
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png">
+
+    <!-- For Old Chrome -->
+    <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32">
+
+    <!-- For IE10 Metro -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="favicon-144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Chrome for Android -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png">
+    <!-- ////////// Favicons end ////////// -->
+
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- font awesome CDN -->
+  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
+</head>
+
+
+<body> <!-- class="theme-base-08" -->
+
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+ styles, `#sidebar-checkbox` for behavior. -->
+ <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+ <!--   -->
+
+ <!-- Toggleable sidebar -->
+ <div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Tips Tricks & Quick Fix by <a href='http://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
+
+    use fenced code blocks in jekyll
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    <a class="sidebar-nav-item" href="/"><i class="fa fa-user" aria-hidden="true"></i> About</a>
+
+    
+    <a class="sidebar-nav-item" href="/categories/photos">
+      
+      <i class="fa fa-camera-retro" aria-hidden="true"></i> Photos
+      
+    </a>
+
+    
+    <a class="sidebar-nav-item" href="/categories/video">
+      
+      <i class="fa fa-film" aria-hidden="true"></i> Video
+      
+    </a>
+
+    
+    <a class="sidebar-nav-item" href="/categories/ttqf">
+      
+      <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+      
+    </a>
+
+    
+    <a class="sidebar-nav-item" href="/categories/blog">
+      
+      <i class="fa fa-pencil" aria-hidden="true"></i> Blog
+      
+    </a>
+
+    
+    <a class="sidebar-nav-item" href="/categories/tech">
+      
+      <i class="fa fa-laptop" aria-hidden="true"></i> Tech
+      
+    </a>
+
+    
+
+    <a class="icon-envelope  sidebar-nav-item" href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..." class="author-social" target="_blank"><i class="icon-mail"></i><i class="fa fa-envelope-o" aria-hidden="true"></i> E-mail</a> <span ></span>
+
+
+    <a class="icon-twitter  sidebar-nav-item " href="https://twitter.com/pietropassarell"  target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+
+    <a class="icon-github sidebar-nav-item " href="https://github.com/pietrop"  target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+
+     <a class="icon-linkedin sidebar-nav-item " href="http://uk.linkedin.com/in/pietropassarelli"  target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+
+
+
+
+
+  </div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+    content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Pietro</a>
+            <small>Passarelli</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">use fenced code blocks in jekyll </h1>
+  <span class="post-date">01 Jun 2015  
+
+ 
+</span>
+
+ 
+
+<!-- optional gitbook link -->
+
+
+ <!-- project page -->
+
+
+
+
+
+
+<br>
+
+
+<!-- Stack -->
+ 
+<br>
+
+A quick step by step how to use fenced code blocks in jekyll instead of liquid tags
+
+
+
+ <hr>
+
+
+  <h2 id="why">Why?</h2>
+
+<p>First, thing first, why? I use markdown a lot, pretty much instead of using word, I write in <a href="http://daringfireball.net/projects/markdown/">markdown</a> and export mostly into <code class="highlighter-rouge">rtf</code>, <code class="highlighter-rouge">.docx</code>, or <code class="highlighter-rouge">.pdf</code> using <a href="http://pandoc.org/">pandoc</a> (blog post on this workflowto come soon), and being able to just draft something, without having to think about whether I need to use liquid tags or fended blocks, depending on whether I will then publish it onto my <a href="http://jekyllrb.com/">jekyll site</a> (jekyll is a static site generator).</p>
+
+<p>So decided to install <a href="https://github.com/nono/Jekyll-plugins">a plugin from the jekyll site</a> to enable it, but it wasn’t quiet working, enche the post here.</p>
+
+<h2 id="fenced-code-blocks-and-liquid-tags">Fenced code blocks and liquid tags</h2>
+<p>Let’s look at how to use fenced code blocks instead of liquid tags in jekyll.<br />
+But first, what’s what?</p>
+
+<p>These are liquid tags and their default way for jekyll to display code with syntax hilight:</p>
+
+<hr />
+
+<p>{% highlight ruby %}   <br />
+print “hello world”   <br />
+{% endhighlight %}</p>
+
+<p>these are fenced code blocks</p>
+<hr />
+
+<p>```ruby</p>
+<p>print "hello world" </p>
+<p>```</p>
+<hr />
+
+<p>and both would render the code like this</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">print</span> <span class="s2">"hello world"</span>
+</code></pre>
+</div>
+
+<h2 id="quick-install">Quick install</h2>
+
+<h3 id="gem-install-redcarpet">1.gem install redcarpet</h3>
+
+<p>in terminal:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>gem install redcarpet
+</code></pre>
+</div>
+
+<h3 id="add-redcarpet-plugin-in-your-jekyll-project">2.add redcarpet plugin in your jekyll project.</h3>
+
+<p>Then you need to add <code class="highlighter-rouge">redcarpet2</code> plugin in your jekyll project. which as simple as saving <a href="https://github.com/nono/Jekyll-plugins">redcarpet2_markdown.rb</a> in the <code class="highlighter-rouge">_plugins</code> folder(if you don’t have the folder, just create one and remember te <code class="highlighter-rouge">_</code>).</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">require</span> <span class="s1">'fileutils'</span>
+<span class="nb">require</span> <span class="s1">'digest/md5'</span>
+<span class="nb">require</span> <span class="s1">'redcarpet'</span>
+<span class="nb">require</span> <span class="s1">'albino'</span>
+
+<span class="no">PYGMENTS_CACHE_DIR</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span><span class="p">(</span><span class="s1">'../../_cache'</span><span class="p">,</span> <span class="kp">__FILE__</span><span class="p">)</span>
+<span class="no">FileUtils</span><span class="p">.</span><span class="nf">mkdir_p</span><span class="p">(</span><span class="no">PYGMENTS_CACHE_DIR</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Redcarpet2Markdown</span> <span class="o">&lt;</span> <span class="no">Redcarpet</span><span class="o">::</span><span class="no">Render</span><span class="o">::</span><span class="no">HTML</span>
+  <span class="k">def</span> <span class="nf">block_code</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">lang</span><span class="p">)</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">lang</span> <span class="o">||</span> <span class="s2">"text"</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">PYGMENTS_CACHE_DIR</span><span class="p">,</span> <span class="s2">"</span><span class="si">#{</span><span class="n">lang</span><span class="si">}</span><span class="s2">-</span><span class="si">#{</span><span class="no">Digest</span><span class="o">::</span><span class="no">MD5</span><span class="p">.</span><span class="nf">hexdigest</span> <span class="n">code</span><span class="si">}</span><span class="s2">.html"</span><span class="p">)</span>
+    <span class="n">cache</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="k">do</span>
+      <span class="n">colorized</span> <span class="o">=</span> <span class="no">Albino</span><span class="p">.</span><span class="nf">colorize</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">lang</span><span class="p">.</span><span class="nf">downcase</span><span class="p">)</span>
+      <span class="n">add_code_tags</span><span class="p">(</span><span class="n">colorized</span><span class="p">,</span> <span class="n">lang</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">add_code_tags</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">lang</span><span class="p">)</span>
+    <span class="n">code</span><span class="p">.</span><span class="nf">sub</span><span class="p">(</span><span class="sr">/&lt;pre&gt;/</span><span class="p">,</span> <span class="s2">"&lt;pre&gt;&lt;code class=</span><span class="se">\"</span><span class="si">#{</span><span class="n">lang</span><span class="si">}</span><span class="se">\"</span><span class="s2">&gt;"</span><span class="p">).</span>
+         <span class="nf">sub</span><span class="p">(</span><span class="sr">/&lt;\/pre&gt;/</span><span class="p">,</span> <span class="s2">"&lt;/code&gt;&lt;/pre&gt;"</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">cache</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">if</span> <span class="no">File</span><span class="p">.</span><span class="nf">exist?</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+      <span class="no">File</span><span class="p">.</span><span class="nf">read</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="k">else</span>
+      <span class="n">content</span> <span class="o">=</span> <span class="k">yield</span>
+      <span class="no">File</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="p">{</span><span class="o">|</span><span class="n">f</span><span class="o">|</span> <span class="n">f</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span> <span class="p">}</span>
+      <span class="n">content</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">Jekyll</span><span class="o">::</span><span class="no">MarkdownConverter</span>
+  <span class="k">def</span> <span class="nf">extensions</span>
+    <span class="no">Hash</span><span class="p">[</span> <span class="o">*</span><span class="vi">@config</span><span class="p">[</span><span class="s1">'redcarpet'</span><span class="p">][</span><span class="s1">'extensions'</span><span class="p">].</span><span class="nf">map</span> <span class="p">{</span><span class="o">|</span><span class="n">e</span><span class="o">|</span> <span class="p">[</span><span class="n">e</span><span class="p">.</span><span class="nf">to_sym</span><span class="p">,</span> <span class="kp">true</span><span class="p">]</span> <span class="p">}.</span><span class="nf">flatten</span> <span class="p">]</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">markdown</span>
+    <span class="vi">@markdown</span> <span class="o">||=</span> <span class="no">Redcarpet</span><span class="o">::</span><span class="no">Markdown</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="no">Redcarpet2Markdown</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">extensions</span><span class="p">),</span> <span class="n">extensions</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+    <span class="k">return</span> <span class="k">super</span> <span class="k">unless</span> <span class="vi">@config</span><span class="p">[</span><span class="s1">'markdown'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'redcarpet2'</span>
+    <span class="n">markdown</span><span class="p">.</span><span class="nf">render</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+</code></pre>
+</div>
+
+<h3 id="change-config-file">3.change config file</h3>
+<p>then in your config <code class="highlighter-rouge">_config.yml</code> file you need to add:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="ss">markdown: </span><span class="n">redcarpet</span>
+<span class="ss">redcarpet:
+  extensions: </span><span class="p">[</span><span class="s2">"no_intra_emphasis"</span><span class="p">,</span> <span class="s2">"fenced_code_blocks"</span><span class="p">,</span> <span class="s2">"autolink"</span><span class="p">,</span> <span class="s2">"strikethrough"</span><span class="p">,</span> <span class="s2">"superscript"</span><span class="p">]</span>
+
+</code></pre>
+</div>
+
+<p>…and your done.</p>
+
+<h2 id="end-notes">End notes</h2>
+<p>I took most of these installation steps are taken from <a href="http://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll">stack overflow</a> however there the sudgestion was to write in the config file <code class="highlighter-rouge">markdown: redcarpet2</code> and it wasn’t working for me, so I found that <a href="https://github.com/clayallsopp/rubymotion-tutorial/issues/30">it has been raised elsewhere</a> that you can just write <code class="highlighter-rouge">markdown: redcarpet</code> and it works just fine.</p>
+
+<p>Also, I’ve noticed that with this set up you can use both liquid tags and fenced blocks.</p>
+
+<h2 id="updated">Updated</h2>
+<p>Github does nto support redcarpet anymore, uses kramdown by the default so I followed this to update and retain same settings described above.</p>
+
+<p>“<a href="http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/">Updating from redcarpet and Pygments to Kramdown and Rouge on Github Pages</a>”</p>
+
+<p>In a nutshell</p>
+
+<p>in <code class="highlighter-rouge">_config.yml</code> change this</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="s">highlighter</span><span class="pi">:</span> <span class="s">pygments</span>
+<span class="s">markdown</span><span class="pi">:</span> <span class="s">redcarpet</span>
+<span class="s">redcarpet</span><span class="pi">:</span>
+  <span class="s">extensions</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">no_intra_emphasis"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">fenced_code_blocks"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">tables"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">with_toc_data"</span><span class="pi">]</span>
+</code></pre>
+</div>
+<p>to this</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="s">highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+<span class="s">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
+<span class="s">kramdown</span><span class="pi">:</span>
+  <span class="s">input</span><span class="pi">:</span> <span class="s">GFM</span>
+  <span class="s">auto_ids</span><span class="pi">:</span> <span class="s">true</span>
+  <span class="s">syntax_highlighter</span><span class="pi">:</span> <span class="s">rouge</span>
+</code></pre>
+</div>
+
+<!-- Links -->
+
+
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+    (function(document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+
+      document.addEventListener('click', function(e) {
+        var target = e.target;
+
+        if(!checkbox.checked ||
+         sidebar.contains(target) ||
+         (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+      }, false);
+    })(document);
+    </script>
+
+    
+  </body>
+  </html>
