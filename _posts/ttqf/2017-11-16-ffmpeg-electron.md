@@ -22,7 +22,7 @@ For those not familiar with it autoEdit is a text based video editing app for ma
 
 ## What’s what? 
 
-First things first let’s introduce the components will need to make sure you are familiar with it.
+First things first let’s introduce the components will need, to make sure you are familiar with it.
 
 ### [`Ffmpeg`](https://www.ffmpeg.org/)
 
@@ -141,7 +141,7 @@ As you can see [at line 12](https://github.com/voxmedia/Transcriber/blob/master/
 ffmpeg.setFfmpegPath("./bin/ffmpeg")
 ```
 
-Where [`bin/ffmpeg` corresponding to the path](https://github.com/voxmedia/Transcriber/tree/master/bin) where the ffmpeg binary for Mac OS X is located in the repository. When packaging/building the app for distribution this binary will be included with it.
+Where [`"./bin/ffmpeg"` corresponds to the path](https://github.com/voxmedia/Transcriber/tree/master/bin) where the ffmpeg binary for Mac OS X is located in the repository. When packaging/building the app for distribution this binary will be included with it.
 
 ### Advantages and disadvantages 
 
