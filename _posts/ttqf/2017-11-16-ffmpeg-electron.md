@@ -2,7 +2,7 @@
 layout: post
 title: "FFMPEG And Electron"
 date: 2017-11-16 14:15:00
-permalink: "/ffmpegelectron.html"
+permalink: "/ffmpeg-electron.html"
 description: "How to use ffmpeg with the fluent-ffmpeg node library in electron."
 youtube: 
 image: 
@@ -19,7 +19,7 @@ How to use [ffmpeg](https://www.ffmpeg.org/) with the[ fluent-ffmpeg node librar
 
 I was recently asked about this, and I had some notes[ in the autoEdit documentation](https://pietropassarelli.gitbooks.io/autoedit-2-documentation/content/ffmpeg-and-ffprobe-in-electron.html) but since they were at some sort of at draft stage I decided to expand more on this here,to make a more clear and comprehensive explanation. 
 
-I am going to use the code from the implementation of[ autoEdit.io](http://autoEdit.io) as well as an earlier prototype as a concrete example. 
+I am going to use the code from the implementation of[ autoEdit.io](http://autoEdit.io) as well as an earlier "transcriber prototype" as a concrete example. 
 
 For those not familiar with it autoEdit is a text based video editing app for mac os x,[ check out the website](http://autoEdit.io) , [README](https://github.com/OpenNewsLabs/autoEdit_2) and[ user manual ](https://pietropassarelli.gitbooks.io/autoedit2-user-manual/content/)for more details.
 
