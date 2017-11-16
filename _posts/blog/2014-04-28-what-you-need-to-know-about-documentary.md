@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Representing Reality: Key ideas in documentary theory and practice
+title: "Representing Reality: Key ideas in documentary theory and practice"
 permalink: "doc.html"
 date: '2014-04-28T10:08:00.000+01:00'
 author: Pietro Passarelli

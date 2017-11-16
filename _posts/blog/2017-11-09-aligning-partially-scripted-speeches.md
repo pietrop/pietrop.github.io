@@ -67,7 +67,7 @@ Aeneas given the text and audio input, converts the text to audio. doing TTS and
 
 If you knew which sections are "off script", with Aeneas is also possible to pass in a start and end time-code of the section you want to align. And only align a certain section. Because under the hood it uses ffmpeg. 
 
-(btw there's also an easier bundled up way to install aeneas and it's dependencies for mac and windows https://github.com/sillsdev/aeneas-installer/releases  which is not of much use if you are running it on a linux server)
+(btw there's also [an easier bundled up way to install aeneas and it's dependencies for mac and windows](https://github.com/sillsdev/aeneas-installer/releases)  which is not of much use if you are running it on a linux server)
 
 # Possible Implementation 
 
