@@ -141,7 +141,7 @@ As you can see [at line 12](https://github.com/voxmedia/Transcriber/blob/master/
 ffmpeg.setFfmpegPath("./bin/ffmpeg")
 ```
 
-Where [`bin/ffmpeg` corresponded to the path](https://github.com/voxmedia/Transcriber/tree/master/bin) where the ffmpeg binary for Mac OS X is located. 
+Where [`bin/ffmpeg` corresponded to the path](https://github.com/voxmedia/Transcriber/tree/master/bin) where the ffmpeg binary for Mac OS X is located in the repository. When packaging/building the app for distribution this binary will be included with it.
 
 ### Advantages and disadvantages 
 
@@ -149,45 +149,86 @@ On the plus side this is a pretty straightforward implementation but some of it�
 
 Let’s consider a more involved example that gives more flexibility.
 
-Cross platform example: autoEdit 2
+## Cross platform example: [autoEdit 2](http://autoedit.io)
+
+In [autoEdit](http://autoedit.io) the audio/video conversion to obtain an audio that meets the STT API specs is a bit more involeved and handled with a series of components. 
+
+Without getting too deep into the low level implementation, there's an [`interactive_transcription_generator`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator) that uses other components to create a transcription, read metadata, and create a video preview.  The [`transcriber`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator/transcriber) components handles the communication with the STT APIs. and uses other modules to split the media into 5 minutes chunks to speed up the transcription time.
+
+Such as the [`trimmer`, module which trims a video or audio file.](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/transcriber/trimmer.js#L45) 
+
+
 
 ### `Config.js` file 
 
-In autoEdit I have [a `config.js` file at the root of the project](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/config.js  ). That can be required anywhere in the application to access shared resources. 
+In autoEdit there is [a `config.js` file at the root of the project](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/config.js  ). This module can be required anywhere in the application to access shared resources. 
 
-Which is setup as a [node module ( see here more details on using export/require for node modules](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)). 
+See [here more details on using export/require for node modules](https://www.sitepoint.com/understanding-module-exports-exports-node-js/).
 
-This config module contains the path to both ffmpeg and ffprobe binaries.
+This config module contains [the path to both ffmpeg and ffprobe binaries](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/config.js#L12). 
+
+```js
+var ffmpegPath = require('ffmpeg-static').path;
+```
 
 ### Packaging the ffmpeg/ffprobe binaries
 
 As you might have noticed [the config module contains the path to ffmpeg](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/config.js#L6) and [to ffprobe](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/config.js#L7). And to do so it’s relying on an external module. [`ffmpeg-static`](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/package.json#L121) and [`ffprobe-static`](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/package.json#L122). 
 
-`static-ffmpeg` module has advantage that by packaging cross platform binary of ffmpeg you could be developing this app on mac, linux and windows, without ffmpeg on your machine and could still be developing contributing to each OS version. 
+`static-ffmpeg` module containes pre-built binaries  for ffmpeg for the various operating system.
+
+This gives you the advantage that you could be developing this app on mac, linux and windows, without ffmpeg on your machine and could still be developing contributing to each OS version (with a few tweaks to the build process depending on the OS). 
 
 In the case of autoEdit it is a mac only app, but I tried to keep option to make windows and linux version open as much as possible where it didn’t not require a lot of extra effort to avoid it from becoming too much of an undertaking should I decide to do that in the future. 
 
-They key reason why I ended up forking the original and creating my own version for simplicity is that as we’ll see in later section,  when packaging the app, `electron-builder` can recognise the operating system and architecture of the machine you are on,which is useful for including /excluding the binaries for that distribution. 
+They key reason why I ended up forking the original and creating my own version for simplicity is that as we’ll see in later section,  when packaging the app, [`electron-builder`](https://github.com/electron-userland/electron-builder) can recognise the operating system and architecture of the machine you are on,which is useful for including /excluding the binaries for that distribution. 
 
- But when `electron-builder` recognises a mac computer it recognises it as `mac`. While `static-ffmpeg` uses the `[os](https://nodejs.org/api/os.html)` module [`os.platform()`](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L4) which recognises it as `darwin`. ([`os` module also explained in more simple terms here](https://www.w3schools.com/nodejs/ref_os.asp))
+ But when `electron-builder` recognises a mac computer it recognises it as `mac`. While `static-ffmpeg` uses the [`os`](https://nodejs.org/api/os.html) module [`os.platform()`](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L4) which recognises a mac computer as `darwin`. ([`os` module also explained in more simple terms here](https://www.w3schools.com/nodejs/ref_os.asp))
 
 This means that if we want to use `electron-builder` and `ffmpeg-static` to have consistent file path to the ffmpeg binary we are packing inside electron both for providing a file path to use with `fluent-ffmpeg` in our code base, as well as for including the right binary for the right os distribution and excluding the rest we need the os name for mac os x to be consistent. 
 
-So In my version of ffmpeg I [changed the folder to the mac binary to be called `mac` instead of darwin](https://github.com/pietrop/ffmpeg-static/tree/master/bin/mac/x64). And [added a bit of logic so that when `os` module recognises it as darwin it gets assigned as `mac`](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L6).
+So In my version of `static-ffmpeg` I [changed the folder to the mac binary to be called `mac` instead of `darwin`](https://github.com/pietrop/ffmpeg-static/tree/master/bin/mac/x64). And [added a bit of logic so that when `os` module recognises it as darwin it gets assigned as `mac`](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L6).
 
-[Same thing was done for windows to change from `win32` to `win` for the same reason.](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L8)
+```javascript
+var os = require('os')
 
-To best understand the `ffmpeg-static`module is [useful to look a the part where the path to the binary is constructed](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L23) using the `[path](https://nodejs.org/api/path.html)` module. There you see[ where the `platform` variable is used to construct the file path](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L26).
+var platform = os.platform()
+//patch for compatibilit with electron-builder, for smart built process.
+if(platform == "darwin"){
+	platform = "mac";
+}else if(platform == "win32"){
+	platform = "win";
+}
+```
 
-I did something equivalent for my version of ffprobe-static. 
+And as you can see the [same thing was done for windows to change from `win32` to `win` for the same reason.](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L8)
 
-[What’s missing is the logic for the support for linux binary in the index.js file](https://github.com/pietrop/ffmpeg-static/blob/master/index.js) even tho [the the binaries for linux are in the repository](https://github.com/pietrop/ffmpeg-static/tree/master/bin/linux). Pull request welcome, should you have a use case and want to contribute to this.  
+To best understand the `ffmpeg-static`module is [useful to look a the part where the path to the binary is constructed](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L23) using the [`path`](https://nodejs.org/api/path.html) module and [`platform` variable to construct the file path](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L26).
+
+```js
+var ffmpegPath = path.join(
+  __dirname,
+  'bin',
+  platform,
+  arch,
+  platform === 'win' ? 'ffmpeg.exe' : 'ffmpeg'
+)
+```
+
+I did something equivalent for my version of [`ffprobe-static`](https://github.com/pietrop/ffprobe-static).
+
+However [what’s missing is the logic for the support for linux binary in the index.js file](https://github.com/pietrop/ffmpeg-static/blob/master/index.js) even tho [the the binaries for linux are in the repository](https://github.com/pietrop/ffmpeg-static/tree/master/bin/linux). Pull request welcome, should you have a use case where support for linux is needed and want to contribute to this.  
 
 ### Requiring the path
 
-As an example in autoEdit, there’s a module that requires 
+As an example, in autoEdit, there’s a module that [sets the ffmepg path](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/transcriber/trimmer.js#L45).
 
-[Setting the ffmepg path](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/transcriber/trimmer.js#L45).
+```javascript
+ffmpeg.setFfmpegPath(config.ffmpegBin);
+```
+
+
+https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/index.js#L84
 
 ### Packaging/build electron app
 
@@ -195,7 +236,7 @@ We don’t want to have the binary for windows and linux in the mac distribution
 
 In order to do that we have to add some logic to our build script to only package the binary for the os that we are building for. 
 
-Using  `[electron-builder](https://github.com/electron-userland/electron-builder)`
+Using [`electron-builder`](https://github.com/electron-userland/electron-builder)
 
 Explained here
 
