@@ -27,13 +27,13 @@ For those not familiar with it autoEdit is a text based video editing app for ma
 
 First things first let’s introduce the components will need to make sure you are familiar with it.
 
-### `[Ffmpeg](https://www.ffmpeg.org/)` 
+### [`Ffmpeg`](https://www.ffmpeg.org/)
 
 > A complete, cross-platform solution to record, convert and stream audio and video.
 
 Very powerful go to option for open source manipulation of audio and video files.
 
-### `[ffprobe](https://ffmpeg.org/ffprobe.html)` 
+### [`ffprobe`](https://ffmpeg.org/ffprobe.html) 
 
 > ffprobe gathers information from multimedia streams and prints it in human- and machine-readable fashion.
 
@@ -45,7 +45,7 @@ It basically reads metadata information from audio and video files.
 
 It basically allows you to package your app wit a custom version of the V8 engine which powers chrome to make it self contained, and if you wish, with the right adjustments, cross platform compatible. 
 
-### `[fluent-ffmpeg` node ](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)
+### [`fluent-ffmpeg` node](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)
 
 It’s a library that wraps around the ffmpeg binary and provides an easier interface to run ffmpeg commands while in node. [It also supports running commands for ffprobe](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg#ffmpeg-and-ffprobe). 
 
