@@ -69,6 +69,9 @@ Is what we’ll use for packing our code base into an electron app that can be b
 
 As a side note, if you are using github,[ github releases](https://help.github.com/articles/creating-releases/) are a great way to host the packaged app distribution. See [autoEdit](http://www.autoedit.io/) example where if you click on "Download Os X app" it [takes you to the releases page.](https://github.com/OpenNewsLabs/autoEdit_2/releases) 
 
+### Node modules
+Last but not least see [here more details on using export/require for node modules](https://www.sitepoint.com/understanding-module-exports-exports-node-js/) if you are not familiar with it or need a refresher.
+
 ## Electron and FFMPEG
 
 When using fluent-ffmpeg, ffmpeg (and ffprobe) normally the library assumes that the binary is installed and[/or the path available as environment variable, as described here](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg#ffmpeg-and-ffprobe).
@@ -153,23 +156,27 @@ Let’s consider a more involved example that gives more flexibility.
 
 In [autoEdit](http://autoedit.io) the audio/video conversion to obtain an audio that meets the STT API specs is a bit more involved and handled with a series of components. 
 
-Without getting too deep into the low level implementation, there's an [`interactive_transcription_generator`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator) module that uses other components to create a transcription, read metadata, and create a video preview.  It delegates the communication with the STT APIs to the [`transcriber`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator/transcriber) component. Which uses other modules to split the media into 5 minutes chunks to speed up the transcription time.
+Without getting too deep into the low level implementation, there's an [`interactive_transcription_generator`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator) module that uses other components to create a transcription, read metadata, and create a video preview.  It delegates the communication with the STT APIs to the [`transcriber`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator/transcriber) component. Which uses other modules to split the media into 5 minutes chunks to speed up the transcription time. Such as the [`trimmer`, module which trims a video or audio file.](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/transcriber/trimmer.js#L45) as part of this process. 
 
-Such as the [`trimmer`, module which trims a video or audio file.](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/transcriber/trimmer.js#L45) as part of this process. 
-
-
-
+With this overview in mind let's look at how the `ffmpeg` + `electron` integration was done in this app.
 
 ### `Config.js` file 
 
-In autoEdit there is [a `config.js` file at the root of the project](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/config.js  ). This module can be required anywhere in the application to access shared resources. 
+In autoEdit there is a [`config.js` file at the root of the project](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/config.js  ). This module can be required anywhere in the application to access shared resources. 
 
-See [here more details on using export/require for node modules](https://www.sitepoint.com/understanding-module-exports-exports-node-js/).
 
 This config module contains [the path to both ffmpeg and ffprobe binaries](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/config.js#L12). 
 
+At a minimum this is what this module should do, require binary path from `ffmpeg-static` and make it availeable at the root of the project in the config module
+
 ```js
 var ffmpegPath = require('ffmpeg-static').path;
+
+module.exports = {
+	...
+	ffmpegPath: ffmpegPath
+	...
+};
 ```
 
 ### Packaging the ffmpeg/ffprobe binaries
@@ -180,11 +187,18 @@ As you might have noticed [the config module contains the path to ffmpeg](https:
 
 This gives you the advantage that you could be developing this app on mac, linux and windows, without ffmpeg on your machine and could still be developing contributing to each OS version (with a few tweaks to the build process depending on the OS). 
 
+
+<!-- move this -->
+
+The other advantage is that if you wish you can change the ffmpeg binary that you want to ship with your electron app with a version that might have a specific set of dependencies.
+
+<!-- end move this -->
+
 In the case of autoEdit it is a mac only app, but I tried to keep option to make windows and linux version open as much as possible where it didn’t not require a lot of extra effort to avoid it from becoming too much of an undertaking should I decide to do that in the future. 
 
-They key reason why I ended up forking the original and creating my own version for simplicity is that as we’ll see in later section,  when packaging the app, [`electron-builder`](https://github.com/electron-userland/electron-builder) can recognise the operating system and architecture of the machine you are on,which is useful for including /excluding the binaries for that distribution. 
+They key reason why I ended up [forking the original](https://help.github.com/articles/fork-a-repo/) and creating my own version for simplicity is that as we’ll see in later section,  when packaging the app, [`electron-builder`](https://github.com/electron-userland/electron-builder) can recognise the operating system and architecture of the machine you are on,which is useful for including /excluding the binaries for that distribution. 
 
- But when `electron-builder` recognises a mac computer it recognises it as `mac`. While `static-ffmpeg` uses the [`os`](https://nodejs.org/api/os.html) module [`os.platform()`](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L4) which recognises a mac computer as `darwin`. ([`os` module also explained in more simple terms here](https://www.w3schools.com/nodejs/ref_os.asp))
+ But when `electron-builder` recognises a mac computer it recognises it as the string `mac`. While `static-ffmpeg` uses the [`os`](https://nodejs.org/api/os.html) module [`os.platform()`](https://github.com/pietrop/ffmpeg-static/blob/master/index.js#L4) which recognises a mac computer as the string `darwin`. ([`os` module also explained in more simple terms here](https://www.w3schools.com/nodejs/ref_os.asp))
 
 This means that if we want to use `electron-builder` and `ffmpeg-static` to have consistent file path to the ffmpeg binary we are packing inside electron both for providing a file path to use with `fluent-ffmpeg` in our code base, as well as for including the right binary for the right os distribution and excluding the rest we need the os name for mac os x to be consistent. 
 
@@ -222,30 +236,70 @@ However [what’s missing is the logic for the support for linux binary in the i
 
 ### Requiring the path
 
-As an example, in autoEdit, there’s a module that [sets the ffmepg path](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/transcriber/trimmer.js#L45).
+As an example, we have seen a whirlwind overview of the autoEdit architecture for the transcription and video conversion part at the beginning of this section. As you might remember there’s a module that [sets the ffmepg path, `trimmer.js`](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/transcriber/trimmer.js#L45).
 
-```javascript
+
+```js
 ffmpeg.setFfmpegPath(config.ffmpegBin);
 ```
 
+While the module that requires the ffmpeg path is the [`interactive_transcription_generator`](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/index.js#L84) which requires it from the config module.
 
-https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/index.js#L84
+
+```js
+var ffmpegPath  = require("../../config.js").ffmpegPath;
+```
+
+And then passes it [as a config parameter to the transcriber module](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/index.js#L125) which then gets passed down the chain all the way to our `trimmer` module we saw in previous section.
 
 ### Packaging/build electron app
 
-We don’t want to have the binary for windows and linux in the mac distribution as that would take up a lot of space. And we ideally want to keep our electron app as lightweight as possible. 
+The problem in this setup is that we don’t want to have the binary for windows and linux in the mac distribution as that would take up a lot of space. And we ideally want to keep our electron app as lightweight as possible. 
 
 In order to do that we have to add some logic to our build script to only package the binary for the os that we are building for. 
 
-Using [`electron-builder`](https://github.com/electron-userland/electron-builder)
+Using [`electron-builder`](https://github.com/electron-userland/electron-builder) there is a files notation that can be used to specify these rules in [`package.json`](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/package.json).
 
-Explained here
+Where the `${os}` and `${arch}` variable give you operating system(mac, linux, pc) and architecture (32 or 64 bits). 
 
-[https://pietropassarelli.gitbooks.io/autoedit-2-documentation/content/ffmpeg-and-ffprobe-in-electron.html](https://pietropassarelli.gitbooks.io/autoedit-2-documentation/content/ffmpeg-and-ffprobe-in-electron.html)
+In [`package.json`](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/package.json) you can set the files to include/exclude as follows. 
 
-[https://github.com/OpenNewsLabs/autoEdit_2/blob/master/package.json#L42](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/package.json#L42) 
+```json 
+...
+    "files": [
+      "**/*",
+      "!config/",
+      "!spec/",
+      "!project_page/",
+      "!vendor/",
+      "!docs/",
+      "!dist/",
+      "!assets/",
+      "node_modules/ffmpeg-static/bin/${os}/${arch}/ffmpeg",
+      "node_modules/ffmpeg-static/index.js",
+      "node_modules/ffmpeg-static/package.json",
+      "node_modules/ffprobe-static/bin/${os}/${arch}/ffmpeg",
+      "node_modules/ffprobe-static/index.js",
+      "node_modules/ffprobe-static/package.json"
+    ],
+    "copyright": "2017 Pietro Passarelli",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "files": [
+        "!node_modules/ffmpeg-static/bin/win${/*}",
+        "!node_modules/ffmpeg-static/bin/linux${/*}",
+        "!node_modules/ffprobe-static/bin/win${/*}",
+        "!node_modules/ffprobe-static/bin/linux${/*}"
+      ]
+    },
+...
+```
 
-# recap TL;DR
+More details on this in [`electron-builder` documentation](https://www.electron.build/configuration/configuration).
 
-{in simple steps how to do it}
+## End
+
+That's it, hope this gives you an idea of how to go about adding ffmpeg in your electron app.   
+
+If you have any thoughts, questions, ideas, alternatives, get in touch via email or twitter [@pietropassarell](http://twitter.com/pietropassarell).   
 
