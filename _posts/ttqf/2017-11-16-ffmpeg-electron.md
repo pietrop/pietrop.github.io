@@ -8,8 +8,9 @@ youtube:
 image: 
 categories: 
 - ttqf
+- blog
 tags:
-- regex
+- ffmpeg
 ---
 
 ## FFMPEG and Electron 
