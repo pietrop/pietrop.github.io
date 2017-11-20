@@ -29,7 +29,7 @@ tags:
 - [blog: "Annotating President Trump’s inauguration speech", Vox Media Storytelling studio blog -  JAN 20, 2017](https://storytelling.voxmedia.com/2017/1/20/14329600/annotation-feature-vox)
 
 
-- [slides:" Hands on: Make annotated articles for live fact checking TV speeches! (without writing a single line of code)" Hacks/Hackers Buenos Aires Media Party - Sept 14th 2017](https://docs.google.com/presentation/d/13goFvQ9sTS1iVyxf_BHl0uCvJfrpgIqBs7uFjRg4PNA/edit?usp=sharing)
+- [slides: "Hands on: Make annotated articles for live fact checking TV speeches! (without writing a single line of code)" Hacks/Hackers Buenos Aires Media Party - Sept 14th 2017](https://docs.google.com/presentation/d/13goFvQ9sTS1iVyxf_BHl0uCvJfrpgIqBs7uFjRg4PNA/edit?usp=sharing)
 
 - [slides: MozzFest workshop slides - Oct 29th, 2017](https://docs.google.com/presentation/d/1DLCNqqf9je1kA91_S9ggaSzFpAlLBc-jEem5ZL18wYQ/edit?usp=sharing)
 	- [github: annotated article generator - github](https://github.com/pietrop/annotated_article_generator)
