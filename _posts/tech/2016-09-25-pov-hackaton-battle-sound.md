@@ -27,3 +27,17 @@ Some notes on what to write about
 TODO: Add video 
 
  -->
+
+<div class="videoWrapper">
+	<iframe src="https://player.vimeo.com/video/244781976" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+
+Some behind the scenes extras 
+
+<div class="videoWrapper">
+	<iframe src="https://player.vimeo.com/video/244780735" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+
+
