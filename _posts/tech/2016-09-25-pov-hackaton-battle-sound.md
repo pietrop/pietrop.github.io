@@ -7,7 +7,7 @@ date: "2016-09-25"
 published: true 
 link: http://pietropassarelli.com/BattleSounds/
 image: 
-github: github.com/pietrop/BattleSounds
+github: pietrop/BattleSounds
 youtube: 
 tech: ['node']
 categories:
