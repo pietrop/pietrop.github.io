@@ -15,7 +15,9 @@ categories:
 tags:
 ---
 
-_draft: more coming soon_
+
+Using outtakes from a documentary on DJ culture, re imagining what would the "dvd extras" look like as an interactive. And exploring interfaces for making a timeline where viewers can explore the footage behind the edits.
+
 
 Used autoEdit2 to speed up the  making of the hypertranscript.
 Using github pages, and a google spreadsheet as "backend", [see R&D Notes for more info](https://github.com/pietrop/BattleSounds/blob/master/notes.md).
