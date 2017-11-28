@@ -20,7 +20,7 @@ Using outtakes from a documentary on DJ culture, re imagining what would the "dv
 
 
 Used autoEdit2 to speed up the  making of the hypertranscript.
-Using github pages, and a google spreadsheet as "backend", [see R&D Notes for more info](https://github.com/pietrop/BattleSounds/blob/master/notes.md).
+Using github pages, and a google spreadsheet as "backend", [see R&D Notes for more info](https://github.com/pietrop/BattleSounds/blob/master/notes.md). Also [slides of presentation here](https://docs.google.com/presentation/d/19TB4CpkCDqMJQvhmZF3I9AN7IQ0VsIA8nsfpdHkfDss/edit?usp=sharing).
 
 
 <!-- 
