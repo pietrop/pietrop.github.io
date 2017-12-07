@@ -30,7 +30,7 @@ For more comprehensive resources see
 
 - Open News: [The Field Guide to Open Source in the Newsroom](http://fieldguide.opennews.org/en/latest/) 
 
-## 1 Code in the open 
+## 1 - Code in the open 
 
 Have your repository public from day one. Rather than leaving it to the end, 
 
@@ -42,7 +42,7 @@ The main advantage for this is that it makes it easier to ask for help as you go
 
 [More concrete steps on tools to avoid leaking sensitive informations here](http://fieldguide.opennews.org/en/latest/Chapter03-Existing-Projects/#is-your-project-sanitary ).
 
-## 2 open source components 
+## 2 - Open source components 
 
 If you use a component based design approach, or simply for example in node, separate your code in small functions. 
 
@@ -54,7 +54,7 @@ For instance in [autoEdit](http://www.autoedit.io/), there is an[ EDL composer m
 
 In autoEdit, it assumed the video file footage came from a camcorders and had cards informations associated with it in the metadata, while in hyperaud.io use cases it may not, and would not have these type of informations. This was breaking the EDL composer. And gave me a chance to look into making it work for those situations. 
 
-## 3 "case study" article
+## 3 - "case study" article
 
 Another thing that is worth considering is to write a blog post/article type of document, where you give a more high-level overview of the system/project and if applicable, the philosophy behind it. 
 
@@ -80,7 +80,7 @@ The Financial Times has also recently started to use this system thanks to the g
 
 The key here is that more players are engaged with a specific problem you are trying to solve, the more support you can get to find an optimal solution. 
 
-## 4 Document as you go along 
+## 4 - Document as you go along 
 
 Similarly to the idea of "code in the open" documentation is also best done if you take notes as you go along. I normally have a `notes` folder where I keep  markdown files in the GitHub repo.
 
@@ -92,7 +92,7 @@ As a more recent example when working on an open source transcription text edito
 
 To the produce actual documentation for the project it becomes then easier and faster to organise and "refactor" this using a gitbook. 
 
-## 5 README
+## 5 - README
 
 Your readme should have clear instructions on how to get setup and especially if it is a module/components, example usage. 
 
@@ -106,7 +106,7 @@ If you see [the quickQuote README](https://github.com/times/quickQuote#welcome-t
 
 In[ autoEdit’s README](https://github.com/OpenNewsLabs/autoEdit_2#development) I worked on this made the setup happen as much as possible as part of a script. So that launching the app would be as easy as `npm install` followed by `npm start`. 
 
-## 6 R&D doc 
+## 6 - R&D doc 
 
 This is something I initially learned at Vox Media from[ Ryan Mark](https://twitter.com/ryanmark). He suggests making a working document to sketch out production as a list. The list covers things you need to do or learn in order to get the project to completion, possibly in order. 
 
@@ -134,7 +134,7 @@ The biggest advantage of keeping an R&D doc is not only that it makes it easier 
 
 Also useful if working in a team to divide tasks and make sure everybody is in sync. 
 
-## 7 screenshots, gifts and (maybe) diagrams
+## 7 - Screenshots, gifts and (maybe) diagrams
 
 When you are done make it really easier for the users to understand what the project does. 
 
@@ -152,7 +152,7 @@ While [autoEdit’s README is a good example of use of diagram](https://github.c
 
 For a more minimalistic example see how for the quickQuote project page, [the user manual](https://times.github.io/quickQuote/userManual.html) is just a series of steps and screenshots.
 
-## 8 demo
+## 8 - Demo
 
 It is also good to make a dummy demo. To deploy alongside the project. This is good both for people evaluating the software and for yourself if you need to give a presentation under time pressure or resource constraints and can fall back to it.
 
@@ -168,7 +168,11 @@ In autoEdit I [made this part of the build tool process](https://github.com/Open
 
 With [captions maker’s demo ](http://pietropassarelli.com/captions-maker/)despite the big organce text screaming this is a dummy demo I still had people completely missing it and telling me that they were frustrated they couldn’t use the app. 
 
-## 9 video presentations 
+## 9 - Video presentations 
+
+Open source projects like the [testing framework jest do have link to talks](https://facebook.github.io/jest/#watch) but you don't have to be as big as that to do the same.
+
+The main advantage, is that you put forward another medium to engage people in your project.
 
 The easiest is to organise to give a short presentation (think 3 to 10 minutes) at a relevant meetup or event. For example some hacks/hackers chapters have lighting pitches.  
 
@@ -180,11 +184,7 @@ You can then link to it from the github repo to give a better sense of the proje
 
 * At a minimum do a screencast recording.
 
-If you are recording a screencast QuickTime is unreliable and makes huge raw files. It might stop if it runs out of space.  If you use these, do run through, and make sure mic settings are on. Screenflow is ok but in my experience it can take forever to export. In any case you might want to have mirrored screen 
-
-Open source projects like the [testing framework jest do have link to talks](https://facebook.github.io/jest/#watch) but you don't have to be as big as that to do the same.
-
-The main advantage, is that you put forward another medium to engage people in your project.
+If you are recording a screencast QuickTime is unreliable and makes huge raw files. It might stop if it runs out of space.  If you use these, do run through, and make sure mic settings are on. Screenflow is ok but in my experience it can take forever to export. In any case you might want to have mirrored screen.
 
 This is also particularly useful for hackathons projects where sometimes it's more proof of concepts
 
@@ -194,15 +194,15 @@ see [London Times team presentation at BBC News Labs hackathon](http://pietropas
 
 Or the[ first version of autoEdit, as presented at Hacks/Hackers London](http://pietropassarelli.com/autoEdit.html) in under 2 minutes.
 
-Example [Annotated article system presentation at SRCCON](https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles/content/video-of-presentation.html ) workshop with David Eads. 
+Example [Annotated article system presentation at SRCCON](https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles/content/video-of-presentation.html) workshop with David Eads. 
 
 altho a bit longer than recommended, it is integrated in the gitbook documentation to provide alternate format to consume /explore the material.
 
-Sometimes the organisers of an event will be recording, presentations and that can be a great resource to to link to your project, such as the [textAV event documentation with video of the project’s presentations](https://pietropassarelli.gitbooks.io/textav/). 
+Sometimes the organisers of an event will be recording, presentations and that can be a great resource to to link to your project, such as the [textAV event documentation with video of the project’s presentations](https://pietropassarelli.gitbooks.io/textav). 
 
 One of the advantages of this, is that sometimes the code for the project might not keep up with the test of time, especially for hackathons proof of concepts, and dependencies might be breaking etc and a video presentation could be a great way to get the gist of it. 
 
-## 10 collaborate 
+## 10 - Collaborate 
 
 If you don't want to be "stuck" maintaining it, talk/connect with people ahead of time to engage them on your idea, size needs and requirements etc… 
 
