@@ -5,7 +5,7 @@ date:   2015-05-17 14:15:00
 permalink: "/regex.html"
 description:  "How to best setup sublime text to work with Node/Javascript"
 youtube: 
-published: false
+published: true
 image: 
 categories: 
 - ttqf

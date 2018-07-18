@@ -20,10 +20,8 @@ tags:
 > from [**eloquent Javascript**](http://eloquentjavascript.net/03_functions.html)
 
 
-## first thing first 
-Forget everything you heard about coding and learning to code and get ready to make your mind up about it.
-
-( I'm referring to the good hold "you need to have started when you were five or there is no point" utter nonsense )
+## First thing first 
+Forget everything you heard about coding and learning to code and get ready to make your mind up about it. I'm referring to the good hold "you need to have started when you were five or there is no point" utter nonsense.
 
 
 If you are curious about the pedagogy of learning to code, check out [victor Brent "learnable programming" essay](http://worrydream.com/LearnableProgramming/), for an insight into how to evaluate the best resources out there and take charge of your learning.

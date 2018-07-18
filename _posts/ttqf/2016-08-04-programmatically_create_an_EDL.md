@@ -2,10 +2,10 @@
 layout: post
 title:  "programmatic EDL"
 date:   2015-05-17 14:15:00
-permalink: "/regex.html"
+permalink: "/EDL.html"
 description:  "What do you need to know about EDL to be able to work with it programmatically?"
 youtube: 
-published: false
+published: true
 image: 
 categories: 
 - ttqf
@@ -97,15 +97,17 @@ For a basic EDL composer this could be represented as the following object
 ```javascript
 var edlSqDemo = {
     "title": "Demo Title of project",
-    "offset": "00:00:28:08",//optional
+    "offset": "00:00:28:08", //optional
     "events":  [
-      { "id":1,
+      { 
+        "id":1,
         "startTime": 10, // in deconds 
         "endTime": 20,
         "reelName":"SomeReelName", //optional
         "clipName":"Something.mov"
       },
-      { "id":2,
+      { 
+        "id":2,
         "startTime": 45,
         "endTime": 55,
         "reelName":"SomeOtherReelName", //optional 

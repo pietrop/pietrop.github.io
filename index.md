@@ -10,7 +10,7 @@ Hi, I'm <a href="http://uk.linkedin.com/in/{{ site.owner.linkedin }}" target="_b
 
 ---
 
-## Most recently I made 
+## Most recently I made, in chronological order 
 
 - [quickQuote](), an open-source project to make it easier and faster for journalists to identify and create an interactive video quote. 
 

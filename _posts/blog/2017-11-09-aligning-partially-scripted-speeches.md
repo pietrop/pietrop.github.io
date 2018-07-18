@@ -41,7 +41,7 @@ You provide text to align and audio to both.
 
 ## Gentle
 
-**Gentle**, could also work without the text input, and work as a speech to text service, which is how I've integrate it in [auotEdit.io](http://pietropassarelli.com/autoEdit2.html), a text based video editing app I worked on last year.
+Gentle, could also work without the text input, and work as a speech to text service, which is how I've integrate it in [auotEdit.io](http://pietropassarelli.com/autoEdit2.html), a text based video editing app I worked on last year.
 
 Here the details of the setup/integration between the two, unfortunately is packaged as a server so [needs to be open as a separate app](  https://pietropassarelli.gitbooks.io/autoedit2-user-manual/content/setup-stt-apis/setup-stt-apis-gentle.html), altho some people had some luck running it with docker. 
 
@@ -61,7 +61,7 @@ So with a better language model Gentle could be much better as well.
 
 ## Aeneas 
 
-**Aeneas **on the other hand, is very fast, because the underlying implementation is different. And is also very very well documented. It was only after a read through the documentation I really understood some of the more interesting use cases, such as possibility for word level alignment, and how to improve performance by switching to a higher quality TTS.
+Aeneas on the other hand, is very fast, because the underlying implementation is different. And is also very very well documented. It was only after a read through the documentation I really understood some of the more interesting use cases, such as possibility for word level alignment, and how to improve performance by switching to a higher quality TTS.
 
 Aeneas given the text and audio input, converts the text to audio. doing TTS and then compares the two waveforms. Which is how it figures out the timecodes etc.. Apparently this is a process that is more accurate at line level then at word level. 
 
