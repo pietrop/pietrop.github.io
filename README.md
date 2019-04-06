@@ -23,7 +23,7 @@ use `<div class="image-wrapper">`
 </div>
 ```
 
-![Responsive immage](http://erictoulson.com/2014/01/21/responsive-images-with-jekyll/)
+[Responsive immage](http://erictoulson.com/2014/01/21/responsive-images-with-jekyll/)
 
 inclusing `image.css` in `public/css/`
 
@@ -76,7 +76,7 @@ inclusing `image.css` in `public/css/`
 }
 ```
 
-## Responsive image with lightbox
+## Responsive image with lightbox
 
 ````html
 <div class="image-wrapper">
@@ -89,7 +89,7 @@ inclusing `image.css` in `public/css/`
 
 you'll need to include [`lightbox.css`][] in your `public/css/` folder.
 
-## Loop through images
+## Loop through images
 
 if you give images a sequential name, you can use ruby and liquid tag to loop through them rather then having to write the URL one by one
 
@@ -332,7 +332,7 @@ Hyde's page orientation can be reversed with a single class.
 
 Open sourced under the [MIT license](LICENSE.md).
 
-<3
+
 
 
 
