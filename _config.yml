@@ -66,3 +66,11 @@ categories: [video, tech, photos, articles]
 
 
 # https://github.com/mdo/hyde
+
+
+manifest_name: Pietro Passarelli
+manifest_short_name: Pietro P # Appears in "Add to home screen" dialogues and may have other importance also
+manifest_lang: en
+manifest_background_color: white
+manifest_short_name:
+manifest_display: standalone
