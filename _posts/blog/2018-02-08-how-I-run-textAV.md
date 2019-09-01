@@ -11,7 +11,8 @@ image2: /img/how-i-run-textav/maxresdefault.jpg
 image3: /img/how-i-run-textav/chris-dialogger-v1.jpg
 github:
 gitbook: https://pietropassarelli.gitbooks.io/textav/
-youtube: https://www.youtube.com/channel/UC6cU2oc6p-II1H4ZdYbx5Tg
+# youtube: https://www.youtube.com/channel/UC6cU2oc6p-II1H4ZdYbx5Tg
+youtube: 
 vimeo: 
 tech: 
 categories:
@@ -34,11 +35,6 @@ This was the proposed session description
 >
 >By the end of the session will have 10 takeaways of actionable things you can try out right away. 
 
-<div class="image-wrapper">
-    <img src="{{ page.image}}" alt="{{ page.description }}" />
-</div>
-
-
 The problem domain is that of working with audio, video, transcriptions and captions to speed up the production process. 
 
 While at Vox as part of the Open-News Knight Mozilla fellowship, I had worked on [autoEdit.io](http://www.autoedit.io/), a text based video editing system that uses automated STT services to enable a [digital paper-editing workflow](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/), and noticed when going to conference that more people than expected were working in similar problem domain, altho sometimes with slightly different use cases.
@@ -48,6 +44,11 @@ I notice that there was a fair bit of re-inventing the wheel. However coming fro
 I also noticed that projects that were aware of the rest ecosystem where able to make a considerable leap forward in pushing the boundaries of what is possible in the domain.
 
 So the challenge was, could there be a way to facilitate a knowledge share to foster this type of cross contamination?
+
+<div class="image-wrapper">
+    <img src="{{ page.image}}" alt="{{ page.description }}" />
+</div>
+<small>Group photo from textAV 2018</small>
 
 ## Example of “cross contamination”
 
