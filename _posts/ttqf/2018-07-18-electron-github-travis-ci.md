@@ -31,7 +31,8 @@ You can make the appImage executable as follows:
 Or [see also how to make an AppImage executable for easier users instructions using GUI](https://discourse.appimage.org/t/how-to-make-an-appimage-executable/80)
 
 
-### Executing it
+### Executing it
+
 You can execute an appImage as follows:
 
 `./exampleName.AppImage`
