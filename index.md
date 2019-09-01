@@ -4,7 +4,7 @@ title: About
 body: theme-base-08
 ---
 
-Hi, I'm <a href="http://uk.linkedin.com/in/{{ site.owner.linkedin }}" target="_blank">Pietro</a>, I am a <a href="/categories/tech">product developer</a>. I get excited when working on early stage products. 
+Hi, I'm <a href="http://uk.linkedin.com/in/{{ site.owner.linkedin }}" target="_blank">Pietro</a>, I am a <a href="/categories/tech">product developer</a>, passionate about early stage products, especially at the intersection between news and technology. 
 
 <!-- 
 
