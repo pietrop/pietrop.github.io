@@ -126,7 +126,7 @@ And is transferable on js.
 
 Aim of this for exam is to get to working knowledge of Miranda and fictional that you can think and solve problems with it.
 
-Go over and pay attention to first two weeks on lambda calculus, he dies a great introduction. And it sets everything up for the rest , all the underlying assumptions and logic.
+Go over and pay attention to first two weeks on lambda calculus, he does a great introduction. And it sets everything up for the rest , all the underlying assumptions and logic.
 
 ## Exams Prep
 identify most recurrent questions 
@@ -137,7 +137,7 @@ identify most recurrent questions
 ## final project 
 Try and get a placement or organise it yourself on something that you feel strongly motivated about, you'll need it.
 
-Go to meet ups on things that interest you, small time commitment but might help in finding an interesting project with interesting client ( although dies not not have to be payed) be picky, your time is valuable.
+Go to meet ups on things that interest you, small time commitment but might help in finding an interesting project with interesting client ( although does not not have to be payed) be picky, your time is valuable.
 
 Learn about testing, through Graham 's chapter as early as possible beam cause there's a whole cheater of it in the report.
 
