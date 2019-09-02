@@ -140,7 +140,15 @@ Seems like to set it up, based on [their README](https://github.com/typicode/hus
 
 Note, if you use `git commit --no-verify`  flag it will skip the commit hooks, however this practice is highly discouraged. 
 
+## Typechecking 
 
+### PropTypes
+[`react-proptypes-generate`](https://www.npmjs.com/package/react-proptypes-generate)
+
+>This is the VS Code's extension that automatically generates PropTypes code for React components, like `ReactPropTypes` in the Jetbrains's Platform
+
+> ##### VS Code
+> Search react-proptypes-generate in Marketplace and install it
 
 ## Unit tests
 ### [Jest](https://jestjs.io)
