@@ -23,7 +23,7 @@ img_NiemanLab: /img/TimesAndSundayTimesQuickQuote/NiemanLab-quickQuote.png
 
 vimeo:
 youtube: 7apk4Hx7g3s
-link: http://times.github.io/quickQuote
+link: https://times.github.io/quickQuote
 github: times/quickQuote
 tech: ['Video JS','JQuery','Ruby','Rails','Spoken Data API',  'Bootstrap','HTML5','CSS',  'Git', 'Javascript']
 categories:
@@ -69,7 +69,7 @@ Followed by the  HTML, CSS and JS code.
   </blockquote></div>
   <div  id='video-wrap-n' class='video-wrap video-wrap--closed'>
     <video class=' video-js vjs-default-skin' id='video-quote' controls preload='auto' width='100%' height='auto' poster='' data-setup='{}'>
-      <source src='http://times.github.io/quickQuote/media/snippet_54.mp4' id='snippetURLVideo' type='video/mp4' />
+      <source src='https://times.github.io/quickQuote/media/snippet_54.mp4' id='snippetURLVideo' type='video/mp4' />
     </video>
 </div>
 <style>
@@ -145,7 +145,7 @@ HTML
   </blockquote></div>
   <div  id='video-wrap-n' class='video-wrap video-wrap--closed'>
     <video class=' video-js vjs-default-skin' id='video-quote' controls preload='auto' width='100%' height='auto' poster='' data-setup='{}'>
-      <source src='http://nuk-tnl-edtl-videoanalyser-dev.s3.amazonaws.com/videos/quotes/54/snippet_54.mp4' id='snippetURLVideo' type='video/mp4' />
+      <source src='https://nuk-tnl-edtl-videoanalyser-dev.s3.amazonaws.com/videos/quotes/54/snippet_54.mp4' id='snippetURLVideo' type='video/mp4' />
     </video>
 </div>
 {% endhighlight %}
@@ -222,7 +222,7 @@ The code for an interactive video quote is not particularly complex.
 But what is interesting in the quickQuote project is how we programmatically generate this embed code once a journalist has made a quote selection.       
 
 
-For more details on this check out the [project page]({{page.link}}), [the github repository](https://github.com/times/quickQuote), [user manual](http://times.github.io/quickQuote/userManual.html) and [documentation](http://www.rubydoc.info/github/times/quickQuote/master).
+For more details on this check out the [project page]({{page.link}}), [the github repository](https://github.com/times/quickQuote), [user manual](https://times.github.io/quickQuote/userManual.html) and [documentation](https://www.rubydoc.info/github/times/quickQuote/master).
 
 Or checkout the [the report I wrote for  UCL](https://leanpub.com/quickquote), which details investigation into the problem domain, similar open source projects, as well as application design and architecture.
 
@@ -289,7 +289,7 @@ Export HTML, CSS, JS code to embed in news article.
 	</a>
 </div>
 
-And here is [a preview of the embed code using JS Fiddle](http://jsfiddle.net/pietrops/yazkqg2s/)
+And here is [a preview of the embed code using JS Fiddle](https://jsfiddle.net/pietrops/yazkqg2s/)
 
 <div class="image-wrapper">
 	<a href="{{ page.img_export_preview }}" data-lightbox="aName" title="aName">
@@ -307,11 +307,11 @@ And here is [a preview of the embed code using JS Fiddle](http://jsfiddle.net/pi
 
 # On Social Media
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">This. Changes. Everything. “<a href="https://twitter.com/NiemanLab">@NiemanLab</a>: new tool fromTimes of London lets you detect and capture quotes from a video <a href="http://t.co/v7ZGPcXCkl">http://t.co/v7ZGPcXCkl</a>”</p>&mdash; Paul Adams (@padams29) <a href="https://twitter.com/padams29/status/643133038327521281">September 13, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">This. Changes. Everything. “<a href="https://twitter.com/NiemanLab">@NiemanLab</a>: new tool fromTimes of London lets you detect and capture quotes from a video <a href="https://t.co/v7ZGPcXCkl">https://t.co/v7ZGPcXCkl</a>”</p>&mdash; Paul Adams (@padams29) <a href="https://twitter.com/padams29/status/643133038327521281">September 13, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Sometimes a new digital news tool comes along &amp; reminds us how far we are from doing it right <a href="http://t.co/xqiioyAVET">http://t.co/xqiioyAVET</a> <a href="http://t.co/T2vyi8G0W6">pic.twitter.com/T2vyi8G0W6</a></p>&mdash; Greg Emerson (@emersongreg) <a href="https://twitter.com/emersongreg/status/643388636063469568">September 14, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Sometimes a new digital news tool comes along &amp; reminds us how far we are from doing it right <a href="https://t.co/xqiioyAVET">https://t.co/xqiioyAVET</a> <a href="https://t.co/T2vyi8G0W6">pic.twitter.com/T2vyi8G0W6</a></p>&mdash; Greg Emerson (@emersongreg) <a href="https://twitter.com/emersongreg/status/643388636063469568">September 14, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">A new tool from The Times of London lets you easily detect and capture quotes from a video <a href="http://t.co/r6pGJzKycx">http://t.co/r6pGJzKycx</a></p>&mdash; Nieman Lab (@NiemanLab) <a href="https://twitter.com/NiemanLab/status/643132545593311232">September 13, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">A new tool from The Times of London lets you easily detect and capture quotes from a video <a href="https://t.co/r6pGJzKycx">https://t.co/r6pGJzKycx</a></p>&mdash; Nieman Lab (@NiemanLab) <a href="https://twitter.com/NiemanLab/status/643132545593311232">September 13, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 

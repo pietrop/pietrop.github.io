@@ -22,37 +22,37 @@ The Algorithm Design Manual 2ed  by Steven S. Skiena.pdf
 
 Lecture 0 - what is an algo and O notaiton preliminaries
 
-http://cdn.cs50.net/2014/fall/lectures/0/w/notes0w/notes0w.html#algorithms
+https://cdn.cs50.net/2014/fall/lectures/0/w/notes0w/notes0w.html#algorithms
 
 Algo and psuedo code
-http://cdn.cs50.net/2014/fall/lectures/0/f/notes0f/notes0f.html#algorithms
+https://cdn.cs50.net/2014/fall/lectures/0/f/notes0f/notes0f.html#algorithms
 
 (week two on arrays)
 
 Lecture 3 - sorting
-http://cdn.cs50.net/2014/fall/lectures/3/m/notes3m/notes3m.html#sorting
+https://cdn.cs50.net/2014/fall/lectures/3/m/notes3m/notes3m.html#sorting
 
 Online Demo, (need java)
-http://cs.smith.edu/~thiebaut/java/sort/demo.html
+https://cs.smith.edu/~thiebaut/java/sort/demo.html
 
 
 What different algo sound like
 https://youtu.be/t8g-iYGHpEA
 
 Lecture 3 - sorting - continued
-http://cdn.cs50.net/2014/fall/lectures/3/w/notes3w/notes3w.html#sorting
+https://cdn.cs50.net/2014/fall/lectures/3/w/notes3w/notes3w.html#sorting
  
 
 Lect 4 - merge sort  <--
-http://cdn.cs50.net/2014/fall/lectures/4/m/notes4m/notes4m.html#merge_sort
+https://cdn.cs50.net/2014/fall/lectures/4/m/notes4m/notes4m.html#merge_sort
 
 
 Lect 5 -continued -  Linked list
-http://cdn.cs50.net/2014/fall/lectures/5/w/notes5w/notes5w.html#linked_lists 
+https://cdn.cs50.net/2014/fall/lectures/5/w/notes5w/notes5w.html#linked_lists 
 
 Lect 6 - Linked List Recap 01:19 Hash Tables 04:20 Separate Chaining 12:00 Trees and Tries 18:43 Stacks and Queues 27:34 Trees Again
 
-http://cdn.cs50.net/2014/fall/lectures/6/f/notes6f/notes6f.html#linked_list_recap
+https://cdn.cs50.net/2014/fall/lectures/6/f/notes6f/notes6f.html#linked_list_recap
 
 
 
@@ -60,7 +60,7 @@ http://cdn.cs50.net/2014/fall/lectures/6/f/notes6f/notes6f.html#linked_list_reca
 
 Notes Ruby Algo
 
-http://www.sitepoint.com/sorting-algorithms-ruby/
+https://www.sitepoint.com/sorting-algorithms-ruby/
 
 https://www.igvita.com/2009/03/26/ruby-algorithms-sorting-trie-heaps/
 
@@ -71,7 +71,7 @@ https://github.com/kanwei/algorithms
 
 Tech web q 
 
-http://cdn.cs50.net/2014/fall/lectures/7/m/notes7m/notes7m.html
+https://cdn.cs50.net/2014/fall/lectures/7/m/notes7m/notes7m.html
 
 
 ----

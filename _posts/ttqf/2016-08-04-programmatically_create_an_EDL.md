@@ -126,7 +126,7 @@ We need to add this otherwise we'd get a missmatch when reconnecting.
 This assumes that `C` and `AA/V` don't change. but this could be added to out EDL object, and added to the mix at a later stage should a use case arise.
 
 
-More on EDL specs in [Apple documentation](https://documentation.apple.com/en/finalcutpro/usermanual/index.html#chapter=96%26section=1%26tasks=true) and [here](http://edlmax.com/MAXGUIDE.HTML)
+More on EDL specs in [Apple documentation](https://documentation.apple.com/en/finalcutpro/usermanual/index.html#chapter=96%26section=1%26tasks=true) and [here](https://edlmax.com/MAXGUIDE.HTML)
 
 
 

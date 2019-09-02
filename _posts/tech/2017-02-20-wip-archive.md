@@ -4,7 +4,7 @@ title: "Whistleblower Interview Archive"
 description: "A proof of concept for an interactive site for the Whistle Blower interview archive by Niels Ladefoged"
 permalink: "/wip.html"
 date: "2017-02-20"
-link: http://whistleblower.press/
+link: https://whistleblower.press/
 image: /img/wip_archive/wip_archive_t.png
 github: pietrop/WIP_archive
 youtube: 

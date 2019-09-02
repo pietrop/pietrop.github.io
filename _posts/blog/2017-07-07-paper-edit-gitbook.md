@@ -17,7 +17,7 @@ tags:
 
 _draft: more coming soon_
 
-Inspired by [series of workshops](http://pietropassarelli.com/wip_london_july2016.html)
+Inspired by [series of workshops](https://pietropassarelli.com/wip_london_july2016.html)
 
 There is [a section on documentary representation](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/paper-editing/key-concepts-in-documentary-theory.html) that I think it's interesting/relevant in the accountability debate that has been raised with the new issues around fake news, the increasing need for transparency and interests by the viewers to see the source material.
 

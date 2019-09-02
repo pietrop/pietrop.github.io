@@ -132,7 +132,7 @@ Also, I've noticed that with this set up you can use both liquid tags and fenced
 ## Updated
 Github does nto support redcarpet anymore, uses kramdown by the default so I followed this to update and retain same settings described above.
 
-"[Updating from redcarpet and Pygments to Kramdown and Rouge on Github Pages](http://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/)"
+"[Updating from redcarpet and Pygments to Kramdown and Rouge on Github Pages](https://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/)"
 
 In a nutshell
 
@@ -157,9 +157,9 @@ kramdown:
 
 <!-- Links -->
 
-[jek]:http://jekyllrb.com/
-[stack]:http://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll
-[mark]:http://daringfireball.net/projects/markdown/
+[jek]:https://jekyllrb.com/
+[stack]:https://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll
+[mark]:https://daringfireball.net/projects/markdown/
 [elsewhere]:https://github.com/clayallsopp/rubymotion-tutorial/issues/30
 [plugin]:https://github.com/nono/Jekyll-plugins
-[pandoc]:http://pandoc.org/
+[pandoc]:https://pandoc.org/

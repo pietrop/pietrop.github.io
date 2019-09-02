@@ -57,7 +57,7 @@ Content-Type: text/html;
 	charset=us-ascii
 
 <html><head></head><body>sideckick
-<img src="http://t.signauxdeux.com/e1t/o/5/f18dQhb0S1Ll8dDMPbW2n0x6l2B9gXrW7sKj5C56dQtgf3ZlND602?si=5367527633846272&pi=B8BAF4AC-C385-4675-ACC2-C41C56C660BE" width="1" height="1" style="display:none!important"></body></html>
+<img src="https://t.signauxdeux.com/e1t/o/5/f18dQhb0S1Ll8dDMPbW2n0x6l2B9gXrW7sKj5C56dQtgf3ZlND602?si=5367527633846272&pi=B8BAF4AC-C385-4675-ACC2-C41C56C660BE" width="1" height="1" style="display:none!important"></body></html>
 --Apple-Mail=_BB36EEB7-B49C-423D-8B82-909861FA3C70--
 
 {% endhighlight %}
@@ -66,7 +66,7 @@ Content-Type: text/html;
 The relevant code is this: 
 
 {% highlight html %}
-<img src="http://t.signauxdeux.com/e1t/o/5/f18dQhb0S1Ll8dDMPbW2n0x6l2B9gXrW7sKj5C56dQtgf3ZlND602?si=5367527633846272&pi=B8BAF4AC-C385-4675-ACC2-C41C56C660BE" width="1" height="1" style="display:none!important">
+<img src="https://t.signauxdeux.com/e1t/o/5/f18dQhb0S1Ll8dDMPbW2n0x6l2B9gXrW7sKj5C56dQtgf3ZlND602?si=5367527633846272&pi=B8BAF4AC-C385-4675-ACC2-C41C56C660BE" width="1" height="1" style="display:none!important">
 {% endhighlight %}
 
 Where an image is beeing linked to an external address, but the CSS style has been set to `style="display:none!important"`, so that it does not display on the page.

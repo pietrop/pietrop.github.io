@@ -17,14 +17,14 @@ tags:
 
 > People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones.     
 >Donald Knuth     
-> from [**eloquent Javascript**](http://eloquentjavascript.net/03_functions.html)
+> from [**eloquent Javascript**](https://eloquentjavascript.net/03_functions.html)
 
 
 ## First thing first 
 Forget everything you heard about coding and learning to code and get ready to make your mind up about it. I'm referring to the good hold "you need to have started when you were five or there is no point" utter nonsense.
 
 
-If you are curious about the pedagogy of learning to code, check out [victor Brent "learnable programming" essay](http://worrydream.com/LearnableProgramming/), for an insight into how to evaluate the best resources out there and take charge of your learning.
+If you are curious about the pedagogy of learning to code, check out [victor Brent "learnable programming" essay](https://worrydream.com/LearnableProgramming/), for an insight into how to evaluate the best resources out there and take charge of your learning.
 
 Also consider this about the 20 hours learning, rather then the 3 years myth for mastering a new skill.  
 [Learn anything in 20 hours](https://youtu.be/5MgBikgcWnY)
@@ -39,7 +39,7 @@ Key points are
 Knowing, what we don't know, figuring out limit of knowledge and work with that.
 
 ["The best way to learn math is to learn how to fail productively
-"](http://qz.com/535443/the-best-way-to-understand-math-is-learning-how-to-fail-productively/)
+"](https://qz.com/535443/the-best-way-to-understand-math-is-learning-how-to-fail-productively/)
 
 >figure out three critical things: what they know, the limits of what they know, and exactly what they do not know. 
 
@@ -49,7 +49,7 @@ This increases
 
 
 ## Of turtles and black boxes
-- [Learnable programming](http://worrydream.com/LearnableProgramming/) - [The Turtle](https://youtu.be/BTd3N5Oj2jk)
+- [Learnable programming](https://worrydream.com/LearnableProgramming/) - [The Turtle](https://youtu.be/BTd3N5Oj2jk)
 - Graham first chapter of developing java software
 - stanford [CS106A - Programming Methodology](https://see.stanford.edu/Course/CS106A) - **"Karel and Java"**
 

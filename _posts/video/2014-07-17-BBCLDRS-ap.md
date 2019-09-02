@@ -6,7 +6,7 @@ longdescription: "Interviews with Assistant Producer of the BBC3 'Life and Death
 duration: "6min 17sec"
 category: video
 image: /img/BBCLDRS/ldrs-ap.png
-link: http://www.bbc.co.uk/academy/production/article/art20141125150646784
+link: https://www.bbc.co.uk/academy/production/article/art20141125150646784
 vimeo: 128359230
 tools: ['FCP7']
 categories: 

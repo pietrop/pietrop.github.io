@@ -37,7 +37,7 @@ Across video, audio and text. Sometime this is planned upfront, other times it's
     <img src="{{ page.image3 }}" alt="{{ page.description }}" />
 </div>
 
-We considered the variety of learning styles, as explined by [V.A.R.K.](http://vark-learn.com/the-vark-questionnaire)
+We considered the variety of learning styles, as explined by [V.A.R.K.](https://vark-learn.com/the-vark-questionnaire)
 <div class="image-wrapper">
     <img src="{{ page.image4 }}" alt="{{ page.description }}" />
 </div>

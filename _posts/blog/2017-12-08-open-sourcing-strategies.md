@@ -28,7 +28,7 @@ For more comprehensive resources see
 
 -  Github: [open source guides](https://opensource.guide/)
 
-- Open News: [The Field Guide to Open Source in the Newsroom](http://fieldguide.opennews.org/en/latest/) 
+- Open News: [The Field Guide to Open Source in the Newsroom](https://fieldguide.opennews.org/en/latest/) 
 
 ## 1 - Code in the open 
 
@@ -40,7 +40,7 @@ This is easier if you follow best practice to put keys and sensitive info the ri
 
 The main advantage for this is that it makes it easier to ask for help as you go along, as you can point directly to the line in the code, and have the whole context around it.  
 
-[More concrete steps on tools to avoid leaking sensitive informations here](http://fieldguide.opennews.org/en/latest/Chapter03-Existing-Projects/#is-your-project-sanitary ).
+[More concrete steps on tools to avoid leaking sensitive informations here](https://fieldguide.opennews.org/en/latest/Chapter03-Existing-Projects/#is-your-project-sanitary ).
 
 ## 2 - Open source components 
 
@@ -50,7 +50,7 @@ The main advantages are those of a component-based design architecture, eg that 
 
 But from an open sourcing perspective, it also means that there might be more people in the community who might be interested in that specific piece of the puzzle but not in the whole system or application you are building. And they might be interested in contributing to the development of that piece.  This not only allows you to have more contribution to the building blocks. But also people using it in different context might strengthen those components for edge cases you might not have thought about. 
 
-For instance in [autoEdit](http://www.autoedit.io/), there is an[ EDL composer module](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/edl_composer),  it was only after sharing the code with the folks at [Hyperaud.io](https://hyperaud.io/) and testing it implemented in one of their projects, that was able to identify an edge case I had not thought about and improve the module to be more robust. 
+For instance in [autoEdit](https://www.autoedit.io/), there is an[ EDL composer module](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/edl_composer),  it was only after sharing the code with the folks at [Hyperaud.io](https://hyperaud.io/) and testing it implemented in one of their projects, that was able to identify an edge case I had not thought about and improve the module to be more robust. 
 
 In autoEdit, it assumed the video file footage came from a camcorders and had cards informations associated with it in the metadata, while in hyperaud.io use cases it may not, and would not have these type of informations. This was breaking the EDL composer. And gave me a chance to look into making it work for those situations. 
 
@@ -122,9 +122,9 @@ I then elaborated on this and devised my own format. I generally:
 
 * What you don't know and need to find out for each, for instance sometimes the integration might not work as expected or there are dependencies that are to port or deal with. 
 
-For example this is a blog post I wrote in response to someone asking what could be a good way to [align partially scripted speeches](http://pietropassarelli.com/aligning-partially-scripted-speeches.html). It contains the initial research and exploration I do before diving into testing out the option to implement a possible solution. 
+For example this is a blog post I wrote in response to someone asking what could be a good way to [align partially scripted speeches](https://pietropassarelli.com/aligning-partially-scripted-speeches.html). It contains the initial research and exploration I do before diving into testing out the option to implement a possible solution. 
 
-Another example is from the BBC News Labs hackathon BBC where I’ve worked on a [slack bot for transcription service](http://pietropassarelli.com/BBCnewslabs_slack_transcription_bot.html). And used a [google doc to keep an R&D doc](https://docs.google.com/document/d/1n6B1vyQysIEeDfoDUqnVNzb7RVy_MNuyvrVekLQ0YZ4/edit#heading=h.q3di39fnr6em) to guide the development on a fast turnaround. This was also a great communication tool when working with [Laurian Gridinoc](https://twitter.com/gridinoc) to keep track of progress, define scope and tackle unexpected twists. 
+Another example is from the BBC News Labs hackathon BBC where I’ve worked on a [slack bot for transcription service](https://pietropassarelli.com/BBCnewslabs_slack_transcription_bot.html). And used a [google doc to keep an R&D doc](https://docs.google.com/document/d/1n6B1vyQysIEeDfoDUqnVNzb7RVy_MNuyvrVekLQ0YZ4/edit#heading=h.q3di39fnr6em) to guide the development on a fast turnaround. This was also a great communication tool when working with [Laurian Gridinoc](https://twitter.com/gridinoc) to keep track of progress, define scope and tackle unexpected twists. 
 
 Last example from a more mature project, with autoEdit, an [R&D Doc for the second phase of development looked like this](https://docs.google.com/document/d/12mUuXAtE65vhy5Sm0tmKRdgXGMn_Ob4RZEs9T5uDPkM/edit?usp=sharing).
 
@@ -162,11 +162,11 @@ But I would recommend doing this only if it can come with not too much extra cod
 
 Make it very clear that the demo is a demo and not expected to be a working app. 
 
-For example with [autoEdit’s demo](http://www.autoedit.io/demo/) I tried to make it really clear it is for demonstration purpose only. By adding text to clarify and avoid users confusing it for a web version of the app.
+For example with [autoEdit’s demo](https://www.autoedit.io/demo/) I tried to make it really clear it is for demonstration purpose only. By adding text to clarify and avoid users confusing it for a web version of the app.
 
 In autoEdit I [made this part of the build tool process](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/package.json#L25) to make it easier to update the demo when adding new features.
 
-With [captions maker’s demo ](http://pietropassarelli.com/captions-maker/)despite the big organce text screaming this is a dummy demo I still had people completely missing it and telling me that they were frustrated they couldn’t use the app. 
+With [captions maker’s demo ](https://pietropassarelli.com/captions-maker/)despite the big organce text screaming this is a dummy demo I still had people completely missing it and telling me that they were frustrated they couldn’t use the app. 
 
 ## 9 - Video presentations 
 
@@ -188,11 +188,11 @@ If you are recording a screencast QuickTime is unreliable and makes huge raw fil
 
 This is also particularly useful for hackathons projects where sometimes it's more proof of concepts
 
-As an example [BBC News Labs hackathon slack bot presentation](http://pietropassarelli.com/BBCnewslabs_slack_transcription_bot.html), less then 3 minutes.
+As an example [BBC News Labs hackathon slack bot presentation](https://pietropassarelli.com/BBCnewslabs_slack_transcription_bot.html), less then 3 minutes.
 
-see [London Times team presentation at BBC News Labs hackathon](http://pietropassarelli.com/oneStory.html).
+see [London Times team presentation at BBC News Labs hackathon](https://pietropassarelli.com/oneStory.html).
 
-Or the[ first version of autoEdit, as presented at Hacks/Hackers London](http://pietropassarelli.com/autoEdit.html) in under 2 minutes.
+Or the[ first version of autoEdit, as presented at Hacks/Hackers London](https://pietropassarelli.com/autoEdit.html) in under 2 minutes.
 
 Example [Annotated article system presentation at SRCCON](https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles/content/video-of-presentation.html) workshop with David Eads. 
 
@@ -208,5 +208,5 @@ If you don't want to be "stuck" maintaining it, talk/connect with people ahead o
 
 ## licence 
 
-Last but not least, pick a licence. [For more details on this see here](http://fieldguide.opennews.org/en/latest/Chapter02-Starting-New-Project/).
+Last but not least, pick a licence. [For more details on this see here](https://fieldguide.opennews.org/en/latest/Chapter02-Starting-New-Project/).
 

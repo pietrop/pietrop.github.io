@@ -175,7 +175,7 @@ Passarelli, Pietro. 2016a. “autoEdit.” [www.autoEdit.io](www.autoEdit.io).
 
 ———. 2016b. “autoEdit User Manual.” [https://pietropassarelli.gitbooks.io/autoedit2-user-manual/content/paperediting.html](https://pietropassarelli.gitbooks.io/autoedit2-user-manual/content/paperediting.html).
 
-———. 2016c. “How to Craft Compelling Stories Out of Video Interviews?” [http://pietropassarelli.com/wip_london_july2016.html](http://pietropassarelli.com/wip_london_july2016.html).
+———. 2016c. “How to Craft Compelling Stories Out of Video Interviews?” [https://pietropassarelli.com/wip_london_july2016.html](https://pietropassarelli.com/wip_london_july2016.html).
 
 ———. 2017. How to Tell Compelling Stories Out of Video Interviews. [https://www.gitbook.com/book/pietropassarelli/how-to-tell-compelling-stories-out-of-video-inter/](https://www.gitbook.com/book/pietropassarelli/how-to-tell-compelling-stories-out-of-video-inter/).
 

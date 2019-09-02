@@ -96,7 +96,7 @@ Then you can click on the words to jump to corresponding part in video. Select s
 
 
 #### 2.1. Speed
-I used an earlier version of this tool that was composed of [two scripts and made use of a google spreadsheet for paper-editing](http://pietropassarelli.com/tech/articles/2013/12/02/sbv-csv/) and it took down the post produciton time from *3 weeks to 3 hours*. 
+I used an earlier version of this tool that was composed of [two scripts and made use of a google spreadsheet for paper-editing](https://pietropassarelli.com/tech/articles/2013/12/02/sbv-csv/) and it took down the post produciton time from *3 weeks to 3 hours*. 
 
 #### 2.2. Story crafting 
 

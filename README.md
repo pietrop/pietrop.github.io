@@ -19,7 +19,7 @@ sudo gem install bundler jekyll
 bundle exec jekyll serve
 ```
 
-Open <http://localhost:4000> in your browser.
+Open <https://localhost:4000> in your browser.
 
 
 ## System Architecture

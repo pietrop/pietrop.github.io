@@ -71,7 +71,7 @@ $ mkdir -p images/{100..110}/192x128 | touch images/{100..110}/192x128/index.md
 
 in this case the main a folder  is `images` and it contains a bunch of folders, numbered within a range from `100..110`, all containing another folder `192x128` , then we use pipe `|` and the `touch` comand to create a file, navigate back through path of directories we just created `images/{100..110}/192x128/`, and create a `index.md` in there.
 
-And where `.md` is a plain text [markdown file](http://en.wikipedia.org/wiki/Markdown).
+And where `.md` is a plain text [markdown file](https://en.wikipedia.org/wiki/Markdown).
 
 <div class="image-wrapper">
 <a href="{{ page.image2}}" data-lightbox="folders " title="folders/subfolders/file ">
@@ -128,4 +128,4 @@ using `./` to run the file.
  
 ## Sources and Resources
 
-from [Lynda.com up and running with bash script](http://www.lynda.com/Bash-tutorials/Up-Running-Bash-Scripting/142989-2.html)
+from [Lynda.com up and running with bash script](https://www.lynda.com/Bash-tutorials/Up-Running-Bash-Scripting/142989-2.html)

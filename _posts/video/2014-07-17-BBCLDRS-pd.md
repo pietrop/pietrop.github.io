@@ -8,7 +8,7 @@ duration: "5min 41sec"
 category: video
 logobrand: /img/logobrand/bbc.png
 image: /img/BBCLDRS/ldrs-pd.png
-link: http://www.bbc.co.uk/academy/production/article/art20141125145514406
+link: https://www.bbc.co.uk/academy/production/article/art20141125145514406
 vimeo: 128057278
 tools: ['FCP7']
 categories: 

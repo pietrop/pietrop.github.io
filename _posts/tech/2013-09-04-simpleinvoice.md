@@ -13,8 +13,8 @@ imagemakers1: /img/simpleinvoice/makers/makerspres2.jpeg
 imagemakers2: /img/simpleinvoice/makers/makerspres1.jpeg
 github: pietrop/simpleinvoice 
 tech: ['Ruby on Rails', 'Bootstrap','HTML','CSS', 'Heroku', 'Git', 'GitHub','Heroku']
-appurl: http://simpleinvoice.herokuapp.com
-link: http://simpleinvoice.herokuapp.com
+appurl: https://simpleinvoice.herokuapp.com
+link: https://simpleinvoice.herokuapp.com
 categories: 
 - tech
 tags:
@@ -22,7 +22,7 @@ tags:
 
 As the name sudgests It's a simple invoicing application to keep track of due payments, and create pdfs to e-mail to clients with ease.
 
-I used [ruby on rails](<http://edgeguides.rubyonrails.org>), [bootstrap](<http://getbootstrap.com>), and the theme [cosmo from bootswatch](<http://bootswatch.com/cosmo/>).
+I used [ruby on rails](<https://edgeguides.rubyonrails.org>), [bootstrap](<https://getbootstrap.com>), and the theme [cosmo from bootswatch](<https://bootswatch.com/cosmo/>).
 
 
 <div class="image-wrapper">
@@ -66,7 +66,7 @@ I tryed to make the layout of the invocie looks as closely as possible to an act
 </a>
 </div>
 
-and this is what the `pdf` export done using [CSS print friendly settings](http://www.smashingmagazine.com/2011/11/24/how-to-set-up-a-print-style-sheet/) looked like, again tryed to keep as much consistency as possible with the screen version.
+and this is what the `pdf` export done using [CSS print friendly settings](https://www.smashingmagazine.com/2011/11/24/how-to-set-up-a-print-style-sheet/) looked like, again tryed to keep as much consistency as possible with the screen version.
 
 <div class="image-wrapper">
 <a href="{{ page.image5}}" data-lightbox="simpleinvoice" title="simple invoice">
@@ -87,7 +87,7 @@ Some stills form my Presentation at Markers Academy:
 Having no coding expirience prior to the bootcam, overall it took about 2 weeks to put the app togethere, out of which I think is fair to say a round one and half to come to terms with rails and the remaining time to put togethere the app.
 
 <div  align="left">
-<blockquote class="twitter-tweet"><p>Cohort graduation project #2 by <a href="https://twitter.com/pietropassarell">@pietropassarell</a> <a href="https://twitter.com/search?q=%23makersacademy&amp;src=hash">#makersacademy</a> <a href="http://t.co/bs54G7DU57">pic.twitter.com/bs54G7DU57</a></p>&mdash; mindfulcoder (@MindfulCoder) <a href="https://twitter.com/MindfulCoder/statuses/373465381916381184">August 30, 2013</a></blockquote>
+<blockquote class="twitter-tweet"><p>Cohort graduation project #2 by <a href="https://twitter.com/pietropassarell">@pietropassarell</a> <a href="https://twitter.com/search?q=%23makersacademy&amp;src=hash">#makersacademy</a> <a href="https://t.co/bs54G7DU57">pic.twitter.com/bs54G7DU57</a></p>&mdash; mindfulcoder (@MindfulCoder) <a href="https://twitter.com/MindfulCoder/statuses/373465381916381184">August 30, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 

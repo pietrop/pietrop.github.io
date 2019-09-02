@@ -4,7 +4,7 @@ title: About
 body: theme-base-08
 ---
 
-Hi, I'm <a href="http://uk.linkedin.com/in/{{ site.owner.linkedin }}" target="_blank">Pietro</a>, I am a <a href="/categories/tech">product developer</a>, passionate about early stage products, especially at the intersection between news and technology. 
+Hi, I'm <a href="https://uk.linkedin.com/in/{{ site.owner.linkedin }}" target="_blank">Pietro</a>, I am a <a href="/categories/tech">product developer</a>, passionate about early stage products, especially at the intersection between news and technology. 
 
 <!-- 
 
@@ -61,7 +61,7 @@ He was one of the 2016 Knight-Mozilla fellow with Open News at Vox Media. Where 
 
 > Secure: Independent, looks out for their own best interests, and has a strong sense of who they are as a person. Does not typically seek the approval of others for validation.
 
-<small><i>( [IBM Watson Personality Insight Twitter Demo](http://tweetmewatson.mybluemix.net/) ) </i></small>
+<small><i>( [IBM Watson Personality Insight Twitter Demo](https://tweetmewatson.mybluemix.net/) ) </i></small>
 
 <i><small><a href="{{ site.url }}/UBIQInteractive.html" target="_blank">
 <img src="{{ site.url }}/img/{{ site.owner.about }}" alt="{{ site.owner.name }} bio photo" class="img-rounded  img-responsive ">Screenshoot from making of RAI5 UBIQ documentary 2012 </a></small></i>

@@ -9,7 +9,7 @@ image: 	/img/newsHackOneStory/OneStory_01_Home.png
 image2: 	/img/newsHackOneStory/OneStory_02_Podcast.png
 image3: 	/img/newsHackOneStory/OneStoryQuotes.png
 vimeo: 129888695
-link: http://bbcnewslabs.co.uk/2015/06/04/newshack-viii-news-industry-accelerator-wrapup/
+link: https://bbcnewslabs.co.uk/2015/06/04/newshack-viii-news-industry-accelerator-wrapup/
 github: 
 tech: ['HyperTranscript converter','Youtube Captioning API',  'Bootstrap','HTML5','CSS',  'Git', 'Javascript']
 categories: 
@@ -17,7 +17,7 @@ categories:
 tags:
 ---
 
-As part of the [Times team](https://twitter.com/TimesDevelops) we won the first prize of the [BBC News Hack VIII](http://newshack.co.uk/newshack-viii-the-2015-news-industry-accelerator)
+As part of the [Times team](https://twitter.com/TimesDevelops) we won the first prize of the [BBC News Hack VIII](https://newshack.co.uk/newshack-viii-the-2015-news-industry-accelerator)
 
 
 # The Prototype

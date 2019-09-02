@@ -9,8 +9,8 @@ image-sketch: /img/audava/audava-sketch.jpg
 github: 
 
 tech: ['Ruby on Rails', 'Bootstrap', 'Bootstrap Watch','HTML','CSS', 'Heroku', 'Git', 'GitHub', 'javascript','record.js', 'Amazon S3']
-appurl: http://audava.herokuapp.com/
-link: http://audava.herokuapp.com/
+appurl: https://audava.herokuapp.com/
+link: https://audava.herokuapp.com/
 categories: 
 - tech
 tags:

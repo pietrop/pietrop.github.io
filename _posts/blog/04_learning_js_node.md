@@ -19,17 +19,17 @@ tags:
 - node school - interactive 
 - JS the good parts - book
 - JS for developers - book 
-- [Eloquent Javascript](http://eloquentjavascript.net/)
-- [w3schools](http://www.w3schools.com/js/default.asp)
+- [Eloquent Javascript](https://eloquentjavascript.net/)
+- [w3schools](https://www.w3schools.com/js/default.asp)
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Learn about Json](http://www.w3schools.com/json/json_intro.asp)
+- [Learn about Json](https://www.w3schools.com/json/json_intro.asp)
 
 
 Things to get your head a round 
 
 - Syntax 
 - Asynchronous programming
-- [Callback](http://www.tutorialspoint.com//nodejs/nodejs_callbacks_concept.htm)
+- [Callback](https://www.tutorialspoint.com//nodejs/nodejs_callbacks_concept.htm)
 
 <!-- https://github.com/maxogden/art-of-node#callbacks -->
 - Closure 

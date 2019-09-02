@@ -17,7 +17,7 @@ tags:
 
 {{ page.description}}
 
-Discovered this looking at From [rails TODO](http://rubyquicktips.com/post/385665023/fixme-todo-and-optimize-code-comments)
+Discovered this looking at From [rails TODO](https://rubyquicktips.com/post/385665023/fixme-todo-and-optimize-code-comments)
 
 But what I thought is that it be good to take it a step further and perhaps export the list as file, in markdown, maybe on the desktop, from terminal.
 

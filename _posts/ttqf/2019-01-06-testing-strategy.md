@@ -64,7 +64,7 @@ Type of tests available
 - testing component lifecycle
 -  state changes.
 - Snapshot testing 
-> Snapshot testing is a feature of Jest that automatically generates text snapshots of your components and saves them on the disk so if the UI output changes, you get notified without manually writing any assertions on the component output. [Read more about snapshot testing.](http://facebook.github.io/jest/blog/2016/07/27/jest-14.html)
+> Snapshot testing is a feature of Jest that automatically generates text snapshots of your components and saves them on the disk so if the UI output changes, you get notified without manually writing any assertions on the component output. [Read more about snapshot testing.](https://facebook.github.io/jest/blog/2016/07/27/jest-14.html)
 > - from [create-react-app docs](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#snapshot-testing)
 
 #### **Coverage reporting**
@@ -186,11 +186,11 @@ Docs:
 > Enzyme documentation uses Chai and Sinon for assertions but you don’t have to use them because Jest provides built-in `expect()` and `jest.fn()` for spies.
 
 
-> If you’d like to test components in isolation from the child components they render, we recommend using [`shallow()`rendering API](http://airbnb.io/enzyme/docs/api/shallow.html) from [Enzyme](http://airbnb.io/enzyme/). 
+> If you’d like to test components in isolation from the child components they render, we recommend using [`shallow()`rendering API](https://airbnb.io/enzyme/docs/api/shallow.html) from [Enzyme](https://airbnb.io/enzyme/). 
 > - [from create-react-app docs](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#testing-components)
 
 
-> Enzyme supports [full rendering with `mount()`](http://airbnb.io/enzyme/docs/api/mount.html), and you can also use it for testing state changes and component lifecycle.
+> Enzyme supports [full rendering with `mount()`](https://airbnb.io/enzyme/docs/api/mount.html), and you can also use it for testing state changes and component lifecycle.
 > - [from create-react-app docs](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#testing-components)
 
 

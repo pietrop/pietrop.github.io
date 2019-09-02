@@ -15,7 +15,7 @@ This is a modified version of [the second chapter, literature review, of the fin
 
 The project consisted of identifying a problem statment, and developing a software application as part of a placement at The Times & Sunday Times in London.
 
-The resulting application was [quickQuote, a tool to easily identify and share video quotes, you can read more about it here](http://pietropassarelli.com/quickQuote.html).
+The resulting application was [quickQuote, a tool to easily identify and share video quotes, you can read more about it here](https://pietropassarelli.com/quickQuote.html).
 
 The porpuse of this blog post is to keep an up to date list of projects that are doing interesting things to do with video on the web. I am mostly interested in projects were we go beyond "videos as black boxes" on the web, and get a programmatic access into the video. Often times this is done with the use of time-coded transcriptions.
 
@@ -24,7 +24,7 @@ The porpuse of this blog post is to keep an up to date list of projects that are
 ## Background
 
 ### Newsroom challenges
-To best understand the challenges in developing software in a news environment, I referred to the [leaked New York Times Innovation report](http://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/).
+To best understand the challenges in developing software in a news environment, I referred to the [leaked New York Times Innovation report](https://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/).
 
 
 
@@ -34,7 +34,7 @@ To best understand the challenges in developing software in a news environment, 
 
 <!-- expand -->
 
-The biggest issue highlighted in the report was that flagship projects such as [snow falls](http://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek)  
+The biggest issue highlighted in the report was that flagship projects such as [snow falls](https://www.nytimes.com/projects/2012/snow-fall/#/?part=tunnel-creek)  
 
 
 
@@ -43,22 +43,22 @@ The biggest issue highlighted in the report was that flagship projects such as [
 were time consuming and a lot of effort went into the making of a one of piece with a relatively short life span.
 
 >We are focused on building tools to create snow fall every day, and getting them as close to reporters as possible. I'd rather have a snow-fall builder then a snowfall.
->- Kevin Delaney, editor of Quartz [p36 NY Times Innovation report]( http://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/)
+>- Kevin Delaney, editor of Quartz [p36 NY Times Innovation report]( https://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/)
 
-The NY Times competitors such as BuzzFeed, were instead able to separate form from content. The best example is a [dialect quiz by the NY Times](http://www.nytimes.com/interactive/2013/12/20/sunday-review/dialect-quiz-map.html?_r=0), that was widely popular, and BuzzFeed, inspired by the format made a ["Quizz builder"](http://www.buzzfeed.com/ariellecalderon/buzzfeed-quiz-guide#.tt6LgemGe)
+The NY Times competitors such as BuzzFeed, were instead able to separate form from content. The best example is a [dialect quiz by the NY Times](https://www.nytimes.com/interactive/2013/12/20/sunday-review/dialect-quiz-map.html?_r=0), that was widely popular, and BuzzFeed, inspired by the format made a ["Quizz builder"](https://www.buzzfeed.com/ariellecalderon/buzzfeed-quiz-guide#.tt6LgemGe)
 and after the first release, published 20 variations with minimal effort.  
 
-This consideration of building a system rather then a one of editorial piece is the initial inspiration behind most of the projects I've been working on, which you can read more about here: [autoEdit](http://pietropassarelli.com/autoEdit.html), [Interactive databate #buildTheNews](http://pietropassarelli.com/buildTheNews.html), [OneStory at BBC #newsHack](http://pietropassarelli.com/oneStory.html), [quickQuote - Times & Sunday Times](http://pietropassarelli.com/quickQuote.html).
+This consideration of building a system rather then a one of editorial piece is the initial inspiration behind most of the projects I've been working on, which you can read more about here: [autoEdit](https://pietropassarelli.com/autoEdit.html), [Interactive databate #buildTheNews](https://pietropassarelli.com/buildTheNews.html), [OneStory at BBC #newsHack](https://pietropassarelli.com/oneStory.html), [quickQuote - Times & Sunday Times](https://pietropassarelli.com/quickQuote.html).
 
 At the end of this post, I'll give a summary of each one of these in relation to the other projects described below.
 
 ### V.A.R.K.
-The other consideration that guides most of the projects I work on comes from [VARK](http://vark-learn.com/the-vark-questionnaire/), idea of the variety of learning styles.
+The other consideration that guides most of the projects I work on comes from [VARK](https://vark-learn.com/the-vark-questionnaire/), idea of the variety of learning styles.
 
 Simply put, different people learn in different ways. Five main learning styles are identified, visual, auditory, reading and writing, kinaesthetic and multi-modal. The core concept is that each individual as one (or more) preferred learning style. But also, more crucially, that the same information can be delivered in different ways to meet the different learning styles.
 Applying this consideration to the publishing of news article, forces  us to re-consider the publishing of text based articles and the use of multimedia to engage a wider audience taking into account the variety of learning styles.
 
-As a practicl example, in the making of [quickQuote](http://pietropassarelli.com/quickQuote.html) this consideration guided a lot of the assumptions to test through the investigation of the problem. And in fact in the final web application the process of adding the corresponding video segment to a text quote, is taking into account the variety of learning styles. As the viewer is being delivered information both through auditory and reading and writing.
+As a practicl example, in the making of [quickQuote](https://pietropassarelli.com/quickQuote.html) this consideration guided a lot of the assumptions to test through the investigation of the problem. And in fact in the final web application the process of adding the corresponding video segment to a text quote, is taking into account the variety of learning styles. As the viewer is being delivered information both through auditory and reading and writing.
 
 ----------
 
@@ -70,9 +70,9 @@ Tools are those projects that allow the user to make something, such as provided
 
 ### Aljazeera Debate Obama - Romney
 
-[![Aljazeera Obama-Romney Debate - Mark Boas](/img/img_chp2_context/aljazeera_obama_romney.png)](http://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html)
+[![Aljazeera Obama-Romney Debate - Mark Boas](/img/img_chp2_context/aljazeera_obama_romney.png)](https://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html)
 
-In [the Aljazeera Obama - Romney debate](http://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html) the word accurate hypertranscript was done manually.
+In [the Aljazeera Obama - Romney debate](https://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html) the word accurate hypertranscript was done manually.
 
 What I like about this project is that it gives a way into the video, allowing to search the text, and provide some basic infographic, through a pie chart, on the search terms, you can see how many time the respective candidates have mentioned a certain word.
 
@@ -81,17 +81,17 @@ You can see the code [open source on github](https://github.com/maboa/uselect)
 I looked into the code from this open source project by [Mark Boas](https://twitter.com/maboa)  both at [The Times Build the news hackaton](pietropassarelli.com/buildTheNews.html) and at [BBC news hackaton](pietropassarelli.com/oneStory.html).
 
 Some of the constraints in this implementation are due to the technology that was available at the time it was implemented.
-It uses [JPlayer](http://jplayer.org/), it's not responsive, and it uses [popcorn js](http://popcornjs.org) to make the hypertranscript connection with the video.
+It uses [JPlayer](https://jplayer.org/), it's not responsive, and it uses [popcorn js](https://popcornjs.org) to make the hypertranscript connection with the video.
 
 
 
-<!-- To use more up to date technology the [HTML5 Video tag](http://www.html5rocks.com/en/tutorials/video/basics/) can be used to achieve the same hypertranscript. -->
+<!-- To use more up to date technology the [HTML5 Video tag](https://www.html5rocks.com/en/tutorials/video/basics/) can be used to achieve the same hypertranscript. -->
 
 It's also interesting about this project that the developer put an ["Easter egg"](https://en.wikipedia.org/wiki/Easter_egg_(media)#Software) that would let the user play only the sentences with a certain word in it, adding the query in the URL `?k=economy&t=1000`.
 Where "economy" could be any keyword, and `t` is for the time interval we wish to assign to each sentence.
 
 
-[`http://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html?k=economy&t=100`](http://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html?k=economy&t=1000)
+[`https://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html?k=economy&t=100`](https://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html?k=economy&t=1000)
 
 
 
@@ -106,21 +106,21 @@ But again as far as I am aware no automation was used to deal with the transcrip
 
 ![Aljazeera Obama state of the Union - Mark Boas](/img/img_chp2_context/Aljazeera_Obama_state_of_union.png)
 
-This is where I got the idea for [a system that could take a video in perform some kind of analyses](http://pietropassarelli.com/buildTheNews.html).
+This is where I got the idea for [a system that could take a video in perform some kind of analyses](https://pietropassarelli.com/buildTheNews.html).
 
 Also interesting about this project, is that there is a section providing a summary for each video.
 
 ### Palestinian remix
 
 ![Hyperaudio](/img/img_chp2_context/palestineremixer.png)
-[Palestinian remix](http://interactive.aljazeera.com/aje/PalestineRemix) by Aljazeera is an archive of documentary film about palestine, that allows the viewer/user to create their own text based edit. See [demo](http://interactive.aljazeera.com/aje/PalestineRemix/remix_main.html#!/1)
+[Palestinian remix](https://interactive.aljazeera.com/aje/PalestineRemix) by Aljazeera is an archive of documentary film about palestine, that allows the viewer/user to create their own text based edit. See [demo](https://interactive.aljazeera.com/aje/PalestineRemix/remix_main.html#!/1)
 
 However the "final cut" cannot be exported as video file, but can be shared online.
 
 
 ### Mandela speech
 The Times & Sunday Times newsroom develoepr [Ændrew Rininsland](https://twitter.com/aendrew) made piece about Mandela (paywall).
-The Hypertranscript was done using using [hyper audio converter](http://hyperaud.io/converter/) ([code on gihub](https://github.com/hyperaudio/ha-converter)) component of hyperaudio,
+The Hypertranscript was done using using [hyper audio converter](https://hyperaud.io/converter/) ([code on gihub](https://github.com/hyperaudio/ha-converter)) component of hyperaudio,
 But the transcription was done manually using  VLC and Notepad and subsequently a software to make subtitles, adding the text with in and out points, to then get an srt to convert in hypertranscript maker. Which as you can imagine was a time consuming process.
 
 
@@ -144,7 +144,7 @@ Perhaps better solution to make the most of the convenience of using google docs
 
 ### Video grep (open source)
 
-A project by [Sam Lavine](https://twitter.com/sam_lavigne) ([blog](http://lav.io/)), as name suggests [video grep](http://lav.io/2014/06/videogrep-automatic-supercuts-with-python/) ([code on github](https://github.com/antiboredom/videogrep) ) it's a command line utility to search audio or video file and return a file with cut segment.
+A project by [Sam Lavine](https://twitter.com/sam_lavigne) ([blog](https://lav.io/)), as name suggests [video grep](https://lav.io/2014/06/videogrep-automatic-supercuts-with-python/) ([code on github](https://github.com/antiboredom/videogrep) ) it's a command line utility to search audio or video file and return a file with cut segment.
 
 There is also a [audio grep](https://github.com/antiboredom/audiogrep) version.
 
@@ -156,7 +156,7 @@ you can search and [return all the sentences where the word "time" is mentioned 
 
 >videogrep requires the subtitle track and the video file to have the exact same name, up to the extension
 
-However in the project page there is also a link to a OSX mac app version (using electron and node [http://saaaam.s3.amazonaws.com/VideoGrep.app.zip](http://saaaam.s3.amazonaws.com/VideoGrep.app.zip)) of video grep which provides a GUI to the command line utility, as well as the possibility to add a video and have a transcriptions been automatically generated.
+However in the project page there is also a link to a OSX mac app version (using electron and node [https://saaaam.s3.amazonaws.com/VideoGrep.app.zip](https://saaaam.s3.amazonaws.com/VideoGrep.app.zip)) of video grep which provides a GUI to the command line utility, as well as the possibility to add a video and have a transcriptions been automatically generated.
 
 The transcription is generated using [pocketsphinx](https://github.com/cmusphinx/pocketsphinx) running locally offline on your system.
 
@@ -166,7 +166,7 @@ There is however no level of granularity control on selection, or hypertranscrip
 
 This project reminds of the [Casseteboy video artist](https://www.youtube.com/user/cassetteboy), that does video editing mash ups, generally of politician's speeches.
 
-However Casseteboy [in this interview](http://www.digitalspy.co.uk/showbiz/interviews/a615489/the-story-of-cassetteboy-the-kings-of-the-youtube-funny-cut-up-video.html#~p7N8kh0aGa3qbS) mentions he uses a manual and time consuming workflow to search and identify the relevant video segments for his edit.
+However Casseteboy [in this interview](https://www.digitalspy.co.uk/showbiz/interviews/a615489/the-story-of-cassetteboy-the-kings-of-the-youtube-funny-cut-up-video.html#~p7N8kh0aGa3qbS) mentions he uses a manual and time consuming workflow to search and identify the relevant video segments for his edit.
 
 >**Making these videos takes a lot longer than many people might assume, doesn't it...**
 >It is a long time. The original Apprentice video, we were working on it on and off for a couple of months. This new one we've done is well over a month. If you think about just watching the material, say a boardroom scene lasts half an hour, it will actually take an hour, an hour and half to get through it the first time around. You just keep stopping it, taking samples of bits that might be useful, filing them and then categorising them. So you can only do a few episodes per day.
@@ -200,7 +200,7 @@ It was prototyped by the [(London) Times Digital Team](https://github.com/times)
 
 ![Hyperaudio](/img/img_chp2_context/hyperaudio.png)
 
-[Hyperaudio](http://hyperaud.io/) is an [open source project](https://github.com/hyperaudio) that generalises the idea of the palestinian remix, to any youtube video.
+[Hyperaudio](https://hyperaud.io/) is an [open source project](https://github.com/hyperaudio) that generalises the idea of the palestinian remix, to any youtube video.
 
 It uses hypertranscript to make remixes of videos based on their transcriptions/subtitles.
 
@@ -215,7 +215,7 @@ and you can transcribe a video to create an hypertrnascript using their system.
 
 ![prEdit](/img/img_chp2_context/prEdit.png)
 
-[preDit](http://assistedediting.intelligentassistance.com/prEdit/) similar solution to hypertranscript but is desktop based for OSX only.
+[preDit](https://assistedediting.intelligentassistance.com/prEdit/) similar solution to hypertranscript but is desktop based for OSX only.
 
 It provides integration with editing software, and preview of the text assembly.
 
@@ -223,7 +223,7 @@ Interface is not very intuitive, setup is very fiddley, and requires already hav
 
 The presence of tagging, and categorization system is an interesting feature but poorly implemented.
 
-[Interesting article on the idea behind it](http://www.philiphodgetts.com/2012/01/text-is-the-new-timecode/).
+[Interesting article on the idea behind it](https://www.philiphodgetts.com/2012/01/text-is-the-new-timecode/).
 
 
 
@@ -259,9 +259,9 @@ The parses was initially from the [popcorn library `popcorn.parserSRT.js`](https
 
 ### Pocketsphinx (open source)
 
-Based on [CMU sphinx](http://cmusphinx.sourceforge.net/) [pocketsphinx](https://github.com/cmusphinx/pocketsphinx) can be used to make your own speech to text recognition system.
+Based on [CMU sphinx](https://cmusphinx.sourceforge.net/) [pocketsphinx](https://github.com/cmusphinx/pocketsphinx) can be used to make your own speech to text recognition system.
 
-A great example of this implementation can be found inside video grep Mac OS X electron app [http://saaaam.s3.amazonaws.com/VideoGrep.app.zip](http://saaaam.s3.amazonaws.com/VideoGrep.app.zip).
+A great example of this implementation can be found inside video grep Mac OS X electron app [https://saaaam.s3.amazonaws.com/VideoGrep.app.zip](https://saaaam.s3.amazonaws.com/VideoGrep.app.zip).
 
 
 
@@ -324,7 +324,7 @@ For instance I needed to be able to delete a video uploaded to their system thro
 They also provided other functionalities such as a view to edit the transcription, with a defined URL that can be accessed with the `uid` of the video. This could be useful to give the users of my app a way to edit automated transcriptions without having to implement it from scratch.
 
 ```
-http://spokendata.com/transcription/5937
+https://spokendata.com/transcription/5937
 ```
 
 For more on their [API see here](https://spokendata.com/api-for-developers), which also provides speaker diarization.
@@ -377,24 +377,24 @@ It also identifies keywords, and makes a note of the timecode they accour at.
 With a background in documentary production, I have a long standing interest for story crafting, and working with transcriptions effectivly, so here are some of my projects that came out of this exploration.
 
 ### autoEdit
-[autoEdit](http://pietropassarelli.com/autoEdit.html), fast text based editing of video interviews. Is a "Digital paper editing” software.
+[autoEdit](https://pietropassarelli.com/autoEdit.html), fast text based editing of video interviews. Is a "Digital paper editing” software.
 To make a script from a selection of lines from the transcriptions of interviews.
 You can then export as an EDL. This can be opened with the editing software of your choice to reconnect the corresponding video into a sequence, and finish working on your rough-cut assembly.
 
 
 
-<!-- ref http://pietropassarelli.com/autoEdit.html -->
+<!-- ref https://pietropassarelli.com/autoEdit.html -->
 
 I am currently working on this, and have various prototypes, with different stack at different stages of development as I am trying out different approaches.
 
 #### Initial prototype
-The initial prototype for autoEdit, consisted of two scripts. [one to parse sbv subtitles files made with youtube into a csv file](http://pietropassarelli.com/tech/articles/2013/12/02/sbv-csv/). to upload to google spreadsheet. And the [other to convert the csv file into an EDL](https://github.com/pietrop/csv_to_edl).
+The initial prototype for autoEdit, consisted of two scripts. [one to parse sbv subtitles files made with youtube into a csv file](https://pietropassarelli.com/tech/articles/2013/12/02/sbv-csv/). to upload to google spreadsheet. And the [other to convert the csv file into an EDL](https://github.com/pietrop/csv_to_edl).
 
 I used that in an actual production I was working on, and while I saw that i worked and saved me a ton of time,  I knew it was worth spending some refining this.
 
 
 #### rails  MVP working version
-The rails version in beta is available in beta at [autoedit.io](www.autoedit.io) [code on github ](https://github.com/pietrop/autoEdit) and more detailed explanation [here](http://pietropassarelli.com/autoEdit.html)
+The rails version in beta is available in beta at [autoedit.io](www.autoedit.io) [code on github ](https://github.com/pietrop/autoEdit) and more detailed explanation [here](https://pietropassarelli.com/autoEdit.html)
 
 ![autoEdit](/img/img_chp2_context/autoEdit.png)
 
@@ -420,9 +420,9 @@ This was a proof of concept for a system that given a video would generate trans
 
 <!-- ref  -->
 
-![BuildTheNewsPrototype](http://pietropassarelli.com/img/BuildTheNews/interactive_debate.png)
+![BuildTheNewsPrototype](https://pietropassarelli.com/img/BuildTheNews/interactive_debate.png)
 
-More details [here](http://pietropassarelli.com/buildTheNews.html ).
+More details [here](https://pietropassarelli.com/buildTheNews.html ).
 
 The proof of concept was more of a R&D research, into the feasibility of the various component, with an interactive demo.
 
@@ -439,26 +439,26 @@ This is concept could either be applied to the annotation view of autoEdit, or f
 
 ### oneStory
 
-[oneStory](http://pietropassarelli.com/oneStory.html) came ouf of the idea of the variety of learning style V.A.R.K. as mentioned at the top of the article.
+[oneStory](https://pietropassarelli.com/oneStory.html) came ouf of the idea of the variety of learning style V.A.R.K. as mentioned at the top of the article.
 
 The underlying assumption is that you could create a story editor CMS, where with defined equivalence points, the viewer could switch "medium".
 
 For instance you start reading your story as an article, switch to as a podcast while you get on the bus as you are standing, switch again to it as video while you step into the tube, and finally switch to it as multimedia piece once you reach the office. Through the "app" knows where you at with the story when you make the shift.
 
-For more on this [here](http://pietropassarelli.com/oneStory.html)
+For more on this [here](https://pietropassarelli.com/oneStory.html)
 
-![OneStory](http://pietropassarelli.com/img/newsHackOneStory/OneStory_02_Podcast.png)
+![OneStory](https://pietropassarelli.com/img/newsHackOneStory/OneStory_02_Podcast.png)
 
 at the Hackaton only the switch from article to podcast was demonstrated.
 
 ### quickQuote
 
-[quickQuote](http://pietropassarelli.com/quickQuote.html) given a video, it sends it to spoken data speech to text API to get a transcription.
+[quickQuote](https://pietropassarelli.com/quickQuote.html) given a video, it sends it to spoken data speech to text API to get a transcription.
 
 When the transcription is done it generates a hypertranscript, that can be used to select a quote.
 Exporting a text quote, trims the corresponding video.
 
-![quickquote select](http://pietropassarelli.com/img/TimesAndSundayTimesQuickQuote/select.png)
+![quickquote select](https://pietropassarelli.com/img/TimesAndSundayTimesQuickQuote/select.png)
 
 
 This can be exported either as an interactive video quote or to the twitter video API.

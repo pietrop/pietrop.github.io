@@ -23,7 +23,7 @@ use `<div class="image-wrapper">`
 </div>
 ```
 
-[Responsive immage](http://erictoulson.com/2014/01/21/responsive-images-with-jekyll/)
+[Responsive immage](https://erictoulson.com/2014/01/21/responsive-images-with-jekyll/)
 
 inclusing `image.css` in `public/css/`
 
@@ -131,15 +131,15 @@ use `<div class="videoWrapper">`
 Using `[text](www.url.com){:target="_blank"}` equivalent to open in new tab.
 
 ```
-[Speaker diarization  (Lium - same library used by BBC)](http://www-lium.univ-lemans.fr/diarization/doku.php){:target="_blank"}
+[Speaker diarization  (Lium - same library used by BBC)](https://www-lium.univ-lemans.fr/diarization/doku.php){:target="_blank"}
 ```
 
 ## Choice of icons
 
-[elusive icons](http://elusiveicons.com/icons/)
+[elusive icons](https://elusiveicons.com/icons/)
 
 ## Order by tag how to
-[order by tag](http://www.minddust.com/post/tags-and-categories-on-github-pages/)
+[order by tag](https://www.minddust.com/post/tags-and-categories-on-github-pages/)
 
 
 ## Draft
@@ -183,7 +183,7 @@ eg using rake?
   can skip
 - image: 
   can skip
-- github (if present it parses the `http://github.com/` part to save only the extension)
+- github (if present it parses the `https://github.com/` part to save only the extension)
   can skip
 - youtube 
   can skip but same parsing as above
@@ -244,7 +244,7 @@ Some notes on what to write about
 **Hyde 1.x has been deprecated for the upcoming Hyde 2.0, [available here](https://github.com/poole/hyde).**
 
 
-## [Hyde](http://andhyde.com)
+## [Hyde](https://andhyde.com)
 
 An elegant open source, mobile first theme for [Jekyll](https://github.com/mojombo/jekyll). It includes lightweight styles and placeholder content to get you up and running with a simple blog in no time.
 
@@ -263,7 +263,7 @@ $ gem install jekyll
 
 **Windows users:** Windows users have a bit more work to do, but luckily [@juthilo](https://github.com/juthilo) has your back with his [Run Jekyll on Windows](https://github.com/juthilo/run-jekyll-on-windows) guide.
 
-You may also need to install Pygments, the Python syntax highlighter for code snippets that plays nicely with Jekyll. Read more about this [in the Jekyll docs](http://jekyllrb.com/docs/templates/#code_snippet_highlighting).
+You may also need to install Pygments, the Python syntax highlighter for code snippets that plays nicely with Jekyll. Read more about this [in the Jekyll docs](https://jekyllrb.com/docs/templates/#code_snippet_highlighting).
 
 ### 2a. Quick start
 
@@ -281,7 +281,7 @@ To see your Jekyll site with Hyde applied, start a Jekyll server. In Terminal, f
 $ bundle exec jekyll serve
 ```
 
-Open <http://localhost:4000> in your browser, and voilà. You're done.
+Open <https://localhost:4000> in your browser, and voilà. You're done.
 
 
 ## Options

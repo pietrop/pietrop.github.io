@@ -99,7 +99,7 @@ updating state is async
 [React book](https://github.com/pietrop/the-road-to-learn-react/blob/master/manuscript/chapter6.md#revisited-setstate)
 
 ## Component Lifecycle 
-[react lifecycle methods diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+[react lifecycle methods diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
 good to read along side this chapter [Chapter 3 boook -the-road-to-learn-react - Getting Real with APIs ](https://github.com/pietrop/the-road-to-learn-react/blob/master/manuscript/chapter3.md)
 
@@ -296,7 +296,7 @@ From react BBC course
 ## Sources
 
 - [How does React decide to re-render a component?](https://lucybain.com/blog/2017/react-js-when-to-rerender/)
-- [react lifecycle methods diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+- [react lifecycle methods diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 [React docs -> Avoid Reconciliation](https://reactjs.org/docs/optimizing-performance.html#avoid-reconciliation)
 - [React pure components](https://reactjs.org/docs/react-api.html#reactpurecomponent)
 

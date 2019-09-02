@@ -27,7 +27,7 @@ tags:
 
 <!-- ![](/img/wip_london_workshop_july_2016/) -->
 
-On Saturday July 9th 2016 I run a hands on workshop titled "How to craft compelling stories out of video interviews?". This was in collaboration with [Niels Ladefoged](https://twitter.com/insofar_media) who has been curating the [Whistle Blower Interview Project](https://vimeo.com/whistleblowers) in collaboration with [the centre for investigative journalism in London](http://www.tcij.org/whistleblowers/whistleblower-interview-project).
+On Saturday July 9th 2016 I run a hands on workshop titled "How to craft compelling stories out of video interviews?". This was in collaboration with [Niels Ladefoged](https://twitter.com/insofar_media) who has been curating the [Whistle Blower Interview Project](https://vimeo.com/whistleblowers) in collaboration with [the centre for investigative journalism in London](https://www.tcij.org/whistleblowers/whistleblower-interview-project).
 
 ![]({{page.img_2}})
 

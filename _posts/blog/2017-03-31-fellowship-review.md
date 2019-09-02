@@ -93,7 +93,7 @@ Following the feedback I then released an updated version with timecodes.
 Current status: completed, not actively maintained.
 
 WIP workshop 
-Link: http://pietropassarelli.com/wip_london_july2016.html
+Link: https://pietropassarelli.com/wip_london_july2016.html
 
 Brief description:
 On Saturday July 9th 2016 I run a hands on workshop titled “How to craft compelling stories out of video interviews?”. This was in collaboration with Niels Ladefoged who has been curating the Whistle Blower Interview Project in collaboration with the centre for investigative journalism in London.
@@ -145,7 +145,7 @@ Current status: complete, could do with a refactoring.
 
 blogpost on learning to code
 Link:
-http://pietropassarelli.com/learnToCode101.html
+https://pietropassarelli.com/learnToCode101.html
 
 Brief description:
 I wasn’t sure if I should "write in the open" and publish the draft even tho I am still working on it, but one of the students I met at NYU who was working on a simliar video editing project, commented
@@ -157,9 +157,9 @@ Current status: published draft. I could use with some help cleaning up the draf
 autoEdit 2
 Link:
 https://github.com/OpenNewsLabs/autoEdit_2
-http://www.autoEdit.io 
+https://www.autoEdit.io 
 autoEdit press mentions
-http://www.niemanlab.org/2016/10/try-out-this-open-source-tool-for-editing-video-and-audio-transcripts/
+https://www.niemanlab.org/2016/10/try-out-this-open-source-tool-for-editing-video-and-audio-transcripts/
 https://www.journalism.co.uk/news/tool-for-journalists-autoedit-to-edit-videos-quicker-using-transcriptions/s2/a684359/
 https://www.rjionline.org/stories/fl171-ibm-watson-speech-to-text
 
@@ -204,7 +204,7 @@ https://product.voxmedia.com/2016/11/22/13669486/faster-video-editing
 
 POV hackaton battle sound
 Link: https://github.com/pietrop/BattleSounds
-demo http://pietropassarelli.com/BattleSounds/
+demo https://pietropassarelli.com/BattleSounds/
 see slides link in readme
 
 Brief description:
@@ -218,7 +218,7 @@ I always suspected that if you have the right tools making interactive could be 
 Current status: 
 
 https://github.com/pietrop/BattleSounds 
-http://pietropassarelli.com/BattleSounds/
+https://pietropassarelli.com/BattleSounds/
 
 
 Opened captions->Google doc //Vox inauguration speech system // C-span opened captiosn server
@@ -250,7 +250,7 @@ Current status: completed, more work being done by Dan Schultz on documentation 
 
 WIP Archive
 Link:
-temporary url http://pietropassarelli.com/WIP_archive
+temporary url https://pietropassarelli.com/WIP_archive
 https://github.com/pietrop/WIP_archive
 
 Brief description:
@@ -348,7 +348,7 @@ Current status:
 
 autoEdit (www.autoEdit.io)
 
-Been wanting to do this for a while, the very first version of autoEdit was very hard to use, and only had one active user (http://pietropassarelli.com/autoEdit.html). However in my view the biggest problem wasn’t the tech knowhow required to smooth the user experience, but rather having close proximity to the users to adopt a more lean hypothesis driven approach. 
+Been wanting to do this for a while, the very first version of autoEdit was very hard to use, and only had one active user (https://pietropassarelli.com/autoEdit.html). However in my view the biggest problem wasn’t the tech knowhow required to smooth the user experience, but rather having close proximity to the users to adopt a more lean hypothesis driven approach. 
 
 Before starting the fellowship I already had figured out most of the problem domain from a best practice point of view (eg how to paper-edit). However there was a huge gap between best practices approaches and how people go about do their video editing of interviews. This required spending some time learning about how people do go about editing video interviews, the crucial part was to understand how the best practice workflow could be modelled into software in a way that would be accepted by the users. At Vox I had the opportunity to experiment on that process in an iterative way. 
 
@@ -369,11 +369,11 @@ More time to experiment on video-> audio-> text //story editor publishing system
 ## What did you document?
 Link us to blog posts, photos, how-tos that have been published AND include all the documentation ideas in your head you haven't yet published.
 
-http://pietropassarelli.com/wip_london_july2016.html 
+https://pietropassarelli.com/wip_london_july2016.html 
 
 source piece coming out soon
 
 autoEdit documentation tutorials section, cover problem domain
 
-http://www.autoedit.io/jsdoc_docs/ 
+https://www.autoedit.io/jsdoc_docs/ 
 

@@ -33,7 +33,7 @@ Combines elements of a dialogue with that of a quiz.
 
 >a messaging interface that players use to carry out a conversation with a person on the other side of a political, ethnic, or generational divide. At the end of the conversation, they receive tips for communicating more effectively.
 
-Read more details about the process in this Source piece ["How We Made Our “Crossing Divides” News Game"]({{page.link}}), and/or play with the actual interactive to see for yourself ['BBC News Labs - Crossing Divides'](http://crossingdivides.bbcnewslabs.co.uk)
+Read more details about the process in this Source piece ["How We Made Our “Crossing Divides” News Game"]({{page.link}}), and/or play with the actual interactive to see for yourself ['BBC News Labs - Crossing Divides'](https://crossingdivides.bbcnewslabs.co.uk)
 
 
 ## C+J Video presentation

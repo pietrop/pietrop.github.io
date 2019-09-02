@@ -6,7 +6,7 @@ duration: "4min 48sec"
 permalink: "/UBIQ3D.html" 
 image:   /img/ubiq/3dprinting.png
 tools: ['FCP7', 'Xf100']
-link: http://www.rai.tv/dl/RaiTV/programmi/media/ContentItem-cf322dcd-6901-45bc-8d36-aef1a8524c05.html
+link: https://www.rai.tv/dl/RaiTV/programmi/media/ContentItem-cf322dcd-6901-45bc-8d36-aef1a8524c05.html
 vimeo: 
 vimeo2: 77534349
 youtube: 

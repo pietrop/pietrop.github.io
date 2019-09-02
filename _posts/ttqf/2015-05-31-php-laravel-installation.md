@@ -14,7 +14,7 @@ tags:
 
 Following a long the [Lynda.com Essential Training Laravel 4][Lynda.com Essential Training Laravel 4] I found that the given instruction to install laravel did not work for me.
 
-I found some that did in this [blog post](http://jacurtis.com/easily-install-mcrypt-php-mavericks-yosemite/), I think it was mostly due to the fact that on lynda.com they refer you to another course on installing the [php stack][php stack], and if you don't have `php 5.6` previous versions require `mycript` laravel dependencie to be installed separatly, and that turned out to be rather tedius.
+I found some that did in this [blog post](https://jacurtis.com/easily-install-mcrypt-php-mavericks-yosemite/), I think it was mostly due to the fact that on lynda.com they refer you to another course on installing the [php stack][php stack], and if you don't have `php 5.6` previous versions require `mycript` laravel dependencie to be installed separatly, and that turned out to be rather tedius.
 
 So here is a short step by stem that worked for me on OS X Yosemite.
 
@@ -39,7 +39,7 @@ sudo mv composer.phar /usr/local/bin/composer
 ## 2.install php 5.6
 
 ```bash
-curl -s http://php-osx.liip.ch/install.sh | bash -s 5.6
+curl -s https://php-osx.liip.ch/install.sh | bash -s 5.6
 ```
 
 this installs new php 5.6, which comes with `mycript` which you will need for `laravel`.
@@ -79,6 +79,6 @@ php artisan serve
 
 <!-- links -->
 
-[php stack]:http://www.lynda.com/MySQL-tutorials/PHP-MySQL-Essential-Training/119003-2.html
+[php stack]:https://www.lynda.com/MySQL-tutorials/PHP-MySQL-Essential-Training/119003-2.html
 [Lynda.com Essential Training Laravel 4]:https://www.google.it/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCIQFjAA&url=http%3A%2F%2Fwww.lynda.com%2FLaravel-tutorials%2FLaravel-4-Essential-Training%2F181242-2.html&ei=OzVrVdKHKIizswGCwYKIAQ&usg=AFQjCNGFzx8u1HwwxAGHDAg3NxBFAnrW_w&bvm=bv.94455598,d.bGg 
 

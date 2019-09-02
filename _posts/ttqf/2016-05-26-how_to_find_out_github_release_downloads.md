@@ -17,7 +17,7 @@ Here’s a quick "how to" to see how many people have downloaded your project re
 
 This can only be done through the github API,but if your API hasn’t exceeded the request limit you can do it without authenticating. (chances are that if you are at work they might have already exceeded the limit, so you may want to do this from a different wifi).
 
-I am going to use a project I worked on a while back [`http://pietropassarelli.com/alpaca_speech`](http://pietropassarelli.com/alpaca_speech) that I use everyday but I am curious to see how many people use the packaged up in the release section of github.
+I am going to use a project I worked on a while back [`https://pietropassarelli.com/alpaca_speech`](https://pietropassarelli.com/alpaca_speech) that I use everyday but I am curious to see how many people use the packaged up in the release section of github.
 
 
 We are going to be making get requests with [postman](https://www.getpostman.com/), but you could use curl or whatever you prefer.

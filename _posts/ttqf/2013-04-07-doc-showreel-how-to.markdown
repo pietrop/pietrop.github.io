@@ -59,10 +59,10 @@ For instance for the same action, you can use one shot that shows the beginning 
 
 
 # Viewers Feedback: A top tip 
-if you want to see how people are watching your show-reel, you can upload it on [wistia](<http://wistia.com/product/analytics>) to get a video heat of the analytic.
+if you want to see how people are watching your show-reel, you can upload it on [wistia](<https://wistia.com/product/analytics>) to get a video heat of the analytic.
 
 
-<img class="img-rounded  img-responsive "  border="0" src="http://1.bp.blogspot.com/-JuritDeDwOg/UxNS2KusLVI/AAAAAAAAFVM/KOJ0tCsPMMQ/s1600/wistia.jpg" height="320" width="289" />
+<img class="img-rounded  img-responsive "  border="0" src="https://1.bp.blogspot.com/-JuritDeDwOg/UxNS2KusLVI/AAAAAAAAFVM/KOJ0tCsPMMQ/s1600/wistia.jpg" height="320" width="289" />
 
 
 Last but not least here is another example, this time using music in the background (and joining different genre of project from different people):

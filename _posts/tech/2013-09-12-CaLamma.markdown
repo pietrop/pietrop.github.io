@@ -9,8 +9,8 @@ image2: /img/calamma/aboutcalamma.jpeg
 image3: /img/calamma/rooms.jpeg
 image4: /img/calamma/contacts.jpeg
 image5: /img/calamma/lightbox.jpeg
-link: http://calamma.com
-appurl: http://calamma.com
+link: https://calamma.com
+appurl: https://calamma.com
 github: 
 tech: ['HTML','CSS', 'Bootstrap','Rails']
 categories: 

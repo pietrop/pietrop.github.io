@@ -33,7 +33,7 @@ tags:
 
 - [slides: MozzFest workshop slides - Oct 29th, 2017](https://docs.google.com/presentation/d/1DLCNqqf9je1kA91_S9ggaSzFpAlLBc-jEem5ZL18wYQ/edit?usp=sharing)
 	- [github: annotated article generator - github](https://github.com/pietrop/annotated_article_generator)
-	- [demo: annotated article generator - demo](http://pietropassarelli.com/annotated_article_generator/)
+	- [demo: annotated article generator - demo](https://pietropassarelli.com/annotated_article_generator/)
 
 Also recently made a working proof of concept for an app to replace the rig, to make it easier for the end user to use without the supervision of a newsroom developer. See screenshot below
 

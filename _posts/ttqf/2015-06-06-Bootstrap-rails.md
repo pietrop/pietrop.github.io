@@ -19,9 +19,9 @@ tags:
 </div>
 
 
-[Bootstrap grid system](http://getbootstrap.com/css/#grid)
+[Bootstrap grid system](https://getbootstrap.com/css/#grid)
 
-[BootsWatch Bootstrap Template](http://bootswatch.com)
+[BootsWatch Bootstrap Template](https://bootswatch.com)
 
 to add bootstrap to rails, add the css and javascript bootstrap files front the `dist`folder into the stylesheet, and javascript folder in rails. 
 
@@ -46,7 +46,7 @@ Then in your view page, the giest is that inside the container, you need a row t
 and **you structure your code in terms of rows containing columns**, to align things.
 
 when there is more then one column, a column is given a number out of 12 to assign proportions between them.
-`xs, sm, md, lg` [specify the device size](http://getbootstrap.com/css/#grid-options). 
+`xs, sm, md, lg` [specify the device size](https://getbootstrap.com/css/#grid-options). 
 
 `col-xs-12 col-sm-6 col-md-6 col-lg-6`
 
@@ -64,7 +64,7 @@ when there is more then one column, a column is given a number out of 12 to assi
     		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed auctor sapien, a vulputate metus. </p>
     </div> <!-- end col -->
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-    	<img src="/http://placehold.it/350x250">
+    	<img src="/https://placehold.it/350x250">
     </div> <!-- end col -->
 </div> <!-- end row -->
 ````
@@ -84,7 +84,7 @@ In HTML
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed auctor sapien, a vulputate metus.</p>
 </div> 
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-<img src="http://placehold.it/350x250">
+<img src="https://placehold.it/350x250">
 </div> 
 </div>
 

@@ -48,7 +48,7 @@ and this would render as
 <p>and a paragraph.</p>
 <hr style="background-color: black; height: 10px;">
 
-For more see [w3schools](http://www.w3schools.com/html/)
+For more see [w3schools](https://www.w3schools.com/html/)
 
 ### What's CSS?
 
@@ -72,10 +72,10 @@ which combined with the previous code would render as:
 <p>and a paragraph.</p>
 <hr style=" background-color: black; height: 10px;">
 
-For more see [w3schools](http://www.w3schools.com/css/)
+For more see [w3schools](https://www.w3schools.com/css/)
 
 There are three ways to use CSS, inline, using `<style>` tag in the html page or referencing a separate file.
-see more about this at [w3schools](http://www.w3schools.com/css/css_howto.asp).
+see more about this at [w3schools](https://www.w3schools.com/css/css_howto.asp).
 
 
 ### A non-responsive Page resized
@@ -90,14 +90,14 @@ see more about this at [w3schools](http://www.w3schools.com/css/css_howto.asp).
 ### What is bootstrap?
 [Twitter Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)) is a an opensource framework to make web pages responsives.
 It works by adding a reference  `<link>` to css and javascript `<script>` tag to link to the bootstrap code library.
-[Bootstrap Basic Template Code](http://getbootstrap.com/getting-started/###template).
+[Bootstrap Basic Template Code](https://getbootstrap.com/getting-started/###template).
 
 
 Bootstrap is built on a 12 columns system, which you can use to position your elements on the page.
 
 ![Bootstrap 12 columns]()
 
-[See bootstrap documentation for more on this](http://getbootstrap.com/css/###grid-example-basic).
+[See bootstrap documentation for more on this](https://getbootstrap.com/css/###grid-example-basic).
 
 
 ### Making a webpage responsive with Bootstrap
@@ -125,7 +125,7 @@ And the <span style="color:green;"><b>columns</b></span> are elements that can b
   		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec dolor nec eros blandit lobortis. Nulla elementum tortor nec nisi suscipit tempor. Nullam bibendum ipsum sed vestibulum faucibus. </p>
   		</div><!-- end col  -->
   		<div class="col-xs-12 col-sm-6 col-md-8 col-lg-10">
-  			<img src="http://placehold.it/350x150"> <!-- replace with kitten picture -->
+  			<img src="https://placehold.it/350x150"> <!-- replace with kitten picture -->
   		</div><!-- end col  -->
 	</div> <!-- end row -->
 </div> <!-- end container -->
@@ -137,7 +137,7 @@ The important part here is that when defining the column `<div class="col-xs-12 
 
 <!-- Add w3 school link  -->
 
-<!-- http://bootsnipp.com -->
+<!-- https://bootsnipp.com -->
 
 ### How to add bootstrap
 

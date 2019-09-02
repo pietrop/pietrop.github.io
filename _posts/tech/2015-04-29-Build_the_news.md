@@ -64,9 +64,9 @@ of the viewers engagement with the piece.
 
 
 ## The Concept
-In terms of the analyses of the video based interview the ambition was that of using existing technology a round natural language processing, and sentiment analysis technology to give an insight into the [subtext](http://en.wikipedia.org/wiki/Subtext) of an interview.
+In terms of the analyses of the video based interview the ambition was that of using existing technology a round natural language processing, and sentiment analysis technology to give an insight into the [subtext](https://en.wikipedia.org/wiki/Subtext) of an interview.
 
-on the morning of the hackathon I was reading through [the New York Times innovation report](http://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/) for some inspiration, when it mentioned that very often interactive project for the news are done as a one off, and that a more sustainable approach would be to create structures where form and content could be separated to make it reusable.
+on the morning of the hackathon I was reading through [the New York Times innovation report](https://www.niemanlab.org/2014/05/the-leaked-new-york-times-innovation-report-is-one-of-the-key-documents-of-this-media-age/) for some inspiration, when it mentioned that very often interactive project for the news are done as a one off, and that a more sustainable approach would be to create structures where form and content could be separated to make it reusable.
 
 ## Technology used
 We drew on a number of open source technology, APIs and libraries 
@@ -78,12 +78,12 @@ But considered the tight turnaround we didn’t have time to integrate the vario
 These are some of the technologies we used:
 
 - Speech to Text  ([Youtube Captioning](https://developers.google.com/youtube/v3/docs/captions))
-- [Speaker diarization  (Lium - same library used by BBC)](http://www-lium.univ-lemans.fr/diarization/doku.php) 
-- Sentiment Analysis Topic & Keywords  ([Monkey Learn](http://www.monkeylearn.com) ) 
-- Summarization  ([Text Summarization API](http://autosummarizer.com) )
+- [Speaker diarization  (Lium - same library used by BBC)](https://www-lium.univ-lemans.fr/diarization/doku.php) 
+- Sentiment Analysis Topic & Keywords  ([Monkey Learn](https://www.monkeylearn.com) ) 
+- Summarization  ([Text Summarization API](https://autosummarizer.com) )
 - [Srt → HTML (library)](https://github.com/maboa/hyperaudioconverter)  
 - [Social media Share (library)](https://github.com/maboa/uselect) 
-- [Interactive transcriptions](https://github.com/maboa/uselect) , using [popcorn library](http://popcornjs.org) . from opensource [Aljazeera US Election Debate Hyperaudio](http://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html?k=economy&t=1000) . 
+- [Interactive transcriptions](https://github.com/maboa/uselect) , using [popcorn library](https://popcornjs.org) . from opensource [Aljazeera US Election Debate Hyperaudio](https://www.aljazeera.com/indepth/interactive/2012/10/2012101792225913980.html?k=economy&t=1000) . 
 
 <br>
 

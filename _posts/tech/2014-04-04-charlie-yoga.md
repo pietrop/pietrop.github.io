@@ -9,8 +9,8 @@ image: /img/yoga/yoga.jpeg
 github: 
 published: false
 tech: ['Jekyll', 'Bootstrap', 'HTML','CSS', 'Git',  'amazon S3']
-appurl: http://doashtanga.com
-link: http://doashtanga.com
+appurl: https://doashtanga.com
+link: https://doashtanga.com
 categories: 
 - tech
 tags:

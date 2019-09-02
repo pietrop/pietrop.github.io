@@ -37,7 +37,7 @@ This was the proposed session description
 
 The problem domain is that of working with audio, video, transcriptions and captions to speed up the production process. 
 
-While at Vox as part of the Open-News Knight Mozilla fellowship, I had worked on [autoEdit.io](http://www.autoedit.io/), a text based video editing system that uses automated STT services to enable a [digital paper-editing workflow](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/), and noticed when going to conference that more people than expected were working in similar problem domain, altho sometimes with slightly different use cases.
+While at Vox as part of the Open-News Knight Mozilla fellowship, I had worked on [autoEdit.io](https://www.autoedit.io/), a text based video editing system that uses automated STT services to enable a [digital paper-editing workflow](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/), and noticed when going to conference that more people than expected were working in similar problem domain, altho sometimes with slightly different use cases.
 
 I notice that there was a fair bit of re-inventing the wheel. However coming from a documentary background, and having worked as a production researcher, my first step was always to do some background research on the domain, who else has worked on this? And what can I learn from them to make my own decisions.
 
@@ -102,7 +102,7 @@ Time consuming as it is, it yelds results.
 <!-- And as they teach in negotiation 101 classes, you can influence a large group most effectively if you have one on one chats with people involved in the decision making process. -->
 
 ## If your event was a blog post
-Before coming up with the idea for the event, I started with a blog post, [“beyond video as black boxes”](http://pietropassarelli.com/videoBox.html)  where I reviewed and commented on projects that were in this problem domain of working with audio, video, transcriptions and captions.
+Before coming up with the idea for the event, I started with a blog post, [“beyond video as black boxes”](https://pietropassarelli.com/videoBox.html)  where I reviewed and commented on projects that were in this problem domain of working with audio, video, transcriptions and captions.
 
 The post was reviewing projects, but was also trying to cluster them into categories and paint a way forward for what else could be possible in this domain.
 
@@ -117,7 +117,7 @@ For the hands-on unconference participants work on problem domain topics they ar
 
 In the context of computer science, a problem domain is the context that defines a particular problem. 
 
-<!-- TODO: re-phrase what is a problem domain topics  as described here http://pietropassarelli.com/10-lessons-video-tools.html
+<!-- TODO: re-phrase what is a problem domain topics  as described here https://pietropassarelli.com/10-lessons-video-tools.html
 Eg in CS a problem domain is  -->
 
 ## Making the most of trello 
@@ -180,10 +180,10 @@ We all stand on the shoulders of giants across many open source communities. We�
 - [Ubuntu](https://www.ubuntu.com/community/code-of-conduct)
 - [Contributor Covenant](https://www.contributor-covenant.org/)
 - [Geek Feminism](https://geekfeminism.org/about/code-of-conduct/)
-- [Citizen Code of Conduct](http://citizencodeofconduct.org/)
+- [Citizen Code of Conduct](https://citizencodeofconduct.org/)
 - [Gulp](https://github.com/gulpjs/gulp/blob/master/CONTRIBUTING.md)
 - [Open code of Conduct](https://todogroup.org/opencodeofconduct/)
-- ["Why You Want a Code of Conduct & How We Made One"](http://incisive.nu/2014/codes-of-conduct/)
+- ["Why You Want a Code of Conduct & How We Made One"](https://incisive.nu/2014/codes-of-conduct/)
 - [Facebook Open Source Code of Conduct](https://code.fb.com/codeofconduct/)
 
 ## The event website

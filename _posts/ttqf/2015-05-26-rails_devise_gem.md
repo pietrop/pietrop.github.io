@@ -17,7 +17,7 @@ tags:
 
 
 
-[Rails girls devise guide](http://guides.railsgirls.com/devise/)
+[Rails girls devise guide](https://guides.railsgirls.com/devise/)
 
 
 1. add gem 
@@ -68,8 +68,8 @@ i found that ``devise_for :users`` needs to be right under top of the page, like
 `````
 
 10.check if it works
-run server (``rails s``) and visit ``http://localhost:3000/users/sign_up ``
+run server (``rails s``) and visit ``https://localhost:3000/users/sign_up ``
 you can check rails console (``rails c``) to see if the user has been created i.e. ``User.all``.
 
 11. add links sign in/out/up
-see rest of rails guide to add links [here](http://guides.railsgirls.com/devise/)
+see rest of rails guide to add links [here](https://guides.railsgirls.com/devise/)

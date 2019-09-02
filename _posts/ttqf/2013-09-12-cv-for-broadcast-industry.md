@@ -33,11 +33,11 @@ for the same type of position, and make notes of the main points of the job
 description, or look at some books or blogs on this topic.  Here is a few good
 sources worth having a look at:
 
-- [Unit list TV Runner tipsheet](<http://www.theunitlist.com/download-tipsheet-for-tv-runners>) pdf.
+- [Unit list TV Runner tipsheet](<https://www.theunitlist.com/download-tipsheet-for-tv-runners>) pdf.
 
--	[How to Get a Job in Television](<http://www.amazon.co.uk/How-Get-Job-Television-Professional/dp/1408101297/ref=sr_1_1?ie=UTF8&qid=1350068178&sr=8-1>) Book.
+-	[How to Get a Job in Television](<https://www.amazon.co.uk/How-Get-Job-Television-Professional/dp/1408101297/ref=sr_1_1?ie=UTF8&qid=1350068178&sr=8-1>) Book.
 
--	 [An Experts Guide to Getting into TV](<http://bit.ly/Q1m49M>) Book.
+-	 [An Experts Guide to Getting into TV](<https://bit.ly/Q1m49M>) Book.
 
 
 
@@ -110,9 +110,9 @@ one , and can’t be asked to check two addresses all the time, with gmail, you
 can set up a [e-mail delegation5 and/or a forwarder6, so that you can check your
 new e-mail from the old address. ]
 
-5http://support.google.com/mail/bin/answer.py?hl=en&answer=138350
+5https://support.google.com/mail/bin/answer.py?hl=en&answer=138350
 
-6http://support.google.com/mail/bin/answer.py?hl=en&answer=10957
+6https://support.google.com/mail/bin/answer.py?hl=en&answer=10957
 
 
 
@@ -133,7 +133,7 @@ Pretty self explanatory,
 
 tip:  if you are dissatisfied with your current carrier I recommend [giffgaff7 ]
 
-7http://giffgaff.com/orders/affiliate/pietrops
+7https://giffgaff.com/orders/affiliate/pietrops
 
 ### Address
 
@@ -352,19 +352,19 @@ to learn and be ready for the next step when it’ll happen.
 # Resources
 
 
-[Unit List, links to CV post on watercooler website / forum](<http://www.tvwatercooler.org/viewtopic.php?f=6&t=2327>)
+[Unit List, links to CV post on watercooler website / forum](<https://www.tvwatercooler.org/viewtopic.php?f=6&t=2327>)
 
-[Unit List, explaining what unit list is, and how industry works.](<http://www.theunitlist.com/tag/abouttheunitlist>)
+[Unit List, explaining what unit list is, and how industry works.](<https://www.theunitlist.com/tag/abouttheunitlist>)
 
-[Unit list TV Runner Tip Sheet -pdf](<http://www.theunitlist.com/download-tipsheet-for-tv-runners>)
+[Unit list TV Runner Tip Sheet -pdf](<https://www.theunitlist.com/download-tipsheet-for-tv-runners>)
 
-[Elsa Sharp Book: How to Get a Job in Television: Build Your Career from Runner to Series Producer](<http://www.amazon.co.uk/How-Get-Job-Television-Professional/dp/1408101297/ref=sr_1_1?ie=UTF8&qid=1350068178&sr=8-1>)
+[Elsa Sharp Book: How to Get a Job in Television: Build Your Career from Runner to Series Producer](<https://www.amazon.co.uk/How-Get-Job-Television-Professional/dp/1408101297/ref=sr_1_1?ie=UTF8&qid=1350068178&sr=8-1>)
 
-[Sue’s Book 'An Experts Guide to Getting into TV' by Shu Richmond](<http://bit.ly/Q1m49M>)
+[Sue’s Book 'An Experts Guide to Getting into TV' by Shu Richmond](<https://bit.ly/Q1m49M>)
 
-[Goldsmiths Carrer CV](<http://www.gold.ac.uk/careers/>)
+[Goldsmiths Carrer CV](<https://www.gold.ac.uk/careers/>)
 
-[Eye tracking studies on CV recruiter not a very reliable on](<http://newspaperdesign.ning.com/forum/topics/how-to-redesign-your-resume-for-a-recruiter-s-6-second-attention->)
+[Eye tracking studies on CV recruiter not a very reliable on](<https://newspaperdesign.ning.com/forum/topics/how-to-redesign-your-resume-for-a-recruiter-s-6-second-attention->)
 
 [Turbo Boost Your Career in TV Sep 28, 20121](<https://www.thetalentmanager.co.uk/news/articles/71/turbo-boost-your-career-in-tv?utm_source=The+Talent+Manager&utm_campaign=ba9c960743-July_August_Newsletter_20127_31_2012&utm_medium=email>)
 

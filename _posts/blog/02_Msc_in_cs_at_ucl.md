@@ -161,10 +161,10 @@ Learn to read documentation , it's dry, but find a system that works for you.
 
 Example of evergree, learn HTTP for it's own sake
 book "HTTP: The Definitive Guide"
-http://www.jmarshall.com/easy/http/#whatis 
+https://www.jmarshall.com/easy/http/#whatis 
 
 
-javascript for cats http://jsforcats.com/ 
+javascript for cats https://jsforcats.com/ 
 also in spanish https://jsparagatos.com/
 
 Revolution Os -documentary 

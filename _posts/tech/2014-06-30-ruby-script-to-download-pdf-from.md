@@ -5,11 +5,11 @@ date: '2014-06-29T19:28:00.001+01:00'
 author: Pietro Passarelli
 permalink: /issuu.html
 modified_time: '2014-06-29T19:34:37.387+01:00'
-thumbnail: http://1.bp.blogspot.com/-Bu2Bw7_tHjs/U683ZFxKIfI/AAAAAAAAFdM/e_3_4rqBQSc/s72-c/Screen+Shot+2014-06-28+at+22.25.43.png
+thumbnail: https://1.bp.blogspot.com/-Bu2Bw7_tHjs/U683ZFxKIfI/AAAAAAAAFdM/e_3_4rqBQSc/s72-c/Screen+Shot+2014-06-28+at+22.25.43.png
 blogger_id: tag:blogger.com,1999:blog-3556210610913027832.post-8186486077367353300
-blogger_orig_url: http://ttqf.blogspot.com/2014/06/ruby-script-to-download-pdf-from.html
+blogger_orig_url: https://ttqf.blogspot.com/2014/06/ruby-script-to-download-pdf-from.html
 description: a ruby script to download pdfs from issu.com, when the download option has been disabled.
-image: http://1.bp.blogspot.com/-Bu2Bw7_tHjs/U683ZFxKIfI/AAAAAAAAFdM/e_3_4rqBQSc/s1600/Screen+Shot+2014-06-28+at+22.25.43.png
+image: https://1.bp.blogspot.com/-Bu2Bw7_tHjs/U683ZFxKIfI/AAAAAAAAFdM/e_3_4rqBQSc/s1600/Screen+Shot+2014-06-28+at+22.25.43.png
 github: pietrop/issuu.com-downloader
 tags:
 - ruby
@@ -18,7 +18,7 @@ category:
 ---
 
 
-**Problem**: I wanted to read the [Sheffield DocFest "Decision Makers Guide 2014"](http://issuu.com/swroblewska/docs/j64913_sheff_doc_fest_inner_whole_s) but can't stand having to read of `issu.com`, just wanted a nice downloadable pdf, but the pdf download option that is generally under the share button was disabled.
+**Problem**: I wanted to read the [Sheffield DocFest "Decision Makers Guide 2014"](https://issuu.com/swroblewska/docs/j64913_sheff_doc_fest_inner_whole_s) but can't stand having to read of `issu.com`, just wanted a nice downloadable pdf, but the pdf download option that is generally under the share button was disabled.
 
 
 **Solution**: I decide to see if I could extract the images that make up the flash object of the site and combine them into a pdf.
@@ -29,12 +29,12 @@ First thing first identifying the element id. clicking on white part of the page
 
 
 <div class="image-wrapper">
-    <img src="http://1.bp.blogspot.com/-Bu2Bw7_tHjs/U683ZFxKIfI/AAAAAAAAFdM/e_3_4rqBQSc/s1600/Screen+Shot+2014-06-28+at+22.25.43.png" alt="{{ include.description }}" />
+    <img src="https://1.bp.blogspot.com/-Bu2Bw7_tHjs/U683ZFxKIfI/AAAAAAAAFdM/e_3_4rqBQSc/s1600/Screen+Shot+2014-06-28+at+22.25.43.png" alt="{{ include.description }}" />
 </div>
 
 and under the object `type="application/x-shockwave-flash"` I found the `documentId=140601160255-3a4c0f75ec731801ef369f5000f03104`
 
-Looking on stack overflow I worked out the following URL: `http://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_5.jpg` , where `140601160255-3a4c0f75ec731801ef369f5000f03104` is the id of the article, gives you each page as a jpg file that builds up the online magazine on `issue.com` named with an incremental count.
+Looking on stack overflow I worked out the following URL: `https://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_5.jpg` , where `140601160255-3a4c0f75ec731801ef369f5000f03104` is the id of the article, gives you each page as a jpg file that builds up the online magazine on `issue.com` named with an incremental count.
 
 
 And what follows is the code I wrote in ruby and run from terminal
@@ -54,7 +54,7 @@ require 'prawn'
 for i in 1..104
   print "downloading\tpage n #{i}\n"
 agent = Mechanize.new
-link = "http://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_#{i.to_s}.jpg"
+link = "https://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_#{i.to_s}.jpg"
 agent.get(link).save "page_#{i.to_s}.jpg"
 print "downloaded\tpage n #{i}\n"
 end
@@ -94,7 +94,7 @@ require 'mechanize'
 for i in 1..104
   print "downloading\tpage n #{i}\n"
 agent = Mechanize.new
-link = "http://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_#{i.to_s}.jpg"
+link = "https://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_#{i.to_s}.jpg"
 agent.get(link).save "page_#{i.to_s}.jpg"
 print "downloaded\tpage n #{i}\n"
 end
@@ -126,7 +126,7 @@ agent = Mechanize.new
 and also within the loop assigned the link to a variable link, where i is the number in the loop, and I've added a .to_s method to convert it to string to avoid any problem in the parsing of the URL.
 
 {% highlight ruby %}
-link = "http://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_#{i.to_s}.jpg"
+link = "https://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_#{i.to_s}.jpg"
 {% endhighlight  %}
 
 with these two key elements in place, I went about using the mechanise method get on the link, and then saving it, giving it the page name, using the string interpolation of the loop number for the page name.
@@ -145,7 +145,7 @@ require 'mechanize'
 for i in 1..104
   print "downloading\tpage n #{i}\n"
 agent = Mechanize.new
-link = "http://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_#{i.to_s}.jpg"
+link = "https://image.issuu.com/140601160255-3a4c0f75ec731801ef369f5000f03104/jpg/page_#{i.to_s}.jpg"
 agent.get(link).save "page_#{i.to_s}.jpg"
 print "downloaded\tpage n #{i}\n"
 end
@@ -214,7 +214,7 @@ document_id = gets.chomp
 for i in 1..page_number.to_i
   print "downloading\tpage n #{i}\n"
   agent = Mechanize.new
-  link = "http://image.issuu.com/#{document_id.to_s}/jpg/page_#{i.to_s}.jpg"
+  link = "https://image.issuu.com/#{document_id.to_s}/jpg/page_#{i.to_s}.jpg"
   agent.get(link).save "page_#{i.to_s}.jpg"
   print "downloaded\tpage n #{i}\n"
 end

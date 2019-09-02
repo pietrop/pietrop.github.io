@@ -6,9 +6,9 @@ date: '2016-08-04T01:30:00.000+01:00'
 description: "Make faster, better videos when working with video interviews "
 published: false
 permalink: "/changingVideoProduction.html"
-project_page: http://www.autoedit.io
-demo: http://demo.autoedit.io
-gentle: http://gentle-demo.lowerquality.com <!-- get proper demo link from project page -->
+project_page: https://www.autoedit.io
+demo: https://demo.autoedit.io
+gentle: https://gentle-demo.lowerquality.com <!-- get proper demo link from project page -->
 gif_overview: "/img/changingVideoProduction/3_transcription.gif"
 gif_upload : "/img/changingVideoProduction/1_getting_started.gif"
 gif_export: "/img/changingVideoProduction/4_export.gif"
@@ -36,7 +36,7 @@ The actual app is a Mac Os X app but you can try a browser based d[Interactive d
 ## What just happened?
 
 This is only the first version of the tool. 
-Final version of the tool will will essentially be a [digital paper-editing tool](http://pietropassarelli.com/wip_london_july2016.html). 
+Final version of the tool will will essentially be a [digital paper-editing tool](https://pietropassarelli.com/wip_london_july2016.html). 
 
 <!-- The user uploads a video, the system transcribes it using IBM Watson Speech to Text API. The user can then read in sync with the video preview, make selections and export those selections as a video sequence.
  -->

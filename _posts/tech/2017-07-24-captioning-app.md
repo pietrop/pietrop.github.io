@@ -4,7 +4,7 @@ title: "Captioning app [Working Title]"
 description: "Turbo charge the captioning workflow using automated transcription, punctuation, alignement and segmentation."
 permalink: "/captioning-app.html"
 date: "2017-07-24"
-link: http://pietropassarelli.com/captions-maker
+link: https://pietropassarelli.com/captions-maker
 image: https://pbs.twimg.com/media/DF7ytQ7VoAA1ry2.jpg:large
 github: 
 tech: ['ffmpeg','ffprobe','node','Watson STT','Bootstrap','HTML5','CSS',  'Git', 'Javascript', 'aeneas']
@@ -20,7 +20,7 @@ tags:
 ![captioning app screenshot](https://pbs.twimg.com/media/DF7ytQ7VoAA1ry2.jpg:large)
 
 
-During the [textAV](http://pietropassarelli.com/textAV.html) event with a small team we did the [requirements gathering ](https://pietropassarelli.gitbooks.io/textav/content/unconference-projects/captioning-workflow-system.html) based on [Joseph Polizzotto's presentation](https://pietropassarelli.gitbooks.io/textav/content/remote-presentations/captioning-workflow.html) and [oTranscribe](https://github.com/oTranscribe/oTranscribe).
+During the [textAV](https://pietropassarelli.com/textAV.html) event with a small team we did the [requirements gathering ](https://pietropassarelli.gitbooks.io/textav/content/unconference-projects/captioning-workflow-system.html) based on [Joseph Polizzotto's presentation](https://pietropassarelli.gitbooks.io/textav/content/remote-presentations/captioning-workflow.html) and [oTranscribe](https://github.com/oTranscribe/oTranscribe).
 
 In the following weekend I built an app that considerably speeds up and simplify the captioning workflow. 
 
@@ -32,7 +32,7 @@ In the following weekend I built an app that considerably speeds up and simplify
 
 ## Demo 
 
-See [demo here](http://pietropassarelli.com/captions-maker) for demonstration purposes (click **load** and then **align**). 
+See [demo here](https://pietropassarelli.com/captions-maker) for demonstration purposes (click **load** and then **align**). 
 
 It auto transcribes using speech to text service to give you a first draft, it auto adds the punctuations, you can review and correct, and when you click **align** it segments and auto  aligns(very fast) to create a caption file (srt but could support more format) similar to youtube captioning editor. 
 

@@ -6,7 +6,7 @@ longdescription: "Interviews with the Editor of the BBC3 'Life and Death Row Ser
 duration: "5min 28sec"
 category: video
 image: /img/BBCLDRS/ldrs-editor.png
-link: http://www.bbc.co.uk/academy/production/article/art20141125150003760
+link: https://www.bbc.co.uk/academy/production/article/art20141125150003760
 vimeo: 
 tools: ['FCP7']
 categories: 
