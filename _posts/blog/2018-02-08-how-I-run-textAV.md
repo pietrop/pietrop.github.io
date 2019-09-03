@@ -23,7 +23,7 @@ tags:
 
 Initially I had sketched this out as a session for SRCCON or MozzFest, but thought I’d use this as an excuse to talk about how I have been organising the textAV event to gather, strengthen and grow a community of practitioners around a problem domain. 
 
-I hope this can serve as inspiration to others as an alternative to the "traditional hackathon", and inspire to organise more throught through and effective comunity oriented events.
+I hope this can serve as inspiration to others as an alternative to the "traditional hackathon", and inspire to organise more thought through and effective comunity oriented events.
 
 It mostly uses examples from the first textAV in 2017, rather then the second in 2018.
 
@@ -35,7 +35,7 @@ This was the proposed session description
 >
 >By the end of the session will have 10 takeaways of actionable things you can try out right away. 
 
-The problem domain is that of working with audio, video, transcriptions and captions to speed up the production process. 
+In this case the problem domain is that of working with audio, video, transcriptions and captions to speed up the production process. 
 
 While at Vox as part of the Open-News Knight Mozilla fellowship, I had worked on [autoEdit.io](https://www.autoedit.io/), a text based video editing system that uses automated STT services to enable a [digital paper-editing workflow](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/), and noticed when going to conference that more people than expected were working in similar problem domain, altho sometimes with slightly different use cases.
 
@@ -54,7 +54,7 @@ So the challenge was, could there be a way to facilitate a knowledge share to fo
 
 Best example is the use of [hyperaud.io](https://hyperaud.io/) by [Chris Baume at BBC R&D](https://www.bbc.co.uk/rd/people/c-baume). 
 
- hyperaud.io, to my knowledge, is one of the first prototypes in the space of using transcriptions as a way into the video, creating a so called “hypertranscript” where words are given timecode, and clicking on the words takes you to the corresponding point in the video file. 
+ hyperaud.io, to my knowledge, is one of the first prototypes in the space of using transcriptions as a way into the video, creating a so called [“hypertranscript”](https://hyperaud.io/blog/hypertranscripts/) where words are given timecode, and clicking on the words takes you to the corresponding point in the video file. 
 
 At the time designed with the web in mind, possibly inspired by [Mozilla popcorn maker](https://blog.mozilla.org/blog/2012/11/11/popcorn-maker/) and [ideas about remixing content](https://www.everythingisaremix.info/about/), it took youtube urls and srt captions as an input and had a remixable HTML video player as output that could be embedded in other web pages. 
 [You can try it here](https://hyperaud.io/pad/).
@@ -87,29 +87,29 @@ After user testing, for that use case, turned out that users where not very keen
 Because of the use case focus on radio production, dialoguer also implemented the possibility to export selections as EDLs and audio or video files.
 
 ## Curating an event
-When I worked at the BBC Academy, I learned from an experienced event producer that you can curate your events as if they were programs that are going to be broadcasted. This concept stayed with me.
+When I worked at the BBC Academy, I learned from an experienced event producer that you can curate your events as if they were programs that are going to be broadcasted. This concept stayed with me. 
 
+<!-- In practice this means, researching the subject matter, as well as the speakers. -->
 
 Another thing is the idea of community, having an anthropology background, I was always troubled by the way this word is used. What do we mean by it? Is it just a synonim to say a group of people? 
 Because in anthropological terms a community is a group with a shared set of values, practices, and understanding. 
 <!--  find anthroplogy community definition -->
 
-First and foremost Community == people 
-And people are individuals, what better then follow up with each and everyone individually, to make sure their voice is heard?
+First and foremost Community `===` people, and people are individuals, so what better then follow up with each and everyone individually, to make sure their voice is heard?
 
 Time consuming as it is, it yelds results.
 
 <!-- And as they teach in negotiation 101 classes, you can influence a large group most effectively if you have one on one chats with people involved in the decision making process. -->
 
 ## If your event was a blog post
-Before coming up with the idea for the event, I started with a blog post, [“beyond video as black boxes”](https://pietropassarelli.com/videoBox.html)  where I reviewed and commented on projects that were in this problem domain of working with audio, video, transcriptions and captions.
+Before coming up with the idea for the event, I started with a blog post, [“beyond video as black boxes”](https://pietropassarelli.com/videoBox.html)  where I reviewed and commented on projects that were in this [problem domain](/10-lessons-video-tools.html#map-the-problem-domain) of working with audio, video, transcriptions and captions.
 
 The post was reviewing projects, but was also trying to cluster them into categories and paint a way forward for what else could be possible in this domain.
 
 So this was then a great excuse to send it around to other folks and ask their thoughts on it. As a first step in engaging people with this community.
 
 ## The Event format
-textAV is articulated into two parts, first a Knowledge share and then a hands on unconference to explore problem domain topics.
+textAV is articulated into two parts, first a Knowledge share and then a hands on unconference to explore problem domain topics. 
 
 For the knowledge share, participants present interesting and relevant projects they have been working on.
 
