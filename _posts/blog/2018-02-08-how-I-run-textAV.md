@@ -160,14 +160,14 @@ Looking at the trello board, it then becomes easier to figure out the schedule.
 
 I’ve try to keep the knowledge share presentation short, and do 5 min, 10, 15 and 20 min slots. And use the presentations more as an excuse spark to conversations and get participants to get to know one another rather then a comprehensive overview of projects.
 
-[See example from 2017](https://sites.google.com/view/textav/schedule)
+[See example from 2017](https://sites.google.com/view/textav/textav17-nyc/schedule-17-nyc)
 
 ##  Code of conduct
 Why do you need a code of conduct?
 
 It sets the tone. And the expectations what is appropriate behaviour within your community and on the day of the event.  As well as establish a line of communication should there be a need for anyone to raise concerns. 
 
-[See textAV code of conduct here](https://sites.google.com/view/textav/code-of-conduct)
+[See textAV code of conduct here](https://sites.google.com/view/textav/textav17-nyc/code-of-conduct-17)
 
 To write textAV code of conduct I was largely inspired by others, it’s easier to write one if you are modifying an existing one rather then starting from scratch.
 
