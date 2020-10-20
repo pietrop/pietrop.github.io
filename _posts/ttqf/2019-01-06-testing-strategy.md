@@ -305,5 +305,5 @@ There is also a [browserstack screenshots API](https://www.browserstack.com/scre
 ####  **Unsorted**
 
 - [10 years of Doing Behaviour-Driven Development All Wrong (part 1) by Liz Keogh - (41 min)](https://youtu.be/2EM4itu7j7I)
-
+- [Write tests. Not too many. Mostly integration.](https://kentcdodds.com/blog/write-tests)
 
