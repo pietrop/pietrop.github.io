@@ -62,7 +62,7 @@ owner:
   about:          ubiq/pietro.jpeg
   videocolor:     theme-base-0f
 
-categories: [video, tech, photos, articles]
+categories: [video, tech, articles]
 
 
 # https://github.com/mdo/hyde
