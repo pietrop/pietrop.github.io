@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "quickQuote - Times & Sunday Times"
-description: "A tool for journalists to easily find and add video quotes to news articles"
+title: 'quickQuote - Times & Sunday Times'
+description: 'A tool for journalists to easily find and add video quotes to news articles'
 duration:
-permalink: "/quickQuote.html"
+permalink: '/quickQuote.html'
 date: '2015-07-21'
 image: /img/TimesAndSundayTimesQuickQuote/home.png
 img_hypertranscript: /img/TimesAndSundayTimesQuickQuote/hypertranscript.png
@@ -20,17 +20,15 @@ img_periodismo: /img/TimesAndSundayTimesQuickQuote/ClasesdePeriodismo_quickQuote
 img_journalism_co_uk: /img/TimesAndSundayTimesQuickQuote/journalism_co_uk_quickQuote.png
 img_NiemanLab: /img/TimesAndSundayTimesQuickQuote/NiemanLab-quickQuote.png
 
-
 vimeo:
 youtube: 7apk4Hx7g3s
 link: https://times.github.io/quickQuote
 github: times/quickQuote
-tech: ['Video JS','JQuery','Ruby','Rails','Spoken Data API',  'Bootstrap','HTML5','CSS',  'Git', 'Javascript']
+tech: ['Video JS', 'JQuery', 'Ruby', 'Rails', 'Spoken Data API', 'Bootstrap', 'HTML5', 'CSS', 'Git', 'Javascript']
 categories:
-- tech
+  - tech
 tags:
 ---
-
 
 This project was done while working as newsroom developer at the [Times & Sunday Times](https://twitter.com/TimesDevelops) as part of a summer placement for the final project of the UCL Msc in Computer Science.
 
@@ -39,8 +37,6 @@ This project was done while working as newsroom developer at the [Times & Sunday
     <img src="{{ page.image }}" alt="photo" />
   </a>
 </div>
-
-
 
 On The [Times Digital blog](https://medium.com/digital-times/it-s-time-to-rethink-how-we-do-x-in-quotes-pieces-on-the-web-1328f1ccf039) I wrote about the thinking behind the project.
 
@@ -57,8 +53,7 @@ Here's a screencast of a demo of an alternative "interactive video quote" a jour
 ## An interactive example
 
 And here is the quote you see in the video above embedded in this page.
-Followed by the  HTML, CSS and JS code.
-
+Followed by the HTML, CSS and JS code.
 
 <div class='video-quote' id='videoQuoteText-id-n'>
   <span class='glyphicon glyphicon-play-circle'></span>
@@ -69,7 +64,7 @@ Followed by the  HTML, CSS and JS code.
   </blockquote></div>
   <div  id='video-wrap-n' class='video-wrap video-wrap--closed'>
     <video class=' video-js vjs-default-skin' id='video-quote' controls preload='auto' width='100%' height='auto' poster='' data-setup='{}'>
-      <source src='https://times.github.io/quickQuote/media/snippet_54.mp4' id='snippetURLVideo' type='video/mp4' />
+      <source src='http://pietropassarelli.com/quickQuote/media/snippet_54.mp4' id='snippetURLVideo' type='video/mp4' />
     </video>
 </div>
 <style>
@@ -107,6 +102,7 @@ Followed by the  HTML, CSS and JS code.
      .video-wrap--closed {
          height: 0;
      }
+
 </style>
 <script>
 /*script for dropdown on video*/
@@ -129,13 +125,13 @@ Followed by the  HTML, CSS and JS code.
 
 See this demo [before](https://times.github.io/quickQuote/demo/static_quotes.html) and [after](https://times.github.io/quickQuote/demo/interactive_quotes.html) for an example of how it could change the way users experience quotes in an article.
 
-
 ## The embed code for a video quote
 
 <br>
 HTML
 
 {% highlight html  %}
+
 <div class='video-quote' id='videoQuoteText-id-n'>
   <span class='glyphicon glyphicon-play-circle'></span>
   <blockquote>
@@ -195,18 +191,18 @@ JS
 
 {% highlight js %}
 
-  document.getElementById('videoQuoteText-id-n').onclick = function() {
-      if (document.getElementById('video-wrap-n').classList.contains('video-wrap--closed')) {
-          document.getElementById('video-wrap-n').classList.remove('video-wrap--closed');
-         document.getElementById('video-quote').play();
-      } else {
-          document.getElementById('video-wrap-n').classList.add('video-wrap--closed');
-            document.getElementById('video-quote').pause();
-      }
-  };
+document.getElementById('videoQuoteText-id-n').onclick = function() {
+if (document.getElementById('video-wrap-n').classList.contains('video-wrap--closed')) {
+document.getElementById('video-wrap-n').classList.remove('video-wrap--closed');
+document.getElementById('video-quote').play();
+} else {
+document.getElementById('video-wrap-n').classList.add('video-wrap--closed');
+document.getElementById('video-quote').pause();
+}
+};
 {% endhighlight %}
-<hr>
 
+<hr>
 
 In the following video you can see how a user can, once a video as been uploaded an processed by the speech to text API, search through the text, select a quote, edit it, preview and export it.
 
@@ -219,12 +215,11 @@ In the following video you can see how a user can, once a video as been uploaded
 
 The code for an interactive video quote is not particularly complex.
 
-But what is interesting in the quickQuote project is how we programmatically generate this embed code once a journalist has made a quote selection.       
-
+But what is interesting in the quickQuote project is how we programmatically generate this embed code once a journalist has made a quote selection.
 
 For more details on this check out the [project page]({{page.link}}), [the github repository](https://github.com/times/quickQuote), [user manual](https://times.github.io/quickQuote/userManual.html) and [documentation](https://www.rubydoc.info/github/times/quickQuote/master).
 
-Or checkout the [the report I wrote for  UCL](https://leanpub.com/quickquote), which details investigation into the problem domain, similar open source projects, as well as application design and architecture.
+Or checkout the [the report I wrote for UCL](https://leanpub.com/quickquote), which details investigation into the problem domain, similar open source projects, as well as application design and architecture.
 
 ## The main features in Screenshots
 
@@ -235,7 +230,6 @@ Two way sync between video and corresponding transcription
 		<img src="{{ page.img_hypertranscript }}" alt="photo" />
 	</a>
 </div>
-
 
 Search transcription for keywords
 
@@ -253,7 +247,6 @@ Select text grabs in and out point of corresponding video
 	</a>
 </div>
 
-
 Edit automatically generated transcription from speech to text API _if it's not 100% accurate_
 
 <div class="image-wrapper">
@@ -270,7 +263,6 @@ See a preview of the video quote
 	</a>
 </div>
 
-
 With dropdown
 
 <div class="image-wrapper">
@@ -278,8 +270,6 @@ With dropdown
 		<img src="{{ page.img_preview_dropdown }}" alt="photo" />
 	</a>
 </div>
-
-
 
 Export HTML, CSS, JS code to embed in news article.
 
@@ -297,13 +287,11 @@ And here is [a preview of the embed code using JS Fiddle](https://jsfiddle.net/p
 	</a>
 </div>
 
-
 <div class="image-wrapper">
 	<a href="{{ page.img_export_dropdown }}" data-lightbox="aName" title="aName">
 		<img src="{{ page.img_export_dropdown }}" alt="photo" />
 	</a>
 </div>
-
 
 # On Social Media
 
@@ -313,12 +301,10 @@ And here is [a preview of the embed code using JS Fiddle](https://jsfiddle.net/p
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">A new tool from The Times of London lets you easily detect and capture quotes from a video <a href="https://t.co/r6pGJzKycx">https://t.co/r6pGJzKycx</a></p>&mdash; Nieman Lab (@NiemanLab) <a href="https://twitter.com/NiemanLab/status/643132545593311232">September 13, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-
-
 <hr>
 
 # Press Mentions
+
 <div class="image-wrapper">
     <img src="{{ page.img_NiemanLab }}" alt="{{ page.img_NiemanLab }}" />
 </div>
