@@ -2,7 +2,7 @@
 layout: post
 title:  "Sublime text 2 setup for Node/javascript"
 date:   2015-05-17 14:15:00
-permalink: "/regex.html"
+permalink: "/sublime-text.html"
 description:  "How to best setup sublime text to work with Node/Javascript"
 youtube: 
 published: true
