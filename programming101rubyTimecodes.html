@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+     &middot; Pietro
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png">
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" />
+
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png">
+
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png">
+
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32">
+
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png">
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- font awesome CDN -->
+  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
+  <style>   
+
+ /* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body{
+      background-color: black;
+      color: #B2BEB5;
+    }
+
+      img {
+      filter: grayscale(30%);
+    }
+
+    body >h2 h3 h4 h5 h6 {
+      color: white;
+    }
+    body >h1 {
+      color: white;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+      /* transition: background-color 300ms ease-in-out 0s; */
+    } 
+}
+  </style>
+
+</head>
+
+<body class="">
+  <!-- class="theme-base-08" -->
+
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+ styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!--  checked -->
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
+
+    
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    <a class="sidebar-nav-item" href="/"><i
+        class="fa fa-user" aria-hidden="true"></i> About</a>
+
+    <a class="sidebar-nav-item" disabled="true">
+
+      <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>Photos
+      </a>
+
+      
+      <a class="sidebar-nav-item" href="/categories/video">
+        
+        <i class="fa fa-film" aria-hidden="true"></i> Video
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/tech">
+        
+        <i class="fa fa-laptop" aria-hidden="true"></i> Tech
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/ttqf">
+        
+        <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/blog">
+        
+        <i class="fa fa-pencil" aria-hidden="true"></i> Blog
+        
+      </a>
+      
+
+      <a class="sidebar-nav-item" disabled="true">
+
+      </a>
+      <a class="icon-envelope  sidebar-nav-item"
+        href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+        class="author-social" target="_blank" rel="noopener noreferrer"><i class="icon-mail"></i><i
+          class="fa fa-envelope-o" aria-hidden="true"></i>
+        E-mail</a> <span></span>
+
+
+      <a class="icon-twitter  sidebar-nav-item "
+        href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> <i
+          class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+
+      <a class="icon-github sidebar-nav-item "
+        href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+
+      <a class="icon-linkedin sidebar-nav-item "
+        href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+
+
+
+
+
+</div>
+
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+    content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Pietro</a>
+          <small>Passarelli </small>
+        </h3>
+      </div>
+    </div>
+
+    <div class="container content">
+      
+<div class="post">
+	<h1 class="post-title">Programming 101 with Ruby </h1>
+	<span class="post-date">2016-07-21T01:30:00.000+01:00
+
+		
+	</span>
+
+	
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	
+
+	
+
+	
+
+	<br>
+
+
+	<!-- Stack -->
+	
+	<br>
+
+	
+	<div class="image-wrapper">
+		<img src="null" alt="The basics of programming with ruby while making a timecodes converter" />
+	</div>
+	
+	
+	
+	The basics of programming with ruby while making a timecodes converter
+	
+	<hr>
+
+
+	<!-- # Programming 101 with Ruby -->
+<p>While at a conference a film-maker friend asked me to teach him to code, and we only had about 20min. What follows is a practical an overview of programming inspired by that first attempt.</p>
+<p>We will make a simple script to work with timecodes, and convert from <code>hh:mm:ss:ms</code> format to seconds. as an excuse to learn some key programming concepts, ideas and the thinking behind a certain kind of problem solving used by developers. We'll use the ruby programming language. But we are trying to stay at a higher level and not get to boged down by the syntax.</p>
+<h2>What you need</h2>
+<p>First thing first let’s get you setup.</p>
+<h3>Terminal</h3>
+<p>The terminal is a text interface that allows you to navigate and send commands to your computer.</p>
+<p>Developers use it because typing is faster then moving the mouse a round.</p>
+<p>Open the terminal
+&lt;!—- Navigate to application folder
+click on</p>
+<p>Or just make giff
+-—&gt;</p>
+<p>if you are old enough to remember back in the days when DOS was popular is the same kind of idea.</p>
+<p><img src="" alt="DOS Screenshot"></p>
+<h3>Sublime Text</h3>
+<p>You can use any text editor, but sublime text is a solid choice to get started.
+Download it and install it from here.</p>
+<p>open your terminal.</p>
+<h3>some CLI commands</h3>
+<p>Some commands to familiarise yourself with</p>
+<p><code>pwd</code> prints the path to the current working directory.
+&lt;!—- giff / screenshot-—&gt;</p>
+<p><code>cd #{some folder}</code> changes the current directory</p>
+<p>&lt;!—- giff / screenshot -—&gt;</p>
+<p><code>mkdir</code> create a directory</p>
+<p><code>ls -l</code> lists files and folders in directory.</p>
+<p><code> touch fileName.rb</code> creates a file.</p>
+<p><code>rm fileName.rb</code> remove file name</p>
+<p><code>rm -rf</code> removes everything..thread lightly</p>
+<h2>The script file</h2>
+<p>ok now</p>
+<p><code> touch timecode.rb</code></p>
+<p>open the fils in sublime text.</p>
+<h3>running the script</h3>
+<p>inside <code>timecode.rb</code> write</p>
+<pre><code>print &quot;Welcome to the timecodes converter&quot;
+</code></pre>
+<p>in terminal cd to that folder</p>
+<p>&lt;!—- giff / screenshot CDing to folder on desktop -—&gt;</p>
+<p>run the script</p>
+<p><code>ruby timecode.rb</code></p>
+<h3>command line arguments and string interpolation</h3>
+<pre><code>print &quot;Welcome to the timecodes converter&quot;
+timecode = gets.chomp
+print &quot;This is the timecode you put #{timecode}.&quot; 
+</code></pre>
+<p><code>timecode = gets.chomp</code> where timecode is a variable. and <code>gets</code> is a command to get user input from terminal promt.
+if we used it without <code>chomp</code> we’d get the whole line, with the carriage return.
+Carriage return is a symbol that signifies the line has ended. <code>\n</code></p>
+<p>For example if with type <code>00:30:40:05</code> we’d get  <code>00:30:40:05\n</code> with the carriage return/line break. but if we use <code>.chomp</code> it gets rid of it for us.</p>
+<p><code>print</code> we already seen, prints message to console.</p>
+<p>this <code>&quot;</code> denotes a string and <code>#{}</code> is string interpolation. Meaning we can put a variable into a string and make it become a part of it.  such as <code>#{timecode}&quot; </code></p>
+<p>Alright, now save and from terminal run</p>
+<p><code>ruby timecode.rb 00:04:05:06</code></p>
+<p>you should get as a result</p>
+<pre><code>This is the timecode you put 00:04:05:06.
+</code></pre>
+<p>Ok, so now we can get an input and return some &quot;output&quot; to the screen/terminal. Meaning we can manipulate informations. Altho in a simple way.</p>
+<h3>Comments and variable names</h3>
+<p>you can add comments in your code to make it more readable. using the <code>#</code> at the beginning of the line.
+making note for yourself and others to help with legibility and clarify things.</p>
+<p>Also try to give good descriptive variable names. better a long name that does what it says on the tin then a short one that could be anything.</p>
+<p>eg a programs that use the variable name <code>x</code> through out is not very self explanatoty</p>
+<h3>A tiny bit about types</h3>
+<p>There’s a lot that could be said about types, but we’d keep it to the point and brief for the porpouse of this, think of it as a first pass to get started with a working basis so that you can then look more into.</p>
+<ul>
+<li>strings <code>&quot;&quot;</code></li>
+<li>integer eg <code>12</code></li>
+</ul>
+<p>is technically a string <code>&quot;12&quot;</code>. What does that mean?
+<code>&quot;12&quot;+1</code> gives you an error
+and <code>&quot;12&quot;*1</code>  gives you <code>&quot;12121212121212121212&quot;</code></p>
+<p>You can convert between string and integer with
+<code>.to_i</code> such as <code>&quot;12&quot;.to_i</code> which gives you <code>12</code></p>
+<p>similarly you can also convert integer to string with the <code>.to_s</code> method.
+eg  <code>12.to_s</code> which gives you <code>&quot;12&quot;</code>.</p>
+<h3>Arrays</h3>
+<p>We’ve seen variables in action, let’s take a side step and introduce Arrays. as a way to store informations.</p>
+<pre><code>fruits = [&quot;banas&quot;, &quot;apples&quot;, &quot;organges&quot;]
+</code></pre>
+<p>is an array that contains fruit. In CS you start counting from Zero.</p>
+<p>if I want to get the apples I’d have to go  <code>fruits[1]</code> and that would return <code>apples</code> where <code>1</code> is called an index.</p>
+<p>if I want to add something to the array I can do it like so</p>
+<pre><code>fruits.push(&quot;mango&quot;)
+</code></pre>
+<p>the <code>fruits</code> array will now look like so <code>[&quot;banas&quot;, &quot;apples&quot;, &quot;organges&quot;,&quot;mango&quot;]</code></p>
+<p>Stop for a sec, re-read from <code>Arrays</code> and think about this how would you get the mango value?</p>
+<p>Turning strings into arrays.</p>
+<p>if you had a string containing<code>&quot;banas apples rganges mango&quot;</code> and you wanted to turn this into an array.
+There’s an handy method called <code>.split()</code> that can divide it, allowing you to specify where to make the split.</p>
+<pre><code>&quot;banas apples rganges mango&quot;.split(&quot; &quot;)
+</code></pre>
+<p>in this case because there is a blank space between them we’d split on the space <code>.split(&quot; &quot;)</code> if they were comma separate we could split .split(&quot;,&quot;) on that.</p>
+<pre><code>&quot;banas,apples,rganges,mango&quot;.split(&quot; &quot;)
+</code></pre>
+<p>They  would both return  <code>[&quot;banas&quot;, &quot;apples&quot;, &quot;organges&quot;,&quot;mango&quot;]</code></p>
+<p>There’s also a <code>.join(&quot;&quot;)</code> that converts an array into a string,and you can specify how to separate the values.</p>
+<p>With me so far?</p>
+<p>Ok back to our problem</p>
+<h3>Converting timecode to seconds.</h3>
+<h4>Identifying a possible solution in pseudocode</h4>
+<p>How can we convert timecoes in such format <code>hh:mm:ss:ms</code> to seconds?
+It often helps to think about the solution, the list of commands, the algorithm without thinking about the specific implementation of the language. At a high level. How would you solve this proble. often thinking about the mental steps you’d do, to do it &quot;manually&quot;.
+Writing this down is referred to pseudo code.</p>
+<p>If we could isolate the hours, minutes, seconds and milliseconds into their own variables we could convert them to seconds individually and then adding it all up would give us the converted value.</p>
+<p>To turn this into code we have to break it down even further.</p>
+<ol>
+<li>Isolate the hours, minutes, seconds and milliseconds.</li>
+<li>take the hours and multiple that by 60*60.</li>
+<li>take the minute and multiple that  by 60</li>
+<li>convert the ms
+&lt;!—- wrong, see how to convert ms -—&gt;</li>
+<li>add them all up together</li>
+<li>print out the result</li>
+</ol>
+<p>Now that we have an hypothesis for our script we can go about figuring out the specific of the syntax.</p>
+<p>So far our program looks like this in the <code>timecode.rb</code> file</p>
+<pre><code>print &quot;Welcome to the timecodes converter&quot;
+timecode = gets.chomp
+print &quot;This is the timecode you put #{timecode}.&quot; 
+</code></pre>
+<h4>1.  Isolate the hours, minutes, seconds and milliseconds.</h4>
+<pre><code>timecode_array = timecode.split(&quot;:&quot;)
+</code></pre>
+<p>timecode_array is now equal to</p>
+<p>[&quot;00&quot;,&quot;30&quot;,&quot;40&quot;,&quot;05&quot;]</p>
+<p>how can we assign the hours to a variable hours?</p>
+<pre><code>hours = timecode_array[0]
+</code></pre>
+<p>What about for minutes? seconds and milliseconds?</p>
+<p>solution</p>
+<pre><code>hours = timecode_array[0].to_i
+minutes = timecode_array[1].to_i
+seconds = timecode_array[2].to_i
+ms = timecode_array[3].to_i
+</code></pre>
+<p><code>.to_i</code> because when we split we obtain a string, and we want to work with that variable as an integer to be able to convert it.</p>
+<h4>2. take the hours and multiple that by 60*60.</h4>
+<p>To convert the hours to seconds.</p>
+<p>There’s 60 seconds in one minute. and 60 minute in one hour. So there’s also 60*60 seconds in one hour =  3,600</p>
+<pre><code>hours_in_seconds = hours * 60 *60 
+</code></pre>
+<p>How would you convert that to minutes?</p>
+<ol start="3">
+<li>take the minute and multiple that  by 60</li>
+</ol>
+<pre><code>minutes_in_seconds = minutes  *60 
+</code></pre>
+<p>seconds does not need converting</p>
+<ol start="4">
+<li>convert the ms
+&lt;!—- ms needs looking into it</li>
+</ol>
+<p>ms_in_seconds =
+—&gt;</p>
+<ol start="5">
+<li>add them all up together</li>
+</ol>
+<pre class="language-ruby"><code class="language-ruby">result <span class="token operator">=</span> hours_in_seconds  <span class="token operator">+</span> minutes_in_seconds<span class="token operator">+</span>seconds <span class="token operator">+</span> ms_in_seconds </code></pre>
+<ol start="6">
+<li>print out the result</li>
+</ol>
+<p>Remember about string interpolation?</p>
+<pre><code>print &quot;your timecode in seconds is #{result}&quot;
+</code></pre>
+<h3>Methods. Working with reusable code.</h3>
+<pre><code># a method that takes in a timecode in this format `hh:mm:ss:ms` and returns the value converted in seconds 
+
+def convert_to_second(timecode)
+
+	# split 
+	timecode_array = timecode.split(&quot;:&quot;)
+	hours = timecode_array[0].to_i
+	minutes = timecode_array[1].to_i
+	seconds = timecode_array[2].to_i
+	ms = timecode_array[3].to_i
+
+	# convert each 
+	hours_in_seconds = hours * 60 *60 
+	minutes_in_seconds = minutes  *60 	
+	&lt;!—- ms_in_seconds = —&gt;
+
+	# add up the conversion
+	result = hours_in_seconds  + minutes_in_seconds+ seconds + ms_in_seconds 
+	
+	#return the result
+	return result	
+
+end
+</code></pre>
+<p>which you can then use like so</p>
+<!-- change code above usind method  -->
+<pre><code>var seconds = convert_to_second(&quot;00:40:50:06&quot;)
+print seconds 
+</code></pre>
+<h2>Recap</h2>
+<p>we looked at</p>
+<ul>
+<li>
+<p>Psuedocode</p>
+</li>
+<li>
+<p>Ruby</p>
+</li>
+<li>
+<p>Types</p>
+<ul>
+<li>string</li>
+<li>integer</li>
+<li>converting between the two</li>
+</ul>
+</li>
+<li>
+<p>Arrays</p>
+<ul>
+<li>index</li>
+<li><code>push()</code> elements into array</li>
+<li><code>split()</code> dividing string into array.</li>
+<li><code>.join()</code></li>
+</ul>
+</li>
+<li>
+<p>Turning psuedocde into code</p>
+</li>
+<li>
+<p>Methods to keep code organised</p>
+</li>
+</ul>
+<h2>Sources and resources</h2>
+<ul>
+<li>Terminal CLI the hard way</li>
+<li>Linux / Unix intro CLI (from UCL)</li>
+</ul>
+
+</div>
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script>
+    (function (document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+
+      document.addEventListener('click', function (e) {
+        var target = e.target;
+
+        if (!checkbox.checked ||
+          sidebar.contains(target) ||
+          (target === checkbox || target === toggle)) return;
+
+        checkbox.checked = false;
+      }, false);
+    })(document);
+  </script>
+
+  
+
+
+  <script>
+
+    // const bodyEl = document.body;
+    // const toggleEl = document.querySelector('#color-scheme-toggle');
+    // const prismEl = document.querySelector('#prism-css');
+    // const DARK = 'dark';
+    // const LIGHT = 'light';
+    // const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    // const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    // const COLOR_SCHEME_CHANGED = 'colorSchemeChanged';
+
+    // toggleEl.addEventListener('click', () => {
+    //   console.log('toggle')
+    //   const isDark = bodyEl.classList.toggle('dark-mode');
+    //   const mode = isDark ? DARK : LIGHT;
+    //   sessionStorage.setItem('jec.color-scheme', mode);
+
+    //   if (isDark) {
+    //     if (prismEl) prismEl.href = PRISM_DARK_URL;
+    //   } else {
+    //     if (prismEl) prismEl.href = PRISM_LIGHT_URL;
+    //   }
+
+    //   toggleEl.dispatchEvent(new CustomEvent(
+    //     COLOR_SCHEME_CHANGED, { detail: mode }
+    //   ));
+    // });
+    // // 
+
+    // function init() {
+    //   console.log('init')
+    //   const DARK = 'dark';
+    //   const LIGHT = 'light';
+    //   const isSystemDarkMode = matchMedia &&
+    //     matchMedia('(prefers-color-scheme: dark)').matches;
+
+    //    console.log('isSystemDarkMode',isSystemDarkMode)
+    //   // let mode = sessionStorage.getItem('jec.color-scheme');
+    //   // console.log('mode',mode)
+    //   if (!mode && isSystemDarkMode) {
+    //     mode = DARK;
+    //   } else {
+    //     mode = mode || LIGHT;
+    //   }
+
+    //   if (mode === DARK) {
+    //     document.querySelector('#color-scheme-toggle').click();
+    //   }
+
+    //   // Event listener to change with system change
+    //   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    //     const changedColourScheme = e.matches ? DARK: LIGHT;
+    //       if (changedColourScheme === DARK) {
+    //         const isDark = bodyEl.classList.add('dark-mode');
+    //         prismEl.href = PRISM_DARK_URL;
+    //       } else {
+    //         const isDark = bodyEl.classList.remove('dark-mode');
+    //         prismEl.href = PRISM_LIGHT_URL;
+    //       }
+    //   });
+    // }
+
+    // // run the code   
+    // init();
+    // console.log('yo')
+  </script>
+</body>
+
+</html>

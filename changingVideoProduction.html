@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+     &middot; Pietro
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png">
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" />
+
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png">
+
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png">
+
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32">
+
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png">
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- font awesome CDN -->
+  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
+  <style>   
+
+ /* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body{
+      background-color: black;
+      color: #B2BEB5;
+    }
+
+      img {
+      filter: grayscale(30%);
+    }
+
+    body >h2 h3 h4 h5 h6 {
+      color: white;
+    }
+    body >h1 {
+      color: white;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+      /* transition: background-color 300ms ease-in-out 0s; */
+    } 
+}
+  </style>
+
+</head>
+
+<body class="">
+  <!-- class="theme-base-08" -->
+
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+ styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!--  checked -->
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
+
+    
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    <a class="sidebar-nav-item" href="/"><i
+        class="fa fa-user" aria-hidden="true"></i> About</a>
+
+    <a class="sidebar-nav-item" disabled="true">
+
+      <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>Photos
+      </a>
+
+      
+      <a class="sidebar-nav-item" href="/categories/video">
+        
+        <i class="fa fa-film" aria-hidden="true"></i> Video
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/tech">
+        
+        <i class="fa fa-laptop" aria-hidden="true"></i> Tech
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/ttqf">
+        
+        <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/blog">
+        
+        <i class="fa fa-pencil" aria-hidden="true"></i> Blog
+        
+      </a>
+      
+
+      <a class="sidebar-nav-item" disabled="true">
+
+      </a>
+      <a class="icon-envelope  sidebar-nav-item"
+        href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+        class="author-social" target="_blank" rel="noopener noreferrer"><i class="icon-mail"></i><i
+          class="fa fa-envelope-o" aria-hidden="true"></i>
+        E-mail</a> <span></span>
+
+
+      <a class="icon-twitter  sidebar-nav-item "
+        href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> <i
+          class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+
+      <a class="icon-github sidebar-nav-item "
+        href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+
+      <a class="icon-linkedin sidebar-nav-item "
+        href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+
+
+
+
+
+</div>
+
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+    content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Pietro</a>
+          <small>Passarelli </small>
+        </h3>
+      </div>
+    </div>
+
+    <div class="container content">
+      
+<div class="post">
+	<h1 class="post-title">This is going to change the way we produce video  </h1>
+	<span class="post-date">2016-08-04T01:30:00.000+01:00
+
+		
+	</span>
+
+	
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	
+
+	
+
+	
+
+	<br>
+
+
+	<!-- Stack -->
+	
+	<br>
+
+	
+	<div class="image-wrapper">
+		<img src="null" alt="Make faster, better videos when working with video interviews " />
+	</div>
+	
+	
+	
+	Make faster, better videos when working with video interviews 
+	
+	<hr>
+
+
+	<h1>This is going to change the way we produce video  - Draft</h1>
+<p><img src="" alt="giff of interactive transcript"></p>
+<p><img src="" alt="Watch the demo"></p>
+<p><img src="" alt="giff of interactive transcript"></p>
+<p><img src="" alt="giff of interactive transcript"></p>
+<p>The actual app is a Mac Os X app but you can try a browser based d<a href="">Interactive demo here</a> or <a href="">get the latest release from the project pagr</a>.</p>
+<h2>What just happened?</h2>
+<p>This is only the first version of the tool.
+Final version of the tool will will essentially be a <a href="https://pietropassarelli.com/wip_london_july2016.html">digital paper-editing tool</a>.</p>
+<!-- The user uploads a video, the system transcribes it using IBM Watson Speech to Text API. The user can then read in sync with the video preview, make selections and export those selections as a video sequence.
+ -->
+<p>In this version you can give it a video, receive a transcription, explore the text with video preview, make text selection, and export that into a video sequence in the editing software of choice ( eg premiere, final cut pro 7, avid and any other professional editing software that supports EDL import).</p>
+<p>In future iterations the user will also be able to annotate and categorise the selections, search filter the transcriptions by tags and speakers to group and narrow down results.</p>
+<p>Once the user is done analysing the transcription they can create a story scrpt (paper-edit) from text selections from multiple transcriptions. They can preview the corresponding video preview, and export it to adobe premiere, or any other video editing software that supports EDL (adiv, final cut pro 7 etc..).</p>
+<h4>What is an EDL?</h4>
+<p><code>Edl</code> stands for edit decision list, it’s a data interchange format, similar to <code>xml</code>, but human readable. It consists of a list of instructions that describe your video sequence, and is used by the editing software to reconnect the media.</p>
+<p>Here is an example</p>
+<pre><code>TITLE: Jesselyn Radack
+FCM: NON-DROP FRAME
+
+001   time  AA/V  C  00:03:11:11 00:03:22:24 00:00:00:00 00:00:11:13
+* FROM CLIP NAME: JR cam B transcription.mp4
+FINAL CUT PRO REEL: time REPLACED BY: time
+
+002   time  AA/V  C  00:04:40:24 00:04:46:23 00:00:11:13 00:00:17:11
+* FROM CLIP NAME: JR cam B transcription.mp4
+FINAL CUT PRO REEL: time REPLACED BY: time
+</code></pre>
+<!-- See this tutorial for more info on the EDL format -->
+<h2>Roadmap and future releases</h2>
+<h3>Milestone 1 - STT</h3>
+<p>Transcriber app with screenshot, made to test quality of speech to text with journalists and video producers.</p>
+<!--
+
+![Transcriber without timecodes]()
+
+Video producer's feedback on adding timecode to output for them to be usable. Made change in [second release]()
+
+![Transcriber with timecodes]()
+
+This was a throaway project with the sole purpuse of learning whether the STT API met the acceptability treshold. 
+
+So there's currently a few bugs such as a file size limit at 100mb. 
+-->
+<h3>Milestone 2 - One transcription</h3>
+<h4>Release 1 Interactive transcript</h4>
+<p>User can upload a video and is returned an interactive transcrioption. Video and text are in sync. When clicking on text video jumps to corresponding part. and when video is playing text changes color.</p>
+<p>This also features a basic word search feature.</p>
+<p>Completed in current release of autoEdit2.</p>
+<h4>Release 2 - Highlights + EDL export</h4>
+<p>User can hilights parts of the text of a transcription, export that as an EDL. Use the EDL to create video sequence in premiere.</p>
+<p>Completed in current release of autoEdit2.</p>
+<h4>Release 3 - Annotations (highlights with tags and comments)</h4>
+<p>User hilights are saved as annotation. These can be categorised with different colors and names, description and individual comments.</p>
+<h4>Release 4 - User can search text, highlights/annotations and filter (also by speaker)</h4>
+<p>User can search the text of a transcription filtering the results by hilights/annotations tags or speaker names.</p>
+<h4>Release 5 - User can add speaker names to transcription manually</h4>
+<p>User can add speaker names to transcription manually</p>
+<h3>Milestone 3 - Paper-editing</h3>
+<h4>Release 6 - Adding projects to group transcript</h4>
+<p>User can now create a proeject to keep transcriptions organised</p>
+<h4>Release 7 - Adding paper-edit to projects + paperedit view</h4>
+<p>(no paper-edit video preview and no outline but EDL export)</p>
+<p>A user can creat a paper-edit inside a proejct.
+This allows to drag text from transcriptions into a new &quot;paperedit&quot; section. These selections can be re-ordered, and exported as EDL.</p>
+<h4>Release 8 - paper-edit outline</h4>
+<!-- (? or if easier, done in previous release) -->
+<p>Same as above but the selections can be organised in an outline that provides headings for the various sections.</p>
+<h4>Release 9 - Adding paper-edit view preview</h4>
+<p>Same as above but the user can also watch a preview of the selections / paper-edit before exporign.</p>
+<hr>
+<h2>The stack</h2>
+<p>it uses Backbone for the front end, sailsjs for the backend, and NWJS for packaging it as a desktop application for os x.
+IBM Speech to text API is used for the transcriptions.</p>
+<p>In the future there's also plans to add support for the <a href="">gentle open source STT API</a> to make a out of the box  working version that does not require setup, and can work offline</p>
+<h3>Components</h3>
+<p>There are also a number of components that I am going to release separately once they are stable enough. As these can be usefull when working in similar problem domains.</p>
+<ul>
+<li>webm converter</li>
+<li>ogg converter</li>
+<li>video to audio wav (with audio specs for IBM Watson)</li>
+<li>IBM Watson stt to transcription json
+(working torwards  spec for transcription json would be good)</li>
+<li>metadata reader (uses ffprobe and node ffmpeg-fluent) reads metadata needed for the EDL.</li>
+<li>EDL composer</li>
+<li>Timecode converter</li>
+<li><a href="">srt parser/composer</a></li>
+</ul>
+<!-- link to srt parser composer, github + npm -->
+<p>(not part of the app but developed during the inital R&amp;D)</p>
+<p><a href="">more info on this here</a></p>
+<!-- link to documentation components page -->
+<h2>Why a desktop app?</h2>
+<p>To be able to work with files from camcorders, that can at times exceed 50 gigs, a web app was not going to be able to handle the file upload.
+But with NWJS when selecting a file it returns the file path, and because you have access to the file system you can then leave the original where it is, and convert it into audio to send to the speech to text API and HTML5 video for preview.
+Because the output is an EDL, the original is then reconnected to the video sequence.</p>
+<hr>
+<h2>What is the impact on video production?</h2>
+<h3>You free up soooo much time</h3>
+<p>Because the tool optimises the post-production stage of making a rough cut, or what they sometimes refer to as a &quot;radio edit&quot;.</p>
+<p>What would normally take 3 weeks you can now do in 3 hours.</p>
+<h3>You can concentrate on the crafting of your story</h3>
+<blockquote>
+<p>The Ladder of Abstraction. S.I. Hayakawa, in his book Language in Thought and Action, described what he called the ladder of abstraction.
+<em>The ladder of abstraction is an image and concept used to illustrate how language and reasoning evolves from concrete to abstract.</em></p>
+</blockquote>
+<p>Once you have reasoned fromt the concrete to the abstract concepts manipulating those at a high level helps organise them and structure your story. So that when it comes to &quot;fill in the dialogue&quot; everything falls into place.</p>
+<p>This follows Mckee's idea of wriitng from the inside out as opposed to the outside in.</p>
+<p>WWriting from the outside in</p>
+<blockquote>
+<p>The struggling writer tends to have a way of working that goes something like this: He dreams up an idea, noodles on it for a while, then rushes straight to the keyboard</p>
+</blockquote>
+<p>Writing from the outside in</p>
+<blockquote>
+<p>Successful writers tend to use the reverse process. If, hypothetically and optimistically, a screenplay can be written from first idea to last draft in six months, these writers typically spend the first four of those six months writing on stacks ofthree-by-five cards: a stack for each act-three, four, perhaps more. On these cards they create the story's step-outline.</p>
+</blockquote>
+<!--  -->
+<blockquote>
+<p>As the term implies, a step-outline is the story told in steps.
+Using one- or two-sentence statements, the writer simply and clearly describes what happens in each scene, how it builds and turns. [...]
+On the back of each card the writer indicates what step in the design of the story he sees this scene fulfilling-at least for the moment. Which scenes set up the Inciting Incident? Which is the Inciting Incident? First Act Climax? Perhaps a Mid-Act Climax? Second Act? Third? Fourth? Or more? He does this for Central Plotand subplots alslike.</p>
+</blockquote>
+<!--  -->
+<blockquote>
+<p>This process, however, doesn't mean the writer isn't filling pages. Day after day a huge stack grows on the side ofthe desk: but these are biographies, the fictional world and its history, thematic notations, images, even snippets ofvocabulary and idiom. Research and imaginings of all kinds fill a file cabinet while the story is disci- plined to the step-outline.</p>
+</blockquote>
+<!-- 410-417 -->
+<!-- or paraphrase using slide https://docs.google.com/presentation/d/1cJjvrGrGxrqaZhk5IKYOcld82PulGE9iF_LjQVL-zes/edit#slide=id.g14a8a1e7a5_0_187 -->
+<p>Paper-editing is writing from the outside in, altho confined to the actuality of the transcriptions.</p>
+<p>If like me you believe that story telling is a craft, with principles that can be mastered, discussed and broken, you wouldn’t be surprise when I say that this process(and therefore this software) will allow you to tell better story.</p>
+<h3>Making video editing more accessible</h3>
+<p>It enables &quot;non-technical&quot; staff to work on the part they are good, at the crafting of story without the overheads of learning how to use a video editing software.</p>
+<!-- Learning how to use a video editing software as a steep learning curve.  -->
+<p>Video editing software are not designed to help with the story crafting but more just to aid the cutting of video and/or audio as segments. With no semantic insight into the content.</p>
+<!-- 
+However editorial staff has great insight into the crafting of the story they are going to tell, and this tool allows them to take that further into the editing of the video by creating a rough cut without having to open an editing software. -->
+<p>The tool also positions itself right in between the collaboration point between an edit/video producer and a video editor, and can smooth the communication/collaboration process.</p>
+<h3>Collaboration</h3>
+<p>It enables collaboration. By raising the level of the conversation on the story crafting of the project. and really get into the high level of the overall structure, and/or the nitty gritty of the &quot;dialaogue&quot; and/or stay at</p>
+<h3>Better feedback</h3>
+<p>You can get more meaningful actionable feedback. If you are working for an exec or an external client, getting feedback at that stage on the story structure,both by showing the paper-edit text and a video sequence side by side,  generally means you won’t be asked to change any of that at the end of the project.</p>
+<p>As opposed to show a sequence closer to the final cut stage with b-rolls/cut aways, that you spent time putting in place but might have to bin because the underlying story structure has changed.</p>
+<hr>
+<h2>Future plans</h2>
+<h3>Social Media</h3>
+<p>Integration with social media share(similar to quick quote, eg you select a line and can tweet the captioned video out)</p>
+<p><img src="" alt="Social media export img"></p>
+<!-- TODO: get social media export img from presentation -->
+<h3>Live video</h3>
+<p>Support for live video stream to do realtime video editing and export to social media.</p>
+<p><img src="" alt="Live video"></p>
+<!-- TODO: get img from presentation -->
+<h3>Multi user collaboration</h3>
+<p>Web app that syncs with desktop app and allows for multi user collaboration.</p>
+<p><img src="" alt="Multi user collarboation"></p>
+<!-- TODO: get img from presentation -->
+<h3>Mobile version</h3>
+<p>Web app that is mobile responsive and allows to upload from phone, and begin the edit there and then once it has finished transcribing. With possibility to export the edited video back onto the phone or direct publish to social media.</p>
+<p><img src="" alt="Mobile version"></p>
+<!-- TODO: get img from presentation -->
+<h3>Archive</h3>
+<p>&quot;Indexing&quot; of a video &quot;archive&quot;. Processing a large ammount of files(eg several video interviews) in bulk, and create a navigable summary of what are the interviews/videso about.  Taking it a step further this could also add info on visual logs of the video using computational photography APIs to recognise what is in the video,and categorise that, especially usefull b-rolls and actuality.</p>
+<p><img src="" alt="Archive indexing img"></p>
+<h3>Phone integration</h3>
+<p>Twilio, generate transcription from mms.</p>
+<!-- some more in google docs post -->
+<hr>
+<h2>Why open source?</h2>
+<!-- Video editing softwares are notoriously expensive and close sourced, getting in this space with an open source version would allow developers to explore and challenge the traditional layout and ways of doing things from the traditional non lineaer editing systems. -->
+<!-- I very  much believe in "what goes a round comes a round". -->
+<!-- This project was developed as .... get open source blurb from autoEdit front page -->
+<p>Some of the best features of this software came out of conversation with people working on the same problem domain in the spirit of <em>&quot;what goes a round comes a round&quot;</em>.</p>
+<!-- to check out the to get involved check out TODO: link  -->
+<hr>
+<h2>What's happening next?</h2>
+<p>First release is out, and it is being used by the journalists and video producers across vox media. Conducting user testing, refactoring, and working through the roadmap.</p>
+<p>Check out the <a href="">project page</a> it's &quot;free as in free speech and free beer&quot;.</p>
+<!-- link to GNU quote wikipedia -->
+<!-- 
+link to project page (with client side interactive demo), github repo
+[]() 
+-->
+
+</div>
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script>
+    (function (document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+
+      document.addEventListener('click', function (e) {
+        var target = e.target;
+
+        if (!checkbox.checked ||
+          sidebar.contains(target) ||
+          (target === checkbox || target === toggle)) return;
+
+        checkbox.checked = false;
+      }, false);
+    })(document);
+  </script>
+
+  
+
+
+  <script>
+
+    // const bodyEl = document.body;
+    // const toggleEl = document.querySelector('#color-scheme-toggle');
+    // const prismEl = document.querySelector('#prism-css');
+    // const DARK = 'dark';
+    // const LIGHT = 'light';
+    // const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    // const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    // const COLOR_SCHEME_CHANGED = 'colorSchemeChanged';
+
+    // toggleEl.addEventListener('click', () => {
+    //   console.log('toggle')
+    //   const isDark = bodyEl.classList.toggle('dark-mode');
+    //   const mode = isDark ? DARK : LIGHT;
+    //   sessionStorage.setItem('jec.color-scheme', mode);
+
+    //   if (isDark) {
+    //     if (prismEl) prismEl.href = PRISM_DARK_URL;
+    //   } else {
+    //     if (prismEl) prismEl.href = PRISM_LIGHT_URL;
+    //   }
+
+    //   toggleEl.dispatchEvent(new CustomEvent(
+    //     COLOR_SCHEME_CHANGED, { detail: mode }
+    //   ));
+    // });
+    // // 
+
+    // function init() {
+    //   console.log('init')
+    //   const DARK = 'dark';
+    //   const LIGHT = 'light';
+    //   const isSystemDarkMode = matchMedia &&
+    //     matchMedia('(prefers-color-scheme: dark)').matches;
+
+    //    console.log('isSystemDarkMode',isSystemDarkMode)
+    //   // let mode = sessionStorage.getItem('jec.color-scheme');
+    //   // console.log('mode',mode)
+    //   if (!mode && isSystemDarkMode) {
+    //     mode = DARK;
+    //   } else {
+    //     mode = mode || LIGHT;
+    //   }
+
+    //   if (mode === DARK) {
+    //     document.querySelector('#color-scheme-toggle').click();
+    //   }
+
+    //   // Event listener to change with system change
+    //   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    //     const changedColourScheme = e.matches ? DARK: LIGHT;
+    //       if (changedColourScheme === DARK) {
+    //         const isDark = bodyEl.classList.add('dark-mode');
+    //         prismEl.href = PRISM_DARK_URL;
+    //       } else {
+    //         const isDark = bodyEl.classList.remove('dark-mode');
+    //         prismEl.href = PRISM_LIGHT_URL;
+    //       }
+    //   });
+    // }
+
+    // // run the code   
+    // init();
+    // console.log('yo')
+  </script>
+</body>
+
+</html>

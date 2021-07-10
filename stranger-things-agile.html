@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+     &middot; Pietro
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png">
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" />
+
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png">
+
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png">
+
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32">
+
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png">
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- font awesome CDN -->
+  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
+  <style>   
+
+ /* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body{
+      background-color: black;
+      color: #B2BEB5;
+    }
+
+      img {
+      filter: grayscale(30%);
+    }
+
+    body >h2 h3 h4 h5 h6 {
+      color: white;
+    }
+    body >h1 {
+      color: white;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+      /* transition: background-color 300ms ease-in-out 0s; */
+    } 
+}
+  </style>
+
+</head>
+
+<body class="">
+  <!-- class="theme-base-08" -->
+
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+ styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!--  checked -->
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
+
+    
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    <a class="sidebar-nav-item" href="/"><i
+        class="fa fa-user" aria-hidden="true"></i> About</a>
+
+    <a class="sidebar-nav-item" disabled="true">
+
+      <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>Photos
+      </a>
+
+      
+      <a class="sidebar-nav-item" href="/categories/video">
+        
+        <i class="fa fa-film" aria-hidden="true"></i> Video
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/tech">
+        
+        <i class="fa fa-laptop" aria-hidden="true"></i> Tech
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/ttqf">
+        
+        <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/blog">
+        
+        <i class="fa fa-pencil" aria-hidden="true"></i> Blog
+        
+      </a>
+      
+
+      <a class="sidebar-nav-item" disabled="true">
+
+      </a>
+      <a class="icon-envelope  sidebar-nav-item"
+        href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+        class="author-social" target="_blank" rel="noopener noreferrer"><i class="icon-mail"></i><i
+          class="fa fa-envelope-o" aria-hidden="true"></i>
+        E-mail</a> <span></span>
+
+
+      <a class="icon-twitter  sidebar-nav-item "
+        href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> <i
+          class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+
+      <a class="icon-github sidebar-nav-item "
+        href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+
+      <a class="icon-linkedin sidebar-nav-item "
+        href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+
+
+
+
+
+</div>
+
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+    content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Pietro</a>
+          <small>Passarelli </small>
+        </h3>
+      </div>
+    </div>
+
+    <div class="container content">
+      
+<div class="post">
+	<h1 class="post-title">10 things you can learn about agile from “Stranger Things” </h1>
+	<span class="post-date">2019-07-31
+
+		
+	</span>
+
+	
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	<small>
+		<a href="https://docs.google.com/presentation/d/10v6T13m97e_651TEZJdvCgLLZMvRs3mzKsTz2FYDNMU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+			<i class="fa fa-external-link" aria-hidden="true"></i>
+			Url</a>
+	</small>
+	
+
+	
+
+	
+
+	<br>
+
+
+	<!-- Stack -->
+	
+	<br>
+
+	
+	<div class="image-wrapper">
+		<img src="/img/stranger-things-agile/stranger-things-agile_1-1.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+	</div>
+	
+	
+	
+	10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”
+	
+	<hr>
+
+
+	<p><a href="https://www.netflix.com/title/80197912">“Beyond Stranger things”</a> on Netflix is equivalent to the dvd extras. It Contains insights about the filmmaking process. With interviews and insights about the filmmaking process.</p>
+<p><strong>*Contains season 2 spoilers!</strong></p>
+<!-- https://youtu.be/d39XqRMWlqg -->
+<div class="videoWrapper">
+<iframe width="100%" height="315" src="//www.youtube.com/embed/d39XqRMWlqg" frameborder="0" allowfullscreen></iframe>
+</div>
+<!-- Spoiler disclaimer  -->
+<h2>1. Start with the end in mind</h2>
+<div class="image-wrapper">
+    <img src="/img/stranger-things-agile/stranger-things-agile_1-1.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<p>Season 2 was thought of from the start with the snowball as the conclusion of the last episode.</p>
+<div class="image-wrapper">
+    <img src="/img/stranger-things-agile/stranger-things-agile_1-2.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<blockquote>
+<p>We always had that moment with Dustin and Nancy.You have these ideas in mind, like the snow ball dance, which then become the building blocks, and that scene, is one of the pieces that goes up on the board, and you are like, that’s staying no matter what. And how do we get there?</p>
+<p>E2 16.44min - Beyond Stranger Things</p>
+</blockquote>
+<div class="image-wrapper">
+    <img src="/img/stranger-things-agile/stranger-things-agile_1-3.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<p>While the kiss between max and Lucas, was decided on the day.</p>
+<h2>2. Use Placeholders (characters)</h2>
+<div class="image-wrapper">
+    <img src="/img/stranger-things-agile/stranger-things-agile_2-1.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<p>The Bob character took shape and prominence over time, in ways that was not initially anticipated</p>
+<div class="image-wrapper">
+    <img src="/img/stranger-things-agile/stranger-things-agile_2-2.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<p>Largely due to the actor’s interpretation of the character</p>
+<h2>3. Anticipate change</h2>
+<div class="image-wrapper">
+    <img src="/img/stranger-things-agile/stranger-things-agile_3-1.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<blockquote>
+<p>These are two of the best example of actors informing characters. You were dealing with 13 major characters, and so some are more formed then others. Dusting and Steven are two that were just stereotypes, they were almost like place holders, until we met Gaten, and we were like that’s interesting. How do you write for Gaten? You can’t create the character Gaten, there’s only one.</p>
+<p>E3 4.30min/4.21min - Beyond stranger things</p>
+</blockquote>
+<h2>4. Respond to change</h2>
+<div class="image-wrapper">
+    <img src="img/stranger-things-agile/stranger-things-agile_4-1.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<p>The growl by dustin - originally was a chewbacca impersonation!</p>
+<div class="videoWrapper">
+<iframe width="100%" height="315" src="//www.youtube.com/embed/1j-noIF7ZHY" frameborder="0" allowfullscreen></iframe>
+</div>
+<!-- 2- Welcome changing requirements, even late in
+development. Agile processes harness change for
+the customer's competitive advantage.
+ -->
+<p>Steve storyline came to a halt, so they decided to pair him with Dustin.</p>
+<div class="image-wrapper">
+    <img src="img/stranger-things-agile/stranger-things-agile_4-2.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<p>They had many scene options on how they came across one and other and then picked one, the flower scene.</p>
+<!--  E3 2.16min - Beyond stranger things - Steve story-line, came to an alt, so decided to pair with Dustin,
+Many scene options on how they came across one and other and then picked one, flower scene  -->
+<!-- https://youtu.be/pvJoi94h8FA -->
+<div class="videoWrapper">
+<iframe width="100%" height="315" src="//www.youtube.com/embed/pvJoi94h8FA" frameborder="0" allowfullscreen></iframe>
+</div>
+<h2>5. Orchestrate change</h2>
+<div class="image-wrapper">
+    <img src="img/stranger-things-agile/stranger-things-agile_5-1.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<p>The evolution of the Steve carather’s from an 80’s jock wasn't initially anticipated. Then as he became more charming and likeable → the writers realised when writing season 1, that they wanted to give it more of an arc. And not just negative one dimension.
+To achieve that, they made last minute change - Steve goes back in the house and saves the day.</p>
+<!--
+E3 - 03:39 - Beyond stranger things - evolution of steve carather’s 80’s jock character, then became more charming and likeable. → then writers realised when writing season 1, that they wanted to give it more of an arc. Not just negative note.
+To achieve that, made last minute change was that he goes back in the house and save the day.
+
+TODO: change image, eg steve, saving the day in the house split screen with steve at beginning of the season,. -->
+<h2>6. Start small and be practical</h2>
+<div class="image-wrapper">
+    <img src="img/stranger-things-agile/stranger-things-agile_6-1.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<!--
+
+10 - Simplicity--the art of maximizing the amount
+of work not done--is essential.
+ -->
+<p>in season 1, the CG department was 1 person part time. A lot of the effects done with props and costumes to be practical.
+This affected the design of the demagorg monster, because it was guy in a suit, on mini stilt.</p>
+<!-- E3 - 9 min 05sec - Beyond stranger things - Computer generation season 1 vs season 2
+> 1 person part time in season 1, a lot of the effects done with props and costumes to be practical
+Effected design of demagorg monster, because guy in a suit, on mini stilt.
+
+Image of guy in suite
+
+ -->
+<h2>7. Scale up (resources) when is time</h2>
+<div class="image-wrapper">
+    <img src="img/stranger-things-agile/stranger-things-agile_7-1.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<p>While in season 2 there was a whole department of CGI people. Eg junkyard scene, nothing around steve character. vs Eg season one steve, hitting guy in a suite with a bath.</p>
+<!-- E3 - 9 min 05sec - Beyond stranger things - Computer generation season 1 vs season 2
+> vs A whole department of CGI people in season 2
+Eg junkyard scene, nothing around steve character. vs Eg season one steve, hitting guy in suite with bath
+
+And image of CGI
+
+And image of CGI -->
+<h2>Recap</h2>
+<div class="image-wrapper">
+    <img src="img/stranger-things-agile/stranger-things-agile_8.png" alt="10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”" />
+</div>
+<ol>
+<li>Start with the end in mind</li>
+<li>Use Placeholders (characters)</li>
+<li>Anticipate change</li>
+<li>Respond to change</li>
+<li>Orchestrate change</li>
+<li>Start small and be practical</li>
+<li>Scale up (resources) when is time</li>
+</ol>
+
+</div>
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script>
+    (function (document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+
+      document.addEventListener('click', function (e) {
+        var target = e.target;
+
+        if (!checkbox.checked ||
+          sidebar.contains(target) ||
+          (target === checkbox || target === toggle)) return;
+
+        checkbox.checked = false;
+      }, false);
+    })(document);
+  </script>
+
+  
+
+
+  <script>
+
+    // const bodyEl = document.body;
+    // const toggleEl = document.querySelector('#color-scheme-toggle');
+    // const prismEl = document.querySelector('#prism-css');
+    // const DARK = 'dark';
+    // const LIGHT = 'light';
+    // const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    // const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    // const COLOR_SCHEME_CHANGED = 'colorSchemeChanged';
+
+    // toggleEl.addEventListener('click', () => {
+    //   console.log('toggle')
+    //   const isDark = bodyEl.classList.toggle('dark-mode');
+    //   const mode = isDark ? DARK : LIGHT;
+    //   sessionStorage.setItem('jec.color-scheme', mode);
+
+    //   if (isDark) {
+    //     if (prismEl) prismEl.href = PRISM_DARK_URL;
+    //   } else {
+    //     if (prismEl) prismEl.href = PRISM_LIGHT_URL;
+    //   }
+
+    //   toggleEl.dispatchEvent(new CustomEvent(
+    //     COLOR_SCHEME_CHANGED, { detail: mode }
+    //   ));
+    // });
+    // // 
+
+    // function init() {
+    //   console.log('init')
+    //   const DARK = 'dark';
+    //   const LIGHT = 'light';
+    //   const isSystemDarkMode = matchMedia &&
+    //     matchMedia('(prefers-color-scheme: dark)').matches;
+
+    //    console.log('isSystemDarkMode',isSystemDarkMode)
+    //   // let mode = sessionStorage.getItem('jec.color-scheme');
+    //   // console.log('mode',mode)
+    //   if (!mode && isSystemDarkMode) {
+    //     mode = DARK;
+    //   } else {
+    //     mode = mode || LIGHT;
+    //   }
+
+    //   if (mode === DARK) {
+    //     document.querySelector('#color-scheme-toggle').click();
+    //   }
+
+    //   // Event listener to change with system change
+    //   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    //     const changedColourScheme = e.matches ? DARK: LIGHT;
+    //       if (changedColourScheme === DARK) {
+    //         const isDark = bodyEl.classList.add('dark-mode');
+    //         prismEl.href = PRISM_DARK_URL;
+    //       } else {
+    //         const isDark = bodyEl.classList.remove('dark-mode');
+    //         prismEl.href = PRISM_LIGHT_URL;
+    //       }
+    //   });
+    // }
+
+    // // run the code   
+    // init();
+    // console.log('yo')
+  </script>
+</body>
+
+</html>

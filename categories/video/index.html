@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+     &middot; Pietro
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png">
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" />
+
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png">
+
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png">
+
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32">
+
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png">
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- font awesome CDN -->
+  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
+  <style>   
+
+ /* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body{
+      background-color: black;
+      color: #B2BEB5;
+    }
+
+      img {
+      filter: grayscale(30%);
+    }
+
+    body >h2 h3 h4 h5 h6 {
+      color: white;
+    }
+    body >h1 {
+      color: white;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+      /* transition: background-color 300ms ease-in-out 0s; */
+    } 
+}
+  </style>
+
+</head>
+
+<body class="">
+  <!-- class="theme-base-08" -->
+
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+ styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!--  checked -->
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
+
+    
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    <a class="sidebar-nav-item" href="/"><i
+        class="fa fa-user" aria-hidden="true"></i> About</a>
+
+    <a class="sidebar-nav-item" disabled="true">
+
+      <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>Photos
+      </a>
+
+      
+      <a class="sidebar-nav-item" href="/categories/video">
+        
+        <i class="fa fa-film" aria-hidden="true"></i> Video
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/tech">
+        
+        <i class="fa fa-laptop" aria-hidden="true"></i> Tech
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/ttqf">
+        
+        <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/blog">
+        
+        <i class="fa fa-pencil" aria-hidden="true"></i> Blog
+        
+      </a>
+      
+
+      <a class="sidebar-nav-item" disabled="true">
+
+      </a>
+      <a class="icon-envelope  sidebar-nav-item"
+        href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+        class="author-social" target="_blank" rel="noopener noreferrer"><i class="icon-mail"></i><i
+          class="fa fa-envelope-o" aria-hidden="true"></i>
+        E-mail</a> <span></span>
+
+
+      <a class="icon-twitter  sidebar-nav-item "
+        href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> <i
+          class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+
+      <a class="icon-github sidebar-nav-item "
+        href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+
+      <a class="icon-linkedin sidebar-nav-item "
+        href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+
+
+
+
+
+</div>
+
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+    content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Pietro</a>
+          <small>Passarelli </small>
+        </h3>
+      </div>
+    </div>
+
+    <div class="container content">
+      
+<div class="page">
+  <h1 class="page-title">
+  	
+  		 
+  	
+  </h1>
+  
+	<h1>Video</h1>
+<!-- <ul><li>
+   <a href="/categories/video/2011-09-12-Angus/">Hating The Moon</a>
+  </li><li>
+   <a href="/categories/video/2011-09-17-50p1q/">50 People One Questions</a>
+  </li><li>
+   <a href="/categories/video/2012-07-12-difformazione/">Difformazione</a>
+  </li><li>
+   <a href="/UBIQ3D.html">RAI5 UBIQ - 3D Printing</a>
+  </li><li>
+   <a href="/UBIQInteractive.html">RAI5 UBIQ - Interactive documentaries</a>
+  </li><li>
+   <a href="/categories/video/2012-12-12-Swing-Rowers/">SwingRowers</a>
+  </li><li>
+   <a href="/categories/video/2013-09-12-showreel/">ShowReel</a>
+  </li><li>
+   <a href="/bbcnewslabs.html">BBC #newsHACK</a>
+  </li><li>
+   <a href="/categories/video/2014-02-21-BBCPTS/">BBC PTS Promo</a>
+  </li><li>
+   <a href="/categories/video/2014-07-17-BBCLDRS-ap/">Assistant Producer - Making of the BBC 'Life and Death Row Series'</a>
+  </li><li>
+   <a href="/categories/video/2014-07-17-BBCLDRS-editor/">Editor - Making of the BBC 'Life and Death Row Series'</a>
+  </li><li>
+   <a href="/BBCLDRS-pd.html">Producer/Director - Making of the BBC 'Life and Death Row Series'</a>
+  </li><li>
+   <a href="/categories/video/2015-10-10-UBIQ-computer-dance-piece/">RAI 5 - UBIQ: Computer Assisted Art Performance</a>
+  </li></ul> -->
+<div class="post">
+  <h3 class="post-title">
+    <a href="/categories/video/2015-10-10-UBIQ-computer-dance-piece/">
+      RAI 5 - UBIQ: Computer Assisted Art Performance
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Sat Oct 10 2015 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Filmed and edited a 5 minute short doc, for the award winning UBIQ series for RAI 5(Italian National Broadcaster) on sky</p>
+  <!-- Link to post -->
+  <a href="/categories/video/2015-10-10-UBIQ-computer-dance-piece/">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/BBCLDRS-pd.html">
+      Producer/Director - Making of the BBC 'Life and Death Row Series'
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Thu Jul 17 2014 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Behind the scene of the BBC3 'Life and Death Row Series'</p>
+  <!-- Link to post -->
+  <a href="/BBCLDRS-pd.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/BBCLDRS-pd.html">
+    <img src=/img/BBCLDRS/ldrs-pd.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/categories/video/2014-07-17-BBCLDRS-editor/">
+      Editor - Making of the BBC 'Life and Death Row Series'
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Thu Jul 17 2014 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Behind the scene of the BBC3 'Life and Death Row Series'</p>
+  <!-- Link to post -->
+  <a href="/categories/video/2014-07-17-BBCLDRS-editor/">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/categories/video/2014-07-17-BBCLDRS-editor/">
+    <img src=/img/BBCLDRS/ldrs-editor.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/categories/video/2014-07-17-BBCLDRS-ap/">
+      Assistant Producer - Making of the BBC 'Life and Death Row Series'
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Thu Jul 17 2014 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Behind the scene of the BBC3 'Life and Death Row Series'</p>
+  <!-- Link to post -->
+  <a href="/categories/video/2014-07-17-BBCLDRS-ap/">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/categories/video/2014-07-17-BBCLDRS-ap/">
+    <img src=/img/BBCLDRS/ldrs-ap.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/categories/video/2014-02-21-BBCPTS/">
+      BBC PTS Promo
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Fri Feb 21 2014 00:00:00 GMT-0500 (Eastern Standard Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Interviews with members of the 2014-2015 BBC Production Trainee Scheme for a promo for the BBC Academy</p>
+  <!-- Link to post -->
+  <a href="/categories/video/2014-02-21-BBCPTS/">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/categories/video/2014-02-21-BBCPTS/">
+    <img src=/img/BBCPTS/bbcpts.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/bbcnewslabs.html">
+      BBC #newsHACK
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Tue Oct 15 2013 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Short video for BBC News Labs #newsHack Hackaton event</p>
+  <!-- Link to post -->
+  <a href="/bbcnewslabs.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/bbcnewslabs.html">
+    <img src=/img/bbcnewslab/bbcnewslab.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/categories/video/2013-09-12-showreel/">
+      ShowReel
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Thu Sep 12 2013 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Documentary Showreel</p>
+  <!-- Link to post -->
+  <a href="/categories/video/2013-09-12-showreel/">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/categories/video/2013-09-12-showreel/">
+    <img src=/img/showreel/showreel.jpg>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/categories/video/2012-12-12-Swing-Rowers/">
+      SwingRowers
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Wed Dec 12 2012 00:00:00 GMT-0500 (Eastern Standard Time)    </span>
+  </small>
+  <!-- description -->
+  <p>The SwingRowers live UK tour and Radio interview at Resonace</p>
+  <!-- Link to post -->
+  <a href="/categories/video/2012-12-12-Swing-Rowers/">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/categories/video/2012-12-12-Swing-Rowers/">
+    <img src=/img/swingrowers/swingrowers.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/UBIQInteractive.html">
+      RAI5 UBIQ - Interactive documentaries
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Fri Oct 12 2012 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>UBIQ - 'Racconti' del 24/10/2013 RAI 5</p>
+  <!-- Link to post -->
+  <a href="/UBIQInteractive.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/UBIQInteractive.html">
+    <img src=/img/ubiq/interactive.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/UBIQ3D.html">
+      RAI5 UBIQ - 3D Printing
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Fri Oct 12 2012 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>UBIQ - 'Racconti' del 31/10/2013 RAI 5</p>
+  <!-- Link to post -->
+  <a href="/UBIQ3D.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/UBIQ3D.html">
+    <img src=/img/ubiq/3dprinting.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/categories/video/2012-07-12-difformazione/">
+      Difformazione
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Thu Jul 12 2012 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Plans to build a biomass powerstation treatn the local comunity</p>
+  <!-- Link to post -->
+  <a href="/categories/video/2012-07-12-difformazione/">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/categories/video/2012-07-12-difformazione/">
+    <img src=/img/difformazione/difformazione.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/categories/video/2011-09-17-50p1q/">
+      50 People One Questions
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Sat Sep 17 2011 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>In occasion of the T-Days Event in Bologna (Italy) we asked the people if they could give a gift to the city what would it be.</p>
+  <!-- Link to post -->
+  <a href="/categories/video/2011-09-17-50p1q/">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/categories/video/2011-09-17-50p1q/">
+    <img src=/img/50p1q/50p1q.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/categories/video/2011-09-12-Angus/">
+      Hating The Moon
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Mon Sep 12 2011 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Angus quest to swim across the English Channel</p>
+  <!-- Link to post -->
+  <a href="/categories/video/2011-09-12-Angus/">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/categories/video/2011-09-12-Angus/">
+    <img src=/img/htm/htm.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+
+</div>
+
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script>
+    (function (document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+
+      document.addEventListener('click', function (e) {
+        var target = e.target;
+
+        if (!checkbox.checked ||
+          sidebar.contains(target) ||
+          (target === checkbox || target === toggle)) return;
+
+        checkbox.checked = false;
+      }, false);
+    })(document);
+  </script>
+
+  
+
+
+  <script>
+
+    // const bodyEl = document.body;
+    // const toggleEl = document.querySelector('#color-scheme-toggle');
+    // const prismEl = document.querySelector('#prism-css');
+    // const DARK = 'dark';
+    // const LIGHT = 'light';
+    // const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    // const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    // const COLOR_SCHEME_CHANGED = 'colorSchemeChanged';
+
+    // toggleEl.addEventListener('click', () => {
+    //   console.log('toggle')
+    //   const isDark = bodyEl.classList.toggle('dark-mode');
+    //   const mode = isDark ? DARK : LIGHT;
+    //   sessionStorage.setItem('jec.color-scheme', mode);
+
+    //   if (isDark) {
+    //     if (prismEl) prismEl.href = PRISM_DARK_URL;
+    //   } else {
+    //     if (prismEl) prismEl.href = PRISM_LIGHT_URL;
+    //   }
+
+    //   toggleEl.dispatchEvent(new CustomEvent(
+    //     COLOR_SCHEME_CHANGED, { detail: mode }
+    //   ));
+    // });
+    // // 
+
+    // function init() {
+    //   console.log('init')
+    //   const DARK = 'dark';
+    //   const LIGHT = 'light';
+    //   const isSystemDarkMode = matchMedia &&
+    //     matchMedia('(prefers-color-scheme: dark)').matches;
+
+    //    console.log('isSystemDarkMode',isSystemDarkMode)
+    //   // let mode = sessionStorage.getItem('jec.color-scheme');
+    //   // console.log('mode',mode)
+    //   if (!mode && isSystemDarkMode) {
+    //     mode = DARK;
+    //   } else {
+    //     mode = mode || LIGHT;
+    //   }
+
+    //   if (mode === DARK) {
+    //     document.querySelector('#color-scheme-toggle').click();
+    //   }
+
+    //   // Event listener to change with system change
+    //   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    //     const changedColourScheme = e.matches ? DARK: LIGHT;
+    //       if (changedColourScheme === DARK) {
+    //         const isDark = bodyEl.classList.add('dark-mode');
+    //         prismEl.href = PRISM_DARK_URL;
+    //       } else {
+    //         const isDark = bodyEl.classList.remove('dark-mode');
+    //         prismEl.href = PRISM_LIGHT_URL;
+    //       }
+    //   });
+    // }
+
+    // // run the code   
+    // init();
+    // console.log('yo')
+  </script>
+</body>
+
+</html>

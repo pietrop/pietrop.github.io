@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+     &middot; Pietro
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png">
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" />
+
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png">
+
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png">
+
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32">
+
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png">
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- font awesome CDN -->
+  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
+  <style>   
+
+ /* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body{
+      background-color: black;
+      color: #B2BEB5;
+    }
+
+      img {
+      filter: grayscale(30%);
+    }
+
+    body >h2 h3 h4 h5 h6 {
+      color: white;
+    }
+    body >h1 {
+      color: white;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+      /* transition: background-color 300ms ease-in-out 0s; */
+    } 
+}
+  </style>
+
+</head>
+
+<body class="">
+  <!-- class="theme-base-08" -->
+
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+ styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!--  checked -->
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
+
+    
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    <a class="sidebar-nav-item" href="/"><i
+        class="fa fa-user" aria-hidden="true"></i> About</a>
+
+    <a class="sidebar-nav-item" disabled="true">
+
+      <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>Photos
+      </a>
+
+      
+      <a class="sidebar-nav-item" href="/categories/video">
+        
+        <i class="fa fa-film" aria-hidden="true"></i> Video
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/tech">
+        
+        <i class="fa fa-laptop" aria-hidden="true"></i> Tech
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/ttqf">
+        
+        <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/blog">
+        
+        <i class="fa fa-pencil" aria-hidden="true"></i> Blog
+        
+      </a>
+      
+
+      <a class="sidebar-nav-item" disabled="true">
+
+      </a>
+      <a class="icon-envelope  sidebar-nav-item"
+        href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+        class="author-social" target="_blank" rel="noopener noreferrer"><i class="icon-mail"></i><i
+          class="fa fa-envelope-o" aria-hidden="true"></i>
+        E-mail</a> <span></span>
+
+
+      <a class="icon-twitter  sidebar-nav-item "
+        href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> <i
+          class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+
+      <a class="icon-github sidebar-nav-item "
+        href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+
+      <a class="icon-linkedin sidebar-nav-item "
+        href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+
+
+
+
+
+</div>
+
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+    content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Pietro</a>
+          <small>Passarelli </small>
+        </h3>
+      </div>
+    </div>
+
+    <div class="container content">
+      
+<div class="post">
+	<h1 class="post-title">quickQuote - Times & Sunday Times </h1>
+	<span class="post-date">2015-07-21
+
+		
+	</span>
+
+	<small><a href="https://github.com/times/quickQuote" target="_blank"
+			rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>,</small>
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	<small>
+		<a href="https://times.github.io/quickQuote" target="_blank" rel="noopener noreferrer">
+			<i class="fa fa-external-link" aria-hidden="true"></i>
+			Url</a>
+	</small>
+	
+
+	<small>|
+		<a href="https://youtu.be/7apk4Hx7g3s" target="_blank" rel="noopener noreferrer">
+			<i class="fa fa-youtube" aria-hidden="true"></i>
+			Youtube </a>
+	</small>
+	
+
+	
+
+	<br>
+
+
+	<!-- Stack -->
+	<small><strong>Stack: </strong>
+		
+		Video JS,
+		
+		JQuery,
+		
+		Ruby,
+		
+		Rails,
+		
+		Spoken Data API,
+		
+		Bootstrap,
+		
+		HTML5,
+		
+		CSS,
+		
+		Git,
+		
+		Javascript,
+		
+	</small>
+	
+	<br>
+
+	
+	<div class="image-wrapper">
+		<img src="/img/TimesAndSundayTimesQuickQuote/home.png" alt="A tool for journalists to easily find and add video quotes to news articles" />
+	</div>
+	
+	
+	
+	A tool for journalists to easily find and add video quotes to news articles
+	
+	<hr>
+
+
+	<p>This project was done while working as newsroom developer at the <a href="https://twitter.com/TimesDevelops">Times &amp; Sunday Times</a> as part of a summer placement for the final project of the UCL Msc in Computer Science.</p>
+<div class="image-wrapper">
+  <a href="" data-lightbox="aName" title="aName">
+    <img src="" alt="photo" />
+  </a>
+</div>
+<p>On The <a href="https://medium.com/digital-times/it-s-time-to-rethink-how-we-do-x-in-quotes-pieces-on-the-web-1328f1ccf039">Times Digital blog</a> I wrote about the thinking behind the project.</p>
+<p>In a nutshell if we take the coverage of the Republican presidential candidate debate on Fox News most news outlet merely copied the quotes verbatim and them paired them with photos of the candidates.</p>
+<h2>A video screencast example</h2>
+<p>Here's a screencast of a demo of an alternative &quot;interactive video quote&quot; a journalist could embed in a news article.</p>
+<div class="videoWrapper">
+<iframe width="560" height="315" src="//www.youtube.com/embed/axH_dKOpqaA" frameborder="0" allowfullscreen></iframe>
+</div>
+<h2>An interactive example</h2>
+<p>And here is the quote you see in the video above embedded in this page.
+Followed by the HTML, CSS and JS code.</p>
+<div class='video-quote' id='videoQuoteText-id-n'>
+  <span class='glyphicon glyphicon-play-circle'></span>
+  <blockquote>
+     <small>►  Watch Video </small><br><br>
+    A five billion dollar web site, I have so many websites, I have them all over the place. I hire people they do a web site, it costs me three dollars.
+    <br><cite id='authorVideoQuote'>Donald Trump</cite>
+  </blockquote></div>
+  <div  id='video-wrap-n' class='video-wrap video-wrap--closed'>
+    <video class=' video-js vjs-default-skin' id='video-quote' controls preload='auto' width='100%' height='auto' poster='' data-setup='{}'>
+      <source src='http://pietropassarelli.com/quickQuote/media/snippet_54.mp4' id='snippetURLVideo' type='video/mp4' />
+    </video>
+</div>
+<style>
+/*styling of the video quote*/
+     .video-quote  blockquote {
+         background: #FAFAFC;
+         border-left: 10px solid #E8E8F2;
+         margin: 1.5em 10px;
+         padding: 0.5em 10px;
+         quotes: "\201C""\201D""\2018""\2019";
+          cursor:pointer;
+     }
+     .video-quote  blockquote:before {
+         color: #3D5266;
+         content: '“';
+         font-family: Times!important;
+         font-size: 4em;
+         line-height: 0.1em;
+         margin-right: 0.25em;
+         vertical-align: -0.4em;
+     }
+     .video-quote blockquote p {
+         display: inline;
+     }
+     cite#authorVideoQuote {
+        font-style: italic;
+     }
+     /*classes to show hide video element*/
+     .video-wrap {
+         overflow: hidden;
+         height: auto;
+         -webkit-transition: height 0.3s ease;
+     }
+<pre><code> .video-wrap--closed {
+     height: 0;
+ }
+</code></pre>
+</style>
+<script>
+/*script for dropdown on video*/
+  document.getElementById('videoQuoteText-id-n').onclick = function() {
+      if (document.getElementById('video-wrap-n').classList.contains('video-wrap--closed')) {
+          document.getElementById('video-wrap-n').classList.remove('video-wrap--closed');
+         document.getElementById('video-quote').play();
+      } else {
+          document.getElementById('video-wrap-n').classList.add('video-wrap--closed');
+            document.getElementById('video-quote').pause();
+      }
+  };
+</script>
+<br>
+<br>
+<h2>An in context example</h2>
+<p>See this demo <a href="https://times.github.io/quickQuote/demo/static_quotes.html">before</a> and <a href="https://times.github.io/quickQuote/demo/interactive_quotes.html">after</a> for an example of how it could change the way users experience quotes in an article.</p>
+<h2>The embed code for a video quote</h2>
+<br>
+HTML
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>video-quote<span class="token punctuation">'</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>videoQuoteText-id-n<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>glyphicon glyphicon-play-circle<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">></span></span><br>     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small</span><span class="token punctuation">></span></span>►  Watch Video <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span><br>    A five billion dollar web site, I have so many websites, I have them all over the place. I hire people they do a web site, it costs me three dollars.<br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>authorVideoQuote<span class="token punctuation">'</span></span><span class="token punctuation">></span></span>Donald Trump<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>video-wrap-n<span class="token punctuation">'</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>video-wrap video-wrap--closed<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span> video-js vjs-default-skin<span class="token punctuation">'</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>video-quote<span class="token punctuation">'</span></span> <span class="token attr-name">controls</span> <span class="token attr-name">preload</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>auto<span class="token punctuation">'</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>100%<span class="token punctuation">'</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>auto<span class="token punctuation">'</span></span> <span class="token attr-name">poster</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span><span class="token punctuation">'</span></span> <span class="token attr-name">data-setup</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>{}<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>https://nuk-tnl-edtl-videoanalyser-dev.s3.amazonaws.com/videos/quotes/54/snippet_54.mp4<span class="token punctuation">'</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>snippetURLVideo<span class="token punctuation">'</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>video/mp4<span class="token punctuation">'</span></span> <span class="token punctuation">/></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<br>
+<p>CSS</p>
+<br>
+<pre class="language-css"><code class="language-css"><span class="token selector">.video-quote  blockquote</span> <span class="token punctuation">{</span><br>          <span class="token property">background</span><span class="token punctuation">:</span> #FAFAFC<span class="token punctuation">;</span><br>          <span class="token property">border-left</span><span class="token punctuation">:</span> 10px solid #E8E8F2<span class="token punctuation">;</span><br>          <span class="token property">margin</span><span class="token punctuation">:</span> 1.5em 10px<span class="token punctuation">;</span><br>          <span class="token property">padding</span><span class="token punctuation">:</span> 0.5em 10px<span class="token punctuation">;</span><br>          <span class="token property">quotes</span><span class="token punctuation">:</span> <span class="token string">"\201C"</span><span class="token string">"\201D"</span><span class="token string">"\2018"</span><span class="token string">"\2019"</span><span class="token punctuation">;</span><br>           <span class="token property">cursor</span><span class="token punctuation">:</span>pointer<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>      <span class="token selector">.video-quote  blockquote:before</span> <span class="token punctuation">{</span><br>          <span class="token property">color</span><span class="token punctuation">:</span> #3D5266<span class="token punctuation">;</span><br>          <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">'“'</span><span class="token punctuation">;</span><br>          <span class="token property">font-family</span><span class="token punctuation">:</span> Times<span class="token important">!important</span><span class="token punctuation">;</span><br>          <span class="token property">font-size</span><span class="token punctuation">:</span> 4em<span class="token punctuation">;</span><br>          <span class="token property">line-height</span><span class="token punctuation">:</span> 0.1em<span class="token punctuation">;</span><br>          <span class="token property">margin-right</span><span class="token punctuation">:</span> 0.25em<span class="token punctuation">;</span><br>          <span class="token property">vertical-align</span><span class="token punctuation">:</span> -0.4em<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>      <span class="token selector">.video-quote blockquote p</span> <span class="token punctuation">{</span><br>          <span class="token property">display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>      <span class="token selector">cite#authorVideoQuote</span> <span class="token punctuation">{</span><br>         <span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br>      <span class="token selector">.video-wrap</span> <span class="token punctuation">{</span><br>          <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span><br>          <span class="token property">height</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span><br>          <span class="token property">-webkit-transition</span><span class="token punctuation">:</span> height 0.3s ease<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span><br><br>      <span class="token selector">.video-wrap--closed</span> <span class="token punctuation">{</span><br>          <span class="token property">height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span><br>      <span class="token punctuation">}</span></code></pre>
+<p>JS</p>
+<pre class="language-js"><code class="language-js">document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'videoQuoteText-id-n'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'video-wrap-n'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">'video-wrap--closed'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'video-wrap-n'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">'video-wrap--closed'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'video-quote'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'video-wrap-n'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'video-wrap--closed'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'video-quote'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">pause</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<hr>
+<p>In the following video you can see how a user can, once a video as been uploaded an processed by the speech to text API, search through the text, select a quote, edit it, preview and export it.</p>
+<br>
+<div class="videoWrapper">
+<iframe width="560" height="315" src="//www.youtube.com/embed/7apk4Hx7g3s" frameborder="0" allowfullscreen></iframe>
+</div>
+<h2>Project Links</h2>
+<p>The code for an interactive video quote is not particularly complex.</p>
+<p>But what is interesting in the quickQuote project is how we programmatically generate this embed code once a journalist has made a quote selection.</p>
+<p>For more details on this check out the <a href="">project page</a>, <a href="https://github.com/times/quickQuote">the github repository</a>, <a href="https://times.github.io/quickQuote/userManual.html">user manual</a> and <a href="https://www.rubydoc.info/github/times/quickQuote/master">documentation</a>.</p>
+<p>Or checkout the <a href="https://leanpub.com/quickquote">the report I wrote for UCL</a>, which details investigation into the problem domain, similar open source projects, as well as application design and architecture.</p>
+<h2>The main features in Screenshots</h2>
+<p>Two way sync between video and corresponding transcription</p>
+<div class="image-wrapper">
+	<a href="" data-lightbox="aName" title="aName">
+		<img src="" alt="photo" />
+	</a>
+</div>
+<p>Search transcription for keywords</p>
+<div class="image-wrapper">
+	<a href="" data-lightbox="aName" title="aName">
+		<img src="" alt="photo" />
+	</a>
+</div>
+<p>Select text grabs in and out point of corresponding video</p>
+<div class="image-wrapper">
+	<a href="" data-lightbox="aName" title="aName">
+		<img src="" alt="photo" />
+	</a>
+</div>
+<p>Edit automatically generated transcription from speech to text API <em>if it's not 100% accurate</em></p>
+<div class="image-wrapper">
+	<a href="" data-lightbox="aName" title="aName">
+		<img src="" alt="photo" />
+	</a>
+</div>
+<p>See a preview of the video quote</p>
+<div class="image-wrapper">
+	<a href="" data-lightbox="aName" title="aName">
+		<img src="" alt="photo" />
+	</a>
+</div>
+<p>With dropdown</p>
+<div class="image-wrapper">
+	<a href="" data-lightbox="aName" title="aName">
+		<img src="" alt="photo" />
+	</a>
+</div>
+<p>Export HTML, CSS, JS code to embed in news article.</p>
+<div class="image-wrapper">
+	<a href="" data-lightbox="aName" title="aName">
+		<img src="" alt="photo" />
+	</a>
+</div>
+<p>And here is <a href="https://jsfiddle.net/pietrops/yazkqg2s/">a preview of the embed code using JS Fiddle</a></p>
+<div class="image-wrapper">
+	<a href="" data-lightbox="aName" title="aName">
+		<img src="" alt="photo" />
+	</a>
+</div>
+<div class="image-wrapper">
+	<a href="" data-lightbox="aName" title="aName">
+		<img src="" alt="photo" />
+	</a>
+</div>
+<h1>On Social Media</h1>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">This. Changes. Everything. “<a href="https://twitter.com/NiemanLab">@NiemanLab</a>: new tool fromTimes of London lets you detect and capture quotes from a video <a href="https://t.co/v7ZGPcXCkl">https://t.co/v7ZGPcXCkl</a>”</p>&mdash; Paul Adams (@padams29) <a href="https://twitter.com/padams29/status/643133038327521281">September 13, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Sometimes a new digital news tool comes along &amp; reminds us how far we are from doing it right <a href="https://t.co/xqiioyAVET">https://t.co/xqiioyAVET</a> <a href="https://t.co/T2vyi8G0W6">pic.twitter.com/T2vyi8G0W6</a></p>&mdash; Greg Emerson (@emersongreg) <a href="https://twitter.com/emersongreg/status/643388636063469568">September 14, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">A new tool from The Times of London lets you easily detect and capture quotes from a video <a href="https://t.co/r6pGJzKycx">https://t.co/r6pGJzKycx</a></p>&mdash; Nieman Lab (@NiemanLab) <a href="https://twitter.com/NiemanLab/status/643132545593311232">September 13, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr>
+<h1>Press Mentions</h1>
+<div class="image-wrapper">
+    <img src="" alt="" />
+</div>
+<hr>
+<div class="image-wrapper">
+    <img src="" alt="" />
+</div>
+<hr>
+<div class="image-wrapper">
+    <img src="" alt="" />
+</div>
+
+</div>
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script>
+    (function (document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+
+      document.addEventListener('click', function (e) {
+        var target = e.target;
+
+        if (!checkbox.checked ||
+          sidebar.contains(target) ||
+          (target === checkbox || target === toggle)) return;
+
+        checkbox.checked = false;
+      }, false);
+    })(document);
+  </script>
+
+  
+
+
+  <script>
+
+    // const bodyEl = document.body;
+    // const toggleEl = document.querySelector('#color-scheme-toggle');
+    // const prismEl = document.querySelector('#prism-css');
+    // const DARK = 'dark';
+    // const LIGHT = 'light';
+    // const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    // const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    // const COLOR_SCHEME_CHANGED = 'colorSchemeChanged';
+
+    // toggleEl.addEventListener('click', () => {
+    //   console.log('toggle')
+    //   const isDark = bodyEl.classList.toggle('dark-mode');
+    //   const mode = isDark ? DARK : LIGHT;
+    //   sessionStorage.setItem('jec.color-scheme', mode);
+
+    //   if (isDark) {
+    //     if (prismEl) prismEl.href = PRISM_DARK_URL;
+    //   } else {
+    //     if (prismEl) prismEl.href = PRISM_LIGHT_URL;
+    //   }
+
+    //   toggleEl.dispatchEvent(new CustomEvent(
+    //     COLOR_SCHEME_CHANGED, { detail: mode }
+    //   ));
+    // });
+    // // 
+
+    // function init() {
+    //   console.log('init')
+    //   const DARK = 'dark';
+    //   const LIGHT = 'light';
+    //   const isSystemDarkMode = matchMedia &&
+    //     matchMedia('(prefers-color-scheme: dark)').matches;
+
+    //    console.log('isSystemDarkMode',isSystemDarkMode)
+    //   // let mode = sessionStorage.getItem('jec.color-scheme');
+    //   // console.log('mode',mode)
+    //   if (!mode && isSystemDarkMode) {
+    //     mode = DARK;
+    //   } else {
+    //     mode = mode || LIGHT;
+    //   }
+
+    //   if (mode === DARK) {
+    //     document.querySelector('#color-scheme-toggle').click();
+    //   }
+
+    //   // Event listener to change with system change
+    //   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    //     const changedColourScheme = e.matches ? DARK: LIGHT;
+    //       if (changedColourScheme === DARK) {
+    //         const isDark = bodyEl.classList.add('dark-mode');
+    //         prismEl.href = PRISM_DARK_URL;
+    //       } else {
+    //         const isDark = bodyEl.classList.remove('dark-mode');
+    //         prismEl.href = PRISM_LIGHT_URL;
+    //       }
+    //   });
+    // }
+
+    // // run the code   
+    // init();
+    // console.log('yo')
+  </script>
+</body>
+
+</html>

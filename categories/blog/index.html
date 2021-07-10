@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+     &middot; Pietro
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png">
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" />
+
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png">
+
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png">
+
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32">
+
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png">
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- font awesome CDN -->
+  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
+  <style>   
+
+ /* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body{
+      background-color: black;
+      color: #B2BEB5;
+    }
+
+      img {
+      filter: grayscale(30%);
+    }
+
+    body >h2 h3 h4 h5 h6 {
+      color: white;
+    }
+    body >h1 {
+      color: white;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+      /* transition: background-color 300ms ease-in-out 0s; */
+    } 
+}
+  </style>
+
+</head>
+
+<body class="">
+  <!-- class="theme-base-08" -->
+
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+ styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!--  checked -->
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
+
+    
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    <a class="sidebar-nav-item" href="/"><i
+        class="fa fa-user" aria-hidden="true"></i> About</a>
+
+    <a class="sidebar-nav-item" disabled="true">
+
+      <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>Photos
+      </a>
+
+      
+      <a class="sidebar-nav-item" href="/categories/video">
+        
+        <i class="fa fa-film" aria-hidden="true"></i> Video
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/tech">
+        
+        <i class="fa fa-laptop" aria-hidden="true"></i> Tech
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/ttqf">
+        
+        <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/blog">
+        
+        <i class="fa fa-pencil" aria-hidden="true"></i> Blog
+        
+      </a>
+      
+
+      <a class="sidebar-nav-item" disabled="true">
+
+      </a>
+      <a class="icon-envelope  sidebar-nav-item"
+        href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+        class="author-social" target="_blank" rel="noopener noreferrer"><i class="icon-mail"></i><i
+          class="fa fa-envelope-o" aria-hidden="true"></i>
+        E-mail</a> <span></span>
+
+
+      <a class="icon-twitter  sidebar-nav-item "
+        href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> <i
+          class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+
+      <a class="icon-github sidebar-nav-item "
+        href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+
+      <a class="icon-linkedin sidebar-nav-item "
+        href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+
+
+
+
+
+</div>
+
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+    content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Pietro</a>
+          <small>Passarelli </small>
+        </h3>
+      </div>
+    </div>
+
+    <div class="container content">
+      
+<div class="page">
+  <h1 class="page-title">
+  	
+  		 
+  	
+  </h1>
+  
+	<div class="post">
+  <h3 class="post-title">
+    <a href="/stranger-things-agile.html">
+      10 things you can learn about agile from “Stranger Things”
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Tue Jul 30 2019 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>10 things you can learn about agile software development from the film-making of Netflix’s “Stranger Things”</p>
+  <!-- Link to post -->
+  <a href="/stranger-things-agile.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/stranger-things-agile.html">
+    <img src=/img/stranger-things-agile/stranger-things-agile_1-1.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/uncessary-re-renders-in-react.html">
+      How to prevent unnecessary re-renders in React - draft
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Wed May 15 2019 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Some notes on how to how to prevent unnecessary re-renders in React</p>
+  <!-- Link to post -->
+  <a href="/uncessary-re-renders-in-react.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/uncessary-re-renders-in-react.html">
+    <img src=/img/uncessary-re-renders-in-react/before.gif>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/complex-problem.html">
+      Approaching a complex problems
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Tue Jan 15 2019 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Some notes on my take on how to break down a complex problem, when working on early stage products</p>
+  <!-- Link to post -->
+  <a href="/complex-problem.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/complex-problem.html">
+    <img src=/img/complex-problem/step-3.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/testing-strategy.html">
+      Testing Strategy  - Draft
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Sat Jan 05 2019 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Some notes and considerations for a testing strategy for React web apps, I've gathered over time from various BBC News Labs projects</p>
+  <!-- Link to post -->
+  <a href="/testing-strategy.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/testing-strategy.html">
+    <img src=/img/testing-strategy/browser-stack.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/electron-github-travis-ci.html">
+      Electron github travis CI & linux
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Wed Jul 18 2018 10:15:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>How to setup github for your electron project to have a linux Continuos integration build</p>
+  <!-- Link to post -->
+  <a href="/electron-github-travis-ci.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/how-i-run-textav.html">
+      How I run the textAV event - draft
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Wed Feb 07 2018 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
+  </small>
+  <!-- description -->
+  <p>How to engage a micro community of practitioners around a problem domain. And go beyond the 'hackathon format' for comunity events</p>
+  <!-- Link to post -->
+  <a href="/how-i-run-textav.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/how-i-run-textav.html">
+    <img src=/img/how-i-run-textav/textav.jpg>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/open-sourcing-strategies.html">
+      Some thoughts on open sourcing strategies
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Thu Dec 07 2017 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
+  </small>
+  <!-- description -->
+  <p>After a conversation at the Open News Unconference (London October 2017) during the week of MozFest, I thought I would have been good to dot down some ideas on things I’ve found to work, as a strategy for open sourcing and more generally work in the open to engage a community around your project.</p>
+  <!-- Link to post -->
+  <a href="/open-sourcing-strategies.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/ffmpeg-electron.html">
+      FFMPEG And Electron
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Thu Nov 16 2017 09:15:00 GMT-0500 (Eastern Standard Time)    </span>
+  </small>
+  <!-- description -->
+  <p>How to use ffmpeg with the fluent-ffmpeg node library in electron.</p>
+  <!-- Link to post -->
+  <a href="/ffmpeg-electron.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/aligning-partially-scripted-speeches.html">
+      Aligning partially scripted speeches, R&D Notes
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Wed Nov 08 2017 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Initially started as an email response to someone asking about this, then decided to convert into a blog post, so these are my R&D Notes on how I would go about doing it with the technology available today.</p>
+  <!-- Link to post -->
+  <a href="/aligning-partially-scripted-speeches.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/10-lessons-video-tools-ba.html">
+      Video presentation: 10 Lessons from building video product tools in the newsroom.
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Wed Sep 13 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Invited to give a keynote presentation at Hacks/Hackers Buenos Aires Media Party 2017</p>
+  <!-- Link to post -->
+  <a href="/10-lessons-video-tools-ba.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/10-lessons-video-tools.html">
+      10 Lessons from building video product tools in the newsroom.
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Mon Jul 31 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Was invited to write a paper for the computational journalism conference '17</p>
+  <!-- Link to post -->
+  <a href="/10-lessons-video-tools.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/textAV.html">
+      textAV event
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Tue Jul 18 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>TextAV is a three-day working group in New York City, July 19-21, 2017, with leading technologists, application developers, and practitioners working in the area of online audio and video, with a particular focus on the use of captions and transcripts to facilitate and speed up the production process.</p>
+  <!-- Link to post -->
+  <a href="/textAV.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/paper-edit-gitbook.html">
+      Gitbook: How to tell compelling stories out of video interviews
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Thu Jul 06 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Introducing paper-editing to answer the question 'How to craft compelling stories out of audio or video interviews?' through key story crafting concepts, this is the underlying analogue workflow that inspired autoEdit.io</p>
+  <!-- Link to post -->
+  <a href="/paper-edit-gitbook.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/wip_london_july2016.html">
+      Workshop: How to craft compelling stories out of video interviews?
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Sun Jul 17 2016 20:30:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Hands on Workshop in London with the Whistleblower Interview Archive</p>
+  <!-- Link to post -->
+  <a href="/wip_london_july2016.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/wip_london_july2016.html">
+    <img src=/img/wip_london_workshop_july_2016/wip_thomas.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/learnToCode101.html">
+      So you want to learn to code … - draft
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Sun Nov 22 2015 19:30:00 GMT-0500 (Eastern Standard Time)    </span>
+  </small>
+  <!-- description -->
+  <p>For my friends who have been asked me how to learn to code</p>
+  <!-- Link to post -->
+  <a href="/learnToCode101.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/rethinking-x-in-quotes.html">
+      It’s time to rethink how we do ‘x in quotes’ pieces on the web
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Sat Aug 15 2015 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p></p>
+  <!-- Link to post -->
+  <a href="/rethinking-x-in-quotes.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <a href="/rethinking-x-in-quotes.html">
+    <img src=/img/rethinking-x-in-quotes/1_reXGhOgRQkVJ__YCys2AaA.png>
+  </a>
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/categories/ttqf/2015-05-17-regex/">
+      Regex - an easyer approach
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Sun May 17 2015 10:15:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>How to build more complex regex without going insane</p>
+  <!-- Link to post -->
+  <a href="/categories/ttqf/2015-05-17-regex/">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/doc.html">
+      Representing Reality: Key ideas in documentary theory and practice
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Mon Apr 28 2014 05:08:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>The minimum (I think) you need to know about Documentary films</p>
+  <!-- Link to post -->
+  <a href="/doc.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+<div class="post">
+  <h3 class="post-title">
+    <a href="/videoBox.html">
+      Beyond 'video as black boxes'
+    </a>
+  </h3>
+  <small>
+    <span class="post-date">
+    Sun Apr 07 2013 20:30:00 GMT-0400 (Eastern Daylight Time)    </span>
+  </small>
+  <!-- description -->
+  <p>Various interesting uses of video on the web, both in form of tools and editorial projects.</p>
+  <!-- Link to post -->
+  <a href="/videoBox.html">
+    <small <small>More &raquo;</small></small>
+  </a><br>
+  <!-- image -->
+  <!-- optional github link -->
+  <!-- optional gitbook link -->
+  <!-- project page link  -->
+  <br>
+  <!-- tech stack  -->
+  <!--   <hr> -->
+</div>
+<hr> 
+
+</div>
+
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script>
+    (function (document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+
+      document.addEventListener('click', function (e) {
+        var target = e.target;
+
+        if (!checkbox.checked ||
+          sidebar.contains(target) ||
+          (target === checkbox || target === toggle)) return;
+
+        checkbox.checked = false;
+      }, false);
+    })(document);
+  </script>
+
+  
+
+
+  <script>
+
+    // const bodyEl = document.body;
+    // const toggleEl = document.querySelector('#color-scheme-toggle');
+    // const prismEl = document.querySelector('#prism-css');
+    // const DARK = 'dark';
+    // const LIGHT = 'light';
+    // const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    // const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    // const COLOR_SCHEME_CHANGED = 'colorSchemeChanged';
+
+    // toggleEl.addEventListener('click', () => {
+    //   console.log('toggle')
+    //   const isDark = bodyEl.classList.toggle('dark-mode');
+    //   const mode = isDark ? DARK : LIGHT;
+    //   sessionStorage.setItem('jec.color-scheme', mode);
+
+    //   if (isDark) {
+    //     if (prismEl) prismEl.href = PRISM_DARK_URL;
+    //   } else {
+    //     if (prismEl) prismEl.href = PRISM_LIGHT_URL;
+    //   }
+
+    //   toggleEl.dispatchEvent(new CustomEvent(
+    //     COLOR_SCHEME_CHANGED, { detail: mode }
+    //   ));
+    // });
+    // // 
+
+    // function init() {
+    //   console.log('init')
+    //   const DARK = 'dark';
+    //   const LIGHT = 'light';
+    //   const isSystemDarkMode = matchMedia &&
+    //     matchMedia('(prefers-color-scheme: dark)').matches;
+
+    //    console.log('isSystemDarkMode',isSystemDarkMode)
+    //   // let mode = sessionStorage.getItem('jec.color-scheme');
+    //   // console.log('mode',mode)
+    //   if (!mode && isSystemDarkMode) {
+    //     mode = DARK;
+    //   } else {
+    //     mode = mode || LIGHT;
+    //   }
+
+    //   if (mode === DARK) {
+    //     document.querySelector('#color-scheme-toggle').click();
+    //   }
+
+    //   // Event listener to change with system change
+    //   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    //     const changedColourScheme = e.matches ? DARK: LIGHT;
+    //       if (changedColourScheme === DARK) {
+    //         const isDark = bodyEl.classList.add('dark-mode');
+    //         prismEl.href = PRISM_DARK_URL;
+    //       } else {
+    //         const isDark = bodyEl.classList.remove('dark-mode');
+    //         prismEl.href = PRISM_LIGHT_URL;
+    //       }
+    //   });
+    // }
+
+    // // run the code   
+    // init();
+    // console.log('yo')
+  </script>
+</body>
+
+</html>

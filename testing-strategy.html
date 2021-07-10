@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+     &middot; Pietro
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png">
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" />
+
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png">
+
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png">
+
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32">
+
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png">
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- font awesome CDN -->
+  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
+  <style>   
+
+ /* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body{
+      background-color: black;
+      color: #B2BEB5;
+    }
+
+      img {
+      filter: grayscale(30%);
+    }
+
+    body >h2 h3 h4 h5 h6 {
+      color: white;
+    }
+    body >h1 {
+      color: white;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+      /* transition: background-color 300ms ease-in-out 0s; */
+    } 
+}
+  </style>
+
+</head>
+
+<body class="">
+  <!-- class="theme-base-08" -->
+
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+ styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!--  checked -->
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
+
+    
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    <a class="sidebar-nav-item" href="/"><i
+        class="fa fa-user" aria-hidden="true"></i> About</a>
+
+    <a class="sidebar-nav-item" disabled="true">
+
+      <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>Photos
+      </a>
+
+      
+      <a class="sidebar-nav-item" href="/categories/video">
+        
+        <i class="fa fa-film" aria-hidden="true"></i> Video
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/tech">
+        
+        <i class="fa fa-laptop" aria-hidden="true"></i> Tech
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/ttqf">
+        
+        <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/blog">
+        
+        <i class="fa fa-pencil" aria-hidden="true"></i> Blog
+        
+      </a>
+      
+
+      <a class="sidebar-nav-item" disabled="true">
+
+      </a>
+      <a class="icon-envelope  sidebar-nav-item"
+        href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+        class="author-social" target="_blank" rel="noopener noreferrer"><i class="icon-mail"></i><i
+          class="fa fa-envelope-o" aria-hidden="true"></i>
+        E-mail</a> <span></span>
+
+
+      <a class="icon-twitter  sidebar-nav-item "
+        href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> <i
+          class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+
+      <a class="icon-github sidebar-nav-item "
+        href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+
+      <a class="icon-linkedin sidebar-nav-item "
+        href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+
+
+
+
+
+</div>
+
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+    content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Pietro</a>
+          <small>Passarelli </small>
+        </h3>
+      </div>
+    </div>
+
+    <div class="container content">
+      
+<div class="post">
+	<h1 class="post-title">Testing Strategy  - Draft </h1>
+	<span class="post-date">2019-01-06
+
+		
+	</span>
+
+	
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	
+
+	
+
+	
+
+	<br>
+
+
+	<!-- Stack -->
+	
+	<br>
+
+	
+	<div class="image-wrapper">
+		<img src="/img/testing-strategy/browser-stack.png" alt="Some notes and considerations for a testing strategy for React web apps, I've gathered over time from various BBC News Labs projects" />
+	</div>
+	
+	
+	
+	Some notes and considerations for a testing strategy for React web apps, I've gathered over time from various BBC News Labs projects
+	
+	<hr>
+
+
+	<h2>Type of tests - high level</h2>
+<ul>
+<li>Unit test - a single function or service (Jest)</li>
+<li>Component test - a single component - functionality (jest/Enzyme)</li>
+<li>Snapshot Test - a single component - regression, eg changes against previous versions (Jest)</li>
+<li>End to End Test - Interaction between multiple components, usually from point of view ouser (Cypress)</li>
+<li>Performance test - How the app performs in difference environment</li>
+<li>Coverage tests - how much of your application of the app is covered by tests</li>
+</ul>
+<h2>Initial setup</h2>
+<h3>IDE</h3>
+<h4><strong>Visual studio code</strong></h4>
+<p>suggested plugin</p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code spe</a><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">l</a><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">l checker</a>, A basic spell checker that works well with camelCase code, to make sure you are using real names for variables, and keeping typos to a minimum.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a> ←</li>
+<li><a href="https://maximgatilin.github.io/stylelint-config/">CSS linting</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest">Jest</a> ←</li>
+</ul>
+<p>Optional</p>
+<ul>
+<li><a href="https://prettier.io/">Prettier</a>  - auto code formatting, can be combined with ESLint.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=andys8.jest-snippets">Jest Snippets</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=jalisimo.react-jest-vscode-snippets">React Jest Snippets</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer">Bracket Pair Colorizer</a> - “colorizing matching brackets” in VsCode</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost">Import Cost</a>  <a href="https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost"></a>- is a visual code plugin, that allows you to see the size of our imports in context.</li>
+</ul>
+<h3>create-react-app</h3>
+<p><a href="https://github.com/facebook/create-react-app"><code>create-react-app</code></a> comes with some setup for testing with jest.</p>
+<p>→ <a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests">See more and a great overview of what’s available out of the box here</a>. ←
+Type of tests available</p>
+<ul>
+<li>“smoke test” verifying that a component renders without throwing</li>
+<li>shallow rendering</li>
+<li>testing some of the output</li>
+<li>full rendering</li>
+<li>testing component lifecycle</li>
+<li>state changes.</li>
+<li>Snapshot testing</li>
+</ul>
+<blockquote>
+<p>Snapshot testing is a feature of Jest that automatically generates text snapshots of your components and saves them on the disk so if the UI output changes, you get notified without manually writing any assertions on the component output. <a href="https://facebook.github.io/jest/blog/2016/07/27/jest-14.html">Read more about snapshot testing.</a></p>
+<ul>
+<li>from <a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#snapshot-testing">create-react-app docs</a></li>
+</ul>
+</blockquote>
+<h4><strong>Coverage reporting</strong></h4>
+<p>Cool feature is <a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#coverage-reporting">coverage reporting</a>, if you run  <code>npm test -- --coverage</code> as gives you a nice table in terminal.</p>
+<h4><strong>Runni****ng</strong> <strong>tests</strong></h4>
+<blockquote>
+<p>By default <code>npm test</code> runs the watcher with interactive CLI. However, you can force it to run tests once and finish the process by setting an environment variable called <code>CI</code>.</p>
+</blockquote>
+<p>For continuous integration/deployment, can use <code>npm run test-ci</code> by adding this to your <code>package.json</code> npm scripts.</p>
+<pre><code>&quot;test-ci&quot;: &quot;CI=true react-scripts test --env=jsdom --verbose&quot;,
+</code></pre>
+<p><a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#continuous-integration">see crea</a><a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#continuous-integration">te</a><a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#continuous-integration">-react-app docs for more on this</a>.</p>
+<h4><strong>Tests components in isolation</strong></h4>
+<blockquote>
+<p>Create React App doesn’t include any tools for this by default, but you can easily add <a href="https://storybook.js.org">Storybook for React</a> (<a href="https://github.com/storybooks/storybook">source</a>) or <a href="https://react-styleguidist.js.org/">React Styleguidist</a> (<a href="https://github.com/styleguidist/react-styleguidist">source</a>) to your project. <em>These are third-party tools that let you develop components and see all their states in isolation from your app</em>.</p>
+<ul>
+<li><a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#developing-components-in-isolation">from create-react-app docs</a></li>
+</ul>
+</blockquote>
+<p>also see <a href="https://storybook.js.org/basics/introduction/">storybook docs</a></p>
+<p><em>Note: If building React compone<strong>n</strong>ts in isolation consider checking out</em> <a href="https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb"><em>nwb docs</em></a>**</p>
+<!-- TODO: 
+
+[ ] add what each of these tests mean  -->
+<h3>Linting</h3>
+<h4><strong>ESLint</strong></h4>
+<p><a href="https://eslint.org/">ESLint</a> is installed by default in <a href="https://github.com/facebook/create-react-app#philosophy">create-react-app</a>.</p>
+<blockquote>
+<p>ESLint is an open source JavaScript linting utility originally created by Nicholas C. Zakas in June 2013. Code <a href="https://en.wikipedia.org/wiki/Lint_(software)">linting</a> is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. There are code linters for most programming languages, and compilers sometimes incorporate linting into the compilation process.</p>
+<p>JavaScript, being a dynamic and loosely-typed language, is especially prone to developer error. Without the benefit of a compilation process, JavaScript code is typically executed in order to find syntax or other errors. Linting tools like ESLint allow developers to discover problems with their JavaScript code without executing it.</p>
+<p>The primary reason ESLint was created was to allow developers to create their own linting rules. ESLint is designed to have all rules completely pluggable. The default rules are written just like any plugin rules would be. They can all follow the same pattern, both for the rules themselves as well as tests. While ESLint will ship with some built-in rules to make it useful from the start, you’ll be able to dynamically load rules at any point in time.</p>
+<ul>
+<li><a href="https://eslint.org/docs/about/">from ESLint docs</a></li>
+</ul>
+</blockquote>
+<p><a href="https://standardjs.comn">Linting standards</a></p>
+<h3>Prettier</h3>
+<p><a href="https://prettier.io">Prettier</a> is an Opinionated code formatter.
+<a href="https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a">Can be combined with ESLint</a> with <a href="https://github.com/airbnb/javascript/tree/master/react">Airbnb Js and React style guide</a></p>
+<p>Key selling point:</p>
+<blockquote>
+<p>No need to discuss style in code review</p>
+</blockquote>
+<h3>Git hooks</h3>
+<p>Setup pre-commit and pre-push hooks,  these can be used to keep the code clean over time. The hooks can check against linting rules and/or whether test are passing or not.</p>
+<h4><a href="https://github.com/typicode/husky"><strong>Husky</strong></a></h4>
+<blockquote>
+<p>Husky can prevent bad <code>git commit</code>, <code>git push</code> and more 🐶 ❤️ woof!</p>
+</blockquote>
+<p>Seems like to set it up, based on <a href="https://github.com/typicode/husky">their README</a>  as of version <code>0.14</code> it might be enough to  install it as dev dependency and add these two npm scripts <code>precommit</code> and <code>prepush</code> to <code>package.json</code>.</p>
+<pre class="language-json"><code class="language-json"><span class="token property">"precommit"</span><span class="token operator">:</span> <span class="token string">"npm install &amp;&amp; npm run-script lint &amp;&amp; npm run-script test-ci"</span><span class="token punctuation">,</span><br><span class="token property">"prepush"</span><span class="token operator">:</span> <span class="token string">"npm install &amp;&amp; npm run-script lint &amp;&amp; npm run-script test-ci"</span><span class="token punctuation">,</span></code></pre>
+<p>Note, if you use <code>git commit --no-verify</code>  flag it will skip the commit hooks, however this practice is highly discouraged.</p>
+<h2>Typechecking</h2>
+<p>### PropTypes
+<a href="https://www.npmjs.com/package/react-proptypes-generate"><code>react-proptypes-generate</code></a></p>
+<blockquote>
+<p>This is the VS Code's extension that automatically generates PropTypes code for React components, like <code>ReactPropTypes</code> in the Jetbrains's Platform</p>
+</blockquote>
+<blockquote>
+<p>##### VS Code
+Search react-proptypes-generate in Marketplace and install it</p>
+</blockquote>
+<h2>Unit tests</h2>
+<h3><a href="https://jestjs.io">Jest</a></h3>
+<blockquote>
+<p>Jest is used by Facebook to test all JavaScript code including React applications. One of Jest's philosophies is to provide an integrated &quot;zero-configuration&quot; experience. We observed that when engineers are provided with ready-to-use tools, they end up writing more tests, which in turn results in more stable and healthy code bases.</p>
+</blockquote>
+<p>Docs:</p>
+<ul>
+<li><a href="https://jestjs.io/docs/en/getting-started">getting started</a></li>
+<li><a href="https://jestjs.io/docs/en/expect.html">expect</a></li>
+<li><a href="https://jestjs.io/docs/en/expect.html">Jest matchers docs</a></li>
+</ul>
+<p>There is a <a href="https://github.com/jest-community/vscode-jest">Jest extension for Visual code</a>, if that is your editor of choice.</p>
+<blockquote>
+<p>If you use <a href="https://code.visualstudio.com">Visual Studio Code</a>, there is a <a href="https://github.com/orta/vscode-jest">Jest extension</a> which works with Create React App out of the box. This provides a lot of IDE-like features while using a text editor: showing the status of a test run with potential fail messages inline, starting and stopping the watcher automatically, and offering one-click snapshot updates.</p>
+<ul>
+<li><a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#editor-integration">From create-react-app docs</a></li>
+</ul>
+</blockquote>
+<h3><a href="https://github.com/kentcdodds/react-testing-library"><code>react-testing-library</code></a></h3>
+<blockquote>
+<p>Simple and complete React DOM testing utilities that encourage good testing practices.</p>
+</blockquote>
+<blockquote>
+<p>As an alternative or companion to <code>enzyme</code>, you may consider using <code>react-testing-library</code>. <a href="https://github.com/kentcdodds/react-testing-library"><code>react-testing-library</code></a> is a library for testing React components in a way that resembles the way the components are used by end users. It is well suited for unit, integration, and end-to-end testing of React components and applications. It works more directly with DOM nodes, and therefore it's recommended to use with <a href="https://github.com/gnapse/jest-dom"><code>jest-dom</code></a> for improved assertions.</p>
+<ul>
+<li><a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#use-react-testing-library">from create-react-app docs</a></li>
+</ul>
+</blockquote>
+<h3><a href="https://github.com/airbnb/enzyme">Enzyme</a></h3>
+<blockquote>
+<p>Enzyme is a JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output.</p>
+</blockquote>
+<p>Docs:</p>
+<ul>
+<li><a href="https://airbnb.io/enzyme">enzyme</a></li>
+</ul>
+<blockquote>
+<p>Enzyme documentation uses Chai and Sinon for assertions but you don’t have to use them because Jest provides built-in <code>expect()</code> and <code>jest.fn()</code> for spies.</p>
+</blockquote>
+<blockquote>
+<p>If you’d like to test components in isolation from the child components they render, we recommend using <a href="https://airbnb.io/enzyme/docs/api/shallow.html"><code>shallow()</code>rendering API</a> from <a href="https://airbnb.io/enzyme/">Enzyme</a>.</p>
+<ul>
+<li><a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#testing-components">from create-react-app docs</a></li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Enzyme supports <a href="https://airbnb.io/enzyme/docs/api/mount.html">full rendering with <code>mount()</code></a>, and you can also use it for testing state changes and component lifecycle.</p>
+<ul>
+<li><a href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#testing-components">from create-react-app docs</a></li>
+</ul>
+</blockquote>
+<h3><a href="https://sinonjs.org">Sinon</a></h3>
+<blockquote>
+<p>Standalone test spies, stubs and mocks for JavaScript.
+Works with any unit testing framework.</p>
+</blockquote>
+<p>The idea is that you can mock a function and test it’s receiving the right arguments, and return some sample output.</p>
+<!-- (?) -->
+<p>Might be similar to <a href="https://jestjs.io/docs/en/mock-functions">Jest mocking function</a>.</p>
+<blockquote>
+<p>Mock functions make it easy to test the links between code by erasing the actual implementation of a function, capturing calls to the function (and the parameters passed in those calls), capturing instances of constructor functions when instantiated with <code>new</code>, and allowing test-time configuration of return values.
+There are two ways to mock functions: Either by creating a mock function to use in test code, or writing a <a href="https://jestjs.io/docs/en/manual-mocks"><code>manual mock</code></a> to override a module dependency.</p>
+<ul>
+<li><a href="https://jestjs.io/docs/en/mock-functions">From Jest Mock functions docs</a></li>
+</ul>
+</blockquote>
+<!-- 
+TODO: 
+
+[ ] check if sinonin is similar to Ject mocking function  -->
+<h2>End to end browser testing</h2>
+<h3><a href="https://www.cypress.io">Cypress</a></h3>
+<blockquote>
+<p>Fast, easy and reliable testing for anything that runs in a browser.</p>
+</blockquote>
+<p>Docs:</p>
+<ul>
+<li><a href="https://docs.cypress.io">cypress.io</a></li>
+<li><a href="https://docs.cypress.io/guides/getting-started/writing-your-first-test.html#Step-1-Visit-a-page">writing your first test</a></li>
+</ul>
+<p>Possible replacement for selenium if you were familiar with that.</p>
+<h2>Visual regression testing</h2>
+<h3><a href="https://github.com/garris/BackstopJS">BackstopJS</a></h3>
+<blockquote>
+<p>automates visual regression testing of your responsive web UI by comparing DOM screenshots over time.</p>
+</blockquote>
+<p>it installs PhantomJS and chromium as dependencies</p>
+<!-- ![](https://d2mxuefqeaa7sj.cloudfront.net/s_3762A27843DD60D309BCC5F105C7E58752446F993923F4BA188D37CFE4FFE630_1551974126450_Screen+Shot+2019-03-07+at+15.54.53.png) -->
+<div class="image-wrapper">
+    <img src="" alt="" />
+</div>
+<h2>Browser stack</h2>
+<p><a href="https://www.browserstack.com/screenshots">Browser stack screenshots</a></p>
+<blockquote>
+<p>capture screenshots of a particular web application/URL across a wide range of mobile devices and browsers</p>
+</blockquote>
+<!-- example 
+https://www.browserstack.com/screenshots/7c8f5351f86964ab9052fcf1f423d6889e41133e -->
+<!-- 
+![](https://d2mxuefqeaa7sj.cloudfront.net/s_3762A27843DD60D309BCC5F105C7E58752446F993923F4BA188D37CFE4FFE630_1551974359512_Screen+Shot+2019-03-07+at+15.58.22.png) -->
+<div class="image-wrapper">
+    <img src="" alt="" />
+</div>
+<p>You might generally go for the latest browser, and latest device, but it's good to compile an explicit list of devices.
+You can also look at existing analytics to see what are the most common devices and browser combinations for your site/app.</p>
+<p>There is also a <a href="https://www.browserstack.com/screenshots/api">browserstack screenshots API</a></p>
+<h2>Testing API end points</h2>
+<p><a href="https://www.npmjs.com/package/nock">Nock</a></p>
+<h2>Learning resources</h2>
+<h4><strong>intro</strong></h4>
+<ul>
+<li><a href="https://blog.kentcdodds.com/but-really-what-is-a-javascript-test-46fe5f3fad77">But really, what is a JavaScript test?</a></li>
+<li><a href="https://levelup.gitconnected.com/how-to-use-technical-debt-in-your-favor-98bae475ba68">How To Use Technical Debt In Your Favor</a></li>
+</ul>
+<h4><strong>Testing strategy</strong></h4>
+<ul>
+<li><a href="https://youtu.be/Da9wfQ0frGA">What We Can Learn About Testing From The Wheel - Kent C. Dodds (Ignite Fluent 2016) - 5min video</a></li>
+<li><a href="https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c">Write tests. Not too many. Mostly integration.</a></li>
+<li>“<a href="https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html">Just Say No to More End-to-End Tests</a>” - Google testing blog</li>
+</ul>
+<h4><strong>Test pyramid</strong></h4>
+<ul>
+<li><a href="https://martinfowler.com/articles/practical-test-pyramid.html">Pra</a><a href="https://martinfowler.com/articles/practical-test-pyramid.html">c</a><a href="https://martinfowler.com/articles/practical-test-pyramid.html">tical Test Pyramid</a></li>
+<li><a href="https://martinfowler.com/bliki/TestPyramid.html">Testing pyramid</a></li>
+</ul>
+<h4><strong>Cypres</strong></h4>
+<ul>
+<li><a href="https://youtu.be/lK_ihqnQQEM">ReactiveConf 2016 - Brian Mann: Testing the way it should be - (video 36min)</a></li>
+</ul>
+<h4><strong>Tutorials</strong></h4>
+<ul>
+<li><a href="https://app.pluralsight.com/library/courses/test-driven-development-react/table-of-contents">Test-driven Development Using React - pluralsight</a></li>
+<li><a href="https://app.pluralsight.com/library/courses/testing-react-applications-jest/table-of-contents">Testing React Applications with Jest - pluralsight</a></li>
+<li><a href="https://frontendmasters.com/courses/testing-javascript/">Testing JavaScript Applications (feat. React and Redux) - payed</a></li>
+<li><a href="https://docs.cucumber.io/guides/">Cucumber.js BDD guides</a></li>
+</ul>
+<h4><strong>Unsorted</strong></h4>
+<ul>
+<li><a href="https://youtu.be/2EM4itu7j7I">10 years of Doing Behaviour-Driven Development All Wrong (part 1) by Liz Keogh - (41 min)</a></li>
+<li><a href="https://kentcdodds.com/blog/write-tests">Write tests. Not too many. Mostly integration.</a></li>
+</ul>
+
+</div>
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script>
+    (function (document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+
+      document.addEventListener('click', function (e) {
+        var target = e.target;
+
+        if (!checkbox.checked ||
+          sidebar.contains(target) ||
+          (target === checkbox || target === toggle)) return;
+
+        checkbox.checked = false;
+      }, false);
+    })(document);
+  </script>
+
+  
+
+
+  <script>
+
+    // const bodyEl = document.body;
+    // const toggleEl = document.querySelector('#color-scheme-toggle');
+    // const prismEl = document.querySelector('#prism-css');
+    // const DARK = 'dark';
+    // const LIGHT = 'light';
+    // const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    // const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    // const COLOR_SCHEME_CHANGED = 'colorSchemeChanged';
+
+    // toggleEl.addEventListener('click', () => {
+    //   console.log('toggle')
+    //   const isDark = bodyEl.classList.toggle('dark-mode');
+    //   const mode = isDark ? DARK : LIGHT;
+    //   sessionStorage.setItem('jec.color-scheme', mode);
+
+    //   if (isDark) {
+    //     if (prismEl) prismEl.href = PRISM_DARK_URL;
+    //   } else {
+    //     if (prismEl) prismEl.href = PRISM_LIGHT_URL;
+    //   }
+
+    //   toggleEl.dispatchEvent(new CustomEvent(
+    //     COLOR_SCHEME_CHANGED, { detail: mode }
+    //   ));
+    // });
+    // // 
+
+    // function init() {
+    //   console.log('init')
+    //   const DARK = 'dark';
+    //   const LIGHT = 'light';
+    //   const isSystemDarkMode = matchMedia &&
+    //     matchMedia('(prefers-color-scheme: dark)').matches;
+
+    //    console.log('isSystemDarkMode',isSystemDarkMode)
+    //   // let mode = sessionStorage.getItem('jec.color-scheme');
+    //   // console.log('mode',mode)
+    //   if (!mode && isSystemDarkMode) {
+    //     mode = DARK;
+    //   } else {
+    //     mode = mode || LIGHT;
+    //   }
+
+    //   if (mode === DARK) {
+    //     document.querySelector('#color-scheme-toggle').click();
+    //   }
+
+    //   // Event listener to change with system change
+    //   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    //     const changedColourScheme = e.matches ? DARK: LIGHT;
+    //       if (changedColourScheme === DARK) {
+    //         const isDark = bodyEl.classList.add('dark-mode');
+    //         prismEl.href = PRISM_DARK_URL;
+    //       } else {
+    //         const isDark = bodyEl.classList.remove('dark-mode');
+    //         prismEl.href = PRISM_LIGHT_URL;
+    //       }
+    //   });
+    // }
+
+    // // run the code   
+    // init();
+    // console.log('yo')
+  </script>
+</body>
+
+</html>

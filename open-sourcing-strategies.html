@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+     &middot; Pietro
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png">
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" />
+
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png">
+
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png">
+
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png">
+
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png">
+
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32">
+
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png">
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- font awesome CDN -->
+  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
+  <style>   
+
+ /* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body{
+      background-color: black;
+      color: #B2BEB5;
+    }
+
+      img {
+      filter: grayscale(30%);
+    }
+
+    body >h2 h3 h4 h5 h6 {
+      color: white;
+    }
+    body >h1 {
+      color: white;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+      /* transition: background-color 300ms ease-in-out 0s; */
+    } 
+}
+  </style>
+
+</head>
+
+<body class="">
+  <!-- class="theme-base-08" -->
+
+  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+ styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!--  checked -->
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
+
+    
+  </div>
+
+  <nav class="sidebar-nav">
+
+    
+
+    <a class="sidebar-nav-item" href="/"><i
+        class="fa fa-user" aria-hidden="true"></i> About</a>
+
+    <a class="sidebar-nav-item" disabled="true">
+
+      <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>Photos
+      </a>
+
+      
+      <a class="sidebar-nav-item" href="/categories/video">
+        
+        <i class="fa fa-film" aria-hidden="true"></i> Video
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/tech">
+        
+        <i class="fa fa-laptop" aria-hidden="true"></i> Tech
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/ttqf">
+        
+        <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+        
+      </a>
+      
+      <a class="sidebar-nav-item" href="/categories/blog">
+        
+        <i class="fa fa-pencil" aria-hidden="true"></i> Blog
+        
+      </a>
+      
+
+      <a class="sidebar-nav-item" disabled="true">
+
+      </a>
+      <a class="icon-envelope  sidebar-nav-item"
+        href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+        class="author-social" target="_blank" rel="noopener noreferrer"><i class="icon-mail"></i><i
+          class="fa fa-envelope-o" aria-hidden="true"></i>
+        E-mail</a> <span></span>
+
+
+      <a class="icon-twitter  sidebar-nav-item "
+        href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> <i
+          class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+
+      <a class="icon-github sidebar-nav-item "
+        href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+
+      <a class="icon-linkedin sidebar-nav-item "
+        href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="noopener noreferrer"><i
+          class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
+
+
+
+
+
+</div>
+
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+    content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Pietro</a>
+          <small>Passarelli </small>
+        </h3>
+      </div>
+    </div>
+
+    <div class="container content">
+      
+<div class="post">
+	<h1 class="post-title">Some thoughts on open sourcing strategies </h1>
+	<span class="post-date">2017-12-08
+
+		
+	</span>
+
+	
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	
+
+	
+
+	
+
+	<br>
+
+
+	<!-- Stack -->
+	
+	<br>
+
+	
+	<div class="image-wrapper">
+		<img src="null" alt="After a conversation at the Open News Unconference (London October 2017) during the week of MozFest, I thought I would have been good to dot down some ideas on things I’ve found to work, as a strategy for open sourcing and more generally work in the open to engage a community around your project." />
+	</div>
+	
+	
+	
+	After a conversation at the Open News Unconference (London October 2017) during the week of MozFest, I thought I would have been good to dot down some ideas on things I’ve found to work, as a strategy for open sourcing and more generally work in the open to engage a community around your project.
+	
+	<hr>
+
+
+	<p>What follows are some things to think about when thinking about how to open source a project.</p>
+<p>For each one I am also going to be highlighting the advantages that comes with it.</p>
+<p>For more comprehensive resources see</p>
+<ul>
+<li>
+<p>Github: <a href="https://opensource.guide/">open source guides</a></p>
+</li>
+<li>
+<p>Open News: <a href="https://fieldguide.opennews.org/en/latest/">The Field Guide to Open Source in the Newsroom</a></p>
+</li>
+</ul>
+<h2>1 - Code in the open</h2>
+<p>Have your repository public from day one. Rather than leaving it to the end,</p>
+<p>As opposed to a big push to open source and tidying and cleaning up to do afterward.</p>
+<p>This is easier if you follow best practice to put keys and sensitive info the right places (eg using environment variables or using a <code>.gitgnore</code> file) when you set up.</p>
+<p>The main advantage for this is that it makes it easier to ask for help as you go along, as you can point directly to the line in the code, and have the whole context around it.</p>
+<p><a href="https://fieldguide.opennews.org/en/latest/Chapter03-Existing-Projects/#is-your-project-sanitary">More concrete steps on tools to avoid leaking sensitive informations here</a>.</p>
+<h2>2 - Open source components</h2>
+<p>If you use a component based design approach, or simply for example in node, separate your code in small functions.</p>
+<p>The main advantages are those of a component-based design architecture, eg that it makes your code more reusable, easier to test.</p>
+<p>But from an open sourcing perspective, it also means that there might be more people in the community who might be interested in that specific piece of the puzzle but not in the whole system or application you are building. And they might be interested in contributing to the development of that piece.  This not only allows you to have more contribution to the building blocks. But also people using it in different context might strengthen those components for edge cases you might not have thought about.</p>
+<p>For instance in <a href="https://www.autoedit.io/">autoEdit</a>, there is an<a href="https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/edl_composer"> EDL composer module</a>,  it was only after sharing the code with the folks at <a href="https://hyperaud.io/">Hyperaud.io</a> and testing it implemented in one of their projects, that was able to identify an edge case I had not thought about and improve the module to be more robust.</p>
+<p>In autoEdit, it assumed the video file footage came from a camcorders and had cards informations associated with it in the metadata, while in hyperaud.io use cases it may not, and would not have these type of informations. This was breaking the EDL composer. And gave me a chance to look into making it work for those situations.</p>
+<h2>3 - &quot;case study&quot; article</h2>
+<p>Another thing that is worth considering is to write a blog post/article type of document, where you give a more high-level overview of the system/project and if applicable, the philosophy behind it.</p>
+<p>If you are working on something that cannot be open sourced, because it might be too closely tied to system specific of proprietary code, the &quot;case study&quot; type of article is also a good alternative to share some knowledge on the high level thinking, challenges and insights.</p>
+<p>If you didn’t follow my very first advice, “code in the open”,  for whatever valid reason, the high level article overview article can also be a quicker way to engage people and create anticipation while working towards open sourcing the project.</p>
+<p>Here is <a href="https://source.opennews.org/articles/video-editing-made-better-introducing-autoedit/">an example from autoEdit written for Source</a>. But this can also be a markdown type of file in your repository.</p>
+<p>One of the biggest advantages of this is to foster collaboration.</p>
+<p>For example the NPR source piece <a href="https://source.opennews.org/articles/how-npr-transcribes-and-fact-checks-debates-live/">&quot;How NPR Transcribes and Fact-Checks the Debates, Live&quot;</a> by Tyler Fisher was instrumental in fostering collaboration with the Vox Product team when they decided to make a similar system. Rather than re-inventing the wheel it was possible to build on the shoulder of their approach, and study it closely.</p>
+<p>Because there was a conversation going between NPR and Vox re-best approach to improve this system. There was also <a href="https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles/content/">motivation in documenting the new system in a gitbook</a>. As part of the ongoing conversation.</p>
+<p>To go full circle, Kavya Sukumar at Vox also wrote <a href="https://source.opennews.org/articles/building-annotation-tool-dime/">&quot;Building an Annotation Tool on a Dime&quot;</a> another source piece to detail the high level thinking behind the new and improved system.</p>
+<p>Vox was able to get up to speed more quickly, and NPR was then able to adopt and improve their system.</p>
+<p>Last but not least, there was also a financial saving involved in the new optimization, NPR was initially paying a stenographer to live transcribe with a hefty hourly rate, while with the improved system there was no transcription cost involved in the transcribing, as the captions were coming straight from the Tv channel.</p>
+<p>The Financial Times has also recently started to use this system thanks to the gitbook documentation and open source code available.</p>
+<p>The key here is that more players are engaged with a specific problem you are trying to solve, the more support you can get to find an optimal solution.</p>
+<h2>4 - Document as you go along</h2>
+<p>Similarly to the idea of &quot;code in the open&quot; documentation is also best done if you take notes as you go along. I normally have a <code>notes</code> folder where I keep  markdown files in the GitHub repo.</p>
+<p>This is a place to keep notes to self, options considered, limits of certain technology etc ...</p>
+<p>For example when at the POV hackathon, I kept at <a href="https://github.com/pietrop/BattleSounds/blob/master/notes.md"><code>notes.md</code></a> where I was keeping track of key pieces of technology components  used to make it easier to share stack choices, challenges, techniques and issues.</p>
+<p>As a more recent example when working on an open source transcription text editor for Fact2, I kept<a href="https://github.com/pietrop/fact2_transcription_editor/tree/master/notes"> a <code>notes</code> folder</a>.  To describe key parts of the working of the system for developers users.</p>
+<p>To the produce actual documentation for the project it becomes then easier and faster to organise and &quot;refactor&quot; this using a gitbook.</p>
+<h2>5 - README</h2>
+<p>Your readme should have clear instructions on how to get setup and especially if it is a module/components, example usage.</p>
+<p>For example I made this module for parsing and composing srt, subtitle files. See <a href="https://www.npmjs.com/package/srt_parser_composer">on npm</a> where it has been downloaded 476 times or on <a href="https://github.com/pietrop/srtParserComposer">github</a>.</p>
+<p>For each function there was an example usage, which can easily be copied and pasted to get up to speed. And a clear statement of the input expected and example of the output it would return. To make it as clear as possible.</p>
+<p>For projects, If you find the the setup description is very involved. Maybe your build process/script should do a bit more to make it a one line command as much as possible.</p>
+<p>If you see <a href="https://github.com/times/quickQuote#welcome-to-quickquote-documentation">the quickQuote README</a> the initial setup is very involved. Despite having tried to contain the server deployment instructions in <a href="https://github.com/times/quickQuote#deployment-instructions">a bunch of deployment scripts</a>.</p>
+<p>In<a href="https://github.com/OpenNewsLabs/autoEdit_2#development"> autoEdit’s README</a> I worked on this made the setup happen as much as possible as part of a script. So that launching the app would be as easy as <code>npm install</code> followed by <code>npm start</code>.</p>
+<h2>6 - R&amp;D doc</h2>
+<p>This is something I initially learned at Vox Media from<a href="https://twitter.com/ryanmark"> Ryan Mark</a>. He suggests making a working document to sketch out production as a list. The list covers things you need to do or learn in order to get the project to completion, possibly in order.</p>
+<p>I then elaborated on this and devised my own format. I generally:</p>
+<ul>
+<li>
+<p>Divide the program it  in parts with titles.</p>
+</li>
+<li>
+<p>Describe what each is going to do.</p>
+</li>
+<li>
+<p>What components you need and what they need to do</p>
+</li>
+<li>
+<p>What components you currently have and their limits</p>
+</li>
+<li>
+<p>What you don't know and need to find out for each, for instance sometimes the integration might not work as expected or there are dependencies that are to port or deal with.</p>
+</li>
+</ul>
+<p>For example this is a blog post I wrote in response to someone asking what could be a good way to <a href="https://pietropassarelli.com/aligning-partially-scripted-speeches.html">align partially scripted speeches</a>. It contains the initial research and exploration I do before diving into testing out the option to implement a possible solution.</p>
+<p>Another example is from the BBC News Labs hackathon BBC where I’ve worked on a <a href="https://pietropassarelli.com/BBCnewslabs_slack_transcription_bot.html">slack bot for transcription service</a>. And used a <a href="https://docs.google.com/document/d/1n6B1vyQysIEeDfoDUqnVNzb7RVy_MNuyvrVekLQ0YZ4/edit#heading=h.q3di39fnr6em">google doc to keep an R&amp;D doc</a> to guide the development on a fast turnaround. This was also a great communication tool when working with <a href="https://twitter.com/gridinoc">Laurian Gridinoc</a> to keep track of progress, define scope and tackle unexpected twists.</p>
+<p>Last example from a more mature project, with autoEdit, an <a href="https://docs.google.com/document/d/12mUuXAtE65vhy5Sm0tmKRdgXGMn_Ob4RZEs9T5uDPkM/edit?usp=sharing">R&amp;D Doc for the second phase of development looked like this</a>.</p>
+<p>Where you can see the program it’s divided into the parts, each part into components, and for those components there are details, on what already exist, what is unknown, challenges and limits of current hypothesis of implementation. Where useful there are also mockup sketches and screenshots or json representation of data. But these are generally extras for when the conversation gets more specific.</p>
+<p>The biggest advantage of keeping an R&amp;D doc is not only that it makes it easier to keep your ideas organised, guide your research and development effort.  But also if you get stack, you have less work to get others up to speed to get some help.</p>
+<p>Also useful if working in a team to divide tasks and make sure everybody is in sync.</p>
+<h2>7 - Screenshots, gifts and (maybe) diagrams</h2>
+<p>When you are done make it really easier for the users to understand what the project does.</p>
+<p>Use screenshots, gifts, Maybe even diagrams. And If needed make a user manual.</p>
+<p>I would also argue that for this purpose giffs or screenshots driven narrative is more effective than video tutorials. As it is more immediate, and easier to skim.</p>
+<p>Some designers argue that the programme should be self explanatory enough that a user manual is not needed.  I think that is an honorable objective to strive to, altho very dependent on the complexity of the type of software and user base you are designing. For instance I cannot imagine learning to use a video editing software to its full potential without reading through expert books about it. As well as there might be user segments for which things  are intuitive and others that will find it harder to get up to speed.</p>
+<p>But on a more concrete point it also is good for people evaluating if they want to use  your software to evaluate it and get a sense of its working without having to go through the installation process.</p>
+<p>For example with <a href="https://github.com/pietrop/fact2_transcription_editor#transcriptions-text-editor">Fact2 Transcription text editor’s README a screenshot</a> gives you a very clear idea of what the project looks like without you having to download and compile the code, hoping that it works, to see for yourself.</p>
+<p>While <a href="https://github.com/OpenNewsLabs/autoEdit_2">autoEdit’s README is a good example of use of diagram</a> to give an overview of the system, as well as  <a href="https://pietropassarelli.gitbooks.io/autoedit2-user-manual/content/">the autoEdit user manual</a> as an example of using giffs to make things easier to understand, <a href="https://pietropassarelli.gitbooks.io/autoedit2-user-manual/content/paperediting.html">such as the paper-editing feature</a>.</p>
+<p>For a more minimalistic example see how for the quickQuote project page, <a href="https://times.github.io/quickQuote/userManual.html">the user manual</a> is just a series of steps and screenshots.</p>
+<h2>8 - Demo</h2>
+<p>It is also good to make a dummy demo. To deploy alongside the project. This is good both for people evaluating the software and for yourself if you need to give a presentation under time pressure or resource constraints and can fall back to it.</p>
+<p>However if you are going to go down this road it is good to think about how to achieve this at the beginning of the project especially if using build tools, to automate that step.</p>
+<p>But I would recommend doing this only if it can come with not too much extra code. One way to achieve this for a client side web app is to hard code the database, with some examples and make it self-contained client side. The purpose of the demo is more to express the interaction then provide any useful functionality.</p>
+<p>Make it very clear that the demo is a demo and not expected to be a working app.</p>
+<p>For example with <a href="https://www.autoedit.io/demo/">autoEdit’s demo</a> I tried to make it really clear it is for demonstration purpose only. By adding text to clarify and avoid users confusing it for a web version of the app.</p>
+<p>In autoEdit I <a href="https://github.com/OpenNewsLabs/autoEdit_2/blob/master/package.json#L25">made this part of the build tool process</a> to make it easier to update the demo when adding new features.</p>
+<p>With <a href="https://pietropassarelli.com/captions-maker/">captions maker’s demo </a>despite the big organce text screaming this is a dummy demo I still had people completely missing it and telling me that they were frustrated they couldn’t use the app.</p>
+<h2>9 - Video presentations</h2>
+<p>Open source projects like the <a href="https://facebook.github.io/jest/#watch">testing framework jest do have link to talks</a> but you don't have to be as big as that to do the same.</p>
+<p>The main advantage, is that you put forward another medium to engage people in your project.</p>
+<p>The easiest is to organise to give a short presentation (think 3 to 10 minutes) at a relevant meetup or event. For example some hacks/hackers chapters have lighting pitches.</p>
+<p>You can then link to it from the github repo to give a better sense of the project in a nutshell.</p>
+<ul>
+<li>
+<p>Film a video presentation at a meetup or event.</p>
+</li>
+<li>
+<p>Ideally, less than 5 and no more than 10 is best.</p>
+</li>
+<li>
+<p>At a minimum do a screencast recording.</p>
+</li>
+</ul>
+<p>If you are recording a screencast QuickTime is unreliable and makes huge raw files. It might stop if it runs out of space.  If you use these, do run through, and make sure mic settings are on. Screenflow is ok but in my experience it can take forever to export. In any case you might want to have mirrored screen.</p>
+<p>This is also particularly useful for hackathons projects where sometimes it's more proof of concepts</p>
+<p>As an example <a href="https://pietropassarelli.com/BBCnewslabs_slack_transcription_bot.html">BBC News Labs hackathon slack bot presentation</a>, less then 3 minutes.</p>
+<p>see <a href="https://pietropassarelli.com/oneStory.html">London Times team presentation at BBC News Labs hackathon</a>.</p>
+<p>Or the<a href="https://pietropassarelli.com/autoEdit.html"> first version of autoEdit, as presented at Hacks/Hackers London</a> in under 2 minutes.</p>
+<p>Example <a href="https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles/content/video-of-presentation.html">Annotated article system presentation at SRCCON</a> workshop with David Eads.</p>
+<p>altho a bit longer than recommended, it is integrated in the gitbook documentation to provide alternate format to consume /explore the material.</p>
+<p>Sometimes the organisers of an event will be recording, presentations and that can be a great resource to to link to your project, such as the <a href="https://pietropassarelli.gitbooks.io/textav">textAV event documentation with video of the project’s presentations</a>.</p>
+<p>One of the advantages of this, is that sometimes the code for the project might not keep up with the test of time, especially for hackathons proof of concepts, and dependencies might be breaking etc and a video presentation could be a great way to get the gist of it.</p>
+<h2>10 - Collaborate</h2>
+<p>If you don't want to be &quot;stuck&quot; maintaining it, talk/connect with people ahead of time to engage them on your idea, size needs and requirements etc…</p>
+<h2>licence</h2>
+<p>Last but not least, pick a licence. <a href="https://fieldguide.opennews.org/en/latest/Chapter02-Starting-New-Project/">For more details on this see here</a>.</p>
+
+</div>
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script>
+    (function (document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+
+      document.addEventListener('click', function (e) {
+        var target = e.target;
+
+        if (!checkbox.checked ||
+          sidebar.contains(target) ||
+          (target === checkbox || target === toggle)) return;
+
+        checkbox.checked = false;
+      }, false);
+    })(document);
+  </script>
+
+  
+
+
+  <script>
+
+    // const bodyEl = document.body;
+    // const toggleEl = document.querySelector('#color-scheme-toggle');
+    // const prismEl = document.querySelector('#prism-css');
+    // const DARK = 'dark';
+    // const LIGHT = 'light';
+    // const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    // const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    // const COLOR_SCHEME_CHANGED = 'colorSchemeChanged';
+
+    // toggleEl.addEventListener('click', () => {
+    //   console.log('toggle')
+    //   const isDark = bodyEl.classList.toggle('dark-mode');
+    //   const mode = isDark ? DARK : LIGHT;
+    //   sessionStorage.setItem('jec.color-scheme', mode);
+
+    //   if (isDark) {
+    //     if (prismEl) prismEl.href = PRISM_DARK_URL;
+    //   } else {
+    //     if (prismEl) prismEl.href = PRISM_LIGHT_URL;
+    //   }
+
+    //   toggleEl.dispatchEvent(new CustomEvent(
+    //     COLOR_SCHEME_CHANGED, { detail: mode }
+    //   ));
+    // });
+    // // 
+
+    // function init() {
+    //   console.log('init')
+    //   const DARK = 'dark';
+    //   const LIGHT = 'light';
+    //   const isSystemDarkMode = matchMedia &&
+    //     matchMedia('(prefers-color-scheme: dark)').matches;
+
+    //    console.log('isSystemDarkMode',isSystemDarkMode)
+    //   // let mode = sessionStorage.getItem('jec.color-scheme');
+    //   // console.log('mode',mode)
+    //   if (!mode && isSystemDarkMode) {
+    //     mode = DARK;
+    //   } else {
+    //     mode = mode || LIGHT;
+    //   }
+
+    //   if (mode === DARK) {
+    //     document.querySelector('#color-scheme-toggle').click();
+    //   }
+
+    //   // Event listener to change with system change
+    //   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    //     const changedColourScheme = e.matches ? DARK: LIGHT;
+    //       if (changedColourScheme === DARK) {
+    //         const isDark = bodyEl.classList.add('dark-mode');
+    //         prismEl.href = PRISM_DARK_URL;
+    //       } else {
+    //         const isDark = bodyEl.classList.remove('dark-mode');
+    //         prismEl.href = PRISM_LIGHT_URL;
+    //       }
+    //   });
+    // }
+
+    // // run the code   
+    // init();
+    // console.log('yo')
+  </script>
+</body>
+
+</html>
