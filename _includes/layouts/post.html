@@ -38,9 +38,10 @@ layout: default
 			<i class="fa fa-vimeo-square" aria-hidden="true"></i>
 			Vimeo</a>
 	</small>
+	<br>
 	{% endif %}
 
-	<br>
+
 
 
 	<!-- Stack -->
@@ -48,21 +49,23 @@ layout: default
 		{% for t in tech %}
 		{{ t }},
 		{% endfor %}
+		<br>
 	</small>
 	{% endif %}
-	<br>
 
-	{% if categories contains 'tech' or categories contains 'blog'  or categories contains 'ttqf' or categories contains 'article'  and image %}
+
+	{% if image %}
+	{% if categories contains 'tech' or categories contains 'blog'  or categories contains 'ttqf' or categories contains 'article' %}
 	<div class="image-wrapper">
 		<img src="{{ image }}" alt="{{ description }}" />
 	</div>
+	{% endif %}
 	{% endif %}
 	
 	{% if description %}
 	{{ description }}
 	{% endif %}
 	<hr>
-
 
 	{{ content }}
 </div>
