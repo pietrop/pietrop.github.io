@@ -98,7 +98,7 @@ _NA_
 ## Deployment
 <!-- _How to deploy the code/app into test/staging/production_ -->
 ```
-npm run build:deploy
+npm run deploy
 ```
 <!-- ```
 npm run deploy
