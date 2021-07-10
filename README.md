@@ -33,7 +33,7 @@ npm install
 
 For local development 
 ```
-npm run serve:watch 
+npm start
 ```
 
 ## System Architecture
