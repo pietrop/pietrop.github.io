@@ -4,7 +4,8 @@ title: Ttqf
 body: theme-base-0c
 ---
 
-# TTQF  
+# Tips Tricks & Quick Fix  
+<hr>
 
 <ul>
 {%- for post in collections.ttqf  reversed -%}

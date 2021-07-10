@@ -5,7 +5,7 @@ body: theme-base-0f
 ---
 
 # Video 
-
+<hr>
 <!-- <ul>
 {%- for post in collections.video -%}
   <li{% if page.url == post.url %} aria-current="page"{% endif %}>

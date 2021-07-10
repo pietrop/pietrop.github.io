@@ -5,7 +5,7 @@ body: theme-base-0c
 ---
 
 # Tech 
-
+<hr>
 <!-- <ul>
 {%- for post in collections.tech -%}
   <li{% if page.url == post.url %} aria-current="page"{% endif %}>
