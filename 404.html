@@ -1,10 +1,19 @@
 ---
-layout: default
-title: "404: Page not found"
+title: Oops! Not Found
 permalink: 404.html
 ---
-
-<div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}/">Head back home</a> to try finding it again.</p>
-</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+  </head>
+  <body>
+    <h1>{{ site.title }}</h1>
+    <div class="page">
+      <h1 class="page-title">404: Page not found</h1>
+      <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}/">Head back home</a> to try finding it again.</p>
+    </div>
+  </body>
+</html>

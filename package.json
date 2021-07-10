@@ -1,21 +1,26 @@
 {
-  "name": "pietrop.github.io_jeckyll_lanyon",
+  "name": "new-blog",
   "version": "1.0.0",
-  "description": "## Tags and Categories",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "bundle exec jekyll serve --incremental", 
-    "build": "JEKYLL_ENV=production bundle exec jekyll build"
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "serve:watch": "npx @11ty/eleventy --serve --watch",
+    "dry:run": "npx @11ty/eleventy --dryrun",
+    "deploy": "cp .nojekyll _site/.nojekyll && cp CNAME _site/CNAME && gh-pages -d _site",
+    "build:deploy":"npm run build && npm run deploy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pietrop/pietrop.github.io.git"
-  },
-  "author": "Pietro Passarelli <pietro.passarelli@gmail.com> (https://pietropassarelli.com)",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pietrop/pietrop.github.io/issues"
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^0.9.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
+    "gh-pages": "^3.2.3"
   },
-  "homepage": "https://github.com/pietrop/pietrop.github.io#readme"
+  "dependencies": {
+    "dark-mode-toggle": "^0.8.0"
+  }
 }

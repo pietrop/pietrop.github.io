@@ -1,31 +1,33 @@
+
 <div class="post">
   <h3 class="post-title">
-    <a href="{{ include.url }}">
-      {{ include.title }}
+    <a href="{{ url }}">
+      {{ postTitle }}
     </a>
   </h3>
 
-  <!-- {{include include.content | size }} -->
-  <small><span class="post-date">{{ include.date | date_to_string }}
+  <small>
+    <span class="post-date">
+    {{ date | date_to_string }}    </span>
 
-      {% if post.duration %}
-      | <strong>Duration:</strong> {{ post.duration }}
+      {% if duration %}
+      | <strong>Duration:</strong> {{ duration }}
       {% endif %}
 
-    </span></small>
+  </small>
 
 
   <!-- description -->
-  <p>{{ include.description }}</p>
+  <p>{{ postDescription }}</p>
   <!-- Link to post -->
-  <a href="{{ include.url }}">
+  <a href="{{ url }}">
     <small <small>More &raquo;</small></small>
   </a><br>
 
   <!-- image -->
-  {%if include.image %}
-  <a href="{{ include.url }}">
-    <img src={{include.image}}>
+  {%if image %}
+  <a href="{{ url }}">
+    <img src={{image}}>
   </a>
   {%endif%}
   <!-- optional github link -->

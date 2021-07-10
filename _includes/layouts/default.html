@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body class="">
+  <!-- class="theme-base-08" -->
+
+  {% include sidebar.html %}
+
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+    content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+          <small>{{ site.tagline }} </small>
+        </h3>
+      </div>
+    </div>
+
+    <div class="container content">
+      {{ content }}
+    </div>
+  </div>
+
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script>
+    (function (document) {
+      var toggle = document.querySelector('.sidebar-toggle');
+      var sidebar = document.querySelector('#sidebar');
+      var checkbox = document.querySelector('#sidebar-checkbox');
+
+      document.addEventListener('click', function (e) {
+        var target = e.target;
+
+        if (!checkbox.checked ||
+          sidebar.contains(target) ||
+          (target === checkbox || target === toggle)) return;
+
+        checkbox.checked = false;
+      }, false);
+    })(document);
+  </script>
+
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+
+
+  <script>
+
+    // const bodyEl = document.body;
+    // const toggleEl = document.querySelector('#color-scheme-toggle');
+    // const prismEl = document.querySelector('#prism-css');
+    // const DARK = 'dark';
+    // const LIGHT = 'light';
+    // const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    // const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+    // const COLOR_SCHEME_CHANGED = 'colorSchemeChanged';
+
+    // toggleEl.addEventListener('click', () => {
+    //   console.log('toggle')
+    //   const isDark = bodyEl.classList.toggle('dark-mode');
+    //   const mode = isDark ? DARK : LIGHT;
+    //   sessionStorage.setItem('jec.color-scheme', mode);
+
+    //   if (isDark) {
+    //     if (prismEl) prismEl.href = PRISM_DARK_URL;
+    //   } else {
+    //     if (prismEl) prismEl.href = PRISM_LIGHT_URL;
+    //   }
+
+    //   toggleEl.dispatchEvent(new CustomEvent(
+    //     COLOR_SCHEME_CHANGED, { detail: mode }
+    //   ));
+    // });
+    // // 
+
+    // function init() {
+    //   console.log('init')
+    //   const DARK = 'dark';
+    //   const LIGHT = 'light';
+    //   const isSystemDarkMode = matchMedia &&
+    //     matchMedia('(prefers-color-scheme: dark)').matches;
+
+    //    console.log('isSystemDarkMode',isSystemDarkMode)
+    //   // let mode = sessionStorage.getItem('jec.color-scheme');
+    //   // console.log('mode',mode)
+    //   if (!mode && isSystemDarkMode) {
+    //     mode = DARK;
+    //   } else {
+    //     mode = mode || LIGHT;
+    //   }
+
+    //   if (mode === DARK) {
+    //     document.querySelector('#color-scheme-toggle').click();
+    //   }
+
+    //   // Event listener to change with system change
+    //   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    //     const changedColourScheme = e.matches ? DARK: LIGHT;
+    //       if (changedColourScheme === DARK) {
+    //         const isDark = bodyEl.classList.add('dark-mode');
+    //         prismEl.href = PRISM_DARK_URL;
+    //       } else {
+    //         const isDark = bodyEl.classList.remove('dark-mode');
+    //         prismEl.href = PRISM_LIGHT_URL;
+    //       }
+    //   });
+    // }
+
+    // // run the code   
+    // init();
+    // console.log('yo')
+  </script>
+</body>
+
+</html>

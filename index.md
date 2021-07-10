@@ -1,7 +1,6 @@
 ---
 layout: default
 title: About
-body: theme-base-08
 ---
 
 Hi, I'm <a href="https://uk.linkedin.com/in/{{ site.owner.linkedin }}"  target="_blank" rel="noopener noreferrer">Pietro</a>, I am a <a href="/categories/tech">product developer</a>, passionate about early stage products, especially at the intersection between news and technology.

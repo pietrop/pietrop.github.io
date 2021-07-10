@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
+
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
     href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
@@ -71,4 +73,35 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
   <!-- font awesome CDN -->
   <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
+  <style>   
+
+ /* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body{
+      background-color: black;
+      color: #B2BEB5;
+    }
+
+      img {
+      filter: grayscale(30%);
+    }
+
+    body >h2 h3 h4 h5 h6 {
+      color: white;
+    }
+    body >h1 {
+      color: white;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+      /* transition: background-color 300ms ease-in-out 0s; */
+    } 
+}
+  </style>
+
 </head>

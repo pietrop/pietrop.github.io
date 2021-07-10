@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<div class="post">
+	<h1 class="post-title">{{ title }} </h1>
+	<span class="post-date">{{ date | date_to_string }}
+
+		{% if duration %}
+		| <strong> Duration:</strong> {{ duration }}
+		{% endif %}
+	</span>
+
+	{% if github %}<small><a href="https://github.com/{{ github }}" target="_blank"
+			rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>,</small>{% endif %}
+
+	<!-- optional gitbook link -->
+	{% if gitbook %}<small><a href="{{ gitbook }}" target="_blank" rel="noopener noreferrer"><i
+				class="fa fa-github" aria-hidden="true"></i> GitBook</a>,</small>{% endif %}
+
+	<!-- project page -->
+	{% if link %}<small>
+		<a href="{{ link }}" target="_blank" rel="noopener noreferrer">
+			<i class="fa fa-external-link" aria-hidden="true"></i>
+			Url</a>
+	</small>
+	{% endif %}
+
+	{% if youtube %}<small>|
+		<a href="https://youtu.be/{{ youtube }}" target="_blank" rel="noopener noreferrer">
+			<i class="fa fa-youtube" aria-hidden="true"></i>
+			Youtube </a>
+	</small>
+	{% endif %}
+
+	{% if vimeo  %}<small>|
+		<a href="https://vimeo.com/{{ vimeo }}" target="_blank" rel="noopener noreferrer">
+			<i class="fa fa-vimeo-square" aria-hidden="true"></i>
+			Vimeo</a>
+	</small>
+	{% endif %}
+
+	<br>
+
+
+	<!-- Stack -->
+	{% if tech %}<small><strong>Stack: </strong>
+		{% for t in tech %}
+		{{ t }},
+		{% endfor %}
+	</small>
+	{% endif %}
+	<br>
+
+	{% if categories contains 'tech' or categories contains 'blog'  or categories contains 'ttqf' or categories contains 'article'  and image %}
+	<div class="image-wrapper">
+		<img src="{{ image }}" alt="{{ description }}" />
+	</div>
+	{% endif %}
+	
+	{% if description %}
+	{{ description }}
+	{% endif %}
+	<hr>
+
+
+	{{ content }}
+</div>

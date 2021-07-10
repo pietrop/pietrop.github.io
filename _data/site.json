@@ -1,0 +1,31 @@
+{
+  "title": "Pietro",
+  "tagline": "Passarelli",
+  "name": "Tips Tricks & Quick Fix",
+  "description": "Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.",
+  "url": "https://www.pietropassarelli.com",
+  "baseurl": "",
+  "repo": "http://github.com/pietrop/pietrop.github.io",
+  "comments": false,
+  "author": {
+    "name": "Pietro",
+    "email": "pietro.passarelli@gmail.com"
+  },
+  "owner": {
+    "name": "Pietro",
+    "last_name": "Passarelli",
+    "email": "pietro.passarelli@gmail.com",
+    "twitter": "pietropassarell",
+    "facebook": "pietro.passarelli",
+    "github": "pietrop",
+    "linkedin": "pietropassarelli",
+    "about": "ubiq/pietro.jpeg"
+  },
+  "og_locale": "en_US",
+  "categories": [
+    "video",
+    "tech",
+    "ttqf",
+    "blog"
+  ]
+}
