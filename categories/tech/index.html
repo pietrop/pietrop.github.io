@@ -83,16 +83,29 @@
       color: #B2BEB5;
     }
 
-      img {
+  img {
       filter: grayscale(30%);
     }
 
-    body >h2 h3 h4 h5 h6 {
+   .content > .post > h2, h3, h4, h5, h6 {
       color: white;
     }
-    body >h1 {
+    .post > h1.post-title{
       color: white;
     }
+
+    .post > h2.post-title a{
+      color: white;
+    }
+
+   
+    h1, h2, h3, h4, h5, h6 {
+      color: white!important;
+    }
+
+  code {
+    background-color: transparent;
+  }
 }
 
 /* Light mode */
@@ -212,6 +225,7 @@
   </h1>
   
 	<h1>Tech</h1>
+<hr>
 <!-- <ul><li>
    <a href="/popathon.html">Turning viewers into users #popathon</a>
   </li><li>
@@ -260,11 +274,11 @@
    <a href="/BBC-dpe.html">BBC Digital Paper Edit</a>
   </li></ul> -->
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/BBC-dpe.html">
       BBC Digital Paper Edit
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Thu Mar 21 2019 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -288,11 +302,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/BBC-narrative-text.html">
       BBC Narrative Text
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sat Jan 19 2019 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -316,11 +330,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/BBC-transcript-editor.html">
       BBC React Transcript Editor
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Mon Dec 03 2018 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -344,11 +358,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/trello-to-markdown.html">
       Trello To Markdown
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Aug 08 2018 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -372,11 +386,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/BBC-AMP-stories.html">
       BBC AMP Stories
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sat Jun 16 2018 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -400,11 +414,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/BBC-crossing-divides.html">
       BBC World Service, Crossing Divides
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Mar 14 2018 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -428,11 +442,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/BBCnewslabs_slack_transcription_bot.html">
       BBC #newsHack '17 `@TranscriptionBot`
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Oct 25 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -456,11 +470,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/fact2_transcription_editor.html">
       Fact2 Transcriptions Text Editor
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Tue Oct 10 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -484,11 +498,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/opened-captions-annotated-article-rig.html">
       Opened Captions Annotated article system
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sun Jul 23 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -512,11 +526,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/captioning-app.html">
       Captioning app [Working Title]
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sun Jul 23 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -540,11 +554,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/autoEdit2.html">
       autoEdit2
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Mon Apr 03 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -568,11 +582,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/wip.html">
       Whistleblower Interview Archive
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sun Feb 19 2017 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -596,11 +610,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/povHackthon.html">
       POV Hackaton: 'Battle Sound'
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sat Sep 24 2016 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -624,11 +638,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/Transcriber-prototype.html">
       Transcriber - prototype
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Aug 31 2016 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -652,11 +666,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/categories/tech/2016-07-13-visual-narratives/">
       Vax project 2016 - IDA, Rethinking Visual Narratives
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Tue Jul 12 2016 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -680,11 +694,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/captions-burner.html">
       Captions Burner
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Jun 01 2016 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -708,11 +722,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/quickQuote.html">
       quickQuote - Times & Sunday Times
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Mon Jul 20 2015 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -736,11 +750,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/oneStory.html">
       OneStory at BBC #newsHack
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Jun 03 2015 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -764,11 +778,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/buildTheNews.html">
       Interactive databate #buildTheNews
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Apr 29 2015 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -792,11 +806,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/autoEdit.html">
       autoEdit, digital paper-editing
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Apr 15 2015 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -820,11 +834,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/categories/tech/2013-12-02-sbv-csv/">
       .sbv to .csv
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Mon Dec 02 2013 00:00:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -848,11 +862,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/simpleInvoice.html">
       Simple Invoice
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Sep 04 2013 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -876,11 +890,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/popathon.html">
       Turning viewers into users #popathon
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sun May 12 2013 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>

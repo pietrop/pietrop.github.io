@@ -83,16 +83,29 @@
       color: #B2BEB5;
     }
 
-      img {
+  img {
       filter: grayscale(30%);
     }
 
-    body >h2 h3 h4 h5 h6 {
+   .content > .post > h2, h3, h4, h5, h6 {
       color: white;
     }
-    body >h1 {
+    .post > h1.post-title{
       color: white;
     }
+
+    .post > h2.post-title a{
+      color: white;
+    }
+
+   
+    h1, h2, h3, h4, h5, h6 {
+      color: white!important;
+    }
+
+  code {
+    background-color: transparent;
+  }
 }
 
 /* Light mode */
@@ -212,6 +225,7 @@
   </h1>
   
 	<h1>Video</h1>
+<hr>
 <!-- <ul><li>
    <a href="/categories/video/2011-09-12-Angus/">Hating The Moon</a>
   </li><li>
@@ -240,11 +254,11 @@
    <a href="/categories/video/2015-10-10-UBIQ-computer-dance-piece/">RAI 5 - UBIQ: Computer Assisted Art Performance</a>
   </li></ul> -->
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/categories/video/2015-10-10-UBIQ-computer-dance-piece/">
       RAI 5 - UBIQ: Computer Assisted Art Performance
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sat Oct 10 2015 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -265,11 +279,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/BBCLDRS-pd.html">
       Producer/Director - Making of the BBC 'Life and Death Row Series'
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Thu Jul 17 2014 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -293,11 +307,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/categories/video/2014-07-17-BBCLDRS-editor/">
       Editor - Making of the BBC 'Life and Death Row Series'
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Thu Jul 17 2014 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -321,11 +335,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/categories/video/2014-07-17-BBCLDRS-ap/">
       Assistant Producer - Making of the BBC 'Life and Death Row Series'
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Thu Jul 17 2014 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -349,11 +363,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/categories/video/2014-02-21-BBCPTS/">
       BBC PTS Promo
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Fri Feb 21 2014 00:00:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -377,11 +391,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/bbcnewslabs.html">
       BBC #newsHACK
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Tue Oct 15 2013 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -405,11 +419,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/categories/video/2013-09-12-showreel/">
       ShowReel
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Thu Sep 12 2013 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -433,11 +447,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/categories/video/2012-12-12-Swing-Rowers/">
       SwingRowers
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Dec 12 2012 00:00:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -461,11 +475,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/UBIQInteractive.html">
       RAI5 UBIQ - Interactive documentaries
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Fri Oct 12 2012 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -489,11 +503,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/UBIQ3D.html">
       RAI5 UBIQ - 3D Printing
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Fri Oct 12 2012 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -517,11 +531,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/categories/video/2012-07-12-difformazione/">
       Difformazione
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Thu Jul 12 2012 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -545,11 +559,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/categories/video/2011-09-17-50p1q/">
       50 People One Questions
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sat Sep 17 2011 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -573,11 +587,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/categories/video/2011-09-12-Angus/">
       Hating The Moon
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Mon Sep 12 2011 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>

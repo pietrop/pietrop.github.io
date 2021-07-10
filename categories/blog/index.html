@@ -83,16 +83,29 @@
       color: #B2BEB5;
     }
 
-      img {
+  img {
       filter: grayscale(30%);
     }
 
-    body >h2 h3 h4 h5 h6 {
+   .content > .post > h2, h3, h4, h5, h6 {
       color: white;
     }
-    body >h1 {
+    .post > h1.post-title{
       color: white;
     }
+
+    .post > h2.post-title a{
+      color: white;
+    }
+
+   
+    h1, h2, h3, h4, h5, h6 {
+      color: white!important;
+    }
+
+  code {
+    background-color: transparent;
+  }
 }
 
 /* Light mode */
@@ -211,12 +224,14 @@
   	
   </h1>
   
-	<div class="post">
-  <h3 class="post-title">
+	<h1>Blog</h1>
+<hr>
+<div class="post">
+  <h2 class="post-title">
     <a href="/stranger-things-agile.html">
       10 things you can learn about agile from “Stranger Things”
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Tue Jul 30 2019 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -240,11 +255,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/uncessary-re-renders-in-react.html">
       How to prevent unnecessary re-renders in React - draft
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed May 15 2019 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -268,11 +283,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/complex-problem.html">
       Approaching a complex problems
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Tue Jan 15 2019 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -296,11 +311,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/testing-strategy.html">
       Testing Strategy  - Draft
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sat Jan 05 2019 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -324,11 +339,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/electron-github-travis-ci.html">
       Electron github travis CI & linux
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Jul 18 2018 10:15:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -349,11 +364,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/how-i-run-textav.html">
       How I run the textAV event - draft
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Feb 07 2018 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -377,11 +392,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/open-sourcing-strategies.html">
       Some thoughts on open sourcing strategies
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Thu Dec 07 2017 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -402,11 +417,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/ffmpeg-electron.html">
       FFMPEG And Electron
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Thu Nov 16 2017 09:15:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -427,11 +442,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/aligning-partially-scripted-speeches.html">
       Aligning partially scripted speeches, R&D Notes
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Nov 08 2017 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -452,11 +467,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/10-lessons-video-tools-ba.html">
       Video presentation: 10 Lessons from building video product tools in the newsroom.
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Wed Sep 13 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -477,11 +492,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/10-lessons-video-tools.html">
       10 Lessons from building video product tools in the newsroom.
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Mon Jul 31 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -502,11 +517,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/textAV.html">
       textAV event
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Tue Jul 18 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -527,11 +542,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/paper-edit-gitbook.html">
       Gitbook: How to tell compelling stories out of video interviews
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Thu Jul 06 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -552,11 +567,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/wip_london_july2016.html">
       Workshop: How to craft compelling stories out of video interviews?
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sun Jul 17 2016 20:30:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -580,11 +595,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/learnToCode101.html">
       So you want to learn to code … - draft
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sun Nov 22 2015 19:30:00 GMT-0500 (Eastern Standard Time)    </span>
@@ -605,11 +620,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/rethinking-x-in-quotes.html">
       It’s time to rethink how we do ‘x in quotes’ pieces on the web
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sat Aug 15 2015 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -633,11 +648,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/regex.html">
       Regex - an easyer approach
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sun May 17 2015 10:15:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -658,11 +673,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/doc.html">
       Representing Reality: Key ideas in documentary theory and practice
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Mon Apr 28 2014 05:08:00 GMT-0400 (Eastern Daylight Time)    </span>
@@ -683,11 +698,11 @@
 </div>
 <hr> 
 <div class="post">
-  <h3 class="post-title">
+  <h2 class="post-title">
     <a href="/videoBox.html">
       Beyond 'video as black boxes'
     </a>
-  </h3>
+  </h2>
   <small>
     <span class="post-date">
     Sun Apr 07 2013 20:30:00 GMT-0400 (Eastern Daylight Time)    </span>

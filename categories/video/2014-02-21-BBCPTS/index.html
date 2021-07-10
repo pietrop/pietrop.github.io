@@ -83,16 +83,29 @@
       color: #B2BEB5;
     }
 
-      img {
+  img {
       filter: grayscale(30%);
     }
 
-    body >h2 h3 h4 h5 h6 {
+   .content > .post > h2, h3, h4, h5, h6 {
       color: white;
     }
-    body >h1 {
+    .post > h1.post-title{
       color: white;
     }
+
+    .post > h2.post-title a{
+      color: white;
+    }
+
+   
+    h1, h2, h3, h4, h5, h6 {
+      color: white!important;
+    }
+
+  code {
+    background-color: transparent;
+  }
 }
 
 /* Light mode */
