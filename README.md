@@ -1,6 +1,7 @@
 # Blog
 <!-- _One liner + link to confluence page_
 _Screenshot of UI - optional_ -->
+Personal blog using [11ty](https://www.11ty.dev/).
 
 ## Development env
 
@@ -64,7 +65,7 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 - [Turn Jekyll up to Eleventy](https://24ways.org/2018/turn-jekyll-up-to-eleventy/)
 - [syntaxhighlight](https://www.11ty.dev/docs/plugins/syntaxhighlight/)
 - [global data](https://www.11ty.dev/docs/data-global/)
-- [DIRECTORY FOR GLOBAL DATA FILES](https://www.11ty.dev/docs/config/#directory-for-global-data-files)
+- [Directory for global data files](https://www.11ty.dev/docs/config/#directory-for-global-data-files)
 - [images](https://www.11ty.dev/docs/plugins/image/)
 - [Liquid shopify cheat sheet](https://www.shopify.com/partners/shopify-cheat-sheet)
 - [How to create drafts in Eleventy](https://giustino.blog/how-to-drafts-eleventy/)
@@ -102,3 +103,4 @@ npm run build:deploy
 <!-- ```
 npm run deploy
 ``` -->
+Deployment, deploys to github pages.
