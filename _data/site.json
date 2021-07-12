@@ -19,6 +19,7 @@
     "facebook": "pietro.passarelli",
     "github": "pietrop",
     "linkedin": "pietropassarelli",
+    "instagram":"pietro.ps",
     "about": "ubiq/pietro.jpeg"
   },
   "og_locale": "en_US",
@@ -27,5 +28,6 @@
     "tech",
     "ttqf",
     "blog"
-  ]
+  ],
+  "placeholder_image": "/img/placeholder/clouds.jpeg"
 }

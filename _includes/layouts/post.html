@@ -9,33 +9,33 @@ layout: default
 		{% if duration %}
 		| <strong> Duration:</strong> {{ duration }}
 		{% endif %}
-	</span>
+	</span> <br>
 
-	{% if github %}<small><a href="https://github.com/{{ github }}" target="_blank"
-			rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>,</small>{% endif %}
+	{% if github %}<small><a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer"><i
+				class="fab fa-github" aria-hidden="true"></i> GitHub</a>,</small>{% endif %}
 
 	<!-- optional gitbook link -->
-	{% if gitbook %}<small><a href="{{ gitbook }}" target="_blank" rel="noopener noreferrer"><i
-				class="fa fa-github" aria-hidden="true"></i> GitBook</a>,</small>{% endif %}
+	{% if gitbook %}<small><a href="{{ gitbook }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"
+				aria-hidden="true"></i> GitBook</a>,</small>{% endif %}
 
 	<!-- project page -->
 	{% if link %}<small>
 		<a href="{{ link }}" target="_blank" rel="noopener noreferrer">
-			<i class="fa fa-external-link" aria-hidden="true"></i>
-			Url</a>
+			<i class="fab fa-external-link" aria-hidden="true"></i>
+			Url↗</a>
 	</small>
 	{% endif %}
-
+	<!-- social media -->
 	{% if youtube %}<small>|
 		<a href="https://youtu.be/{{ youtube }}" target="_blank" rel="noopener noreferrer">
-			<i class="fa fa-youtube" aria-hidden="true"></i>
+			<i class="fab fa-youtube" aria-hidden="true"></i>
 			Youtube </a>
 	</small>
 	{% endif %}
 
-	{% if vimeo  %}<small>|
+	{% if vimeo %}<small>|
 		<a href="https://vimeo.com/{{ vimeo }}" target="_blank" rel="noopener noreferrer">
-			<i class="fa fa-vimeo-square" aria-hidden="true"></i>
+			<i class="fab fa-vimeo-square" aria-hidden="true"></i>
 			Vimeo</a>
 	</small>
 	<br>
@@ -44,28 +44,31 @@ layout: default
 
 
 
-	<!-- Stack -->
-	{% if tech %}<small><strong>Stack: </strong>
+	<!-- tech Stack -->
+	{% if tech %}<br><small><strong>Stack: </strong>
 		{% for t in tech %}
 		{{ t }},
 		{% endfor %}
-		<br>
 	</small>
+	<br>
+	<br>
 	{% endif %}
 
-
+	<!-- image -->
 	{% if image %}
-	{% if categories contains 'tech' or categories contains 'blog'  or categories contains 'ttqf' or categories contains 'article' %}
+	{% if categories contains 'tech' or categories contains 'blog' or categories contains 'ttqf' or categories contains
+	'article' %}
 	<div class="image-wrapper">
 		<img src="{{ image }}" alt="{{ description }}" />
 	</div>
 	{% endif %}
 	{% endif %}
-	
+	<!-- description -->
 	{% if description %}
+	<br>
 	{{ description }}
 	{% endif %}
 	<hr>
-
+	<!-- content -->
 	{{ content }}
 </div>

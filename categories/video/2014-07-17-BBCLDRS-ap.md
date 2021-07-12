@@ -16,7 +16,7 @@ tags:
  {{ longdescription }}
 
 <div class="videoWrapper">
-<iframe src="//player.vimeo.com/video/{{ vimeo }}?title=0&amp;byline=0&amp;portrait=0" width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/{{ vimeo }}?title=0&amp;byline=0&amp;portrait=0" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 

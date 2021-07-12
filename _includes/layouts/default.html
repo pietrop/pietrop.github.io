@@ -1,88 +1,24 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 {% include head.html %}
 
-<body class="">
-  <!-- class="theme-base-08" -->
-
-  {% include sidebar.html %}
-
-  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-    content to avoid any CSS collisions with our real content. -->
-  <div class="wrap">
-    <div class="masthead">
-      <div class="container">
-        <h3 class="masthead-title">
-          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-          <small>{{ site.tagline }} </small>
-        </h3>
-      </div>
-    </div>
-
-    <div class="container content">
-      {{ content }}
+<body class="{%if title == 'About'%}about{% else %}default-pages{%endif%}">
+  <div class="container">
+    <div class="wrapper">
+      <header class="header">
+        {{ site.title }} <small>{{ site.tagline }} </small>
+        
+        {% include nav.html %}
+      </header>
+      <main class="main"> 
+        {{ content }}
+      </main>
+    
+      {% include footer.html %}
     </div>
   </div>
-
-  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-  <script>
-    (function (document) {
-      var toggle = document.querySelector('.sidebar-toggle');
-      var sidebar = document.querySelector('#sidebar');
-      var checkbox = document.querySelector('#sidebar-checkbox');
-
-      document.addEventListener('click', function (e) {
-        var target = e.target;
-
-        if (!checkbox.checked ||
-          sidebar.contains(target) ||
-          (target === checkbox || target === toggle)) return;
-
-        checkbox.checked = false;
-      }, false);
-    })(document);
-  </script>
-
-  {% if jekyll.environment == 'production' %}
-  {% include analytics.html %}
-  {% endif %}
-
-
-  <script>
-    // Logic to adjust syntax highlighting based on whether dark mode is on 
-    // in the system or not
-    const prismEl = document.querySelector('#prism-css');
-    const DARK = 'dark';
-    const LIGHT = 'light';
-    const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
-    // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
-    const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
-
-    function init() {
-      const DARK = 'dark';
-      const LIGHT = 'light';
-      const isSystemDarkMode = matchMedia &&
-        matchMedia('(prefers-color-scheme: dark)').matches;
-
-      if (isSystemDarkMode) {
-        prismEl.href = PRISM_DARK_URL;
-      }
-
-      // Event listener to change with system change
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        const changedColourScheme = e.matches ? DARK: LIGHT;
-          if (changedColourScheme === DARK) {
-            prismEl.href = PRISM_DARK_URL;
-          } else {
-            prismEl.href = PRISM_LIGHT_URL;
-          }
-      });
-    }
-
-    init();
-  </script>
+  {% include syntax-highlight.html %}
 </body>
 
 </html>

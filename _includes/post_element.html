@@ -21,7 +21,7 @@
   <p>{{ postDescription }}</p>
   <!-- Link to post -->
   <a href="{{ url }}">
-    <small <small>More &raquo;</small></small>
+    <small> <small>More &raquo;</small></small>
   </a><br>
 
   <!-- image -->
@@ -32,32 +32,32 @@
   {%endif%}
   <!-- optional github link -->
   {% if post.github %}<small><a href="https://github.com/{{ post.github }}" target="_blank" rel="noopener noreferrer">
-      <i class="fa fa-github" aria-hidden="true"></i>
+      <i class="fab fa-github" aria-hidden="true"></i>
       GitHub</a>,</small>{% endif %}
 
   <!-- optional gitbook link -->
   {% if post.gitbook %}<small><a href="{{ post.gitbook }}" target="_blank" rel="noopener noreferrer">
-      <i class="fa fa-github" aria-hidden="true"></i>
+      <i class="fab fa-github" aria-hidden="true"></i>
       GitBook</a>,</small>{% endif %}
 
   <!-- project page link  -->
   {% if post.link %}<small>
     <a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">
-      <i class="fa fa-external-link" aria-hidden="true"></i>
-      Url</a>
+      <i class="fab fa-external-link" aria-hidden="true"></i>
+      Url↗</a>
   </small>
   {% endif %}
 
   {% if post.youtube %}<small>
     <a href="https://youtu.be/{{ post.youtube }}" target="_blank" rel="noopener noreferrer">
-      <i class="fa fa-youtube" aria-hidden="true"></i>
+      <i class="fab fa-youtube" aria-hidden="true"></i>
       Youtube</a>
   </small>
   {% endif %}
 
   {% if post.vimeo  %}<small>
     <a href="https://vimeo.com/{{ post.vimeo }}" target="_blank" rel="noopener noreferrer">
-      <i class="fa fa-vimeo-square" aria-hidden="true"></i>
+      <i class="fab fa-vimeo-square" aria-hidden="true"></i>
       Vimeo</a>
   </small>
   {% endif %}
