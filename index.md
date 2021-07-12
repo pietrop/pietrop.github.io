@@ -8,7 +8,7 @@ title: About
 Hi, I'm <a href="https://uk.linkedin.com/in/{{ site.owner.linkedin }}"  target="_blank" rel="noopener noreferrer">Pietro</a>, I am a <a href="/categories/tech">software engineer</a>, passionate about early stage products, especially at the intersection of audio / video, news and technology. I created <a href="https://autoEdit.io"  target="_blank" rel="noopener noreferrer">autoEdit.io</a>.
 
 
-I also take <a href="https://pietropassarelli.com/photos"> photos</a>, <a href="/categories/video"> film documentaries</a> and write up <a href="/categories/ttqf"> 'how-tos' "Tips Tricks & Quick Fix"</a> and <a href="/categories/blog"> blog posts</a>.
+I also take <a href="https://pietropassarelli.com/photos"> photos↗</a>, <a href="/categories/video"> film documentaries</a> and write up <a href="/categories/ttqf"> 'how-tos' "Tips Tricks & Quick Fix"</a> and <a href="/categories/blog"> blog posts</a>.
 
 
 <!-- Picture from BA media party with mic -->
