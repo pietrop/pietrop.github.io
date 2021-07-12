@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-  <link href="https://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <!-- <link href="https://gmpg.org/xfn/11" rel="profile"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   <!-- Enable responsiveness on mobile devices-->
@@ -16,12 +17,21 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/lanyon.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/post-element-condesed.css">
 
+  <link rel="stylesheet" href="/public/css/dark-mode.css">
+  <!-- <link rel="stylesheet" href="/public/css/poole.css"> -->
+  <!-- <link rel="stylesheet" href="/public/css/syntax.css"> -->
+  <!-- <link rel="stylesheet" href="/public/css/lanyon.css"> -->
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Syntax highlight  -->
   <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -31,201 +41,103 @@
   <!-- ////////// Favicon ////////// -->
   <!-- For old IEs -->
   <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" />
-
   <!-- For new browsers - multisize ico  -->
   <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico">
-
   <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png">
-
   <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png">
-
   <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
   <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png">
-
   <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png">
-
   <!-- For iPhone 6+ -->
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png">
-
   <!-- For first- and second-generation iPad: -->
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png">
-
   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
   <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png">
-
   <!-- For Old Chrome -->
   <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32">
-
   <!-- For IE10 Metro -->
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="msapplication-TileImage" content="favicon-144.png">
   <meta name="theme-color" content="#ffffff">
-
   <!-- Chrome for Android -->
   <link rel="manifest" href="manifest.json">
   <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png">
   <!-- ////////// Favicons end ////////// -->
 
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-  <!-- font awesome CDN -->
-  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
-  <style>   
-
- /* Dark mode */
-@media (prefers-color-scheme: dark) {
-  body{
-      background-color: black;
-      color: #B2BEB5;
-    }
-
-  img {
-      filter: grayscale(30%);
-    }
-
-   .content > .post > h2, h3, h4, h5, h6 {
-      color: white;
-    }
-    .post > h1.post-title{
-      color: white;
-    }
-
-    .post > h2.post-title a{
-      color: white;
-    }
-
-   
-    h1, h2, h3, h4, h5, h6 {
-      color: white!important;
-    }
-
-  code {
-    background-color: transparent;
-  }
-}
-
-/* Light mode */
-@media (prefers-color-scheme: light) {
-  body {
-      background-color: white;
-      color: black;
-      /* transition: background-color 300ms ease-in-out 0s; */
-    } 
-}
-  </style>
+  
 
 </head>
 
-<body class="">
-  <!-- class="theme-base-08" -->
-
-  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
- styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-<!--  checked -->
-
-<!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p>Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
-
-    
-  </div>
-
-  <nav class="sidebar-nav">
-
-    
-
-    <a class="sidebar-nav-item" href="/"><i
-        class="fa fa-user" aria-hidden="true"></i> About</a>
-
-    <a class="sidebar-nav-item" disabled="true">
-
-      <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-camera-retro" aria-hidden="true"></i>Photos
-      </a>
-
-      
-      <a class="sidebar-nav-item" href="/categories/video">
+<body class="default-pages">
+  <div class="container">
+    <div class="wrapper">
+      <header class="header">
+        Pietro <small>Passarelli </small>
         
-        <i class="fa fa-film" aria-hidden="true"></i> Video
+        <nav class="nav">
+    <ul class="menu-list">
+        <li>
+            <a class="sidebar-nav-item" href="/">
+                About</a>
+        </li>
+
         
-      </a>
-      
-      <a class="sidebar-nav-item" href="/categories/tech">
+
+        <li> <a class="" href="/categories/video">
+
+                
+                Videos
+                
+            </a> </li>
         
-        <i class="fa fa-laptop" aria-hidden="true"></i> Tech
+
+        <li> <a class="" href="/categories/tech">
+
+                
+                Tech
+                
+            </a> </li>
         
-      </a>
-      
-      <a class="sidebar-nav-item" href="/categories/ttqf">
+
+        <li> <a class="" href="/categories/ttqf">
+
+                
+                Tips Tricks & Quick Fix
+                
+            </a> </li>
         
-        <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+
+        <li> <a class="" href="/categories/blog">
+
+                
+                Blog
+                
+            </a> </li>
         
-      </a>
-      
-      <a class="sidebar-nav-item" href="/categories/blog">
+
+
+        <li> <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank"
+                rel="noopener noreferrer">
+                Photos↗</a>
+        </li>
+    </ul>
+</nav>
+      </header>
+      <main class="main"> 
         
-        <i class="fa fa-pencil" aria-hidden="true"></i> Blog
-        
-      </a>
-      
-
-      <a class="sidebar-nav-item" disabled="true">
-
-      </a>
-      <a class="icon-envelope  sidebar-nav-item"
-        href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
-        class="author-social" target="_blank" rel="noopener noreferrer"><i class="icon-mail"></i><i
-          class="fa fa-envelope-o" aria-hidden="true"></i>
-        E-mail</a> <span></span>
-
-
-      <a class="icon-twitter  sidebar-nav-item "
-        href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> <i
-          class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
-
-      <a class="icon-github sidebar-nav-item "
-        href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer"><i
-          class="fa fa-github" aria-hidden="true"></i> GitHub</a>
-
-      <a class="icon-linkedin sidebar-nav-item "
-        href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="noopener noreferrer"><i
-          class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
-
-
-
-
-
-</div>
-
-  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-    content to avoid any CSS collisions with our real content. -->
-  <div class="wrap">
-    <div class="masthead">
-      <div class="container">
-        <h3 class="masthead-title">
-          <a href="/" title="Home">Pietro</a>
-          <small>Passarelli </small>
-        </h3>
-      </div>
-    </div>
-
-    <div class="container content">
-      
 <div class="post">
 	<h1 class="post-title">It’s time to rethink how we do ‘x in quotes’ pieces on the web </h1>
 	<span class="post-date">2015-08-16
 
 		
-	</span>
+	</span> <br>
 
-	<small><a href="https://github.com/https://github.com/pietrop/quickQuote" target="_blank"
-			rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>,</small>
+	<small><a href="https://github.com/https://github.com/pietrop/quickQuote" target="_blank" rel="noopener noreferrer"><i
+				class="fab fa-github" aria-hidden="true"></i> GitHub</a>,</small>
 
 	<!-- optional gitbook link -->
 	
@@ -233,11 +145,11 @@
 	<!-- project page -->
 	<small>
 		<a href="https://medium.com/digital-times/it-s-time-to-rethink-how-we-do-x-in-quotes-pieces-on-the-web-1328f1ccf039" target="_blank" rel="noopener noreferrer">
-			<i class="fa fa-external-link" aria-hidden="true"></i>
-			Url</a>
+			<i class="fab fa-external-link" aria-hidden="true"></i>
+			Url↗</a>
 	</small>
 	
-
+	<!-- social media -->
 	
 
 	
@@ -245,10 +157,10 @@
 
 
 
-	<!-- Stack -->
+	<!-- tech Stack -->
 	
 
-
+	<!-- image -->
 	
 	
 	<div class="image-wrapper">
@@ -256,12 +168,13 @@
 	</div>
 	
 	
+	<!-- description -->
 	
-	
+	<br>
 	
 	
 	<hr>
-
+	<!-- content -->
 	<p><em>originally <a href="https://medium.com/digital-times/it-s-time-to-rethink-how-we-do-x-in-quotes-pieces-on-the-web-1328f1ccf039">posted on medium</a></em></p>
 <hr>
 <p>Last week’s Republican presidential candidate debate on Fox News didn’t disappoint as a spectacle: a huge audience, thousands of tweets and some very entertaining quotes (mainly thanks to a certain Mr Trump) that were covered by most major news outlets in the days afterwards.</p>
@@ -316,32 +229,46 @@ It’s still work in process but I’m hoping to do some tests in upcoming candi
 <p>_</p>
 
 </div>
+      </main>
+    
+      <footer class="footer">
+    <nav>
+        <ul class="contacts-list">
+            <li>
+                <a
+                    href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+                    class="author-social" target="_blank" rel="noopener noreferrer">
+                    <i class="far fa-envelope"></i>
+                    E-mail</a> <span></span>
+            </li>
+            <li>
+                <a 
+                    href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> 
+                    <i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+                <a 
+                    href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub</a>
+            </li>
+            <li>
+                <a 
+                    href="https://uk.linkedin.com/in/pietropassarelli" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+            </li>
+
+            <li>
+                <a 
+                    href="https://www.instagram.com/pietro.ps" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+
+            
+        </ul>
+    </nav>
+</footer>
     </div>
   </div>
-
-  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-  <script>
-    (function (document) {
-      var toggle = document.querySelector('.sidebar-toggle');
-      var sidebar = document.querySelector('#sidebar');
-      var checkbox = document.querySelector('#sidebar-checkbox');
-
-      document.addEventListener('click', function (e) {
-        var target = e.target;
-
-        if (!checkbox.checked ||
-          sidebar.contains(target) ||
-          (target === checkbox || target === toggle)) return;
-
-        checkbox.checked = false;
-      }, false);
-    })(document);
-  </script>
-
-  
-
-
   <script>
     // Logic to adjust syntax highlighting based on whether dark mode is on 
     // in the system or not
@@ -364,12 +291,12 @@ It’s still work in process but I’m hoping to do some tests in upcoming candi
 
       // Event listener to change with system change
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        const changedColourScheme = e.matches ? DARK: LIGHT;
-          if (changedColourScheme === DARK) {
-            prismEl.href = PRISM_DARK_URL;
-          } else {
-            prismEl.href = PRISM_LIGHT_URL;
-          }
+        const changedColourScheme = e.matches ? DARK : LIGHT;
+        if (changedColourScheme === DARK) {
+          prismEl.href = PRISM_DARK_URL;
+        } else {
+          prismEl.href = PRISM_LIGHT_URL;
+        }
       });
     }
 

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-  <link href="https://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <!-- <link href="https://gmpg.org/xfn/11" rel="profile"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   <!-- Enable responsiveness on mobile devices-->
@@ -16,12 +17,21 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/lanyon.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/post-element-condesed.css">
 
+  <link rel="stylesheet" href="/public/css/dark-mode.css">
+  <!-- <link rel="stylesheet" href="/public/css/poole.css"> -->
+  <!-- <link rel="stylesheet" href="/public/css/syntax.css"> -->
+  <!-- <link rel="stylesheet" href="/public/css/lanyon.css"> -->
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Syntax highlight  -->
   <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -31,192 +41,94 @@
   <!-- ////////// Favicon ////////// -->
   <!-- For old IEs -->
   <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" />
-
   <!-- For new browsers - multisize ico  -->
   <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico">
-
   <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png">
-
   <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png">
-
   <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
   <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png">
-
   <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png">
-
   <!-- For iPhone 6+ -->
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png">
-
   <!-- For first- and second-generation iPad: -->
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png">
-
   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
   <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png">
-
   <!-- For Old Chrome -->
   <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32">
-
   <!-- For IE10 Metro -->
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="msapplication-TileImage" content="favicon-144.png">
   <meta name="theme-color" content="#ffffff">
-
   <!-- Chrome for Android -->
   <link rel="manifest" href="manifest.json">
   <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png">
   <!-- ////////// Favicons end ////////// -->
 
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-  <!-- font awesome CDN -->
-  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
-  <style>   
-
- /* Dark mode */
-@media (prefers-color-scheme: dark) {
-  body{
-      background-color: black;
-      color: #B2BEB5;
-    }
-
-  img {
-      filter: grayscale(30%);
-    }
-
-   .content > .post > h2, h3, h4, h5, h6 {
-      color: white;
-    }
-    .post > h1.post-title{
-      color: white;
-    }
-
-    .post > h2.post-title a{
-      color: white;
-    }
-
-   
-    h1, h2, h3, h4, h5, h6 {
-      color: white!important;
-    }
-
-  code {
-    background-color: transparent;
-  }
-}
-
-/* Light mode */
-@media (prefers-color-scheme: light) {
-  body {
-      background-color: white;
-      color: black;
-      /* transition: background-color 300ms ease-in-out 0s; */
-    } 
-}
-  </style>
+  
 
 </head>
 
-<body class="">
-  <!-- class="theme-base-08" -->
-
-  <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
- styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-<!--  checked -->
-
-<!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p>Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.</p>
-
-    
-  </div>
-
-  <nav class="sidebar-nav">
-
-    
-
-    <a class="sidebar-nav-item" href="/"><i
-        class="fa fa-user" aria-hidden="true"></i> About</a>
-
-    <a class="sidebar-nav-item" disabled="true">
-
-      <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-camera-retro" aria-hidden="true"></i>Photos
-      </a>
-
-      
-      <a class="sidebar-nav-item" href="/categories/video">
+<body class="default-pages">
+  <div class="container">
+    <div class="wrapper">
+      <header class="header">
+        Pietro <small>Passarelli </small>
         
-        <i class="fa fa-film" aria-hidden="true"></i> Video
+        <nav class="nav">
+    <ul class="menu-list">
+        <li>
+            <a class="sidebar-nav-item" href="/">
+                About</a>
+        </li>
+
         
-      </a>
-      
-      <a class="sidebar-nav-item" href="/categories/tech">
+
+        <li> <a class="" href="/categories/video">
+
+                
+                Videos
+                
+            </a> </li>
         
-        <i class="fa fa-laptop" aria-hidden="true"></i> Tech
+
+        <li> <a class="" href="/categories/tech">
+
+                
+                Tech
+                
+            </a> </li>
         
-      </a>
-      
-      <a class="sidebar-nav-item" href="/categories/ttqf">
+
+        <li> <a class="" href="/categories/ttqf">
+
+                
+                Tips Tricks & Quick Fix
+                
+            </a> </li>
         
-        <i class="fa fa-list-alt" aria-hidden="true"></i> Tips Tricks & Quick Fix
+
+        <li> <a class="" href="/categories/blog">
+
+                
+                Blog
+                
+            </a> </li>
         
-      </a>
-      
-      <a class="sidebar-nav-item" href="/categories/blog">
+
+
+        <li> <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank"
+                rel="noopener noreferrer">
+                Photos↗</a>
+        </li>
+    </ul>
+</nav>
+      </header>
+      <main class="main"> 
         
-        <i class="fa fa-pencil" aria-hidden="true"></i> Blog
-        
-      </a>
-      
-
-      <a class="sidebar-nav-item" disabled="true">
-
-      </a>
-      <a class="icon-envelope  sidebar-nav-item"
-        href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
-        class="author-social" target="_blank" rel="noopener noreferrer"><i class="icon-mail"></i><i
-          class="fa fa-envelope-o" aria-hidden="true"></i>
-        E-mail</a> <span></span>
-
-
-      <a class="icon-twitter  sidebar-nav-item "
-        href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> <i
-          class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
-
-      <a class="icon-github sidebar-nav-item "
-        href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer"><i
-          class="fa fa-github" aria-hidden="true"></i> GitHub</a>
-
-      <a class="icon-linkedin sidebar-nav-item "
-        href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="noopener noreferrer"><i
-          class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a>
-
-
-
-
-
-</div>
-
-  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-    content to avoid any CSS collisions with our real content. -->
-  <div class="wrap">
-    <div class="masthead">
-      <div class="container">
-        <h3 class="masthead-title">
-          <a href="/" title="Home">Pietro</a>
-          <small>Passarelli </small>
-        </h3>
-      </div>
-    </div>
-
-    <div class="container content">
-      
 <div class="page">
   <h1 class="page-title">
   	
@@ -225,727 +137,325 @@
   </h1>
   
 	<h1>Tech</h1>
-<hr>
-<!-- <ul><li>
-   <a href="/popathon.html">Turning viewers into users #popathon</a>
-  </li><li>
-   <a href="/simpleInvoice.html">Simple Invoice</a>
-  </li><li>
-   <a href="/categories/tech/2013-12-02-sbv-csv/">.sbv to .csv</a>
-  </li><li>
-   <a href="/autoEdit.html">autoEdit, digital paper-editing</a>
-  </li><li>
-   <a href="/buildTheNews.html">Interactive databate #buildTheNews</a>
-  </li><li>
-   <a href="/oneStory.html">OneStory at BBC #newsHack</a>
-  </li><li>
-   <a href="/quickQuote.html">quickQuote - Times & Sunday Times</a>
-  </li><li>
-   <a href="/captions-burner.html">Captions Burner</a>
-  </li><li>
-   <a href="/categories/tech/2016-07-13-visual-narratives/">Vax project 2016 - IDA, Rethinking Visual Narratives</a>
-  </li><li>
-   <a href="/Transcriber-prototype.html">Transcriber - prototype</a>
-  </li><li>
-   <a href="/povHackthon.html">POV Hackaton: 'Battle Sound'</a>
-  </li><li>
-   <a href="/wip.html">Whistleblower Interview Archive</a>
-  </li><li>
-   <a href="/autoEdit2.html">autoEdit2</a>
-  </li><li>
-   <a href="/captioning-app.html">Captioning app [Working Title]</a>
-  </li><li>
-   <a href="/opened-captions-annotated-article-rig.html">Opened Captions Annotated article system</a>
-  </li><li>
-   <a href="/fact2_transcription_editor.html">Fact2 Transcriptions Text Editor</a>
-  </li><li>
-   <a href="/BBCnewslabs_slack_transcription_bot.html">BBC #newsHack '17 `@TranscriptionBot`</a>
-  </li><li>
-   <a href="/BBC-crossing-divides.html">BBC World Service, Crossing Divides</a>
-  </li><li>
-   <a href="/BBC-AMP-stories.html">BBC AMP Stories</a>
-  </li><li>
-   <a href="/trello-to-markdown.html">Trello To Markdown</a>
-  </li><li>
-   <a href="/BBC-transcript-editor.html">BBC React Transcript Editor</a>
-  </li><li>
-   <a href="/BBC-narrative-text.html">BBC Narrative Text</a>
-  </li><li>
-   <a href="/BBC-dpe.html">BBC Digital Paper Edit</a>
-  </li></ul> -->
-<div class="post">
-  <h2 class="post-title">
-    <a href="/BBC-dpe.html">
-      BBC Digital Paper Edit
-    </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Thu Mar 21 2019 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>An open source application to make it faster, easier and more accessible to edit audio and video interviews using automatically generated transcriptions form STT service.</p>
-  <!-- Link to post -->
-  <a href="/BBC-dpe.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/BBC-dpe.html">
-    <img src=/img/BBC-dpe/overview.png>
+<hr><div class="post-condensed-block">
+  <a class="image-block" href="/BBC-dpe.html">
+    <img src=/img/BBC-dpe/overview.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/BBC-narrative-text.html">
-      BBC Narrative Text
+  <div>
+    <h2><a href="/BBC-dpe.html">BBC Digital Paper Edit</a></h2>
+    <small>Thu Mar 21 2019 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>An open source application to make it faster, easier and more accessible to edit audio and video interviews using automatically generated transcriptions form STT service.</p><a href="/BBC-dpe.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Sat Jan 19 2019 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
-  </small>
-  <!-- description -->
-  <p>Making narrative text in social videos accessible to screen readers</p>
-  <!-- Link to post -->
-  <a href="/BBC-narrative-text.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/BBC-narrative-text.html">
-    <img src=/img/BBC-narrative-text/overview.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/BBC-narrative-text.html">
+    <img src=/img/BBC-narrative-text/overview.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/BBC-transcript-editor.html">
-      BBC React Transcript Editor
+  <div>
+    <h2><a href="/BBC-narrative-text.html">BBC Narrative Text</a></h2>
+    <small>Sat Jan 19 2019 19:00:00 GMT-0500 (Eastern Standard Time) </small>
+    <p>Making narrative text in social videos accessible to screen readers</p><a href="/BBC-narrative-text.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Mon Dec 03 2018 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
-  </small>
-  <!-- description -->
-  <p>An open source React component to make correcting automated transcriptions of audio and video easier and faster</p>
-  <!-- Link to post -->
-  <a href="/BBC-transcript-editor.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/BBC-transcript-editor.html">
-    <img src=/img/BBC-transcript-editor/transcript-editor-overview.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/BBC-transcript-editor.html">
+    <img src=/img/BBC-transcript-editor/transcript-editor-overview.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/trello-to-markdown.html">
-      Trello To Markdown
+  <div>
+    <h2><a href="/BBC-transcript-editor.html">BBC React Transcript Editor</a></h2>
+    <small>Mon Dec 03 2018 19:00:00 GMT-0500 (Eastern Standard Time) </small>
+    <p>An open source React component to make correcting automated transcriptions of audio and video easier and faster</p><a href="/BBC-transcript-editor.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Wed Aug 08 2018 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>A way to convert a trello board into a gitbook</p>
-  <!-- Link to post -->
-  <a href="/trello-to-markdown.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/trello-to-markdown.html">
-    <img src=/img/trello-to-markdown/overview.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/trello-to-markdown.html">
+    <img src=/img/trello-to-markdown/overview.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/BBC-AMP-stories.html">
-      BBC AMP Stories
+  <div>
+    <h2><a href="/trello-to-markdown.html">Trello To Markdown</a></h2>
+    <small>Wed Aug 08 2018 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>A way to convert a trello board into a gitbook</p><a href="/trello-to-markdown.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Sat Jun 16 2018 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>A lightweight system for BBC Journalist to publish AMP Stories</p>
-  <!-- Link to post -->
-  <a href="/BBC-AMP-stories.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/BBC-AMP-stories.html">
-    <img src=/img/BBC-AMP-stories/amp-stories-index.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/BBC-AMP-stories.html">
+    <img src=/img/BBC-AMP-stories/amp-stories-index.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/BBC-crossing-divides.html">
-      BBC World Service, Crossing Divides
+  <div>
+    <h2><a href="/BBC-AMP-stories.html">BBC AMP Stories</a></h2>
+    <small>Sat Jun 16 2018 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>A lightweight system for BBC Journalist to publish AMP Stories</p><a href="/BBC-AMP-stories.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Wed Mar 14 2018 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>A new interactive story format for BBC World Service</p>
-  <!-- Link to post -->
-  <a href="/BBC-crossing-divides.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/BBC-crossing-divides.html">
-    <img src=/img/BBC-crossing-divides/crossing-divides-overview.jpg>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/BBC-crossing-divides.html">
+    <img src=/img/BBC-crossing-divides/crossing-divides-overview.jpg alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/BBCnewslabs_slack_transcription_bot.html">
-      BBC #newsHack '17 `@TranscriptionBot`
+  <div>
+    <h2><a href="/BBC-crossing-divides.html">BBC World Service, Crossing Divides</a></h2>
+    <small>Wed Mar 14 2018 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>A new interactive story format for BBC World Service</p><a href="/BBC-crossing-divides.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Wed Oct 25 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>Proof of concept demo of chatbot conversational interface for transcription service.</p>
-  <!-- Link to post -->
-  <a href="/BBCnewslabs_slack_transcription_bot.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/BBCnewslabs_slack_transcription_bot.html">
-    <img src=/img/BBCnewslabs_slack_transcription_bot/1_add_audio.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/BBCnewslabs_slack_transcription_bot.html">
+    <img src=/img/BBCnewslabs_slack_transcription_bot/1_add_audio.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/fact2_transcription_editor.html">
-      Fact2 Transcriptions Text Editor
+  <div>
+    <h2><a href="/BBCnewslabs_slack_transcription_bot.html">BBC #newsHack '17 `@TranscriptionBot`</a></h2>
+    <small>Wed Oct 25 2017 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>Proof of concept demo of chatbot conversational interface for transcription service.</p><a href="/BBCnewslabs_slack_transcription_bot.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Tue Oct 10 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>Largely inspired by oTranscribe a client side transcriptions text editor for Fact2's proofreaders to correct automatically generated text from speech to text services</p>
-  <!-- Link to post -->
-  <a href="/fact2_transcription_editor.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/fact2_transcription_editor.html">
-    <img src=/img/fact2_transcription_editor/Fact2_transcription_text_editor_shortcuts.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/fact2_transcription_editor.html">
+    <img src=/img/fact2_transcription_editor/Fact2_transcription_text_editor_shortcuts.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/opened-captions-annotated-article-rig.html">
-      Opened Captions Annotated article system
+  <div>
+    <h2><a href="/fact2_transcription_editor.html">Fact2 Transcriptions Text Editor</a></h2>
+    <small>Tue Oct 10 2017 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>Largely inspired by oTranscribe a client side transcriptions text editor for Fact2's proofreaders to correct automatically generated text from speech to text services</p><a href="/fact2_transcription_editor.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Sun Jul 23 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>A rig to make an annotated article leveraging live tv captions, like NPR & Vox.</p>
-  <!-- Link to post -->
-  <a href="/opened-captions-annotated-article-rig.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/opened-captions-annotated-article-rig.html">
-    <img src=/img/opened_caption_app/opened_caption_annotation_app.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/opened-captions-annotated-article-rig.html">
+    <img src=/img/opened_caption_app/opened_caption_annotation_app.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/captioning-app.html">
-      Captioning app [Working Title]
+  <div>
+    <h2><a href="/opened-captions-annotated-article-rig.html">Opened Captions Annotated article system</a></h2>
+    <small>Sun Jul 23 2017 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>A rig to make an annotated article leveraging live tv captions, like NPR & Vox.</p><a href="/opened-captions-annotated-article-rig.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Sun Jul 23 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>Turbo charge the captioning workflow using automated transcription, punctuation, alignement and segmentation.</p>
-  <!-- Link to post -->
-  <a href="/captioning-app.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/captioning-app.html">
-    <img src=https://pbs.twimg.com/media/DF7ytQ7VoAA1ry2.jpg:large>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/captioning-app.html">
+    <img src=https://pbs.twimg.com/media/DF7ytQ7VoAA1ry2.jpg:large alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/autoEdit2.html">
-      autoEdit2
+  <div>
+    <h2><a href="/captioning-app.html">Captioning app [Working Title]</a></h2>
+    <small>Sun Jul 23 2017 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>Turbo charge the captioning workflow using automated transcription, punctuation, alignement and segmentation.</p><a href="/captioning-app.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Mon Apr 03 2017 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>Mac os x app for fast text based video editing of audio/video interviews</p>
-  <!-- Link to post -->
-  <a href="/autoEdit2.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/autoEdit2.html">
-    <img src=https://www.autoedit.io/img/3_transcription.gif>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/autoEdit2.html">
+    <img src=https://opennewslabs.github.io/autoEdit_2/img/3_transcription.gif alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/wip.html">
-      Whistleblower Interview Archive
+  <div>
+    <h2><a href="/autoEdit2.html">autoEdit2</a></h2>
+    <small>Mon Apr 03 2017 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>Mac os x app for fast text based video editing of audio/video interviews</p><a href="/autoEdit2.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Sun Feb 19 2017 19:00:00 GMT-0500 (Eastern Standard Time)    </span>
-  </small>
-  <!-- description -->
-  <p>A proof of concept for an interactive site for the Whistle Blower interview archive by Niels Ladefoged</p>
-  <!-- Link to post -->
-  <a href="/wip.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/wip.html">
-    <img src=/img/wip_archive/wip_archive_t.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/wip.html">
+    <img src=/img/wip_archive/wip_archive_t.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/povHackthon.html">
-      POV Hackaton: 'Battle Sound'
+  <div>
+    <h2><a href="/wip.html">Whistleblower Interview Archive</a></h2>
+    <small>Sun Feb 19 2017 19:00:00 GMT-0500 (Eastern Standard Time) </small>
+    <p>A proof of concept for an interactive site for the Whistle Blower interview archive by Niels Ladefoged</p><a href="/wip.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Sat Sep 24 2016 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>POV Hackaton NYC 24th Sept 2016, Battle Sound team. Interactive Documentary.</p>
-  <!-- Link to post -->
-  <a href="/povHackthon.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/povHackthon.html">
-    <img src=/img/pov/demo.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/povHackthon.html">
+    <img src=/img/pov/demo.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/Transcriber-prototype.html">
-      Transcriber - prototype
+  <div>
+    <h2><a href="/povHackthon.html">POV Hackaton: 'Battle Sound'</a></h2>
+    <small>Sat Sep 24 2016 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>POV Hackaton NYC 24th Sept 2016, Battle Sound team. Interactive Documentary.</p><a href="/povHackthon.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Wed Aug 31 2016 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>Prototype to test quality of STT with users before introducing autoEdit2</p>
-  <!-- Link to post -->
-  <a href="/Transcriber-prototype.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/Transcriber-prototype.html">
-    <img src=https://raw.githubusercontent.com/voxmedia/Transcriber/master/img/demo.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/Transcriber-prototype.html">
+    <img src=https://raw.githubusercontent.com/voxmedia/Transcriber/master/img/demo.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/categories/tech/2016-07-13-visual-narratives/">
-      Vax project 2016 - IDA, Rethinking Visual Narratives
+  <div>
+    <h2><a href="/Transcriber-prototype.html">Transcriber - prototype</a></h2>
+    <small>Wed Aug 31 2016 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>Prototype to test quality of STT with users before introducing autoEdit2</p><a href="/Transcriber-prototype.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Tue Jul 12 2016 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>A proof concept built at Vax hackaton</p>
-  <!-- Link to post -->
-  <a href="/categories/tech/2016-07-13-visual-narratives/">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/categories/tech/2016-07-13-visual-narratives/">
-    <img src=/img/vax-ida/ida.gif>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/categories/tech/2016-07-13-visual-narratives/">
+    <img src=/img/vax-ida/ida.gif alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/captions-burner.html">
-      Captions Burner
+  <div>
+    <h2><a href="/categories/tech/2016-07-13-visual-narratives/">Vax project 2016 - IDA, Rethinking Visual Narratives</a></h2>
+    <small>Tue Jul 12 2016 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>A proof concept built at Vax hackaton</p><a href="/categories/tech/2016-07-13-visual-narratives/">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Wed Jun 01 2016 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>Mac os x desktop app that given a srt and a video burns the captions onto the video. Can also export as gif.</p>
-  <!-- Link to post -->
-  <a href="/captions-burner.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/captions-burner.html">
-    <img src=https://github.com/voxmedia/captions_burner/raw/master/img/captions_burner.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/captions-burner.html">
+    <img src=https://github.com/voxmedia/captions_burner/raw/master/img/captions_burner.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/quickQuote.html">
-      quickQuote - Times & Sunday Times
+  <div>
+    <h2><a href="/captions-burner.html">Captions Burner</a></h2>
+    <small>Wed Jun 01 2016 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>Mac os x desktop app that given a srt and a video burns the captions onto the video. Can also export as gif.</p><a href="/captions-burner.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Mon Jul 20 2015 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>A tool for journalists to easily find and add video quotes to news articles</p>
-  <!-- Link to post -->
-  <a href="/quickQuote.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/quickQuote.html">
-    <img src=/img/TimesAndSundayTimesQuickQuote/home.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/quickQuote.html">
+    <img src=/img/TimesAndSundayTimesQuickQuote/home.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/oneStory.html">
-      OneStory at BBC #newsHack
+  <div>
+    <h2><a href="/quickQuote.html">quickQuote - Times & Sunday Times</a></h2>
+    <small>Mon Jul 20 2015 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>A tool for journalists to easily find and add video quotes to news articles</p><a href="/quickQuote.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Wed Jun 03 2015 20:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>at #EditorsLab BBC #newsHack hackaton</p>
-  <!-- Link to post -->
-  <a href="/oneStory.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/oneStory.html">
-    <img src=/img/newsHackOneStory/OneStory_01_Home.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/oneStory.html">
+    <img src=/img/newsHackOneStory/OneStory_01_Home.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/buildTheNews.html">
-      Interactive databate #buildTheNews
+  <div>
+    <h2><a href="/oneStory.html">OneStory at BBC #newsHack</a></h2>
+    <small>Wed Jun 03 2015 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>at #EditorsLab BBC #newsHack hackaton</p><a href="/oneStory.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Wed Apr 29 2015 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>at Times and Sunday Times #buildTheNews hackaton</p>
-  <!-- Link to post -->
-  <a href="/buildTheNews.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/buildTheNews.html">
-    <img src=/img/BuildTheNews/interactive_debate.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/buildTheNews.html">
+    <img src=/img/BuildTheNews/interactive_debate.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/autoEdit.html">
-      autoEdit, digital paper-editing
+  <div>
+    <h2><a href="/buildTheNews.html">Interactive databate #buildTheNews</a></h2>
+    <small>Wed Apr 29 2015 00:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>at Times and Sunday Times #buildTheNews hackaton</p><a href="/buildTheNews.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Wed Apr 15 2015 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>Fast text based editing of video interviews</p>
-  <!-- Link to post -->
-  <a href="/autoEdit.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/autoEdit.html">
-    <img src=/img/autoEdit/autoEditScreenShot_08.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/autoEdit.html">
+    <img src=/img/autoEdit/autoEditScreenShot_08.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/categories/tech/2013-12-02-sbv-csv/">
-      .sbv to .csv
+  <div>
+    <h2><a href="/autoEdit.html">autoEdit, digital paper-editing</a></h2>
+    <small>Wed Apr 15 2015 00:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>Fast text based editing of video interviews</p><a href="/autoEdit.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Mon Dec 02 2013 00:00:00 GMT-0500 (Eastern Standard Time)    </span>
-  </small>
-  <!-- description -->
-  <p>Convert youtube generate captions into csv for google spreadsheat paper-editing</p>
-  <!-- Link to post -->
-  <a href="/categories/tech/2013-12-02-sbv-csv/">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/categories/tech/2013-12-02-sbv-csv/">
-    <img src=/img/sbv/sbv.jpeg>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/categories/tech/2013-12-02-sbv-csv/">
+    <img src=/img/sbv/sbv.jpeg alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/simpleInvoice.html">
-      Simple Invoice
+  <div>
+    <h2><a href="/categories/tech/2013-12-02-sbv-csv/">.sbv to .csv</a></h2>
+    <small>Mon Dec 02 2013 00:00:00 GMT-0500 (Eastern Standard Time) </small>
+    <p>Convert youtube generate captions into csv for google spreadsheat paper-editing</p><a href="/categories/tech/2013-12-02-sbv-csv/">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Wed Sep 04 2013 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>A simple invoicing application for freelancers</p>
-  <!-- Link to post -->
-  <a href="/simpleInvoice.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/simpleInvoice.html">
-    <img src=/img/simpleinvoice/1-simple_invoice-welcome-page.jpeg>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/simpleInvoice.html">
+    <img src=/img/simpleinvoice/1-simple_invoice-welcome-page.jpeg alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
-<div class="post">
-  <h2 class="post-title">
-    <a href="/popathon.html">
-      Turning viewers into users #popathon
+  <div>
+    <h2><a href="/simpleInvoice.html">Simple Invoice</a></h2>
+    <small>Wed Sep 04 2013 00:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>A simple invoicing application for freelancers</p><a href="/simpleInvoice.html">
+      <small> <small>More &raquo;</small></small>
     </a>
-  </h2>
-  <small>
-    <span class="post-date">
-    Sun May 12 2013 00:00:00 GMT-0400 (Eastern Daylight Time)    </span>
-  </small>
-  <!-- description -->
-  <p>Won best proptotype at Mozilla #popathon hackaton</p>
-  <!-- Link to post -->
-  <a href="/popathon.html">
-    <small <small>More &raquo;</small></small>
-  </a><br>
-  <!-- image -->
-  <a href="/popathon.html">
-    <img src=/img/popathon/popathon.png>
+  </div>
+</div> 
+<div class="post-condensed-block">
+  <a class="image-block" href="/popathon.html">
+    <img src=/img/popathon/popathon.png alt="">
   </a>
-  <!-- optional github link -->
-  <!-- optional gitbook link -->
-  <!-- project page link  -->
-  <br>
-  <!-- tech stack  -->
-  <!--   <hr> -->
-</div>
-<hr> 
+  <div>
+    <h2><a href="/popathon.html">Turning viewers into users #popathon</a></h2>
+    <small>Sat May 11 2013 20:00:00 GMT-0400 (Eastern Daylight Time) </small>
+    <p>Won best proptotype at Mozilla #popathon hackaton</p><a href="/popathon.html">
+      <small> <small>More &raquo;</small></small>
+    </a>
+  </div>
+</div> 
 
 </div>
 
+      </main>
+    
+      <footer class="footer">
+    <nav>
+        <ul class="contacts-list">
+            <li>
+                <a
+                    href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+                    class="author-social" target="_blank" rel="noopener noreferrer">
+                    <i class="far fa-envelope"></i>
+                    E-mail</a> <span></span>
+            </li>
+            <li>
+                <a 
+                    href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> 
+                    <i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+                <a 
+                    href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub</a>
+            </li>
+            <li>
+                <a 
+                    href="https://uk.linkedin.com/in/pietropassarelli" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+            </li>
+
+            <li>
+                <a 
+                    href="https://www.instagram.com/pietro.ps" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+
+            
+        </ul>
+    </nav>
+</footer>
     </div>
   </div>
-
-  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-  <script>
-    (function (document) {
-      var toggle = document.querySelector('.sidebar-toggle');
-      var sidebar = document.querySelector('#sidebar');
-      var checkbox = document.querySelector('#sidebar-checkbox');
-
-      document.addEventListener('click', function (e) {
-        var target = e.target;
-
-        if (!checkbox.checked ||
-          sidebar.contains(target) ||
-          (target === checkbox || target === toggle)) return;
-
-        checkbox.checked = false;
-      }, false);
-    })(document);
-  </script>
-
-  
-
-
   <script>
     // Logic to adjust syntax highlighting based on whether dark mode is on 
     // in the system or not
@@ -968,12 +478,12 @@
 
       // Event listener to change with system change
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        const changedColourScheme = e.matches ? DARK: LIGHT;
-          if (changedColourScheme === DARK) {
-            prismEl.href = PRISM_DARK_URL;
-          } else {
-            prismEl.href = PRISM_LIGHT_URL;
-          }
+        const changedColourScheme = e.matches ? DARK : LIGHT;
+        if (changedColourScheme === DARK) {
+          prismEl.href = PRISM_DARK_URL;
+        } else {
+          prismEl.href = PRISM_LIGHT_URL;
+        }
       });
     }
 
