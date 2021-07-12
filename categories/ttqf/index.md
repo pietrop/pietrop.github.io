@@ -26,8 +26,5 @@ body: theme-base-0c
 	{% endfor %}
 </dl> -->
 
-{% comment %}
-{%- for post in collections.ttqf reversed-%}
-	{% include post_element.html, post:post, image:post.data.image, postTitle:post.data.title, url:post.url date:post.date, postDescription:post.data.description', content: post.data.content %} 
-{% endfor %}
-{% endcomment %}
+
+

@@ -17,5 +17,5 @@ body: theme-base-0f
 
 
 {%- for post in collections.video reversed-%}
-	{% include post_element.html, post:post, image:post.data.image, postTitle:post.data.title, url:post.url date:post.date, postDescription:post.data.description', content: post.data.content %} 
+	{% include post_element_condensed.html, post:post, image:post.data.image, postTitle:post.data.title, url:post.url date:post.date, postDescription:post.data.description', content: post.data.content, duration: post.data.duration %} 
 {% endfor %}

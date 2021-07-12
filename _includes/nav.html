@@ -1,0 +1,30 @@
+<nav class="nav">
+    <ul class="menu-list">
+        <li>
+            <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">
+                About</a>
+        </li>
+
+        {% for item in site.categories %}
+
+        <li> <a class="{% if page.url == site.baseurl %} active{% endif %}" href="/categories/{{  item }}">
+
+                {% if item == 'blog' %}
+                {{ item | capitalize }}
+                {% elsif item == 'ttqf' %}
+                Tips Tricks & Quick Fix
+                {% elsif item == 'video' %}
+                Videos
+                {% elsif item == 'tech' %}
+                {{ item | capitalize }}
+                {% endif %}
+            </a> </li>
+        {% endfor %}
+
+
+        <li> <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank"
+                rel="noopener noreferrer">
+                Photos↗</a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,18 @@
+<div class="post-condensed-block">
+  {%if image %}
+  <a class="image-block" href="{{ url }}">
+    <img src={{image}} alt="">
+  </a>
+  {% else %}
+  <a class="alternative-image-block" href="{{ url }}">
+    <img src="{{site.placeholder_image}}" alt="">
+  </a>
+  {%endif%}
+  <div>
+    <h2><a href="{{ url }}">{{ postTitle }}</a></h2>
+    <small>{{ date | date_to_string }} </small>{% if duration %}| <small><strong>Duration:</strong> {{ duration }}</small>{% endif %}
+    <p>{{ postDescription }}</p>{% if techStack %}<small><strong>Stack: </strong>{% for t in techStack %}{{ t }},{% endfor %}</small>{% endif %}<a href="{{ url }}">
+      <small> <small>More &raquo;</small></small>
+    </a>
+  </div>
+</div>

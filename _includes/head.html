@@ -1,6 +1,7 @@
 <head>
-  <link href="https://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <!-- <link href="https://gmpg.org/xfn/11" rel="profile"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   <!-- Enable responsiveness on mobile devices-->
@@ -15,12 +16,21 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/post-element-condesed.css">
 
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/dark-mode.css">
+  <!-- <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css"> -->
+  <!-- <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css"> -->
+  <!-- <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css"> -->
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Syntax highlight  -->
   <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -30,91 +40,33 @@
   <!-- ////////// Favicon ////////// -->
   <!-- For old IEs -->
   <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico/favicon.ico" />
-
   <!-- For new browsers - multisize ico  -->
   <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="{{ site.baseurl }}/public/favicon.ico/favicon.ico">
-
   <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.baseurl }}/public/favicon.ico/favicon-152.png">
-
   <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/favicon.ico/favicon-144.png">
-
   <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
   <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.baseurl }}/public/favicon.ico/favicon-120.png">
-
   <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/public/favicon.ico/favicon-114.png">
-
   <!-- For iPhone 6+ -->
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ site.baseurl }}/public/favicon.ico/favicon-180.png">
-
   <!-- For first- and second-generation iPad: -->
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/public/favicon.ico/favicon-72.png">
-
   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
   <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/public/favicon.ico/favicon-57.png">
-
   <!-- For Old Chrome -->
   <link rel="icon" href="{{ site.baseurl }}/public/favicon.ico/favicon-32.png" sizes="32x32">
-
   <!-- For IE10 Metro -->
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="msapplication-TileImage" content="favicon-144.png">
   <meta name="theme-color" content="#ffffff">
-
   <!-- Chrome for Android -->
   <link rel="manifest" href="manifest.json">
   <link rel="icon" sizes="192x192" href="{{ site.baseurl }}/public/favicon.ico/favicon-192.png">
   <!-- ////////// Favicons end ////////// -->
 
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-  <!-- font awesome CDN -->
-  <script src="https://use.fontawesome.com/84dfffd1e8.js"></script>
-  <style>   
-
- /* Dark mode */
-@media (prefers-color-scheme: dark) {
-  body{
-      background-color: black;
-      color: #B2BEB5;
-    }
-
-  img {
-      filter: grayscale(30%);
-    }
-
-   .content > .post > h2, h3, h4, h5, h6 {
-      color: white;
-    }
-    .post > h1.post-title{
-      color: white;
-    }
-
-    .post > h2.post-title a{
-      color: white;
-    }
-
-   
-    h1, h2, h3, h4, h5, h6 {
-      color: white!important;
-    }
-
-  code {
-    background-color: transparent;
-  }
-}
-
-/* Light mode */
-@media (prefers-color-scheme: light) {
-  body {
-      background-color: white;
-      color: black;
-      /* transition: background-color 300ms ease-in-out 0s; */
-    } 
-}
-  </style>
+  
 
 </head>
