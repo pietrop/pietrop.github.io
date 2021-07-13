@@ -154,7 +154,7 @@ it means that react it's calling it's diffing algorith to check changes against 
 
 `PureComponent`
 
-```
+```js
 import React, { PureComponent } from "react";
 
 class MenuButton extends PureComponent {
@@ -314,7 +314,7 @@ shouldComponentUpdate(nextProps, nextState){
 ### `PureComponent`
 use `PureComponent`
 
-```
+```js
 import React, { PureComponent } from "react";
 
 class MenuButton extends PureComponent {
