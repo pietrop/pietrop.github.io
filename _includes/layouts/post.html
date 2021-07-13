@@ -4,7 +4,7 @@ layout: default
 
 <div class="post">
 	<h1 class="post-title">{{ title }} </h1>
-	<span class="post-date">{{ date | date_to_string }} 
+	<span class="post-date">{{ date |  date: "%Y %b %d"  }} 
 		{% if duration %}
 		| <strong> Duration:</strong> {{ duration }}
 		{% endif %}

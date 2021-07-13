@@ -8,7 +8,7 @@ youtube:
 image: 
 categories: 
 - ttqf
-- blog
+# - blog
 tags:
 - electon
 ---

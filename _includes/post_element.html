@@ -8,7 +8,7 @@
 
   <small>
     <span class="post-date">
-    {{ date | date_to_string }}    </span>
+    {{ date |  date: "%Y %b %d" }}    </span>
 
       {% if duration %}
       | <strong>Duration:</strong> {{ duration }}
