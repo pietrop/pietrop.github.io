@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/public/css/post-element-condesed.css">
 
   <link rel="stylesheet" href="/public/css/dark-mode.css">
+  <link rel="stylesheet" href="/public/css/badge.css">
   <!-- <link rel="stylesheet" href="/public/css/poole.css"> -->
   <!-- <link rel="stylesheet" href="/public/css/syntax.css"> -->
   <!-- <link rel="stylesheet" href="/public/css/lanyon.css"> -->
@@ -131,10 +132,11 @@
         
 <div class="post">
 	<h1 class="post-title">Changing the way we produce video: autoEdit 2- draft </h1>
-	<span class="post-date">2016-09-07T01:30:00.000+01:00
-
+	<span class="post-date">2016-09-07T01:30:00.000+01:00 
 		
-	</span> <br>
+	</span> 
+	
+	<br>
 
 	
 
@@ -183,18 +185,18 @@
 <blockquote>
 <p>To make video production faster, easier and more accessible.</p>
 </blockquote>
-<p><img src="" alt="Current Iteration"></p>
+<p><img src="/img/tbve_vision/current.png" alt="Current Iteration"></p>
 <p>The App makes automatic transcription from video (or audio). User selects parts they want, and export video sequence.</p>
-<p><img src="" alt="Overview diagram"></p>
+<p><img src="/img/tbve_vision/overview_diagram.png" alt="Overview diagram"></p>
 <h4>Demo</h4>
 <p>Ad a video or audio file
-<img src="" alt="Demo 1"></p>
+<img src="/img/tbve_vision/1_getting_started.gif" alt="Demo 1"></p>
 <p>Wait 5 min for transcription
-<img src="" alt="Demo 1"></p>
+<img src="/img/tbve_vision/2_processing_transcription.gif" alt="Demo 1"></p>
 <p>Explore the transcription and export an EDL(Edit Deicion List) video sequence of your selections
-<img src="" alt="Demo 1"></p>
+<img src="/img/tbve_vision/3_transcription.gif" alt="Demo 1"></p>
 <p>Open the EDL in premiere and reconnect your sequence</p>
-<p><img src="" alt="Demo 1"></p>
+<p><img src="/img/tbve_vision/4_EDL_in_premiere.gif" alt="Demo 1"></p>
 <hr>
 <h4>Interactive demo</h4>
 <p>Link to <a href="https://opennewslabs.github.io/autoEdit_2/public/demo/frontEnd/index.html">Interactive demo</a>{:target=&quot;_blank&quot;}</p>
@@ -267,11 +269,11 @@ The tool is build with a component based approach so switching STT API is relati
 
 But none the less if the users were not going to accept it as a valuable alternative to manual transcription some more research into alternative solutions would have been needed. such as using rev.com where in 24hours they return manual transcription with higher level of accuracy.  -->
 <p>The initial prototype, given audio or video file would simply return plain text.</p>
-<p><img src="" alt="Initial prototype"></p>
+<p><img src="/img/tbve_vision/initial_proto.png" alt="Initial prototype"></p>
 <p>After some user interviews it was concluded that journalists where not interested in using STT for transcriptions. They'd rather manually transcribe something from scratch then proof an inaccurate text.</p>
 <p>Video producers on the other hand were more then happy to use it, as the text was a mean to go to the video rather then an end product itself.</p>
 <p>One feedback received at this stage from the video produer was to add timecodes to the text to make it easier to find corresponding video and to use it for paper-editing in google docs.</p>
-<p><img src="" alt="Initial prototype timecodes"></p>
+<p><img src="/img/tbve_vision/initial_proto_timecodes.png" alt="Initial prototype timecodes"></p>
 <p>Made the change and forgot about it while started working on second iteration.</p>
 <p>The editorial product team then received the following feedback from one of the producers.</p>
 <blockquote>
@@ -362,13 +364,13 @@ Eventually a video preview of the story selection will also be possible in order
 <p>With the current version, it's faster to split the media into 5 minutes chunks send them concurrently and re-assemble the results once they come back, then to process the media in one go.
 Because with the chunking it means any length can be transcribed in just under 5 minutes. While without dividing it it would take a bit longer.</p>
 <p>However with a live use case, this would mean you could have a video stream, and could see the transcription appear in the tool as it's beeing spoken, being then able to paper-edit it, and export it to social media or to a video editing software.</p>
-<p><img src="" alt="Live video editing"></p>
+<p><img src="/img/tbve_vision/live.png" alt="Live video editing"></p>
 <p>I am particularly interested in measuring the before and after of the user engagment on social media with and without this tool for live events.
 Would people be more likely to re-tweet a captioned video of a quote or a still image with the text in the body of the tweet is just as good?</p>
 <h4>5.2. Export to social media, Twitter video or FB video.</h4>
 <!-- (Recode use case) -->
 <p>Essencially once you have your sequence or your video selection, this can be exported as a video tweet or to facebook using their API.</p>
-<p><img src="" alt="quickQuote"></p>
+<p><img src="/img/tbve_vision/quickquote.png" alt="quickQuote"></p>
 <p>Using a <a href="">captioning library</a> <!-- captioning lib  link--> it would also be possible to burn the text of the transcription/subtitles directly onto the video (for the social media mute auto play &quot;feature&quot;).</p>
 <p>This draws on my work at the Times and Sunday time building quickQuote, you can read more on this <a href="/quickQuote.html">here</a>. Initially the app returned an embeddable dropdown quote to add to news articles, subsequently after refactoring the app in node, I've added the twitter export function.</p>
 <h4>5.3. Multi-user collaboration</h4>
@@ -380,7 +382,7 @@ Would people be more likely to re-tweet a captioned video of a quote or a still 
 <p>One of the reasons why the current version is a desktop app is that it makes it easier to process video footage from camcorders which is notoriously large and would be impossible to upload without further transcoding.</p>
 <p>However with the current IOS version it is now possible to upload media from the camera roll or dropbox onto web apps.</p>
 <p>For journalist doign their video produciton on smartphones they could upload what they filmed on the phone onto a web app, get the transcription and edit it there and then from the phone.</p>
-<p><img src="" alt="Mobile"></p>
+<p><img src="/img/tbve_vision/mobile.png" alt="Mobile"></p>
 <h4>5.5. Searchable/editable archive</h4>
 <!-- (SB Nation and Studio team use cases) -->
 <p>Media management is always a topic of great debate within organizations.</p>
@@ -393,7 +395,7 @@ So that you can make sure you have everything you need or if there's anything wo
 <p>This would also allow to do a paper-edit there and then, if time is of the essence.</p>
 <h4>5.7. Foreign language programmatic translations</h4>
 <p>At the Buenos Aires Hacks Hackers Media party hackaton I got asked if the tool could work in spanish. I then added support for the IBM Lanugages.</p>
-<p><img src="" alt="Chose a language"></p>
+<p><img src="/img/tbve_vision/foreign_language.png" alt="Chose a language"></p>
 <p>To test this out I put through the tool some audio in chinese only to realise I had no idea what the charachters meant. I then started to play a round with the idea of using the translation API for translating each line of the transcription and displaying that along side.</p>
 <p>This would allow to make a rough cut from video in a language you might not know.
 You'd probably still need a human translator/interpreter at some point to look over it, but it could considerably speed up this type of workflow.</p>
@@ -421,8 +423,8 @@ You'd probably still need a human translator/interpreter at some point to look o
 </ul>
 <p>There is probably many use cases that I can't think of right now, but to give an idea of the possibilities here are two interactives
 that inspired this use case for newsroom developers.</p>
-<p><img src="" alt="Mandale Interactive"></p>
-<p><img src="" alt="Obama Romeny AJ debate"></p>
+<p><img src="/img/tbve_vision/mandela.png" alt="Mandale Interactive"></p>
+<p><img src="/img/tbve_vision/aljazeera_obama_romney.png" alt="Obama Romeny AJ debate"></p>
 <p>See my previous blog post <a href="/videoBox.html">beyong video as black boxes</a> for some context on these two pieces.</p>
 <h4>5.11. Phone MMS integration (eg Twilio)</h4>
 <p>In situation where WIFI or internet connection is slow but there is enough phone signal to send an MMS with audio or video, a service like twillio could be used to received it and then send it to an API to process the transcription.</p>
