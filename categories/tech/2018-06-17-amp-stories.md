@@ -14,6 +14,8 @@ github:
 youtube: 
 vimeo: 
 tech: ['node', 'google app script']
+company: 'BBC'
+open_source: false
 categories:
 - tech
 tags:

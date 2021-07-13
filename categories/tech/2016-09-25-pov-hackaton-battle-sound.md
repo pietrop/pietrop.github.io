@@ -8,6 +8,7 @@ published: true
 link: https://pietropassarelli.com/BattleSounds
 image: /img/pov/demo.png
 github: pietrop/BattleSounds
+open_source: true
 youtube: 
 tech: ['node']
 categories:

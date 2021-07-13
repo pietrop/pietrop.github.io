@@ -17,6 +17,8 @@ link: https://www.journalism.co.uk/news/5-digital-storytelling-ideas-from-build-
 vimeo: 
 github: 
 tech: ['Ruby on Rails','popcorn.js',  'Bootstrap','HTML','CSS', 'Heroku', 'Git', 'GitHub']
+company: 'Times & Sunday Times'
+open_source: false
 categories: 
 - tech
 tags:

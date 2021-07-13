@@ -5,10 +5,10 @@ description: "For the Audava london based startup, as part of one of the UCL Msc
 duration:
 permalink: "/aujava.html"
 image: /img/aujava/aujavaHome.png
-github: 
-
+github: https://github.com/pietrop/GC01Audava_Java
 tech: ['Java', 'Java-Swing','xml']
 images: ['aujavaHome.png','aujavaAboutUs.png','aujavaRecord.png','aujavaTrack.png','aujavaTracks.png','aujavaXML.png']
+open_source: true
 appurl: 
 link: 
 categories: 

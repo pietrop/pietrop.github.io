@@ -13,6 +13,7 @@ github: https://github.com/pietrop/trello-to-markdown
 youtube: 
 vimeo: 
 tech: ['node', 'trello', 'markdown']
+open_source: true
 categories:
 - tech
 tags:

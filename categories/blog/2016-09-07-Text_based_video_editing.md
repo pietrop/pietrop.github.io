@@ -46,27 +46,27 @@ A chance to recap on what I've been working on in the area of text based video e
 
 >To make video production faster, easier and more accessible. 
 
-![Current Iteration]({{page.img_current}})
+![Current Iteration]({{img_current}})
 
 The App makes automatic transcription from video (or audio). User selects parts they want, and export video sequence. 
 
-![Overview diagram]({{page.img_overview_diagram}})
+![Overview diagram]({{img_overview_diagram}})
 
 
 #### Demo
 
 Ad a video or audio file
-![Demo 1]({{page.gif_getting_started}})
+![Demo 1]({{gif_getting_started}})
 
 Wait 5 min for transcription 
-![Demo 1]({{page.gif_processing_transcription}})
+![Demo 1]({{gif_processing_transcription}})
 
 Explore the transcription and export an EDL(Edit Deicion List) video sequence of your selections
-![Demo 1]({{page.gif_transcription}})
+![Demo 1]({{gif_transcription}})
 
 Open the EDL in premiere and reconnect your sequence
 
-![Demo 1]({{page.gif_edl}})
+![Demo 1]({{gif_edl}})
 
 
 ---
@@ -180,7 +180,7 @@ But none the less if the users were not going to accept it as a valuable alterna
 
 The initial prototype, given audio or video file would simply return plain text. 
 
-![Initial prototype]({{page.img_initial_proto}})
+![Initial prototype]({{img_initial_proto}})
 
 After some user interviews it was concluded that journalists where not interested in using STT for transcriptions. They'd rather manually transcribe something from scratch then proof an inaccurate text. 
 
@@ -188,7 +188,7 @@ Video producers on the other hand were more then happy to use it, as the text wa
 
 One feedback received at this stage from the video produer was to add timecodes to the text to make it easier to find corresponding video and to use it for paper-editing in google docs. 
 
-![Initial prototype timecodes]({{page.img_initial_proto_timecodes}})
+![Initial prototype timecodes]({{img_initial_proto_timecodes}})
 
 Made the change and forgot about it while started working on second iteration. 
 
@@ -274,7 +274,7 @@ Because with the chunking it means any length can be transcribed in just under 5
 
 However with a live use case, this would mean you could have a video stream, and could see the transcription appear in the tool as it's beeing spoken, being then able to paper-edit it, and export it to social media or to a video editing software.
 
-![Live video editing]({{page.img_live}})
+![Live video editing]({{img_live}})
 
 I am particularly interested in measuring the before and after of the user engagment on social media with and without this tool for live events. 
 Would people be more likely to re-tweet a captioned video of a quote or a still image with the text in the body of the tweet is just as good?
@@ -284,7 +284,7 @@ Would people be more likely to re-tweet a captioned video of a quote or a still 
 
 Essencially once you have your sequence or your video selection, this can be exported as a video tweet or to facebook using their API.
 
-![quickQuote]({{page.img_quickQuote}})
+![quickQuote]({{img_quickQuote}})
 
 Using a [captioning library]() <!-- captioning lib  link--> it would also be possible to burn the text of the transcription/subtitles directly onto the video (for the social media mute auto play "feature").
 
@@ -306,7 +306,7 @@ However with the current IOS version it is now possible to upload media from the
 
 For journalist doign their video produciton on smartphones they could upload what they filmed on the phone onto a web app, get the transcription and edit it there and then from the phone.
 
-![Mobile]({{page.img_mobile}})
+![Mobile]({{img_mobile}})
 
 
 #### 5.5. Searchable/editable archive 
@@ -333,7 +333,7 @@ This would also allow to do a paper-edit there and then, if time is of the essen
 
 At the Buenos Aires Hacks Hackers Media party hackaton I got asked if the tool could work in spanish. I then added support for the IBM Lanugages.
 
-![Chose a language]({{page.img_foreign_language}})
+![Chose a language]({{img_foreign_language}})
 
 To test this out I put through the tool some audio in chinese only to realise I had no idea what the charachters meant. I then started to play a round with the idea of using the translation API for translating each line of the transcription and displaying that along side. 
 
@@ -374,9 +374,9 @@ The current version of the tool returns
 There is probably many use cases that I can't think of right now, but to give an idea of the possibilities here are two interactives 
 that inspired this use case for newsroom developers.
 
-![Mandale Interactive]({{page.img_mandela}})
+![Mandale Interactive]({{img_mandela}})
 
-![Obama Romeny AJ debate]({{page.img_oabama_romney}})
+![Obama Romeny AJ debate]({{img_oabama_romney}})
 
 See my previous blog post [beyong video as black boxes](/videoBox.html) for some context on these two pieces.
 

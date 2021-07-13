@@ -9,7 +9,7 @@
   </a>
   {%endif%}
   <div>
-    <h2><a href="{{ url }}">{{ postTitle }}</a></h2>
+    <h2><a href="{{ url }}">{{ postTitle }}</a></h2>{%if company%}<span class="company-badge">{{company}}</span> {% endif %}{%if openSource %}<span class="open-source-badge">Open Source</span> {% endif %} {%if company or openSource %}<br>{% endif %}
     <small>{{ date | date_to_string }} </small>{% if duration %}| <small><strong>Duration:</strong> {{ duration }}</small>{% endif %}
     <p>{{ postDescription }}</p>{% if techStack %}<small><strong>Stack: </strong>{% for t in techStack %}{{ t }},{% endfor %}</small>{% endif %}<a href="{{ url }}">
       <small> <small>More &raquo;</small></small>

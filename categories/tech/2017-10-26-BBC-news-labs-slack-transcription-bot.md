@@ -11,6 +11,7 @@ github: OpenNewsLabs/chatbot_BBCNewsHack17
 youtube: 
 vimeo: 240180260
 tech: ['node','Botkit.ai','Slack API','Question generation component']
+open_source: true
 categories:
 - tech
 tags:

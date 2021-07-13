@@ -14,6 +14,7 @@ github: pietrop/simpleinvoice
 tech: ['Ruby on Rails', 'Bootstrap','HTML','CSS', 'Heroku', 'Git', 'GitHub','Heroku']
 appurl: https://simpleinvoice.herokuapp.com
 link: https://simpleinvoice.herokuapp.com
+open_source: true
 categories: 
 - tech
 tags: []

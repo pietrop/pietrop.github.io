@@ -9,6 +9,7 @@ image: /img/BBCLDRS/ldrs-ap.png
 link: https://www.bbc.co.uk/academy/production/article/art20141125150646784
 vimeo: 128359230
 tools: ['FCP7']
+company: 'BBC'
 categories: 
 - video
 tags:

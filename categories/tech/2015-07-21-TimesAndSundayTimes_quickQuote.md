@@ -22,9 +22,11 @@ img_NiemanLab: /img/TimesAndSundayTimesQuickQuote/NiemanLab-quickQuote.png
 
 vimeo:
 youtube: 7apk4Hx7g3s
-link: https://times.github.io/quickQuote
-github: times/quickQuote
+link: http://pietropassarelli.com/quickQuote/
+github: pietrop/quickQuote
 tech: ['Video JS', 'JQuery', 'Ruby', 'Rails', 'Spoken Data API', 'Bootstrap', 'HTML5', 'CSS', 'Git', 'Javascript']
+company: 'Times & Sunday Times'
+open_source: true
 categories:
   - tech
 tags:

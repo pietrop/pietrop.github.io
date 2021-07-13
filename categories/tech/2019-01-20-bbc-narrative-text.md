@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BBC Narrative Text"
+title: "Narrative Text"
 description: "Making narrative text in social videos accessible to screen readers"
 permalink: "/BBC-narrative-text.html"
 date: "2019-01-20"
@@ -12,6 +12,7 @@ github:
 youtube: 
 vimeo: 
 tech: ['TTML', 'XLS', 'XML', 'node', 'CSS']
+company: 'BBC'
 categories:
 - tech
 tags:

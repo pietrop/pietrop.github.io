@@ -5,9 +5,10 @@ description: "Turbo charge the captioning workflow using automated transcription
 permalink: "/captioning-app.html"
 date: "2017-07-24"
 link: https://pietropassarelli.com/captions-maker
-image: https://pbs.twimg.com/media/DF7ytQ7VoAA1ry2.jpg:large
+image: /img/captioning-app/captioning-app-demo.jpg
 github: 
 tech: ['ffmpeg','ffprobe','node','Watson STT','Bootstrap','HTML5','CSS',  'Git', 'Javascript', 'aeneas']
+open_source: true
 categories:
 - tech
 tags:

@@ -9,6 +9,8 @@ image: https://raw.githubusercontent.com/voxmedia/Transcriber/master/img/demo.pn
 github: voxmedia/Transcriber
 youtube: 
 tech: ['node', 'nwjs','html', 'IBM Watson STT', 'ffmpeg']
+open_source: true
+company: 'Vox'
 categories:
 - tech
 tags:

@@ -13,6 +13,7 @@ link: https://calamma.com
 appurl: https://calamma.com
 github: 
 tech: ['HTML','CSS', 'Bootstrap','Rails']
+open_source: false
 categories: 
 - tech
 tags:

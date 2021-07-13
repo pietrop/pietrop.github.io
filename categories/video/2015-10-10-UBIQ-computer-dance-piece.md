@@ -6,10 +6,11 @@ longdescription: "on an interactive dance piece performed in an immersive enviro
 duration: "4min 42sec"
 category: video
 logobrand: 
-image: 
+image: /img/ubiq-computer-assisted/ubiq.webp
 link: 
 vimeo: 202199557
 tools: ['FCP7', 'autoEdit']
+company: 'RAI 5'
 categories: 
 - video
 tags:

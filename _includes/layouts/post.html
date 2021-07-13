@@ -4,12 +4,13 @@ layout: default
 
 <div class="post">
 	<h1 class="post-title">{{ title }} </h1>
-	<span class="post-date">{{ date | date_to_string }}
-
+	<span class="post-date">{{ date | date_to_string }} 
 		{% if duration %}
 		| <strong> Duration:</strong> {{ duration }}
 		{% endif %}
-	</span> <br>
+	</span> 
+	{%if company%}<span class="company-badge">{{company}}</span>{% endif %}
+	<br>
 
 	{% if github %}<small><a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer"><i
 				class="fab fa-github" aria-hidden="true"></i> GitHub</a>,</small>{% endif %}

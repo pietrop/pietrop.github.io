@@ -10,6 +10,8 @@ gitbook:
 github: pietrop/fact2_transcription_editor 
 youtube: 
 tech: ['node','backbone','Bootstrap','Bootswatch','HTML5','CSS','Git', 'Javascript', 'webpack']
+open_source: true
+company: 'Fact2'
 categories:
 - tech
 tags:

@@ -9,6 +9,8 @@ image2: /img/vax-ida/context-image.png
 github: https://github.com/voxmedia/ida
 youtube: 
 published: true
+open_source: true
+company: 'Vox'
 tech: ['node']
 categories:
 - tech

@@ -70,6 +70,7 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 - [Liquid shopify cheat sheet](https://www.shopify.com/partners/shopify-cheat-sheet)
 - [How to create drafts in Eleventy](https://giustino.blog/how-to-drafts-eleventy/)
 - [collections and glob syntax](https://www.11ty.dev/docs/collections/)
+- [eleventy-plugin-jsx](https://www.npmjs.com/package/eleventy-plugin-jsx)
 
 Dark mode
 - [dark mode](https://jec.fyi/blog/supporting-dark-mode)

@@ -10,6 +10,7 @@ image:
 github: 
 youtube: 
 tech: ['python','raspberry pi','servo motors','laser cutter','3D printer','github','bitbucket']
+open_source: true
 categories:
 - tech
 tags:
@@ -18,12 +19,3 @@ tags:
 _draft: more coming soon_
 
 
-<!-- 
-
-
-Captions burner 
-https://voxmedia.github.io/captions_burner/ 
-Needs testing with vtt to see if it supports styling. 
-
-
- -->

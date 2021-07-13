@@ -2,7 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const Image = require("@11ty/eleventy-img");
 
 
-const IMAGES = ["avif", "jpeg","jpg","png","giff", "gif"];
+const IMAGES = ["avif", "jpeg","jpg","png","giff", "gif","webp"];
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
     widths: [300, 600],

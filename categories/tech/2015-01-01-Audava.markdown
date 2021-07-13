@@ -6,9 +6,9 @@ duration:
 permalink: "/audava.html"
 image: /img/audava/audava_01.jpeg
 image-sketch: /img/audava/audava-sketch.jpg
-github: 
-
+github: https://github.com/pietrop/GC02Audava_WebApp
 tech: ['Ruby on Rails', 'Bootstrap', 'Bootstrap Watch','HTML','CSS', 'Heroku', 'Git', 'GitHub', 'javascript','record.js', 'Amazon S3']
+open_source: false
 appurl: https://audava.herokuapp.com/
 link: https://audava.herokuapp.com/
 categories: 

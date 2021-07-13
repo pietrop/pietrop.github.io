@@ -40,7 +40,7 @@ Most news outlet merely copied the quotes verbatim and them paired them with pho
 ### NY Times
 
 <div class="image-wrapper">
-    <img src="{{ page.image1 }}" alt="{{ page.description }}" />
+    <img src="{{ image1 }}" alt="{{ description }}" />
 </div>
 
 NY Times — [How The Republican Candidates Fared in the First Debate](https://www.nytimes.com/2015/08/08/us/politics/fox-news-moderators-bring-a-sharpened-edge-to-gop-debate-stage.html)
@@ -48,7 +48,7 @@ NY Times — [How The Republican Candidates Fared in the First Debate](https://w
 ### BuzzFeed
 
 <div class="image-wrapper">
-    <img src="{{ page.image2 }}" alt="{{ page.description }}" />
+    <img src="{{ image2 }}" alt="{{ description }}" />
 </div>
 
 BuzzFeed — [Here’s Every 2016 GOP Candidate’s Response To The Same-Sex Marriage Ruling — And There’s A Divide](https://www.buzzfeednews.com/article/kyleblaine/heres-every-2016-gop-candidates-response-to-the-same-sex-mar#.wegNJyaA4)
@@ -56,7 +56,7 @@ BuzzFeed — [Here’s Every 2016 GOP Candidate’s Response To The Same-Sex Mar
 ### The Guardian
 
 <div class="image-wrapper">
-    <img src="{{ page.image3 }}" alt="{{ page.description }}" />
+    <img src="{{ image3 }}" alt="{{ description }}" />
 </div>
 
 The Guardian — [Donal Trump quotes: the best and the worst of the GOP debate](https://www.theguardian.com/us-news/2015/aug/07/donald-trump-in-the-gop-debate-his-best-lines-and-the-most-cringeworthy)
@@ -64,7 +64,7 @@ The Guardian — [Donal Trump quotes: the best and the worst of the GOP debate](
 ### BBC
 
 <div class="image-wrapper">
-    <img src="{{ page.image4 }}" alt="{{ page.description }}" />
+    <img src="{{ image4 }}" alt="{{ description }}" />
 </div>
 
 BBC — [Republican 2016 debate: who were the winners and losers?](https://www.bbc.co.uk/news/world-us-canada-33815103)
@@ -89,11 +89,11 @@ I am working on a web app that will allow you to:
 - export a quote with its corresponding video clip
 
 <div class="image-wrapper">
-    <img src="{{ page.image5 }}" alt="{{ page.description }}" />
+    <img src="{{ image5 }}" alt="{{ description }}" />
 </div>
 
 <div class="image-wrapper">
-    <img src="{{ page.image6 }}" alt="{{ page.description }}" />
+    <img src="{{ image6 }}" alt="{{ description }}" />
 </div>
 
 Click on the quote and the corresponding video segment drops down

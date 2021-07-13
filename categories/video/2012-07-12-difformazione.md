@@ -7,6 +7,7 @@ vimeo: 50046223
 image: /img/difformazione/difformazione.png
 link: https://www.radiocittadelcapo.it/archives/biomassa-film-106297
 tools: ['FCP7', 'Xf100']
+company: 'Radio Città'
 categories: 
 - video
 tags: []

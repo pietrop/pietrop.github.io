@@ -11,6 +11,7 @@ published: false
 tech: ['Jekyll', 'Bootstrap', 'HTML','CSS', 'Git',  'amazon S3']
 appurl: https://doashtanga.com
 link: https://doashtanga.com
+open_source: false
 categories: 
 - tech
 tags:

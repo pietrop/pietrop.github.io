@@ -11,6 +11,7 @@ blogger_orig_url: https://ttqf.blogspot.com/2014/06/ruby-script-to-download-pdf-
 description: a ruby script to download pdfs from issu.com, when the download option has been disabled.
 image: https://1.bp.blogspot.com/-Bu2Bw7_tHjs/U683ZFxKIfI/AAAAAAAAFdM/e_3_4rqBQSc/s1600/Screen+Shot+2014-06-28+at+22.25.43.png
 github: pietrop/issuu.com-downloader
+open_source: true
 tags:
 - ruby
 category:

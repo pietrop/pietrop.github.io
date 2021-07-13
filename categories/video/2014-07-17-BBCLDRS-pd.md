@@ -11,6 +11,7 @@ image: /img/BBCLDRS/ldrs-pd.png
 link: https://www.bbc.co.uk/academy/production/article/art20141125145514406
 vimeo: 128057278
 tools: ['FCP7']
+company: 'BBC'
 categories: 
 - video
 tags:

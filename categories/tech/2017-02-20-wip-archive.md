@@ -9,6 +9,7 @@ image: /img/wip_archive/wip_archive_t.png
 github: pietrop/WIP_archive
 youtube: 
 tech: ['HTML', 'Javascript', 'css', 'Bootstrap', 'backbone', 'autoEdit2']
+open_source: true
 categories:
 - tech
 tags:

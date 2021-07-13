@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BBC React Transcript Editor"
+title: "React Transcript Editor"
 description: "An open source React component to make correcting automated transcriptions of audio and video easier and faster"
 permalink: "/BBC-transcript-editor.html"
 date: "2018-12-04"
@@ -12,6 +12,8 @@ github: bbc/react-transcript-editor
 youtube: 
 vimeo: 
 tech: ['node', 'react', 'draftjs','CSS', 'storybook']
+company: 'BBC'
+open_source: true
 categories:
 - tech
 tags:

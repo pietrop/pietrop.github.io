@@ -5,13 +5,15 @@ description: "at #EditorsLab BBC #newsHack hackaton"
 duration:
 permalink: "/oneStory.html" 
 date: '2015-06-04'
-image: 	/img/newsHackOneStory/OneStory_01_Home.png
-image2: 	/img/newsHackOneStory/OneStory_02_Podcast.png
-image3: 	/img/newsHackOneStory/OneStoryQuotes.png
+image: /img/newsHackOneStory/OneStory_01_Home.png
+image2: /img/newsHackOneStory/OneStory_02_Podcast.png
+image3: /img/newsHackOneStory/OneStoryQuotes.png
 vimeo: 129888695
 link: https://bbcnewslabs.co.uk/2015/06/04/newshack-viii-news-industry-accelerator-wrapup/
 github: 
 tech: ['HyperTranscript converter','Youtube Captioning API',  'Bootstrap','HTML5','CSS',  'Git', 'Javascript']
+company: 'Times & Sunday Times'
+open_source: false
 categories: 
 - tech
 tags:

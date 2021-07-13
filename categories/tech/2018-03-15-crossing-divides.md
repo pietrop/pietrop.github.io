@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BBC World Service, Crossing Divides"
+title: "World Service, Crossing Divides"
 description: "A new interactive story format for BBC World Service"
 permalink: "/BBC-crossing-divides.html"
 date: "2018-03-15"
@@ -12,6 +12,8 @@ github:
 youtube: 
 vimeo: 314997031
 tech: ['node', 'react', 'google app script', 'google sheet']
+company: 'BBC'
+open_source: false
 categories:
 - tech
 tags:
@@ -19,21 +21,17 @@ tags:
 
 A new interactive story format for BBC World Service, Crossing Divides season. 
 
-<div class="image-wrapper">
-    <img src="{{ page.image }}" alt="{{ page.description }}" />
-</div>
-
 Powered by a google spreadsheet, and using [google app script](https://developers.google.com/apps-script) to facilitate the process of reversioning into different languages.
 
 <div class="image-wrapper">
-    <img src="{{ page.image2 }}" alt="{{ page.description }}" />
+    <img src="{{ image2 }}" alt="{{ description }}" />
 </div>
 
 Combines elements of a dialogue with that of a quiz. 
 
 >a messaging interface that players use to carry out a conversation with a person on the other side of a political, ethnic, or generational divide. At the end of the conversation, they receive tips for communicating more effectively.
 
-Read more details about the process in this Source piece ["How We Made Our “Crossing Divides” News Game"]({{page.link}}), and/or play with the actual interactive to see for yourself ['BBC News Labs - Crossing Divides'](https://crossingdivides.bbcnewslabs.co.uk)
+Read more details about the process in this Source piece ["How We Made Our “Crossing Divides” News Game"]({{link}}), and/or play with the actual interactive to see for yourself ['BBC News Labs - Crossing Divides'](https://crossingdivides.bbcnewslabs.co.uk)
 
 
 ## C+J Video presentation

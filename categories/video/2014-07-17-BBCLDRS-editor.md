@@ -9,6 +9,7 @@ image: /img/BBCLDRS/ldrs-editor.png
 link: https://www.bbc.co.uk/academy/production/article/art20141125150003760
 vimeo: 
 tools: ['FCP7']
+company: 'BBC'
 categories: 
 - video
 tags:
