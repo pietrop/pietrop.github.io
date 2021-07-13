@@ -70,13 +70,16 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 - [Liquid shopify cheat sheet](https://www.shopify.com/partners/shopify-cheat-sheet)
 - [How to create drafts in Eleventy](https://giustino.blog/how-to-drafts-eleventy/)
 - [collections and glob syntax](https://www.11ty.dev/docs/collections/)
-- [eleventy-plugin-jsx](https://www.npmjs.com/package/eleventy-plugin-jsx)
+- [liquid tag, formatting dates](https://shopify.github.io/liquid/filters/date/)
+
 
 Dark mode
 - [dark mode](https://jec.fyi/blog/supporting-dark-mode)
 - [detect darkmode system change](https://flaviocopes.com/javascript-detect-dark-mode/)
 - [How to detect if the OS is in dark mode in browsers?](https://stackoverflow.com/questions/50840168/how-to-detect-if-the-os-is-in-dark-mode-in-browsers)
 
+Experimental 
+- [eleventy-plugin-jsx](https://www.npmjs.com/package/eleventy-plugin-jsx) ❌
 
 
 

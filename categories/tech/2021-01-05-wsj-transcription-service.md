@@ -22,8 +22,8 @@ Based on refactoring parts from [BBC Digital Paper Edit - autoEdit3 open source 
 - Client side ffmpeg using WebAssembly [ffmpegwasm](https://ffmpegwasm.github.io/)
 - Serverless STT using [google cloud tasks](https://cloud.google.com/tasks)
 - Refactored to use in house design system (instead of bootstrap of material UI)
-- Uses open source [slate transcript editor](https://github.com/pietrop/slate-transcript-editor) react component as a way to allow correcting the text and preserving timecodes.
-- ... 
+- Uses open source [slate transcript editor](https://github.com/pietrop/slate-transcript-editor) react component as a way to allow correcting the text and preserving time-codes.
+- etc... 
   
 
 <!-- <div class="image-wrapper">
