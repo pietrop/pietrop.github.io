@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reflections on 2016 Knight-Mozilla Fellow"
+title: "Reflections on the 2016 Knight-Mozilla Fellow"
 description: "A sort of 'year in review' or the Knight-Mozilla fellowship I did with the Vox Product team."
 permalink: "/fellowship2016.html"
 date: "2017-03-31"
@@ -342,13 +342,13 @@ Also made a contact with marketing team, but they have not been great at keeping
 **Current status:**
 
 ## Started convo on transcription video event
-**Link:**     
-**google doc**     
+**Link:** _NA_
+**google doc:** [Text AV event - DRAFT](https://docs.google.com/document/d/1ogHl7d6p76tG7pFlfKDncpgdU9_UgFu1SlZMX7umCME/edit?usp=sharing)     
 
-**Project Page:** ["textAV event"](/textAV.html)     
+**Project Page:**  _it then  became [textAV '17 & textAV '18](/textAV.html)_   
 **Brief description:**       
 
-**Current status:**        
+**Current status:**  _in progress_       
 
 
 ---
