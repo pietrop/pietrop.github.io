@@ -23,7 +23,7 @@ I also take <a href="https://pietropassarelli.com/photos"> photos↗</a>, <a hre
 
 
 ![Pietro C+J '17 at Northwestern Keynote](/img/10-lessons-video-tools/pietro-c+js.png)
-<i><small>Picture from 2017 C+J '17 Northwestern University, on a panel ["Panel: Tools for reporting and storytelling"](/10-lessons-video-tools.html)</small></i>
+<i><small>Screenshoot from 2017 C+J '17 Northwestern University, on a panel ["Panel: Tools for reporting and storytelling"](/10-lessons-video-tools.html)</small></i>
 <!-- ---
 
 ## Personality Snapshot from [IBM Watson Personality insight](https://personality-insights-livedemo.mybluemix.net/)

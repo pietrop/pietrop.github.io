@@ -109,3 +109,12 @@ npm run deploy
 npm run deploy
 ``` -->
 Deployment, deploys to github pages.
+
+
+
+
+<!-- 
+cross post under blog posts 
+https://source.opennews.org/articles/how-we-made-crossing-divides/
+https://source.opennews.org/articles/video-editing-made-better-introducing-autoedit/
+ -->
