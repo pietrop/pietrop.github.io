@@ -74,6 +74,7 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 - [`addPassthroughCopy` eg for pdfs and other static files](https://www.11ty.dev/docs/copy/)
 - [Add edit on github links to all pages](https://www.11ty.dev/docs/quicktips/edit-on-github-links/)
 - [How to Deploy Eleventy to GitHub Pages With GitHub Actions](https://www.rockyourcode.com/how-to-deploy-eleventy-to-github-pages-with-github-actions/)
+- [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
 
 Dark mode
 - [dark mode](https://jec.fyi/blog/supporting-dark-mode)
@@ -103,8 +104,13 @@ _NA_
 
 ## Deployment
 <!-- _How to deploy the code/app into test/staging/production_ -->
+### Github actions
+There's a github action configured to build and deploy automatically when pushing to master.
+
+### "manual deploy"
+
 ```
-npm run deploy
+npm run build:deploy
 ```
 <!-- ```
 npm run deploy
