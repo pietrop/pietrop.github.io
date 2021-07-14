@@ -4,7 +4,9 @@ title: Blog
 body: theme-base-0c
 ---
 # Blog 
+<p class="intro">
 Some thoughts, ideas, workshops, talks, and presentations.
+</p>
 <hr>
 
 {%- for post in collections.blog reversed-%}

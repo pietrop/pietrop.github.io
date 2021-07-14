@@ -5,7 +5,9 @@ body: theme-base-0f
 ---
 
 # Videos
+<p class="intro">
 Documentary projects for broadcast Tv as well as for the web. And some personal projects I've worked on over the years.
+</p>
 <hr>
 <!-- <ul>
 {%- for post in collections.video -%}

@@ -5,8 +5,9 @@ body: theme-base-0c
 ---
 
 # Tips Tricks & Quick Fix  
-Compared to a [blog posts](/categories/blog/) these  Tips Tricks & Quick Fixes are generally aiming to be slightly dryer and to the point. Useful as a quick reference or to get relatively quickly up to speed.
-
+<p class="intro">
+Compared to a <a href="/categories/blog/">blog posts</a> these  Tips Tricks & Quick Fixes are generally aiming to be slightly dryer and to the point. Useful as a quick reference or to get relatively quickly up to speed.
+</p>
 <hr>
 
 <!-- <ul>
