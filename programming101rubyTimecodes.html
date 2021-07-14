@@ -161,7 +161,7 @@
 	<!-- description -->
 	
 	<br>
-	The basics of programming with ruby while making a timecodes converter
+	The basics of programming with ruby while making a time-codes converter
 	
 	<hr>
 	<!-- content -->
@@ -173,45 +173,40 @@
 <h3>Terminal</h3>
 <p>The terminal is a text interface that allows you to navigate and send commands to your computer.</p>
 <p>Developers use it because typing is faster then moving the mouse a round.</p>
-<p>Open the terminal
-&lt;!—- Navigate to application folder
-click on</p>
-<p>Or just make giff
--—&gt;</p>
-<p>if you are old enough to remember back in the days when DOS was popular is the same kind of idea.</p>
-<p><img src="" alt="DOS Screenshot"></p>
+<p>Open the terminal</p>
+<!-- Navigate to application folder 
+click on 
+
+Or just make giff -->
+<p>if you are old enough to remember back in the days when <a href="https://en.wikipedia.org/wiki/DOS">DOS</a> was popular is a  similar kind of idea, navigate the interface via text inputs.</p>
+<!-- ![DOS Screenshot]() -->
 <h3>Sublime Text</h3>
-<p>You can use any text editor, but sublime text is a solid choice to get started.
-Download it and install it from here.</p>
+<p>You can use any text editor, but <a href="https://www.sublimetext.com/">sublime text is a solid choice to get started. Download it and install it from here.</a></p>
 <p>open your terminal.</p>
 <h3>some CLI commands</h3>
 <p>Some commands to familiarise yourself with</p>
-<p><code>pwd</code> prints the path to the current working directory.
-&lt;!—- giff / screenshot-—&gt;</p>
-<p><code>cd #{some folder}</code> changes the current directory</p>
-<p>&lt;!—- giff / screenshot -—&gt;</p>
-<p><code>mkdir</code> create a directory</p>
-<p><code>ls -l</code> lists files and folders in directory.</p>
-<p><code> touch fileName.rb</code> creates a file.</p>
-<p><code>rm fileName.rb</code> remove file name</p>
-<p><code>rm -rf</code> removes everything..thread lightly</p>
+<ul>
+<li><code>pwd</code> prints the path to the current working directory.</li>
+<li><code>cd #{some folder}</code> changes the current directory</li>
+<li><code>mkdir</code> create a directory</li>
+<li><code>ls -l</code> lists files and folders in directory.</li>
+<li><code> touch fileName.rb</code> creates a file.</li>
+<li><code>rm fileName.rb</code> remove file name</li>
+<li><code>rm -rf</code> removes everything... thread lightly!</li>
+</ul>
 <h2>The script file</h2>
-<p>ok now</p>
-<p><code> touch timecode.rb</code></p>
-<p>open the fils in sublime text.</p>
-<h3>running the script</h3>
+<p>ok, now in the terminal</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">touch</span> timecode.rb</code></pre>
+<p>open the file in sublime text.</p>
+<h3>Running the script</h3>
 <p>inside <code>timecode.rb</code> write</p>
-<pre><code>print &quot;Welcome to the timecodes converter&quot;
-</code></pre>
-<p>in terminal cd to that folder</p>
-<p>&lt;!—- giff / screenshot CDing to folder on desktop -—&gt;</p>
+<pre class="language-ruby"><code class="language-ruby">print <span class="token string">"Welcome to the timecodes converter"</span></code></pre>
+<p>in terminal <code>cd</code> to that folder</p>
+<!-- giff / screenshot CDing to folder on desktop --> 
 <p>run the script</p>
 <p><code>ruby timecode.rb</code></p>
 <h3>command line arguments and string interpolation</h3>
-<pre><code>print &quot;Welcome to the timecodes converter&quot;
-timecode = gets.chomp
-print &quot;This is the timecode you put #{timecode}.&quot; 
-</code></pre>
+<pre class="language-ruby"><code class="language-ruby">print <span class="token string">"Welcome to the timecodes converter"</span><br>timecode <span class="token operator">=</span> gets<span class="token punctuation">.</span>chomp<br>print <span class="token string">"This is the timecode you put <span class="token interpolation"><span class="token delimiter tag">#{</span>timecode<span class="token delimiter tag">}</span></span>."</span> </code></pre>
 <p><code>timecode = gets.chomp</code> where timecode is a variable. and <code>gets</code> is a command to get user input from terminal promt.
 if we used it without <code>chomp</code> we’d get the whole line, with the carriage return.
 Carriage return is a symbol that signifies the line has ended. <code>\n</code></p>
@@ -219,16 +214,17 @@ Carriage return is a symbol that signifies the line has ended. <code>\n</code></
 <p><code>print</code> we already seen, prints message to console.</p>
 <p>this <code>&quot;</code> denotes a string and <code>#{}</code> is string interpolation. Meaning we can put a variable into a string and make it become a part of it.  such as <code>#{timecode}&quot; </code></p>
 <p>Alright, now save and from terminal run</p>
-<p><code>ruby timecode.rb 00:04:05:06</code></p>
+<pre><code>ruby timecode.rb 00:04:05:06
+</code></pre>
 <p>you should get as a result</p>
 <pre><code>This is the timecode you put 00:04:05:06.
 </code></pre>
 <p>Ok, so now we can get an input and return some &quot;output&quot; to the screen/terminal. Meaning we can manipulate informations. Altho in a simple way.</p>
 <h3>Comments and variable names</h3>
-<p>you can add comments in your code to make it more readable. using the <code>#</code> at the beginning of the line.
+<p>You can add comments in your code to make it more readable. using the <code>#</code> at the beginning of the line.
 making note for yourself and others to help with legibility and clarify things.</p>
 <p>Also try to give good descriptive variable names. better a long name that does what it says on the tin then a short one that could be anything.</p>
-<p>eg a programs that use the variable name <code>x</code> through out is not very self explanatoty</p>
+<p>eg a programs that use the variable name <code>x</code> through out is not very self explanatory.</p>
 <h3>A tiny bit about types</h3>
 <p>There’s a lot that could be said about types, but we’d keep it to the point and brief for the porpouse of this, think of it as a first pass to get started with a working basis so that you can then look more into.</p>
 <ul>
@@ -244,23 +240,19 @@ and <code>&quot;12&quot;*1</code>  gives you <code>&quot;12121212121212121212&qu
 eg  <code>12.to_s</code> which gives you <code>&quot;12&quot;</code>.</p>
 <h3>Arrays</h3>
 <p>We’ve seen variables in action, let’s take a side step and introduce Arrays. as a way to store informations.</p>
-<pre><code>fruits = [&quot;banas&quot;, &quot;apples&quot;, &quot;organges&quot;]
-</code></pre>
+<pre class="language-ruby"><code class="language-ruby">fruits <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"banas"</span><span class="token punctuation">,</span> <span class="token string">"apples"</span><span class="token punctuation">,</span> <span class="token string">"organges"</span><span class="token punctuation">]</span></code></pre>
 <p>is an array that contains fruit. In CS you start counting from Zero.</p>
 <p>if I want to get the apples I’d have to go  <code>fruits[1]</code> and that would return <code>apples</code> where <code>1</code> is called an index.</p>
 <p>if I want to add something to the array I can do it like so</p>
-<pre><code>fruits.push(&quot;mango&quot;)
-</code></pre>
+<pre class="language-ruby"><code class="language-ruby">fruits<span class="token punctuation">.</span>push<span class="token punctuation">(</span><span class="token string">"mango"</span><span class="token punctuation">)</span></code></pre>
 <p>the <code>fruits</code> array will now look like so <code>[&quot;banas&quot;, &quot;apples&quot;, &quot;organges&quot;,&quot;mango&quot;]</code></p>
 <p>Stop for a sec, re-read from <code>Arrays</code> and think about this how would you get the mango value?</p>
 <p>Turning strings into arrays.</p>
 <p>if you had a string containing<code>&quot;banas apples rganges mango&quot;</code> and you wanted to turn this into an array.
 There’s an handy method called <code>.split()</code> that can divide it, allowing you to specify where to make the split.</p>
-<pre><code>&quot;banas apples rganges mango&quot;.split(&quot; &quot;)
-</code></pre>
-<p>in this case because there is a blank space between them we’d split on the space <code>.split(&quot; &quot;)</code> if they were comma separate we could split .split(&quot;,&quot;) on that.</p>
-<pre><code>&quot;banas,apples,rganges,mango&quot;.split(&quot; &quot;)
-</code></pre>
+<pre class="language-ruby"><code class="language-ruby"><span class="token string">"banas apples rganges mango"</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span></code></pre>
+<p>in this case because there is a blank space between them we’d split on the space <code>.split(&quot; &quot;)</code> if they were comma separate we could <code>split .split(&quot;,&quot;)</code> on that.</p>
+<pre class="language-ruby"><code class="language-ruby"><span class="token string">"banas,apples,rganges,mango"</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span></code></pre>
 <p>They  would both return  <code>[&quot;banas&quot;, &quot;apples&quot;, &quot;organges&quot;,&quot;mango&quot;]</code></p>
 <p>There’s also a <code>.join(&quot;&quot;)</code> that converts an array into a string,and you can specify how to separate the values.</p>
 <p>With me so far?</p>
@@ -268,7 +260,8 @@ There’s an handy method called <code>.split()</code> that can divide it, allow
 <h3>Converting timecode to seconds.</h3>
 <h4>Identifying a possible solution in pseudocode</h4>
 <p>How can we convert timecoes in such format <code>hh:mm:ss:ms</code> to seconds?
-It often helps to think about the solution, the list of commands, the algorithm without thinking about the specific implementation of the language. At a high level. How would you solve this proble. often thinking about the mental steps you’d do, to do it &quot;manually&quot;.
+It often helps to think about the solution, the list of commands, the algorithm without thinking about the specific implementation of the language. At a high level.</p>
+<p>How would you solve this problem? often thinking about the mental steps you’d do, to do it &quot;manually&quot;.
 Writing this down is referred to pseudo code.</p>
 <p>If we could isolate the hours, minutes, seconds and milliseconds into their own variables we could convert them to seconds individually and then adding it all up would give us the converted value.</p>
 <p>To turn this into code we have to break it down even further.</p>
@@ -276,52 +269,40 @@ Writing this down is referred to pseudo code.</p>
 <li>Isolate the hours, minutes, seconds and milliseconds.</li>
 <li>take the hours and multiple that by 60*60.</li>
 <li>take the minute and multiple that  by 60</li>
-<li>convert the ms
-&lt;!—- wrong, see how to convert ms -—&gt;</li>
+<li>convert the ms <!-- wrong, see how to convert ms --></li>
 <li>add them all up together</li>
 <li>print out the result</li>
 </ol>
 <p>Now that we have an hypothesis for our script we can go about figuring out the specific of the syntax.</p>
 <p>So far our program looks like this in the <code>timecode.rb</code> file</p>
-<pre><code>print &quot;Welcome to the timecodes converter&quot;
-timecode = gets.chomp
-print &quot;This is the timecode you put #{timecode}.&quot; 
-</code></pre>
+<pre class="language-ruby"><code class="language-ruby">print <span class="token string">"Welcome to the timecodes converter"</span><br>timecode <span class="token operator">=</span> gets<span class="token punctuation">.</span>chomp<br>print <span class="token string">"This is the timecode you put <span class="token interpolation"><span class="token delimiter tag">#{</span>timecode<span class="token delimiter tag">}</span></span>."</span> </code></pre>
 <h4>1.  Isolate the hours, minutes, seconds and milliseconds.</h4>
-<pre><code>timecode_array = timecode.split(&quot;:&quot;)
-</code></pre>
+<pre class="language-ruby"><code class="language-ruby">timecode_array <span class="token operator">=</span> timecode<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">":"</span><span class="token punctuation">)</span></code></pre>
 <p>timecode_array is now equal to</p>
-<p>[&quot;00&quot;,&quot;30&quot;,&quot;40&quot;,&quot;05&quot;]</p>
+<pre class="language-ruby"><code class="language-ruby"><span class="token punctuation">[</span><span class="token string">"00"</span><span class="token punctuation">,</span><span class="token string">"30"</span><span class="token punctuation">,</span><span class="token string">"40"</span><span class="token punctuation">,</span><span class="token string">"05"</span><span class="token punctuation">]</span></code></pre>
 <p>how can we assign the hours to a variable hours?</p>
-<pre><code>hours = timecode_array[0]
-</code></pre>
+<pre class="language-ruby"><code class="language-ruby">hours <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span></code></pre>
 <p>What about for minutes? seconds and milliseconds?</p>
-<p>solution</p>
-<pre><code>hours = timecode_array[0].to_i
-minutes = timecode_array[1].to_i
-seconds = timecode_array[2].to_i
-ms = timecode_array[3].to_i
-</code></pre>
+<p>solution:</p>
+<pre class="language-ruby"><code class="language-ruby">hours <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i<br>minutes <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i<br>seconds <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i<br>ms <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i</code></pre>
 <p><code>.to_i</code> because when we split we obtain a string, and we want to work with that variable as an integer to be able to convert it.</p>
 <h4>2. take the hours and multiple that by 60*60.</h4>
 <p>To convert the hours to seconds.</p>
 <p>There’s 60 seconds in one minute. and 60 minute in one hour. So there’s also 60*60 seconds in one hour =  3,600</p>
-<pre><code>hours_in_seconds = hours * 60 *60 
-</code></pre>
+<pre class="language-ruby"><code class="language-ruby">hours_in_seconds <span class="token operator">=</span> hours <span class="token operator">*</span> <span class="token number">60</span> <span class="token operator">*</span><span class="token number">60</span> </code></pre>
 <p>How would you convert that to minutes?</p>
 <ol start="3">
 <li>take the minute and multiple that  by 60</li>
 </ol>
-<pre><code>minutes_in_seconds = minutes  *60 
-</code></pre>
+<pre class="language-ruby"><code class="language-ruby">minutes_in_seconds <span class="token operator">=</span> minutes  <span class="token operator">*</span><span class="token number">60</span> </code></pre>
 <p>seconds does not need converting</p>
 <ol start="4">
-<li>convert the ms
-&lt;!—- ms needs looking into it</li>
+<li>convert the ms</li>
 </ol>
-<p>ms_in_seconds =
-—&gt;</p>
-<ol start="5">
+<!-- ms needs looking into it 
+
+ms_in_seconds =  -->
+<ol>
 <li>add them all up together</li>
 </ol>
 <pre class="language-ruby"><code class="language-ruby">result <span class="token operator">=</span> hours_in_seconds  <span class="token operator">+</span> minutes_in_seconds<span class="token operator">+</span>seconds <span class="token operator">+</span> ms_in_seconds </code></pre>
@@ -329,57 +310,37 @@ ms = timecode_array[3].to_i
 <li>print out the result</li>
 </ol>
 <p>Remember about string interpolation?</p>
-<pre><code>print &quot;your timecode in seconds is #{result}&quot;
-</code></pre>
+<pre class="language-ruby"><code class="language-ruby">print <span class="token string">"your timecode in seconds is <span class="token interpolation"><span class="token delimiter tag">#{</span>result<span class="token delimiter tag">}</span></span>"</span></code></pre>
 <h3>Methods. Working with reusable code.</h3>
-<pre><code># a method that takes in a timecode in this format `hh:mm:ss:ms` and returns the value converted in seconds 
-
-def convert_to_second(timecode)
-
-	# split 
-	timecode_array = timecode.split(&quot;:&quot;)
-	hours = timecode_array[0].to_i
-	minutes = timecode_array[1].to_i
-	seconds = timecode_array[2].to_i
-	ms = timecode_array[3].to_i
-
-	# convert each 
-	hours_in_seconds = hours * 60 *60 
-	minutes_in_seconds = minutes  *60 	
-	&lt;!—- ms_in_seconds = —&gt;
-
-	# add up the conversion
-	result = hours_in_seconds  + minutes_in_seconds+ seconds + ms_in_seconds 
-	
-	#return the result
-	return result	
-
-end
-</code></pre>
+<pre class="language-ruby"><code class="language-ruby"><span class="token comment"># a method that takes in a timecode in this format `hh:mm:ss:ms` and returns the value converted in seconds </span><br><br><span class="token keyword">def</span> <span class="token method-definition"><span class="token function">convert_to_second</span></span><span class="token punctuation">(</span>timecode<span class="token punctuation">)</span><br><br>	<span class="token comment"># split </span><br>	timecode_array <span class="token operator">=</span> timecode<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">":"</span><span class="token punctuation">)</span><br>	hours <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i<br>	minutes <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i<br>	seconds <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i<br>	ms <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i<br><br>	<span class="token comment"># convert each </span><br>	hours_in_seconds <span class="token operator">=</span> hours <span class="token operator">*</span> <span class="token number">60</span> <span class="token operator">*</span><span class="token number">60</span> <br>	minutes_in_seconds <span class="token operator">=</span> minutes  <span class="token operator">*</span><span class="token number">60</span> 	<br>	ms_in_seconds <span class="token operator">=</span> seconds <span class="token operator">*</span> <span class="token number">1000</span><br><br>	<span class="token comment"># add up the conversion</span><br>	result <span class="token operator">=</span> hours_in_seconds  <span class="token operator">+</span> minutes_in_seconds<span class="token operator">+</span> seconds <span class="token operator">+</span> ms_in_seconds <br>	<br>	<span class="token comment">#return the result</span><br>	<span class="token keyword">return</span> result	<br><br><span class="token keyword">end</span></code></pre>
 <p>which you can then use like so</p>
-<!-- change code above usind method  -->
-<pre><code>var seconds = convert_to_second(&quot;00:40:50:06&quot;)
-print seconds 
+<!-- change code above using method  -->
+<pre class="language-ruby"><code class="language-ruby">var seconds <span class="token operator">=</span> convert_to_second<span class="token punctuation">(</span><span class="token string">"00:40:50:06"</span><span class="token punctuation">)</span><br>print seconds </code></pre>
+<h2>Final script</h2>
+<p>Bringing it all together in a file <code>timecode.rb</code></p>
+<pre class="language-ruby"><code class="language-ruby"><span class="token comment"># a method that takes in a timecode in this format `hh:mm:ss:ms` and returns the value converted in seconds </span><br><br><span class="token keyword">def</span> <span class="token method-definition"><span class="token function">convert_to_second</span></span><span class="token punctuation">(</span>timecode<span class="token punctuation">)</span><br><br>	<span class="token comment"># split </span><br>	timecode_array <span class="token operator">=</span> timecode<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">":"</span><span class="token punctuation">)</span><br>	hours <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i<br>	minutes <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i<br>	seconds <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i<br>	ms <span class="token operator">=</span> timecode_array<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span>to_i<br><br>	<span class="token comment"># convert each </span><br>	hours_in_seconds <span class="token operator">=</span> hours <span class="token operator">*</span> <span class="token number">60</span> <span class="token operator">*</span><span class="token number">60</span> <br>	minutes_in_seconds <span class="token operator">=</span> minutes  <span class="token operator">*</span><span class="token number">60</span> 	<br>	ms_in_seconds <span class="token operator">=</span> seconds <span class="token operator">*</span> <span class="token number">1000</span><br><br>	<span class="token comment"># add up the conversion</span><br>	result <span class="token operator">=</span> hours_in_seconds  <span class="token operator">+</span> minutes_in_seconds<span class="token operator">+</span> seconds <span class="token operator">+</span> ms_in_seconds <br>	<br>	<span class="token comment">#return the result</span><br>	<span class="token keyword">return</span> result	<br><br><span class="token keyword">end</span><br><br>print <span class="token string">"Welcome to the timecodes converter"</span><br>print <span class="token string">"please type a timecode and it enter"</span><br>timecode <span class="token operator">=</span> gets<span class="token punctuation">.</span>chomp<br>var seconds <span class="token operator">=</span> convert_to_second<span class="token punctuation">(</span>timecode<span class="token punctuation">)</span><br>print <span class="token string">"This is the timecode you put <span class="token interpolation"><span class="token delimiter tag">#{</span>timecode<span class="token delimiter tag">}</span></span>. In seconds it is <span class="token interpolation"><span class="token delimiter tag">#{</span>seconds<span class="token delimiter tag">}</span></span>"</span></code></pre>
+<p>To run it</p>
+<pre><code>ruby timecode.rb 
 </code></pre>
+<!-- where `<timecode>` is a timecode of your choosing, eg
+```
+ruby timecode.rb 00:04:05:06
+``` -->
+<p>when prompted type a timecode, eg <code>00:04:05:06</code> and hit enter.
+You should expect to see timecode converted into seconds.</p>
 <h2>Recap</h2>
 <p>we looked at</p>
 <ul>
-<li>
-<p>Psuedocode</p>
-</li>
-<li>
-<p>Ruby</p>
-</li>
-<li>
-<p>Types</p>
+<li>Psuedocode</li>
+<li>Ruby</li>
+<li>Types
 <ul>
 <li>string</li>
 <li>integer</li>
 <li>converting between the two</li>
 </ul>
 </li>
-<li>
-<p>Arrays</p>
+<li>Arrays
 <ul>
 <li>index</li>
 <li><code>push()</code> elements into array</li>
@@ -387,18 +348,12 @@ print seconds
 <li><code>.join()</code></li>
 </ul>
 </li>
-<li>
-<p>Turning psuedocde into code</p>
-</li>
-<li>
-<p>Methods to keep code organised</p>
-</li>
+<li>Turning psuedocode into code</li>
+<li>Methods to keep code organized</li>
 </ul>
-<h2>Sources and resources</h2>
-<ul>
-<li>Terminal CLI the hard way</li>
-<li>Linux / Unix intro CLI (from UCL)</li>
-</ul>
+<!-- ## Sources and resources
+- Terminal CLI the hard way 
+- Linux / Unix intro CLI (from UCL) -->
 
 </div>
       </main>

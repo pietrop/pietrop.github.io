@@ -278,12 +278,7 @@ We do not recommend doing deep equality checks or using JSON.stringify() in shou
 <p><a href="https://engineering.musefind.com/how-to-benchmark-react-components-the-quick-and-dirty-guide-f595baf1014c">How to Benchmark React Components: The Quick and Dirty Guide</a></p>
 <h2>React Pure components</h2>
 <p><code>PureComponent</code></p>
-<pre><code>import React, { PureComponent } from &quot;react&quot;;
-
-class MenuButton extends PureComponent {
-...
-
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> PureComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span><br><br><span class="token keyword">class</span> <span class="token class-name">MenuButton</span> <span class="token keyword">extends</span> <span class="token class-name">PureComponent</span> <span class="token punctuation">{</span><br><span class="token operator">...</span><br></code></pre>
 <p><a href="https://reactjs.org/docs/react-api.html#reactpurecomponent">React pure components</a></p>
 <blockquote>
 <p>Based on the concept of purity in functional programming paradigms, a function is said to be pure if:</p>
@@ -383,12 +378,7 @@ with error boundaries, can narrow down when error occoured</p>
 <pre class="language-js"><code class="language-js"><span class="token function">shouldComponentUpdate</span><span class="token punctuation">(</span><span class="token parameter">nextProps<span class="token punctuation">,</span> nextState</span><span class="token punctuation">)</span><span class="token punctuation">{</span><br>    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <h3><code>PureComponent</code></h3>
 <p>use <code>PureComponent</code></p>
-<pre><code>import React, { PureComponent } from &quot;react&quot;;
-
-class MenuButton extends PureComponent {
-...
-
-</code></pre>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> PureComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span><br><br><span class="token keyword">class</span> <span class="token class-name">MenuButton</span> <span class="token keyword">extends</span> <span class="token class-name">PureComponent</span> <span class="token punctuation">{</span><br><span class="token operator">...</span><br></code></pre>
 <h3><a href="https://github.com/maicki/why-did-you-update"><code> why-did-you-update</code></a></h3>
 <p>use <code> why-did-you-update</code> lib to identify unecessary re-renders</p>
 <pre><code>npm install --save-dev why-did-you-update
