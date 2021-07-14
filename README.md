@@ -76,7 +76,8 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 - [How to Deploy Eleventy to GitHub Pages With GitHub Actions](https://www.rockyourcode.com/how-to-deploy-eleventy-to-github-pages-with-github-actions/)
 - [ Add CNAME file cname](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-add-cname-file-cname)
 - [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
-
+- [navigation plugin](https://www.11ty.dev/docs/plugins/navigation/)
+- 
 Dark mode
 - [dark mode](https://jec.fyi/blog/supporting-dark-mode)
 - [detect darkmode system change](https://flaviocopes.com/javascript-detect-dark-mode/)

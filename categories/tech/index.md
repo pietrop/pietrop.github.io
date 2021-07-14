@@ -6,7 +6,7 @@ body: theme-base-0c
 
 # Tech 
 <p class="intro">
-Products and prototypes I've worked on over the years. Mix of personal projects and things I've done while working for larger companies. Majority are open source but unfortunately some are not. They are mostly in two categories productivity tools and new story formats. 
+Products and prototypes I've worked on over the years. Mix of personal projects and things I've done while working for larger companies. Majority are open source but unfortunately some are not. They are mostly in two categories, productivity tools and new story formats. 
 </p>
 <hr>
 
