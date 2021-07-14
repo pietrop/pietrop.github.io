@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How I run the textAV event - draft'
+title: 'How I ran the textAV event - draft'
 description: "How to engage a micro community of practitioners around a problem domain. And go beyond the 'hackathon format' for comunity events"
 permalink: '/how-i-run-textav.html'
 date: '2018-02-08'
