@@ -72,6 +72,7 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 - [collections and glob syntax](https://www.11ty.dev/docs/collections/)
 - [liquid tag, formatting dates](https://shopify.github.io/liquid/filters/date/)
 - [`addPassthroughCopy` eg for pdfs and other static files](https://www.11ty.dev/docs/copy/)
+- [Add edit on github links to all pages](https://www.11ty.dev/docs/quicktips/edit-on-github-links/)
 
 
 Dark mode

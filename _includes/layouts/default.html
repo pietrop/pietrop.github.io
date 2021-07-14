@@ -7,14 +7,14 @@
   <div class="container">
     <div class="wrapper">
       <header class="header">
-        {{ site.title }} <small>{{ site.tagline }} </small>
+        {{ site.title }} {{ site.tagline }} 
         
         {% include nav.html %}
       </header>
       <main class="main"> 
         {{ content }}
+        {% include edit-on-github.html %}
       </main>
-    
       {% include footer.html %}
     </div>
   </div>
