@@ -34,13 +34,8 @@ tags:
 
 This project was done while working as newsroom developer at the [Times & Sunday Times](https://twitter.com/TimesDevelops) as part of a summer placement for the final project of the UCL Msc in Computer Science.
 
-<div class="image-wrapper">
-  <a href="{{ page.image }}" data-lightbox="aName" title="aName">
-    <img src="{{ page.image }}" alt="photo" />
-  </a>
-</div>
 
-On The [Times Digital blog](https://medium.com/digital-times/it-s-time-to-rethink-how-we-do-x-in-quotes-pieces-on-the-web-1328f1ccf039) I wrote about the thinking behind the project.
+On The [Times Digital blog](https://medium.com/digital-times/it-s-time-to-rethink-how-we-do-x-in-quotes-pieces-on-the-web-1328f1ccf039), [I wrote about the thinking behind the project](/rethinking-x-in-quotes.html).
 
 In a nutshell if we take the coverage of the Republican presidential candidate debate on Fox News most news outlet merely copied the quotes verbatim and them paired them with photos of the candidates.
 
@@ -219,7 +214,7 @@ The code for an interactive video quote is not particularly complex.
 
 But what is interesting in the quickQuote project is how we programmatically generate this embed code once a journalist has made a quote selection.
 
-For more details on this check out the [project page]({{page.link}}), [the github repository](https://github.com/times/quickQuote), [user manual](https://times.github.io/quickQuote/userManual.html) and [documentation](https://www.rubydoc.info/github/times/quickQuote/master).
+For more details on this check out the [project page]({{link}}), [the github repository](https://github.com/times/quickQuote), [user manual](https://times.github.io/quickQuote/userManual.html) and [documentation](https://www.rubydoc.info/github/times/quickQuote/master).
 
 Or checkout the [the report I wrote for UCL](https://leanpub.com/quickquote), which details investigation into the problem domain, similar open source projects, as well as application design and architecture.
 
@@ -228,70 +223,70 @@ Or checkout the [the report I wrote for UCL](https://leanpub.com/quickquote), wh
 Two way sync between video and corresponding transcription
 
 <div class="image-wrapper">
-	<a href="{{ page.img_hypertranscript }}" data-lightbox="aName" title="aName">
-		<img src="{{ page.img_hypertranscript }}" alt="photo" />
+	<a href="{{img_hypertranscript }}" data-lightbox="aName" title="aName">
+		<img src="{{img_hypertranscript }}" alt="photo" />
 	</a>
 </div>
 
 Search transcription for keywords
 
 <div class="image-wrapper">
-	<a href="{{ page.img_search }}" data-lightbox="aName" title="aName">
-		<img src="{{ page.img_search }}" alt="photo" />
+	<a href="{{img_search }}" data-lightbox="aName" title="aName">
+		<img src="{{img_search }}" alt="photo" />
 	</a>
 </div>
 
 Select text grabs in and out point of corresponding video
 
 <div class="image-wrapper">
-	<a href="{{ page.img_select }}" data-lightbox="aName" title="aName">
-		<img src="{{ page.img_select }}" alt="photo" />
+	<a href="{{img_select }}" data-lightbox="aName" title="aName">
+		<img src="{{img_select }}" alt="photo" />
 	</a>
 </div>
 
 Edit automatically generated transcription from speech to text API _if it's not 100% accurate_
 
 <div class="image-wrapper">
-	<a href="{{ page.img_edit }}" data-lightbox="aName" title="aName">
-		<img src="{{ page.img_edit }}" alt="photo" />
+	<a href="{{img_edit }}" data-lightbox="aName" title="aName">
+		<img src="{{img_edit }}" alt="photo" />
 	</a>
 </div>
 
 See a preview of the video quote
 
 <div class="image-wrapper">
-	<a href="{{ page.img_preview }}" data-lightbox="aName" title="aName">
-		<img src="{{ page.img_preview }}" alt="photo" />
+	<a href="{{img_preview }}" data-lightbox="aName" title="aName">
+		<img src="{{img_preview }}" alt="photo" />
 	</a>
 </div>
 
 With dropdown
 
 <div class="image-wrapper">
-	<a href="{{ page.img_preview_dropdown }}" data-lightbox="aName" title="aName">
-		<img src="{{ page.img_preview_dropdown }}" alt="photo" />
+	<a href="{{img_preview_dropdown }}" data-lightbox="aName" title="aName">
+		<img src="{{img_preview_dropdown }}" alt="photo" />
 	</a>
 </div>
 
 Export HTML, CSS, JS code to embed in news article.
 
 <div class="image-wrapper">
-	<a href="{{ page.img_export }}" data-lightbox="aName" title="aName">
-		<img src="{{ page.img_export }}" alt="photo" />
+	<a href="{{img_export }}" data-lightbox="aName" title="aName">
+		<img src="{{img_export }}" alt="photo" />
 	</a>
 </div>
 
 And here is [a preview of the embed code using JS Fiddle](https://jsfiddle.net/pietrops/yazkqg2s/)
 
 <div class="image-wrapper">
-	<a href="{{ page.img_export_preview }}" data-lightbox="aName" title="aName">
-		<img src="{{ page.img_export_preview }}" alt="photo" />
+	<a href="{{img_export_preview }}" data-lightbox="aName" title="aName">
+		<img src="{{img_export_preview }}" alt="photo" />
 	</a>
 </div>
 
 <div class="image-wrapper">
-	<a href="{{ page.img_export_dropdown }}" data-lightbox="aName" title="aName">
-		<img src="{{ page.img_export_dropdown }}" alt="photo" />
+	<a href="{{img_export_dropdown }}" data-lightbox="aName" title="aName">
+		<img src="{{img_export_dropdown }}" alt="photo" />
 	</a>
 </div>
 
@@ -308,17 +303,17 @@ And here is [a preview of the embed code using JS Fiddle](https://jsfiddle.net/p
 # Press Mentions
 
 <div class="image-wrapper">
-    <img src="{{ page.img_NiemanLab }}" alt="{{ page.img_NiemanLab }}" />
+    <img src="{{img_NiemanLab }}" alt="{{img_NiemanLab }}" />
 </div>
 
 <hr>
 
 <div class="image-wrapper">
-    <img src="{{ page.img_journalism_co_uk }}" alt="{{ page.img_journalism_co_uk }}" />
+    <img src="{{img_journalism_co_uk }}" alt="{{img_journalism_co_uk }}" />
 </div>
 
 <hr>
 
 <div class="image-wrapper">
-    <img src="{{ page.img_periodismo }}" alt="{{ page.img_periodismo }}" />
+    <img src="{{img_periodismo }}" alt="{{img_periodismo }}" />
 </div>

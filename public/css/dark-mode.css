@@ -22,7 +22,7 @@
             background-color: transparent;
         }
         /* inline code */
-        p code {
+        p code, li > code {
             color: #bf616a;
         }
         .nav {
@@ -42,7 +42,7 @@
             /* transition: background-color 300ms ease-in-out 0s; */
         }
         /* inline code */
-        p code {
+        p code, li > code {
             /* padding: .25em .5em;
             font-size: 85%; */
             color: #bf616a;

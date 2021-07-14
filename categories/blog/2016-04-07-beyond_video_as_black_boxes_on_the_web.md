@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Beyond 'video as black boxes'"
-image:
+image: /img/img_chp2_context/aljazeera_obama_romney.png
 date: '2013-04-08T01:30:00.000+01:00'
 description: "Various interesting uses of video on the web, both in form of tools and editorial projects."
 published: true
@@ -11,11 +11,11 @@ categories:
 tags:
 ---
 
-This is a modified version of [the second chapter, literature review, of the final project dissertation I did for UCL Msc in CS (2015)](https://dl.dropboxusercontent.com/u/449999/dissertation_report_github_repo_link/pietro_passarelli_2015COMPGC99G_.pdf).
+This is a modified version of [the second chapter, literature review, of the final project dissertation I did for UCL Msc in CS (2015)](/pdfs/UCL_Dissertation/pietro_passarelli_2015COMPGC99G_.pdf).
 
 The project consisted of identifying a problem statment, and developing a software application as part of a placement at The Times & Sunday Times in London.
 
-The resulting application was [quickQuote, a tool to easily identify and share video quotes, you can read more about it here](https://pietropassarelli.com/quickQuote.html).
+The resulting application was [quickQuote, a tool to easily identify and share video quotes, you can read more about it here](/quickQuote.html).
 
 The porpuse of this blog post is to keep an up to date list of projects that are doing interesting things to do with video on the web. I am mostly interested in projects were we go beyond "videos as black boxes" on the web, and get a programmatic access into the video. Often times this is done with the use of time-coded transcriptions.
 
@@ -48,7 +48,7 @@ were time consuming and a lot of effort went into the making of a one of piece w
 The NY Times competitors such as BuzzFeed, were instead able to separate form from content. The best example is a [dialect quiz by the NY Times](https://www.nytimes.com/interactive/2013/12/20/sunday-review/dialect-quiz-map.html?_r=0), that was widely popular, and BuzzFeed, inspired by the format made a ["Quizz builder"](https://www.buzzfeed.com/ariellecalderon/buzzfeed-quiz-guide#.tt6LgemGe)
 and after the first release, published 20 variations with minimal effort.  
 
-This consideration of building a system rather then a one of editorial piece is the initial inspiration behind most of the projects I've been working on, which you can read more about here: [autoEdit](https://pietropassarelli.com/autoEdit.html), [Interactive databate #buildTheNews](https://pietropassarelli.com/buildTheNews.html), [OneStory at BBC #newsHack](https://pietropassarelli.com/oneStory.html), [quickQuote - Times & Sunday Times](https://pietropassarelli.com/quickQuote.html).
+This consideration of building a system rather then a one of editorial piece is the initial inspiration behind most of the projects I've been working on, which you can read more about here: [autoEdit](/autoEdit.html), [Interactive databate #buildTheNews](/buildTheNews.html), [OneStory at BBC #newsHack](/oneStory.html), [quickQuote - Times & Sunday Times](/quickQuote.html).
 
 At the end of this post, I'll give a summary of each one of these in relation to the other projects described below.
 
@@ -58,7 +58,7 @@ The other consideration that guides most of the projects I work on comes from [V
 Simply put, different people learn in different ways. Five main learning styles are identified, visual, auditory, reading and writing, kinaesthetic and multi-modal. The core concept is that each individual as one (or more) preferred learning style. But also, more crucially, that the same information can be delivered in different ways to meet the different learning styles.
 Applying this consideration to the publishing of news article, forces  us to re-consider the publishing of text based articles and the use of multimedia to engage a wider audience taking into account the variety of learning styles.
 
-As a practicl example, in the making of [quickQuote](https://pietropassarelli.com/quickQuote.html) this consideration guided a lot of the assumptions to test through the investigation of the problem. And in fact in the final web application the process of adding the corresponding video segment to a text quote, is taking into account the variety of learning styles. As the viewer is being delivered information both through auditory and reading and writing.
+As a practical example, in the making of [quickQuote](/quickQuote.html) this consideration guided a lot of the assumptions to test through the investigation of the problem. And in fact in the final web application the process of adding the corresponding video segment to a text quote, is taking into account the variety of learning styles. As the viewer is being delivered information both through auditory and reading and writing.
 
 ----------
 
@@ -420,9 +420,9 @@ This was a proof of concept for a system that given a video would generate trans
 
 <!-- ref  -->
 
-![BuildTheNewsPrototype](https://pietropassarelli.com/img/BuildTheNews/interactive_debate.png)
+[![BuildTheNewsPrototype](/img/BuildTheNews/interactive_debate.png)](/buildTheNews.html)
 
-More details [here](https://pietropassarelli.com/buildTheNews.html ).
+More details [here](/buildTheNews.html).
 
 The proof of concept was more of a R&D research, into the feasibility of the various component, with an interactive demo.
 
@@ -439,26 +439,26 @@ This is concept could either be applied to the annotation view of autoEdit, or f
 
 ### oneStory
 
-[oneStory](https://pietropassarelli.com/oneStory.html) came ouf of the idea of the variety of learning style V.A.R.K. as mentioned at the top of the article.
+[oneStory](/oneStory.html) came ouf of the idea of the variety of learning style V.A.R.K. as mentioned at the top of the article.
 
 The underlying assumption is that you could create a story editor CMS, where with defined equivalence points, the viewer could switch "medium".
 
 For instance you start reading your story as an article, switch to as a podcast while you get on the bus as you are standing, switch again to it as video while you step into the tube, and finally switch to it as multimedia piece once you reach the office. Through the "app" knows where you at with the story when you make the shift.
 
-For more on this [here](https://pietropassarelli.com/oneStory.html)
+For more on this [here](/oneStory.html)
 
-![OneStory](https://pietropassarelli.com/img/newsHackOneStory/OneStory_02_Podcast.png)
+![OneStory](/img/newsHackOneStory/OneStory_02_Podcast.png)
 
 at the Hackaton only the switch from article to podcast was demonstrated.
 
 ### quickQuote
 
-[quickQuote](https://pietropassarelli.com/quickQuote.html) given a video, it sends it to spoken data speech to text API to get a transcription.
+[quickQuote](/quickQuote.html) given a video, it sends it to spoken data speech to text API to get a transcription.
 
 When the transcription is done it generates a hypertranscript, that can be used to select a quote.
 Exporting a text quote, trims the corresponding video.
 
-![quickquote select](https://pietropassarelli.com/img/TimesAndSundayTimesQuickQuote/select.png)
+![quickquote select](/img/TimesAndSundayTimesQuickQuote/select.png)
 
 
 This can be exported either as an interactive video quote or to the twitter video API.

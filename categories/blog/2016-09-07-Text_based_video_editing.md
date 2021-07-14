@@ -5,25 +5,23 @@ date: '2016-09-07T01:30:00.000+01:00'
 description: "Making faster, better videos when working with video interviews "
 published: false
 permalink: "/tbve.html"
-image: 	"/img/tbve_vision/current.png"
-img_current: "/img/tbve_vision/current.png"
-img_overview_diagram: "/img/tbve_vision/overview_diagram.png"
-img_place_holder_for_youtube_video: "/img/tbve_vision/youtube_place_holder.png"
-img_initial_proto: "/img/tbve_vision/initial_proto.png"
-img_initial_proto_timecodes: "/img/tbve_vision/initial_proto_timecodes.png"
-img_mandela: "/img/tbve_vision/mandela.png"
-img_oabama_romney: "/img/tbve_vision/aljazeera_obama_romney.png"
-img_build_the_news: "/img/tbve_vision/interactive_debate.png"
-img_foreign_language: "/img/tbve_vision/foreign_language.png"
-img_mobile: "/img/tbve_vision/mobile.png"
-img_quickQuote: "/img/tbve_vision/quickquote.png"
-img_live: "/img/tbve_vision/live.png"
-
-gif_getting_started: "/img/tbve_vision/1_getting_started.gif"
-gif_processing_transcription: "/img/tbve_vision/2_processing_transcription.gif"
-gif_transcription: "/img/tbve_vision/3_transcription.gif"
-gif_edl: "/img/tbve_vision/4_EDL_in_premiere.gif"
-
+image: /img/tbve_vision/current.png
+img_current: /img/tbve_vision/current.png
+img_overview_diagram: /img/tbve_vision/overview_diagram.png
+img_place_holder_for_youtube_video: /img/tbve_vision/youtube_place_holder.png
+img_initial_proto: /img/tbve_vision/initial_proto.png
+img_initial_proto_timecodes: /img/tbve_vision/initial_proto_timecodes.png
+img_mandela: /img/tbve_vision/mandela.png
+img_oabama_romney: /img/tbve_vision/aljazeera_obama_romney.png
+img_build_the_news: /img/tbve_vision/interactive_debate.png
+img_foreign_language: /img/tbve_vision/foreign_language.png
+img_mobile: /img/tbve_vision/mobile.png
+img_quickQuote: /img/tbve_vision/quickquote.png
+img_live: /img/tbve_vision/live.png
+gif_getting_started: /img/tbve_vision/1_getting_started.gif
+gif_processing_transcription: /img/tbve_vision/2_processing_transcription.gif
+gif_transcription: /img/tbve_vision/3_transcription.gif
+gif_edl: /img/tbve_vision/4_EDL_in_premiere.gif
 categories:
 - blog
 tags:
@@ -46,6 +44,7 @@ A chance to recap on what I've been working on in the area of text based video e
 
 >To make video production faster, easier and more accessible. 
 
+t: {{img_current}}
 ![Current Iteration]({{img_current}})
 
 The App makes automatic transcription from video (or audio). User selects parts they want, and export video sequence. 
@@ -95,7 +94,7 @@ Then you can click on the words to jump to corresponding part in video. Select s
 
 
 #### 2.1. Speed
-I used an earlier version of this tool that was composed of [two scripts and made use of a google spreadsheet for paper-editing](https://pietropassarelli.com/tech/articles/2013/12/02/sbv-csv/) and it took down the post produciton time from *3 weeks to 3 hours*. 
+I used an earlier version of this tool that was composed of [two scripts and made use of a google spreadsheet for paper-editing](/categories/tech/2013-12-02-sbv-csv) and it took down the post produciton time from *3 weeks to 3 hours*. 
 
 #### 2.2. Story crafting 
 

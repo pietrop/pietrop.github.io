@@ -16,7 +16,7 @@ vimeo:
 tech: 
 categories:
 - ttqf
-- blog
+# - blog
 tags:
 - Product Management
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: "Representing Reality: Key ideas in documentary theory and practice"
 permalink: "doc.html"
+image: https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/assets/omlj-dvd-cover.jpg
 date: '2014-04-28T10:08:00.000+01:00'
 author: Pietro Passarelli
 modified_time: '2014-04-28T18:30:20.846+01:00'

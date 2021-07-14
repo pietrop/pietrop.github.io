@@ -25,8 +25,8 @@ tags:
 ---
 
 <div class="image-wrapper">
-<a href="{{ page.hackaton2}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton, photo credit @MattieTK">
-<img class="thumb img-round img-responsive" src="{{ page.hackaton2}}" alt="photo" />
+<a href="{{ hackaton2}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton, photo credit @MattieTK">
+<img class="thumb img-round img-responsive" src="{{ hackaton2}}" alt="photo" />
 </a>
 </div>
 <br>
@@ -35,8 +35,8 @@ For the Times Build the news hackathon we decided to do system that given a vide
 We decided to use the upcoming elections debate  as a use case, but this could be generalised to other interview based video content.
 
 <div class="image-wrapper">
-<a href="{{ page.image}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton">
-<img class="thumb img-round img-responsive" src="{{ page.image}}" alt="photo" />
+<a href="{{ image}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton">
+<img class="thumb img-round img-responsive" src="{{ image}}" alt="photo" />
 </a>
 </div>
 
@@ -50,8 +50,8 @@ And provide a analytics dashboard for the journalist to view a heat map of:
 of the viewers engagement with the piece.
 
 <div class="image-wrapper">
-<a href="{{ page.dashboard}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton">
-<img class="thumb img-round img-responsive" src="{{ page.dashboard}}" alt="photo" />
+<a href="{{ dashboard}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton">
+<img class="thumb img-round img-responsive" src="{{ dashboard}}" alt="photo" />
 </a>
 </div>
 <br>
@@ -59,7 +59,7 @@ of the viewers engagement with the piece.
 
 
 <div class="videoWrapper">
-<iframe width="560" height="315" src="//www.youtube.com/embed/{{page.youtube}}" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/{{youtube}}" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <iframe src="https://docs.google.com/presentation/d/1DLjz__UifA39VrqUQM3-RP7s8ZDBMZWWhuR4qX80Deg/embed?start=false&loop=false&delayms=5000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -90,30 +90,30 @@ These are some of the technologies we used:
 <br>
 
 <div class="image-wrapper">
-<a href="{{ page.sharing}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton">
-<img class="thumb img-round img-responsive" src="{{ page.sharing}}" alt="photo" />
+<a href="{{ sharing}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton">
+<img class="thumb img-round img-responsive" src="{{ sharing}}" alt="photo" />
 </a>
 </div>
 <br>
 
 
 <div class="image-wrapper">
-<a href="{{ page.presentation}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton, photo credit @MattieTK">
-<img class="thumb img-round img-responsive" src="{{ page.presentation}}" alt="photo" />
+<a href="{{ presentation}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton, photo credit @MattieTK">
+<img class="thumb img-round img-responsive" src="{{ presentation}}" alt="photo" />
 </a>
 </div>
 <br>
 
 <div class="image-wrapper">
-<a href="{{ page.presentation2}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton, photo credit @MattieTK">
-<img class="thumb img-round img-responsive" src="{{ page.presentation2}}" alt="photo" />
+<a href="{{ presentation2}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton, photo credit @MattieTK">
+<img class="thumb img-round img-responsive" src="{{ presentation2}}" alt="photo" />
 </a>
 </div>
 <br>
 
 <div class="image-wrapper">
-<a href="{{ page.hackaton}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton, photo credit @MattieTK">
-<img class="thumb img-round img-responsive" src="{{ page.hackaton}}" alt="photo" />
+<a href="{{ hackaton}}" data-lightbox="buildTheNews" title="#BuildTheNews Hackaton, photo credit @MattieTK">
+<img class="thumb img-round img-responsive" src="{{ hackaton}}" alt="photo" />
 </a>
 </div>
 <br>
@@ -122,8 +122,8 @@ These are some of the technologies we used:
 
 
 <div class="image-wrapper">
-<a href="{{ page.link}}"  title="Article on journalism.co.uk">
-<img class="thumb img-round img-responsive" src="{{ page.journalismuk}}" alt="photo" />
+<a href="{{ link}}"  title="Article on journalism.co.uk">
+<img class="thumb img-round img-responsive" src="{{ journalismuk}}" alt="photo" />
 </a>
 </div>
 <br>

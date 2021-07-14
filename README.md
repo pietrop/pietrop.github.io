@@ -71,6 +71,7 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 - [How to create drafts in Eleventy](https://giustino.blog/how-to-drafts-eleventy/)
 - [collections and glob syntax](https://www.11ty.dev/docs/collections/)
 - [liquid tag, formatting dates](https://shopify.github.io/liquid/filters/date/)
+- [`addPassthroughCopy` eg for pdfs and other static files](https://www.11ty.dev/docs/copy/)
 
 
 Dark mode

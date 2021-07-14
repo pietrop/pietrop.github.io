@@ -19,8 +19,11 @@ I also take <a href="https://pietropassarelli.com/photos"> photos↗</a>, <a hre
 <!-- BA 17 -->
 
 ![Pietro Buenos Aires Media Party Keynote](/img/about/pietro_8.jpg)
-<i><small>Picture from 2017 Buenos Aires Hacks/Hackers Media Party, while giving keynote talk ["10 Lessons from building video product tools in the newsroom"](/10-lessons-video-tools-ba.html)</small></i>
+<i><small>Picture from 2017 Buenos Aires Hacks/Hackers Media Party, while giving keynote talk ["10 Lessons from building video product tools in the newsroom"](/10-lessons-video-tools.html)</small></i>
 
+
+![Pietro C+J '17 at Northwestern Keynote](/img/10-lessons-video-tools/pietro-c+js.png)
+<i><small>Picture from 2017 C+J '17 Northwestern University, on a panel ["Panel: Tools for reporting and storytelling"](/10-lessons-video-tools.html)</small></i>
 <!-- ---
 
 ## Personality Snapshot from [IBM Watson Personality insight](https://personality-insights-livedemo.mybluemix.net/)

@@ -1,28 +1,48 @@
 ---
 layout: post
 title: "10 Lessons from building video product tools in the newsroom."
-description: "Was invited to write a paper for the computational journalism conference '17"
+description: "Presented lessons learned from building autoEdit.io and other video product tools at Vox Media at the computational journalism conference at Northwestern University C+J '17, and Hacks/Hackers Buenos Aires Media Party '17."
 permalink: "/10-lessons-video-tools.html"
 date: "2017-08-01"
 published: true
 link:
-image: 
+image: /img/10-lessons-video-tools/pietro-c+js.png
 github:
 gitbook: 
-youtube: 
+youtube: jryiz5kC1V8
+vimeo: 234150382
+youtube2: https://youtu.be/esWq8z9G-24?t=86
 tech: 
 categories:
 - blog
 tags:
 ---
 
-## Abstract
+As part of the [2016 Knight-Mozilla Open News Fellowship](/fellowship2016.html) I had a chance develop audio video product for the Vox Media audio/video producers, such as [autoEdit2](/autoEdit2.html).
+
+<iframe src="https://player.vimeo.com/video/234150382?title=0&byline=0&portrait=0" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="background-color:black;"></iframe>
+
+
+[Hacks/Hackers Buenos Aires Media Party '17 - 10 Lessons from building video product tools in the newsroom, autoEdit.io, fast text based video editing](https://mediaparty2017.sched.com/event/C642/10-lessons-from-building-video-product-tools-in-the-newsroom-autoeditio-fast-text-based-video-editing)
+
+---
+
+Originally as a paper I was invited to write for the [computational journalism conference '17](http://cj2017.northwestern.edu/schedule/index.html) and presented at [C+J '17 as part of Panel: "Tools for reporting and storytelling"](https://youtu.be/esWq8z9G-24?t=115).
+
+<div class="videoWrapper">
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/esWq8z9G-24?start=115" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+## 10 Lessons from building video product tools in the newsroom
+
+### Abstract
 With a unique background in Anthropology, Documentary film, and computer
 science, I have developed a skill set of applying my skills and knowledge collectively and creatively. This article is to share the 10 lessons I learned from the development of autoEdit, and walked through how a mixed approach that combines lean, user-centered design and anthropological insights with key computer science techniques,  such as mapping the problem domain and component-based design, can be instrumental in developing products that gain user traction.
 
 
 
-## Introduction
+### Introduction
 In 2016 I did a 10-month Knight-Mozilla Fellowship organised by Open News with the Vox Media products team in New York.
 
 My interest was to explore possibilities for open source tools to help streamline the video production process. After spending a month interviewing and observing video producers across Vox Media, I narrowed my focus down to creating an application that enables more efficient and accessible video editing of interviews.
@@ -37,7 +57,7 @@ My education background includes a B.A. in Anthropology from Goldsmiths, Univers
 
 In the following section, I am going to distill the key takeaways for journalists and developers interested in using user-centered design and rapid prototyping to create products that gain user traction.
 
-### User Research
+#### User Research
 One of the biggest challenges when doing research to develop a new product is how to get useful actionable intel from users while iteratively developing a prototype.
 
 Let’s consider a few key ideas that can help when defining a course of action.
@@ -60,7 +80,7 @@ For instance, asking the users about their work, and what gives them the most sa
 
 Last but not least, anthropologists would encourage you to have a healthy distrusts for questionnaires as a research methodology to gather insights. However, if you use the “Mum Test” when phrasing the questions, it can be a useful tool to identify early adopters.
 
-### Be a domain expert, but if you are not that’s ok too.
+#### Be a domain expert, but if you are not that’s ok too.
 A domain expert is someone who has expertise in a certain field, knows and understands the intricacies of contradictory and conflicting theories in that field, and can juggle those in their mind.
 
 For example, a youtuber might be an expert in doing social videos, but if they don’t know about ethics and other epistemological implications of the medium, they might not be a domain expert in documentary production.
@@ -73,7 +93,7 @@ You also need to identify out who is regarded as expert, what are the different 
 
 Observe and learn from your users. Don’t take their word at face value, they might not always know what’s best for them. In this sense there is a strong parallel to documentary production where you have to research, analyse, interpret and draw your own informed conclusion to define a course of action. For example one of the feedback I had from a video producer at Vox about autoEdit is that it “Goes above and beyond what I thought was possible”.
 
-### Be language agnostic
+#### Be language agnostic
 As a technologist, you should figure out the best technology to use for the problem you are trying to solve and to factor in the learning curve that comes with it.
 
 In computer science domain, It makes your life a lot easier if you have a focus on understanding the evergreen underlying knowledge, as it moves a lot slower than the latest hip framework that changes every 3 months.
@@ -84,7 +104,7 @@ As the popular saying goes “if you only have a hammer everything becomes a nai
 
 Last but not least, Eric Ries has also argued that, in line with user-centered design you should also start with the users and the problem they are facing rather than trying to fit a specific technology to a specific problem (Ries 2011).
 
-### Map the problem domain
+#### Map the problem domain
 I also found it particularly helpful to map the problem domain as a strategy to deal with ever changing requirements (Winder and Roberts 2006).
 
 “A problem domain is the context in which a particular problem exists. For example, the problem domain in which a specific route plan exists is that of maps, route planning, travelling and strategies for moving around. Critically, the problem domain is relatively stable, changing only slowly, while specific problems to be solved are transient and change regularly. If you are able to capture the problem domain as the core of the design of your program, then the program code is likely to be more stable, more reusable and more easily adaptable to specific problems as they come and go.” (Winder and Roberts 2006, 351)
@@ -93,14 +113,14 @@ I also found it particularly helpful to map the problem domain as a strategy to 
 
 “A given route plan may work but it is very specific. To find out how to travel to a different destination you have to go and ask for a new list of instructions every time you want to travel. An alternative strategy for dealing with your travelling problem is to make use of a map. This will allow you to travel between any two points on the map and do your own route planning. The route planning can even be done while you are travelling. There is a cost for using the map, you have to learn how to read and interpret it, as well as develop strategies for planning routes. However, in the longer term the benefits more than outweigh the initial learning costs. Moreover, much more of the map strategy is reusable—it is easy to transfer the solution strategy from one problem to the next.” (Winder and Roberts 2006, 355)
 
-### use component-based design
+#### use component-based design
 Another helpful technique is that of component-based design when writing the code of your program (Winder and Roberts 2006)
 
 “A component is typically implemented by a small collection of classes, with one class acting as an interface to the component. Rather than designing a program from scratch, it can be built out of a set of predefined components which are linked together with small amounts of new code. This approach is termed component-based design. The connections between components are enabled using the mechanisms of inheritance, interfaces and dynamic binding. Users of the component make use of the public interface to call the component’s methods but need not be aware of the details of the component implementation.” (Winder and Roberts 2006, 265)
 
 Thinking in terms of reusable components has several advantages. For instance autoEdit “front end” is written in web technologies in such a way that the demo on the project website is the same code but with a hard coded database. This means that if I were to make a web version of the app I could reuse that part with minimal adjustments. It ultimately comes down to making a judgement call between premature optimization vs being strategic. Often a thin line.
 
-### Use an R&D Approach
+#### Use an R&D Approach
 Once you have got some findings from initial user research, you are ready to take the next step to identify, learn, and understand possible workflows. Then you can treat it almost like a lego project.
 
 For example, for autoEdit, an understanding of the paper-editing workflow and how the users relate to that and/or a variation of it was crucial.
@@ -117,17 +137,17 @@ This allows to work on parts and components in isolation and then combined them.
 
 Threat everything as an hypothesis and prioritise which one to be tested first.
 
-### Learn how to formulate questions as a way to get over unexpected roadblocks during development
+#### Learn how to formulate questions as a way to get over unexpected roadblocks during development
 It is not a question if you are going to get stuck, but rather a matter of when. It is therefore important to think about how you are going to get yourself out of it and use your time productively.
 
 Face with an unexpected problem, think about what you know, the limits of what you know, what you don’t know and the limits of what you don’t know. Then describe what you know about the current setup, and inner workings. Describe the symptoms of what’s not working as expected. Write it all down. This takes you already half way to find a solution, as you can now share it and communicate with others more efficiently when asking for advice. It’s important to also spend some time identifying the right vocabulary to express the problem. You can then iteratively make hypothesis about the root cause, and run experiments to test it out. This will help you narrow it down until you find a solution.
 
-### Be brave like Pixar
+#### Be brave like Pixar
 I once watched this documentary about Pixar, The Pixar Story (Iwerks 2007), and was fascinated by how Toy Story team had the courage to throw away all the work just a couple of days before deadline, and started over from a blank canvas because the story and its main character was not quite working out.
 
 This might seem daunting but If you had mapped the problem domain, followed component-based architecture and user-centered design, you really are just throwing away only the material representation of your ideas. And you are actually in a good place to start over, with all the excitement and liberating anticipation of a blank canvas.
 
-### Human vs machine?
+#### Human vs machine?
 In the context of where to draw the line in the automation debate in replacing people’s jobs, especially with the recent buzz around AI, in studies that compared the performance of a team of humans, a team of “machines” and a mixed team of humans and computers, have found that the mixed team seems to consistently achieve the highest result (Allègre L and Matthias 2013).
 
 I’ve been dwelling on the ethical issues around the development of autoEdit, for a while now, there is a possibility that, especially if combined with more advanced cognitive services, it could replace video editors.
@@ -140,7 +160,7 @@ In this context It’s important to recognise that there is always a bias, of so
 
 In the current version of autoEdit, the aim was to remove the tedious parts of the paper-editing workflow to enable the video producers to concentrate on the story crafting.
 
-### Convenience trumps quality every day of the week
+#### Convenience trumps quality every day of the week
 In certain contexts of automation, convenience seems to win over quality every day of the week. Increasingly leading to a polarized scenario with either high volume production with low quality output or low quality production with high volume distribution, and no room for anything in between.
 
 An example is the use of text to speech to to do voice over of videos, where quality of the speech to text services is not as good as human narrators but can scale faster and cheaper.
@@ -149,13 +169,13 @@ In the interest of adding value for the users, I would argue it is your job as a
 
 For example, with autoEdit the 5 minutes turnaround time for transcriptions is a very important cutoff point that was instrumental in gaining traction with early adopters. And even automated speech to text service alone is not as good quality compared to transcriptions services with 24 hours turnaround time with services that provide human or human + machine transcriptions. But the convenience wins over quality. And therefore some users will put up with the decrease in quality of the transcription they get for the added value of a fast turnaround.
 
-## Conclusion
+### Conclusion
 In this article, we explored 10 lessons I learned from the development of autoEdit, and walked through how a mixed approach that combines lean, user-centered design and anthropological insights with key computer science techniques, such as mapping the problem domain and component-based design, can be instrumental in developing products that gain user traction. I would like to encourage readers to think deeper and further about how they can leverage some of the techniques I have explained to add value and increase quality of their products for their users.
 
 
 
 
-## Bibliography
+### Bibliography
 
 Allègre L,. Hadida, and Seifert Matthias. 2013. “3 Humans + 1 Computer = Best Prediction.” [https://hbr.org/2013/05/3-humans-1-computer-best-prediction](https://hbr.org/2013/05/3-humans-1-computer-best-prediction).
 

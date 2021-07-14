@@ -4,7 +4,8 @@ title: Video
 body: theme-base-0f
 ---
 
-# Video 
+# Videos
+Documentary projects for broadcast Tv as well as for the web. And some personal projects I've worked on over the years.
 <hr>
 <!-- <ul>
 {%- for post in collections.video -%}

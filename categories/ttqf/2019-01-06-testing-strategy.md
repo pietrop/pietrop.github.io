@@ -15,7 +15,7 @@ vimeo:
 tech: 
 categories:
 - ttqf
-- blog
+# - blog
 tags:
 - react
 ---
