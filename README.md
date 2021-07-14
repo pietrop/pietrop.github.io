@@ -73,7 +73,7 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 - [liquid tag, formatting dates](https://shopify.github.io/liquid/filters/date/)
 - [`addPassthroughCopy` eg for pdfs and other static files](https://www.11ty.dev/docs/copy/)
 - [Add edit on github links to all pages](https://www.11ty.dev/docs/quicktips/edit-on-github-links/)
-
+- [How to Deploy Eleventy to GitHub Pages With GitHub Actions](https://www.rockyourcode.com/how-to-deploy-eleventy-to-github-pages-with-github-actions/)
 
 Dark mode
 - [dark mode](https://jec.fyi/blog/supporting-dark-mode)
