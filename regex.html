@@ -77,7 +77,7 @@
   <div class="container">
     <div class="wrapper">
       <header class="header">
-        Pietro <small>Passarelli </small>
+        Pietro Passarelli 
         
         <nav class="nav">
     <ul class="menu-list">
@@ -131,7 +131,7 @@
       <main class="main"> 
         
 <div class="post">
-	<h1 class="post-title">Regex - an easyer approach </h1>
+	<h1 class="post-title">Regex - an easier approach </h1>
 	<span class="post-date">2015 May 17 
 		
 	</span> 
@@ -165,19 +165,23 @@
 	
 	<hr>
 	<!-- content -->
-	<p>Regex - an &quot;easyer&quot; approach</p>
+	<!-- Regex - an "easier" approach -->
+<blockquote>
 <p>“Regular expressions are a way to describe patterns in string data.”</p>
-<p>Excerpt From: Haverbeke, Marijn. “Eloquent JavaScript.” iBooks.
-This material may be protected by copyright.</p>
-<h2>defining the problem</h2>
-<p>Let's say we want to write a regex to match timecodes, to test a given timecode has a valid format</p>
+<ul>
+<li>Excerpt From: Haverbeke, Marijn. “Eloquent JavaScript.” iBooks.
+This material may be protected by copyright.</li>
+</ul>
+</blockquote>
+<h2>Defining the problem</h2>
+<p>Let's say we want to write a regex to match time-codes, to test a given time-code has a valid format</p>
 <p>We consider the notation hours, minutes, seconds, milliseconds.
 Such as <code>01:17:23.736</code>  where the milliseconds that can be represented either with a <code>.</code> or a <code>,</code>  <code>hh:mm:ss.mmm</code>  Or <code>hh:mm:ss,mmm</code>.</p>
-<p>When writing a regex you'd be tempted to mash all the symbols together, test it and tweak it until it works, and get it done and over with asap. An alaternative approach is [ giving var to patterns and then combining those patterns this makes it easyer to read, easyer to write, and most importantly easyer to think about in a systematic way.</p>
+<p>When writing a regex you'd be tempted to mash all the symbols together, test it and tweak it until it works, and get it done and over with asap. An alternative approach is [ giving a variable to patterns and then combining those patterns this makes it easier to read, easier to write, and most importantly easier to think about in a systematic way.</p>
 <h2>exploring the problem</h2>
 <p>For this example I'm using JavaScript, but most languages have support for regex with only minor tweaks to transpose them from one language to another.</p>
-<p>We know that  <code>\d</code> is equivalent to any digit caracther <code> [0-9]</code>.</p>
-<p>So just by looking at our timecode string <code>01:17:23.736</code>  <code>hh:mm:ss.mmm</code> we can already describe it as:</p>
+<p>We know that  <code>\d</code> is equivalent to any digit character <code> [0-9]</code>.</p>
+<p>So just by looking at our time-code string <code>01:17:23.736</code>  <code>hh:mm:ss.mmm</code> we can already describe it as:</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d\d:\d\d:\d\d.\d\d\d</span><span class="token regex-delimiter">/</span></span></code></pre>
 <p>This can be refactored using the notation <code>{number}</code> defines how many time the instance is expected to occur. so where writing <code>\d{2}</code> is equivalent to write <code>\d\d</code>, where we are expecting two digits one after the other.</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}:\d{2}:\d{2}.\d{3}</span><span class="token regex-delimiter">/</span></span></code></pre>
@@ -185,22 +189,22 @@ Such as <code>01:17:23.736</code>  where the milliseconds that can be represente
 <p>So if we want to see milliseconds with <code>,</code> and milliseconds with <code>,</code> we would write</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}:\d{2}:\d{2}[ . ,]\d{3}</span><span class="token regex-delimiter">/</span></span></code></pre>
 <p>Which in JavaScript you would run by defining a variable with the regex pattern, and the method <code>.test</code> on that variable passing the string you want to test as argument.  Last but not least using <code>console.log</code> to print out the outcome.</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> timeCode <span class="token operator">=</span>  <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}:\d{2}:\d{2}[ . ,]\d{3}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>timeCode<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"01:17:23.736"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> timeCode <span class="token operator">=</span>  <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}:\d{2}:\d{2}[ . ,]\d{3}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>timeCode<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"01:17:23.736"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>This is also equivalent to writing it without using the variable declaration if you want to have a one liner.</p>
 <pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}:\d{2}:\d{2}[ . ,]\d{3}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"01:17:23.736"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <h2>a more sensible approach</h2>
-<p>Now you might have noticed that I got carried away and didn't realy follow the approach I set out to show you and the code is not very readable especilly in the last one liner, I didn't define variables with regex patterns and combined those to make it more manageable and readable, as well as flexible if the timecode I am looking for where to change.</p>
+<p>Now you might have noticed that I got carried away and didn't really follow the approach I set out to show you and the code is not very readable especially in the last one liner, I didn't define variables with regex patterns and combined those to make it more manageable and readable, as well as flexible if the time-code I am looking for where to change.</p>
 <p>So here's how you'd go about following this more sensible approach.</p>
-<p>Once again you got your  timecode string <code>01:17:23.736</code>  <code>hh:mm:ss.mmm</code></p>
+<p>Once again you got your  time-code string <code>01:17:23.736</code>  <code>hh:mm:ss.mmm</code></p>
 <p>Now you think, what have you got as smallest unit. We got hours,minutes, and milliseconds that are all 2 digit characters.</p>
 <p>So I could start to write a pattern to match that</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> twoDigit <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span></code></pre>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> twoDigit <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span></code></pre>
 <p>Then we see we got milliseconds which is a 3 digit characters.</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> mmm <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span></code></pre>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> mmm <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span></code></pre>
 <p>which we could already write as</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> timeCode <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">twoDigit:twoDigit:twoDigit.mmm</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span></code></pre>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> timeCode <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">twoDigit:twoDigit:twoDigit.mmm</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span></code></pre>
 <p>which would look like:</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// a simple readable approach to writing regex using variables.</span><br><span class="token keyword">var</span> twoDigit <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><span class="token keyword">var</span> mmm <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><span class="token keyword">var</span> timeCode <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">twoDigit:twoDigit:twoDigit.mmm</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>timeCode<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"01:17:23.736"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// a simple readable approach to writing regex using variables.</span><br><span class="token keyword">const</span> twoDigit <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><span class="token keyword">const</span> mmm <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><span class="token keyword">const</span> timeCode <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">twoDigit:twoDigit:twoDigit.mmm</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>timeCode<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"01:17:23.736"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <h2>but timecode come in pairs</h2>
 <p>but generally timecode, for example in subtitles files come in pairs, for example in an srt file, so here's in an example of how we did a regex, but now need to expand on it to match a larger string.</p>
 <pre class="language-ruby"><code class="language-ruby"><span class="token number">00</span><span class="token punctuation">:</span><span class="token number">00</span><span class="token punctuation">:</span><span class="token number">06</span><span class="token punctuation">,</span><span class="token number">500</span> <span class="token operator">--</span><span class="token operator">></span> <span class="token number">00</span><span class="token punctuation">:</span><span class="token number">00</span><span class="token punctuation">:</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">790</span><br>some text from a subtitle file srt </code></pre>
@@ -211,18 +215,24 @@ Such as <code>01:17:23.736</code>  where the milliseconds that can be represente
 <li>Excerpt From: Haverbeke, Marijn. “Eloquent JavaScript.”</li>
 </ul>
 </blockquote>
-<p>for this example if we just consider the string with the timecodes, let's say we have parsed it and isolated it into its own string.</p>
+<p>for this example if we just consider the string with the time-codes, let's say we have parsed it and isolated it into its own string.</p>
 <pre class="language-ruby"><code class="language-ruby"><span class="token number">00</span><span class="token punctuation">:</span><span class="token number">00</span><span class="token punctuation">:</span><span class="token number">06</span><span class="token punctuation">,</span><span class="token number">500</span> <span class="token operator">--</span><span class="token operator">></span> <span class="token number">00</span><span class="token punctuation">:</span><span class="token number">00</span><span class="token punctuation">:</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">790</span></code></pre>
 <p>considering the code written in the previous section, we can now add to it as follow:</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// a simple readable approach to writing regex using variables.</span><br><span class="token keyword">var</span> twoDigit <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><span class="token keyword">var</span> mmm <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><span class="token keyword">var</span> timeCode <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">twoDigit:twoDigit:twoDigit,mmm</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><br><span class="token keyword">var</span> twoTimeCodes <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">timeCode --> timeCode</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>twoTimeCodes<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"00:00:06,500 --> 00:00:10,790"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<p>how much easyer was that? we just had to add this line:</p>
-<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> twoTimeCodes <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">timeCode --> timeCode</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span></code></pre>
-<p>and change what var we were using to run the test to this last one.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token comment">// a simple readable approach to writing regex using variables.</span><br><span class="token keyword">const</span> twoDigit <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{2}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><span class="token keyword">const</span> mmm <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\d{3}</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><span class="token keyword">const</span> timeCode <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">twoDigit:twoDigit:twoDigit,mmm</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><br><span class="token keyword">const</span> twoTimeCodes <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">timeCode --> timeCode</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>twoTimeCodes<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"00:00:06,500 --> 00:00:10,790"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>how much easier was that? we just had to add this line:</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> twoTimeCodes <span class="token operator">=</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">timeCode --> timeCode</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">;</span></code></pre>
+<p>and change what variable we were using to run the test to this last one.</p>
 <pre class="language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>twoTimeCodes<span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"00:00:06,500 --> 00:00:10,790"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 
+
+
+	
 </div>
+        <hr>
+<p class="edit-on-github-link">
+	<small><a href="https://github.com/pietrop/pietrop.github.io/blob/master/./categories/ttqf/2015-05-17-regex.md">Edit this page on GitHub <i class="fab fa-github"></i></a></small>
+</p>
       </main>
-    
       <footer class="footer">
     <nav>
         <ul class="contacts-list">
@@ -254,8 +264,6 @@ Such as <code>01:17:23.736</code>  where the milliseconds that can be represente
                     href="https://www.instagram.com/pietro.ps" target="_blank"
                     rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
             </li>
-
-            
         </ul>
     </nav>
 </footer>
