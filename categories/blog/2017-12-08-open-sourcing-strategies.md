@@ -134,11 +134,11 @@ The biggest advantage of keeping an R&D doc is not only that it makes it easier 
 
 Also useful if working in a team to divide tasks and make sure everybody is in sync. 
 
-## 7 - Screenshots, gifts and (maybe) diagrams
+## 7 - Screenshots, gifs and (maybe) diagrams
 
 When you are done make it really easier for the users to understand what the project does. 
 
-Use screenshots, gifts, Maybe even diagrams. And If needed make a user manual. 
+Use screenshots, gifs, Maybe even diagrams. And If needed make a user manual. 
 
 I would also argue that for this purpose giffs or screenshots driven narrative is more effective than video tutorials. As it is more immediate, and easier to skim.
 
