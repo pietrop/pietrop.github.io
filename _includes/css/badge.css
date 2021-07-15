@@ -1,0 +1,24 @@
+.company-badge{
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    padding: 0.3em;
+    color: white;
+    font-size: 0.6em;
+    width: 100%;
+}
+
+.open-source-badge{
+    margin: 0.5em;
+    border: 1px solid blue;
+    border-radius: 15px;
+    background-color: blue;
+    padding: 0.3em;
+    color: white;
+    font-size: 0.6em;
+    width: 100%;
+}
+
+.edit-on-github-link{
+    text-align: right;
+}

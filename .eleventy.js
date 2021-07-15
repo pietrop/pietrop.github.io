@@ -109,10 +109,6 @@ module.exports = function (eleventyConfig) {
     }).filter(publishedPosts);;
   });
 
-
-
-
-
   return {
     dir: {
       input: "./",      // Equivalent to Jekyll's source property

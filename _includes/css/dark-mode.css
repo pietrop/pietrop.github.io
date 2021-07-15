@@ -1,0 +1,58 @@
+    /* Dark mode */
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: black;
+            color: #B2BEB5;
+        }
+        img {
+            filter: grayscale(30%);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: white;
+        }
+        a:visited {
+            color: #993F5F;
+        }
+        a {
+            color: #036ffc;
+        }
+        /* block code */
+        code {
+            background-color: transparent;
+        }
+        /* inline code */
+        p code, li > code {
+            color: #bf616a;
+        }
+        .nav {
+            background-color: black;
+        }
+        .footer {
+            background-color: black;
+        }
+    }
+
+    /* Light mode */
+
+    @media (prefers-color-scheme: light) {
+        body {
+            background-color: white;
+            color: black;
+            /* transition: background-color 300ms ease-in-out 0s; */
+        }
+        /* inline code */
+        p code, li > code {
+            /* padding: .25em .5em;
+            font-size: 85%; */
+            color: #bf616a;
+            background-color: #f9f9f9;
+            border-radius: 3px;
+        }
+        .nav {
+            background-color: white;
+        }
+        .footer {
+            background-color: white;
+        }
+    }

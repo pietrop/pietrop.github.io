@@ -1,0 +1,52 @@
+/**
+* https://css-tricks.com/media-object-bunch-ways/#with-flexbox
+*/
+
+ .post-condensed-block {
+   margin-bottom: 1em;
+   margin-top: 1em;
+ }
+ .post-condensed-block > img {
+  /* background-color: black; */
+ }
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .post-condensed-block {
+    display: flex;
+    align-items: flex-start;
+    /* padding: 1rem; */
+  }
+  .post-condensed-block > .image-block {
+    width: 40%;
+    margin: 0 1rem 0 0;
+  }
+  .post-condensed-block > .alternative-image-block {
+    width: 40%;
+    margin: 0 1rem 0 0;
+  }
+  .post-condensed-block > div {
+    flex: 1;
+  }
+  .post-condensed-block h2 {
+    font-weight: 500;
+    margin: 0 0 0.5rem 0;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}

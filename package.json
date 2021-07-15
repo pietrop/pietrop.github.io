@@ -8,10 +8,10 @@
     "build": "npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve",
     "serve:watch": "npx @11ty/eleventy --serve --watch",
-    "start":"npm run serve:watch",
+    "start": "npm run serve:watch",
     "dry:run": "npx @11ty/eleventy --dryrun",
-    "deploy": "cp .nojekyll _site/.nojekyll && cp CNAME _site/CNAME && gh-pages -d _site",
-    "build:deploy":"npm run build && npm run pre:deploy"
+    "deploy": "cp .nojekyll _site/.nojekyll && cp CNAME _site/CNAME && cp manifest.json _site/manifest.json && gh-pages -d _site",
+    "build:deploy": "npm run build && npm run pre:deploy"
   },
   "author": "Pietro Passarelli",
   "license": "ISC",
@@ -22,6 +22,7 @@
     "gh-pages": "^3.2.3"
   },
   "dependencies": {
-    "dark-mode-toggle": "^0.8.0"
+    "dark-mode-toggle": "^0.8.0",
+    "nunjucks": "^3.2.3"
   }
 }
