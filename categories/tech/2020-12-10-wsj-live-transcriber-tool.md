@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: "Live transcriber tool - POD"
+title: "Live transcriber tool - POC"
 description: "A technical exploration and proof of concept for a live transcriber tool"
 permalink: "/wsj-live-transcriber-tool.html"
 date: "2020-12-10"
