@@ -1,7 +1,10 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const Image = require("@11ty/eleventy-img");
-
-
+const embedYouTube = require("eleventy-plugin-youtube-embed");
+const pluginTOC = require('eleventy-plugin-nesting-toc');
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require('markdown-it-anchor')
+const liquidJs = require("liquidjs");
 const IMAGES = ["avif", "jpeg", "jpg", "png", "giff", "gif", "webp"];
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
@@ -31,6 +34,10 @@ const publishedPosts = (post) => {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("pdfs");
+  
+
+
+  eleventyConfig.addPlugin(embedYouTube);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
@@ -41,6 +48,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('default', 'layouts/default.html');
   eleventyConfig.addLayoutAlias('page', 'layouts/page.html');
   eleventyConfig.addLayoutAlias('post', 'layouts/post.html');
+  eleventyConfig.addLayoutAlias('post-with-toc', 'layouts/post-with-toc.html');
 
 
   eleventyConfig.addFilter('jsonify', function (variable) {
@@ -108,6 +116,17 @@ module.exports = function (eleventyConfig) {
       return a;
     }).filter(publishedPosts);;
   });
+
+
+  // eleventyConfig.setLibrary(
+  //   'md',
+  //   markdownIt().use(markdownItAnchor)
+  // );
+
+  // eleventyConfig.addPlugin(pluginTOC);
+
+
+ 
 
   return {
     dir: {

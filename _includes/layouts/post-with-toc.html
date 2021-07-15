@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<div class="post">
+	<h1 class="post-title">{{ title }} </h1>
+	<span class="post-date">{{ date |  date: "%Y %b %d"  }} 
+		{% if duration %}
+		| <strong> Duration:</strong> {{ duration }}
+		{% endif %}
+	</span> 
+	{%if company%}<span class="company-badge">{{company}}</span>{% endif %}
+	<br>
+
+	{% if github %}<small><a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer"><i
+				class="fab fa-github" aria-hidden="true"></i> GitHub</a>,</small>{% endif %}
+
+	<!-- optional gitbook link -->
+	{% if gitbook %}<small><a href="{{ gitbook }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"
+				aria-hidden="true"></i> GitBook</a>,</small>{% endif %}
+
+	<!-- project page -->
+	{% if link %}<small>
+		<a href="{{ link }}" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-external-link" aria-hidden="true"></i>
+			Url↗</a>
+	</small>
+	{% endif %}
+	<!-- social media -->
+	{% if youtube %}<small>|
+		<a href="https://youtu.be/{{ youtube }}" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+			Youtube </a>
+	</small>
+	{% endif %}
+
+	{% if vimeo %}<small>|
+		<a href="https://vimeo.com/{{ vimeo }}" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-vimeo-square" aria-hidden="true"></i>
+			Vimeo</a>
+	</small>
+	<br>
+	{% endif %}
+
+
+
+
+	<!-- tech Stack -->
+	{% if tech %}<br><small><strong>Stack: </strong>
+		{% for t in tech %}
+		{{ t }},
+		{% endfor %}
+	</small>
+	<br>
+	<br>
+	{% endif %}
+
+	<!-- image -->
+	{% if image %}
+	{% if categories contains 'tech' or categories contains 'blog' or categories contains 'ttqf' or categories contains
+	'article' %}
+	<div class="image-wrapper">
+		<img src="{{ image }}" alt="{{ description }}" />
+	</div>
+	{% endif %}
+	{% endif %}
+	<!-- description -->
+	{% if description %}
+	<br>
+	{{ description }}
+	{% endif %}
+	<hr>
+
+	{{ content | toc | safe }}
+
+	<!-- content -->
+	{{ content }}
+
+
+	
+</div>

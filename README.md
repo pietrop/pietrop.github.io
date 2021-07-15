@@ -77,7 +77,8 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 - [ Add CNAME file cname](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-add-cname-file-cname)
 - [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
 - [navigation plugin](https://www.11ty.dev/docs/plugins/navigation/)
-- 
+- [Getting Started with Eleventy](https://www.sitepoint.com/getting-started-with-eleventy/)
+
 Dark mode
 - [dark mode](https://jec.fyi/blog/supporting-dark-mode)
 - [detect darkmode system change](https://flaviocopes.com/javascript-detect-dark-mode/)
