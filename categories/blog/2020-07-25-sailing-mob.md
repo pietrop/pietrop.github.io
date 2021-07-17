@@ -390,7 +390,6 @@ Good if you lose sight, or low visibility
 
 [Man overboard rescue turn - Wikipedia](https://en.wikipedia.org/wiki/Man_overboard_rescue_turn#Williamson_turn)
 
-[https://en.wikipedia.org/wiki/Man_overboard_rescue_turn#Williamson_turn](https://en.wikipedia.org/wiki/Man_overboard_rescue_turn#Williamson_turn)
 
 [https://youtu.be/hXyY0BcaxbU](https://youtu.be/hXyY0BcaxbU)
 
