@@ -18,8 +18,10 @@ categories:
 tags:
 ---
 
-<!-- https://unsplash.com/photos/FWoq_ldWlNQ -->
 
+_Cover photo credit [unsplash](https://unsplash.com/photos/FWoq_ldWlNQ )_
+
+## Performance checklist
 - Compress optimise images [`ImageOptim`](https://imageoptim.com/mac)
 - Image sprite `(?)` | Tool: [`SpriteCow`](http://www.spritecow.com/)
 - avoid CSS `@import` to avoid blocking request

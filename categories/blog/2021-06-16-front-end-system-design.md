@@ -421,6 +421,7 @@ Divided into web performance, smoothness and speed.
 - React server side rendering & hydration
 - DOM rendering
 - Smoothness (jank-free)
+- Compute
 
 **Artefacts**
 
@@ -640,6 +641,45 @@ Tools
 > - from [Front-end system design guide](https://bootcamp.uxdesign.cc/front-end-system-design-guide-9a11381f5e81)
 
 Might also be worth having some reference to the inconsistencies of your rendering environment when talking about this - eg How rAF might not be 60fps although a basic example might assume it. [WebGL - Animation](https://webglfundamentals.org/webgl/lessons/webgl-animation.html)
+
+
+### Compute
+#### WebGL
+- [WebGL: 2D and 3D graphics for the web](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
+- [OpenGL ES for the Web](https://www.khronos.org/webgl/)
+- [WebGL](https://en.wikipedia.org/wiki/WebGL)
+#### WebAssembly
+- [webassembly](https://webassembly.org/)
+- [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly)
+
+#### (Web & Service) Workers
+- [https://web.dev/workers-overview/](https://web.dev/workers-overview/)
+
+>There is a big difference in what they are intended for:
+>
+>Web Workers
+>Web Workers provide a simple means for web content to run scripts in background threads. The worker thread can perform tasks without interfering with the user interface. In addition, they can perform I/O using XMLHttpRequest (although the responseXML and channel attributes are always null). Once created, a worker can send messages to the JavaScript code that created it by posting messages to an event handler specified by that code (and vice versa.)
+>[Source - Using Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
+>
+>Service Worker
+>Service workers essentially act as proxy servers that sit between web applications, and the browser and network (when available). They are intended to (amongst other things) enable the creation of effective offline experiences, intercepting network requests and taking appropriate action based on whether the network is available and updated assets reside on the server. They will also allow access to push notifications and background sync APIs.
+>[Source - Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+>
+>So Web Workers are handy to run expensive scripts without causing the user interface to freeze, while Service Workers are useful to modify the response from network requests (for example, when building an offline app).
+>
+> - from [What can service workers do that web workers cannot?](https://stackoverflow.com/questions/38632723/what-can-service-workers-do-that-web-workers-cannot)
+
+- Service worker, based on web worker. 
+- related to caching, 
+- act as a proxy between your page and the requested server
+- setup online behaviour 
+- eg used in firebase cloud messaging on web, to delivery message to client. sitting in background constantly listening then updating the UI.
+
+from [What’s the difference between a Web Worker and a Service Worker?](https://youtu.be/Yq32eUYg6Lc?t=123)
+
+#### SharedArrayBuffer
+- [SharedArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
+- [SharedArrayBuffer updates in Android Chrome 88 and Desktop Chrome 92](https://developer.chrome.com/blog/enabling-shared-array-buffer/)
 
 </details>
 
