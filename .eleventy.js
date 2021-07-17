@@ -1,10 +1,14 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const Image = require("@11ty/eleventy-img");
 const embedYouTube = require("eleventy-plugin-youtube-embed");
-const pluginTOC = require('eleventy-plugin-nesting-toc');
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require('markdown-it-anchor')
-const liquidJs = require("liquidjs");
+// const pluginTOC = require('eleventy-plugin-nesting-toc');
+// const markdownIt = require("markdown-it");
+// const markdownItAnchor = require('markdown-it-anchor');
+// const liquidJs = require("liquidjs");
+const embedTwitter = require("eleventy-plugin-embed-twitter");
+
+// const pluginMdCheckboxes = require("./plugin-md-checkboxes.js");
+
 const IMAGES = ["avif", "jpeg", "jpg", "png", "giff", "gif", "webp"];
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
@@ -33,10 +37,16 @@ const publishedPosts = (post) => {
 };
 
 module.exports = function (eleventyConfig) {
+  // eleventyConfig.addPlugin(pluginMdCheckboxes);  
+  // eleventyConfig.addFilter("markDownCheckBoxes", function(value) {
+  //   console.log('value',value)
+
+  //   return `${value.replace('- [ ] ', '<input type="checkbox"></input>').replace('- [x] ', '<input type="checkbox" checked="true"></input>')}`;
+  // });
+
   eleventyConfig.addPassthroughCopy("pdfs");
-  
 
-
+  eleventyConfig.addPlugin(embedTwitter);
   eleventyConfig.addPlugin(embedYouTube);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
@@ -118,9 +128,19 @@ module.exports = function (eleventyConfig) {
   });
 
 
+
+  // let markdownIt = require("markdown-it");
+  // let options = {
+  //   html: true,
+  //   breaks: true,
+  //   linkify: true
+  // };
+  
+  // eleventyConfig.setLibrary("md", markdownIt(options).use(require('./plugin-markdown-it-checkboxes.js')));
+
   // eleventyConfig.setLibrary(
   //   'md',
-  //   markdownIt().use(markdownItAnchor)
+  //   markdownIt(options).use(markdownItAnchor)
   // );
 
   // eleventyConfig.addPlugin(pluginTOC);

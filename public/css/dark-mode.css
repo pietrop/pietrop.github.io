@@ -31,6 +31,14 @@
         .footer {
             background-color: black;
         }
+
+        details[open] > summary{
+            color:  #993F5F;
+        }
+        
+        details:not([open]) > summary{
+            color: #036ffc;
+        }
     }
 
     /* Light mode */
@@ -54,5 +62,13 @@
         }
         .footer {
             background-color: white;
+        }
+
+        details[open] >summary{
+            color:  #551A8B;
+        }
+        
+        details:not([open])>summary{
+            color: #0000EE;
         }
     }
