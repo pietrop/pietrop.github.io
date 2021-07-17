@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <link href="https://gmpg.org/xfn/11" rel="profile"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pietro's website">
+
+  <title>
+    
+     Pietro
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/style.css" defer>
+  <link rel="stylesheet" href="/public/css/post-element-condesed.css" defer>
+  <link rel="stylesheet" href="/public/css/dark-mode.css" defer>
+  <link rel="stylesheet" href="/public/css/badge.css" defer>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"  defer/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" defer/>
+    <!-- Syntax highlight  -->
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" defer>
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png" defer>
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" async>
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico" async>
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png" async>
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png" async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png" async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png" async>
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png" async>
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png" async>
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png" async>
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32" async>
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png" async>
+  <meta name="theme-color" content="#ffffff">
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png" async>
+  <!-- ////////// Favicons end ////////// -->
+</head>
+
+<body class="default-pages">
+  <div class="container">
+    <div class="wrapper">
+      <header class="header">
+        Pietro Passarelli 
+        
+        <nav class="nav">
+    <ul class="menu-list">
+        <li>
+            <a class="sidebar-nav-item" href="/">
+                About</a>
+        </li>
+
+        
+
+        <li> <a class="" href="/categories/video">
+
+                
+                Videos
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/tech">
+
+                
+                Tech
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/ttqf">
+
+                
+                Tips Tricks & Quick Fix
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/blog">
+
+                
+                Blog
+                
+            </a> </li>
+        
+
+
+        <li> <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank"
+                rel="noopener noreferrer">
+                Photos↗</a>
+        </li>
+    </ul>
+</nav>
+      </header>
+      <main class="main"> 
+        
+<div class="post">
+	<h1 class="post-title">A framework for Front End System Design interviews - draft </h1>
+	<span class="post-date">2021 Jun 16 
+		
+	</span> 
+	
+	<br>
+
+	<small><a href="https://github.com/pietrop/" target="_blank" rel="noopener noreferrer"><i
+				class="fab fa-github" aria-hidden="true"></i> GitHub</a>,</small>
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	
+	<!-- social media -->
+	
+
+	
+
+
+
+
+	<!-- tech Stack -->
+	
+
+	<!-- image -->
+	
+	
+	<div class="image-wrapper">
+		<img src="/img/front-end-system-design/js-min-cover.jpeg" alt="Walk through of a framework I've used in Front End System Design interviews." />
+	</div>
+	
+	
+	<!-- description -->
+	
+	<br>
+	Walk through of a framework I've used in Front End System Design interviews.
+	
+	<hr>
+
+	<!-- content -->
+	<p><em>Cover photo credit <a href="https://unsplash.com/photos/cvBBO4PzWPg">unsplash</a></em></p>
+<h2>Overview</h2>
+<p>A (tentative) framework that you can follow when doing your front end system design interview.</p>
+<p>If you are not familiar with Front end system design interviews, you can think of it similar to a <a href="https://en.wikipedia.org/wiki/Case_interview">case interview</a>.</p>
+<p>In practice front end system design interviews are at risk of being fairly unstructured, as the interviewer is relying on you to drive the presentation. So this is a a (tentative) framework that you can follow when doing front end system design interview. To cover most of the ground the interviewer might be interested in.</p>
+<p>Most of these sections come from examples of front end system design interviews on blogs and youtube.</p>
+<p>For each you'll find a summary of what to cover, and example of the corresponding artefacts you'll need to produce (eg bullet point list, wirferames, diagram, json data structure etc..)</p>
+<!-- For more details you can go to the page for each section. -->
+<p>Here is worth mentioning that front end system design interviews are relatively new compare to the full stack once. Depending on who your interviewers are (eg they are front end, backend and/or full stack), the scope of the role and how the team is organized ( eg are you really just on the front end or are you expected to stretch into the backend a bit?) your front end system design interview might be a bit of a hybrid where some aspects of a system design interview might come up. But not to worry, at the end will review some high level concepts from (full stack) system design that you should be familiar with.</p>
+<p>Another thing I noticed is that they can be micro or macro. Eg it could be starting from a whole system, or it could start already zeroed in on a &quot;widget&quot; type component and then potentially exploring how that's wired up to the rest of the system. You should prepare for both.</p>
+<p>Note that to avoid breaking the flow I've added a &quot;More details&quot; expandable section that provides further explanations as well as links to go deeper in certain topics for each section.</p>
+<h2>Tooling</h2>
+<p>If you are doing this type of interview in a remote/online settings, these are some of the tooling that is often used. In some places you can choose and bring your own. Others might have a preferred one.</p>
+<ul>
+<li><a href="https://www.invisionapp.com/freehand">Free Online Whiteboard For Team Collaboration | InVision</a></li>
+<li><a href="https://docs.google.com/drawings/">Google Drawings - create diagrams and charts, for free.</a></li>
+<li><a href="http://draw.io/">Flowchart Maker &amp; Online Diagram Software</a></li>
+</ul>
+<details>
+    <summary>More details</summary>
+<p>Another option is to use google doc, and add google drawing in for the various parts that require sketches and/ or diagram, as well as <a href="https://workspace.google.com/marketplace/app/code_blocks/100740430168">google doc extension to format code and add syntax highlight to code</a>. This is closer to what I'd when making a planning doc for a real project, but it's unlikely you'll use google doc in an interview settings.</p>
+</details>
+<h2>Overview of the sections</h2>
+<ol>
+<li>🗒️ Requirements gathering</li>
+<li>📓 Define Scope + MVP</li>
+<li>🕶️ Data entities</li>
+<li>♟️ API end points</li>
+<li>🏠 Client side components architecture<br>
+5.1 🏡 Components Architecture - Wireframes<br>
+5.2 🌴 Components Tree - diagram</li>
+<li>🚀 Optimization &amp; performance</li>
+<li>🚑 Accessibility</li>
+<li>🥗 Testing Strategy</li>
+<li>🕵️ Security</li>
+<li>🏢 Full Stack System design consideration</li>
+</ol>
+<p>Ok, let's dive into it</p>
+<hr>
+<h2>1. 🗒️ Requirements gathering</h2>
+<ul>
+<li>What is the goal?</li>
+<li>What is the problem statement?
+<ul>
+<li>Are there assumptions that stand out we are instantly making about the problem statement?</li>
+<li>We should verify those with the interviewer</li>
+</ul>
+</li>
+<li>Number of users?</li>
+<li>Expected traffic?</li>
+<li>Multi device support
+<ul>
+<li>eg mobile vs separate iOS/Android native app?</li>
+<li>Do we follow a mobile first design approach?</li>
+<li>Do we even need the &quot;desktop version&quot;?</li>
+<li>If mobile responsive, would the &quot;desktop version&quot; have feature parity with &quot;mobile version&quot;?</li>
+</ul>
+</li>
+<li>Do we need to consider AMP?  (Eg via NextJs or parallel)</li>
+<li>And SEOs?</li>
+<li>Internationalization?</li>
+<li>Offline support?</li>
+<li>Browser targets? (eg latest device for latest OS? and/or IE?)</li>
+<li>Do you need to consider AMP?</li>
+</ul>
+<details>
+    <summary>More details</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Non-functional_requirement">Non-functional requirement</a></li>
+</ul>
+</details>
+<p><strong>Artefact</strong></p>
+<ul>
+<li>notes, eg (virtual) post it</li>
+<li>bullet points</li>
+</ul>
+<h2>2. 📓 Define Scope + MVP</h2>
+<ul>
+<li>identify part of the system to focus on</li>
+<li>eg core
+<ul>
+<li>Features</li>
+<li>APIs</li>
+<li>Interactions</li>
+<li>Interfaces</li>
+</ul>
+</li>
+<li>list of TODO(s)
+<ul>
+<li>...</li>
+</ul>
+</li>
+<li>list of NOT-TODO(s)
+<ul>
+<li>Eg AMP?</li>
+<li>SEOs?</li>
+<li>Offline support?</li>
+</ul>
+</li>
+</ul>
+<p><strong>Artefact</strong></p>
+<ul>
+<li>notes, eg (virtual) post it</li>
+<li>Two lists, one for TODO and one for NOT-TODO</li>
+<li>bullet points</li>
+</ul>
+<details>
+    <summary>More details</summary>
+<p><strong>Scope</strong></p>
+<blockquote>
+<p>After understanding the problem, we need to decide what the scope is going to be. Well, we cannot design a perfect system because there will be limited time i.e only 45 mins to 1 hour. So we need to pick those parts in which we are more confident. Don’t do the parts that you are not good at.</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>The scope cannot be a perfect service, but the core parts should appeal to an interviewer within 45 minutes.</li>
+<li>List up the <strong>TODO</strong> and <strong>NOT-TODO</strong>( Check with the Interviewer ). The NOT-TODO should be also listed down, to show that we are aware of the not-todo but due to time constraints, we will not be able to do that.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>What’s the volume of the service and how many team members.</p>
+</blockquote>
+<p>from <a href="https://bootcamp.uxdesign.cc/front-end-system-design-guide-9a11381f5e81">Front-end system design guide</a></p>
+<p><strong>MVP( Minimum Viable Product)</strong></p>
+<blockquote>
+<p>What is the MVP( Minimum Viable Product) — List of Core features like Core APIs, Core interactions, and Core interfaces.</p>
+</blockquote>
+<blockquote>
+<p>What is the core spec (based on the MVP)— What are the problems we need to handle, What are the edge cases, and What the tricky part is.</p>
+</blockquote>
+<blockquote>
+<p>What is the MVP — List of Core features like Core APIs, Core interactions, and Core interfaces.</p>
+</blockquote>
+<p>from <a href="https://bootcamp.uxdesign.cc/front-end-system-design-guide-9a11381f5e81">Front-end system design guide</a></p>
+<p><strong>Framework for Breaking down a complex problem</strong><br>
+I wrote a separate mini framework for <a href="/complex-problem.html">Approaching a complex problems</a>. This might be overkill for most exercise, but is a good way I found for breaking down a complex problem by dividing it into parts, phases and identifying crucial points. And could be useful as a fallback if narrowing down the scope doesn't come easy straight off the bat.</p>
+</details>
+<h2>3. 🕶️ Data entities</h2>
+<ul>
+<li>Representation of client side data. Eg Data Models / schemas / json.</li>
+<li>Sometimes this might include client side functions used to manipulate the data (might revisit in point <strong>5 🏠 Client side components architecture</strong>)</li>
+<li>Do you need &quot;foreign keys&quot; and or ways to express relationship between data or is it all in one json object? and if so are there payload size considerations etc..</li>
+</ul>
+<p><strong>Artefact</strong></p>
+<ul>
+<li>Json objects representation for various entities</li>
+</ul>
+<pre class="language-jsx"><code class="language-jsx"><span class="token punctuation">{</span> <br>	<span class="token string">"id"</span><span class="token operator">:</span> <span class="token string">"1234-45-5"</span><span class="token punctuation">,</span> <span class="token comment">// user UID</span><br>	<span class="token string">"name"</span><span class="token operator">:</span> <span class="token string">"Jim"</span><span class="token punctuation">,</span><br>	<span class="token operator">...</span><br><span class="token punctuation">}</span></code></pre>
+<h2>4. ♟️ API end points</h2>
+<ul>
+<li>Functions to get set data from backend interfaces</li>
+<li>It could also be described as series of REST API end points, but if described as functions it has the advantage that it abstracts from the client server communication implementation. Eg you could use socket, graphQL etc..)</li>
+<li>You should check with your interviewer if they prefer function interfaces or rest API end point, but don't jump ahead, see <strong>Network communication</strong> considerations first.</li>
+</ul>
+<p><strong>Artefact</strong></p>
+<ul>
+<li>functions names and parameters (interface)</li>
+</ul>
+<p>eg</p>
+<pre class="language-jsx"><code class="language-jsx"><span class="token function">getPost</span><span class="token punctuation">(</span>apiKey<span class="token punctuation">,</span>userId<span class="token punctuation">,</span> postId<span class="token punctuation">)</span></code></pre>
+<p>and/or REST end points</p>
+<pre><code>/user/:userId/posts/:postI
+</code></pre>
+<h3>Network communication</h3>
+<p>This might include a conversation around network communication</p>
+<p>Also are you connecting to the backend via a <strong>REST API</strong>, web socket etc.. or are you using GraphQL etc...</p>
+<ol>
+<li>
+<p>For data updates in real-time web applications, there are three ways:</p>
+<ul>
+<li>Long/short <strong>Polling</strong> (client pull) — For stocks application</li>
+<li><strong>Long-Polling</strong><br>
+The client sends request to the server to check if anything has change
+but the server, if nothing has changed, holds on to the request until there's something new and then it responds.
+This might time out, and then the client sends another request.</li>
+<li><strong>WebSockets</strong><br>
+(server push)—For chat application</li>
+<li><strong>Server-Sent Events</strong>
+server push (<strong>SSE</strong>) —For stocks application</li>
+</ul>
+</li>
+<li>
+<p>Backend for FrontEnd(<strong>BFF</strong>) — API aggregatingThe BFF will do the following:</p>
+<ul>
+<li>As the name suggests is a pattern where each front end (eg mobile, web, etc..), has its own dedicated backend that preps the data for it.</li>
+<li>Call the relevant micro services APIs and obtain the needed data</li>
+<li>Format the data based on the frontend representation</li>
+<li>Send the formatted data to the frontend</li>
+</ul>
+</li>
+<li>
+<p><strong>GraphQL</strong> — It provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need</p>
+</li>
+<li>
+<p><strong>Caching / HTTP2</strong> — caching get APIs</p>
+</li>
+</ol>
+<details>
+    <summary>More details</summary>
+<p>Brush up on REST</p>
+<ul>
+<li><a href="https://www.educative.io/courses/web-application-software-architecture-101/qADAzX6yorR">What is a REST API?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Representational_state_transfer">Representational state transfer</a> (see <a href="https://en.wikipedia.org/wiki/Representational_state_transfer#Architectural_constraints">Architectural constraints</a> section)</li>
+</ul>
+<p>Server side network communications options</p>
+<ul>
+<li><a href="https://javascript.info/long-polling">Long polling</a></li>
+<li><a href="https://www.pubnub.com/blog/http-long-polling/">What is HTTP Long Polling?</a></li>
+<li><a href="https://javascript.info/websocket">WebSocket</a></li>
+<li><a href="https://javascript.info/server-sent-events">Server Sent Events</a></li>
+</ul>
+<p><strong>BFF</strong></p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends">Backends for Frontends pattern</a></li>
+<li><a href="https://samnewman.io/patterns/architectural/bff/">Pattern: Backends For Frontends</a></li>
+</ul>
+<p><strong>GraphQL</strong></p>
+<ul>
+<li><a href="https://graphql.org/">GraphQL</a></li>
+<li><a href="https://www.theavocoder.com/graphql">React + Apollo Client + GraphQL Yoga</a></li>
+</ul>
+<p><strong>Caching / HTTP2</strong></p>
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/performance/http2">Introduction to HTTP/2</a></li>
+<li><a href="https://en.wikipedia.org/wiki/HTTP/2">HTTP/2</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTTP_2">HTTP/2</a></li>
+<li><a href="https://blog.cloudflare.com/http-2-for-web-developers/">HTTP/2 For Web Developers</a></li>
+<li><a href="https://www.smashingmagazine.com/2016/02/getting-ready-for-http2/">Getting Ready For HTTP2: A Guide For Web Designers And Developers</a></li>
+<li><a href="https://mattwilcox.net/web-development/http2-for-front-end-web-developers">HTTP2 for front-end web developers</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP">Evolution of HTTP</a></li>
+</ul>
+</details>
+<h2>5. 🏠 Client side components architecture</h2>
+<p>Most likely we can assume you'll be using React for your front end system design architecture.</p>
+<p>React is considered to be a library and not a framework, as is equivalent to the View in MVC.</p>
+<!-- https://twitter.com/lizkenyon07/status/1400158134950301698?s=20 -->
+<p>Is also common to use a pattern where you just use React, and have some of the parent components be responsible for fetching the data from the backend.</p>
+<p>Possibly with react router, if it's a the SPA (single page application) that requires multiple view.</p>
+<p>None the less, being able to mention other front end architecture patterns might be a good to know. eg MVC, MVVM, MVP.</p>
+<p>As well as other libraries and frameworks you might be familiar with, such as backboneJs, Vue, Angular, Ember, Rails, Django etc... if appropriate. In the context of trade off vs current choice.<br>
+Or NextJS.</p>
+<p>As well as potentially <a href="https://redux.js.org/">Redux</a> and/or the concept of immutable state. or <a href="https://reactjs.org/docs/hooks-reference.html#usereducer"><code>useReducer</code></a> in react hooks.</p>
+<p><strong>Artifacts</strong></p>
+<ul>
+<li>Mostly considerations and things you might mention and potentially use in the next two sections <strong>5.1</strong> and <strong>5.2</strong>.</li>
+<li>Potentially use to add to the overall diagram.</li>
+</ul>
+<!-- For more see -->
+<details>
+    <summary>More details</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel">MVVM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter">MVP - Model view presenter</a></li>
+</ul>
+<h4>MVC</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Model–view–controller</a></li>
+<li><a href="https://guides.rubyonrails.org/getting_started.html#mvc-and-you">Rails guides - MVC and you</a></li>
+</ul>
+<p>A reference diagram of the parts of Rails MVC
+<img src="/img/front-end-system-design/rails_prezi_overview.png" alt="Rails prezi overview "></p>
+<h4>Redux</h4>
+<ul>
+<li><a href="https://css-tricks.com/learning-react-redux/">Leveling Up with React: Redux</a></li>
+<li><a href="https://nabendu82.medium.com/react-redux-tutorials-for-beginners-1-8be4abc76048">React Redux tutorials for beginners- 1</a></li>
+<li><a href="https://www.freecodecamp.org/learn/front-end-libraries/#redux">Free code camp - redux</a></li>
+<li><a href="https://redux.js.org/faq/general#:~:text=Redux%20is%20most%20useful%20when%20in%20cases%20when%3A&amp;text=The%20app%20state%20is%20updated,is%20being%20updated%20over%20time">Redux FAQ: General</a></li>
+</ul>
+<h4>Immutable data structures</h4>
+<p>The concept of Immutable Data Structures to keep track of state.</p>
+<ul>
+<li><a href="https://css-tricks.com/learning-react-redux/#immutable-data-structures">Immutable Data Structures</a></li>
+<li><a href="https://www.sitepoint.com/immutability-javascript/">Immutability in JavaScript</a></li>
+<li><a href="https://reactkungfu.com/2015/08/pros-and-cons-of-using-immutability-with-react-js/">Pros and Cons of using immutability with React.js</a></li>
+</ul>
+<p>On the practice ofusing ES6 spread operator to keep the state immutable</p>
+<blockquote>
+<p>you cannot reliably use the Object Spread Operator (...) for deep cloning objects.</p>
+</blockquote>
+<ul>
+<li><a href="https://redux.js.org/usage/structuring-reducers/immutable-update-patterns">Immutable Update Patterns</a></li>
+<li><a href="https://www.tiny.cloud/blog/mutable-vs-immutable-javascript/">Tiny Programming Principles: Immutability</a></li>
+<li><a href="https://itnext.io/why-concept-of-immutability-is-so-damn-important-for-a-beginner-front-end-developer-8da85b565c8e">Why the concept of immutability is so awfully important for a beginner front-end developer?</a></li>
+</ul>
+<h4>When to use Redux?</h4>
+<ul>
+<li><a href="https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367">You Might Not Need Redux</a></li>
+<li><a href="https://stackoverflow.com/questions/36631761/when-should-i-add-redux-to-a-react-app">When should I add Redux to a React app?</a></li>
+<li><a href="https://reactjs.org/docs/hooks-reference.html#usereducer">React hooks <code>useReducer</code></a></li>
+</ul>
+<!-- Might also include   -->
+</details>
+<h3>5.1 🏡 Components Architecture - Wireframes</h3>
+<ul>
+<li>Component architecture</li>
+<li>layout (sketch/wireframe - user flow/interaction)</li>
+<li>Visually identify components on the page</li>
+<li>Presentational and Container Component</li>
+<li>Mention whether you'd need a design system (eg collaborating on a cross functional team etc.. ie <a href="https://storybook.js.org/">storybook</a>)</li>
+</ul>
+<p><strong>Artefacts</strong></p>
+<ul>
+<li>Wireframe sketches
+<ul>
+<li>If an isolated component, eg a widget than just zoom in on it</li>
+<li>otherwise pages/views, eg design YoutTube, Instagram, Twitter etc..</li>
+</ul>
+</li>
+</ul>
+<!-- - eg sketch for a commenting functionality in a:
+
+![Framework%20d779c8afb4ce49f38ace585f6f375207/article-blog-wireframe.png](Framework%20d779c8afb4ce49f38ace585f6f375207/article-blog-wireframe.png) -->
+<p>Eg this could be a starting point sketch for youtube player. To then decide what to focus on, eg the list of recommended video on the side. The thumbnail that appear when you scrub on the player, the commenting section etc..
+<img src="/img/front-end-system-design/front-end-system-design-youtube-sketch.png" alt="Example of sketch for YouTube "></p>
+<details>
+    <summary>More details</summary>
+<ul>
+<li><a href="https://reactjs.org/docs/thinking-in-react.html">Thinking in React</a> (for how to break down the UI into a component hierarchy)</li>
+<li><a href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0">Container/Component Architecture</a> (possibly an out of date pattern?)</li>
+<li>Think about the user flow</li>
+</ul>
+</details>
+<h3>5.2 🌴 Components Tree - diagram</h3>
+<ul>
+<li>Further Component tree
+<ul>
+<li>Component hierarchy. How the component relate to one an other, and or pass data to one another.</li>
+<li>Eg presentational components</li>
+</ul>
+</li>
+<li>Highlighting the data flow</li>
+<li>And the fetch entry points (in the diagram)</li>
+<li>Possible UI patterns, eg
+<ul>
+<li>Optimistic UI</li>
+<li>List virtualization</li>
+<li>Recursive lists (eg hackernews or reddit comment section)</li>
+</ul>
+</li>
+<li>UI State
+<ul>
+<li>Two way data binding vs unidirectional</li>
+<li>Passive or reactive programming model</li>
+</ul>
+</li>
+</ul>
+<p><strong>Artefacts</strong></p>
+<ul>
+<li>diagram</li>
+</ul>
+<!-- - eg
+
+    ![Framework%20d779c8afb4ce49f38ace585f6f375207/Screen_Shot_2021-06-13_at_2.52.31_PM.png](Framework%20d779c8afb4ce49f38ace585f6f375207/Screen_Shot_2021-06-13_at_2.52.31_PM.png) -->
+<details>
+    <summary>More details</summary>
+<p>This could also include UI Patterns, such as:</p>
+<ul>
+<li><strong>Optimistic UI</strong>
+<blockquote>
+<p>Optimistic UI aims to show the final state of the UI before an operation is actually finished. This will appear snappier and more fluid to the user. One of the most prominent examples are chat-based apps, like Messages, Whatsapp and Facebook Messenger. When you send a message, it is immediately shown in the chat, even though it is not yet sent through the network. It may take some time to send it, especially if you have a slow internet connection, so you’re shielding the user from “the waiting experience”.</p>
+</blockquote>
+<ul>
+<li><a href="https://medium.com/distant-horizons/using-optimistic-ui-to-delight-your-users-ac819a81d59a#:~:text=Optimistic%20UI%20aims%20to%20show,Messages%2C%20Whatsapp%20and%20Facebook%20Messenger">Optimistic UI</a></li>
+</ul>
+</li>
+<li><strong>Virtual list</strong>
+<ul>
+<li><a href="https://dev.to/nishanbajracharya/what-i-learned-from-building-my-own-virtualized-list-library-for-react-45ik">Virtual List</a></li>
+<li><a href="https://dev.to/bnevilleoneill/rendering-large-lists-with-react-virtualized-2p8b">Rendering large lists with React Virtualized</a></li>
+<li><a href="https://medium.com/outsystems-engineering/virtualizing-the-virtual-dom-pushing-react-further-d76a16e5f209">Virtualizing The Virtual DOM — Pushing React Further</a></li>
+</ul>
+</li>
+<li><strong>List recursion</strong>
+<ul>
+<li><a href="https://coderrocketfuel.com/article/recursion-in-react-render-comments-with-nested-children">list recursion</a></li>
+<li><a href="https://scotch.io/@jagadeshanh/build-nested-commenting-system-using-laravel-and-vuejs-part-1">Build nested commenting system using Laravel and VueJs - Part 1</a></li>
+<li><a href="http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/">Managing Hierarchical Data in MySQL</a></li>
+</ul>
+</li>
+</ul>
+</details>
+<h3>Fetching end points for the data.</h3>
+<p>Consider how to ensure fast access to the backend data, by defining fetching end points for the data. Where do we fetch it, and how do we pass it.</p>
+<p>You can use a component tree diagram to show this.</p>
+<details>
+    <summary>More details</summary>
+<ul>
+<li>from <a href="https://youtu.be/5vyKhm2NTfw?t=1105">YouTube [Front End System Design] - Facebook News Feed</a></li>
+</ul>
+</details>
+<h2>6. 🚀 Optimization &amp; performance</h2>
+<p>Divided into web performance, smoothness and speed.</p>
+<ul>
+<li>Page performance</li>
+<li>Images</li>
+<li>SVG</li>
+<li>Lazy loading and code/bundle splitting</li>
+<li>Skeleton loading</li>
+<li>Bundle size reduction</li>
+<li>Fast initial load time</li>
+<li>RAIL model</li>
+<li>Load</li>
+<li>Network</li>
+<li>Metrics</li>
+<li>Service workers</li>
+<li>SSR - Server Side Rendering</li>
+<li>React server side rendering &amp; hydration</li>
+<li>DOM rendering</li>
+<li>Smoothness (jank-free)</li>
+</ul>
+<p><strong>Artefacts</strong></p>
+<ul>
+<li>probably mostly just notes and adjustments to the diagram</li>
+</ul>
+<details>
+    <summary>More details</summary>
+<p><em>There's a lot to be said about performance, and it would probably deserve it's own separate post, probably even severals. But for now here are some things worth taking into consideration and expanding on.</em></p>
+<h3>Page performance</h3>
+<blockquote>
+<p>1.preload / prefetch resources - When to prefetch and preload resources.
+2.Code splitting
+a. Skeleton loading<br>
+3.Caching / CDN<br>
+4.Service worker/offline<br>
+5.Lazy-load<br>
+6.Auto pager<br>
+7.Infinite scroll<br>
+8.SSR/initial data feed<br>
+9.Within viewport update(API .etc)</p>
+<ul>
+<li>from <a href="https://towardsdev.com/website-performance-optimization-267b28b877df">Website Performance Optimization: The Definitive Guide</a></li>
+</ul>
+</blockquote>
+<p><a href="/web-performance-optimization-checklist.html">see also separete post on web performance optimization checklist</a></p>
+<h4>About Images</h4>
+<ol>
+<li>Compress</li>
+<li>Lazy Load / placeholder</li>
+<li>Progressive images</li>
+<li>Use SVG for icons</li>
+<li>Caching / http2</li>
+</ol>
+<h4>About SVG</h4>
+<p>The pros/cons of SVG, creating the edge cases/poor cross-browser support, sometimes more trouble than it's worth.</p>
+<ul>
+<li><a href="https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/">Responsive Images Done Right: A Guide To <code>&lt;picture&gt;</code> And <code>srcset</code></a></li>
+</ul>
+<h4>Lazy loading and code/bundle splitting</h4>
+<ul>
+<li>Lazy loading</li>
+<li>bundle splitting</li>
+<li>Code splitting</li>
+</ul>
+<h4>Skeleton loading</h4>
+<p><img src="https://assets.digitalocean.com/articles/alligator/react/skeleton-screens-react-and-react-native/youtube-skeleton.png" alt="YouTube Sekeleton loading"></p>
+<ul>
+<li><a href="https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a">Everything you need to know about skeleton screens</a></li>
+<li><a href="https://uxdesign.cc/stop-using-a-loading-spinner-theres-something-better-d186194f771e">Stop Using A Loading Spinner, There’s Something Better</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/react-skeleton-screens-react-and-react-native">How To use Skeleton Screens in React and React Native</a></li>
+<li><a href="https://material-ui.com/components/skeleton/">Skeleton</a></li>
+</ul>
+<h4>Bundle size reduction</h4>
+<ul>
+<li>Bundle size reduction</li>
+<li>Tree shaking</li>
+<li>Dynamic imports</li>
+</ul>
+<h4>Fast initial load time</h4>
+<ul>
+<li>App shell architecture</li>
+<li>SSR</li>
+<li>Caching</li>
+<li>Rehydrate application state from prev. cached state</li>
+<li><a href="https://web.dev/fast/">Fast load times</a></li>
+</ul>
+<h4>RAIL model</h4>
+<ul>
+<li><a href="https://web.dev/rail/">Measure performance with the RAIL model</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/RAIL">RAIL</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Performance/How_long_is_too_long">Recommended Web Performance Timings: How long is too long?</a></li>
+</ul>
+<blockquote>
+<p>RAIL model from Google
+RAIL is a user-centric performance model that provides a structure for thinking about performance.
+RAIL is an acronym for “Response, Animation, Idle and Load.” The model categorises user interactions under these four domains. Users have different expectations whenever they tap, click on or scroll over your various page elements. Therefore, the RAIL model measures each user interaction with different context-specific goals in mind.</p>
+</blockquote>
+<blockquote>
+<p>1)<strong>Response:</strong> process events in under 50ms (100ms)</p>
+<ul>
+<li>To ensure a visible response within 100 ms, process user input events within 50 ms. This applies to most inputs, such as clicking buttons, toggling form controls, or starting animations. This does not apply to touch drags or scrolls.</li>
+<li>Though it may sound counterintuitive, it’s not always the right call to respond to user input immediately. You can use this 100 ms window to do other expensive work, but be careful not to block the user. If possible, do work in the background.</li>
+<li>For actions that take longer than 50 ms to complete, always provide feedback.
+2) <strong>Animation</strong>: produce a frame in 10 ms (frame within 10ms)</li>
+<li>Produce each frame in an animation in 10 ms or less. Technically, the maximum budget for each frame is 16 ms (1000 ms / 60 frames per second ≈ 16 ms), but browsers need about 6 ms to render each frame, hence the guideline of 10 ms per frame.</li>
+<li>Aim for visual smoothness. Users notice when frame rates vary.
+3) <strong>Idle</strong>: maximize idle time (use idle time, 50ms)</li>
+<li>Maximize idle time to increase the odds that the page responds to user input within 50 ms.
+4) <strong>Load</strong>: deliver content and become interactive in under 5 seconds</li>
+<li>When pages load slowly, user attention wanders, and users perceive the task as broken. Sites that load quickly have longer average sessions, lower bounce rates, and higher ad viewability.</li>
+</ul>
+</blockquote>
+<p>from <a href="https://bootcamp.uxdesign.cc/front-end-system-design-guide-9a11381f5e81#ed88">Front-end system design guide - RAIL model from Google</a></p>
+<h4>Load</h4>
+<blockquote>
+<ol>
+<li>DOMContentLoaded <strong>-</strong> gives you a feel for how long it took for the HTML to load so that the page can start rendering content.</li>
+<li>Load - when all the resources are loaded ( resources are parsed and get acknowledged off before DOMContentLoaded)</li>
+<li><strong>First contentful Paint(FCP)</strong> event relates to the moment when the first element from the DOM appears in the users’ browser.</li>
+<li><strong>First Meaningful Paint</strong> (deprecated)- the time it takes for a page’s primary content to appear on the screen.</li>
+<li><strong>Speed Index</strong> - shows how quickly the contents of a page are visibly populated.</li>
+<li><strong>First CPU Idle</strong> (ready to interact, deprecated)- marks the first time at which the page’s main thread is quiet enough to handle input.</li>
+<li><strong>Time To (fully) Interactive(TTI)</strong> the amount of time it takes for the page to be fully interactive.</li>
+<li><strong>First Input Delay (FID)</strong> measures the time from when a user first interacts with a page to the time when the browser is actually able to respond to that interaction.</li>
+<li>Total Blocking Time - measures the total amount of time between First Contentful Paint (FCP) and Time to Interactive (TTI) where the main thread was blocked for long enough to prevent input responsiveness.</li>
+<li>Largest Contentful Paint (2.5s)- measures when the largest content element in the viewport becomes visible. It can be used to determine when the main content of the page has finished rendering on the screen.</li>
+</ol>
+</blockquote>
+<p>from <a href="https://bootcamp.uxdesign.cc/front-end-system-design-guide-9a11381f5e81#ed88">Front-end system design guide - RAIL model from Google</a></p>
+<h4>Network</h4>
+<ul>
+<li>Lazy vs eager loading</li>
+<li>Service Worker</li>
+<li>Caching API requests</li>
+</ul>
+<h4>Metrics</h4>
+<ol>
+<li>DOMContentLoaded</li>
+<li>Load</li>
+<li>First Contentful Paint</li>
+<li>First Meaning Paint (deprecated)</li>
+<li>Speed Index</li>
+<li>First CPU Idle (ready to interact, deprecated)</li>
+<li>Time To (fully) Interactive:</li>
+<li>First Input delay</li>
+<li>Total Blocking Time(from FCP to TTI)</li>
+<li>Largest Contentful Paint (2.5s)</li>
+</ol>
+<ul>
+<li><a href="https://web.dev/metrics/">metrics</a></li>
+</ul>
+<h4>Service workers</h4>
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/primers/service-workers">Service Workers: an Introduction</a></li>
+<li><a href="https://jakearchibald.com/2019/service-workers-tpac/">Service workers at TPAC</a></li>
+</ul>
+<h4>SSR - Server Side Rendering</h4>
+<ul>
+<li><a href="https://youtu.be/GQzn7XRdzxY">What is Server-Side Rendering? (Server-side Rendering with JavaScript Frameworks)</a></li>
+<li><a href="https://nextjs.org/docs/basic-features/pages">NextJs Pages</a></li>
+<li><a href="https://github.com/reactwg/react-18/discussions/37">New Suspense SSR Architecture in React 18</a></li>
+</ul>
+<h4>React Server Components</h4>
+<ul>
+<li><a href="https://reactjs.org/blog/2020/12/21/data-fetching-with-react-server-components.html">Introducing Zero-Bundle-Size React Server Components</a></li>
+</ul>
+<div class="eleventy-plugin-embed-twitter"><blockquote id="tweet-1341842274217566210" class="twitter-tweet"><a href="https://twitter.com/pietropassarell/status/1341842274217566210"></a></blockquote></div><script src="https://platform.twitter.com/widgets.js" charset="utf-8" async></script>
+<ul>
+<li><a href="https://youtu.be/DuSa5E-GgwU">React Server Components (with Next.js Demo)</a></li>
+</ul>
+<h4>React server side rendering &amp; hydration</h4>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> ReactDOMServer <span class="token keyword">from</span> <span class="token string">'react-dom/server'</span><span class="token punctuation">;</span><br>ReactDOMServer<span class="token punctuation">.</span><span class="token function">renderToString</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span></code></pre>
+<blockquote>
+<p>If you call <code>ReactDOM.hydrate()</code> on a node that already has this server-rendered markup, React will preserve it and only attach event handlers, allowing you to have a very performant first-load experience.</p>
+</blockquote>
+<ul>
+<li><a href="https://reactjs.org/docs/react-dom.html#hydrate"><code>hydrate()</code></a></li>
+<li><a href="https://reactjs.org/docs/react-dom-server.html"><code>ReactDOMServe</code></a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/react-server-side-rendering">How to Enable Server-Side Rendering for a React App</a></li>
+<li><a href="https://www.freecodecamp.org/news/server-side-rendering-your-react-app-in-three-simple-steps-7a82b95db82e/">How to implement server-side rendering in your React app in three simple steps</a></li>
+</ul>
+<h3>DOM rendering</h3>
+<ul>
+<li>Critical rendering path
+<ul>
+<li><a href="https://hackernoon.com/optimising-the-front-end-for-the-browser-f2f51a29c572#.znpo4up4m">Optimising the front end for the browser</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path">Critical Rendering Path</a></li>
+</ul>
+</li>
+<li><a href="https://web.dev/progressive-web-apps/">(PWA)Progressive web app</a></li>
+<li>Reduce browser reflows and when to promote an element to the GPU</li>
+<li>Differences between the browser layout, compositing and painting</li>
+<li>Memory leaks</li>
+<li>Caching</li>
+<li>Network Waterfall</li>
+<li>Script attributes
+Script attributes- Async,defer, preconnect, prefetch, preload
+<ul>
+<li><a href="https://www.html5rocks.com/en/tutorials/speed/script-loading/">Deep dive into the murky waters of script loading</a></li>
+<li><a href="https://v8.dev/features/modules">JavaScript modules</a></li>
+<li><a href="https://youtu.be/IrHmpdORLu8">YouTube - async vs defer attributes in Javascript | Ola Interview Question</a></li>
+<li><a href="https://addyosmani.com/blog/lazy-loading/">Native image lazy-loading for the web!</a></li>
+</ul>
+</li>
+<li>gzip
+<ul>
+<li><a href="https://rajaraodv.medium.com/two-quick-ways-to-reduce-react-apps-size-in-production-82226605771a">Two Quick Ways To Reduce React App’s Size In Production</a></li>
+<li>re-gizp it seems like it might improve performance, but reduce compatibility?
+see this comment
+<blockquote>
+<p>Cloudfront, the CDN based on S3 by Amazon compresses for you. By looking at our analytics, 5% of users do not accept gzip as a valid encoding right now in prod for our websites.</p>
+<ul>
+<li>from <a href="https://github.com/facebook/create-react-app/issues/1908#issuecomment-295497575">github - facebook/create-react-app - issue <code>#1908</code> &quot;Compress when building&quot;</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p>Courses</p>
+<ul>
+<li><a href="https://www.udacity.com/course/website-performance-optimization--ud884">Udacity - Website Performance Optimization</a></li>
+<li><a href="https://frontendmasters.com/courses/web-performance/">JavaScript Performance</a></li>
+</ul>
+<p>Case studies</p>
+<ul>
+<li><a href="https://medium.com/airbnb-engineering/building-a-faster-web-experience-with-the-posttask-scheduler-276b83454e91">Building a Faster Web Experience with the postTask Scheduler</a></li>
+</ul>
+<p>Tools</p>
+<ul>
+<li><a href="https://web.dev/measure/">Measure</a></li>
+</ul>
+<h4>resources</h4>
+<ul>
+<li><a href="https://www.keycdn.com/blog/frontend-optimization">Frontend Optimization - 9 Tips to Improve Web Performance</a></li>
+<li><a href="https://web.dev/why-speed-matters/">Why does speed matter?</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/get-started">developers.google.com - loading performance</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/rendering">Rendering Performance</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/architecture/app-shell">The App Shell Model</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/page-speed-rules-and-recommendations#avoid_css_imports">PageSpeed Rules and Recommendations</a></li>
+<li><a href="https://web.dev/fast/">Fast load times</a></li>
+<li><a href="https://web.dev/learn-web-vitals/">Web Vitals</a></li>
+<li><a href="https://web.dev/metrics/">Metrics</a></li>
+<li><a href="https://developers.google.com/speed/docs/insights/LeverageBrowserCaching">Leverage Browser Caching</a></li>
+<li><a href="https://bootcamp.uxdesign.cc/front-end-system-design-guide-9a11381f5e81">Front-end system design guide &gt; Smoothness: The basic goal is to make it jank-free.</a></li>
+</ul>
+<h3>Smoothness (jank-free)</h3>
+<blockquote>
+<ol>
+<li>Instant go back (Page Stack/Global state/API caching)</li>
+<li>Instant go forward (Skeleton / Loading indicator / Above-the-fold)</li>
+<li>Instant interaction response (Accessibility — A11y, Passive listener, support Design guidelines)</li>
+<li>Make it native-like Animation/Transitions/Gestures</li>
+<li>Make it native-like UI components.</li>
+</ol>
+<ul>
+<li>from <a href="https://bootcamp.uxdesign.cc/front-end-system-design-guide-9a11381f5e81">Front-end system design guide</a></li>
+</ul>
+</blockquote>
+<p>Might also be worth having some reference to the inconsistencies of your rendering environment when talking about this - eg How rAF might not be 60fps although a basic example might assume it. <a href="https://webglfundamentals.org/webgl/lessons/webgl-animation.html">WebGL - Animation</a></p>
+</details>
+<h2>7.  🚑 Accessibility</h2>
+<ul>
+<li>Accessibility tree
+<ul>
+<li>HTML elements in top to bottom of the page, regardless of CSS positioning(?)</li>
+</ul>
+</li>
+<li>Use native HTML elements
+<ul>
+<li>semantic HTML</li>
+<li>vs &quot;Div Soup&quot;</li>
+</ul>
+</li>
+<li>Use <code>a</code> for
+<ul>
+<li>internal navigation</li>
+<li>outwards link</li>
+<li>Use custom style to make it look like a btn if needed by the design</li>
+</ul>
+</li>
+<li>Use <code>button</code>(s) for
+<ul>
+<li>feature that require clicks within the page,
+<ul>
+<li>eg widgets like collapse, accordion, <a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/tabs/tabs-2/tabs.html">tab widget</a> etc..</li>
+</ul>
+</li>
+<li>eg use custom style to make it look like a link if needed by the design</li>
+</ul>
+</li>
+<li>keyboard navigation
+<ul>
+<li>Keep and show focus</li>
+<li>Tab navigation</li>
+<li><code>tabindex=&quot;0&quot;</code></li>
+</ul>
+</li>
+<li>When to use <code>nav</code>?</li>
+<li>Link to go back to the top of page</li>
+<li><code>alt</code> attribute for non descriptive images
+<ul>
+<li>leave blank <code>alt=&quot;&quot;</code> for decorative images</li>
+</ul>
+</li>
+<li>aria attributes
+<ul>
+<li>aria attribute to elements with description</li>
+<li>aria attribute to exclude elements not relevant to screen reader (eg decorative images)</li>
+</ul>
+</li>
+<li>...</li>
+</ul>
+<p><strong>Artefacts</strong></p>
+<ul>
+<li>Probably mostly just notes and adjustments to the diagram</li>
+</ul>
+<details>
+    <summary>More details</summary>
+<h3>Learning resources</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">MDN - Accessibility</a></li>
+<li><a href="https://web.dev/accessible/">web.dev - Accessible to all</a></li>
+<li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG) Overview</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/accessibility">Accessibility</a></li>
+<li><a href="https://youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g">A11ycasts with Rob Dodson</a></li>
+<li><a href="https://webaim.org/intro/">WebAIM - Introduction to Web Accessibility</a></li>
+<li><a href="https://fvsch.com/styling-buttons">Styling buttons, the right way</a></li>
+<li><a href="https://www.freecodecamp.org/learn/responsive-web-design/#applied-accessibility">Applied Accessibility</a></li>
+</ul>
+<h3>Other</h3>
+<ul>
+<li><a href="https://medium.com/@mandy.michael/building-websites-for-safari-reader-mode-and-other-reading-apps-1562913c86c9">Building websites for Safari Reader Mode and other reading apps.</a></li>
+<li><a href="https://www.smashingmagazine.com/2018/12/voiceover-screen-reader-web-apps/">I Used The Web For A Day Using A Screen Reader</a></li>
+<li><a href="https://www.smashingmagazine.com/2018/07/web-with-just-a-keyboard/">I Used The Web For A Day With Just A Keyboard</a></li>
+<li><a href="https://open.nytimes.com/a-more-accessible-web-fa87592da6d2">A More Accessible Web</a></li>
+</ul>
+<h3>Semantic HTML</h3>
+<ul>
+<li><a href="https://ux.shopify.com/semantic-html-the-unbearable-rightness-of-being-9b3c493e1791?gi=9f4671eb1680#.m5d0oty4r">Semantic HTML: The Unbearable Rightness of Being</a></li>
+<li><a href="https://www.hongkiat.com/blog/html-5-semantics/">A Look Into Proper HTML5 Semantics</a></li>
+<li><a href="http://html5doctor.com/lets-talk-about-semantics/">Let’s Talk about Semantics</a></li>
+<li><a href="https://brucelawson.co.uk/2018/the-practical-value-of-semantic-html/">The practical value of semantic HTML</a></li>
+<li><a href="https://tink.uk/understanding-semantics/">Understanding semantics</a></li>
+<li><a href="https://web.dev/use-semantic-html/">Use semantic HTML for easy keyboard wins</a></li>
+<li><a href="http://wtfforms.com/">WTF, forms?</a> - (styling form elements)</li>
+</ul>
+<p><img src="http://html5doctor.com/downloads/h5d-sectioning-flowchart.png" alt="HTML5 semantic diagram"></p>
+<h3>Media accessibility</h3>
+<ul>
+<li><a href="https://web.dev/media-accessibility/">Media accessibility</a></li>
+</ul>
+<h3>Check list(s)</h3>
+<ul>
+<li><a href="https://www.a11yproject.com/checklist/">a11yproject</a></li>
+<li><a href="https://webaim.org/standards/wcag/checklist">webaim checklist</a></li>
+<li><a href="https://www.wuhcag.com/wcag-checklist/">WCAG Checklists</a></li>
+<li><a href="http://accessibility.voxmedia.com/#engineers">voxmedia accessibility #engineers</a></li>
+</ul>
+<h3>React Accessibility</h3>
+<ul>
+<li><a href="https://reactjs.org/docs/accessibility.html">React Accessibility</a></li>
+<li><a href="https://www.freecodecamp.org/news/designing-keyboard-accessibility-for-complex-react-experiences/">How to Design Keyboard Accessibility for Complex React Experiences</a></li>
+</ul>
+</details>
+<h2>8. 🥗  Testing Strategy</h2>
+<p>Frame it more in terms of a testing strategy. And pick and chose what's most appropriate for the project based on constraints. Eg some tests are more time consuming then others (eg End to End) and others are more insightful to quickly identify a bug 🐛 (eg Integration tests)</p>
+<p>Testing strategy that strikes the Right balance between adding confidence in the code base as well as ability to make changes without introducing bugs. Especially within a team.</p>
+<p>Eg Snapshot test/screenshot testing can be potentially a premature optimization - definitely valuable for stable projects, but could indure progress on WIP MVP.</p>
+<p>Type of tests at a high level</p>
+<ol>
+<li><strong>Linting</strong>, also kind of test to enforce best practices during development, at commit etc.. (<a href="https://eslint.org/">ESLint</a>)</li>
+<li><strong>Typechecking</strong>, eg <a href="https://reactjs.org/docs/typechecking-with-proptypes.html">PropTypes</a> for React</li>
+<li><strong>Unit test</strong> - a single function or service (<a href="https://jestjs.io/">Jest</a>)</li>
+<li><strong>Component test</strong> - a single component - functionality (<a href="https://jestjs.io/">jest</a>/<a href="https://github.com/enzymejs/enzyme">Enzyme</a>)</li>
+<li><strong>Snapshot Test</strong> - a single component - visual regression testing, eg changes against previous versions (Jest, <a href="https://percy.io/">percy.io</a>, <a href="https://garris.github.io/BackstopJS/">backstopJS</a>)</li>
+<li><strong>End to End Test</strong> - Interaction between multiple components, usually from point of view of a user (<a href="https://www.cypress.io/">Cypress</a>)</li>
+<li><strong>Performance test</strong> - How the app performs in difference environment</li>
+<li><strong>Coverage tests</strong> - How much of your application of the app is covered by tests</li>
+<li><strong>Browser Testing</strong> -  Test how the app/page renders across browsers, devices and operating systems, manual or automated. Can return screenshots.(<a href="https://www.browserstack.com/">Browser Stack</a>)</li>
+<li><strong>Testing calls to API end points</strong> - Test modules and/or components that perform HTTP requests in isolation, by mocking the server end points to validate the request (<a href="https://github.com/nock/nock">Nock</a>)</li>
+</ol>
+<p>Also</p>
+<ul>
+<li><strong>QA</strong> - Manual or automated, same dev team or dedicated team.</li>
+<li><strong>BDD</strong> Tests - Behavior driven development (<a href="https://cucumber.io/">cucumber</a>)</li>
+<li>Tests can also be connected to deployment, eg to be run automatically in the background with PR reviews etc..</li>
+</ul>
+<details>
+    <summary>More details</summary>
+<p>See separate post on <a href="/testing-strategy.html">testing strategy</a></p>
+</details>
+<h2>9.🕵️ Security</h2>
+<ul>
+<li>CORS</li>
+<li>ClickJacking</li>
+<li>SQL Injection</li>
+<li><code>a target= _blank rel= noopener noreferrer</code></li>
+<li>CSP - Content security policy</li>
+<li>HTTPS</li>
+<li></li>
+</ul>
+<details>
+    <summary>More details</summary>
+<h3>CORS</h3>
+<ul>
+<li><a href="https://youtu.be/tcLW5d0KAYE">YouTube - CORS, Preflight Request, OPTIONS Method | Access Control Allow Origin Error Explained</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html">HTML5 Security Cheat Sheet</a></li>
+</ul>
+<blockquote>
+<p>At first, cross-origin requests were forbidden. But as a result of long discussions, cross-origin requests were allowed, but with any new capabilities requiring an explicit allowance by the server, expressed in special headers.</p>
+<p>from - <a href="https://javascript.info/fetch-crossorigin">Fetch: Cross-Origin Requests</a></p>
+</blockquote>
+<ul>
+<li><a href="https://dev.to/lydiahallie/cs-visualized-cors-5b8h#sameorigin">Same-Origin Policy</a></li>
+</ul>
+<h3>CSRF attack</h3>
+<ul>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html">Cross-Site Request Forgery Prevention Cheat Sheet</a></li>
+</ul>
+<h3>Cross site scripting XSS</h3>
+<ul>
+<li><a href="https://www.pluralsight.com/courses/defeating-cross-site-scripting-content-security-policy">Defeating Cross-site Scripting with Content Security Policy</a></li>
+<li><a href="https://benhoyt.com/writings/dont-sanitize-do-escape/">Don’t try to sanitize input. Escape output.</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">Cross Site Scripting Prevention Cheat Sheet</a></li>
+</ul>
+<h3>Clickjacking</h3>
+<ul>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html">Clickjacking Defense Cheat Sheet</a></li>
+</ul>
+<h3>CSP - Content security policies</h3>
+<ul>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">Content Security Policy Cheat Sheet</a></li>
+</ul>
+<h3>HTTPS</h3>
+<ul>
+<li><a href="https://web.dev/why-https-matters/">Why HTTPS matters</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html">REST Security Cheat Sheet</a></li>
+</ul>
+<h2><code>a target=&quot;_blank&quot; rel=noopener</code></h2>
+<pre class="language-diff"><code class="language-diff"><span class="token deleted-sign deleted"><span class="token prefix deleted">-</span><span class="token line"> &lt;a href="http://example.com"><br></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line"> &lt;a href="http://example.com" target="_blank" rel="noopener"> <br></span></span><span class="token unchanged"><span class="token prefix unchanged"> </span><span class="token line">  Example site<br></span></span><span class="token deleted-arrow deleted"><span class="token prefix deleted">&lt;</span><span class="token line">/a></code></pre>
+<ul>
+<li><a href="https://jakearchibald.com/2016/performance-benefits-of-rel-noopener/">The performance benefits of <code>rel=noopener</code></a></li>
+<li><a href="https://mathiasbynens.github.io/rel-noopener/">About <code>rel=noopener</code></a></li>
+</ul>
+<h3>Other</h3>
+<ul>
+<li><a href="https://web.dev/secure/">web.dev - Safe and secure</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/security">Security and Identity</a></li>
+</ul>
+<h3>Escape text</h3>
+<ul>
+<li><a href="http://shebang.mintern.net/foolproof-html-escaping-in-javascript/">Foolproof HTML escaping in Javascript</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Web_Service_Security_Cheat_Sheet.html">Web Service Security Cheat Sheet</a></li>
+</ul>
+<h3>courses</h3>
+<ul>
+<li><a href="https://www.apress.com/gp/book/9781484241516">The Full Stack Developer</a> - (book, chapter on security, as an overview)</li>
+<li><a href="http://cs75.tv/2012/summer/">CS75.tv Building Dynamic Websites</a>, lecture 8 on security</li>
+</ul>
+</details>
+<h2>10. 🏢 Full Stack System design consideration</h2>
+<p>Full stack system design, should in theory be out of scope for the front end system design interview. But is not uncommon that the interviewer might have full stack experience, and might test the limit of your architecture and backend knowledge. So it doesn't hurt to have a high level understanding of some of these concepts.</p>
+<ul>
+<li>Caching</li>
+<li>load balancing</li>
+<li>Database choice</li>
+<li>Database schema</li>
+<li>Replication</li>
+<li>Sharding</li>
+<li>...</li>
+</ul>
+<p><strong>Artefacts</strong></p>
+<ul>
+<li>extending the above with:
+<ul>
+<li>diagram</li>
+<li>Schema</li>
+<li>notes</li>
+<li>etc...</li>
+</ul>
+</li>
+</ul>
+<details>
+    <summary>More details</summary>
+<ul>
+<li><a href="https://youtu.be/REB_eGHK_P4">YouTube - Systems Design Interview Concepts (for software engineers / full-stack web)</a></li>
+</ul>
+<h3>Load balancing</h3>
+<p>Distribute traffic to many web services. Helps with throughput, latency, scalability.</p>
+<p>Eg put load balancer in front of servers.</p>
+<p>Various techniques for load balancing</p>
+<ol>
+<li>NGINX, route requests to IP addresses</li>
+<li>DNS load balancing, given a domain name it can resolve to various IP address
+<ol>
+<li>No need dedicated machine,</li>
+<li>but less customizable</li>
+</ol>
+</li>
+</ol>
+<p>You can setup rules for load balancing</p>
+<ol>
+<li>round robin</li>
+<li>Hashing on the ip address</li>
+<li>figuring out which machine has the least load and assigning traffic to it</li>
+<li>figuring out which machines are offline, and remove traffic from it</li>
+<li>etc..</li>
+</ol>
+<p>The database is generally more critical to high traffic then the server tho</p>
+<ul>
+<li><a href="https://www.educative.io/courses/grokking-the-system-design-interview/3jEwl04BL7Q">eductive.io - Load Balancing</a></li>
+<li><a href="https://www.freecodecamp.org/news/systems-design-for-interviews/">System Design Interview Questions – Concepts You Should Know</a> - long read</li>
+<li></li>
+</ul>
+<h3>Caching</h3>
+<p>You can insert an in memory caching layer, eg NYT returning articles.</p>
+<p>Eg you can set it to 24 hours cache</p>
+<ul>
+<li>memcache</li>
+<li>redis</li>
+<li>cassandra</li>
+</ul>
+<p>CDN to cache static assets files</p>
+<ul>
+<li>images</li>
+<li>videos</li>
+<li>javascrit</li>
+<li>html</li>
+<li>css</li>
+</ul>
+<p>CDN is a global network of servers. Located geographically closer to your users.</p>
+<p>it decrease loads on your server.</p>
+<p>CDN techniques</p>
+<ol>
+<li>Pull technique. First request &quot;slow&quot; but then cached to CND for subsequent requests.</li>
+<li>Push technique. Faster first request, but higher upfront cost. And might get to CND end points that don't end up being used.</li>
+</ol>
+<p>if users uploading images, then distributed file system, eg like S3</p>
+<ul>
+<li><a href="https://www.educative.io/courses/grokking-the-system-design-interview/3j6NnJrpp5p">eductive.io - Caching</a></li>
+<li><a href="https://lethain.com/introduction-to-architecting-systems-for-scale/">Introduction to architecting systems for scale</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cache_(computing)">Cache</a></li>
+</ul>
+<h3>Database choice</h3>
+<ul>
+<li>SQL vs NoSQL</li>
+<li>Most often chose SQL but know the difference
+<ul>
+<li>eg relational databse (tables) vs collections and documents (&quot;json&quot;)</li>
+</ul>
+</li>
+</ul>
+<h4>NoSQL</h4>
+<p>Non relational. Collections and documents.</p>
+<p>Key value pairs models. Can scale automatically across machines.</p>
+<p>Common</p>
+<ul>
+<li>MongoDB</li>
+<li>DynamoDB, AWS</li>
+<li>Firebase/Firestore, GCP</li>
+</ul>
+<p>Also can use hybrid approach.</p>
+<p>Eg for an active chat server. you can use NoSQL or in memory table.</p>
+<p>And relational DB like MySQL for a user table.</p>
+<h3>Database schema</h3>
+<ul>
+<li>For SQL the tables, primary keys, indexes etc.. joins</li>
+</ul>
+<p>define</p>
+<ul>
+<li>tables</li>
+<li>primary keys</li>
+<li>indices</li>
+</ul>
+<p>Replication, slave master replication. One database you write to and others copies for read only.</p>
+<h3>Scaling</h3>
+<ul>
+<li>Web server</li>
+<li>image/assets server</li>
+<li>database server,</li>
+</ul>
+<p>Web server —&gt; Load balancer</p>
+<p>image/assets server —&gt; CDN</p>
+<p>Database server —→</p>
+<ul>
+<li>caching</li>
+<li>indexes</li>
+<li>replication</li>
+</ul>
+<p>scaling Database writes</p>
+<h4>Sharding</h4>
+<p>Database sharing as a way of handling scaling</p>
+<p>Database <strong>sharding</strong>, splitting up database in multiple master database for the purpose of write.</p>
+<ul>
+<li><strong>vertical</strong> sharing, splitting multiple individual tables across different machines.</li>
+<li><strong>Horizontal</strong> sharing, splitting a single table (eg tweets) across multiple machines. Various ways to do it. Most common, user id mod by number of machines you want to allocate user id to. Eg 5 master machines for that table. this routes the user id to a specific machine.</li>
+</ul>
+<h4>Replication</h4>
+<p>Database replication as way to handle traffic</p>
+<h3>API Design</h3>
+<p>Client &amp; server.</p>
+<p>How do they communicate with each other? What are functions and methods they use?</p>
+<p>Data transfer mechanism?</p>
+<ul>
+<li>JSON</li>
+<li>protocol buffer</li>
+</ul>
+<p>How to handle security</p>
+<p>offline usage</p>
+<p>how to make it fast</p>
+<h3>Resources</h3>
+<ul>
+<li><a href="https://youtu.be/quLrc3PbuIw">YouTube - A friendly introduction to System Design</a></li>
+<li><a href="https://youtu.be/-W9F__D3oY4">CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan</a></li>
+<li><a href="https://youtu.be/gNQ9-kgyHfo">Amazon System Design Preparation (SIP)</a></li>
+<li><a href="https://youtu.be/uzeJb7ZjoQ4">System Design Mock Interview: Design Facebook Messenger</a></li>
+<li><a href="https://www.apress.com/gp/book/9781484241516">The Full Stack Developer</a> - Designing Systems Chapter 4</li>
+<li><a href="https://www.freecodecamp.org/news/how-to-system-design-dda63ed27e26/">Crack the System Design interview: tips from a Twitter software engineer</a></li>
+<li><a href="https://github.com/donnemartin/system-design-primer">system design primer</a></li>
+<li><a href="https://youtu.be/KYExYE_9nIY">YouTube - Design Reddit: System Design Mock Interview</a></li>
+<li><a href="https://www.educative.io/courses/grokking-the-system-design-interview/m2yDVZnQ8lG">Designing Instagram</a></li>
+<li><a href="https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR">Designing a URL Shortening service like TinyURL</a></li>
+<li><a href="https://www.aosabook.org/en/distsys.html">Scalable Web Architecture and Distributed Systems</a></li>
+</ul>
+</details>
+<h2>Cheatsheet framework list</h2>
+<p>This list below is a summary of the above and it is something you can use on the day.</p>
+<p>One option is to list these points in a &quot;virtual&quot; post it note at the beginning of the interview. And walk your interviewer through how you are planning to approach the problem. However use with caution as if you are not super strong on some of these points you might not want to draw unnecessary attention to it, use your own judgement on how much of the framework you'd want to make explicit.</p>
+<p>You should also make it clear that you are open to ver off into different direction at any points if they have questions or things they'd like to focus on. There's generally not enough time to cover everything and is not uncommon that you might be asked to jump around to see if you can overall cover more ground.</p>
+<pre><code>1. Requirements gathering 
+2. Define Scope + MVP
+3. Data entities 
+4. API end points
+5. Client side components architecture 
+	5.1 Components Architecture - Wireframes
+	5.2 Components Tree - diagram
+6. Optimization &amp; performance
+7. Accessibility 
+8. Testing Strategy
+9. Security
+10. Full Stack System design consideration
+</code></pre>
+<hr>
+<p>Special thanks to <a href="https://twitter.com/kavyaSukumar">Kavya</a> and <a href="https://twitter.com/joshrayman">Josh</a> for reviewing and providing feedback on my initial draft.</p>
+<!-- Was this helpful? did you use it to prep for an interview? did I miss something? let me know on twitter [@pietropassarell](https://twitter.com/pietropassarell) -->
+
+
+
+	
+</div>
+        <hr>
+<p class="edit-on-github-link">
+	<small><a href="https://github.com/pietrop/pietrop.github.io/blob/master/./categories/blog/2021-06-16-front-end-system-design.md">Edit this page on GitHub <i class="fab fa-github"></i></a></small>
+</p>
+      </main>
+      <footer class="footer">
+    <nav>
+        <ul class="contacts-list">
+            <li>
+                <a
+                    href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+                    class="author-social" target="_blank" rel="noopener noreferrer">
+                    <i class="far fa-envelope"></i>
+                    E-mail</a> <span></span>
+            </li>
+            <li>
+                <a 
+                    href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> 
+                    <i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+                <a 
+                    href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub</a>
+            </li>
+            <li>
+                <a 
+                    href="https://uk.linkedin.com/in/pietropassarelli" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+            </li>
+
+            <li>
+                <a 
+                    href="https://www.instagram.com/pietro.ps" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+    </div>
+  </div>
+  <script>
+    // Logic to adjust syntax highlighting based on whether dark mode is on 
+    // in the system or not
+    const prismEl = document.querySelector('#prism-css');
+    const DARK = 'dark';
+    const LIGHT = 'light';
+    const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+
+    function init() {
+      const DARK = 'dark';
+      const LIGHT = 'light';
+      const isSystemDarkMode = matchMedia &&
+        matchMedia('(prefers-color-scheme: dark)').matches;
+
+      if (isSystemDarkMode) {
+        prismEl.href = PRISM_DARK_URL;
+      }
+
+      // Event listener to change with system change
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const changedColourScheme = e.matches ? DARK : LIGHT;
+        if (changedColourScheme === DARK) {
+          prismEl.href = PRISM_DARK_URL;
+        } else {
+          prismEl.href = PRISM_LIGHT_URL;
+        }
+      });
+    }
+
+    init();
+  </script>
+</body>
+
+</html>
