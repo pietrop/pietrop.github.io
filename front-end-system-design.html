@@ -231,17 +231,17 @@
 <li>Browser targets? (eg latest device for latest OS? and/or IE?)</li>
 <li>Do you need to consider AMP?</li>
 </ul>
-<details>
-    <summary>More details</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Non-functional_requirement">Non-functional requirement</a></li>
-</ul>
-</details>
 <p><strong>Artefact</strong></p>
 <ul>
 <li>notes, eg (virtual) post it</li>
 <li>bullet points</li>
 </ul>
+<details>
+    <summary>More details</summary>
+<ul>
+<li>Are there <a href="https://en.wikipedia.org/wiki/Non-functional_requirement">Non-functional requirements</a> we need to consider?</li>
+</ul>
+</details>
 <h2>2. 📓 Define Scope + MVP</h2>
 <ul>
 <li>identify part of the system to focus on</li>
@@ -253,6 +253,7 @@
 <li>Interfaces</li>
 </ul>
 </li>
+<li>Edge cases?</li>
 <li>list of TODO(s)
 <ul>
 <li>...</li>
@@ -274,7 +275,7 @@
 </ul>
 <details>
     <summary>More details</summary>
-<p><strong>Scope</strong></p>
+<h3><strong>Scope</strong></h3>
 <blockquote>
 <p>After understanding the problem, we need to decide what the scope is going to be. Well, we cannot design a perfect system because there will be limited time i.e only 45 mins to 1 hour. So we need to pick those parts in which we are more confident. Don’t do the parts that you are not good at.</p>
 </blockquote>
@@ -288,7 +289,7 @@
 <p>What’s the volume of the service and how many team members.</p>
 </blockquote>
 <p>from <a href="https://bootcamp.uxdesign.cc/front-end-system-design-guide-9a11381f5e81">Front-end system design guide</a></p>
-<p><strong>MVP( Minimum Viable Product)</strong></p>
+<h3><strong>MVP( Minimum Viable Product)</strong></h3>
 <blockquote>
 <p>What is the MVP( Minimum Viable Product) — List of Core features like Core APIs, Core interactions, and Core interfaces.</p>
 </blockquote>
@@ -299,13 +300,14 @@
 <p>What is the MVP — List of Core features like Core APIs, Core interactions, and Core interfaces.</p>
 </blockquote>
 <p>from <a href="https://bootcamp.uxdesign.cc/front-end-system-design-guide-9a11381f5e81">Front-end system design guide</a></p>
-<p><strong>Framework for Breaking down a complex problem</strong><br>
-I wrote a separate mini framework for <a href="/complex-problem.html">Approaching a complex problems</a>. This might be overkill for most exercise, but is a good way I found for breaking down a complex problem by dividing it into parts, phases and identifying crucial points. And could be useful as a fallback if narrowing down the scope doesn't come easy straight off the bat.</p>
+<h3><strong>Framework for Breaking down a complex problem</strong></h3>
+<p>I wrote a separate mini framework for <a href="/complex-problem.html">Approaching a complex problems</a>. This might be overkill for most exercise, but is a good way I found for breaking down a complex problem by dividing it into parts, phases and identifying crucial points. And could be useful as a fallback if narrowing down the scope doesn't come easy straight off the bat.</p>
 </details>
 <h2>3. 🕶️ Data entities</h2>
 <ul>
 <li>Representation of client side data. Eg Data Models / schemas / json.</li>
-<li>Sometimes this might include client side functions used to manipulate the data (might revisit in point <strong>5 🏠 Client side components architecture</strong>)</li>
+<li>Sometimes this might include client side functions used to manipulate the data</li>
+<li>You might revisit in point <strong>5 🏠 Client side components architecture</strong></li>
 <li>Do you need &quot;foreign keys&quot; and or ways to express relationship between data or is it all in one json object? and if so are there payload size considerations etc..</li>
 </ul>
 <p><strong>Artefact</strong></p>
@@ -328,8 +330,14 @@ I wrote a separate mini framework for <a href="/complex-problem.html">Approachin
 <p>and/or REST end points</p>
 <pre><code>/user/:userId/posts/:postI
 </code></pre>
+<details>
+    <summary>More details</summary>
+<ul>
+<li><a href="https://youtu.be/HvSsGjxy7so">YouTube - Developing Food Ordering App in 1 hour | Machine Coding Frontend Interview</a></li>
+</ul>
+</details>
 <h3>Network communication</h3>
-<p>This might include a conversation around network communication</p>
+<p>This section might include a conversation around network communication</p>
 <p>Also are you connecting to the backend via a <strong>REST API</strong>, web socket etc.. or are you using GraphQL etc...</p>
 <ol>
 <li>
@@ -424,8 +432,10 @@ Or NextJS.</p>
 <li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Model–view–controller</a></li>
 <li><a href="https://guides.rubyonrails.org/getting_started.html#mvc-and-you">Rails guides - MVC and you</a></li>
 </ul>
-<p>A reference diagram of the parts of Rails MVC
-<img src="/img/front-end-system-design/rails_prezi_overview.png" alt="Rails prezi overview "></p>
+<!-- A reference diagram of the parts of Rails MVC
+![Rails prezi overview ](/img/front-end-system-design/rails_prezi_overview.png)
+
+If you have Prezi you can download the full presentation [Prezi Rails Diagram presentation](/img/front-end-system-design/Rails%20Overview.pez) -->
 <h4>Redux</h4>
 <ul>
 <li><a href="https://css-tricks.com/learning-react-redux/">Leveling Up with React: Redux</a></li>
@@ -477,7 +487,7 @@ Or NextJS.</p>
 <!-- - eg sketch for a commenting functionality in a:
 
 ![Framework%20d779c8afb4ce49f38ace585f6f375207/article-blog-wireframe.png](Framework%20d779c8afb4ce49f38ace585f6f375207/article-blog-wireframe.png) -->
-<p>Eg this could be a starting point sketch for youtube player. To then decide what to focus on, eg the list of recommended video on the side. The thumbnail that appear when you scrub on the player, the commenting section etc..
+<p>Eg this could be a starting point sketch for front end system design for the YouTube player, to then decide what to focus on, eg the list of recommended video on the side, or the thumbnail that appear when you scrub on the player, or the commenting section etc..
 <img src="/img/front-end-system-design/front-end-system-design-youtube-sketch.png" alt="Example of sketch for YouTube "></p>
 <details>
     <summary>More details</summary>
@@ -620,7 +630,7 @@ a. Skeleton loading<br>
 <li>Code splitting</li>
 </ul>
 <h4>Skeleton loading</h4>
-<p><img src="https://assets.digitalocean.com/articles/alligator/react/skeleton-screens-react-and-react-native/youtube-skeleton.png" alt="YouTube Sekeleton loading"></p>
+<p><img src="/img/front-end-system-design/youtube-skeleton.png" alt="YouTube Sekeleton loading"></p>
 <ul>
 <li><a href="https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a">Everything you need to know about skeleton screens</a></li>
 <li><a href="https://uxdesign.cc/stop-using-a-loading-spinner-theres-something-better-d186194f771e">Stop Using A Loading Spinner, There’s Something Better</a></li>
@@ -867,8 +877,7 @@ Service workers essentially act as proxy servers that sit between web applicatio
 </li>
 <li>Use native HTML elements
 <ul>
-<li>semantic HTML</li>
-<li>vs &quot;Div Soup&quot;</li>
+<li>semantic HTML vs &quot;Div Soup&quot;</li>
 </ul>
 </li>
 <li>Use <code>a</code> for
@@ -908,6 +917,7 @@ Service workers essentially act as proxy servers that sit between web applicatio
 <li>aria attribute to exclude elements not relevant to screen reader (eg decorative images)</li>
 </ul>
 </li>
+<li>Media accessibility (eg audio, video - captions, transcripts etc..)</li>
 <li>...</li>
 </ul>
 <p><strong>Artefacts</strong></p>
@@ -944,7 +954,7 @@ Service workers essentially act as proxy servers that sit between web applicatio
 <li><a href="https://web.dev/use-semantic-html/">Use semantic HTML for easy keyboard wins</a></li>
 <li><a href="http://wtfforms.com/">WTF, forms?</a> - (styling form elements)</li>
 </ul>
-<p><img src="http://html5doctor.com/downloads/h5d-sectioning-flowchart.png" alt="HTML5 semantic diagram"></p>
+<p><img src="/img/front-end-system-design/h5d-sectioning-flowchart.png" alt="HTML5 semantic diagram"></p>
 <h3>Media accessibility</h3>
 <ul>
 <li><a href="https://web.dev/media-accessibility/">Media accessibility</a></li>
@@ -964,11 +974,11 @@ Service workers essentially act as proxy servers that sit between web applicatio
 </details>
 <h2>8. 🥗  Testing Strategy</h2>
 <p>Frame it more in terms of a testing strategy. And pick and chose what's most appropriate for the project based on constraints. Eg some tests are more time consuming then others (eg End to End) and others are more insightful to quickly identify a bug 🐛 (eg Integration tests)</p>
-<p>Testing strategy that strikes the Right balance between adding confidence in the code base as well as ability to make changes without introducing bugs. Especially within a team.</p>
-<p>Eg Snapshot test/screenshot testing can be potentially a premature optimization - definitely valuable for stable projects, but could indure progress on WIP MVP.</p>
+<p>Testing strategy that strikes the Right balance between adding confidence in the code base as well as ability to make changes without introducing bugs. Especially when working within a team.</p>
+<p>Eg Snapshot test/screenshot testing can be potentially a premature optimization - definitely valuable for stable projects, but could endure progress on work in progress MVP.</p>
 <p>Type of tests at a high level</p>
 <ol>
-<li><strong>Linting</strong>, also kind of test to enforce best practices during development, at commit etc.. (<a href="https://eslint.org/">ESLint</a>)</li>
+<li><strong>Linting</strong>, also kind of a test to enforce best practices during development, at commit etc.. (<a href="https://eslint.org/">ESLint</a>)</li>
 <li><strong>Typechecking</strong>, eg <a href="https://reactjs.org/docs/typechecking-with-proptypes.html">PropTypes</a> for React</li>
 <li><strong>Unit test</strong> - a single function or service (<a href="https://jestjs.io/">Jest</a>)</li>
 <li><strong>Component test</strong> - a single component - functionality (<a href="https://jestjs.io/">jest</a>/<a href="https://github.com/enzymejs/enzyme">Enzyme</a>)</li>
@@ -997,7 +1007,7 @@ Service workers essentially act as proxy servers that sit between web applicatio
 <li><code>a target= _blank rel= noopener noreferrer</code></li>
 <li>CSP - Content security policy</li>
 <li>HTTPS</li>
-<li></li>
+<li>...</li>
 </ul>
 <details>
     <summary>More details</summary>
@@ -1190,7 +1200,7 @@ Service workers essentially act as proxy servers that sit between web applicatio
 <p>scaling Database writes</p>
 <h4>Sharding</h4>
 <p>Database sharing as a way of handling scaling</p>
-<p>Database <strong>sharding</strong>, splitting up database in multiple master database for the purpose of write.</p>
+<p>Database <strong>sharding</strong>, splitting up the database in multiple master database for the purpose of write.</p>
 <ul>
 <li><strong>vertical</strong> sharing, splitting multiple individual tables across different machines.</li>
 <li><strong>Horizontal</strong> sharing, splitting a single table (eg tweets) across multiple machines. Various ways to do it. Most common, user id mod by number of machines you want to allocate user id to. Eg 5 master machines for that table. this routes the user id to a specific machine.</li>
@@ -1223,10 +1233,13 @@ Service workers essentially act as proxy servers that sit between web applicatio
 <li><a href="https://www.aosabook.org/en/distsys.html">Scalable Web Architecture and Distributed Systems</a></li>
 </ul>
 </details>
-<h2>Cheatsheet framework list</h2>
+<h2>Cheat sheet framework list</h2>
 <p>This list below is a summary of the above and it is something you can use on the day.</p>
 <p>One option is to list these points in a &quot;virtual&quot; post it note at the beginning of the interview. And walk your interviewer through how you are planning to approach the problem. However use with caution as if you are not super strong on some of these points you might not want to draw unnecessary attention to it, use your own judgement on how much of the framework you'd want to make explicit.</p>
 <p>You should also make it clear that you are open to ver off into different direction at any points if they have questions or things they'd like to focus on. There's generally not enough time to cover everything and is not uncommon that you might be asked to jump around to see if you can overall cover more ground.</p>
+<p>But personally, for the purpose of the interview, I would say you should aim to prep to be strong from point 1 to 5 and be able to confidently break down the problem statement and run the interviewer through those different parts.</p>
+<p>For prepping from 6 to 10, a good strategy is to aim to go over those sections and cover any gaps you might have in your knowledge.</p>
+<p>Last but not least, there's a lot to cover, but remember to try and relate it to your own experience as much as possible, as well as what might be expected of the role. Use it as a chance to fill in potential gaps you might have, as well as to organize knowledge and concepts. During the interview if relevant you can mention short anecdotes from previous projects you have worked on and or case studies you might have read (<a href="https://jakearchibald.com/2017/netflix-and-react">eg Netflix getting rid of (client side) react</a>) if it's helpful to make a point about implementation and trade off between certain choices.</p>
 <pre><code>1. Requirements gathering 
 2. Define Scope + MVP
 3. Data entities 
