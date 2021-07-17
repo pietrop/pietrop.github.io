@@ -24,21 +24,25 @@ _Cover photo credit [unsplash](https://unsplash.com/photos/cvBBO4PzWPg)_
 
 A (tentative) framework that you can follow when doing your front end system design interview.
 
-If you are not familiar with Front end system design interviews, you can think of it similar to a [case interview](https://en.wikipedia.org/wiki/Case_interview).
+If you are not familiar with Front end system design interviews, you can think of it as being similar to a [case interview](https://en.wikipedia.org/wiki/Case_interview).
 
-In practice front end system design interviews are at risk of being fairly unstructured, as the interviewer is relying on you to drive the presentation. So this is a a (tentative) framework that you can follow when doing front end system design interview. To cover most of the ground the interviewer might be interested in. 
+In practice front end system design interviews are at risk of being fairly unstructured, as the interviewer is relying on you to drive the presentation. So this is a framework that you can follow when doing front end system design interview. To cover most of the ground the interviewer might be interested in. 
 
-Most of these sections come from examples of front end system design interviews on blogs and youtube. 
+Most of these sections come from examples of front end system design interviews on blogs and YouTube. 
 
-For each you'll find a summary of what to cover, and example of the corresponding artefacts you'll need to produce (eg bullet point list, wirferames, diagram, json data structure etc..)
+For each you'll find a summary of what to cover, and example of the corresponding artifacts you'll need to produce (eg bullet point list, wire frames, diagram, json data structure etc..)
 
-<!-- For more details you can go to the page for each section. -->
+Note that to avoid breaking the flow I've added a "More details" expandable section that provides further explanations as well as links to go deeper in certain topics for each section.
+
+
+<details>
+    <summary>More details</summary>
 
 Here is worth mentioning that front end system design interviews are relatively new compare to the full stack once. Depending on who your interviewers are (eg they are front end, backend and/or full stack), the scope of the role and how the team is organized ( eg are you really just on the front end or are you expected to stretch into the backend a bit?) your front end system design interview might be a bit of a hybrid where some aspects of a system design interview might come up. But not to worry, at the end will review some high level concepts from (full stack) system design that you should be familiar with.
 
-Another thing I noticed is that they can be micro or macro. Eg it could be starting from a whole system, or it could start already zeroed in on a "widget" type component and then potentially exploring how that's wired up to the rest of the system. You should prepare for both.
+Another thing I noticed is that they can be micro or macro. Eg it could be starting from a whole system, or it could start already zeroed in on a "widget" type component and then potentially exploring how that's wired up to the rest of the system. You should prepare for both approaches.
 
-Note that to avoid breaking the flow I've added a "More details" expandable section that provides further explanations as well as links to go deeper in certain topics for each section.
+</details>
 
 ## Tooling
 
