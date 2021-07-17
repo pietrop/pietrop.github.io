@@ -42,6 +42,7 @@ Here is worth mentioning that front end system design interviews are relatively 
 
 Another thing I noticed is that they can be micro or macro. Eg it could be starting from a whole system, or it could start already zeroed in on a "widget" type component and then potentially exploring how that's wired up to the rest of the system. You should prepare for both approaches.
 
+
 </details>
 
 ## Tooling
@@ -97,16 +98,19 @@ Ok, let's dive into it
 - Browser targets? (eg latest device for latest OS? and/or IE?)
 - Do you need to consider AMP?
 
-<details>
-    <summary>More details</summary>
-
-- [Non-functional requirement](https://en.wikipedia.org/wiki/Non-functional_requirement)
-
-</details>
-
 **Artefact**
 - notes, eg (virtual) post it
 - bullet points
+
+
+<details>
+    <summary>More details</summary>
+
+- Are there [Non-functional requirements](https://en.wikipedia.org/wiki/Non-functional_requirement) we need to consider?
+
+</details>
+
+
 
 ## 2. 📓 Define Scope + MVP
 
@@ -116,6 +120,7 @@ Ok, let's dive into it
     - APIs
     - Interactions
     - Interfaces
+- Edge cases?
 - list of TODO(s)
     - ...
 - list of NOT-TODO(s)
@@ -135,7 +140,7 @@ Ok, let's dive into it
     <summary>More details</summary>
 
 
-**Scope**
+### **Scope**
 > After understanding the problem, we need to decide what the scope is going to be. Well, we cannot design a perfect system because there will be limited time i.e only 45 mins to 1 hour. So we need to pick those parts in which we are more confident. Don’t do the parts that you are not good at.
 
 >- The scope cannot be a perfect service, but the core parts should appeal to an interviewer within 45 minutes.
@@ -145,7 +150,7 @@ Ok, let's dive into it
 
 from [Front-end system design guide](https://bootcamp.uxdesign.cc/front-end-system-design-guide-9a11381f5e81)
 
-**MVP( Minimum Viable Product)**
+### **MVP( Minimum Viable Product)**
 > What is the MVP( Minimum Viable Product) — List of Core features like Core APIs, Core interactions, and Core interfaces.
 
 > What is the core spec (based on the MVP)— What are the problems we need to handle, What are the edge cases, and What the tricky part is.
@@ -154,7 +159,7 @@ from [Front-end system design guide](https://bootcamp.uxdesign.cc/front-end-syst
 
 from [Front-end system design guide](https://bootcamp.uxdesign.cc/front-end-system-design-guide-9a11381f5e81)
 
-**Framework for Breaking down a complex problem**     
+### **Framework for Breaking down a complex problem**    
 I wrote a separate mini framework for [Approaching a complex problems](/complex-problem.html). This might be overkill for most exercise, but is a good way I found for breaking down a complex problem by dividing it into parts, phases and identifying crucial points. And could be useful as a fallback if narrowing down the scope doesn't come easy straight off the bat.
 
 
@@ -163,7 +168,8 @@ I wrote a separate mini framework for [Approaching a complex problems](/complex-
 ## 3. 🕶️ Data entities
 
 - Representation of client side data. Eg Data Models / schemas / json.
-- Sometimes this might include client side functions used to manipulate the data (might revisit in point **5 🏠 Client side components architecture**) 
+- Sometimes this might include client side functions used to manipulate the data 
+- You might revisit in point **5 🏠 Client side components architecture**
 - Do you need "foreign keys" and or ways to express relationship between data or is it all in one json object? and if so are there payload size considerations etc..
 
 **Artefact**
@@ -198,10 +204,16 @@ and/or REST end points
 /user/:userId/posts/:postI
 ```
 
+<details>
+    <summary>More details</summary>
+
+- [YouTube - Developing Food Ordering App in 1 hour | Machine Coding Frontend Interview](https://youtu.be/HvSsGjxy7so)
+ 
+</details>
 
 
 ### Network communication
-This might include a conversation around network communication 
+This section might include a conversation around network communication 
 
 Also are you connecting to the backend via a **REST API**, web socket etc.. or are you using GraphQL etc...
 
@@ -221,7 +233,10 @@ Also are you connecting to the backend via a **REST API**, web socket etc.. or a
    - Format the data based on the frontend representation
    - Send the formatted data to the frontend
 3. **GraphQL** — It provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need
- 
+
+
+
+
 4. **Caching / HTTP2** — caching get APIs
 
 <details>
@@ -293,9 +308,10 @@ As well as potentially [Redux](https://redux.js.org/) and/or the concept of immu
 - [Model–view–controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 - [Rails guides - MVC and you](https://guides.rubyonrails.org/getting_started.html#mvc-and-you)
 
-A reference diagram of the parts of Rails MVC
+<!-- A reference diagram of the parts of Rails MVC
 ![Rails prezi overview ](/img/front-end-system-design/rails_prezi_overview.png)
 
+If you have Prezi you can download the full presentation [Prezi Rails Diagram presentation](/img/front-end-system-design/Rails%20Overview.pez) -->
 
 #### Redux
 
@@ -342,7 +358,7 @@ On the practice ofusing ES6 spread operator to keep the state immutable
 
 ![Framework%20d779c8afb4ce49f38ace585f6f375207/article-blog-wireframe.png](Framework%20d779c8afb4ce49f38ace585f6f375207/article-blog-wireframe.png) -->
 
-Eg this could be a starting point sketch for youtube player. To then decide what to focus on, eg the list of recommended video on the side. The thumbnail that appear when you scrub on the player, the commenting section etc..
+Eg this could be a starting point sketch for front end system design for the YouTube player, to then decide what to focus on, eg the list of recommended video on the side, or the thumbnail that appear when you scrub on the player, or the commenting section etc..
 ![Example of sketch for YouTube ]({{image2}})
 
 <details>
@@ -475,7 +491,7 @@ The pros/cons of SVG, creating the edge cases/poor cross-browser support, someti
 - Code splitting
 
 #### Skeleton loading
-![YouTube Sekeleton loading](https://assets.digitalocean.com/articles/alligator/react/skeleton-screens-react-and-react-native/youtube-skeleton.png)
+![YouTube Sekeleton loading](/img/front-end-system-design/youtube-skeleton.png)
 
 - [Everything you need to know about skeleton screens](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a)
 - [Stop Using A Loading Spinner, There’s Something Better](https://uxdesign.cc/stop-using-a-loading-spinner-theres-something-better-d186194f771e)
@@ -692,8 +708,7 @@ from [What’s the difference between a Web Worker and a Service Worker?](https:
 - Accessibility tree
   - HTML elements in top to bottom of the page, regardless of CSS positioning(?)
 - Use native HTML elements
-  - semantic HTML
-  - vs "Div Soup"
+  - semantic HTML vs "Div Soup"
 - Use `a` for
   - internal navigation 
   - outwards link
@@ -713,6 +728,7 @@ from [What’s the difference between a Web Worker and a Service Worker?](https:
 - aria attributes
   - aria attribute to elements with description
   - aria attribute to exclude elements not relevant to screen reader (eg decorative images)
+- Media accessibility (eg audio, video - captions, transcripts etc..)
 - ...
 
 **Artefacts**
@@ -749,7 +765,7 @@ from [What’s the difference between a Web Worker and a Service Worker?](https:
 - [WTF, forms?](http://wtfforms.com/) - (styling form elements)
 
 
-![HTML5 semantic diagram](http://html5doctor.com/downloads/h5d-sectioning-flowchart.png)
+![HTML5 semantic diagram](/img/front-end-system-design/h5d-sectioning-flowchart.png)
 
 ### Media accessibility 
 - [Media accessibility](https://web.dev/media-accessibility/)
@@ -769,13 +785,13 @@ from [What’s the difference between a Web Worker and a Service Worker?](https:
 ## 8. 🥗  Testing Strategy
 Frame it more in terms of a testing strategy. And pick and chose what's most appropriate for the project based on constraints. Eg some tests are more time consuming then others (eg End to End) and others are more insightful to quickly identify a bug 🐛 (eg Integration tests)
 
-Testing strategy that strikes the Right balance between adding confidence in the code base as well as ability to make changes without introducing bugs. Especially within a team.
+Testing strategy that strikes the Right balance between adding confidence in the code base as well as ability to make changes without introducing bugs. Especially when working within a team.
 
-Eg Snapshot test/screenshot testing can be potentially a premature optimization - definitely valuable for stable projects, but could indure progress on WIP MVP.
+Eg Snapshot test/screenshot testing can be potentially a premature optimization - definitely valuable for stable projects, but could endure progress on work in progress MVP.
 
 Type of tests at a high level
 
-1. **Linting**, also kind of test to enforce best practices during development, at commit etc.. ([ESLint](https://eslint.org/))
+1. **Linting**, also kind of a test to enforce best practices during development, at commit etc.. ([ESLint](https://eslint.org/))
 2. **Typechecking**, eg [PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) for React
 3. **Unit test** - a single function or service ([Jest](https://jestjs.io/))
 4. **Component test** - a single component - functionality ([jest](https://jestjs.io/)/[Enzyme](https://github.com/enzymejs/enzyme))
@@ -807,7 +823,9 @@ Also
 - `a target= _blank rel= noopener noreferrer`
 - CSP - Content security policy
 - HTTPS
-- 
+- ...
+
+
 <details>
     <summary>More details</summary>
     
@@ -1010,7 +1028,7 @@ scaling Database writes
 #### Sharding
 Database sharing as a way of handling scaling
 
-Database **sharding**, splitting up database in multiple master database for the purpose of write.
+Database **sharding**, splitting up the database in multiple master database for the purpose of write.
 
 - **vertical** sharing, splitting multiple individual tables across different machines.
 - **Horizontal** sharing, splitting a single table (eg tweets) across multiple machines. Various ways to do it. Most common, user id mod by number of machines you want to allocate user id to. Eg 5 master machines for that table. this routes the user id to a specific machine.
@@ -1053,13 +1071,20 @@ how to make it fast
  
 </details>
 
-## Cheatsheet framework list
+## Cheat sheet framework list
 
 This list below is a summary of the above and it is something you can use on the day. 
 
 One option is to list these points in a "virtual" post it note at the beginning of the interview. And walk your interviewer through how you are planning to approach the problem. However use with caution as if you are not super strong on some of these points you might not want to draw unnecessary attention to it, use your own judgement on how much of the framework you'd want to make explicit.
 
 You should also make it clear that you are open to ver off into different direction at any points if they have questions or things they'd like to focus on. There's generally not enough time to cover everything and is not uncommon that you might be asked to jump around to see if you can overall cover more ground.
+
+But personally, for the purpose of the interview, I would say you should aim to prep to be strong from point 1 to 5 and be able to confidently break down the problem statement and run the interviewer through those different parts. 
+
+For prepping from 6 to 10, a good strategy is to aim to go over those sections and cover any gaps you might have in your knowledge.
+
+Last but not least, there's a lot to cover, but remember to try and relate it to your own experience as much as possible, as well as what might be expected of the role. Use it as a chance to fill in potential gaps you might have, as well as to organize knowledge and concepts. During the interview if relevant you can mention short anecdotes from previous projects you have worked on and or case studies you might have read ([eg Netflix getting rid of (client side) react](https://jakearchibald.com/2017/netflix-and-react)) if it's helpful to make a point about implementation and trade off between certain choices.
+
 
 ```
 1. Requirements gathering 
