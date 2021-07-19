@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @11ty/eleventy",
+    "build": "ELEVENTY_ENV=prod npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve",
     "serve:watch": "npx @11ty/eleventy --serve --watch",
     "start": "ELEVENTY_ENV=dev npm run serve:watch",
