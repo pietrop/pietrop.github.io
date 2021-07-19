@@ -96,7 +96,6 @@ Ok, let's dive into it
 - Internationalization?
 - Offline support?
 - Browser targets? (eg latest device for latest OS? and/or IE?)
-- Do you need to consider AMP?
 
 **Artefact**
 - notes, eg (virtual) post it
