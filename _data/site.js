@@ -32,7 +32,7 @@ module.exports = {
     "name": "Tips Tricks & Quick Fix",
     "description": "Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.",
     "url": "https://www.pietropassarelli.com",
-    "baseurl": "",
+    baseUrl,
     "repo": "http://github.com/pietrop/pietrop.github.io",
     "comments": false,
     "author": {
