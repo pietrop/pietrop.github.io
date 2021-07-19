@@ -1,4 +1,30 @@
-{
+const environment = process.env.ELEVENTY_ENV;
+const PROD_ENV = 'prod';
+const prodUrl = 'https://pietropassarelli.com';
+const devUrl = 'http://localhost:8080';
+const baseUrl = environment === PROD_ENV ? prodUrl : devUrl;
+const isProd = environment === PROD_ENV;
+
+// const folder = {
+//   assets: 'assets',
+// };
+
+// const dir = {
+//   img: `/${folder.assets}/img/`,
+// }
+
+
+module.exports = {
+  environment,
+  isProd,
+  // folder,
+  // base: {
+  //   site: baseUrl,
+  //   img: `${baseUrl}${dir.img}`,
+  // },
+  tracking: {
+    gtag: 'G-R6JQ09CW0P',
+  },
   "title": "Pietro",
   "tagline": "Passarelli",
   "name": "Tips Tricks & Quick Fix",
@@ -19,8 +45,9 @@
     "facebook": "pietro.passarelli",
     "github": "pietrop",
     "linkedin": "pietropassarelli",
-    "instagram":"pietro.ps",
-    "about": "ubiq/pietro.jpeg"
+    "instagram": "pietro.ps",
+    "about": "ubiq/pietro.jpeg",
+    "image": "{{ site.url }}/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg"
   },
   "og_locale": "en_US",
   "categories": [
@@ -29,5 +56,8 @@
     "ttqf",
     "blog"
   ],
-  "placeholder_image": "/img/placeholder/clouds.jpeg"
-}
+  "placeholder_image": "/img/placeholder/clouds.jpeg",
+  
+
+
+};
