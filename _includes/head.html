@@ -9,11 +9,7 @@
   <meta name="description" content="Pietro's website">
 
   <title>
-    {% if page.title == "Home" %}
-    {{ site.title }} {{ site.tagline }}
-    {% else %}
-    {{ page.title }} {{ site.title }}
-    {% endif %}
+    {{site.title}} - {{title}}
   </title>
 
   <!-- CSS -->
@@ -105,4 +101,6 @@
   {% endif %}
 
 </head>
+
+
 
