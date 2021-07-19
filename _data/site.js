@@ -1,4 +1,5 @@
 const environment = process.env.ELEVENTY_ENV;
+console.log('environment', environment)
 const PROD_ENV = 'prod';
 const prodUrl = 'https://pietropassarelli.com';
 const devUrl = 'http://localhost:8080';
@@ -15,49 +16,50 @@ const isProd = environment === PROD_ENV;
 
 
 module.exports = {
-  environment,
-  isProd,
-  // folder,
-  // base: {
-  //   site: baseUrl,
-  //   img: `${baseUrl}${dir.img}`,
-  // },
-  tracking: {
-    gtag: 'G-R6JQ09CW0P',
-  },
-  "title": "Pietro",
-  "tagline": "Passarelli",
-  "name": "Tips Tricks & Quick Fix",
-  "description": "Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.",
-  "url": "https://www.pietropassarelli.com",
-  "baseurl": "",
-  "repo": "http://github.com/pietrop/pietrop.github.io",
-  "comments": false,
-  "author": {
-    "name": "Pietro",
-    "email": "pietro.passarelli@gmail.com"
-  },
-  "owner": {
-    "name": "Pietro",
-    "last_name": "Passarelli",
-    "email": "pietro.passarelli@gmail.com",
-    "twitter": "pietropassarell",
-    "facebook": "pietro.passarelli",
-    "github": "pietrop",
-    "linkedin": "pietropassarelli",
-    "instagram": "pietro.ps",
-    "about": "ubiq/pietro.jpeg",
-    "image": "{{ site.url }}/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg"
-  },
-  "og_locale": "en_US",
-  "categories": [
-    "video",
-    "tech",
-    "ttqf",
-    "blog"
-  ],
-  "placeholder_image": "/img/placeholder/clouds.jpeg",
-  
+  // site: {
+    environment,
+    isProd,
+    // folder,
+    // base: {
+    //   site: baseUrl,
+    //   img: `${baseUrl}${dir.img}`,
+    // },
+    tracking: {
+      gtag: 'G-R6JQ09CW0P',
+    },
+    "title": "Pietro",
+    "tagline": "Passarelli",
+    "name": "Tips Tricks & Quick Fix",
+    "description": "Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.",
+    "url": "https://www.pietropassarelli.com",
+    "baseurl": "",
+    "repo": "http://github.com/pietrop/pietrop.github.io",
+    "comments": false,
+    "author": {
+      "name": "Pietro",
+      "email": "pietro.passarelli@gmail.com"
+    },
+    "owner": {
+      "name": "Pietro",
+      "last_name": "Passarelli",
+      "email": "pietro.passarelli@gmail.com",
+      "twitter": "pietropassarell",
+      "facebook": "pietro.passarelli",
+      "github": "pietrop",
+      "linkedin": "pietropassarelli",
+      "instagram": "pietro.ps",
+      "about": "ubiq/pietro.jpeg",
+      "image": "{{ site.url }}/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg"
+    },
+    "og_locale": "en_US",
+    "categories": [
+      "video",
+      "tech",
+      "ttqf",
+      "blog"
+    ],
+    "placeholder_image": "/img/placeholder/clouds.jpeg",
 
-
+// 
+  // }
 };
