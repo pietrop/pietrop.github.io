@@ -49,7 +49,7 @@ module.exports = {
       "linkedin": "pietropassarelli",
       "instagram": "pietro.ps",
       "about": "ubiq/pietro.jpeg",
-      "image": "{{ site.url }}/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg"
+      "image": "/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg"
     },
     "og_locale": "en_US",
     "categories": [
