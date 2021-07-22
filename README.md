@@ -77,6 +77,7 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 - [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
 - [navigation plugin](https://www.11ty.dev/docs/plugins/navigation/)
 - [Getting Started with Eleventy](https://www.sitepoint.com/getting-started-with-eleventy/)
+- [twitter card validator](https://cards-dev.twitter.com/validator)
 
 Images
 - [How to optimize and lazy-loading images on eleventy (11ty)](https://mahmoudashraf.dev/blog/how-to-optimize-and-lazyloading-images-on-eleventy/)
