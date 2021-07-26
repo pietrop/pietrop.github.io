@@ -119,3 +119,4 @@ export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 - [Davinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) 
 - [Adobe Bridge](https://www.adobe.com/products/bridge.html) 
+- [electron-video-downloader](https://github.com/pietrop/electron-video-downloader/releases) - [info](https://pietropassarelli.com/categories/tech/2017-06-08-electron-video-downloader/)
