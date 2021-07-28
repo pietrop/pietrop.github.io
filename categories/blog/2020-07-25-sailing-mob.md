@@ -196,7 +196,7 @@ Consider  heaving to, to make time to follow those steps.
         - Sheet in main (don’t drop in case engine fails?)
     - Option 2
         - Or head up into the wind to slow the boat, then furl the jib and, depending on the conditions, the mainsail.
-- Go down wind of COB
+- Go down wind of COB (Crew Over Board)
 - Motor up wind towards COB
 
     > “Contact is made with the casualty on the leeward side of the boat, usually behind the shrouds, well away from the propeller.”
@@ -321,7 +321,9 @@ On YouTube - Practical boat owner -  [Man Overboard under sail - the Quick Stop
 
 Also good for shorthanded
 
-Careful not to get line in the propeller
+Careful not to get line in the propeller.
+
+Another thing to be mindful with the life-sling option is that you need to be confident enough that your COB is able to grab the line. Eg they are not in shock or otherwise incapacitated that they wouldn't be able to grab and hold onto the line when it reaches them.
 
 > “The goal is to drag the LifeSling so its line passes over the MOB”
 >

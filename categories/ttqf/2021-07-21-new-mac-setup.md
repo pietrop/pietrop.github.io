@@ -102,6 +102,7 @@ export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
   - in terminal `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - [`nvm`](https://github.com/nvm-sh/nvm#installing-and-updating)
   - [`node`](https://nodejs.org/en/)
+  - [`npm login`](https://docs.npmjs.com/logging-in-to-an-npm-enterprise-registry-from-the-command-line#logging-in-with-your-default-registry-set-to-your-companys-npm-enterprise-registry) in your terminal
 - [Git](https://git-scm.com/download/mac)
   - In terminal `brew install git`
 
@@ -118,3 +119,4 @@ export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 - [Davinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) 
 - [Adobe Bridge](https://www.adobe.com/products/bridge.html) 
+- [electron-video-downloader](https://github.com/pietrop/electron-video-downloader/releases) - [info](https://pietropassarelli.com/categories/tech/2017-06-08-electron-video-downloader/)
