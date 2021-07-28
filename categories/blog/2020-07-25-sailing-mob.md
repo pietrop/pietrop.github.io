@@ -317,6 +317,8 @@ Downside - Jibe
 
 ![Diagram](/img/sailing-mob/diagram.png)
 
+https://youtu.be/yuxCH_6tXko
+
 On YouTube - Practical boat owner -  [Man Overboard under sail - the Quick Stop method](https://youtu.be/yuxCH_6tXko)
 
 ### The Life-sling
@@ -473,10 +475,12 @@ Stop the boat asap
 On YouTube - The Sailing Frenchman - [Man Overboard offshore: prepare for the worst, hope for the best - Ep110 - The Sailing Frenchman - 2:59](https://youtu.be/8NpzMnwR6VA?t=179) as part of clipper's crew training.
 
 
-https://youtu.be/VPmNo-jo4tg
+https://youtu.be/VPmNo-jo4tg      
+
 On Youtube - [Derry~Londonderry~Doire successfully recovers man overboard during Clipper Race](https://youtu.be/VPmNo-jo4tg)
 
-https://youtu.be/8Ge5tuP8x1k
+https://youtu.be/8Ge5tuP8x1k         
+
 On YouTube - [Andrew Taylor Rescue Story](https://youtu.be/8Ge5tuP8x1k)
 
 [https://youtu.be/RNxcjWCSKpY](https://youtu.be/RNxcjWCSKpY)
@@ -488,7 +492,8 @@ On YouTube - [Miracle Rescue: Man Overboard During Storm Survives](https://youtu
 [SAIL SMARTS SKILLS - MAN OVERBOARD - SAIL FROM HOME KIDS LEARNING - SEAMANSHIP](https://youtu.be/0duIqxqGUbk)
 
 
-https://youtu.be/RqlVm5eb9PI
+https://youtu.be/RqlVm5eb9PI         
+
 [Dramatic Footage of Man Overboard | Volvo Ocean Race](https://youtu.be/RqlVm5eb9PI)
 
 
