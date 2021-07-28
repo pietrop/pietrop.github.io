@@ -50,6 +50,8 @@ To lower the barrier of entry for this post, here’s a few quick explanation of
 
 ### Point of sails
 
+![Point of sails diagram](/img/sailing-mob/rya-Points-of-sail-lrg.jpg)
+
 [Do you know your points of sail?](https://web.archive.org/web/20210430060025/https://www.rya.org.uk/newsevents/e-newsletters/inbrief/Pages/do-you-know-your-points-of-sail.aspx)
 
 RYA point of sails 
