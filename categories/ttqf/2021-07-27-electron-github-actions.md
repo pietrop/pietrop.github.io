@@ -256,15 +256,163 @@ You should also make sure your `package.json` has the right info for all 3 OS.
 
 ```
 
-
 </details>
 
 
 [If you need to package ffmpeg with your app see this separate post](/ffmpeg-electron.html)
 
+You can also change the trigger to be when you add a tag to a commit
+```diff
+- on:
+-   push:
+-     branches:
+-       - master
++on:
++  push:
++    tags:
++       - '*'
+```
+
+And run the jobs only for master branch
+```diff
+jobs:
+  # Mac version M1 arm64 + older
+  build_on_mac:
++   if: github.event.base_ref == 'refs/heads/master'
+    runs-on: macOS-latest
+```
+```diff
+  # Linux version
+  build_on_linux:
++   if: github.event.base_ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+```
+```diff
+  # Windows version
+  build_on_win:
++   if: github.event.base_ref == 'refs/heads/master'
+    runs-on: windows-2016
+```
+
+
+1. Update the version in your project's package.json file (e.g. 1.2.3)
+2. Commit that change (`git commit -m"1.2.3"`)
+3. Tag your commit (`git tag v1.2.3`). Make sure your tag name's format is `*.*.*`. 
+   1. Your workflow will use this tag to detect when to create a release
+4. Push your changes to GitHub (`git push && git push --tags`)
+
+
+<details>
+  <summary> <i>you can copy/paste these instructions in your <code>README</code> </i> </summary>
+
+```md
+1. Update the version in your project's package.json file (e.g. `1.2.3`)
+2. Commit that change (`git commit -m"1.2.3"`)
+3. Tag your commit (`git tag v1.2.3`). Make sure your tag name's format is `*.*.*`. 
+   1. Your workflow will use this tag to detect when to create a release
+4. Push your changes to GitHub (`git push && git push --tags`)
+```
+  </details>
+
+
+
+<details>
+  <summary>see full updated that only runs when you add a tag to a commit on master <code>build.yml</code></summary>
+
+
+```yaml
+name: Build Electron Releases 
+on:
+  push:
+    tags:
+       - '*'
+
+jobs:
+  # Mac version M1 arm64 + older
+  build_on_mac:
+    if: github.event.base_ref == 'refs/heads/master'
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref: master # TODO: you can tweak this to run only a specific branch of your choosing
+    - uses: actions/setup-node@master
+      with:
+        node-version: 14
+    - name: Install dependencies
+      run: npm install
+    - name: Build Electron
+      env:
+        ELECTRON: true
+        PUBLISH_FOR_PULL_REQUEST: false
+        ELECTRON_CACHE: $HOME/.cache/electron
+        ELECTRON_BUILDER_CACHE: $HOME/.cache/electron-builder
+        USE_HARD_LINKS: false
+        YARN_GPG: no
+        GITHUB_TOKEN: ${{ secrets.github_token }}
+      run: npm run build:m:publish:always # your npm script in package.json to run electron builder for mac
+    - name: see directory
+      run: ls ./dist
+  # Linux version
+  build_on_linux:
+    if: github.event.base_ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref: master # TODO: you can tweak this to run only a specific branch of your choosing
+    - uses: actions/setup-node@master
+      with:
+        node-version: 14
+    - name: Install dependencies
+      run: npm install
+    - name: Build Electron
+      env:
+        ELECTRON: true
+        PUBLISH_FOR_PULL_REQUEST: false
+        ELECTRON_CACHE: $HOME/.cache/electron
+        ELECTRON_BUILDER_CACHE: $HOME/.cache/electron-builder
+        USE_HARD_LINKS: false
+        YARN_GPG: no
+        GITHUB_TOKEN: ${{ secrets.github_token }}
+      run: npm run build:l:publish:always # your npm script in package.json to run electron builder for linux
+    - name: see directory
+      run: ls ./dist
+  # Windows version
+  build_on_win:
+    if: github.event.base_ref == 'refs/heads/master'
+    runs-on: windows-2016
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref:  master # TODO: you can tweak this to run only a specific branch of your choosing  
+    - uses: actions/setup-node@master
+      with:
+        node-version: 14
+    - name: Install dependencies
+      run: npm install
+    - name: Build Electron on Windows
+      env:
+        ELECTRON: true
+        PUBLISH_FOR_PULL_REQUEST: false
+        ELECTRON_CACHE: $HOME/.cache/electron
+        ELECTRON_BUILDER_CACHE: $HOME/.cache/electron-builder
+        USE_HARD_LINKS: false
+        YARN_GPG: no
+        GITHUB_TOKEN: ${{ secrets.github_token }}
+      run: npm run build:w:publish:always # your npm script in package.json to run electron builder for windows
+    - name: see directory
+      run: ls .\dist\squirrel-windows
+```
+
+</details>
+
+
 ## Resources
 - [github actions ENVs](https://docs.github.com/en/actions/reference/environment-variables)
 - [Workflow syntax for GitHub Actions](https://docs.github.com/en/enterprise-server@3.0/actions/reference/workflow-syntax-for-github-actions)
+- [How to run GitHub Actions Workflow only for new tags](https://github.community/t/how-to-run-github-actions-workflow-only-for-new-tags/16075)
+- [Run workflow on push tag on specific branch](https://github.community/t/run-workflow-on-push-tag-on-specific-branch/17519)
 
 ## Alternatives 
 - [azu/electron.yml](https://gist.github.com/azu/673426500458f63f019c8f5e013f282a)
