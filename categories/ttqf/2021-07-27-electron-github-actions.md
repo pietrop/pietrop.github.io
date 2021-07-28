@@ -408,6 +408,8 @@ jobs:
 </details>
 
 
+Last but not least, one thing I should add is to keep an eye on npm dependencies that might not be cross OS compatible, if you are building for Mac, Windows, and Linux, as that might trip up your deployment steps.
+
 ## Resources
 - [github actions ENVs](https://docs.github.com/en/actions/reference/environment-variables)
 - [Workflow syntax for GitHub Actions](https://docs.github.com/en/enterprise-server@3.0/actions/reference/workflow-syntax-for-github-actions)
