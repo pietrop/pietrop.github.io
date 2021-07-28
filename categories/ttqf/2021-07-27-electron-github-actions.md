@@ -2,7 +2,7 @@
 layout: post
 title: "Electron + Github Actions"
 description: "Building and deploying Electron, for Mac, Windows and Linux, to github releases using github actions"
-# permalink: "/test.html"
+permalink: "/electron-github-actions.html"
 date: "2021-07-27"
 link: 
 image: /img/electron-github-actions/ankush-minda-TLBplYQvqn0-unsplash.jpeg
