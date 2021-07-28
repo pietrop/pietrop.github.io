@@ -209,3 +209,9 @@ in this case
 Done.
 
 Here are some more links from the [github api](https://developer.github.com/v3/) [documentation](https://developer.github.com/v3/repos/releases/#get-a-single-release)
+
+
+---
+
+
+You can also just use this page, [count github releases](https://pietropassarelli.com/count-github-releases/) (also on [Github](https://github.com/pietrop/count-github-releases)), I made that pulls the data from the github API based on what we learned above.
