@@ -5,7 +5,7 @@ description: "Overview of man overboard maneuver"
 permalink: "/sailing-mob.html"
 date: "2020-07-25"
 link: 
-image: https://images.unsplash.com/photo-1561728130-afd430af0493?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600
+image: /img/sailing-mob/photo-1561728130-afd430af0493.jpg
 image2: /img/
 # github: pietrop/
 YouTube: 
