@@ -267,5 +267,5 @@ You should also make sure your `package.json` has the right info for all 3 OS.
 - [Workflow syntax for GitHub Actions](https://docs.github.com/en/enterprise-server@3.0/actions/reference/workflow-syntax-for-github-actions)
 
 ## Alternatives 
-- [azu/electron.yml](https://gist.github.com/azu/673426500458f63f019c8f5e013f282a)$$
+- [azu/electron.yml](https://gist.github.com/azu/673426500458f63f019c8f5e013f282a)
 - [Electron Builder Action](https://github.com/marketplace/actions/electron-builder-action)
