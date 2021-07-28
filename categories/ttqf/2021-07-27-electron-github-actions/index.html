@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <link href="https://gmpg.org/xfn/11" rel="profile"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pietro's website">
+
+  <title>
+    Pietro - Electron + Github Actions
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/style.css" defer>
+  <link rel="stylesheet" href="/public/css/post-element-condesed.css" defer>
+  <link rel="stylesheet" href="/public/css/dark-mode.css" defer>
+  <link rel="stylesheet" href="/public/css/badge.css" defer>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+  <!-- Syntax highlight  -->
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" defer>
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png" defer>
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" async>
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png"
+    async>
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png"
+    async>
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png"
+    async>
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png" async>
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32" async>
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png" async>
+  <meta name="theme-color" content="#ffffff">
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png" async>
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!--  -->
+  <!-- Open graph -->
+  <meta property="og:title" content="Electron + Github Actions">
+  <meta property="og:description" content="Tips Tricks & Quick Fix by <a href='https://twitter.com/pietropassarell' target='_blank'>@pietropassarell</a>i.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.pietropassarelli.com/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Electron + Github Actions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@pietropassarell">
+  <meta name="twitter:description" content="Building and deploying Electron, for Mac, Windows and Linux, to github releases using github actions">
+  <meta name="twitter:image" content="https://www.pietropassarelli.com/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg">
+  <meta name="twitter:creator" content="@pietropassarell">
+
+  <!--  -->
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6JQ09CW0P">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-R6JQ09CW0P');
+  </script>
+
+  
+
+</head>
+
+
+
+
+
+<body class="default-pages">
+  <div class="container">
+    <div class="wrapper">
+      <header class="header">
+        Pietro Passarelli 
+        
+        <nav class="nav">
+    <ul class="menu-list">
+        <li>
+            <a class="sidebar-nav-item" href="/">
+                About</a>
+        </li>
+
+        
+
+        <li> <a class="" href="/categories/video">
+
+                
+                Videos
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/tech">
+
+                
+                Tech
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/ttqf">
+
+                
+                Tips Tricks & Quick Fix
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/blog">
+
+                
+                Blog
+                
+            </a> </li>
+        
+
+
+        <li> <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank"
+                rel="noopener noreferrer">
+                Photos↗</a>
+        </li>
+    </ul>
+</nav>
+      </header>
+      <main class="main"> 
+        
+<div class="post">
+	<h1 class="post-title">Electron + Github Actions </h1>
+	<span class="post-date">2021 Jul 27 
+		
+	</span> 
+	
+	<br>
+
+	<small><a href="https://github.com/pietrop/" target="_blank" rel="noopener noreferrer"><i
+				class="fab fa-github" aria-hidden="true"></i> GitHub</a>,</small>
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	
+	<!-- social media -->
+	
+
+	
+
+
+
+
+	<!-- tech Stack -->
+	<br><small><strong>Stack: </strong>
+		
+		yaml,
+		
+		git,
+		
+		github,
+		
+	</small>
+	<br>
+	<br>
+	
+
+	<!-- image -->
+	
+	
+	<div class="image-wrapper">
+		<img src="/img/electron-github-actions/ankush-minda-TLBplYQvqn0-unsplash.jpeg" alt="Building and deploying Electron, for Mac, Windows and Linux, to github releases using github actions" />
+	</div>
+	
+	
+	<!-- description -->
+	
+	<br>
+	Building and deploying Electron, for Mac, Windows and Linux, to github releases using github actions
+	
+	<hr>
+
+	<!-- content -->
+	<p><small><i>cover photo credit <a href="https://unsplash.com/photos/TLBplYQvqn0">unsplash</a> </i></small></p>
+<!-- 
+<div class="image-wrapper">
+    <img src="/img/" alt="Building and deploying Electron, for Mac, Windows and Linux, to github releases using github actions" />
+</div> -->
+<!-- 0000-mm-dd-title.md -->
+<p>Create folder and file <code>.github/workflows/build.yml</code></p>
+<details>
+  <summary>see full <code>build.yml</code></summary>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">name</span><span class="token punctuation">:</span> Build Electron Releases <br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> master <span class="token comment"># TODO: you can tweak this to run only a specific branch of your choosing</span><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token comment"># Mac version M1 arm64 + older</span><br>  <span class="token key atrule">build_on_mac</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> macOS<span class="token punctuation">-</span>latest<br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>    <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@master<br>      <span class="token key atrule">with</span><span class="token punctuation">:</span><br>        <span class="token key atrule">ref</span><span class="token punctuation">:</span> master <span class="token comment"># TODO: you can tweak this to run only a specific branch of your choosing</span><br>    <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@master<br>      <span class="token key atrule">with</span><span class="token punctuation">:</span><br>        <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token number">14</span><br>    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies<br>      <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install<br>    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Build Electron<br>      <span class="token key atrule">env</span><span class="token punctuation">:</span><br>        <span class="token key atrule">ELECTRON</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><br>        <span class="token key atrule">PUBLISH_FOR_PULL_REQUEST</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><br>        <span class="token key atrule">ELECTRON_CACHE</span><span class="token punctuation">:</span> $HOME/.cache/electron<br>        <span class="token key atrule">ELECTRON_BUILDER_CACHE</span><span class="token punctuation">:</span> $HOME/.cache/electron<span class="token punctuation">-</span>builder<br>        <span class="token key atrule">USE_HARD_LINKS</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><br>        <span class="token key atrule">YARN_GPG</span><span class="token punctuation">:</span> no<br>        <span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation">:</span> $<br>      <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<span class="token punctuation">:</span>m<span class="token punctuation">:</span>publish<span class="token punctuation">:</span>always <span class="token comment"># your npm script in package.json to run electron builder for mac</span><br>    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> see directory<br>      <span class="token key atrule">run</span><span class="token punctuation">:</span> ls ./dist<br>  <span class="token comment"># Linux version</span><br>  <span class="token key atrule">build_on_linux</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest<br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>    <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@master<br>      <span class="token key atrule">with</span><span class="token punctuation">:</span><br>        <span class="token key atrule">ref</span><span class="token punctuation">:</span> master <span class="token comment"># TODO: you can tweak this to run only a specific branch of your choosing</span><br>    <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@master<br>      <span class="token key atrule">with</span><span class="token punctuation">:</span><br>        <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token number">14</span><br>    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies<br>      <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install<br>    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Build Electron<br>      <span class="token key atrule">env</span><span class="token punctuation">:</span><br>        <span class="token key atrule">ELECTRON</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><br>        <span class="token key atrule">PUBLISH_FOR_PULL_REQUEST</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><br>        <span class="token key atrule">ELECTRON_CACHE</span><span class="token punctuation">:</span> $HOME/.cache/electron<br>        <span class="token key atrule">ELECTRON_BUILDER_CACHE</span><span class="token punctuation">:</span> $HOME/.cache/electron<span class="token punctuation">-</span>builder<br>        <span class="token key atrule">USE_HARD_LINKS</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><br>        <span class="token key atrule">YARN_GPG</span><span class="token punctuation">:</span> no<br>        <span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation">:</span> $<br>      <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<span class="token punctuation">:</span>l<span class="token punctuation">:</span>publish<span class="token punctuation">:</span>always <span class="token comment"># your npm script in package.json to run electron builder for linux</span><br>    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> see directory<br>      <span class="token key atrule">run</span><span class="token punctuation">:</span> ls ./dist<br>  <span class="token comment"># Windows version</span><br>  <span class="token key atrule">build_on_win</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> windows<span class="token punctuation">-</span><span class="token number">2016</span><br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>    <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@master<br>      <span class="token key atrule">with</span><span class="token punctuation">:</span><br>        <span class="token key atrule">ref</span><span class="token punctuation">:</span>  master <span class="token comment"># TODO: you can tweak this to run only a specific branch of your choosing  </span><br>    <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@master<br>      <span class="token key atrule">with</span><span class="token punctuation">:</span><br>        <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token number">14</span><br>    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install dependencies<br>      <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install<br>    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Build Electron on Windows<br>      <span class="token key atrule">env</span><span class="token punctuation">:</span><br>        <span class="token key atrule">ELECTRON</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><br>        <span class="token key atrule">PUBLISH_FOR_PULL_REQUEST</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><br>        <span class="token key atrule">ELECTRON_CACHE</span><span class="token punctuation">:</span> $HOME/.cache/electron<br>        <span class="token key atrule">ELECTRON_BUILDER_CACHE</span><span class="token punctuation">:</span> $HOME/.cache/electron<span class="token punctuation">-</span>builder<br>        <span class="token key atrule">USE_HARD_LINKS</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><br>        <span class="token key atrule">YARN_GPG</span><span class="token punctuation">:</span> no<br>        <span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation">:</span> $<br>      <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build<span class="token punctuation">:</span>w<span class="token punctuation">:</span>publish<span class="token punctuation">:</span>always <span class="token comment"># your npm script in package.json to run electron builder for windows</span><br>    <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> see directory<br>      <span class="token key atrule">run</span><span class="token punctuation">:</span> ls .\dist\squirrel<span class="token punctuation">-</span>windows</code></pre>
+</details>
+<p>We run 3 jobs, on</p>
+<ul>
+<li>Mac (latest M1 vm)</li>
+<li>Windows(2016) and</li>
+<li>Linux (Ubuntu)</li>
+</ul>
+<p>In each we</p>
+<ul>
+<li>clone the repo</li>
+<li>add nodeJs</li>
+<li>install dependencies</li>
+<li>Use <code>electron-builder</code> to build, upload and publish to github releases</li>
+</ul>
+<p>You should also make sure your <code>package.json</code> has the right info for all 3 OS.</p>
+<details>
+  <summary>see example <code>package.json</code></summary>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"digital-paper-edit-electron"</span><span class="token punctuation">,</span><br>  <span class="token property">"productName"</span><span class="token operator">:</span> <span class="token string">"autoEdit 3"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: set for your app</span><br>  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.6.2-alpha.22"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: set for your app</span><br>  <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Digital Paper Edit app"</span><span class="token punctuation">,</span><span class="token comment">// TODO: set for your app</span><br>  <span class="token property">"main"</span><span class="token operator">:</span> <span class="token string">"src/electron-main.js"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: set for your app</span><br>  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    ...<br>    <span class="token property">"build:l:publish:always"</span><span class="token operator">:</span> <span class="token string">"electron-builder -l --publish always"</span><span class="token punctuation">,</span><br>    <span class="token property">"build:m:publish:always"</span><span class="token operator">:</span> <span class="token string">"electron-builder -m  --x64 --arm64 --publish always"</span><span class="token punctuation">,</span><br>    <span class="token property">"build:w:publish:always"</span><span class="token operator">:</span> <span class="token string">"electron-builder -w --x64 --ia32 --publish always"</span><span class="token punctuation">,</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token property">"license"</span><span class="token operator">:</span> <span class="token string">"MIT"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: set for your app</span><br>  <span class="token property">"author"</span><span class="token operator">:</span> <span class="token string">"Pietro Passarelli CC0 2019"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: set for your app</span><br>  <span class="token property">"contributors"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>    <span class="token string">""</span><br>  <span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token property">"bugs"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://github.com/pietrop/digital-paper-edit-electron/issues"</span> <span class="token comment">// TODO: set for your app</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token property">"homepage"</span><span class="token operator">:</span> <span class="token string">"https://github.com/pietrop/digital-paper-edit-electron"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: set for your app</span><br>  <span class="token property">"repository"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"git"</span><span class="token punctuation">,</span><br>    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"git+https://github.com/pietrop/digital-paper-edit-electron.git"</span> <span class="token comment">// TODO: set for your app</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token property">"build"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"publish"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token property">"provider"</span><span class="token operator">:</span> <span class="token string">"github"</span><span class="token punctuation">,</span><br>      <span class="token property">"releaseType"</span><span class="token operator">:</span> <span class="token string">"prerelease"</span><span class="token punctuation">,</span><br>      <span class="token property">"vPrefixedTagName"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span><br>      <span class="token property">"owner"</span><span class="token operator">:</span> <span class="token string">"pietrop"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: set for your app</span><br>      <span class="token property">"repo"</span><span class="token operator">:</span> <span class="token string">"digital-paper-edit-electron"</span> <span class="token comment">// TODO: set for your app</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token property">"appId"</span><span class="token operator">:</span> <span class="token string">"org.dpe.dpe-electron"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: set for your app</span><br>    <span class="token property">"artifactName"</span><span class="token operator">:</span> <span class="token string">"${productName}-${version}-${arch}.${ext}"</span><span class="token punctuation">,</span><br>    <span class="token property">"asar"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span><br>    <span class="token property">"directories"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token property">"buildResources"</span><span class="token operator">:</span> <span class="token string">"assets"</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token property">"files"</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token comment">// TODO: This might not be needed depending on your config</span><br>      <span class="token string">"**/*"</span><span class="token punctuation">,</span><br>      <span class="token string">"build/**"</span><span class="token punctuation">,</span><br>      <span class="token string">"!config/"</span><span class="token punctuation">,</span><br>      <span class="token string">"!assets/"</span><span class="token punctuation">,</span><br>      <span class="token string">"!spec/"</span><span class="token punctuation">,</span><br>      <span class="token string">"!project_page/"</span><span class="token punctuation">,</span><br>      <span class="token string">"!vendor/"</span><span class="token punctuation">,</span><br>      <span class="token string">"!docs/"</span><span class="token punctuation">,</span><br>      <span class="token string">"!dist/"</span><span class="token punctuation">,</span><br>      <span class="token string">"!icons/"</span><span class="token punctuation">,</span><br>      <span class="token string">"node_modules/**/*"</span><br>    <span class="token punctuation">]</span><span class="token punctuation">,</span><br>    <span class="token property">"copyright"</span><span class="token operator">:</span> <span class="token string">"Pietro Passarelli CC0 2020"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: set for your app</span><br>    <span class="token property">"mac"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token property">"category"</span><span class="token operator">:</span> <span class="token string">"public.app-category.productivity"</span><span class="token punctuation">,</span><span class="token comment">// TODO: set category for your app</span><br>      <span class="token property">"target"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token punctuation">{</span><br>          <span class="token property">"target"</span><span class="token operator">:</span> <span class="token string">"dmg"</span><span class="token punctuation">,</span><br>          <span class="token property">"arch"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>            <span class="token string">"x64"</span><span class="token punctuation">,</span><br>            <span class="token string">"arm64"</span><br>          <span class="token punctuation">]</span><br>        <span class="token punctuation">}</span><br>      <span class="token punctuation">]</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token property">"dmg"</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// TODO: This might not be needed depending on your config</span><br>      <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"assets/background.png"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: it assumes you have a background image for your dmg</span><br>      <span class="token property">"icon"</span><span class="token operator">:</span> <span class="token string">"assets/icon.icns"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: it assumes you have an icon image for your dmg</span><br>      <span class="token property">"iconSize"</span><span class="token operator">:</span> <span class="token number">128</span><span class="token punctuation">,</span><br>      <span class="token property">"contents"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token punctuation">{</span><br>          <span class="token property">"x"</span><span class="token operator">:</span> <span class="token number">448</span><span class="token punctuation">,</span><br>          <span class="token property">"y"</span><span class="token operator">:</span> <span class="token number">340</span><span class="token punctuation">,</span><br>          <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"link"</span><span class="token punctuation">,</span><br>          <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"/Applications"</span><br>        <span class="token punctuation">}</span><span class="token punctuation">,</span><br>        <span class="token punctuation">{</span><br>          <span class="token property">"x"</span><span class="token operator">:</span> <span class="token number">192</span><span class="token punctuation">,</span><br>          <span class="token property">"y"</span><span class="token operator">:</span> <span class="token number">340</span><span class="token punctuation">,</span><br>          <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"file"</span><br>        <span class="token punctuation">}</span><br>      <span class="token punctuation">]</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token property">"win"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token property">"artifactName"</span><span class="token operator">:</span> <span class="token string">"${productName}-${version}-${arch}.${ext}"</span><span class="token punctuation">,</span><br>      <span class="token property">"target"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token punctuation">{</span><br>          <span class="token property">"target"</span><span class="token operator">:</span> <span class="token string">"portable"</span><span class="token punctuation">,</span><br>          <span class="token property">"arch"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>            <span class="token string">"x64"</span><span class="token punctuation">,</span><br>            <span class="token string">"arm64"</span><span class="token punctuation">,</span><br>            <span class="token string">"ia32"</span><br>          <span class="token punctuation">]</span><br>        <span class="token punctuation">}</span><br>      <span class="token punctuation">]</span><span class="token punctuation">,</span><br>      <span class="token property">"icon"</span><span class="token operator">:</span> <span class="token string">"build/icon.ico"</span><span class="token punctuation">,</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token property">"deb"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token property">"synopsis"</span><span class="token operator">:</span> <span class="token string">"Digital Paper Edit Desktop App"</span>  <span class="token comment">// TODO: set synopsis for your app</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token property">"linux"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>      <span class="token property">"category"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span><br>      <span class="token property">"packageCategory"</span><span class="token operator">:</span> <span class="token string">"GNOME;GTK;VideoEditing;PaperEditing;Transcriptions"</span><span class="token punctuation">,</span>  <span class="token comment">// TODO: set packageCategory for your app</span><br>      <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Digital Paper Edit Desktop App"</span><span class="token punctuation">,</span> <span class="token comment">// TODO: description for your app</span><br>      <span class="token property">"target"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token string">"AppImage"</span><br>      <span class="token punctuation">]</span><span class="token punctuation">,</span><br>      <span class="token property">"maintainer"</span><span class="token operator">:</span> <span class="token string">"Pietro Passarelli"</span><span class="token punctuation">,</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token property">"devDependencies"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    ...<br>    <span class="token property">"electron"</span><span class="token operator">:</span> <span class="token string">"^12.0.0"</span><span class="token punctuation">,</span><br>    <span class="token property">"electron-builder"</span><span class="token operator">:</span> <span class="token string">"^22.11.7"</span><span class="token punctuation">,</span><br>    ...<br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><br></code></pre>
+</details>
+<p><a href="/ffmpeg-electron.html">If you need to package ffmpeg with your app see this separate post</a></p>
+<h2>Resources</h2>
+<ul>
+<li><a href="https://docs.github.com/en/actions/reference/environment-variables">github actions ENVs</a></li>
+<li><a href="https://docs.github.com/en/enterprise-server@3.0/actions/reference/workflow-syntax-for-github-actions">Workflow syntax for GitHub Actions</a></li>
+</ul>
+<h2>Alternatives</h2>
+<ul>
+<li><a href="https://gist.github.com/azu/673426500458f63f019c8f5e013f282a">azu/electron.yml</a></li>
+</ul>
+
+
+
+	
+</div>
+        <hr>
+<p class="edit-on-github-link">
+	<small><a href="https://github.com/pietrop/pietrop.github.io/blob/master/./categories/ttqf/2021-07-27-electron-github-actions.md">Edit this page on GitHub <i class="fab fa-github"></i></a></small>
+</p>
+      </main>
+      <footer class="footer">
+    <nav>
+        <ul class="contacts-list">
+            <li>
+                <a
+                    href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+                    class="author-social" target="_blank" rel="noopener noreferrer">
+                    <i class="far fa-envelope"></i>
+                    E-mail</a> <span></span>
+            </li>
+            <li>
+                <a 
+                    href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> 
+                    <i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+                <a 
+                    href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub</a>
+            </li>
+            <li>
+                <a 
+                    href="https://uk.linkedin.com/in/pietropassarelli" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+            </li>
+
+            <li>
+                <a 
+                    href="https://www.instagram.com/pietro.ps" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+    </div>
+  </div>
+  <script>
+    // Logic to adjust syntax highlighting based on whether dark mode is on 
+    // in the system or not
+    const prismEl = document.querySelector('#prism-css');
+    const DARK = 'dark';
+    const LIGHT = 'light';
+    const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+
+    function init() {
+      const DARK = 'dark';
+      const LIGHT = 'light';
+      const isSystemDarkMode = matchMedia &&
+        matchMedia('(prefers-color-scheme: dark)').matches;
+
+      if (isSystemDarkMode) {
+        prismEl.href = PRISM_DARK_URL;
+      }
+
+      // Event listener to change with system change
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const changedColourScheme = e.matches ? DARK : LIGHT;
+        if (changedColourScheme === DARK) {
+          prismEl.href = PRISM_DARK_URL;
+        } else {
+          prismEl.href = PRISM_LIGHT_URL;
+        }
+      });
+    }
+
+    init();
+  </script>
+</body>
+
+</html>
