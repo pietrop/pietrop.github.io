@@ -30,7 +30,7 @@ module.exports = {
     "title": "Pietro",
     "tagline": "Passarelli",
     "name": "Tips Tricks & Quick Fix",
-    "description": "Tips Tricks & Quick Fix by Pietro Passarelli",
+    "description": "Pietro Passarelli's blog",
     "url": "https://www.pietropassarelli.com",
     baseUrl,
     "repo": "http://github.com/pietrop/pietrop.github.io",
