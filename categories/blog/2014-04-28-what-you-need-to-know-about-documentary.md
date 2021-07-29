@@ -9,7 +9,7 @@ author: Pietro Passarelli
 modified_time: '2014-04-28T18:30:20.846+01:00'
 blogger_id: tag:blogger.com,1999:blog-3556210610913027832.post-2669017288915120078
 blogger_orig_url: https://ttqf.blogspot.com/2014/04/what-you-need-to-know-about-documentary.html
-description: The minimum (I think) you need to know about Documentary films
+# descriptions: The minimum (I think) you need to know about Documentary films
 tags:
 categories:
 - blog
