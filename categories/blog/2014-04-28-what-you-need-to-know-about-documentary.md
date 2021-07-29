@@ -15,13 +15,13 @@ categories:
 ---
 
 
-_This [is an extract](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/paper-editing/key-concepts-in-documentary-theory.html) from [gitbook 'how to tell compelling stories out of video interviews'](https://www.gitbook.com/book/pietropassarelli/how-to-tell-compelling-stories-out-of-video-inter/details)._     
+<!-- _This [is an extract](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/paper-editing/key-concepts-in-documentary-theory.html) from [gitbook 'how to tell compelling stories out of video interviews'](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter)._      -->
 
----
+<!-- --- -->
 
 <!-- TODO: add bibliography at the end using UCL sytem. -->
 
-There are different styles and approaches on how to make a documentary. This section aims to address questions that are often reaised a round supposed objectivity or subjectivity of the medium and it's limitations for knowledge discovery and knowledge sharing, and proposes to provide some different perspective to examine the problem from.
+There are different styles and approaches on how to make a documentary. This post aims to address questions that are often raised a round supposed objectivity or subjectivity of the medium and it's limitations for knowledge discovery and knowledge sharing, and proposes to provide some different perspective to examine the problem from.
 
 
 What follows is the bare minimum (I think) you need to know about documentary films history and theory, if you work with audio/visual medium. I draw and expand on an essay I wrote during my MA in doc films a while back.
@@ -32,13 +32,13 @@ I might be over simplifying here, but I think there are three main concepts that
 One is the American concept of _Direct Cinema_ (equivalent to _free cinema_ in the UK), Second one is the French idea of _Cinema Verite_, and last but not least Verner Herzog's concept of _Aesthetic truth_.
 
 
-![Capturing reality ](https://pics.filmaffinity.com/capturing_reality-403395144-large.jpg)
+![Capturing reality ](/img/doc-fil-must-know/capturing_reality-403395144-large.jpg)
 
 But rather then dive straight into the key historic moments, it might be worth whatching [Capturing reality](https://www.nfb.ca/film/capturing_reality/trailer/the_art_of_documentary_trailer) from [NFBC](https://www.nfb.ca/film/capturing_reality) beforehand to get a bit of context, here's the trailer, that lays out some of the key issues a round documentary films, with interview with established documentary film-makers.
 
 <!-- Capturing reality trailer -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/lPavxiKKT2w" frameborder="0" allowfullscreen></iframe>
 
+https://youtu.be/lPavxiKKT2w
 
 <!-- ## Spoiler Notice -->
 
@@ -55,7 +55,7 @@ Before we dive into it, it's worth considering that it's [in infancies, document
 ![Magic Lantern movies](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/assets/omlj-dvd-cover.jpg)
 
 
-Magic lanterns where used as projectors to entrataine audiences.
+Magic lanterns where used as projectors to entrain audiences.
 
 <!--
 ![Magic Lantern device](https://www.projectionscreen.net/wp-content/uploads/2010/04/magic-lantern.png)
@@ -64,14 +64,41 @@ Magic lanterns where used as projectors to entrataine audiences.
 ![Magic lantern image example](https://i.ebayimg.com/images/g/dMEAAOxy0QBSSc6o/s-l300.jpg)
 -->
 
-See how in this BBC documentary it is compared to a precoursour of early days cinema.
+See how in this BBC documentary it is compared to a precursor of early days cinema.
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/kPTL_IxLtU0" frameborder="0" allowfullscreen></iframe>
+https://youtu.be/kPTL_IxLtU0
 
 It's interesting to see how this tradition is still very much alive in what are now called "digital stories" or "Multimedia slide shows" such as those made by [MediaStorm](https://mediastorm.com/pub/projects), see [One Man Brand](https://mediastorm.com/training/one-man-brand) or [Remember These Days](https://mediastorm.com/training/remember-these-days) as examples. They still use a bit of video footage, but the audio interview in the narration and the stills are mostly what drives the narrative, as opposed to on screen _actuality_.
 
 
-Another example that resonate with this tradition I think is [An inconvenient truth](https://en.wikipedia.org/wiki/An_Inconvenient_Truth), [trailer](https://youtu.be/Bu6SE5TYrCM). Where at the core a lecture by Al Gore is mixed with a voiceover to ad a personal journey element to it.
+<details>
+<summary> Watch - MediaStorm -  Remember These Days</summary>
+
+https://youtu.be/hlEMU84uGuk
+
+</details>
+
+
+
+<details>
+<summary> Watch - MediaStorm -  One Man Brand</summary>
+
+https://youtu.be/hiK9_Ni1PYw
+
+</details>
+
+
+
+
+
+Another example that resonate with this tradition I think is [An inconvenient truth](https://en.wikipedia.org/wiki/An_Inconvenient_Truth). Where at the core a lecture by Al Gore is mixed with a voiceover to ad a personal journey element to it.
+
+<details><summary> Watch - An inconvenient truth's - Trailer </summary>
+
+https://youtu.be/Bu6SE5TYrCM
+
+
+</details>
 
 ![Nanook of the north](https://upload.wikimedia.org/wikipedia/commons/3/33/Nanook_of_the_north.jpg)
 
@@ -80,8 +107,15 @@ Going back to our fast track history of docs, In [Flaherty](https://en.wikipedia
 
 
 <!-- Nanook of the North -->
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/m4kOIzMqso0" frameborder="0" allowfullscreen></iframe>
 
+https://youtu.be/bkilXJiCfng
+
+<details>
+<summary>Watch full movie -  Nanook of the North</summary>
+
+https://youtu.be/lkW14Lu1IBo
+
+</details>
 
 ### Dziga Vertov and Kino-Pravda _("Cinema Truth")_
 
@@ -91,7 +125,17 @@ There's much more to be said about Dziga Vertov and Kino-Pravda ("Cinema Truth")
 
 
 <!-- Dziga Vertov -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/z97Pa0ICpn8" frameborder="0" allowfullscreen></iframe>
+
+https://youtu.be/BtTlgxtoqhg
+
+
+<details>
+<summary>Watch full movie - Dziga Vertov - Man with a Movie Camera</summary>
+
+https://youtu.be/cGYZ5847FiI
+
+
+</details>
 
 
 ## Direct Cinema
@@ -102,8 +146,6 @@ I guess is what most people think of when they think of "_fly on the wall_", "_p
 
 However for it to work, they usually chose _crisis situations_ where not only the contributors are so engrossed into what they are doing that they forget about the camera, but also some sort of _story arc_ is guaranted by the upcoming events that will be unfolding in life regardless of the filming.
 
-<!-- -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/8TsAnUmIzYY" frameborder="0" allowfullscreen></iframe>
 
 
 
@@ -113,6 +155,13 @@ Historically this comes from 1960s [Robert Drew](https://en.wikipedia.org/wiki/R
 This allowed to
 
 >"to combine Flaherty’s engaging style – a marriage of cinematic narrative conventions to footage based on ‘discovery’- with the unobtrusive recording method". - [Saunders 2007, p.9](https://books.google.co.uk/books?id=JLELAQAAMAAJ&q=inauthor:%22Dave+Saunders%22&dq=inauthor:%22Dave+Saunders%22&hl=en&sa=X&ei=d1VaU8OjIqPa0QWHuICQCw&ved=0CFAQ6AEwBQ).
+
+
+Hear it in their own words, as part of the [NFBC "Cinema Verite" documentary](https://www.nfb.ca/film/cinema_verite_defining_the_moment/), Richard Leacock and Robert Drew discuss the origins and philosophy of [Direct Cinema](https://en.wikipedia.org/wiki/Direct_cinema).
+
+<!-- Direct Cinema - Richard Leacock and Robert Drew discuss the origins and philosophy of 'Direct Cinema'. -->
+
+https://youtu.be/8TsAnUmIzYY
 
 
 ## Cinema Verite
@@ -136,56 +185,180 @@ Here's an extract from ["_Chronicle of a summer_"](https://en.wikipedia.org/wiki
 <!-- Chronicle of a summer find scene where Marcelline walks alone
 tmp use this extract -->
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/Pxk-fg771r8" frameborder="0" allowfullscreen></iframe>
+https://youtu.be/Pxk-fg771r8
 
 
 
 In the 1961 film "[Chronique d’une ete](https://en.wikipedia.org/wiki/Chronique_d'un_%C3%A9t%C3%A9)"("Chronicle of a summer"), started off with a camera that weighted 30 to 50 kilos. This restricted them to shooting from a fixed camera. And halfway through filming, [Michel Brault](https://en.wikipedia.org/wiki/Michel_Brault) brought the first lapel mic, and 10 mm camera to [Jean Rouch](https://en.wikipedia.org/wiki/Jean_Rouch).
 
-The best example of the freedom of movement allowed by this type of technology is [the scene where Marceline iswalking through the Place de la Concorde](https://youtu.be/H9MSD-zmdB8). She has a recorder and microphone under her coat, and although Rouch and Moran are not aware of what she is saying, they can decide to move the camera,further away, to increase the dramatic effect of the framing. Rouch’s car was used as a dolly.
+The best example of the freedom of movement allowed by this type of technology is [the scene where Marceline is walking through the Place de la Concorde](https://youtu.be/ct-49TYmzMg?start=3438&end=3646). She has a recorder and microphone under her coat, and although Rouch and Moran are not aware of what she is saying, they can decide to move the camera,further away, to increase the dramatic effect of the framing. Rouch’s car was used as a dolly.
+
 
 However this focus on the inner word of the subjects in cinema verite has been criticized as self- reflexive, in danger of implying that the only possible film was "_was the one about how that film was made._" ([Winston 2008, p.197](https://books.google.co.uk/books?id=t0SePgAACAAJ&dq=Winston,+2008.+Claiming+the+Real&hl=en&sa=X&ei=AmdaU4KADbHI0AXLi4DQBA&redir_esc=y))
 
-<!-- ![](https://ytimg.googleusercontent.com/vi/S0dOLHemSgs/0.jpg)
--->
+
+<details>
+<summary>Watch full movie - Chronicle of a summer</summary>
+
+https://youtu.be/ct-49TYmzMg
+
+</details>
+
 
 <!-- What is Cinéma Vérité? - Chronicle of a Summer -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/S0dOLHemSgs" frameborder="0" allowfullscreen></iframe>
 
-As she so eloquently puts it in this interview, Jean Rouch's underlying assumption about _Truth_ is that people reveal their "real" self when performing in rituals, in this case the filming ritual done in the cinema verite way, as opposed to when they go about their daily life unaware of being filmed.
+As it is so eloquently put in this interview in the clip below, Jean Rouch's underlying assumption about _Truth_ is that people reveal their "real" self when performing in rituals, in this case the filming ritual done in the cinema verite way, as opposed to when they go about their daily life unaware of being filmed.
 
-If you are interested in finding out more about these two movements, you should check out ["_Cinema Verite, Defining the moment_"](https://en.wikipedia.org/wiki/Cin%C3%A9ma_V%C3%A9rit%C3%A9:_Defining_the_Moment)
+https://youtu.be/S0dOLHemSgs
 
 
-<!-- ![tmp](https://ytimg.googleusercontent.com/vi/-tZ9jy8v4qs/0.jpg) -->
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/-tZ9jy8v4qs" frameborder="0" allowfullscreen></iframe>
+If you are interested in finding out more about these two movements, you should check out ["_Cinema Verite, Defining the moment_"](https://en.wikipedia.org/wiki/Cin%C3%A9ma_V%C3%A9rit%C3%A9:_Defining_the_Moment), see the trailer below.
+
+
+
+<!-- https://youtu.be/CLwqQIBFA-k -->
+
+<iframe src="https://www.nfb.ca/film/cinema_verite_defining_the_moment/embed/player/" width="100%" height="400" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+
+<!-- <p style="width:560px"><a href="https://www.nfb.ca/film/cinema_verite_defining_the_moment/" target="_blank"><em>b'Cinéma Vérité: Defining the Moment'</em></a><span>, </span><a href="https://www.nfb.ca/directors/peter-wintonick/" title="more films by b'Peter' b'Wintonick'" target="_blank"><span>b'Peter' b'Wintonick'</span></a><span>, </span><a href="https://www.nfb.ca" target="_blank">provided by the National Film Board of Canada</a></p> -->
+
+
 
 <!-- https://youtu.be/HcMvTzlq-iE -->
 
 The cinema vérité style finds his legacy in the more recent more mainstream films by [Michael Moore](https://en.wikipedia.org/wiki/Michael_Moore), and [Morgan spur lock](https://en.wikipedia.org/wiki/Morgan_Spurlock), but is definitely worth knowing about the British NFTS tradition of [Nick Broomfield](https://en.wikipedia.org/wiki/Nick_Broomfield), [Molly Dineen](https://en.wikipedia.org/wiki/Molly_Dineen), and [Kim Longinotto](https://en.wikipedia.org/wiki/Kim_Longinotto).
 
 
-I'd recommend to watch: [Rough Aunties](https://en.wikipedia.org/wiki/Rough_Aunties)"(trailer) and ["Sisters in law"](https://en.wikipedia.org/wiki/Sisters_in_Law) by Kim Longinotto [The Heart of the Angel](https://en.wikipedia.org/wiki/The_Heart_of_the_Angel) and "Geri" by Molly Dineen, >[Kurt & Courtney](https://en.wikipedia.org/wiki/Kurt_%26_Courtney), [Soldier Girls](https://en.wikipedia.org/wiki/Soldier_Girls), "[a time comes](https://youtu.be/0EGCFr2jLpU)", and "[Tracking Down Maggie](https://en.wikipedia.org/wiki/Tracking_Down_Maggie)" by Nick Broomfield. Check out this interview with the latest.
+I'd recommend to watch: [Rough Aunties](https://en.wikipedia.org/wiki/Rough_Aunties)"and ["Sisters in law"](https://en.wikipedia.org/wiki/Sisters_in_Law) by Kim Longinotto [The Heart of the Angel](https://en.wikipedia.org/wiki/The_Heart_of_the_Angel) and "Geri" by Molly Dineen, [Kurt & Courtney](https://en.wikipedia.org/wiki/Kurt_%26_Courtney), [Soldier Girls](https://en.wikipedia.org/wiki/Soldier_Girls), "[a time comes](https://youtu.be/0EGCFr2jLpU)", and "[Tracking Down Maggie](https://en.wikipedia.org/wiki/Tracking_Down_Maggie)" by Nick Broomfield. Check out this interview with the latest.
 
 
-<!-- ![tmp](https://ytimg.googleusercontent.com/vi/hwYqnjn7Z-E/0.jpg) -->
+<details>
+<summary> Kim Longinotto  - Rough Aunties - Trailer</summary>
+
+https://youtu.be/dTplpzBlf2E
+
+</details>
+
+<details>
+<summary>Kim Longinotto - Sisters in law - Trailer</summary>
+
+https://youtu.be/zJtUwX6dLi0
+
+</details>
+
+<details>
+<summary>Molly Dineen - The Heart of the Angel</summary>
+
+https://youtu.be/HuRWKb2Q1RQ
+
+</details>
+
+<details>
+<summary> Molly Dineen - Geri </summary>
+
+
+https://youtu.be/ryPC5EQ7Rng
+
+</details>
+
+<details>
+<summary> Nick Broomfield - Kurt & Courtney - Trailer</summary>
+
+https://youtu.be/XbZzzkkGYh0
+
+</details>
+
+<details>
+<summary>Nick Broomfield - Soldier Girls - Trailer</summary>
+
+https://youtu.be/J4P4FJQmM5w
+
+</details>
+
+
+<details>
+<summary>Nick Broomfield - A time comes</summary>
+
+https://youtu.be/0EGCFr2jLpU
+
+</details>
+
+
+<details>
+<summary>Nick Broomfield - Tracking Down Maggie - Trailer</summary>
+
+https://youtu.be/kggxHEEGvn8
+
+</details>
 
 <!-- find nick broomfield interview -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/hwYqnjn7Z-E" frameborder="0" allowfullscreen></iframe>
+
+See this clip from an interview with Nick Broomfield 
+
+https://youtu.be/hwYqnjn7Z-E
 
 Very interesting point he makes, and you can see how it then raises ethical questions, and gives ethical editorial responsibility to the film-maker. We'll get back to this point, but for now let's consider Michael Moore's approach.
 <!-- ? -->
 
 > We like non-fiction and we live in fictitious times. - Michael Moore
 
-To take this issue a step further I'd strongly recommend to watch ["Manufacturing dissent"](https://en.wikipedia.org/wiki/Manufacturing_Dissent) ([watch](https://www.youtube.com/watch?v=Tdgk-JFVhvk)), see trailer below, where film-maker Debbie Melnyk criticise Michael More for "bending" the facts in some of his docs.
+To take this issue a step further I'd strongly recommend to watch ["Manufacturing dissent"](https://en.wikipedia.org/wiki/Manufacturing_Dissent) , see trailer below, where film-maker Debbie Melnyk criticise Michael More for "bending" the facts in some of his docs.
 
-However before doing so, to avoid spoilers you should probably watch "[Roger and Me](https://en.wikipedia.org/wiki/Roger_%26_Me)"([trailer](https://youtu.be/WQXYAUql6tI)), "[Bowling for Colombine](https://en.wikipedia.org/wiki/Bowling_for_Columbine)"([watch](https://youtu.be/fAouWXzi-1Q)) and [Fahrenheit 9/11](https://en.wikipedia.org/wiki/Fahrenheit_9/11)" [watch](https://youtu.be/cY0OCdHICCo) to avoid a spoiler alert, and put the criticism more into context.. if you haven't already.
+<!-- <details>
+<summary>
+Watch "Manufacturing dissent"
+</summary>
+
+https://www.youtube.com/watch?v=Tdgk-JFVhvk
+
+</details> -->
+
+<details>
+<summary>
+Manufacturing dissent - Tailer
+</summary>
+
+https://youtu.be/r3IUU7a4wB0
+
+</details>
 
 
-<!-- Manufacturing dissent tailer -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/r3IUU7a4wB0" frameborder="0" allowfullscreen></iframe>
+
+However before doing so, to avoid spoilers you should probably watch "[Roger and Me](https://en.wikipedia.org/wiki/Roger_%26_Me)", "[Bowling for Colombine](https://en.wikipedia.org/wiki/Bowling_for_Columbine)" and [Fahrenheit 9/11](https://en.wikipedia.org/wiki/Fahrenheit_9/11)"  to avoid a spoiler alert, and put the criticism more into context.. if you haven't already.
+
+
+<details>
+<summary>
+Roger & Me - Trailer
+</summary>
+
+https://youtu.be/gOwXkstRaBw
+
+</details>
+
+<details>
+<summary>
+Bowling for Colombine - Trailer
+</summary>
+
+https://youtu.be/hH0mSAjp_Jw
+
+</details>
+
+
+<details>
+<summary>
+Fahrenheit 9/11 - Trailer
+</summary>
+
+https://youtu.be/JXCUPS2LETg
+
+</details>
+
+
+<!--  -->
+
 
 
 
@@ -195,7 +368,8 @@ However before doing so, to avoid spoilers you should probably watch "[Roger and
 In today's documentaries most productions will use a mixture of direct cinema and cinema verite, leaning more towards one or the other, and most often aiming to do interviews, mixed with [_actuality_](https://en.wikipedia.org/wiki/Actuality_film). Most amazing combination of this I've seen on Tv recently is the [BBC3 Life and death row series](https://www.bbc.co.uk/programmes/b03ytxmh/episodes/guide). What I like about it is it does not recur to narration led voice over. It strikes the right balance between interviews and actuality, using those to drive the narrative.
 
 <!-- Life and Death row BBC3 trailer -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/iDsN--mRHho" frameborder="0" allowfullscreen></iframe>
+
+https://www.youtube.com/iDsN--mRHho"
 
 I think it then becomes very useful to understand [Werner Herzog](https://en.wikipedia.org/wiki/Werner_Herzog) idea of _aesthetic truth_ and how for him boundaries between documentaries and fiction are therefore very blurred.
 
@@ -216,6 +390,23 @@ in his words:
 
 Talking about "[little dieter’s needs to fly](https://en.wikipedia.org/wiki/Little_Dieter_Needs_to_Fly)" ([Herzog 2007](https://books.google.co.uk/books?id=gQg7AAAAQBAJ&lpg=PP1&dq=The%20Cinema%20of%20Werner%20Herzog%3A%20Aesthetic%20Ecstasy%20and%20Truth&pg=PP1#v=onepage&q=The%20Cinema%20of%20Werner%20Herzog:%20Aesthetic%20Ecstasy%20and%20Truth&f=false))
 
+
+<!-- Little Dieter Needs to Fly -->
+
+
+<details>
+<summary>
+Werner Herzog - Little Dieter Needs to Fly - Trailer
+</summary>
+
+https://youtu.be/nHbVrWPhQAA
+
+</details>
+
+
+
+
+
 Herzog says:
 
 >We were very careful about editing and stylizing Dieter's reality. He had to become an actor playing himself. Everything in the film is authentic Dieter, but to intensify him it is all re-orchestrated, scripted and rehearsed. - ([Herzog Cronin 2002, p.265](https://books.google.co.uk/books?id=ydN_2oj8M0wC&dq=Herzog+%26+Cronin&hl=en&sa=X&ei=x1haU73sK-ic0QXB7YHYDA&redir_esc=y))
@@ -232,14 +423,40 @@ Here's an extract from a [BBC Imagine](https://www.bbc.co.uk/programmes/b007ght1
 
 Alan Yentob asking Herzog about the decision of subsequently making a feature film out Dieter's story, which was then called [Rescue Dawn](https://en.wikipedia.org/wiki/Rescue_Dawn), raises the question about choosing documentary over fiction, which I find Is an interesting point for debate.
 
+
+<details>
+<summary>
+Werner Herzog - Rescue Dawn - Trailer
+</summary>
+
+https://youtu.be/UNm9Tzo5rvI
+
+</details>
+
+
 >Facts and reality some time are quiet often note enough. You need a Enhancement an intensification of it. Some sort of, an essential version of things to make things transparent - Herzog
 
+
+
+
+
 <!-- Alan Yentob interview iwth Herzog for BBC imagine -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/ppe12Cd1yuA" frameborder="0" allowfullscreen></iframe>
 
-For instance you take a film like [127 hours](https://en.wikipedia.org/wiki/127_Hours), it could have been a docudrama, in the style of [touching the void](https://en.wikipedia.org/wiki/Touching_the_Void_(film), but Danny Boyle would argue that an actor performing is bests at re-creating the truth and getting the audience into the cinematic story. Vs making a docu-drama.
+https://youtu.be/ppe12Cd1yuA
 
-I don't think there's a clear cut answer to this question, and it mostly would depend on the story, and the film-maer skills and sensibility. But none the less I agree with the point raised in Imagine that "Rescue Dawn" ended up being more of a documentary because of how literally was reconstructing very detail without leaving room for imagination and interpretation while, "Little Dieter's needs to fly" was more of a work of fiction (in a good way) because of the performance and re-enactment, which I find interesting food for thought, especially if you think about Jean Rouch idea of performance in rituals being the time where people are their "real" selves, which we mentioned earlier.
+For instance you take a film like [127 hours](https://en.wikipedia.org/wiki/127_Hours), it could have been a docudrama, in the style of [touching the void](https://en.wikipedia.org/wiki/Touching_the_Void_(film)), but Danny Boyle would argue that an actor performing is bests at re-creating the truth and getting the audience into the cinematic story. Vs making a docu-drama.
+
+
+<details>
+<summary>
+127 hours - Trailer
+</summary>
+
+https://youtu.be/OlhLOWTnVoQ
+
+</details>
+
+I don't think there's a clear cut answer to this question, and it mostly would depend on the story, and the film-maker skills and sensibility. But none the less I agree with the point raised in Imagine that "Rescue Dawn" ended up being more of a documentary because of how literally was reconstructing very detail without leaving room for imagination and interpretation while, "Little Dieter's needs to fly" was more of a work of fiction (in a good way) because of the performance and re-enactment. Which I find is interesting food for thoughts. Especially if you think about Jean Rouch idea of performance in rituals being the time where people are their "real" selves, which we mentioned earlier.
 
 The key point Herzog make however is this
 
@@ -251,28 +468,38 @@ On the flip side, this also means that sometimes you'd avoid including material 
 
 <!-- Werner Herzog on Grizly man not using the clip where you can hear the death -->
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/n0bCcijSqbA" frameborder="0" allowfullscreen></iframe>
+
+https://youtu.be/n0bCcijSqbA
 
 
-
-However it is an important pivotal moment in the story, and Herzog, cleaverly finds another way to include it, indirectly through an interview with the doctor who performed the autopsy and had listened to the tape, and who can describes it. As well as through filming himself listening to it, while talking to one of the key contributors.
+However it is an important pivotal moment in the story, and Herzog, cleverly finds another way to include it, indirectly through an interview with the doctor who performed the autopsy and had listened to the tape, and who can describes it. As well as through filming himself listening to it, while talking to one of the key contributors.
 
 <!-- Grizzly Man - Doctor interview about the tape -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/5SJiOZdAWco" frameborder="0" allowfullscreen></iframe>
 
+https://youtu.be/5SJiOZdAWco
 
-I'd close this section with a good [interview with Verner Herzog about one of his latest films "Into the Abyss"](https://vimeo.com/40147443) where he talks about his process, coincidentally about death row as well.
+I'd close this section with a good interview with Werner Herzog about one of his latest films "Into the Abyss" where he talks about his process, coincidentally about death row as well.
+
+<!-- [interview with Verner Herzog about one of his latest films "Into the Abyss"](https://vimeo.com/40147443) -->
 
 <!-- Fourth & Main: Werner Herzog on filmmaking -vimeo -->
 <!-- <iframe src="https://player.vimeo.com/video/40147443" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/40147443">Fourth &amp; Main: Werner Herzog on filmmaking</a> from <a href="https://vimeo.com/esperanzajimenez">Esperanza Jim&eacute;nez</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
 
 <!-- Fourth & Main: Werner Herzog on filmmaking -youtube -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/QxxEHlQdp78" frameborder="0" allowfullscreen></iframe>
 
+https://youtu.be/QxxEHlQdp78
+
+
+
+<details>
+<summary>
 You can also consider how this applies to other forms of documentaries.
+</summary>
 
 <iframe src="https://player.vimeo.com/video/214023666" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+</details>
 
 
 
@@ -281,49 +508,90 @@ You can also consider how this applies to other forms of documentaries.
 ### Some more docs you should watch are:
 
 
-#### Girzly Man
-Herzog's"[Girzly Man](https://en.wikipedia.org/wiki/Grizzly_Man)", defenetly worth a
-[watch](https://youtu.be/q8MjDyfcMmU) if you haven't seen it.
+<details>
+<summary> Werner Herzog - Girzly Man </summary>
+
+Herzog's"[Girzly Man](https://en.wikipedia.org/wiki/Grizzly_Man)", is defenetly worth a
+watch if you haven't seen it.
 
 <!-- Girzly Man trailer -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/uWA7GtDmNFU" frameborder="0" allowfullscreen></iframe>
 
-<!-- ![tmp](https://ytimg.googleusercontent.com/vi/gWycuaWJFCM/0.jp) -->
+https://youtu.be/uWA7GtDmNFU
 
-
-#### Thin blue line
-
-[Errol Morris](https://en.wikipedia.org/wiki/Errol_Morris), ["Thin blue line"](https://en.wikipedia.org/wiki/The_Thin_Blue_Line_(1988_film)) trailer. definitely worth a [watch](https://youtu.be/zUJfrW1hNBk). For a great example of plot driven narrative.
+</details>
 
 
+<details>
+<summary> Errol Morris - Thin blue line </summary>
+
+[Errol Morris](https://en.wikipedia.org/wiki/Errol_Morris), ["Thin blue line"](https://en.wikipedia.org/wiki/The_Thin_Blue_Line_(1988_film)) trailer. definitely worth a watch. For a great example of plot driven narrative.
 <!-- >Errol Morris trailer -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/dNL5A4D0G4g" frameborder="0" allowfullscreen></iframe>
 
-<!-- ![tmp](https://ytimg.googleusercontent.com/vi/Mnlq0TurT3c/0.jpg) -->
+https://youtu.be/dNL5A4D0G4g
+
+</details>
 
 
-#### Touching the void
+<details>
+<summary>Kevin McDonald - Touching the void </summary>
 
 ["Touching the void"](https://en.wikipedia.org/wiki/Touching_the_Void) I saw this when I was 16 at the cinema and is what eventually got me into documentaries.
 
 <!-- Touching the void trailer -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/7Mcdw79l5fQ" frameborder="0" allowfullscreen></iframe>
 
-#### Searching for Sugar man
+https://youtu.be/3Xxi_icc8EI
+
+</details>
+
+<details>
+<summary>Malik Bendjelloul - Searching for Sugar man </summary>
 
 <!-- ![tmp](https://ytimg.googleusercontent.com/vi/EIawNRm9NWM/0.jpg) -->
 
 ["Searching for Sugar man"](https://en.wikipedia.org/wiki/Searching_for_Sugar_Man)
 
-<!-- Searching for Sugar man touching the void trailer -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/QL5TffdOQ7g" frameborder="0" allowfullscreen></iframe>
+https://youtu.be/QL5TffdOQ7g
 
-And this great interview with the film-maker, Malik Bendjelloul, about the behind the scene making of. Working with contributors and establishing trust and commitment. (watch the film first tho).
+
+</details>
+
+
+
+
+And this clip below is a great interview with the film-maker, of "Searching for Sugar man", Malik Bendjelloul, about the behind the scene making of. Working with contributors and establishing trust and commitment. (watch the film first tho).
+
+
+
 <!-- Searching for Sugar Man: Making of (Malik Bendjelloul and Sixto Rodríguez) VOSE -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/7jbDKvuwB2s" frameborder="0" allowfullscreen></iframe>
+
+https://youtu.be/7jbDKvuwB2s
 
 
-But I want to stress it doesn't have always to be some sort of reconstruction of something that happened in the past, like these last examples would suggest, for instance "[Encounters at the End of the World](https://en.wikipedia.org/wiki/Encounters_at_the_End_of_the_World)"(<a href="https://youtu.be/MImYM87jOtU">Trailer</a>) or "[Into the Abyss](https://en.wikipedia.org/wiki/Into_the_Abyss_(film))"([trailer](https://youtu.be/5uV1_Yc8OSw)) by Herzog deal with unfolding events in the present.
+But I want to stress it doesn't have always to be some sort of reconstruction of something that happened in the past, like these last examples would suggest, for instance "[Encounters at the End of the World](https://en.wikipedia.org/wiki/Encounters_at_the_End_of_the_World)" or "[Into the Abyss](https://en.wikipedia.org/wiki/Into_the_Abyss_(film))" by Herzog deal with unfolding events in the present.
+
+
+
+<details>
+<summary>
+Encounters at the End of the World - Trailer
+</summary>
+
+https://youtu.be/MImYM87jOtU
+
+</details>
+
+
+<details>
+<summary>
+Into the Abyss - Trailer
+</summary>
+
+https://youtu.be/wSaTLiuRZ5Q
+
+</details>
+
+
+
 
 I chose these last example because they are films were, taking for granted that the camera is not objective, the question is then shifted on what are the best way to use all the multi-sensory element of the film-making medium to reconstruct the truth of the moment of the story you are trying to tell.
 
@@ -344,7 +612,8 @@ And whit this thought in mind I'll leave you with a clip from [Adaptation](https
 >"What if the writer is attempting to create a story where nothing much happens?[…] more of a reflection of the real world?"
 
 <!-- Mckee in adaptation -->
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/o2fz_elzjF4" frameborder="0" allowfullscreen></iframe>
+
+https://youtu.be/o2fz_elzjF4
 
 
 
