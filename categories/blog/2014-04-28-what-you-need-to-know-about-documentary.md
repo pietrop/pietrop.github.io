@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Representing Reality: Key ideas in documentary theory and practice"
+title: "The minimum (I think) you should know about documentary films"
+description: "Representing Reality: Key ideas in documentary theory and practice"
 permalink: "doc.html"
 image: https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/assets/omlj-dvd-cover.jpg
 date: '2014-04-28T10:08:00.000+01:00'
@@ -8,7 +9,7 @@ author: Pietro Passarelli
 modified_time: '2014-04-28T18:30:20.846+01:00'
 blogger_id: tag:blogger.com,1999:blog-3556210610913027832.post-2669017288915120078
 blogger_orig_url: https://ttqf.blogspot.com/2014/04/what-you-need-to-know-about-documentary.html
-description: The minimum (I think) you need to know about Documentary films
+# descriptions: The minimum (I think) you need to know about Documentary films
 tags:
 categories:
 - blog
@@ -38,7 +39,9 @@ But rather then dive straight into the key historic moments, it might be worth w
 
 <!-- Capturing reality trailer -->
 
-https://youtu.be/lPavxiKKT2w
+<!-- https://youtu.be/lPavxiKKT2w -->
+
+https://youtu.be/91mLqloTD6s        
 
 <!-- ## Spoiler Notice -->
 
