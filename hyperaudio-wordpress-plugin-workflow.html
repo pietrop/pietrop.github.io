@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <link href="https://gmpg.org/xfn/11" rel="profile"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pietro Passarelli's blog">
+
+  <title>
+    Pietro - How to add hypertranscript to your word press blog using Hyperaud.io - draft
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/style.css" defer>
+  <link rel="stylesheet" href="/public/css/post-element-condesed.css" defer>
+  <link rel="stylesheet" href="/public/css/dark-mode.css" defer>
+  <link rel="stylesheet" href="/public/css/badge.css" defer>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+  <!-- Syntax highlight  -->
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" defer>
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png" defer>
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" async>
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png"
+    async>
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png"
+    async>
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png"
+    async>
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png" async>
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32" async>
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png" async>
+  <meta name="theme-color" content="#ffffff">
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png" async>
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!--  -->
+  <!-- Open graph -->
+  <meta property="og:title" content="How to add hypertranscript to your word press blog using Hyperaud.io - draft">
+  <meta property="og:description" content="Some notes on the steps to get setup and use the hyperaudio wordpress plugin on your wordpress blog/site.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.pietropassarelli.com/img/hyperaudio-wordpress-plugin-workflow/hypeaudio-example.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <!-- Twitter -->
+  <meta name="twitter:title" content="How to add hypertranscript to your word press blog using Hyperaud.io - draft">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@pietropassarell">
+  <meta name="twitter:description" content="Some notes on the steps to get setup and use the hyperaudio wordpress plugin on your wordpress blog/site.">
+  <meta name="twitter:image" content="https://www.pietropassarelli.com/img/hyperaudio-wordpress-plugin-workflow/hypeaudio-example.png">
+  <meta name="twitter:creator" content="@pietropassarell">
+
+  <!--  -->
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6JQ09CW0P">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-R6JQ09CW0P');
+  </script>
+
+  
+
+</head>
+
+<body class="default-pages">
+  <div class="container">
+    <div class="wrapper">
+      <header class="header">
+        Pietro Passarelli 
+        
+        <nav class="nav">
+    <ul class="menu-list">
+        <li>
+            <a class="sidebar-nav-item" href="/">
+                About</a>
+        </li>
+
+        
+
+        <li> <a class="" href="/categories/video">
+
+                
+                Videos
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/tech">
+
+                
+                Tech
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/ttqf">
+
+                
+                Tips Tricks & Quick Fix
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/blog">
+
+                
+                Blog
+                
+            </a> </li>
+        
+
+
+        <li> <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank"
+                rel="noopener noreferrer">
+                Photos↗</a>
+        </li>
+    </ul>
+</nav>
+      </header>
+      <main class="main"> 
+        
+<div class="post">
+	<h1 class="post-title">How to add hypertranscript to your word press blog using Hyperaud.io - draft </h1>
+	<span class="post-date">2021 Aug 04 
+		
+	</span> 
+	
+	<br>
+
+	
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	
+	<!-- social media -->
+	
+
+	
+
+
+
+
+	<!-- tech Stack -->
+	
+
+	<!-- image -->
+	
+	
+	<div class="image-wrapper">
+		<img src="/img/hyperaudio-wordpress-plugin-workflow/hypeaudio-example.png" alt="Some notes on the steps to get setup and use the hyperaudio wordpress plugin on your wordpress blog/site." />
+	</div>
+	
+	
+	<!-- description -->
+	
+	<br>
+	Some notes on the steps to get setup and use the hyperaudio wordpress plugin on your wordpress blog/site.
+	
+	<hr>
+
+	<!-- content -->
+	<h2>Setup</h2>
+<p>Install the wordpress-hyperaudio plugin.</p>
+<h4>get the plugin</h4>
+<p>If you have git clone this repository locally <a href="https://github.com/hyperaudio/wordpress-hyperaudio">wordpress-hyperaudio</a>.</p>
+<p>If you don't have git, go to <a href="https://github.com/hyperaudio/wordpress-hyperaudio">wordpress-hyperaudio</a>, click on the green code icon, and chose &quot;download zip&quot;.</p>
+<h4>Add the plugin to Wordpress</h4>
+<p>To add it to wordpress as a plugin you can see <a href="https://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/">these instructions</a>. But instead of searching for the plugin in the directory, you would probably choose &quot;upload plugin&quot; and upload the content of <a href="https://github.com/hyperaudio/wordpress-hyperaudio">wordpress-hyperaudio</a>.</p>
+<h2>Usage</h2>
+<p>Ok, I think now you should be all set. Here's some steps to create a new hyperaud.io in your Wordpress site/blog.</p>
+<ol>
+<li>Record your audio/video.</li>
+<li>Use <a href="https://www.autoedit.io/">autoEdit.io</a> to generate a transcription. (See <a href="https://autoedit.gitbook.io/autoedit-3-user-manual">user manual for more info</a>)</li>
+<li>Export an srt file from  <a href="https://www.autoedit.io/">autoEdit.io</a>. (<a href="https://autoedit.gitbook.io/autoedit-3-user-manual/transcriptions/export">see autoEdit export section of the user manual for more info</a>)</li>
+<li>Create an hypertranscript (html)
+<ol start="4">
+<li>Open the srt file in text edit.</li>
+<li>Go to <a href="https://hyperaud.io/converter/">hyperaudio converter</a></li>
+<li>Paste the content of the srt file int he left column</li>
+<li>Click &quot;transform&quot;</li>
+<li>Copy the hypertranscript that has been generate int he right column.</li>
+</ol>
+</li>
+<li>Add the hypertranscript to the wordpress hyperaudio plugin on your site. Watch this walk through <a href="https://youtu.be/3Qpq8kj4PxM">How to use the Hyperaudio Wordpress Plugin – Part 1</a></li>
+</ol>
+<h2>Links</h2>
+<ul>
+<li><a href="https://github.com/hyperaudio/hyperaudio-lite">hyperaudio-lite</a></li>
+<li><a href="https://github.com/hyperaudio/wordpress-hyperaudio">wordpress-hyperaudio</a></li>
+<li><a href="https://youtu.be/3Qpq8kj4PxM_">How to use the Hyperaudio Wordpress Plugin – Part 1</a></li>
+<li><a href="https://hyperaud.io/converter/">hyperaudio converter</a></li>
+</ul>
+
+
+
+	
+</div>
+        <hr>
+<p class="edit-on-github-link">
+	<small><a href="https://github.com/pietrop/pietrop.github.io/blob/master/./categories/ttqf/2021-08-04-hyperaudio-wordpress-plugin-workflow.md">Edit this page on GitHub <i class="fab fa-github"></i></a></small>
+</p>
+      </main>
+      <footer class="footer">
+    <nav>
+        <ul class="contacts-list">
+            <li>
+                <a
+                    href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+                    class="author-social" target="_blank" rel="noopener noreferrer">
+                    <i class="far fa-envelope"></i>
+                    E-mail</a> <span></span>
+            </li>
+            <li>
+                <a 
+                    href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> 
+                    <i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+                <a 
+                    href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub</a>
+            </li>
+            <li>
+                <a 
+                    href="https://uk.linkedin.com/in/pietropassarelli" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+            </li>
+
+            <li>
+                <a 
+                    href="https://www.instagram.com/pietro.ps" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+    </div>
+  </div>
+  <script>
+    // Logic to adjust syntax highlighting based on whether dark mode is on 
+    // in the system or not
+    const prismEl = document.querySelector('#prism-css');
+    const DARK = 'dark';
+    const LIGHT = 'light';
+    const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+
+    function init() {
+      const DARK = 'dark';
+      const LIGHT = 'light';
+      const isSystemDarkMode = matchMedia &&
+        matchMedia('(prefers-color-scheme: dark)').matches;
+
+      if (isSystemDarkMode) {
+        prismEl.href = PRISM_DARK_URL;
+      }
+
+      // Event listener to change with system change
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const changedColourScheme = e.matches ? DARK : LIGHT;
+        if (changedColourScheme === DARK) {
+          prismEl.href = PRISM_DARK_URL;
+        } else {
+          prismEl.href = PRISM_LIGHT_URL;
+        }
+      });
+    }
+
+    init();
+  </script>
+</body>
+
+</html>
