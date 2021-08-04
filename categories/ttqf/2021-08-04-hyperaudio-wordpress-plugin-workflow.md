@@ -43,15 +43,16 @@ Ok, I think now you should be all set. Here's some steps to create a new hyperau
 
 1. Record your audio/video.
 2. Use [autoEdit.io](https://www.autoedit.io/) to generate a transcription. (See [user manual for more info](https://autoedit.gitbook.io/autoedit-3-user-manual))
-3. Export an srt file from  [autoEdit.io](https://www.autoedit.io/). ([see autoEdit export section of the user manual for more info](https://autoedit.gitbook.io/autoedit-3-user-manual/transcriptions/export))
+3. Export an srt file from [autoEdit.io](https://www.autoedit.io/). ([see autoEdit export section of the user manual for more info](https://autoedit.gitbook.io/autoedit-3-user-manual/transcriptions/export))
 5. Create an hypertranscript (html)
-	4. Open the srt file in text edit.
+	4. Open the srt file in text edit
 	5. Go to [hyperaudio converter](https://hyperaud.io/converter/)
-	6. Paste the content of the srt file int he left column 
+	6. Paste the content of the srt file in the left column 
 	7. Click "transform"
 	8. Copy the hypertranscript that has been generate int he right column.
 6. Add the hypertranscript to the wordpress hyperaudio plugin on your site. Watch this walk through [How to use the Hyperaudio Wordpress Plugin – Part 1](https://youtu.be/3Qpq8kj4PxM)
 
+https://youtu.be/3Qpq8kj4PxM
 
 
 ## Links
