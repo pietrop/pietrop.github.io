@@ -156,3 +156,7 @@ details[open]{
 details:not([open]) > summary{ 
     text-decoration: underline;
 }
+
+details {
+    overflow: scroll;
+}
