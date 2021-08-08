@@ -78,7 +78,9 @@ We are using [this template for ADR](https://gist.github.com/iaincollins/92923cc
 - [navigation plugin](https://www.11ty.dev/docs/plugins/navigation/)
 - [Getting Started with Eleventy](https://www.sitepoint.com/getting-started-with-eleventy/)
 - [twitter card validator](https://cards-dev.twitter.com/validator)
-
+- [How to Make All External Links Open in a New Tab in 11ty with MarkdownIt](https://franknoirot.co/posts/external-links-markdown-plugin/)
+- [Adding DuckDuckGo Search to Your Website](https://jonbeebe.net/2017/07/duckduckgo-site-search/)
+- [deploy to a subdirectory with a path prefix ](https://www.11ty.dev/docs/config/#deploy-to-a-subdirectory-with-a-path-prefix)
 Images
 - [How to optimize and lazy-loading images on eleventy (11ty)](https://mahmoudashraf.dev/blog/how-to-optimize-and-lazyloading-images-on-eleventy/)
 - [images](https://www.11ty.dev/docs/plugins/image/)
@@ -92,6 +94,8 @@ Dark mode
 Experimental 
 - [eleventy-plugin-jsx](https://www.npmjs.com/package/eleventy-plugin-jsx) ❌
 
+Visual code extension
+- [`:emojisense:`](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)
 
 
 <!-- _Coding style convention ref optional, eg which linter to use_ -->

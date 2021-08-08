@@ -6,6 +6,7 @@ const embedYouTube = require("eleventy-plugin-youtube-embed");
 // const markdownItAnchor = require('markdown-it-anchor');
 // const liquidJs = require("liquidjs");
 const embedTwitter = require("eleventy-plugin-embed-twitter");
+const embedVimeo = require("eleventy-plugin-vimeo-embed");
 
 // const pluginMdCheckboxes = require("./plugin-md-checkboxes.js");
 
@@ -48,6 +49,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(embedTwitter);
   eleventyConfig.addPlugin(embedYouTube);
+  eleventyConfig.addPlugin(embedVimeo);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
