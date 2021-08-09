@@ -198,22 +198,22 @@
 	<hr>
 
 	<!-- content -->
-	<p>Thanks to <a href="https://github.com/OpenNewsLabs/autoEdit_2/pull/45">@probonopd PR</a> autoEdit 2 can compile the application on <a href="https://travis-ci.org/">Travis CI</a> upon each git push, and upload an AppImage to the GitHub Releases page.</p>
+	<p>Thanks to <a href="https://github.com/OpenNewsLabs/autoEdit_2/pull/45" target="_blank" rel="noopener noreferrer">@probonopd PR</a> autoEdit 2 can compile the application on <a href="https://travis-ci.org/" target="_blank" rel="noopener noreferrer">Travis CI</a> upon each git push, and upload an AppImage to the GitHub Releases page.</p>
 <p>This is an attempt to capture some notes on the steps of setting up travis CI integration.</p>
 <h2>What is an AppImage</h2>
 <p>AppImages can be downloaded and run without installation or the need for root rights.</p>
 <h3>Making it executable</h3>
 <p>You can make the appImage executable as follows:</p>
 <p><code>chmod a+x</code> exampleName.AppImage</p>
-<p>Or <a href="https://discourse.appimage.org/t/how-to-make-an-appimage-executable/80">see also how to make an AppImage executable for easier users instructions using GUI</a></p>
+<p>Or <a href="https://discourse.appimage.org/t/how-to-make-an-appimage-executable/80" target="_blank" rel="noopener noreferrer">see also how to make an AppImage executable for easier users instructions using GUI</a></p>
 <h3>Executing it</h3>
 <p>You can execute an appImage as follows:</p>
 <p><code>./exampleName.AppImage</code></p>
 <h3>AppImage advantages</h3>
-<p>Providing an <a href="https://appimage.org/">AppImage</a> would have, among others, these advantages:</p>
+<p>Providing an <a href="https://appimage.org/" target="_blank" rel="noopener noreferrer">AppImage</a> would have, among others, these advantages:</p>
 <ul>
 <li>Applications packaged as an AppImage can run on many distributions (including Ubuntu, Fedora, openSUSE, CentOS, elementaryOS, Linux Mint, and others)</li>
-<li>One app = one file = super simple for users: just download one AppImage file, <a href="https://discourse.appimage.org/t/how-to-make-an-appimage-executable/80">make it executable</a>, and run</li>
+<li>One app = one file = super simple for users: just download one AppImage file, <a href="https://discourse.appimage.org/t/how-to-make-an-appimage-executable/80" target="_blank" rel="noopener noreferrer">make it executable</a>, and run</li>
 <li>No unpacking or installation necessary</li>
 <li>No root needed</li>
 <li>No system libraries changed</li>
@@ -223,23 +223,23 @@
 <li>Can optionally GPG2-sign your AppImages (inside the file)</li>
 <li>Works on Live ISOs</li>
 <li>Can use the same AppImages when dual-booting multiple distributions</li>
-<li>Can be listed in the <a href="https://appimage.github.io/apps">AppImageHub</a> central directory of available AppImages</li>
+<li>Can be listed in the <a href="https://appimage.github.io/apps" target="_blank" rel="noopener noreferrer">AppImageHub</a> central directory of available AppImages</li>
 <li>Can double as a self-extracting compressed archive with the <code>--appimage-extract</code> parameter</li>
 </ul>
-<p><a href="https://appimage.github.io/apps">Here is an overview</a> of projects that are already distributing upstream-provided, official AppImages.</p>
-<p>If you have questions, AppImage developers are on #AppImage on irc.freenode.net.</p>
+<p><a href="https://appimage.github.io/apps" target="_blank" rel="noopener noreferrer">Here is an overview</a> of projects that are already distributing upstream-provided, official AppImages.</p>
+<p>If you have questions, AppImage developers are on #AppImage on <a href="http://irc.freenode.net">irc.freenode.net</a>.</p>
 <h2>github + Travis CI</h2>
 <h3>Travis CI Integration</h3>
-<p>1 - enable Travis CI for your repository as <a href="https://travis-ci.org/getting_started">described here</a></p>
-<p>2 - Set up <code>GITHUB_TOKEN</code> in Travis CI for this to work. as <a href="https://github.com/probonopd/uploadtool#usage">described here</a></p>
-<p>(Direct link to <a href="https://github.com/settings/tokens">Github token here</a>)</p>
+<p>1 - enable Travis CI for your repository as <a href="https://travis-ci.org/getting_started" target="_blank" rel="noopener noreferrer">described here</a></p>
+<p>2 - Set up <code>GITHUB_TOKEN</code> in Travis CI for this to work. as <a href="https://github.com/probonopd/uploadtool#usage" target="_blank" rel="noopener noreferrer">described here</a></p>
+<p>(Direct link to <a href="https://github.com/settings/tokens" target="_blank" rel="noopener noreferrer">Github token here</a>)</p>
 <h4>Add a <code>.travis.yml</code> file to your repository</h4>
-<p>See <a href="https://github.com/probonopd/uploadtool#usage">exampe in README of <code>probonopd/uploadtool</code></a> as well as example below from <a href="https://github.com/OpenNewsLabs/autoEdit_2/blob/master/.travis.yml">autoEdit <code>.travis.yml</code></a> or from <a href="https://github.com/pietrop/subtitlesComposer-app/blob/master/.travis.yml">subtitlesComposer-app <code>.travis.yml</code></a>.</p>
+<p>See <a href="https://github.com/probonopd/uploadtool#usage" target="_blank" rel="noopener noreferrer">exampe in README of <code>probonopd/uploadtool</code></a> as well as example below from <a href="https://github.com/OpenNewsLabs/autoEdit_2/blob/master/.travis.yml" target="_blank" rel="noopener noreferrer">autoEdit <code>.travis.yml</code></a> or from <a href="https://github.com/pietrop/subtitlesComposer-app/blob/master/.travis.yml" target="_blank" rel="noopener noreferrer">subtitlesComposer-app <code>.travis.yml</code></a>.</p>
 <h4><code>package.json</code></h4>
 <p>To add linux see example</p>
 <ul>
-<li><a href="https://github.com/OpenNewsLabs/autoEdit_2/blob/master/package.json">autoEdit <code>package.json</code></a></li>
-<li><a href="https://github.com/pietrop/subtitlesComposer-app/blob/master/package.json">subtitlesComposer-app <code>package.json</code></a></li>
+<li><a href="https://github.com/OpenNewsLabs/autoEdit_2/blob/master/package.json" target="_blank" rel="noopener noreferrer">autoEdit <code>package.json</code></a></li>
+<li><a href="https://github.com/pietrop/subtitlesComposer-app/blob/master/package.json" target="_blank" rel="noopener noreferrer">subtitlesComposer-app <code>package.json</code></a></li>
 </ul>
 <!-- CircleCI for Mac and Windows deployment -->
 

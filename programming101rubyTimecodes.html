@@ -211,10 +211,10 @@
 click on 
 
 Or just make giff -->
-<p>if you are old enough to remember back in the days when <a href="https://en.wikipedia.org/wiki/DOS">DOS</a> was popular is a  similar kind of idea, navigate the interface via text inputs.</p>
+<p>if you are old enough to remember back in the days when <a href="https://en.wikipedia.org/wiki/DOS" target="_blank" rel="noopener noreferrer">DOS</a> was popular is a  similar kind of idea, navigate the interface via text inputs.</p>
 <!-- ![DOS Screenshot]() -->
 <h3>Sublime Text</h3>
-<p>You can use any text editor, but <a href="https://www.sublimetext.com/">sublime text is a solid choice to get started. Download it and install it from here.</a></p>
+<p>You can use any text editor, but <a href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer">sublime text is a solid choice to get started. Download it and install it from here.</a></p>
 <p>open your terminal.</p>
 <h3>some CLI commands</h3>
 <p>Some commands to familiarise yourself with</p>
@@ -240,8 +240,8 @@ Or just make giff -->
 <p><code>ruby timecode.rb</code></p>
 <h3>command line arguments and string interpolation</h3>
 <pre class="language-ruby"><code class="language-ruby">print <span class="token string">"Welcome to the timecodes converter"</span><br>timecode <span class="token operator">=</span> gets<span class="token punctuation">.</span>chomp<br>print <span class="token string">"This is the timecode you put <span class="token interpolation"><span class="token delimiter tag">#{</span>timecode<span class="token delimiter tag">}</span></span>."</span> </code></pre>
-<p><code>timecode = gets.chomp</code> where timecode is a variable. and <code>gets</code> is a command to get user input from terminal promt.
-if we used it without <code>chomp</code> we’d get the whole line, with the carriage return.
+<p><code>timecode = gets.chomp</code> where timecode is a variable. and <code>gets</code> is a command to get user input from terminal promt.<br>
+if we used it without <code>chomp</code> we’d get the whole line, with the carriage return.<br>
 Carriage return is a symbol that signifies the line has ended. <code>\n</code></p>
 <p>For example if with type <code>00:30:40:05</code> we’d get  <code>00:30:40:05\n</code> with the carriage return/line break. but if we use <code>.chomp</code> it gets rid of it for us.</p>
 <p><code>print</code> we already seen, prints message to console.</p>
@@ -254,7 +254,7 @@ Carriage return is a symbol that signifies the line has ended. <code>\n</code></
 </code></pre>
 <p>Ok, so now we can get an input and return some &quot;output&quot; to the screen/terminal. Meaning we can manipulate informations. Altho in a simple way.</p>
 <h3>Comments and variable names</h3>
-<p>You can add comments in your code to make it more readable. using the <code>#</code> at the beginning of the line.
+<p>You can add comments in your code to make it more readable. using the <code>#</code> at the beginning of the line.<br>
 making note for yourself and others to help with legibility and clarify things.</p>
 <p>Also try to give good descriptive variable names. better a long name that does what it says on the tin then a short one that could be anything.</p>
 <p>eg a programs that use the variable name <code>x</code> through out is not very self explanatory.</p>
@@ -264,12 +264,12 @@ making note for yourself and others to help with legibility and clarify things.<
 <li>strings <code>&quot;&quot;</code></li>
 <li>integer eg <code>12</code></li>
 </ul>
-<p>is technically a string <code>&quot;12&quot;</code>. What does that mean?
-<code>&quot;12&quot;+1</code> gives you an error
+<p>is technically a string <code>&quot;12&quot;</code>. What does that mean?<br>
+<code>&quot;12&quot;+1</code> gives you an error<br>
 and <code>&quot;12&quot;*1</code>  gives you <code>&quot;12121212121212121212&quot;</code></p>
-<p>You can convert between string and integer with
+<p>You can convert between string and integer with<br>
 <code>.to_i</code> such as <code>&quot;12&quot;.to_i</code> which gives you <code>12</code></p>
-<p>similarly you can also convert integer to string with the <code>.to_s</code> method.
+<p>similarly you can also convert integer to string with the <code>.to_s</code> method.<br>
 eg  <code>12.to_s</code> which gives you <code>&quot;12&quot;</code>.</p>
 <h3>Arrays</h3>
 <p>We’ve seen variables in action, let’s take a side step and introduce Arrays. as a way to store informations.</p>
@@ -281,7 +281,7 @@ eg  <code>12.to_s</code> which gives you <code>&quot;12&quot;</code>.</p>
 <p>the <code>fruits</code> array will now look like so <code>[&quot;banas&quot;, &quot;apples&quot;, &quot;organges&quot;,&quot;mango&quot;]</code></p>
 <p>Stop for a sec, re-read from <code>Arrays</code> and think about this how would you get the mango value?</p>
 <p>Turning strings into arrays.</p>
-<p>if you had a string containing<code>&quot;banas apples rganges mango&quot;</code> and you wanted to turn this into an array.
+<p>if you had a string containing<code>&quot;banas apples rganges mango&quot;</code> and you wanted to turn this into an array.<br>
 There’s an handy method called <code>.split()</code> that can divide it, allowing you to specify where to make the split.</p>
 <pre class="language-ruby"><code class="language-ruby"><span class="token string">"banas apples rganges mango"</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span></code></pre>
 <p>in this case because there is a blank space between them we’d split on the space <code>.split(&quot; &quot;)</code> if they were comma separate we could <code>split .split(&quot;,&quot;)</code> on that.</p>
@@ -292,9 +292,9 @@ There’s an handy method called <code>.split()</code> that can divide it, allow
 <p>Ok back to our problem</p>
 <h3>Converting timecode to seconds.</h3>
 <h4>Identifying a possible solution in pseudocode</h4>
-<p>How can we convert timecoes in such format <code>hh:mm:ss:ms</code> to seconds?
+<p>How can we convert timecoes in such format <code>hh:mm:ss:ms</code> to seconds?<br>
 It often helps to think about the solution, the list of commands, the algorithm without thinking about the specific implementation of the language. At a high level.</p>
-<p>How would you solve this problem? often thinking about the mental steps you’d do, to do it &quot;manually&quot;.
+<p>How would you solve this problem? often thinking about the mental steps you’d do, to do it &quot;manually&quot;.<br>
 Writing this down is referred to pseudo code.</p>
 <p>If we could isolate the hours, minutes, seconds and milliseconds into their own variables we could convert them to seconds individually and then adding it all up would give us the converted value.</p>
 <p>To turn this into code we have to break it down even further.</p>
@@ -359,7 +359,7 @@ ms_in_seconds =  -->
 ```
 ruby timecode.rb 00:04:05:06
 ``` -->
-<p>when prompted type a timecode, eg <code>00:04:05:06</code> and hit enter.
+<p>when prompted type a timecode, eg <code>00:04:05:06</code> and hit enter.<br>
 You should expect to see timecode converted into seconds.</p>
 <h2>Recap</h2>
 <p>we looked at</p>

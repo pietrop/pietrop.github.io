@@ -208,19 +208,19 @@
 <p>comparison of existing transcriptions</p>
 <ul>
 <li>
-<p>srt to json
+<p>srt to json<br>
 with file size for one hour</p>
 </li>
 <li>
-<p>IBM
+<p>IBM<br>
 with file size for one hour</p>
 </li>
 <li>
-<p>Gentle
+<p>Gentle<br>
 with file size for one hour</p>
 </li>
 <li>
-<p>Spoken data XML -&gt; to Json
+<p>Spoken data XML -&gt; to Json<br>
 with file size for one hour</p>
 </li>
 <li>
@@ -233,7 +233,7 @@ with file size for one hour</p>
 <p>my spec defined in autoEdit sails notes</p>
 </li>
 <li>
-<p>Others to keep in mind
+<p>Others to keep in mind<br>
 BBC Video compositor JSON</p>
 </li>
 </ul>
@@ -242,22 +242,22 @@ BBC Video compositor JSON</p>
 <p>[{in: 00, out: 00, text: &quot;some text&quot;}, …]</p>
 <h2>Lines?</h2>
 <p>if you wanted to account for lines, you could have a nested array of words. to group words together into lines.</p>
-<p>[
-[{in: 00, out: 00, text: &quot;some text&quot;}, …]
-[..]
-…
+<p>[<br>
+[{in: 00, out: 00, text: &quot;some text&quot;}, …]<br>
+[..]<br>
+…<br>
 ]</p>
 <h2>Object?</h2>
-<p>In previous suggestion if we want to get all the text at once, we have to loop through the
-whole of the data structure. This is not time consuming if done programmatically.
+<p>In previous suggestion if we want to get all the text at once, we have to loop through the<br>
+whole of the data structure. This is not time consuming if done programmatically.<br>
 But there’s an argument for having an object with a transcription attribute in plain text</p>
-<p>{transcription: &quot;some text…&quot;,
-words:[
-…
-]
+<p>{transcription: &quot;some text…&quot;,<br>
+words:[<br>
+…<br>
+]<br>
 }</p>
 <p>however this might increase the size of the file for long transcriptions (? as seen in previous examples)</p>
-<p>## Tag agnostic
+<p>## Tag agnostic<br>
 ?</p>
 
 

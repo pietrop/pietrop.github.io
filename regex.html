@@ -202,13 +202,13 @@
 <blockquote>
 <p>“Regular expressions are a way to describe patterns in string data.”</p>
 <ul>
-<li>Excerpt From: Haverbeke, Marijn. “Eloquent JavaScript.” iBooks.
+<li>Excerpt From: Haverbeke, Marijn. “Eloquent JavaScript.” iBooks.<br>
 This material may be protected by copyright.</li>
 </ul>
 </blockquote>
 <h2>Defining the problem</h2>
 <p>Let's say we want to write a regex to match time-codes, to test a given time-code has a valid format</p>
-<p>We consider the notation hours, minutes, seconds, milliseconds.
+<p>We consider the notation hours, minutes, seconds, milliseconds.<br>
 Such as <code>01:17:23.736</code>  where the milliseconds that can be represented either with a <code>.</code> or a <code>,</code>  <code>hh:mm:ss.mmm</code>  Or <code>hh:mm:ss,mmm</code>.</p>
 <p>When writing a regex you'd be tempted to mash all the symbols together, test it and tweak it until it works, and get it done and over with asap. An alternative approach is [ giving a variable to patterns and then combining those patterns this makes it easier to read, easier to write, and most importantly easier to think about in a systematic way.</p>
 <h2>exploring the problem</h2>

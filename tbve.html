@@ -218,22 +218,22 @@
 <blockquote>
 <p>To make video production faster, easier and more accessible.</p>
 </blockquote>
-<p>t: /img/tbve_vision/current.png
+<p>t: /img/tbve_vision/current.png<br>
 <img src="/img/tbve_vision/current.png" alt="Current Iteration"></p>
 <p>The App makes automatic transcription from video (or audio). User selects parts they want, and export video sequence.</p>
 <p><img src="/img/tbve_vision/overview_diagram.png" alt="Overview diagram"></p>
 <h4>Demo</h4>
-<p>Ad a video or audio file
+<p>Ad a video or audio file<br>
 <img src="/img/tbve_vision/1_getting_started.gif" alt="Demo 1"></p>
-<p>Wait 5 min for transcription
+<p>Wait 5 min for transcription<br>
 <img src="/img/tbve_vision/2_processing_transcription.gif" alt="Demo 1"></p>
-<p>Explore the transcription and export an EDL(Edit Deicion List) video sequence of your selections
+<p>Explore the transcription and export an EDL(Edit Deicion List) video sequence of your selections<br>
 <img src="/img/tbve_vision/3_transcription.gif" alt="Demo 1"></p>
 <p>Open the EDL in premiere and reconnect your sequence</p>
 <p><img src="/img/tbve_vision/4_EDL_in_premiere.gif" alt="Demo 1"></p>
 <hr>
 <h4>Interactive demo</h4>
-<p>Link to <a href="https://opennewslabs.github.io/autoEdit_2/public/demo/frontEnd/index.html">Interactive demo</a>{:target=&quot;_blank&quot;}</p>
+<p>Link to <a href="https://opennewslabs.github.io/autoEdit_2/public/demo/frontEnd/index.html" target="_blank" rel="noopener noreferrer">Interactive demo</a>{:target=&quot;_blank&quot;}</p>
 <!-- link to demo in github project page  -->
 <ol>
 <li>Click on <code>new</code></li>
@@ -265,8 +265,8 @@
 </blockquote>
 <!--  -->
 <blockquote>
-<p>As the term implies, a step-outline is the story told in steps.
-Using one- or two-sentence statements, the writer simply and clearly describes what happens in each scene, how it builds and turns. [...]
+<p>As the term implies, a step-outline is the story told in steps.<br>
+Using one- or two-sentence statements, the writer simply and clearly describes what happens in each scene, how it builds and turns. [...]<br>
 On the back of each card the writer indicates what step in the design of the story he sees this scene fulfilling-at least for the moment. Which scenes set up the Inciting Incident? Which is the Inciting Incident? First Act Climax? Perhaps a Mid-Act Climax? Second Act? Third? Fourth? Or more? He does this for Central Plotand subplots alslike.</p>
 </blockquote>
 <!--  -->
@@ -295,7 +295,7 @@ It would probably not be modelled a round a film based worflow, considering most
 <p>However depending on the use case, this rough cut might also end up being the final output. eg if you are just looking for a few sound bites or quotes for twitter or facebook.</p>
 <hr>
 <h3>3. Feedback</h3>
-<p>Feedbak on initial prototype.
+<p>Feedbak on initial prototype.<br>
 The porpuse of the initial prototype was simply to test the quality of the transcriptions.</p>
 <p>Having tested a bunch of different speech to text APIs. Wanted to make sure that the IBM Watson STT one met the minimum acceptability treshold by the editorial staff before building the tool on top of that service.</p>
 <!-- 
@@ -312,8 +312,8 @@ But none the less if the users were not going to accept it as a valuable alterna
 <p>The editorial product team then received the following feedback from one of the producers.</p>
 <blockquote>
 <p>“... I just wanted to say thank you so much. It's great. It will measurably improve our workflow and general well-being. You all are brilliant.”</p>
-<p>Joss Fong,
-Senior Editorial Producer, Vox.com</p>
+<p>Joss Fong,<br>
+Senior Editorial Producer, <a href="http://Vox.com">Vox.com</a></p>
 </blockquote>
 <hr>
 <h3>4. Roadmap</h3>
@@ -344,8 +344,8 @@ Senior Editorial Producer, Vox.com</p>
 <p>The first iteration is the one described in in the feedback section.</p>
 <p>The current iteration is the papercuts  version described in the purpose section.</p>
 <p>That version will see adding features such as the possibility to annotate selections, seach and filter the transcriptions. Ability to add speaker names. And group transcriptions by projects.</p>
-<p>The third release will allow to do the equivalent of a paper-edit but digital.
-By bringing selections from multiple transcription into a story outline.
+<p>The third release will allow to do the equivalent of a paper-edit but digital.<br>
+By bringing selections from multiple transcription into a story outline.<br>
 Eventually a video preview of the story selection will also be possible in order to shorten the feedback loop.</p>
 <hr>
 <h3>5. Vision</h3>
@@ -356,23 +356,23 @@ Eventually a video preview of the story selection will also be possible in order
 (Recode use case)</p>
 </li>
 <li>
-<p>Export to social media, Twitter video or FB video.
+<p>Export to social media, Twitter video or FB video.<br>
 (Recode use case)</p>
 </li>
 <li>
-<p>Multi-user collaboration
-(Vox.com use case)</p>
+<p>Multi-user collaboration<br>
+(<a href="http://Vox.com">Vox.com</a> use case)</p>
 </li>
 <li>
-<p>Mobile
+<p>Mobile<br>
 (Racked use case)</p>
 </li>
 <li>
-<p>Searchable/editable archive
+<p>Searchable/editable archive<br>
 (SB Nation and Studio team use cases)</p>
 </li>
 <li>
-<p>On location edit, Hardware device
+<p>On location edit, Hardware device<br>
 (SB Nation use case)</p>
 </li>
 <li>
@@ -395,11 +395,11 @@ Eventually a video preview of the story selection will also be possible in order
 <h4>5.1. Live video editing</h4>
 <!-- (Recode use case) -->
 <p>Most STT Apis can support real time streaming returning results of the transcription straightaway.</p>
-<p>With the current version, it's faster to split the media into 5 minutes chunks send them concurrently and re-assemble the results once they come back, then to process the media in one go.
+<p>With the current version, it's faster to split the media into 5 minutes chunks send them concurrently and re-assemble the results once they come back, then to process the media in one go.<br>
 Because with the chunking it means any length can be transcribed in just under 5 minutes. While without dividing it it would take a bit longer.</p>
 <p>However with a live use case, this would mean you could have a video stream, and could see the transcription appear in the tool as it's beeing spoken, being then able to paper-edit it, and export it to social media or to a video editing software.</p>
 <p><img src="/img/tbve_vision/live.png" alt="Live video editing"></p>
-<p>I am particularly interested in measuring the before and after of the user engagment on social media with and without this tool for live events.
+<p>I am particularly interested in measuring the before and after of the user engagment on social media with and without this tool for live events.<br>
 Would people be more likely to re-tweet a captioned video of a quote or a still image with the text in the body of the tweet is just as good?</p>
 <h4>5.2. Export to social media, Twitter video or FB video.</h4>
 <!-- (Recode use case) -->
@@ -424,14 +424,14 @@ Would people be more likely to re-tweet a captioned video of a quote or a still 
 <p>But without wanting to go into implementing a full fledge media management system, processing videos for transcriptions could allow to get a summary of of any archive at a glance by analysing those transcriptions. If combined with computational photography to produce a visual log as well this could be even more valuable.</p>
 <h4>5.6. On location edit, Hardware device</h4>
 <!-- (SB Nation use case) -->
-<p>Wouldn't it be great if while you are there on location you could see the transcription of what the person  you have interviewed has just said?
+<p>Wouldn't it be great if while you are there on location you could see the transcription of what the person  you have interviewed has just said?<br>
 So that you can make sure you have everything you need or if there's anything worth clarifying.</p>
 <p>This would also allow to do a paper-edit there and then, if time is of the essence.</p>
 <h4>5.7. Foreign language programmatic translations</h4>
 <p>At the Buenos Aires Hacks Hackers Media party hackaton I got asked if the tool could work in spanish. I then added support for the IBM Lanugages.</p>
 <p><img src="/img/tbve_vision/foreign_language.png" alt="Chose a language"></p>
 <p>To test this out I put through the tool some audio in chinese only to realise I had no idea what the charachters meant. I then started to play a round with the idea of using the translation API for translating each line of the transcription and displaying that along side.</p>
-<p>This would allow to make a rough cut from video in a language you might not know.
+<p>This would allow to make a rough cut from video in a language you might not know.<br>
 You'd probably still need a human translator/interpreter at some point to look over it, but it could considerably speed up this type of workflow.</p>
 <h4>5.8. NLP Insight</h4>
 <p>In a nutsheel, woudn't it be great if you could give it a video and it returned an interactive transcription with topic summary, speakers, sentiment analyses insight into the video etc.. so that it was easier/faster to navigate and get the gist at a glance?</p>
@@ -455,7 +455,7 @@ You'd probably still need a human translator/interpreter at some point to look o
 <li><code>webm</code> video</li>
 <li><code>wav</code> audio.</li>
 </ul>
-<p>There is probably many use cases that I can't think of right now, but to give an idea of the possibilities here are two interactives
+<p>There is probably many use cases that I can't think of right now, but to give an idea of the possibilities here are two interactives<br>
 that inspired this use case for newsroom developers.</p>
 <p><img src="/img/tbve_vision/mandela.png" alt="Mandale Interactive"></p>
 <p><img src="/img/tbve_vision/aljazeera_obama_romney.png" alt="Obama Romeny AJ debate"></p>

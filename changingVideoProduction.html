@@ -205,8 +205,8 @@
 <p><img src="" alt="giff of interactive transcript"></p>
 <p>The actual app is a Mac Os X app but you can try a browser based d<a href="">Interactive demo here</a> or <a href="">get the latest release from the project pagr</a>.</p>
 <h2>What just happened?</h2>
-<p>This is only the first version of the tool.
-Final version of the tool will will essentially be a <a href="https://pietropassarelli.com/wip_london_july2016.html">digital paper-editing tool</a>.</p>
+<p>This is only the first version of the tool.<br>
+Final version of the tool will will essentially be a <a href="https://pietropassarelli.com/wip_london_july2016.html" target="_blank" rel="noopener noreferrer">digital paper-editing tool</a>.</p>
 <!-- The user uploads a video, the system transcribes it using IBM Watson Speech to Text API. The user can then read in sync with the video preview, make selections and export those selections as a video sequence.
  -->
 <p>In this version you can give it a video, receive a transcription, explore the text with video preview, make text selection, and export that into a video sequence in the editing software of choice ( eg premiere, final cut pro 7, avid and any other professional editing software that supports EDL import).</p>
@@ -261,7 +261,7 @@ So there's currently a few bugs such as a file size limit at 100mb.
 <p>User can now create a proeject to keep transcriptions organised</p>
 <h4>Release 7 - Adding paper-edit to projects + paperedit view</h4>
 <p>(no paper-edit video preview and no outline but EDL export)</p>
-<p>A user can creat a paper-edit inside a proejct.
+<p>A user can creat a paper-edit inside a proejct.<br>
 This allows to drag text from transcriptions into a new &quot;paperedit&quot; section. These selections can be re-ordered, and exported as EDL.</p>
 <h4>Release 8 - paper-edit outline</h4>
 <!-- (? or if easier, done in previous release) -->
@@ -270,7 +270,7 @@ This allows to drag text from transcriptions into a new &quot;paperedit&quot; se
 <p>Same as above but the user can also watch a preview of the selections / paper-edit before exporign.</p>
 <hr>
 <h2>The stack</h2>
-<p>it uses Backbone for the front end, sailsjs for the backend, and NWJS for packaging it as a desktop application for os x.
+<p>it uses Backbone for the front end, sailsjs for the backend, and NWJS for packaging it as a desktop application for os x.<br>
 IBM Speech to text API is used for the transcriptions.</p>
 <p>In the future there's also plans to add support for the <a href="">gentle open source STT API</a> to make a out of the box  working version that does not require setup, and can work offline</p>
 <h3>Components</h3>
@@ -279,7 +279,7 @@ IBM Speech to text API is used for the transcriptions.</p>
 <li>webm converter</li>
 <li>ogg converter</li>
 <li>video to audio wav (with audio specs for IBM Watson)</li>
-<li>IBM Watson stt to transcription json
+<li>IBM Watson stt to transcription json<br>
 (working torwards  spec for transcription json would be good)</li>
 <li>metadata reader (uses ffprobe and node ffmpeg-fluent) reads metadata needed for the EDL.</li>
 <li>EDL composer</li>
@@ -291,8 +291,8 @@ IBM Speech to text API is used for the transcriptions.</p>
 <p><a href="">more info on this here</a></p>
 <!-- link to documentation components page -->
 <h2>Why a desktop app?</h2>
-<p>To be able to work with files from camcorders, that can at times exceed 50 gigs, a web app was not going to be able to handle the file upload.
-But with NWJS when selecting a file it returns the file path, and because you have access to the file system you can then leave the original where it is, and convert it into audio to send to the speech to text API and HTML5 video for preview.
+<p>To be able to work with files from camcorders, that can at times exceed 50 gigs, a web app was not going to be able to handle the file upload.<br>
+But with NWJS when selecting a file it returns the file path, and because you have access to the file system you can then leave the original where it is, and convert it into audio to send to the speech to text API and HTML5 video for preview.<br>
 Because the output is an EDL, the original is then reconnected to the video sequence.</p>
 <hr>
 <h2>What is the impact on video production?</h2>
@@ -301,7 +301,7 @@ Because the output is an EDL, the original is then reconnected to the video sequ
 <p>What would normally take 3 weeks you can now do in 3 hours.</p>
 <h3>You can concentrate on the crafting of your story</h3>
 <blockquote>
-<p>The Ladder of Abstraction. S.I. Hayakawa, in his book Language in Thought and Action, described what he called the ladder of abstraction.
+<p>The Ladder of Abstraction. S.I. Hayakawa, in his book Language in Thought and Action, described what he called the ladder of abstraction.<br>
 <em>The ladder of abstraction is an image and concept used to illustrate how language and reasoning evolves from concrete to abstract.</em></p>
 </blockquote>
 <p>Once you have reasoned fromt the concrete to the abstract concepts manipulating those at a high level helps organise them and structure your story. So that when it comes to &quot;fill in the dialogue&quot; everything falls into place.</p>
@@ -316,8 +316,8 @@ Because the output is an EDL, the original is then reconnected to the video sequ
 </blockquote>
 <!--  -->
 <blockquote>
-<p>As the term implies, a step-outline is the story told in steps.
-Using one- or two-sentence statements, the writer simply and clearly describes what happens in each scene, how it builds and turns. [...]
+<p>As the term implies, a step-outline is the story told in steps.<br>
+Using one- or two-sentence statements, the writer simply and clearly describes what happens in each scene, how it builds and turns. [...]<br>
 On the back of each card the writer indicates what step in the design of the story he sees this scene fulfilling-at least for the moment. Which scenes set up the Inciting Incident? Which is the Inciting Incident? First Act Climax? Perhaps a Mid-Act Climax? Second Act? Third? Fourth? Or more? He does this for Central Plotand subplots alslike.</p>
 </blockquote>
 <!--  -->

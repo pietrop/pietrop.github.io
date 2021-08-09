@@ -202,7 +202,7 @@
 <blockquote>
 <p>In the days of linear tape editing, EDLs were used to save and restore the timecode information for each edit performed on a computer-controlled editing system. Because timecode editing systems were expensive, many editors would perform offline edits with window dubs (low-quality copies of original footage with timecode visually superimposed, or burned, directly onto the image) and then create an EDL by hand for delivery to a computer-controlled editing system for the online edit.[ ... ] If you need to move a project to or from a different system or editing workstation, you can export your project to an interchange file format such as EDL or Final Cut Pro XML Interchange Format.</p>
 </blockquote>
-<p>From <a href="https://documentation.apple.com/en/finalcutpro/usermanual/index.html#chapter=96%26section=1%26tasks=true">Apple documentation</a></p>
+<p>From <a href="https://documentation.apple.com/en/finalcutpro/usermanual/index.html#chapter=96%26section=1%26tasks=true" target="_blank" rel="noopener noreferrer">Apple documentation</a></p>
 <h2>Example</h2>
 <pre><code>TITLE: Jesselyn Radack
 FCM: NON-DROP FRAME
@@ -232,9 +232,9 @@ FINAL CUT PRO REEL: time REPLACED BY: time
 <p>Each edit uses one or more tracks in the sequence. In the case of tape-to-tape editing, this field determines which tracks are turned on on the record deck during this event.</p>
 </blockquote>
 <blockquote>
-<p>V: Video
-A: Audio (Some EDL formats label this 1 or 2.)
-A2: Audio 2
+<p>V: Video<br>
+A: Audio (Some EDL formats label this 1 or 2.)<br>
+A2: Audio 2<br>
 AA: Both channels of audio</p>
 </blockquote>
 <h3>Edit (or Transition) Type</h3>
@@ -260,7 +260,7 @@ AA: Both channels of audio</p>
 <p>We need to add this otherwise we'd get a missmatch when reconnecting.</p>
 <!-- add tooltip explaoining each -->
 <p>This assumes that <code>C</code> and <code>AA/V</code> don't change. but this could be added to out EDL object, and added to the mix at a later stage should a use case arise.</p>
-<p>More on EDL specs in <a href="https://documentation.apple.com/en/finalcutpro/usermanual/index.html#chapter=96%26section=1%26tasks=true">Apple documentation</a> and <a href="https://edlmax.com/MAXGUIDE.HTML">here</a></p>
+<p>More on EDL specs in <a href="https://documentation.apple.com/en/finalcutpro/usermanual/index.html#chapter=96%26section=1%26tasks=true" target="_blank" rel="noopener noreferrer">Apple documentation</a> and <a href="https://edlmax.com/MAXGUIDE.HTML" target="_blank" rel="noopener noreferrer">here</a></p>
 <h2>Optional <code>ReelName</code></h2>
 <p>If the video/audio file does not come directly from a comcorder the reel name might not be present, in that case it should be replaced with <code>AX</code>.</p>
 <pre><code>001  AX       V     C        01:00:00:00 01:00:05:00 00:00:00:00 00:00:05:00

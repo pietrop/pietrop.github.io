@@ -206,45 +206,45 @@
 	<div class="videoWrapper">
 <iframe width="560" height="315" src="//www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
 </div>
-<p><a href="https://guides.railsgirls.com/devise/">Rails girls devise guide</a></p>
+<p><a href="https://guides.railsgirls.com/devise/" target="_blank" rel="noopener noreferrer">Rails girls devise guide</a></p>
 <ol>
 <li>
-<p>add gem
+<p>add gem<br>
 <code>gem 'devise' </code></p>
 </li>
 <li>
-<p>bundle install
+<p>bundle install<br>
 <code>bundle install</code></p>
 </li>
 <li>
-<p>add devise
+<p>add devise<br>
 <code>rails g devise:install</code></p>
 </li>
 <li>
-<p>ad config for development
+<p>ad config for development<br>
 inf <code>config/environments/development.rb</code> add</p>
 </li>
 </ol>
 <pre class="language-ruby"><code class="language-ruby">    config<span class="token punctuation">.</span>action_mailer<span class="token punctuation">.</span>default_url_options <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token symbol">:host</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token string">'localhost:3000'</span> <span class="token punctuation">}</span><br>```<br><br><span class="token number">5.</span> ad flash notifications<br><br><span class="token keyword">in</span> ``` app<span class="token operator">/</span>views<span class="token operator">/</span>layouts<span class="token operator">/</span>application<span class="token punctuation">.</span>html<span class="token punctuation">.</span>erb``` above ``<span class="token operator">&lt;</span><span class="token string">%= yield %>``<br><br>`````erb<br>   &lt;% if notice %><br>      &lt;p class=</span><span class="token string">"alert alert-success"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token string">%= notice %>&lt;/p><br>    &lt;% end %><br>    &lt;% if alert %><br>       &lt;p class=</span><span class="token string">"alert alert-danger"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">=</span> alert <span class="token string">%>&lt;/p></span><br>     <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">end</span> <span class="token operator">%</span></code></pre>
 <ol start="6">
 <li>
-<p>add user  model
+<p>add user  model<br>
 <code>rails g devise user</code></p>
 </li>
 <li>
-<p>update db
+<p>update db<br>
 <code>rake db:migrate</code></p>
 </li>
 </ol>
-<p>9.update/check routes
+<p>9.update/check routes<br>
 i found that <code>devise_for :users</code> needs to be right under top of the page, like this:</p>
 <pre class="language-ruby"><code class="language-ruby">    <span class="token constant">Rails</span><span class="token punctuation">.</span>application<span class="token punctuation">.</span>routes<span class="token punctuation">.</span>draw <span class="token keyword">do</span><br>    devise_for <span class="token symbol">:users</span><br><br>    <span class="token comment">#some other routes code</span><br>    <span class="token keyword">end</span></code></pre>
-<p>10.check if it works
-run server (<code>rails s</code>) and visit <code>https://localhost:3000/users/sign_up </code>
+<p>10.check if it works<br>
+run server (<code>rails s</code>) and visit <code>https://localhost:3000/users/sign_up </code><br>
 you can check rails console (<code>rails c</code>) to see if the user has been created i.e. <code>User.all</code>.</p>
 <ol start="11">
-<li>add links sign in/out/up
-see rest of rails guide to add links <a href="https://guides.railsgirls.com/devise/">here</a></li>
+<li>add links sign in/out/up<br>
+see rest of rails guide to add links <a href="https://guides.railsgirls.com/devise/" target="_blank" rel="noopener noreferrer">here</a></li>
 </ol>
 
 

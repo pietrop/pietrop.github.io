@@ -197,8 +197,8 @@
 	<!-- content -->
 	<p>Here’s a quick &quot;how to&quot; to see how many people have downloaded your project release on github.</p>
 <p>This can only be done through the github API,but if your API hasn’t exceeded the request limit you can do it without authenticating. (chances are that if you are at work they might have already exceeded the limit, so you may want to do this from a different wifi).</p>
-<p>I am going to use a project I worked on a while back <a href="https://pietropassarelli.com/alpaca_speech"><code>https://pietropassarelli.com/alpaca_speech</code></a> that I use everyday but I am curious to see how many people use the packaged up in the release section of github.</p>
-<p>We are going to be making get requests with <a href="https://www.getpostman.com/">postman</a>, but you could use curl or whatever you prefer.</p>
+<p>I am going to use a project I worked on a while back <a href="https://pietropassarelli.com/alpaca_speech" target="_blank" rel="noopener noreferrer"><code>https://pietropassarelli.com/alpaca_speech</code></a> that I use everyday but I am curious to see how many people use the packaged up in the release section of github.</p>
+<p>We are going to be making get requests with <a href="https://www.getpostman.com/" target="_blank" rel="noopener noreferrer">postman</a>, but you could use curl or whatever you prefer.</p>
 <h2>Identify release id.</h2>
 <p>First things first get the release id</p>
 <pre><code>https://api.github.com/repos/pietrop/alpaca_speech/releases
@@ -218,9 +218,9 @@
 <p>in this case</p>
 <pre class="language-json"><code class="language-json"><span class="token property">"download_count"</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span></code></pre>
 <p>Done.</p>
-<p>Here are some more links from the <a href="https://developer.github.com/v3/">github api</a> <a href="https://developer.github.com/v3/repos/releases/#get-a-single-release">documentation</a></p>
+<p>Here are some more links from the <a href="https://developer.github.com/v3/" target="_blank" rel="noopener noreferrer">github api</a> <a href="https://developer.github.com/v3/repos/releases/#get-a-single-release" target="_blank" rel="noopener noreferrer">documentation</a></p>
 <hr>
-<p>You can also just use this page, <a href="https://pietropassarelli.com/count-github-releases/">count github releases</a> (also on <a href="https://github.com/pietrop/count-github-releases">Github</a>), I made that pulls the data from the github API based on what we learned above.</p>
+<p>You can also just use this page, <a href="https://pietropassarelli.com/count-github-releases/" target="_blank" rel="noopener noreferrer">count github releases</a> (also on <a href="https://github.com/pietrop/count-github-releases" target="_blank" rel="noopener noreferrer">Github</a>), I made that pulls the data from the github API based on what we learned above.</p>
 
 
 
