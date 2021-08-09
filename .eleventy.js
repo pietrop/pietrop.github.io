@@ -10,6 +10,7 @@ const embedVimeo = require("eleventy-plugin-vimeo-embed");
 
 const mdIterator = require('markdown-it-for-inline')
 const markdownIt = require('markdown-it');
+const markdownItCheckbox = require('markdown-it-checkbox')
 
 
 // const pluginMdCheckboxes = require("./plugin-md-checkboxes.js");
@@ -164,7 +165,7 @@ module.exports = function (eleventyConfig) {
       tokens[idx].attrPush(['rel', 'noopener noreferrer'])
     }
    
-  })
+  }).use(markdownItCheckbox)
   // .use(markdownItAnchor, {
   //   permalink: true,
   //   permalinkClass: "direct-link",

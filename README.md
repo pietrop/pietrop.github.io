@@ -99,8 +99,8 @@ Experimental
 
 Visual code extension
 - [`:emojisense:`](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)
-
-
+- [Paste&#32;URL&#32;-&#32;Visual&#32;Studio&#32;Marketplace](https://marketplace.visualstudio.com/items?itemName=kukushi.pasteurl)
+- [GitHub - mcecot/markdown-it-checkbox: Plugin to create checkboxes for markdown-it markdown parser.](https://github.com/mcecot/markdown-it-checkbox)
 <!-- _Coding style convention ref optional, eg which linter to use_ -->
 
 <!-- _Linting, github pre-push hook - optional_ -->

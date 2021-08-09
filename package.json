@@ -22,6 +22,7 @@
     "gh-pages": "^3.2.3",
     "markdown-it": "^12.2.0",
     "markdown-it-attrs": "^4.0.0",
+    "markdown-it-checkbox": "^1.1.0",
     "markdown-it-for-inline": "^0.1.1"
   },
   "dependencies": {
