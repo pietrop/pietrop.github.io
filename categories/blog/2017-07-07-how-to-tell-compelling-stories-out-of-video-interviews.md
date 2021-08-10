@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "How to tell compelling stories out of video interviews?"
-description: "Gitbook based on a series of hands on Workshops in London, Buenos Aires, New York and Florence Introducing paper-editing to answer the question 'How to craft compelling stories out of audio or video interviews?' through key story crafting concepts, this is the underlying analogue workflow that inspired autoEdit.io"
+description: "E-book based on a series of hands on Workshops in London, Buenos Aires, New York and Florence Introducing paper-editing to answer the question 'How to craft compelling stories out of audio or video interviews?' through key story crafting concepts, this is the underlying analogue workflow that inspired autoEdit.io"
 permalink: "/how-to-tell-compelling-stories-out-of-video-interviews.html"
 date: "2017-07-07"
-link: https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/
+link: https://pietropassarelli.com/how-to-craft-compelling-stories-out-of-audio-video-interviews
 slides: "https://docs.google.com/presentation/d/1cJjvrGrGxrqaZhk5IKYOcld82PulGE9iF_LjQVL-zes/edit?usp=sharing"
 # image: /img/wip_london_workshop_july_2016/wip_thomas.png
 image: /img/wip_london_workshop_july_2016/wip_london_workshop_2016_2.JPG
 github: pietrop/book-how-to-tell-compelling-stories-out-of-video-interviews
-gitbook: https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/
+# gitbook: https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/
 youtube: 
 img_presentation: /img/wip_london_workshop_july_2016/wip_london_workshop_2016_presentation.JPG
 img_2: /img/wip_london_workshop_july_2016/wip_london_workshop_2016_2.JPG
@@ -34,10 +34,10 @@ tags:
 ---
 
 
-## Gitbook 
-Inspired by these series of workshops, [I've wrote a gitbook: "How to tell compelling stories out of video interviews?"]({{link}})
+## E-Book 
+Inspired by these series of workshops, [I've wrote an e-book: "How to tell compelling stories out of video interviews?"]({{link}})
 
-One of the participants at the workshop asked "If I edit my 'raw' interviews, does it make them less real?" So in the gitbook to there is [a section on documentary representation](https://pietropassarelli.gitbooks.io/how-to-tell-compelling-stories-out-of-video-inter/content/paper-editing/key-concepts-in-documentary-theory.html) ([also here as a blog post](/doc.html)) that I think it's interesting/relevant in the accountability debate that has been raised with the new issues around fake news, the increasing need for transparency and increasing interests by the viewers to see the source material.
+One of the participants at the workshop asked "If I edit my 'raw' interviews, does it make them less real?" So [as a separate blog post I wrote a section on documentary representation](/doc.html) that I think it's interesting/relevant in the accountability debate that has been raised with the new issues around fake news, the increasing need for transparency and increasing interests by the viewers to see the source material.
 
 
 ## Workshop 
@@ -84,7 +84,7 @@ The key idea was to guide the participant to an old school (paper, scissors and 
 
 We provided paper transcriptions for interviews, roughly an hour each, with
 
--  Jesselyn Radack [pdf]({{transcriptions_jr}})
+- Jesselyn Radack [pdf]({{transcriptions_jr}})
 - Thomas Drake [pdf]({{transcriptions_td}})
 - Annie Machon [pdf]({{transcriptions_am}})
 
@@ -109,5 +109,5 @@ At the end of the workshop we showed what one of the paper-edit from one of the 
 
 ![]({{img_preview}})
 
-To assemble the sequence from their paper-edit within the time constraints I used a version of my first attempt at making a [digital paper-editing software](/autoEdit.html).
+To assemble the sequence from their paper-edit within the time constraints I used a version of my first attempt at making a [digital paper-editing software](https://www.autoedit.io).
 
