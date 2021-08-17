@@ -21,6 +21,14 @@ tags:
 
 Expanding [annotated transcript](/annotated-transcript.html) and [opened captions annotated article rig](/opened-captions-annotated-article-rig.html) by adding clickable words that can jump to the corresponding point in the video.
 
+[Won Excellence in Innovation at the 2021 @RTDNA Edward R. #Murrow awards](https://twitter.com/RobinKwong/status/1427648498707705862?s=20)
+
+<!-- https://www.rtdna.org/content/2021_national_edward_r_murrow_award_winners?utm_sq=gtk32jq2zu#largedigital -->
+
+https://twitter.com/RobinKwong/status/1427648498707705862?s=20
+
+https://twitter.com/RobinKwong/status/1427648502780289032?s=20
+
 Examples:
 1. [Federal Reserve Chairman Jerome Powell's Press Conference](https://graphics.wsj.com/federal-reserve-april-2020/)
 2. [Joe Biden’s Inauguration Speech With Full Annotated Transcript](https://www.wsj.com/articles/joe-bidens-inauguration-speech-full-transcript-and-video-11611174149)
