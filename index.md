@@ -5,7 +5,7 @@ title: About
 
 # About 
 
-Hi, I'm [Pietro](https://uk.linkedin.com/in/{{site.owner.linkedin}}), I am a [software engineer](/categories/tech), passionate about early stage products, especially at the intersection of audio / video, news and technology. I created [autoEdit.io](https://autoEdit.i).
+Hi, I'm [Pietro](https://uk.linkedin.com/in/{{site.owner.linkedin}}), I am a [senior software engineer](/categories/tech), passionate about early stage products, especially at the intersection of audio / video, news and technology. I created [autoEdit.io](https://autoEdit.i).
 
 
 I also take [photos↗](https://pietropassarelli.com/photos), [film documentaries](/categories/video) and write up ['how-tos' "Tips Tricks & Quick Fix"](/categories/ttqf) and [blog posts](/categories/blog).
