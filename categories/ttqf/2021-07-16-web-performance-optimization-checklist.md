@@ -22,24 +22,24 @@ tags:
 _Cover photo credit [unsplash](https://unsplash.com/photos/FWoq_ldWlNQ )_
 
 ## Performance checklist
-- Compress optimise images [`ImageOptim`](https://imageoptim.com/mac)
-- Image sprite `(?)` | Tool: [`SpriteCow`](http://www.spritecow.com/)
-- avoid CSS `@import` to avoid blocking request
-- Move `<script>` tags to the end of the page.
-- use `defer` for analytics library
-- Mark your javascript as `deferred` or `async` (?)
-- Use a CDN (eg Amazon Cloud front)
-- Truncate `animate.css` to only include the animations we use
-- Further compress Js. Use webpack gzip
-- Check your assets
-- Remove Bootstrap Js & JQuery if not needed
-- Any unused npm packages we can ditch? (and or tree shaking)
-- compress splats
-- Minify CSS
-- Concatenate your CSS
-- Minify Javascript
-- Concatenate your Javascript
-- Consider Removing polyfills for older browsers to reduce size. If not necessary.
+- [ ] Compress optimise images [`ImageOptim`](https://imageoptim.com/mac)
+- [ ] Image sprite `(?)` | Tool: [`SpriteCow`](http://www.spritecow.com/)
+- [ ] avoid CSS `@import` to avoid blocking request
+- [ ] Move `<script>` tags to the end of the page.
+- [ ] use `defer` for analytics library
+- [ ] Mark your javascript as `deferred` or `async` (?)
+- [ ] Use a CDN (eg Amazon Cloud front)
+- [ ] Truncate `animate.css` to only include the animations we use
+- [ ] Further compress Js. Use webpack gzip
+- [ ] Check your assets
+- [ ] Remove Bootstrap Js & JQuery if not needed
+- [ ] Any unused npm packages we can ditch? (and or tree shaking)
+- [ ] compress splats
+- [ ] Minify CSS
+- [ ] Concatenate your CSS
+- [ ] Minify Javascript
+- [ ] Concatenate your Javascript
+- [ ] Consider Removing polyfills for older browsers to reduce size. If not necessary.
 
 ---
 
