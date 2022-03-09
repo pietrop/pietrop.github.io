@@ -38,7 +38,7 @@ Note that to avoid breaking the flow I've added a "More details" expandable sect
 <details>
     <summary>More details</summary>
 
-Here is worth mentioning that front end system design interviews are relatively new compare to the full stack once. Depending on who your interviewers are (eg they are front end, backend and/or full stack), the scope of the role and how the team is organized ( eg are you really just on the front end or are you expected to stretch into the backend a bit?) your front end system design interview might be a bit of a hybrid where some aspects of a system design interview might come up. But not to worry, at the end will review some high level concepts from (full stack) system design that you should be familiar with.
+Here is worth mentioning that front end system design interviews are relatively new compare to the full stack ones. Depending on who your interviewers are (eg they are front end, backend and/or full stack), the scope of the role and how the team is organized ( eg are you really just on the front end or are you expected to stretch into the backend a bit?) your front end system design interview might be a bit of a hybrid where some aspects of a system design interview might come up. But not to worry, at the end will review some high level concepts from (full stack) system design that you should be familiar with.
 
 Another thing I noticed is that they can be micro or macro. Eg it could be starting from a whole system, or it could start already zeroed in on a "widget" type component and then potentially exploring how that's wired up to the rest of the system. You should prepare for both approaches.
 
