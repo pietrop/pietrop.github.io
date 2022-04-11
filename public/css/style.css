@@ -160,3 +160,11 @@ details:not([open]) > summary{
 details {
     overflow: scroll;
 }
+
+summary~* {
+  margin: 1.5em;
+}
+
+details summary {
+  cursor: pointer;
+}
