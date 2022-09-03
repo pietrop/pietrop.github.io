@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A framework for Front End System Design interviews - draft"
+title: "A framework for Front End System Design interviews"
 description: "Walk through of a framework I've used in Front End System Design interviews."
 permalink: "/front-end-system-design.html"
 date: "2021-06-16"
