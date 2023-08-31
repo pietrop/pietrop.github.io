@@ -76,7 +76,7 @@
   <meta property="og:title" content="Aligning partially scripted speeches, R&D Notes">
   <meta property="og:description" content="Initially started as an email response to someone asking about this, then decided to convert into a blog post, so these are my R&D Notes on how I would go about doing it with the technology available today.">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://www.pietropassarelli.comnull" />
+  <meta property="og:image" content="https://www.pietropassarelli.netnull" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="675" />
   <!-- Twitter -->
@@ -84,7 +84,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@pietropassarell">
   <meta name="twitter:description" content="Initially started as an email response to someone asking about this, then decided to convert into a blog post, so these are my R&D Notes on how I would go about doing it with the technology available today.">
-  <meta name="twitter:image" content="https://www.pietropassarelli.comnull">
+  <meta name="twitter:image" content="https://www.pietropassarelli.netnull">
   <meta name="twitter:creator" content="@pietropassarell">
 
   <!--  -->
@@ -153,7 +153,7 @@
         
 
 
-        <li> <a class="sidebar-nav-item" href="https://pietropassarelli.com/photos/" target="_blank"
+        <li> <a class="sidebar-nav-item" href="https://www.pietropassarelli.net/photos/" target="_blank"
                 rel="noopener noreferrer">
                 Photos↗</a>
         </li>
@@ -199,7 +199,7 @@
 
 	<!-- content -->
 	<h1>Use case</h1>
-<p>When working with the Vox Product Team last year, as part of the Knight-Mozilla fellowship with Open News, while making <a href="https://pietropassarelli.com/autoEdit2.html" target="_blank" rel="noopener noreferrer">autoEdit.io</a> I had a chance to talk with many video producers across all brands.</p>
+<p>When working with the Vox Product Team last year, as part of the Knight-Mozilla fellowship with Open News, while making <a href="https://www.pietropassarelli.net/autoEdit2.html" target="_blank" rel="noopener noreferrer">autoEdit.io</a> I had a chance to talk with many video producers across all brands.</p>
 <p><a href="http://Vox.com">Vox.com</a> video producers, when making explainers videos often rely on scripted voice over narration. Which means that they write their voice over (almost like an essay) and then add images, scenes, and interview sounds bits to it in the video editing software of choice (or sometimes they’d paper-edit this in google docs).</p>
 <p>When using <a href="http://autoEdit.io">autoEdit.io</a>, a fast text based video editing mac os x app, that leverages STT systems to edit video interviews, they pointed out that they would have rather have the possibility to align the scripted voiceover narration (which is about 80% of the spoken words in the piece on average) and have speech to text recognition only on the remaining &quot;off script&quot; parts. Eg interviews with contributors etc.. Rather than have to correct inaccurate speech to text on the voice over script parts for which they already had accurate text.</p>
 <p>This use case stood out and was left unresolved due to the complexity of the problem and the lack of available tooling for an efficient solution.</p>
@@ -210,7 +210,7 @@
 <p>The key difference is the underlying implementation.</p>
 <p>You provide text to align and audio to both.</p>
 <h2>Gentle</h2>
-<p>Gentle, could also work without the text input, and work as a speech to text service, which is how I've integrate it in <a href="https://pietropassarelli.com/autoEdit2.html" target="_blank" rel="noopener noreferrer">auotEdit.io</a>, a text based video editing app I worked on last year.</p>
+<p>Gentle, could also work without the text input, and work as a speech to text service, which is how I've integrate it in <a href="https://www.pietropassarelli.net/autoEdit2.html" target="_blank" rel="noopener noreferrer">auotEdit.io</a>, a text based video editing app I worked on last year.</p>
 <p>Here the details of the setup/integration between the two, unfortunately is packaged as a server so <a href="https://pietropassarelli.gitbooks.io/autoedit2-user-manual/content/setup-stt-apis/setup-stt-apis-gentle.html" target="_blank" rel="noopener noreferrer">needs to be open as a separate app</a>, altho some people had some luck running it with docker.</p>
 <p>However as force aligner, gentle, first does STT, using Kaldi, and a model created by the community around this tool, and then tries to match the generated text with the text you have provided.</p>
 <p>This is time consuming because you have to wait for the STT recognition. Which is roughly same length of the media, but on the bright side, it means it can recognise text that you did not provide.</p>
