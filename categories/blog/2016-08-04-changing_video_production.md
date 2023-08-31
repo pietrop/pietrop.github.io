@@ -36,7 +36,7 @@ The actual app is a Mac Os X app but you can try a browser based d[Interactive d
 ## What just happened?
 
 This is only the first version of the tool. 
-Final version of the tool will will essentially be a [digital paper-editing tool](https://pietropassarelli.com/wip_london_july2016.html). 
+Final version of the tool will will essentially be a [digital paper-editing tool]({{ site.url }}/how-to-tell-compelling-stories-out-of-video-interviews.html). 
 
 <!-- The user uploads a video, the system transcribes it using IBM Watson Speech to Text API. The user can then read in sync with the video preview, make selections and export those selections as a video sequence.
  -->

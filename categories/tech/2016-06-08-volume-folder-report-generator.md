@@ -4,7 +4,7 @@ title: "Volume folder report generator"
 description: "Os X nwjs app, tha runs a ruby script to generate a report for missing media files on a video server"
 permalink: "/volume-folder-report-generator.html"
 date: "2016-06-08"
-link: https://pietropassarelli.com/Volume_folder_report_generator/
+link: https://pietropassarelli.net/Volume_folder_report_generator/
 image: /img/volume-folder-report-generator/report.png
 image2: /img/volume-folder-report-generator/start_screen.png
 github: pietrop/Volume_folder_report_generator

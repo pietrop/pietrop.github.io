@@ -5,7 +5,7 @@ description: "A proof of concept for an interactive site for the Whistle Blower 
 permalink: "/wip.html"
 date: "2017-02-20"
 # link: https://whistleblower.press/
-link: http://pietropassarelli.com/WIP_archive
+link: https://pietropassarelli.net/WIP_archive
 image: /img/wip_archive/wip_archive_t.png
 github: pietrop/WIP_archive
 youtube: 

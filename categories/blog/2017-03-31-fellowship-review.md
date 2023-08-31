@@ -98,7 +98,7 @@ Following the feedback I then released an updated version with time-codes.
 **Current status:** completed, not actively maintained.
 
 ## WIP workshop 
-**Link:** [https://pietropassarelli.com/wip_london_july2016.html](https://pietropassarelli.com/wip_london_july2016.htm)    
+**Link:** [{{ site.url }}/how-to-tell-compelling-stories-out-of-video-interviews.html]({{ site.url }}/wip_london_july2016.htm)    
 **Project Page:** []()
 
 **Brief description:**
@@ -151,7 +151,7 @@ A variation of this was also useful to prepare the transcriptions for the WIP wo
 
 ## blogpost on learning to code
 **Link:**
-[https://pietropassarelli.com/learnToCode101.html](/learnToCode101.html)
+[{{ site.url }}/learnToCode101.html](/learnToCode101.html)
 
 **Brief description:**
 I wasn’t sure if I should "write in the open" and publish the draft even tho I am still working on it, but one of the students I met at NYU who was working on a simliar video editing project, commented
@@ -208,7 +208,7 @@ Vox product blog on autoEdit.
 ## POV hackathon battle sound
 **Link:** 
 - [https://github.com/pietrop/BattleSounds](https://github.com/pietrop/BattleSounds)
-- demo [https://pietropassarelli.com/BattleSounds](https://pietropassarelli.com/BattleSounds/),
+- demo [{{ site.url }}/BattleSounds]({{ site.url }}/BattleSounds/),
 - [see slides link](https://docs.google.com/presentation/d/19TB4CpkCDqMJQvhmZF3I9AN7IQ0VsIA8nsfpdHkfDss/edit?usp=sharing)
 
 Project Page: ["POV Hackaton NYC 24th Sept 2016, Battle Sound team. Interactive Documentary."](/povHackthon.html)
@@ -223,7 +223,7 @@ I always suspected that if you have the right tools making interactive could be 
 
 **Current status:** 
 - [https://github.com/pietrop/BattleSounds](https://github.com/pietrop/BattleSounds) 
-- [https://pietropassarelli.com/BattleSounds/](https://pietropassarelli.com/BattleSounds/)
+- [{{ site.url }}/BattleSounds/]({{ site.url }}/BattleSounds/)
 
 
 ## Opened captions->Google doc //Vox inauguration speech system // C-span opened captions server
@@ -258,7 +258,7 @@ I think that it’s awesome this project managed to connect with a something mad
 
 ## WIP Archive
 **Link:**
-- temporary url [https://pietropassarelli.com/WIP_archive](https://pietropassarelli.com/WIP_archive)
+- temporary url [{{ site.url }}/WIP_archive]({{ site.url }}/WIP_archive)
 - [https://github.com/pietrop/WIP_archive](https://github.com/pietrop/WIP_archive)
 
 **Project Page:** ["Whistleblower Interview Archive"](/wip.html)
@@ -379,7 +379,7 @@ More time to experiment on video-> audio-> text //story editor publishing system
 <!-- ## What did you document?
 Link us to blog posts, photos, how-tos that have been published AND include all the documentation ideas in your head you haven't yet published.
 
-https://pietropassarelli.com/wip_london_july2016.html 
+{{ site.url }}/how-to-tell-compelling-stories-out-of-video-interviews.html 
 
 source piece coming out soon
 

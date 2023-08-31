@@ -122,9 +122,9 @@ I then elaborated on this and devised my own format. I generally:
 
 * What you don't know and need to find out for each, for instance sometimes the integration might not work as expected or there are dependencies that are to port or deal with. 
 
-For example this is a blog post I wrote in response to someone asking what could be a good way to [align partially scripted speeches](https://pietropassarelli.com/aligning-partially-scripted-speeches.html). It contains the initial research and exploration I do before diving into testing out the option to implement a possible solution. 
+For example this is a blog post I wrote in response to someone asking what could be a good way to [align partially scripted speeches]({{ site.url }}/aligning-partially-scripted-speeches.html). It contains the initial research and exploration I do before diving into testing out the option to implement a possible solution. 
 
-Another example is from the BBC News Labs hackathon BBC where I’ve worked on a [slack bot for transcription service](https://pietropassarelli.com/BBCnewslabs_slack_transcription_bot.html). And used a [google doc to keep an R&D doc](https://docs.google.com/document/d/1n6B1vyQysIEeDfoDUqnVNzb7RVy_MNuyvrVekLQ0YZ4/edit#heading=h.q3di39fnr6em) to guide the development on a fast turnaround. This was also a great communication tool when working with [Laurian Gridinoc](https://twitter.com/gridinoc) to keep track of progress, define scope and tackle unexpected twists. 
+Another example is from the BBC News Labs hackathon BBC where I’ve worked on a [slack bot for transcription service]({{ site.url }}/BBCnewslabs_slack_transcription_bot.html). And used a [google doc to keep an R&D doc](https://docs.google.com/document/d/1n6B1vyQysIEeDfoDUqnVNzb7RVy_MNuyvrVekLQ0YZ4/edit#heading=h.q3di39fnr6em) to guide the development on a fast turnaround. This was also a great communication tool when working with [Laurian Gridinoc](https://twitter.com/gridinoc) to keep track of progress, define scope and tackle unexpected twists. 
 
 Last example from a more mature project, with autoEdit, an [R&D Doc for the second phase of development looked like this](https://docs.google.com/document/d/12mUuXAtE65vhy5Sm0tmKRdgXGMn_Ob4RZEs9T5uDPkM/edit?usp=sharing).
 
@@ -166,7 +166,7 @@ For example with [autoEdit’s demo](https://www.autoedit.io/demo/) I tried to m
 
 In autoEdit I [made this part of the build tool process](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/package.json#L25) to make it easier to update the demo when adding new features.
 
-With [captions maker’s demo ](https://pietropassarelli.com/captions-maker/)despite the big organce text screaming this is a dummy demo I still had people completely missing it and telling me that they were frustrated they couldn’t use the app. 
+With [captions maker’s demo ]({{ site.url }}/captions-maker/)despite the big organce text screaming this is a dummy demo I still had people completely missing it and telling me that they were frustrated they couldn’t use the app. 
 
 ## 9 - Video presentations 
 
@@ -188,11 +188,11 @@ If you are recording a screencast QuickTime is unreliable and makes huge raw fil
 
 This is also particularly useful for hackathons projects where sometimes it's more proof of concepts
 
-As an example [BBC News Labs hackathon slack bot presentation](https://pietropassarelli.com/BBCnewslabs_slack_transcription_bot.html), less then 3 minutes.
+As an example [BBC News Labs hackathon slack bot presentation]({{ site.url }}/BBCnewslabs_slack_transcription_bot.html), less then 3 minutes.
 
-see [London Times team presentation at BBC News Labs hackathon](https://pietropassarelli.com/oneStory.html).
+see [London Times team presentation at BBC News Labs hackathon]({{ site.url }}/oneStory.html).
 
-Or the[ first version of autoEdit, as presented at Hacks/Hackers London](https://pietropassarelli.com/autoEdit.html) in under 2 minutes.
+Or the[ first version of autoEdit, as presented at Hacks/Hackers London]({{ site.url }}/autoEdit.html) in under 2 minutes.
 
 Example [Annotated article system presentation at SRCCON](https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles/content/video-of-presentation.html) workshop with David Eads. 
 

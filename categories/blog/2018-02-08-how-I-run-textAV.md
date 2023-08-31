@@ -97,7 +97,7 @@ Time consuming as it is, it yelds results.
 
 ## If your event was a blog post
 
-Before coming up with the idea for the event, I started with a blog post, [“beyond video as black boxes”](https://pietropassarelli.com/videoBox.html) where I reviewed and commented on projects that were in this [problem domain](/10-lessons-video-tools.html#map-the-problem-domain) of working with audio, video, transcriptions and captions.
+Before coming up with the idea for the event, I started with a blog post, [“beyond video as black boxes”]({{ site.url }}/videoBox.html) where I reviewed and commented on projects that were in this [problem domain](/10-lessons-video-tools.html#map-the-problem-domain) of working with audio, video, transcriptions and captions.
 
 The post was reviewing projects, but was also trying to cluster them into categories and paint a way forward for what else could be possible in this domain.
 
@@ -113,7 +113,7 @@ For the hands-on unconference participants work on problem domain topics they ar
 
 In the context of computer science, a problem domain is the context that defines a particular problem.
 
-<!-- TODO: re-phrase what is a problem domain topics  as described here https://pietropassarelli.com/10-lessons-video-tools.html
+<!-- TODO: re-phrase what is a problem domain topics  as described here {{ site.url }}/10-lessons-video-tools.html
 Eg in CS a problem domain is  -->
 
 ## Making the most of trello

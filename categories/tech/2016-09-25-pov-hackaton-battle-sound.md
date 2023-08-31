@@ -5,7 +5,7 @@ description: "POV Hackaton NYC 24th Sept 2016, Battle Sound team. Interactive Do
 permalink: /povHackthon.html
 date: "2016-09-25"
 published: true 
-link: https://pietropassarelli.com/BattleSounds
+link: https://pietropassarelli.net/BattleSounds
 image: /img/pov/demo.png
 github: pietrop/BattleSounds
 open_source: true

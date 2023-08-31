@@ -19,7 +19,7 @@ tags:
 
 # Use case
 
-When working with the Vox Product Team last year, as part of the Knight-Mozilla fellowship with Open News, while making [autoEdit.io](https://pietropassarelli.com/autoEdit2.html) I had a chance to talk with many video producers across all brands.
+When working with the Vox Product Team last year, as part of the Knight-Mozilla fellowship with Open News, while making [autoEdit.io]({{ site.url }}/autoEdit2.html) I had a chance to talk with many video producers across all brands.
 
 Vox.com video producers, when making explainers videos often rely on scripted voice over narration. Which means that they write their voice over (almost like an essay) and then add images, scenes, and interview sounds bits to it in the video editing software of choice (or sometimes they’d paper-edit this in google docs). 
 
@@ -41,7 +41,7 @@ You provide text to align and audio to both.
 
 ## Gentle
 
-Gentle, could also work without the text input, and work as a speech to text service, which is how I've integrate it in [auotEdit.io](https://pietropassarelli.com/autoEdit2.html), a text based video editing app I worked on last year.
+Gentle, could also work without the text input, and work as a speech to text service, which is how I've integrate it in [auotEdit.io]({{ site.url }}/autoEdit2.html), a text based video editing app I worked on last year.
 
 Here the details of the setup/integration between the two, unfortunately is packaged as a server so [needs to be open as a separate app](  https://pietropassarelli.gitbooks.io/autoedit2-user-manual/content/setup-stt-apis/setup-stt-apis-gentle.html), altho some people had some luck running it with docker. 
 

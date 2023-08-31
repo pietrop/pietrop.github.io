@@ -78,7 +78,7 @@ What I like about this project is that it gives a way into the video, allowing t
 
 You can see the code [open source on github](https://github.com/maboa/uselect)     
 
-I looked into the code from this open source project by [Mark Boas](https://twitter.com/maboa)  both at [The Times Build the news hackaton](pietropassarelli.com/buildTheNews.html) and at [BBC news hackaton](pietropassarelli.com/oneStory.html).
+I looked into the code from this open source project by [Mark Boas](https://twitter.com/maboa)  both at [The Times Build the news hackaton](/buildTheNews.html) and at [BBC news hackaton](/oneStory.html).
 
 Some of the constraints in this implementation are due to the technology that was available at the time it was implemented.
 It uses [JPlayer](https://jplayer.org/), it's not responsive, and it uses [popcorn js](https://popcornjs.org) to make the hypertranscript connection with the video.
@@ -106,7 +106,7 @@ But again as far as I am aware no automation was used to deal with the transcrip
 
 ![Aljazeera Obama state of the Union - Mark Boas](/img/img_chp2_context/Aljazeera_Obama_state_of_union.png)
 
-This is where I got the idea for [a system that could take a video in perform some kind of analyses](https://pietropassarelli.com/buildTheNews.html).
+This is where I got the idea for [a system that could take a video in perform some kind of analyses]({{ site.url }}/buildTheNews.html).
 
 Also interesting about this project, is that there is a section providing a summary for each video.
 
@@ -377,24 +377,24 @@ It also identifies keywords, and makes a note of the timecode they accour at.
 With a background in documentary production, I have a long standing interest for story crafting, and working with transcriptions effectivly, so here are some of my projects that came out of this exploration.
 
 ### autoEdit
-[autoEdit](https://pietropassarelli.com/autoEdit.html), fast text based editing of video interviews. Is a "Digital paper editing” software.
+[autoEdit]({{ site.url }}/autoEdit.html), fast text based editing of video interviews. Is a "Digital paper editing” software.
 To make a script from a selection of lines from the transcriptions of interviews.
 You can then export as an EDL. This can be opened with the editing software of your choice to reconnect the corresponding video into a sequence, and finish working on your rough-cut assembly.
 
 
 
-<!-- ref https://pietropassarelli.com/autoEdit.html -->
+<!-- ref {{ site.url }}/autoEdit.html -->
 
 I am currently working on this, and have various prototypes, with different stack at different stages of development as I am trying out different approaches.
 
 #### Initial prototype
-The initial prototype for autoEdit, consisted of two scripts. [one to parse sbv subtitles files made with youtube into a csv file](https://pietropassarelli.com/tech/articles/2013/12/02/sbv-csv/). to upload to google spreadsheet. And the [other to convert the csv file into an EDL](https://github.com/pietrop/csv_to_edl).
+The initial prototype for autoEdit, consisted of two scripts. [one to parse sbv subtitles files made with youtube into a csv file]({{ site.url }}/tech/articles/2013/12/02/sbv-csv/). to upload to google spreadsheet. And the [other to convert the csv file into an EDL](https://github.com/pietrop/csv_to_edl).
 
 I used that in an actual production I was working on, and while I saw that i worked and saved me a ton of time,  I knew it was worth spending some refining this.
 
 
 #### rails  MVP working version
-The rails version in beta is available in beta at [autoedit.io](www.autoedit.io) [code on github ](https://github.com/pietrop/autoEdit) and more detailed explanation [here](https://pietropassarelli.com/autoEdit.html)
+The rails version in beta is available in beta at [autoedit.io](www.autoedit.io) [code on github ](https://github.com/pietrop/autoEdit) and more detailed explanation [here]({{ site.url }}/autoEdit.html)
 
 ![autoEdit](/img/img_chp2_context/autoEdit.png)
 

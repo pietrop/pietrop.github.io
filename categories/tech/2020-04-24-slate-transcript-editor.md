@@ -6,7 +6,7 @@ description: "A React component to correct automated transcriptions from STT ser
 permalink: "/react-slate-transcript-editor.html"
 date: "2020-04-24"
 github: pietrop/slate-transcript-editor
-link: https://pietropassarelli.com/slate-transcript-editor
+link: https://pietropassarelli.net/slate-transcript-editor
 image: /img/react-slate-transcript-editor/slate-transcript-editor.png
 image2: /img/react-slate-transcript-editor/slate-transcript-editor-export.png
 image3: /img/react-slate-transcript-editor/slate-transcript-editor-storybook.png

@@ -22,7 +22,7 @@ img_NiemanLab: /img/TimesAndSundayTimesQuickQuote/NiemanLab-quickQuote.png
 
 vimeo:
 youtube: 7apk4Hx7g3s
-link: http://pietropassarelli.com/quickQuote/
+link: https://pietropassarelli.net//quickQuote/
 github: pietrop/quickQuote
 tech: ['Video JS', 'JQuery', 'Ruby', 'Rails', 'Spoken Data API', 'Bootstrap', 'HTML5', 'CSS', 'Git', 'Javascript']
 company: 'Times & Sunday Times'
@@ -61,7 +61,7 @@ Followed by the HTML, CSS and JS code.
   </blockquote></div>
   <div  id='video-wrap-n' class='video-wrap video-wrap--closed'>
     <video class=' video-js vjs-default-skin' id='video-quote' controls preload='auto' width='100%' height='auto' poster='' data-setup='{}'>
-      <source src='http://pietropassarelli.com/quickQuote/media/snippet_54.mp4' id='snippetURLVideo' type='video/mp4' />
+      <source src='{{ site.url }}/quickQuote/media/snippet_54.mp4' id='snippetURLVideo' type='video/mp4' />
     </video>
 </div>
 <style>

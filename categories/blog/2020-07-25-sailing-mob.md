@@ -30,7 +30,7 @@ The man overboard maneuver can be one of the most daunting things to get your he
 
 In this blog post I am going to break it down, looking at what is considered best practice in both the [RYA](https://www.rya.org.uk/) and [ASA](https://asa.com/) go to books.
 
-In 2012 I got my Sailing RYA [Yachtmaster](https://en.wikipedia.org/wiki/Yachtmaster) (Offshore) from [UKSA](https://uksa.org/) qualification, after an intense residential live a board 4 months course ( [see this blog for more on that adventure](https://pietropassarelli.com/sailing-blog-2011-2012) )
+In 2012 I got my Sailing RYA [Yachtmaster](https://en.wikipedia.org/wiki/Yachtmaster) (Offshore) from [UKSA](https://uksa.org/) qualification, after an intense residential live a board 4 months course ( [see this blog for more on that adventure]({{ site.url }}/sailing-blog-2011-2012) )
 
 In 2014 I Worked for [Med Sailors](https://www.medsailors.com) in Croatia. After that, life got in the way, and a side from the sporadic dinghy sailing while on holiday, Iast year, during the pandemic in 2020 I had a chance to briefly get back into it.
 

@@ -1,7 +1,7 @@
 const environment = process.env.ELEVENTY_ENV;
 console.log('environment', environment)
 const PROD_ENV = 'prod';
-const prodUrl = 'https://pietropassarelli.com';
+const prodUrl = '{{ site.url }}';
 const devUrl = 'http://localhost:8080';
 const baseUrl = environment === PROD_ENV ? prodUrl : devUrl;
 const isProd = environment === PROD_ENV;
@@ -31,7 +31,7 @@ module.exports = {
     "tagline": "Passarelli",
     "name": "Tips Tricks & Quick Fix",
     "description": "Pietro Passarelli's blog",
-    "url": "https://www.pietropassarelli.com",
+    "url": "https://www.pietropassarelli.net",
     baseUrl,
     "repo": "http://github.com/pietrop/pietrop.github.io",
     "comments": false,
@@ -48,7 +48,7 @@ module.exports = {
       "github": "pietrop",
       "linkedin": "pietropassarelli",
       "instagram": "pietro.ps",
-      "about": "ubiq/pietro.jpeg",
+      "about": "/ubiq/pietro.jpeg",
       "image": "/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg"
     },
     "og_locale": "en_US",

@@ -4,7 +4,7 @@ title: "How to tell compelling stories out of video interviews?"
 description: "E-book based on a series of hands on Workshops in London, Buenos Aires, New York and Florence Introducing paper-editing to answer the question 'How to craft compelling stories out of audio or video interviews?' through key story crafting concepts, this is the underlying analogue workflow that inspired autoEdit.io"
 permalink: "/how-to-tell-compelling-stories-out-of-video-interviews.html"
 date: "2017-07-07"
-link: https://pietropassarelli.com/how-to-craft-compelling-stories-out-of-audio-video-interviews
+link: https://pietropassarelli.net/how-to-craft-compelling-stories-out-of-audio-video-interviews
 slides: "https://docs.google.com/presentation/d/1cJjvrGrGxrqaZhk5IKYOcld82PulGE9iF_LjQVL-zes/edit?usp=sharing"
 # image: /img/wip_london_workshop_july_2016/wip_thomas.png
 image: /img/wip_london_workshop_july_2016/wip_london_workshop_2016_2.JPG

@@ -4,7 +4,7 @@ title: "Opened Captions Annotated article system"
 description: "A rig to make an annotated article leveraging live tv captions, like NPR & Vox."
 permalink: "/opened-captions-annotated-article-rig.html"
 date: "2017-07-24"
-link: https://pietropassarelli.com/annotated_article_generator/
+link: https://pietropassarelli.net/annotated_article_generator/
 image: /img/opened_caption_app/opened_caption_annotation_app.png
 gitbook: https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles    
 github: pietrop/Opened-Captions-for-Annotated-Articles
@@ -33,5 +33,5 @@ tags:
 Also more recently made a working proof of concept for an app to replace the rig, to make it easier for the end user to use without the supervision of a newsroom developer. See screenshot below
 
 - [github: annotated article generator - github](https://github.com/pietrop/annotated_article_generator)
-- [demo: annotated article generator - demo](https://pietropassarelli.com/annotated_article_generator/)
+- [demo: annotated article generator - demo]({{ site.url }}/annotated_article_generator/)
 

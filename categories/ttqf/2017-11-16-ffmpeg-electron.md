@@ -79,9 +79,9 @@ So we don’t want to either assume ffmpeg/ffprobe that is installed nor install
 
 [Luckily is possible to set the path to ffmpeg and ffprobe binary](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg#setting-binary-paths-manually).  And that is our preferred choice for packaging ffmpeg inside electron. 
 
-## A Simple example: [Transcriber prototype](https://pietropassarelli.com/Transcriber-prototype.html ) 
+## A Simple example: [Transcriber prototype]({{ site.url }}/Transcriber-prototype.html ) 
 
-[This was a prototype](https://pietropassarelli.com/Transcriber-prototype.html ) to test whether users would accept automatically transcribed text, before building the first version of autoEdit 2 on top of IBM Watson STT service.
+[This was a prototype]({{ site.url }}/Transcriber-prototype.html ) to test whether users would accept automatically transcribed text, before building the first version of autoEdit 2 on top of IBM Watson STT service.
 
 It’s very simple, you give it an audio or video file and it returns a plain text automated transcription.
 
