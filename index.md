@@ -14,7 +14,7 @@ I also take [photos↗](https://pietropassarelli.com/photos), [film documentarie
 <!-- Picture from BA media party with mic -->
 
 <!-- ![Pietro Buenos Aires Media Party Workshop](/img/about/pietro_ba.png) -->
-<img src="{{ site.url }}/img/about/pietro_ba.png" alt="Pietro Buenos Aires Media Party Workshop - bio photo" class="img-rounded  img-responsive" width="100%" height="auto">
+<img src="/img/about/pietro_ba.png" alt="Pietro Buenos Aires Media Party Workshop - bio photo" class="img-rounded  img-responsive" width="100%" height="auto">
 
 <i><small>Picture from 2016 Buenos Aires Hacks/Hackers Media Party, while giving workshop ["How to craft compelling stories out of video interviews?"](/wip_london_july2016.html)</small></i>
 
