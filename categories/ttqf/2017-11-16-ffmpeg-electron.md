@@ -16,9 +16,9 @@ tags:
 
 I was recently asked about how to use [ffmpeg](https://www.ffmpeg.org/) with the[ fluent-ffmpeg node library](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) in [electron](https://electron.atom.io/), and I had some notes[ in the autoEdit documentation](https://pietropassarelli.gitbooks.io/autoedit-2-documentation/content/ffmpeg-and-ffprobe-in-electron.html) but since they were at some sort of at draft stage I decided to expand more on this here, to make a more clear and comprehensive explanation. 
 
-I am going to use the code from the implementation of[ autoEdit.io](https://autoEdit.io) as well as an earlier "transcriber prototype" as a concrete example. 
+I am going to use the code from the implementation of[ autoEdit.io]({{site.url}}/autoedit) as well as an earlier "transcriber prototype" as a concrete example. 
 
-For those not familiar with it autoEdit is a text based video editing app for mac os x,[ check out the website](https://autoEdit.io) , [README](https://github.com/OpenNewsLabs/autoEdit_2) and[ user manual ](https://pietropassarelli.gitbooks.io/autoedit2-user-manual/content/)for more details.
+For those not familiar with it autoEdit is a text based video editing app for mac os x,[ check out the website]({{site.url}}/autoedit) , [README](https://github.com/OpenNewsLabs/autoEdit_2) and[ user manual ](https://pietropassarelli.gitbooks.io/autoedit2-user-manual/content/)for more details.
 
 ## What’s what? 
 
@@ -85,7 +85,7 @@ So we don’t want to either assume ffmpeg/ffprobe that is installed nor install
 
 It’s very simple, you give it an audio or video file and it returns a plain text automated transcription.
 
-Disclaimer: It was a throwaway project to test that hypothesis [see issues in repo for reasons why it’s not distribution ready](https://github.com/voxmedia/Transcriber/issues). However, these have been addressed and improved in [autoEdit 2](https://autoedit.io).
+Disclaimer: It was a throwaway project to test that hypothesis [see issues in repo for reasons why it’s not distribution ready](https://github.com/voxmedia/Transcriber/issues). However, these have been addressed and improved in [autoEdit 2]({{site.url}}/autoedit).
 
 This project also uses [nwjs](https://nwjs.io/) (formerly "node web-kit") while autoEdit was later refactored to use electron. But for the purpose of adding support for ffmpeg, this is irrelevant for now.
 
@@ -149,9 +149,9 @@ On the plus side this is a pretty straightforward implementation but some of its
 
 Let’s consider a more involved example that gives more flexibility.
 
-## Cross platform setup example: [autoEdit 2](https://autoedit.io)
+## Cross platform setup example: [autoEdit 2]({{site.url}}/autoedit)
 
-In [autoEdit](https://autoedit.io) the audio/video conversion to obtain an audio that meets the STT API specs is a bit more involved and handled with a series of components. 
+In [autoEdit]({{site.url}}/autoedit) the audio/video conversion to obtain an audio that meets the STT API specs is a bit more involved and handled with a series of components. 
 
 Without getting too deep into the low-level implementation, there's an [`interactive_transcription_generator`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator) module that uses other components to create a transcription, read metadata, and create a video preview.  It delegates the communication with the STT APIs to the [`transcriber`](https://github.com/OpenNewsLabs/autoEdit_2/tree/master/lib/interactive_transcription_generator/transcriber) component. Which uses other modules to split the media into 5 minutes chunks to speed up the transcription time. Such as the [`trimmer`, module which trims a video or audio file.](https://github.com/OpenNewsLabs/autoEdit_2/blob/master/lib/interactive_transcription_generator/transcriber/trimmer.js#L45) as part of this process. 
 

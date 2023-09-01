@@ -42,4 +42,4 @@ You can either try out the cross platform electron application by following [the
 <!-- Link to initial slide deck for the initial pitch ["What if creating an audio or video program was as simple as editing a word document?"](https://docs.google.com/presentation/d/1M6w8xNA5U4KtxQYrZ1gmPhBqwQbwMOnYavp3RV0HM4Q/edit?usp=sharing) -->
 
 
-In it's current version, my forks of BBC Digital Paper Edit are now the version of [autoEdit3](https://autoEdit.io) I currently maintain. 
+In it's current version, my forks of BBC Digital Paper Edit are now the version of [autoEdit3]({{site.url}}/autoedit) I currently maintain. 
