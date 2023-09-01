@@ -11,4 +11,5 @@ Some thoughts, ideas, workshops, talks, and presentations.
 
 {%- for post in collections.blog reversed-%}
 	{% include post_element_condensed.html, post:post, image:post.data.image, postTitle:post.data.title, url:post.url date:post.date, postDescription:post.data.description', content: post.data.content %} 
+<hr>
 {% endfor %}

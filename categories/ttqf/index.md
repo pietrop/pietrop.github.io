@@ -20,6 +20,7 @@ Compared to a <a href="/categories/blog/">blog posts</a> these  Tips Tricks & Qu
 
 {%- for post in collections.ttqf reversed-%}
 	{% include post_element_condensed.html, post:post, image:post.data.image, postTitle:post.data.title, url:post.url date:post.date, postDescription:post.data.description', content: post.data.content, github: post.github, techStack:post.tech, company: post.data.company,openSource: post.data.open_source %} 
+<hr>
 {% endfor %} 
 
 <!-- post in site.categories.ttqf -->
