@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <link href="https://gmpg.org/xfn/11" rel="profile"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pietro Passarelli's blog">
+
+  <title>
+    Pietro - Json Form Schema (Design) Pattern
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/style.css" defer>
+  <link rel="stylesheet" href="/public/css/post-element-condesed.css" defer>
+  <link rel="stylesheet" href="/public/css/dark-mode.css" defer>
+  <link rel="stylesheet" href="/public/css/badge.css" defer>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+  <!-- Syntax highlight  -->
+  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" defer>
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/public/apple-touch-icon-precomposed.png" defer>
+  <!-- <link rel="shortcut icon" href="/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/public/favicon.ico/favicon.ico" async>
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/public/favicon.ico/favicon.ico"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/favicon.ico/favicon-152.png"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/favicon.ico/favicon-144.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/favicon.ico/favicon-120.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/public/favicon.ico/favicon-114.png"
+    async>
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/public/favicon.ico/favicon-180.png"
+    async>
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/public/favicon.ico/favicon-72.png"
+    async>
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/public/favicon.ico/favicon-57.png" async>
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/public/favicon.ico/favicon-32.png" sizes="32x32" async>
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png" async>
+  <meta name="theme-color" content="#ffffff">
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" sizes="192x192" href="/public/favicon.ico/favicon-192.png" async>
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!--  -->
+  <!-- Open graph -->
+  <meta property="og:title" content="Json Form Schema (Design) Pattern">
+  <meta property="og:description" content="A deep dive, into the Json Form Schema (Design) Pattern. Learning resource.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.pietropassarelli.net/img/json-form-schema-design-pattern/json-form-schema-cover-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Json Form Schema (Design) Pattern">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@pietropassarell">
+  <meta name="twitter:description" content="A deep dive, into the Json Form Schema (Design) Pattern. Learning resource.">
+  <meta name="twitter:image" content="https://www.pietropassarelli.net/img/json-form-schema-design-pattern/json-form-schema-cover-image.png">
+  <meta name="twitter:creator" content="@pietropassarell">
+
+  <!--  -->
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6JQ09CW0P">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-R6JQ09CW0P');
+  </script>
+
+  
+
+</head>
+
+<body class="default-pages">
+  <div class="container">
+    <div class="wrapper">
+      <header class="header">
+        Pietro Passarelli 
+        
+        <nav class="nav">
+    <ul class="menu-list">
+        <li>
+            <a class="sidebar-nav-item" href="/">
+                About</a>
+        </li>
+
+        
+
+        <li> <a class="" href="/categories/video">
+
+                
+                Videos
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/tech">
+
+                
+                Tech
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/ttqf">
+
+                
+                Tips Tricks & Quick Fix
+                
+            </a> </li>
+        
+
+        <li> <a class="" href="/categories/blog">
+
+                
+                Blog
+                
+            </a> </li>
+        
+
+
+        <li> <a class="sidebar-nav-item" href="https://www.pietropassarelli.net/photos/" target="_blank"
+                rel="noopener noreferrer">
+                Photos↗</a>
+        </li>
+    </ul>
+</nav>
+      </header>
+      <main class="main"> 
+        
+<div class="post">
+	<h1 class="post-title">Json Form Schema (Design) Pattern </h1>
+	<span class="post-date">2024 Dec 12 
+		
+	</span> 
+	
+	<br>
+
+	<small><a href="https://github.com/pietrop/json-form-schema-design-pattern" target="_blank" rel="noopener noreferrer"><i
+				class="fab fa-github" aria-hidden="true"></i> GitHub</a>,</small>
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	<small>
+		<a href="https://pietropassarelli.net/json-form-schema-design-pattern" target="_blank" rel="noopener noreferrer">
+			<i class="fab fa-external-link" aria-hidden="true"></i>
+			Url↗</a>
+	</small>
+	
+	<!-- social media -->
+	
+
+	
+
+
+
+
+	<!-- tech Stack -->
+	
+
+	<!-- image -->
+	
+	
+	<div class="image-wrapper">
+		<img src="/img/json-form-schema-design-pattern/json-form-schema-cover-image.png" alt="A deep dive, into the Json Form Schema (Design) Pattern. Learning resource." />
+	</div>
+	
+	
+	<!-- description -->
+	
+	<br>
+	A deep dive, into the Json Form Schema (Design) Pattern. Learning resource.
+	
+	<hr>
+
+	<!-- content -->
+	<p>The JSON Form Schema Design Pattern is a way to simplify working with dynamic forms in web apps. Instead of hard-coding every form element, you define a JSON schemas. This means your forms are consistent, reusable, and way easier to manage. The architecture includes form logic, rendering, and validation, so things stay well organized.</p>
+<p>There are a few well known libraries, but when implemented from scratch the pattern is often misunderstood.</p>
+<p>So I made a learning resource that provides an overview of the pattern and a code walk through of a possible implementation. See the project's <a href="https://pietropassarelli.net/json-form-schema-design-pattern" target="_blank" rel="noopener noreferrer">storybook intro doc for more info</a>.</p>
+
+
+
+	
+</div>
+        <hr>
+<p class="edit-on-github-link">
+	<small><a href="https://github.com/pietrop/pietrop.github.io/blob/master/./categories/blog/2023-12-12-json-form-schema-design-pattern.md">Edit this page on GitHub <i class="fab fa-github"></i></a></small>
+</p>
+      </main>
+      <footer class="footer">
+    <nav>
+        <ul class="contacts-list">
+            <li>
+                <a
+                    href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+                    class="author-social" target="_blank" rel="noopener noreferrer">
+                    <i class="far fa-envelope"></i>
+                    E-mail</a> <span></span>
+            </li>
+            <li>
+                <a 
+                    href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> 
+                    <i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+                <a 
+                    href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub</a>
+            </li>
+            <li>
+                <a 
+                    href="https://uk.linkedin.com/in/pietropassarelli" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+            </li>
+
+            <li>
+                <a 
+                    href="https://www.instagram.com/pietro.ps" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+    </div>
+  </div>
+  <script>
+    // Logic to adjust syntax highlighting based on whether dark mode is on 
+    // in the system or not
+    const prismEl = document.querySelector('#prism-css');
+    const DARK = 'dark';
+    const LIGHT = 'light';
+    const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+
+    function init() {
+      const DARK = 'dark';
+      const LIGHT = 'light';
+      const isSystemDarkMode = matchMedia &&
+        matchMedia('(prefers-color-scheme: dark)').matches;
+
+      if (isSystemDarkMode) {
+        prismEl.href = PRISM_DARK_URL;
+      }
+
+      // Event listener to change with system change
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const changedColourScheme = e.matches ? DARK : LIGHT;
+        if (changedColourScheme === DARK) {
+          prismEl.href = PRISM_DARK_URL;
+        } else {
+          prismEl.href = PRISM_LIGHT_URL;
+        }
+      });
+    }
+
+    init();
+  </script>
+</body>
+
+</html>
