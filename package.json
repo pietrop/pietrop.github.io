@@ -1,38 +1,18 @@
 {
-  "name": "new-blog",
+  "name": "pietrop-blog",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ELEVENTY_ENV=prod npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve",
-    "serve:watch": "npx @11ty/eleventy --serve --watch",
-    "start": "ELEVENTY_ENV=dev npm run serve:watch",
-    "dry:run": "npx @11ty/eleventy --dryrun",
-    "deploy": "ELEVENTY_ENV=prod cp .nojekyll _site/.nojekyll && cp CNAME _site/CNAME && cp manifest.json _site/manifest.json && gh-pages -d _site",
-    "build:deploy": "npm run build && npm run deploy"
-  },
-  "author": "Pietro Passarelli",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-img": "^0.9.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
-    "gh-pages": "^3.2.3",
-    "markdown-it": "^12.2.0",
-    "markdown-it-attrs": "^4.0.0",
-    "markdown-it-checkbox": "^1.1.0",
-    "markdown-it-for-inline": "^0.1.1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "next build"
   },
   "dependencies": {
-    "dark-mode-toggle": "^0.8.0",
-    "eleventy-plugin-embed-twitter": "^1.3.1",
-    "eleventy-plugin-nesting-toc": "^1.3.0",
-    "eleventy-plugin-vimeo-embed": "^1.3.2",
-    "eleventy-plugin-youtube-embed": "^1.6.3",
-    "liquidjs": "^9.25.1",
-    "markdown-it-anchor": "^8.1.0",
-    "nunjucks": "^3.2.3"
+    "gray-matter": "^4.0.3",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remark": "^15.0.0",
+    "remark-html": "^15.0.0"
   }
 }
