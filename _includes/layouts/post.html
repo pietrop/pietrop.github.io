@@ -12,7 +12,7 @@ layout: default
 	{%if company%}<span class="company-badge">{{company}}</span>{% endif %}
 	<br>
 
-	{% if github %}<small><a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer"><i
+	{% if github %}<small><a href="{% if github contains 'http' %}{{ github }}{% else %}https://github.com/{{ github }}{% endif %}" target="_blank" rel="noopener noreferrer"><i
 				class="fab fa-github" aria-hidden="true"></i> GitHub</a>,</small>{% endif %}
 
 	<!-- optional gitbook link -->

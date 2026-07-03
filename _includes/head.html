@@ -115,6 +115,27 @@
   }
   </script>
 
+  {% if github and github != 'pietrop/' %}
+  <!-- Structured data for software project authorship -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "{{ title }}",
+    "description": "{{ description | default: title }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "codeRepository": "{% if github contains 'http' %}{{ github }}{% else %}https://github.com/{{ github }}{% endif %}",
+    "dateCreated": "{{ date | date: '%Y-%m-%d' }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.owner.name }} {{ site.owner.last_name }}",
+      "url": "{{ site.url }}"
+    }{% if tech %},
+    "keywords": "{% for t in tech %}{{ t }}{% unless forloop.last %}, {% endunless %}{% endfor %}"{% endif %}
+  }
+  </script>
+  {% endif %}
+
   <!--  -->
 
   {% if site.isProd %}
