@@ -14,18 +14,26 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/style.css" defer>
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/post-element-condesed.css" defer>
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/dark-mode.css" defer>
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/badge.css" defer>
+  <!-- Critical, same-origin CSS: kept render-blocking on purpose to avoid a flash of unstyled content -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/post-element-condesed.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/dark-mode.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/badge.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Non-critical CSS: Font Awesome icons and syntax-highlight theme don't block first paint -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+    crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'">
   <!-- Syntax highlight  -->
-  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" defer>
+  <link id="prism-css" rel="preload" as="style" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+  </noscript>
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
     href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png" defer>

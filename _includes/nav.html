@@ -5,26 +5,7 @@
                 About</a>
         </li>
 
-        {% for item in site.categories %}
-
-        <li> <a class="{% if page.url == site.baseurl %} active{% endif %}" href="/categories/{{  item }}">
-
-                {% if item == 'blog' %}
-                {{ item | capitalize }}
-                {% elsif item == 'ttqf' %}
-                Tips Tricks & Quick Fix
-                {% elsif item == 'video' %}
-                Videos
-                {% elsif item == 'tech' %}
-                {{ item | capitalize }}
-                {% endif %}
-            </a> </li>
-        {% endfor %}
-
-
-        <li> <a class="sidebar-nav-item" href="{{ site.url }}/photos/" target="_blank"
-                rel="noopener noreferrer">
-                Photos↗</a>
-        </li>
+        <li> <a class="{% if page.url == site.baseurl %} active{% endif %}" href="/categories/blog">
+                Blog</a> </li>
     </ul>
 </nav>

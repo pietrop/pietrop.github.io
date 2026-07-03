@@ -115,7 +115,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection('blog', collection => {
     return collection.getFilteredByGlob(['categories/blog/*.md', 'categories/ttqf/*.md']).filter((a) => {
-      return a?.data?.categories?.includes('blog');
+      return a?.data?.categories?.includes('blog') || a?.data?.categories?.includes('ttqf');
     }).filter(publishedPosts)
     // .sort((a, b)=>{
     //   return b.data.date < a.data.date;
