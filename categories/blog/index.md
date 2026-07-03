@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog
+description: "Some thoughts, ideas, workshops, talks, and presentations from Pietro Passarelli."
 body: theme-base-0c
 ---
 # Blog 

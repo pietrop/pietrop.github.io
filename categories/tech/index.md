@@ -1,6 +1,7 @@
 ---
 layout: page
 title: tech
+description: "Products and prototypes Pietro Passarelli has worked on over the years, mostly productivity tools and new story formats."
 body: theme-base-0c
 ---
 

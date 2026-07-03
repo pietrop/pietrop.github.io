@@ -95,6 +95,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats([
     "md",
     "html",
+    "njk", // needed for root-level robots.njk / sitemap.njk to be output
     ...IMAGES,
     "pdf",
     "css" // css is not yet a recognized template extension in Eleventy

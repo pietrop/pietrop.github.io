@@ -6,7 +6,8 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{site.description}}">
+  <meta name="description" content="{{ description | default: site.description | default: title }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
   <title>
     {{site.title}} - {{title}}
@@ -71,18 +72,40 @@
   <!--  -->
   <!-- Open graph -->
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ description or site.description or title  }}">
+  <meta property="og:description" content="{{ description | default: site.description | default: title }}">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="{{ site.url }}{{ image or site.owner.image }}" />
+  <meta property="og:image" content="{{ site.url }}{{ image | default: site.owner.image }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="675" />
   <!-- Twitter -->
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{site.owner.twitter}}">
-  <meta name="twitter:description" content="{{ description or site.description or title  }}">
-  <meta name="twitter:image" content="{{ site.url }}{{  image or site.owner.image }}">
+  <meta name="twitter:description" content="{{ description | default: site.description | default: title }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ image | default: site.owner.image }}">
   <meta name="twitter:creator" content="@{{site.owner.twitter}}">
+
+  <!-- Structured data for entity/profile disambiguation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.owner.name }} {{ site.owner.last_name }}",
+    "url": "{{ site.url }}",
+    "email": "{{ site.owner.email }}",
+    "sameAs": [
+      "https://uk.linkedin.com/in/{{ site.owner.linkedin }}",
+      "https://github.com/{{ site.owner.github }}",
+      "https://twitter.com/{{ site.owner.twitter }}",
+      "https://www.instagram.com/{{ site.owner.instagram }}",
+      "https://www.facebook.com/{{ site.owner.facebook }}",
+      "https://www.youtube.com/c/{{ site.owner.youtube }}",
+      "https://vimeo.com/{{ site.owner.vimeo }}",
+      "https://www.imdb.com/name/{{ site.owner.imdb }}/",
+      "https://source.opennews.org/people/{{ site.owner.opennews }}/"
+    ]
+  }
+  </script>
 
   <!--  -->
 
