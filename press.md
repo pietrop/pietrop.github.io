@@ -13,6 +13,7 @@ Coverage and mentions of my work on [quickQuote](/quickQuote.html), [autoEdit](/
 
 ## Press coverage
 
+- [The Future of Augmented Journalism: A guide for newsrooms in the age of smart machines](https://jeanetteabrahamsen.com/wp-content/uploads/2017/09/ap_insights_the_future_of_augmented_journalism.pdf) — Associated Press (AP Insights), by Francesco Marconi & Alex Siegman: "AutoEdit, an open-source editor developed by Knight-Mozilla fellow Pietro Passarelli while at Vox Media, uses speech to text to automate routine post-production actions like captioning videos or selecting meaningful quotes from a video to attract readers."
 - [5 digital storytelling ideas from Build the News](https://www.journalism.co.uk/5-digital-storytelling-ideas-from-build-the-news/) — journalism.co.uk, on the [Build the News](/buildTheNews.html) hackathon: "'I have a long-standing interest in working with transcriptions', said Pietro Passarelli, one of the team members and current MSc Computer Science student at University College London."
 - [It's time to rethink how we do 'x in quotes' pieces on the web](https://medium.com/digital-times/it-s-time-to-rethink-how-we-do-x-in-quotes-pieces-on-the-web-1328f1ccf039) — Digital Times on Medium, cross-posted from my own [blog](/rethinking-x-in-quotes.html)
 - [A new tool from The Times of London lets you easily detect and capture quotes from a video](https://www.niemanlab.org/2015/09/a-new-tool-from-the-times-of-london-lets-you-easily-detect-and-capture-quotes-from-a-video/) — Nieman Lab, Sept 2015
