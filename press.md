@@ -25,7 +25,9 @@ Coverage and mentions of my work on [quickQuote](/quickQuote.html), [autoEdit](/
 - [How BBC News Labs is experimenting with AMP's new "Stories" format for news](https://www.niemanlab.org/reading/how-bbc-news-labs-is-experimenting-with-amps-new-stories-format-for-news/) — Nieman Lab
 - [Introducing our 2016 Knight-Mozilla Fellows](https://opennews.org/blog/introducing-2016-fellows/) — OpenNews (see also [my own reflection on the fellowship](/fellowship2016.html))
 - [How The Wall Street Journal is building an incubator into its newsroom, with new departments and plenty of hires](https://www.niemanlab.org/2019/08/how-the-wall-street-journal-is-building-an-incubator-into-its-newsroom-with-new-departments-and-plenty-of-hires/) — Nieman Lab, Aug 2019
+- [Welcoming our Strategy Team Leaders](https://www.dowjones.com/press-room/welcoming-strategy-team-leaders/) — Dow Jones press release
 - [Nieman Lab — all mentions](https://www.niemanlab.org/tag/pietro-passarelli/)
+- [Reynolds Journalism Institute (RJI) — all mentions](https://rjionline.org/tag/vox-media/)
 
 ## autoEdit / Digital Paper Edit
 
