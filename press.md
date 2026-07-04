@@ -14,11 +14,16 @@ Coverage and mentions of my work on [quickQuote](/quickQuote.html), [autoEdit](/
 ## Press coverage
 
 - [5 digital storytelling ideas from Build the News](https://www.journalism.co.uk/5-digital-storytelling-ideas-from-build-the-news/) — journalism.co.uk, on the [Build the News](/buildTheNews.html) hackathon: "'I have a long-standing interest in working with transcriptions', said Pietro Passarelli, one of the team members and current MSc Computer Science student at University College London."
+- [It's time to rethink how we do 'x in quotes' pieces on the web](https://medium.com/digital-times/it-s-time-to-rethink-how-we-do-x-in-quotes-pieces-on-the-web-1328f1ccf039) — Digital Times on Medium, cross-posted from my own [blog](/rethinking-x-in-quotes.html)
 - [A new tool from The Times of London lets you easily detect and capture quotes from a video](https://www.niemanlab.org/2015/09/a-new-tool-from-the-times-of-london-lets-you-easily-detect-and-capture-quotes-from-a-video/) — Nieman Lab, Sept 2015
+- [Tool for journalists: AutoEdit, to edit videos quicker using transcriptions](https://www.journalism.co.uk/tool-for-journalists-autoedit-to-edit-videos-quicker-using-transcriptions/) — journalism.co.uk
 - [New open source tool to help reporters rethink quotes in stories](https://www.journalism.co.uk/news/the-times-releases-open-source-tool-to-help-reporters-rethink-quotes/s2/a566378/) — journalism.co.uk
 - [The Times digital team launches 'quoteable' image tool](https://www.journalism.co.uk/the-times-digital-team-launches-open-source-quoteable-image-tool/) — journalism.co.uk
 - [The 2016 Knight-Mozilla fellows will bring their technical skills to newsrooms around the world](https://www.niemanlab.org/2015/11/the-2016-knight-mozilla-fellows-will-bring-their-technical-skills-to-newsrooms-around-the-world/) — Nieman Lab, Nov 2015
 - [Try out this open source tool for editing video and audio transcripts](https://www.niemanlab.org/2016/10/try-out-this-open-source-tool-for-editing-video-and-audio-transcripts/) — Nieman Lab, Oct 2016
+- [How BBC News Labs is experimenting with AMP's new "Stories" format for news](https://www.niemanlab.org/reading/how-bbc-news-labs-is-experimenting-with-amps-new-stories-format-for-news/) — Nieman Lab
+- [Introducing our 2016 Knight-Mozilla Fellows](https://opennews.org/blog/introducing-2016-fellows/) — OpenNews (see also [my own reflection on the fellowship](/fellowship2016.html))
+- [How The Wall Street Journal is building an incubator into its newsroom, with new departments and plenty of hires](https://www.niemanlab.org/2019/08/how-the-wall-street-journal-is-building-an-incubator-into-its-newsroom-with-new-departments-and-plenty-of-hires/) — Nieman Lab, Aug 2019
 - [Nieman Lab — all mentions](https://www.niemanlab.org/tag/pietro-passarelli/)
 
 ## autoEdit / Digital Paper Edit
@@ -34,6 +39,11 @@ Coverage and mentions of my work on [quickQuote](/quickQuote.html), [autoEdit](/
 - [Roundup: Hacking automated transcription technologies at Text AV](https://medium.com/bbc-news-labs/roundup-hacking-automated-transcription-technologies-at-text-av-4afd1eb4e71b) — BBC News Labs on Medium, by Alli Shultes
 - [Text, Audio, and Meaning: Lessons from TextAV](https://source.opennews.org/articles/text-audio-and-meaning/) — Source: An OpenNews project
 
+## Other BBC News Labs projects
+
+- [Experiments with AMP's new "Stories" format for news](https://medium.com/bbc-news-labs/experiments-with-amps-new-stories-format-3a2a1103cee) — Tamsin Green, BBC News Labs, on the [AMP Stories](/BBC-AMP-stories.html) project
+- [How We Made Our "Crossing Divides" News Game](https://source.opennews.org/articles/how-we-made-crossing-divides/) — Source: An OpenNews project, on [World Service, Crossing Divides](/BBC-crossing-divides.html)
+
 ## Institutional profiles
 
 - [BBC News Labs — team profile](https://bbcnewslabs.co.uk/team/labs/pietropassarelli/)
@@ -45,5 +55,6 @@ Coverage and mentions of my work on [quickQuote](/quickQuote.html), [autoEdit](/
 
 ## Speaking
 
-- [Hacks/Hackers Buenos Aires Media Party 2016 — speaker page](https://hackshackersbamediaparty2016.sched.com/speaker/pietro_passarelli.1v9kayhv)
+- Hacks/Hackers Buenos Aires Media Party 2016 — [announcement](https://mediaparty.org/es/2016/07/21/hacks-hackers-buenos-aires-media-party-2016/) and [speaker page](https://hackshackersbamediaparty2016.sched.com/speaker/pietro_passarelli.1v9kayhv), talk recording on [YouTube](https://www.youtube.com/watch?v=jryiz5kC1V8) ("10 Lecciones que aprendí construyendo `autoEdit.io`")
 - [Media Party 2017 — speaker page](http://sched17.mediaparty.info/speaker/pietro_passarelli.1v9kayhv)
+- Computation + Journalism Symposium 2017, Northwestern University — [schedule](https://cj2017.northwestern.edu/schedule/index.html), "Tools for reporting and storytelling" panel, recording on [YouTube](https://www.youtube.com/watch?v=esWq8z9G-24) and [Vimeo](https://vimeo.com/234150382), writeup at [10 Lessons from building video product tools in the newsroom](/10-lessons-video-tools.html)
