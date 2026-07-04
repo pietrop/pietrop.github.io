@@ -13,6 +13,7 @@ Coverage and mentions of my work on [quickQuote](/quickQuote.html), [autoEdit](/
 
 ## Press coverage
 
+- [5 digital storytelling ideas from Build the News](https://www.journalism.co.uk/5-digital-storytelling-ideas-from-build-the-news/) — journalism.co.uk, on the [Build the News](/buildTheNews.html) hackathon: "'I have a long-standing interest in working with transcriptions', said Pietro Passarelli, one of the team members and current MSc Computer Science student at University College London."
 - [A new tool from The Times of London lets you easily detect and capture quotes from a video](https://www.niemanlab.org/2015/09/a-new-tool-from-the-times-of-london-lets-you-easily-detect-and-capture-quotes-from-a-video/) — Nieman Lab, Sept 2015
 - [New open source tool to help reporters rethink quotes in stories](https://www.journalism.co.uk/news/the-times-releases-open-source-tool-to-help-reporters-rethink-quotes/s2/a566378/) — journalism.co.uk
 - [The Times digital team launches 'quoteable' image tool](https://www.journalism.co.uk/the-times-digital-team-launches-open-source-quoteable-image-tool/) — journalism.co.uk
