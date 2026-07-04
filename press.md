@@ -48,6 +48,7 @@ Coverage and mentions of my work on [quickQuote](/quickQuote.html), [autoEdit](/
 - [How We Made Our "Crossing Divides" News Game](https://source.opennews.org/articles/how-we-made-crossing-divides/) — Source: An OpenNews project, on [World Service, Crossing Divides](/BBC-crossing-divides.html)
 - [BBC #newsHack '17 @TranscriptionBot](https://vimeo.com/240180260) — demo video, project writeup at [BBC #newsHack '17 `@TranscriptionBot`](/BBCnewslabs_slack_transcription_bot.html)
 - [12 ideas from our conversational user interface #newsHACK](https://medium.com/bbc-news-labs/12-ideas-from-our-conversational-user-interface-newshack-8c1ef22ff515) — Alli Shultes, BBC News Labs, roundup of the same hackathon
+- [OneStory at BBC #newsHack](https://vimeo.com/129888695) — demo video, project writeup at [OneStory at BBC #newsHack](/oneStory.html)
 
 ## Institutional profiles
 
