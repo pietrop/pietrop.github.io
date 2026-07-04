@@ -21,12 +21,27 @@ Coverage and mentions of my work on [quickQuote](/quickQuote.html), [autoEdit](/
 - [Try out this open source tool for editing video and audio transcripts](https://www.niemanlab.org/2016/10/try-out-this-open-source-tool-for-editing-video-and-audio-transcripts/) — Nieman Lab, Oct 2016
 - [Nieman Lab — all mentions](https://www.niemanlab.org/tag/pietro-passarelli/)
 
+## autoEdit / Digital Paper Edit
+
+- [BBC R&D News Labs — Digital Paper Edit project page](https://www.bbc.co.uk/rdnewslabs/projects/digital-paper-edit)
+- [BBC R&D News Labs — author profile](https://www.bbc.co.uk/rdnewslabs/author/?id=author-pietro-passarelli280623154934)
+- [BBC News Labs — Digital Paper Edit project page](https://bbcnewslabs.co.uk/projects/digital-paper-edit)
+- [Introducing autoEdit: Video Editing Made Better](https://source.opennews.org/articles/video-editing-made-better-introducing-autoedit/) — Source: An OpenNews project
+
+## textAV
+
+- [Roundup: Hacking automated transcription technologies at Text AV](https://bbcnewslabs.co.uk/news/2018/text-av-roundup) — BBC News Labs
+- [Roundup: Hacking automated transcription technologies at Text AV](https://medium.com/bbc-news-labs/roundup-hacking-automated-transcription-technologies-at-text-av-4afd1eb4e71b) — BBC News Labs on Medium, by Alli Shultes
+- [Text, Audio, and Meaning: Lessons from TextAV](https://source.opennews.org/articles/text-audio-and-meaning/) — Source: An OpenNews project
+
 ## Institutional profiles
 
 - [BBC News Labs — team profile](https://bbcnewslabs.co.uk/team/labs/pietropassarelli/)
-- [BBC News Labs — Digital Paper Edit project page](https://bbcnewslabs.co.uk/projects/digital-paper-edit)
-- [BBC News Labs — Roundup: Hacking automated transcription technologies at Text AV](https://bbcnewslabs.co.uk/news/2018/text-av-roundup)
 - [OpenNews / Source — community profile](https://source.opennews.org/people/pietro-passarelli/)
+
+## Also mentioned
+
+- [The Road to Trint](https://maboa.it/road-to-trint/) — Mark Boas (Hyperaudio co-founder, Trint co-founder/CTO), on meeting at a Popathon hackathon and the [RAI 5 interview](/UBIQInteractive.html) that followed: "Pietro went on to become a 2016 Knight-Mozilla Open News fellow at Vox Media making us fellow fellows!"
 
 ## Speaking
 
