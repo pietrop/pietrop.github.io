@@ -2,6 +2,7 @@
 layout: post
 title: "RAI5 UBIQ - Interactive documentaries"
 description: "UBIQ - 'Racconti' del 24/10/2013 RAI 5"
+date: "2013-10-24"
 duration: "4min 55sec"
 permalink: "/UBIQInteractive.html" 
 image:   /img/ubiq/interactive.png
