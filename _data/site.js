@@ -2,12 +2,11 @@ const environment = process.env.ELEVENTY_ENV || 'dev';
 console.log('environment', environment)
 const PROD_ENV = 'prod';
 const isProd = environment === PROD_ENV;
-// Set by CI for branch preview deploys, e.g. "/preview/my-branch". Empty at the real site root.
+// Set by CI for branch preview deploys, e.g. "/preview/my-branch". Empty at the real site root,
+// where a root-relative baseurl (not a hardcoded domain) keeps asset/nav links portable.
 const pathPrefix = process.env.PATH_PREFIX || '';
-const domain = 'https://www.pietropassarelli.net';
-const prodUrl = `${domain}${pathPrefix}`;
 const devUrl = 'http://localhost:8080';
-const baseurl = environment === 'dev' ? devUrl : prodUrl;
+const baseurl = environment === 'dev' ? devUrl : pathPrefix;
 
 // const folder = {
 //   assets: 'assets',

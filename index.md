@@ -5,7 +5,9 @@ title: About
 
 # About 
 
-Hi, I'm [Pietro](https://uk.linkedin.com/in/{{site.owner.linkedin}}), I am a [senior software engineer](/categories/tech), passionate about early stage products, especially at the intersection of audio / video, news and technology. I created [autoEdit]({{site.url}}/autoedit).
+Hi, I'm [Pietro](https://uk.linkedin.com/in/{{site.owner.linkedin}}), a [senior software engineer](/categories/tech) with experience across the full product lifecycle — from early-stage prototypes to refining features in mature products — particularly at the intersection of audio/video, news and technology. I like client-side architecture, and building products the lean, iterative, user-centered way: form a hypothesis, test the idea, then build.
+
+I created [autoEdit]({{site.url}}/autoedit), one of the earliest tools for text-based video editing: free, open source, and built on the "paper edit" tradition documentary editors have used for decades. The first version shipped in 2015, two years before Descript, and its "digital paper edit" workflow went on to become a dedicated project I built at [BBC News Labs](/BBC-dpe.html).
 
 
 I also take [photos↗](https://www.instagram.com/{{site.owner.instagram}}), [film documentaries](/categories/video) and write up ['how-tos' "Tips Tricks & Quick Fix"](/categories/ttqf) and [blog posts](/categories/blog).
