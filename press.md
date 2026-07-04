@@ -7,6 +7,10 @@ description: "Press coverage, institutional profiles, and speaking engagements f
 
 Coverage and mentions of my work on [quickQuote](/quickQuote.html), [autoEdit](/autoedit), and [BBC Digital Paper Edit](/BBC-dpe.html), and profiles from organisations I've worked with.
 
+## Awards
+
+- [Guardian Student Media Awards 2015](https://www.theguardian.com/gnm-press-office/2015/dec/01/guardian-student-media-awards-2015-winners-announced) — Student Media Startup of the Year, for [quickQuote](/quickQuote.html): "a project that allows individuals to automatically generate interactive video quotes"
+
 ## Press coverage
 
 - [A new tool from The Times of London lets you easily detect and capture quotes from a video](https://www.niemanlab.org/2015/09/a-new-tool-from-the-times-of-london-lets-you-easily-detect-and-capture-quotes-from-a-video/) — Nieman Lab, Sept 2015
