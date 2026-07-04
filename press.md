@@ -35,6 +35,7 @@ Coverage and mentions of my work on [quickQuote](/quickQuote.html), [autoEdit](/
 - [BBC R&D News Labs — author profile](https://www.bbc.co.uk/rdnewslabs/author/?id=author-pietro-passarelli280623154934)
 - [BBC News Labs — Digital Paper Edit project page](https://bbcnewslabs.co.uk/projects/digital-paper-edit)
 - [Introducing autoEdit: Video Editing Made Better](https://source.opennews.org/articles/video-editing-made-better-introducing-autoedit/) — Source: An OpenNews project
+- [Building an Annotation Tool on a Dime](https://source.opennews.org/articles/building-annotation-tool-dime/) — Source: An OpenNews project, co-authored with Kelsey Scherer and Kavya Sukumar at Vox Media
 
 ## textAV
 
@@ -64,4 +65,4 @@ Coverage and mentions of my work on [quickQuote](/quickQuote.html), [autoEdit](/
 - Hacks/Hackers Buenos Aires Media Party 2016 — [announcement](https://mediaparty.org/es/2016/07/21/hacks-hackers-buenos-aires-media-party-2016/) and [speaker page](https://hackshackersbamediaparty2016.sched.com/speaker/pietro_passarelli.1v9kayhv), talk recording on [YouTube](https://www.youtube.com/watch?v=jryiz5kC1V8) ("10 Lecciones que aprendí construyendo `autoEdit.io`")
 - [Media Party 2017 — speaker page](http://sched17.mediaparty.info/speaker/pietro_passarelli.1v9kayhv)
 - Computation + Journalism Symposium 2017, Northwestern University — [schedule](https://cj2017.northwestern.edu/schedule/index.html), "Tools for reporting and storytelling" panel, recording on [YouTube](https://www.youtube.com/watch?v=esWq8z9G-24) and [Vimeo](https://vimeo.com/234150382), writeup at [10 Lessons from building video product tools in the newsroom](/10-lessons-video-tools.html)
-- SRCCON'17 — "Opened Captions Annotated Article system," talk recording on [YouTube](https://www.youtube.com/watch?v=HFcEr3KKwZk), [GitBook notes and slides](https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles/content/video-of-presentation.html), project writeup at [Opened Captions Annotated article system](/opened-captions-annotated-article-rig.html)
+- SRCCON'17 — "Opened Captions Annotated Article system," with David Eads, talk recording on [YouTube](https://www.youtube.com/watch?v=HFcEr3KKwZk), [GitBook notes and slides](https://pietropassarelli.gitbooks.io/opened-captions-for-annotated-articles/content/video-of-presentation.html), project writeup at [Opened Captions Annotated article system](/opened-captions-annotated-article-rig.html)
