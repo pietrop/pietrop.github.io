@@ -8,53 +8,37 @@
                     <i class="far fa-envelope"></i>
                     E-mail</a>{% endif %} <span></span>
             </li>
-            <li>
-                {% if site.owner.twitter %}<a
+            {% if site.owner.twitter %}<li><a
                     href="https://twitter.com/{{ site.owner.twitter }}" target="_blank" rel="me noopener noreferrer">
-                    <i class="fab fa-twitter"></i> Twitter</a>{% endif %}
-            </li>
-            <li>
-                {% if site.owner.github %}<a
+                    <i class="fab fa-twitter"></i> Twitter</a></li>{% endif %}
+            {% if site.owner.github %}<li><a
                     href="https://github.com/{{ site.owner.github }}" target="_blank" rel="me noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub</a>{% endif %}
-            </li>
-            <li>
-                {% if site.owner.linkedin %}<a
+                    <i class="fab fa-github"></i> GitHub</a></li>{% endif %}
+            {% if site.owner.linkedin %}<li><a
                     href="https://uk.linkedin.com/in/{{ site.owner.linkedin }}" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a>{%
+                    rel="me noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>{%
                 endif %}
-            </li>
 
-            <li>
-                {% if site.owner.instagram %}<a
+            {% if site.owner.instagram %}<li><a
                     href="https://www.instagram.com/{{ site.owner.instagram }}" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>{%
+                    rel="me noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>{%
                 endif %}
-            </li>
-            <li>
-                {% if site.owner.facebook %}<a
+            {% if site.owner.facebook %}<li><a
                     href="https://www.facebook.com/{{ site.owner.facebook }}" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>{%
+                    rel="me noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a></li>{%
                 endif %}
-            </li>
-            <li>
-                {% if site.owner.youtube %}<a
+            {% if site.owner.youtube %}<li><a
                     href="https://www.youtube.com/c/{{ site.owner.youtube }}" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-youtube"></i> YouTube</a>{%
+                    rel="me noopener noreferrer"><i class="fab fa-youtube"></i> YouTube</a></li>{%
                 endif %}
-            </li>
-            <li>
-                {% if site.owner.vimeo %}<a
+            {% if site.owner.vimeo %}<li><a
                     href="https://vimeo.com/{{ site.owner.vimeo }}" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-vimeo-v"></i> Vimeo</a>{%
+                    rel="me noopener noreferrer"><i class="fab fa-vimeo-v"></i> Vimeo</a></li>{%
                 endif %}
-            </li>
-            <li>
-                {% if site.owner.imdb %}<a
+            {% if site.owner.imdb %}<li><a
                     href="https://www.imdb.com/name/{{ site.owner.imdb }}/" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-imdb"></i> IMDb</a>{%
+                    rel="me noopener noreferrer"><i class="fab fa-imdb"></i> IMDb</a></li>{%
                 endif %}
-            </li>
             <li>
                 <a href="{{ site.baseurl }}/press.html"><i class="fas fa-newspaper"></i> Links</a>
             </li>
