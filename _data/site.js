@@ -1,10 +1,10 @@
-const environment = process.env.ELEVENTY_ENV;
+const environment = process.env.ELEVENTY_ENV || 'dev';
 console.log('environment', environment)
 const PROD_ENV = 'prod';
-const prodUrl = '{{ site.url }}';
-const devUrl = 'http://localhost:8080';
-const baseUrl = environment === PROD_ENV ? prodUrl : devUrl;
 const isProd = environment === PROD_ENV;
+// Set by CI for branch preview deploys, e.g. "/preview/my-branch". Empty at the real site root
+// and in dev, where a root-relative baseurl (not a hardcoded domain/port) keeps links portable.
+const baseurl = process.env.PATH_PREFIX || '';
 
 // const folder = {
 //   assets: 'assets',
@@ -32,7 +32,7 @@ module.exports = {
     "name": "Tips Tricks & Quick Fix",
     "description": "Pietro Passarelli's blog",
     "url": "https://www.pietropassarelli.net",
-    baseUrl,
+    baseurl,
     "repo": "http://github.com/pietrop/pietrop.github.io",
     "comments": false,
     "author": {
