@@ -5,5 +5,5 @@ layout: false
 permalink: sitemap.txt
 ---
 {%- for item in collections.all %}
-  {{ site.baseurl }}{{ item.url }}
+  {{ site.url }}{{ site.baseurl }}{{ item.url }}
 {%- endfor %}
