@@ -1,44 +1,20 @@
 <footer class="footer">
     <nav>
         <ul class="contacts-list">
+            {% if site.owner.email %}
             <li>
-                {% if site.owner.email %}<a
-                    href="mailto:{{ site.owner.email }}?Subject=Hello&body=Hi {{ site.owner.name }}, %0D%0A Was reading your website, and I've got a question..."
+                <a href="mailto:{{ site.owner.email }}?Subject=Hello&body=Hi {{ site.owner.name }}, %0D%0A Was reading your website, and I've got a question..."
                     class="author-social" target="_blank" rel="noopener noreferrer">
                     <i class="far fa-envelope"></i>
-                    E-mail</a>{% endif %} <span></span>
+                    E-mail</a>
             </li>
-            {% if site.owner.twitter %}<li><a
-                    href="https://twitter.com/{{ site.owner.twitter }}" target="_blank" rel="me noopener noreferrer">
-                    <i class="fab fa-twitter"></i> Twitter</a></li>{% endif %}
-            {% if site.owner.github %}<li><a
-                    href="https://github.com/{{ site.owner.github }}" target="_blank" rel="me noopener noreferrer">
-                    <i class="fab fa-github"></i> GitHub</a></li>{% endif %}
-            {% if site.owner.linkedin %}<li><a
-                    href="https://uk.linkedin.com/in/{{ site.owner.linkedin }}" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>{%
-                endif %}
-
-            {% if site.owner.instagram %}<li><a
-                    href="https://www.instagram.com/{{ site.owner.instagram }}" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>{%
-                endif %}
-            {% if site.owner.facebook %}<li><a
-                    href="https://www.facebook.com/{{ site.owner.facebook }}" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a></li>{%
-                endif %}
-            {% if site.owner.youtube %}<li><a
-                    href="https://www.youtube.com/c/{{ site.owner.youtube }}" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-youtube"></i> YouTube</a></li>{%
-                endif %}
-            {% if site.owner.vimeo %}<li><a
-                    href="https://vimeo.com/{{ site.owner.vimeo }}" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-vimeo-v"></i> Vimeo</a></li>{%
-                endif %}
-            {% if site.owner.imdb %}<li><a
-                    href="https://www.imdb.com/name/{{ site.owner.imdb }}/" target="_blank"
-                    rel="me noopener noreferrer"><i class="fab fa-imdb"></i> IMDb</a></li>{%
-                endif %}
+            {% endif %}
+            {% for profile in site.profiles %}{% if profile.inFooter %}
+            <li>
+                <a href="{{ profile.url }}" target="_blank" rel="me noopener noreferrer">
+                    <i class="{{ profile.icon }}"></i> {{ profile.label }}</a>
+            </li>
+            {% endif %}{% endfor %}
             <li>
                 <a href="{{ site.baseurl }}/press.html"><i class="fas fa-newspaper"></i> Links</a>
             </li>
