@@ -1,11 +1,39 @@
+{%- comment -%}
+Tech and Videos are reached from the About blurb rather than the nav, so the nav stays
+two items on most pages. But those sections' posts sit at root permalinks (/autoEdit.html)
+and pick up search traffic directly, so a visitor can land inside a section the nav doesn't
+mention. When the current page belongs to a section we add it here, marked as the current
+page: it says where you are, and links to the section index so you can browse siblings.
+
+Index pages are matched on URL (they carry no categories of their own); posts on categories.
+{%- endcomment -%}
+{% assign section = '' %}
+{% if page.url contains '/categories/blog' or page.url contains '/categories/ttqf' or categories contains 'blog' or categories contains 'ttqf' %}{% assign section = 'blog' %}{% endif %}
+{% if page.url contains '/categories/tech' or categories contains 'tech' %}{% assign section = 'tech' %}{% endif %}
+{% if page.url contains '/categories/video' or categories contains 'video' %}{% assign section = 'video' %}{% endif %}
 <nav class="nav">
     <ul class="menu-list">
         <li>
-            <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">
+            <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}"
+                href="{{ site.baseurl }}/"{% if page.url == '/' %} aria-current="page"{% endif %}>
                 About</a>
         </li>
-
-        <li> <a class="{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/categories/blog">
-                Blog</a> </li>
+        <li>
+            <a class="sidebar-nav-item{% if section == 'blog' %} active{% endif %}"
+                href="{{ site.baseurl }}/categories/blog"{% if section == 'blog' %} aria-current="page"{% endif %}>
+                Blog</a>
+        </li>
+        {% if section == 'tech' %}
+        <li>
+            <a class="sidebar-nav-item active" href="{{ site.baseurl }}/categories/tech" aria-current="page">
+                Tech</a>
+        </li>
+        {% endif %}
+        {% if section == 'video' %}
+        <li>
+            <a class="sidebar-nav-item active" href="{{ site.baseurl }}/categories/video" aria-current="page">
+                Videos</a>
+        </li>
+        {% endif %}
     </ul>
 </nav>
