@@ -56,6 +56,10 @@ Between them, those two quotes set up the rest of this post. The maneuvers below
 
 To lower the barrier to entry for this post, here are a few quick explanations of some of the sailing terminology used.
 
+### MOB / COB / PIW
+
+These all refer to the same thing and you'll see them used interchangeably below, mostly following whichever the source I'm quoting used: **MOB** (man overboard), **COB** (crew overboard) and occasionally **PIW** (person in water). The RYA's more recent inclusive language guidance suggests alternatives like "person in water" for general use, while being explicit that *"man overboard"* stays as it is when actually shouted — it's a standardised command embedded in training, equipment and international protocols, and that's not something to be creative with mid-emergency.
+
 ### Point of sail
 
 Your point of sail is your angle to the wind, and it's the vocabulary every maneuver below is written in — "go onto a beam reach", "return on a close reach". So it's worth being comfortable with the diagram before the maneuvers will read as anything other than jargon.
@@ -136,22 +140,14 @@ The last two are easy to overlook when reading a diagram, but they're often what
 
 Before any of the maneuvers, there's a set of things that happen immediately, regardless of which one you then choose. The ASA packages them as a mnemonic:
 
-**“Y, P**, **T**, **S**, **C**”
+**“Y, T**, **P**, **S**, **C**”
 
 Excerpt From: [The American Sailing Association. “Bareboat Cruising Made Easy.”](https://books.apple.com/us/book/bareboat-cruising-made-easy/id1088940412). 
 
 The point of a mnemonic here is that this is the part you don't want to be improvising. These steps mostly cost seconds and buy you enormous amounts — a spotter keeping eyes on, flotation in the water, and someone else alerted — before the boat handling even starts.
 
 1. **Yell/Shout** “Man overboard”
-2. **Point** Nominate a spotter / pointer
-
-    > “Throughout the maneuver that follows, the spotter never takes his eyes off the COB, points toward him at all times, and communicates regularly with the helmsman, describing the COB’s location relative to the boat using both distance (e.g., “Three boat lengths”) and direction (e.g., “Dead astern”).”
-    > 
-    > - Excerpt From: [The American Sailing Association. “Sailing Made Easy.”](https://books.apple.com/us/book/sailing-made-easy/id1090161781). 
-
-    Note that this is a dedicated job for one person, who does nothing else for the whole maneuver. A head in the water is astonishingly hard to spot even in moderate seas, and once lost it's very hard to reacquire — hence the "never takes his eyes off" framing, and hence the Williamson turn further down existing specifically for the case where sight *has* been lost.
-
-3. **Throw** floating aids
+2. **Throw** floating aids
     1. Lifebelts
     2. Danbuoy
         1. Ideally 
@@ -162,9 +158,20 @@ The point of a mnemonic here is that this is the part you don't want to be impro
 
         The reasoning is that flotation blows downwind faster than a person floating low in the water does. Without a drogue, the thing you threw to mark the spot quietly stops marking the spot.
 
-4. **Call / Mayday** / Radio alert
-    1. MOB button on GPS
-    2. Call VHF Channel 16 to alert of the MOB situation
+3. **Point** Nominate a spotter / pointer
+
+    > “Throughout the maneuver that follows, the spotter never takes his eyes off the COB, points toward him at all times, and communicates regularly with the helmsman, describing the COB’s location relative to the boat using both distance (e.g., “Three boat lengths”) and direction (e.g., “Dead astern”).”
+    > 
+    > - Excerpt From: [The American Sailing Association. “Sailing Made Easy.”](https://books.apple.com/us/book/sailing-made-easy/id1090161781). 
+
+    Note that this is a dedicated job for one person, who does nothing else for the whole maneuver. A head in the water is astonishingly hard to spot even in moderate seas, and once lost it's very hard to reacquire — hence the "never takes his eyes off" framing, and hence the Williamson turn further down existing specifically for the case where sight *has* been lost.
+
+4. **Set** the MOB button on the GPS
+
+    This marks the position at the moment they went in, which is the number the Williamson turn and any search pattern are built around. It's also the step that's easiest to forget, because unlike the others nothing visibly happens when you do it.
+
+5. **Call / Mayday** / Radio alert
+    1. Call VHF Channel 16 to alert of the MOB situation
         1. “Pan-Pan, all stations” if not life threatening
         2. Otherwise “Mayday”
         3. Once MOB resolved, call to say all good
@@ -281,7 +288,7 @@ This is the one most people are taught first, and it's the most forgiving: every
 
 - Regardless of your point of sail go onto a beam reach
 - Furl the Genoa
-- Proceed to 3 to 6 boat length spending on wind speed and waves.
+- Proceed four to six boat lengths, depending on wind speed and waves
 
     > “A distance of four to six boat lengths (20 to 30 seconds) should be sufficient — the distance will be shorter in lighter winds and longer in higher winds. ”
     >
@@ -446,7 +453,9 @@ Good if you lose sight of the MOB, or in low visibility.
 >
 > - [“Man overboard rescue turn.” Wikipedia.](https://en.wikipedia.org/wiki/Man_overboard_rescue_turn#Williamson_turn)
 
-The elegance of it is that it puts you back on your exact reciprocal track — you retrace your own path rather than guessing at a position. Which is why it's a ship-handling technique originally: it works when the thing you're looking for is somewhere behind you and you can no longer see it.
+The elegance of it is that it puts you back on your exact reciprocal track — you retrace your own path rather than guessing at a position. That's why it works when you've lost sight of the person: you re-cross the line they're on regardless of exactly when they went in.
+
+The trade-off, and the reason it isn't the default, is that it's comparatively slow and initially takes you *further* from the scene. Where the casualty is in sight and the boat is manoeuvrable, a tighter single turn gets you back sooner. Worth noting too that this is ship-handling terminology — there are sibling maneuvers (the Anderson and Scharnow turns) that trade differently between speed and regaining track.
 
 [https://youtu.be/hXyY0BcaxbU](https://youtu.be/hXyY0BcaxbU)
 
