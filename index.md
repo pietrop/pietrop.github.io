@@ -5,10 +5,12 @@ title: About
 
 # About 
 
-Hi, I'm [Pietro](https://uk.linkedin.com/in/{{site.owner.linkedin}}), I am a [senior software engineer](/categories/tech), passionate about early stage products, especially at the intersection of audio / video, news and technology. I created [autoEdit]({{site.url}}/autoedit).
+Hi, I'm [Pietro](https://uk.linkedin.com/in/{{site.owner.linkedin}}), a [senior software engineer](/categories/tech) passionate about early-stage products, especially at the intersection of audio / video production and technology.
+
+I also created [autoEdit]({{site.url}}/autoedit), the first digital paper editing app that uses audio and video interview transcripts to craft your story.
 
 
-I also take [photos↗]({{ site.url }}/photos), [film documentaries](/categories/video) and write up ['how-tos' "Tips Tricks & Quick Fix"](/categories/ttqf) and [blog posts](/categories/blog).
+I also take [photos↗](https://www.instagram.com/{{site.owner.instagram}}), [film documentaries](/categories/video) and write up ['how-tos' "Tips Tricks & Quick Fix"](/categories/ttqf) and [blog posts](/categories/blog).
 
 
 <!-- Picture from BA media party with mic -->

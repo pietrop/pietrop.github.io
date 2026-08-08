@@ -6,25 +6,37 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{site.description}}">
+  <meta name="description" content="{{ description | default: site.description | default: title | escape }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {% unless site.isProd %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endunless %}
 
   <title>
-    {{site.title}} - {{title}}
+    {{ site.title }} - {{ title | escape }}
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/style.css" defer>
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/post-element-condesed.css" defer>
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/dark-mode.css" defer>
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/badge.css" defer>
+  <!-- Critical, same-origin CSS: kept render-blocking on purpose to avoid a flash of unstyled content -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/post-element-condesed.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/dark-mode.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/badge.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Non-critical CSS: Font Awesome icons and syntax-highlight theme don't block first paint -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+    crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'">
   <!-- Syntax highlight  -->
-  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" defer>
+  <link id="prism-css" rel="preload" as="style" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+  </noscript>
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
     href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png" defer>
@@ -70,19 +82,54 @@
 
   <!--  -->
   <!-- Open graph -->
-  <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ description or site.description or title  }}">
+  <meta property="og:title" content="{{ title | escape }}">
+  <meta property="og:description" content="{{ description | default: site.description | default: title | escape }}">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="{{ site.url }}{{ image or site.owner.image }}" />
+  <meta property="og:image" content="{{ site.url }}{{ image | default: site.owner.image }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="675" />
   <!-- Twitter -->
-  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:title" content="{{ title | escape }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{site.owner.twitter}}">
-  <meta name="twitter:description" content="{{ description or site.description or title  }}">
-  <meta name="twitter:image" content="{{ site.url }}{{  image or site.owner.image }}">
+  <meta name="twitter:description" content="{{ description | default: site.description | default: title | escape }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ image | default: site.owner.image }}">
   <meta name="twitter:creator" content="@{{site.owner.twitter}}">
+
+  <!-- Structured data for entity/profile disambiguation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.owner.name }} {{ site.owner.last_name }}",
+    "url": "{{ site.url }}",
+    "email": "{{ site.owner.email }}",
+    "sameAs": {{ site.sameAs | jsonify }},
+    "subjectOf": "{{ site.url }}/press.html",
+    "award": "Guardian Student Media Awards 2015 — Student Media Startup of the Year, for quickQuote"
+  }
+  </script>
+
+  {% if github and github != 'pietrop/' %}
+  <!-- Structured data for software project authorship -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": {{ title | jsonify }},
+    "description": {{ description | default: title | jsonify }},
+    "url": "{{ site.url }}{{ page.url }}",
+    "codeRepository": "{% if github contains 'http' %}{{ github }}{% else %}https://github.com/{{ github }}{% endif %}",
+    "dateCreated": "{{ date | date: '%Y-%m-%d' }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.owner.name }} {{ site.owner.last_name }}",
+      "url": "{{ site.url }}"
+    }{% if tech %},
+    "keywords": {{ tech | join: ", " | jsonify }}{% endif %}
+  }
+  </script>
+  {% endif %}
 
   <!--  -->
 

@@ -2,6 +2,7 @@
 layout: post
 title: "RAI5 UBIQ - 3D Printing"
 description: "UBIQ - 'Racconti' del 31/10/2013 RAI 5"
+date: "2013-10-31"
 duration: "4min 48sec"
 permalink: "/UBIQ3D.html" 
 image:   /img/ubiq/3dprinting.png
