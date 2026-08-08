@@ -64,6 +64,7 @@
   /preview/claude/site-layout-performance-t467aj/electron-github-actions.html
   /preview/claude/site-layout-performance-t467aj/hyperaudio-wordpress-plugin-workflow.html
   /preview/claude/site-layout-performance-t467aj/json-form-schema-design-pattern.html
+  /preview/claude/site-layout-performance-t467aj/css-tldr.html
   /preview/claude/site-layout-performance-t467aj/categories/blog/
   /preview/claude/site-layout-performance-t467aj/categories/tech/
   /preview/claude/site-layout-performance-t467aj/categories/ttqf/
