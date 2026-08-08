@@ -30,8 +30,37 @@ ul.menu-list li {
     margin-right: 1em;
 }
 
-ul.menu-list a .active {
+/* Descendant selector (`a .active`) never matched, since the class is on the <a> itself. */
+ul.menu-list a.active {
     font-weight: bold;
+}
+
+/* Either/or post filter on the blog index. Deliberately plain, to match the rest. */
+fieldset.post-filter {
+    border: 0;
+    padding: 0;
+    margin: 0 0 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25em 1.25em;
+    font-size: 0.95rem;
+}
+
+fieldset.post-filter label {
+    cursor: pointer;
+}
+
+fieldset.post-filter input {
+    margin-right: 0.3em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
 }
 
 body {

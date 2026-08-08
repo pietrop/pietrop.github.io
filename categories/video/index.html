@@ -9,25 +9,35 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pietro Passarelli's blog">
+  <meta name="description" content="Pietro Passarelli&#39;s blog">
+  <link rel="canonical" href="https://www.pietropassarelli.net/categories/video/">
+  
 
   <title>
     Pietro - Video
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/style.css" defer>
-  <link rel="stylesheet" href="/public/css/post-element-condesed.css" defer>
-  <link rel="stylesheet" href="/public/css/dark-mode.css" defer>
-  <link rel="stylesheet" href="/public/css/badge.css" defer>
+  <!-- Critical, same-origin CSS: kept render-blocking on purpose to avoid a flash of unstyled content -->
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/post-element-condesed.css">
+  <link rel="stylesheet" href="/public/css/dark-mode.css">
+  <link rel="stylesheet" href="/public/css/badge.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Non-critical CSS: Font Awesome icons and syntax-highlight theme don't block first paint -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+    crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'">
   <!-- Syntax highlight  -->
-  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" defer>
+  <link id="prism-css" rel="preload" as="style" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+  </noscript>
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
     href="/public/apple-touch-icon-precomposed.png" defer>
@@ -74,18 +84,34 @@
   <!--  -->
   <!-- Open graph -->
   <meta property="og:title" content="Video">
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Pietro Passarelli&#39;s blog">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://www.pietropassarelli.net" />
+  <meta property="og:image" content="https://www.pietropassarelli.net/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="675" />
   <!-- Twitter -->
   <meta name="twitter:title" content="Video">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@pietropassarell">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="https://www.pietropassarelli.net">
+  <meta name="twitter:description" content="Pietro Passarelli&#39;s blog">
+  <meta name="twitter:image" content="https://www.pietropassarelli.net/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg">
   <meta name="twitter:creator" content="@pietropassarell">
+
+  <!-- Structured data for entity/profile disambiguation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pietro Passarelli",
+    "url": "https://www.pietropassarelli.net",
+    "email": "pietro.passarelli@gmail.com",
+    "sameAs": ["https://twitter.com/pietropassarell","https://github.com/pietrop","https://uk.linkedin.com/in/pietropassarelli","https://www.instagram.com/pietro.ps","https://www.facebook.com/pietro.passarelli.5","https://www.youtube.com/c/PietroPassarelli","https://vimeo.com/pietropassarelli","https://www.imdb.com/name/nm4761612/","https://source.opennews.org/people/pietro-passarelli/"],
+    "subjectOf": "https://www.pietropassarelli.net/press.html",
+    "award": "Guardian Student Media Awards 2015 — Student Media Startup of the Year, for quickQuote"
+  }
+  </script>
+
+  
 
   <!--  -->
 
@@ -111,54 +137,32 @@
       <header class="header">
         Pietro Passarelli 
         
-        <nav class="nav">
+        
+
+
+
+<nav class="nav">
     <ul class="menu-list">
         <li>
-            <a class="sidebar-nav-item" href="/">
+            <a class="sidebar-nav-item"
+                href="/">
                 About</a>
         </li>
-
-        
-
-        <li> <a class="" href="/categories/video">
-
-                
-                Videos
-                
-            </a> </li>
-        
-
-        <li> <a class="" href="/categories/tech">
-
-                
-                Tech
-                
-            </a> </li>
-        
-
-        <li> <a class="" href="/categories/ttqf">
-
-                
-                Tips Tricks & Quick Fix
-                
-            </a> </li>
-        
-
-        <li> <a class="" href="/categories/blog">
-
-                
-                Blog
-                
-            </a> </li>
-        
-
-
-        <li> <a class="sidebar-nav-item" href="https://www.pietropassarelli.net/photos/" target="_blank"
-                rel="noopener noreferrer">
-                Photos↗</a>
+        <li>
+            <a class="sidebar-nav-item"
+                href="/categories/blog">
+                Blog</a>
         </li>
+        
+        
+        <li>
+            <a class="sidebar-nav-item active" href="/categories/video" aria-current="page">
+                Videos</a>
+        </li>
+        
     </ul>
 </nav>
+
       </header>
       <main class="main"> 
         
@@ -181,15 +185,15 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
   </li><li>
    <a href="/categories/video/2012-07-12-difformazione/">Difformazione</a>
   </li><li>
-   <a href="/UBIQ3D.html">RAI5 UBIQ - 3D Printing</a>
-  </li><li>
-   <a href="/UBIQInteractive.html">RAI5 UBIQ - Interactive documentaries</a>
-  </li><li>
    <a href="/categories/video/2012-12-12-Swing-Rowers/">SwingRowers</a>
   </li><li>
    <a href="/categories/video/2013-09-12-showreel/">ShowReel</a>
   </li><li>
    <a href="/bbcnewslabs.html">BBC #newsHACK</a>
+  </li><li>
+   <a href="/UBIQInteractive.html">RAI5 UBIQ - Interactive documentaries</a>
+  </li><li>
+   <a href="/UBIQ3D.html">RAI5 UBIQ - 3D Printing</a>
   </li><li>
    <a href="/categories/video/2014-02-21-BBCPTS/">BBC PTS Promo</a>
   </li><li>
@@ -202,7 +206,7 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
    <a href="/categories/video/2015-10-10-UBIQ-computer-dance-piece/">RAI 5 - UBIQ: Computer Assisted Art Performance</a>
   </li></ul> --><div class="post-condensed-block">
   <a class="image-block" href="/categories/video/2015-10-10-UBIQ-computer-dance-piece/">
-    <img src=/img/ubiq-computer-assisted/ubiq.webp alt="">
+    <img src="/img/ubiq-computer-assisted/ubiq.webp" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/video/2015-10-10-UBIQ-computer-dance-piece/">RAI 5 - UBIQ: Computer Assisted Art Performance</a></h2><span class="company-badge">RAI 5</span>  <br>
@@ -215,7 +219,7 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/BBCLDRS-pd.html">
-    <img src=/img/BBCLDRS/ldrs-pd.png alt="">
+    <img src="/img/BBCLDRS/ldrs-pd.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/BBCLDRS-pd.html">Producer/Director - Making of the BBC 'Life and Death Row Series'</a></h2><span class="company-badge">BBC</span>  <br>
@@ -228,7 +232,7 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/categories/video/2014-07-17-BBCLDRS-editor/">
-    <img src=/img/BBCLDRS/ldrs-editor.png alt="">
+    <img src="/img/BBCLDRS/ldrs-editor.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/video/2014-07-17-BBCLDRS-editor/">Editor - Making of the BBC 'Life and Death Row Series'</a></h2><span class="company-badge">BBC</span>  <br>
@@ -241,7 +245,7 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/categories/video/2014-07-17-BBCLDRS-ap/">
-    <img src=/img/BBCLDRS/ldrs-ap.png alt="">
+    <img src="/img/BBCLDRS/ldrs-ap.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/video/2014-07-17-BBCLDRS-ap/">Assistant Producer - Making of the BBC 'Life and Death Row Series'</a></h2><span class="company-badge">BBC</span>  <br>
@@ -254,7 +258,7 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/categories/video/2014-02-21-BBCPTS/">
-    <img src=/img/BBCPTS/bbcpts.png alt="">
+    <img src="/img/BBCPTS/bbcpts.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/video/2014-02-21-BBCPTS/">BBC PTS Promo</a></h2><span class="company-badge">BBC</span>  <br>
@@ -266,8 +270,34 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
 </div> 
 <hr>
 <div class="post-condensed-block">
+  <a class="image-block" href="/UBIQ3D.html">
+    <img src="/img/ubiq/3dprinting.png" alt="" loading="lazy" decoding="async">
+  </a>
+  <div>
+    <h2><a href="/UBIQ3D.html">RAI5 UBIQ - 3D Printing</a></h2><span class="company-badge">RAI 5</span>  <br>
+    <small>2013 Oct 31 </small>| <small><strong>Duration:</strong> 4min 48sec</small>
+    <p>UBIQ - 'Racconti' del 31/10/2013 RAI 5</p><a href="/UBIQ3D.html">
+      <small> <small>More &raquo;</small></small>
+    </a>
+  </div>
+</div> 
+<hr>
+<div class="post-condensed-block">
+  <a class="image-block" href="/UBIQInteractive.html">
+    <img src="/img/ubiq/interactive.png" alt="" loading="lazy" decoding="async">
+  </a>
+  <div>
+    <h2><a href="/UBIQInteractive.html">RAI5 UBIQ - Interactive documentaries</a></h2><span class="company-badge">RAI 5</span>  <br>
+    <small>2013 Oct 24 </small>| <small><strong>Duration:</strong> 4min 55sec</small>
+    <p>UBIQ - 'Racconti' del 24/10/2013 RAI 5</p><a href="/UBIQInteractive.html">
+      <small> <small>More &raquo;</small></small>
+    </a>
+  </div>
+</div> 
+<hr>
+<div class="post-condensed-block">
   <a class="image-block" href="/bbcnewslabs.html">
-    <img src=/img/bbcnewslab/bbcnewslab.png alt="">
+    <img src="/img/bbcnewslab/bbcnewslab.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/bbcnewslabs.html">BBC #newsHACK</a></h2><span class="company-badge">BBC</span>  <br>
@@ -280,7 +310,7 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/categories/video/2013-09-12-showreel/">
-    <img src=/img/showreel/showreel.jpg alt="">
+    <img src="/img/showreel/showreel.jpg" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/video/2013-09-12-showreel/">ShowReel</a></h2> 
@@ -293,7 +323,7 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/categories/video/2012-12-12-Swing-Rowers/">
-    <img src=/img/swingrowers/swingrowers.png alt="">
+    <img src="/img/swingrowers/swingrowers.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/video/2012-12-12-Swing-Rowers/">SwingRowers</a></h2> 
@@ -305,34 +335,8 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
 </div> 
 <hr>
 <div class="post-condensed-block">
-  <a class="image-block" href="/UBIQInteractive.html">
-    <img src=/img/ubiq/interactive.png alt="">
-  </a>
-  <div>
-    <h2><a href="/UBIQInteractive.html">RAI5 UBIQ - Interactive documentaries</a></h2><span class="company-badge">RAI 5</span>  <br>
-    <small>2012 Oct 12 </small>| <small><strong>Duration:</strong> 4min 55sec</small>
-    <p>UBIQ - 'Racconti' del 24/10/2013 RAI 5</p><a href="/UBIQInteractive.html">
-      <small> <small>More &raquo;</small></small>
-    </a>
-  </div>
-</div> 
-<hr>
-<div class="post-condensed-block">
-  <a class="image-block" href="/UBIQ3D.html">
-    <img src=/img/ubiq/3dprinting.png alt="">
-  </a>
-  <div>
-    <h2><a href="/UBIQ3D.html">RAI5 UBIQ - 3D Printing</a></h2><span class="company-badge">RAI 5</span>  <br>
-    <small>2012 Oct 12 </small>| <small><strong>Duration:</strong> 4min 48sec</small>
-    <p>UBIQ - 'Racconti' del 31/10/2013 RAI 5</p><a href="/UBIQ3D.html">
-      <small> <small>More &raquo;</small></small>
-    </a>
-  </div>
-</div> 
-<hr>
-<div class="post-condensed-block">
   <a class="image-block" href="/categories/video/2012-07-12-difformazione/">
-    <img src=/img/difformazione/difformazione.png alt="">
+    <img src="/img/difformazione/difformazione.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/video/2012-07-12-difformazione/">Difformazione</a></h2><span class="company-badge">Radio Città</span>  <br>
@@ -345,7 +349,7 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/categories/video/2011-09-17-50p1q/">
-    <img src=/img/50p1q/50p1q.png alt="">
+    <img src="/img/50p1q/50p1q.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/video/2011-09-17-50p1q/">50 People One Questions</a></h2><span class="company-badge">Comune di Bologna</span>  <br>
@@ -358,7 +362,7 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/categories/video/2011-09-12-Angus/">
-    <img src=/img/htm/htm.png alt="">
+    <img src="/img/htm/htm.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/video/2011-09-12-Angus/">Hating The Moon</a></h2> 
@@ -381,33 +385,57 @@ Documentary projects for broadcast Tv as well as for the web. And some personal 
       <footer class="footer">
     <nav>
         <ul class="contacts-list">
+            
             <li>
-                <a
-                    href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+                <a href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
                     class="author-social" target="_blank" rel="noopener noreferrer">
                     <i class="far fa-envelope"></i>
-                    E-mail</a> <span></span>
+                    E-mail</a>
             </li>
+            
+            
             <li>
-                <a 
-                    href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> 
+                <a href="https://twitter.com/pietropassarell" target="_blank" rel="me noopener noreferrer">
                     <i class="fab fa-twitter"></i> Twitter</a>
             </li>
+            
             <li>
-                <a 
-                    href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/pietrop" target="_blank" rel="me noopener noreferrer">
                     <i class="fab fa-github"></i> GitHub</a>
             </li>
+            
             <li>
-                <a 
-                    href="https://uk.linkedin.com/in/pietropassarelli" target="_blank"
-                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+                <a href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i> Linkedin</a>
             </li>
-
+            
             <li>
-                <a 
-                    href="https://www.instagram.com/pietro.ps" target="_blank"
-                    rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.instagram.com/pietro.ps" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            
+            <li>
+                <a href="https://www.facebook.com/pietro.passarelli.5" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-facebook"></i> Facebook</a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/c/PietroPassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-youtube"></i> YouTube</a>
+            </li>
+            
+            <li>
+                <a href="https://vimeo.com/pietropassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-vimeo-v"></i> Vimeo</a>
+            </li>
+            
+            <li>
+                <a href="https://www.imdb.com/name/nm4761612/" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-imdb"></i> IMDb</a>
+            </li>
+            
+            <li>
+                <a href="/press.html"><i class="fas fa-newspaper"></i> Links</a>
             </li>
         </ul>
     </nav>

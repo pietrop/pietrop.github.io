@@ -9,25 +9,35 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pietro Passarelli's blog">
+  <meta name="description" content="Products and prototypes Pietro Passarelli has worked on over the years, mostly productivity tools and new story formats.">
+  <link rel="canonical" href="https://www.pietropassarelli.net/categories/tech/">
+  
 
   <title>
     Pietro - tech
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/style.css" defer>
-  <link rel="stylesheet" href="/public/css/post-element-condesed.css" defer>
-  <link rel="stylesheet" href="/public/css/dark-mode.css" defer>
-  <link rel="stylesheet" href="/public/css/badge.css" defer>
+  <!-- Critical, same-origin CSS: kept render-blocking on purpose to avoid a flash of unstyled content -->
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/post-element-condesed.css">
+  <link rel="stylesheet" href="/public/css/dark-mode.css">
+  <link rel="stylesheet" href="/public/css/badge.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Non-critical CSS: Font Awesome icons and syntax-highlight theme don't block first paint -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" defer />
+    crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'">
   <!-- Syntax highlight  -->
-  <link id="prism-css" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet" defer>
+  <link id="prism-css" rel="preload" as="style" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+  </noscript>
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144"
     href="/public/apple-touch-icon-precomposed.png" defer>
@@ -74,18 +84,34 @@
   <!--  -->
   <!-- Open graph -->
   <meta property="og:title" content="tech">
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Products and prototypes Pietro Passarelli has worked on over the years, mostly productivity tools and new story formats.">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://www.pietropassarelli.net" />
+  <meta property="og:image" content="https://www.pietropassarelli.net/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="675" />
   <!-- Twitter -->
   <meta name="twitter:title" content="tech">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@pietropassarell">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="https://www.pietropassarelli.net">
+  <meta name="twitter:description" content="Products and prototypes Pietro Passarelli has worked on over the years, mostly productivity tools and new story formats.">
+  <meta name="twitter:image" content="https://www.pietropassarelli.net/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg">
   <meta name="twitter:creator" content="@pietropassarell">
+
+  <!-- Structured data for entity/profile disambiguation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pietro Passarelli",
+    "url": "https://www.pietropassarelli.net",
+    "email": "pietro.passarelli@gmail.com",
+    "sameAs": ["https://twitter.com/pietropassarell","https://github.com/pietrop","https://uk.linkedin.com/in/pietropassarelli","https://www.instagram.com/pietro.ps","https://www.facebook.com/pietro.passarelli.5","https://www.youtube.com/c/PietroPassarelli","https://vimeo.com/pietropassarelli","https://www.imdb.com/name/nm4761612/","https://source.opennews.org/people/pietro-passarelli/"],
+    "subjectOf": "https://www.pietropassarelli.net/press.html",
+    "award": "Guardian Student Media Awards 2015 — Student Media Startup of the Year, for quickQuote"
+  }
+  </script>
+
+  
 
   <!--  -->
 
@@ -111,54 +137,32 @@
       <header class="header">
         Pietro Passarelli 
         
-        <nav class="nav">
+        
+
+
+
+<nav class="nav">
     <ul class="menu-list">
         <li>
-            <a class="sidebar-nav-item" href="/">
+            <a class="sidebar-nav-item"
+                href="/">
                 About</a>
         </li>
-
-        
-
-        <li> <a class="" href="/categories/video">
-
-                
-                Videos
-                
-            </a> </li>
-        
-
-        <li> <a class="" href="/categories/tech">
-
-                
-                Tech
-                
-            </a> </li>
-        
-
-        <li> <a class="" href="/categories/ttqf">
-
-                
-                Tips Tricks & Quick Fix
-                
-            </a> </li>
-        
-
-        <li> <a class="" href="/categories/blog">
-
-                
-                Blog
-                
-            </a> </li>
-        
-
-
-        <li> <a class="sidebar-nav-item" href="https://www.pietropassarelli.net/photos/" target="_blank"
-                rel="noopener noreferrer">
-                Photos↗</a>
+        <li>
+            <a class="sidebar-nav-item"
+                href="/categories/blog">
+                Blog</a>
         </li>
+        
+        <li>
+            <a class="sidebar-nav-item active" href="/categories/tech" aria-current="page">
+                Tech</a>
+        </li>
+        
+        
     </ul>
 </nav>
+
       </header>
       <main class="main"> 
         
@@ -175,7 +179,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 </p>
 <hr><div class="post-condensed-block">
   <a class="image-block" href="/wsj-chat-bot.html">
-    <img src=/img/wsj-chat-bot/salary-chat-bot-screenshot.jpg alt="">
+    <img src="/img/wsj-chat-bot/salary-chat-bot-screenshot.jpg" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/wsj-chat-bot.html">WSJ Chat Bot</a></h2><span class="company-badge">WSJ</span>  <br>
@@ -188,7 +192,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/multimedia-annotated-transcript.html">
-    <img src=/img/multimedia-annotated-transcript/trump-rally.gif alt="">
+    <img src="/img/multimedia-annotated-transcript/trump-rally.gif" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/multimedia-annotated-transcript.html"> Multimedia Annotated Transcript</a></h2><span class="company-badge">WSJ</span>  <br>
@@ -201,7 +205,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/wsj-transcription-service.html">
-    <img src=/img/wsj-transcription-service/slate-transcript-editor.png alt="">
+    <img src="/img/wsj-transcription-service/slate-transcript-editor.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/wsj-transcription-service.html">WSJ Transcription service</a></h2><span class="company-badge">WSJ</span>  <br>
@@ -214,7 +218,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/wsj-live-transcriber-tool.html">
-    <img src=/img/wsj-live-transcriber-tool/live-transcriber.png alt="">
+    <img src="/img/wsj-live-transcriber-tool/live-transcriber.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/wsj-live-transcriber-tool.html">Live transcriber tool - POC</a></h2><span class="company-badge">WSJ</span>  <br>
@@ -227,7 +231,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/wsj-podcast-transcription-authoring-tool.html">
-    <img src=/img/podcast-transcription-tool/1-poddcast-list-of-rss.png alt="">
+    <img src="/img/podcast-transcription-tool/1-poddcast-list-of-rss.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/wsj-podcast-transcription-authoring-tool.html">Podcast Transcription authoring tool</a></h2><span class="company-badge">WSJ</span>  <br>
@@ -240,7 +244,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/react-slate-transcript-editor.html">
-    <img src=/img/react-slate-transcript-editor/slate-transcript-editor.png alt="">
+    <img src="/img/react-slate-transcript-editor/slate-transcript-editor.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/react-slate-transcript-editor.html">Slate Transcript Editor</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -253,7 +257,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/BBC-dpe.html">
-    <img src=/img/BBC-dpe/overview.png alt="">
+    <img src="/img/BBC-dpe/overview.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/BBC-dpe.html">Digital Paper Edit</a></h2><span class="company-badge">BBC</span> <span class="open-source-badge">Open Source</span>  <br>
@@ -266,7 +270,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/BBC-news-mixer.html">
-    <img src=/img/BBC-news-mixer/news-mixer-mode-navigation.png alt="">
+    <img src="/img/BBC-news-mixer/news-mixer-mode-navigation.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/BBC-news-mixer.html">News Mixer</a></h2><span class="company-badge">BBC</span>  <br>
@@ -279,7 +283,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/BBC-narrative-text.html">
-    <img src=/img/BBC-narrative-text/overview.png alt="">
+    <img src="/img/BBC-narrative-text/overview.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/BBC-narrative-text.html">Narrative Text</a></h2><span class="company-badge">BBC</span>  <br>
@@ -292,7 +296,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/BBC-transcript-editor.html">
-    <img src=/img/BBC-transcript-editor/transcript-editor-overview.png alt="">
+    <img src="/img/BBC-transcript-editor/transcript-editor-overview.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/BBC-transcript-editor.html">React Transcript Editor</a></h2><span class="company-badge">BBC</span> <span class="open-source-badge">Open Source</span>  <br>
@@ -305,7 +309,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/trello-to-markdown.html">
-    <img src=/img/trello-to-markdown/overview.png alt="">
+    <img src="/img/trello-to-markdown/overview.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/trello-to-markdown.html">Trello To Markdown</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -318,7 +322,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/BBC-AMP-stories.html">
-    <img src=/img/BBC-AMP-stories/amp-stories-index.png alt="">
+    <img src="/img/BBC-AMP-stories/amp-stories-index.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/BBC-AMP-stories.html">BBC AMP Stories</a></h2><span class="company-badge">BBC</span>  <br>
@@ -331,7 +335,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/subtitles-composer-app.html">
-    <img src=/img/subtitles-composer-app/subtitles-composer-app.png alt="">
+    <img src="/img/subtitles-composer-app/subtitles-composer-app.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/subtitles-composer-app.html">Subtitles Composer App</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -344,7 +348,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/BBC-crossing-divides.html">
-    <img src=/img/BBC-crossing-divides/crossing-divides-overview.jpg alt="">
+    <img src="/img/BBC-crossing-divides/crossing-divides-overview.jpg" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/BBC-crossing-divides.html">World Service, Crossing Divides</a></h2><span class="company-badge">BBC</span>  <br>
@@ -357,7 +361,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/BBCnewslabs_slack_transcription_bot.html">
-    <img src=/img/BBCnewslabs_slack_transcription_bot/1_add_audio.png alt="">
+    <img src="/img/BBCnewslabs_slack_transcription_bot/1_add_audio.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/BBCnewslabs_slack_transcription_bot.html">BBC #newsHack '17 `@TranscriptionBot`</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -370,7 +374,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/fact2_transcription_editor.html">
-    <img src=/img/fact2_transcription_editor/Fact2_transcription_text_editor_shortcuts.png alt="">
+    <img src="/img/fact2_transcription_editor/Fact2_transcription_text_editor_shortcuts.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/fact2_transcription_editor.html">Fact2 Transcriptions Text Editor</a></h2><span class="company-badge">Fact2</span> <span class="open-source-badge">Open Source</span>  <br>
@@ -383,7 +387,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/opened-captions-annotated-article-rig.html">
-    <img src=/img/opened_caption_app/opened_caption_annotation_app.png alt="">
+    <img src="/img/opened_caption_app/opened_caption_annotation_app.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/opened-captions-annotated-article-rig.html">Opened Captions Annotated article system</a></h2><span class="company-badge">Vox, Open News</span> <span class="open-source-badge">Open Source</span>  <br>
@@ -396,7 +400,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/captioning-app.html">
-    <img src=/img/captioning-app/captioning-app-demo.jpg alt="">
+    <img src="/img/captioning-app/captioning-app-demo.jpg" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/captioning-app.html">Captioning app [Working Title]</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -409,7 +413,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/categories/tech/2017-06-08-electron-video-downloader/">
-    <img src=/img/electron-video-downloader/video_downloader.png alt="">
+    <img src="/img/electron-video-downloader/video_downloader.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/tech/2017-06-08-electron-video-downloader/">Electron Video Downloader</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -422,7 +426,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/autoEdit2.html">
-    <img src=https://opennewslabs.github.io/autoEdit_2/img/3_transcription.gif alt="">
+    <img src="https://opennewslabs.github.io/autoEdit_2/img/3_transcription.gif" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/autoEdit2.html">autoEdit2</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -435,7 +439,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/wip.html">
-    <img src=/img/wip_archive/wip_archive_t.png alt="">
+    <img src="/img/wip_archive/wip_archive_t.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/wip.html">Whistleblower Interview Archive</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -448,7 +452,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/annotated-transcript.html">
-    <img src=/img/annotated-transcript/Vox_annotation.png alt="">
+    <img src="/img/annotated-transcript/Vox_annotation.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/annotated-transcript.html"> Annotated Transcript</a></h2><span class="company-badge">Vox</span> <span class="open-source-badge">Open Source</span>  <br>
@@ -461,7 +465,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/povHackthon.html">
-    <img src=/img/pov/demo.png alt="">
+    <img src="/img/pov/demo.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/povHackthon.html">POV Hackaton: 'Battle Sound'</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -474,7 +478,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/Transcriber-prototype.html">
-    <img src=https://raw.githubusercontent.com/voxmedia/Transcriber/master/img/demo.png alt="">
+    <img src="https://raw.githubusercontent.com/voxmedia/Transcriber/master/img/demo.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/Transcriber-prototype.html">Transcriber - prototype</a></h2><span class="company-badge">Vox</span> <span class="open-source-badge">Open Source</span>  <br>
@@ -487,7 +491,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/categories/tech/2016-07-13-visual-narratives/">
-    <img src=/img/vax-ida/ida.gif alt="">
+    <img src="/img/vax-ida/ida.gif" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/tech/2016-07-13-visual-narratives/">Vax project 2016 - IDA, Rethinking Visual Narratives</a></h2><span class="company-badge">Vox</span> <span class="open-source-badge">Open Source</span>  <br>
@@ -500,7 +504,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/volume-folder-report-generator.html">
-    <img src=/img/volume-folder-report-generator/report.png alt="">
+    <img src="/img/volume-folder-report-generator/report.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/volume-folder-report-generator.html">Volume folder report generator</a></h2><span class="company-badge">Vox</span> <span class="open-source-badge">Open Source</span>  <br>
@@ -513,7 +517,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/captions-burner.html">
-    <img src=/img/captions-burner/captions_burner.png alt="">
+    <img src="/img/captions-burner/captions_burner.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/captions-burner.html">Captions Burner</a></h2><span class="company-badge">Vox</span> <span class="open-source-badge">Open Source</span>  <br>
@@ -526,7 +530,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/quickQuote.html">
-    <img src=/img/TimesAndSundayTimesQuickQuote/home.png alt="">
+    <img src="/img/TimesAndSundayTimesQuickQuote/home.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/quickQuote.html">quickQuote - Times & Sunday Times</a></h2><span class="company-badge">Times & Sunday Times</span> <span class="open-source-badge">Open Source</span>  <br>
@@ -539,7 +543,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/oneStory.html">
-    <img src=/img/newsHackOneStory/OneStory_01_Home.png alt="">
+    <img src="/img/newsHackOneStory/OneStory_01_Home.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/oneStory.html">OneStory at BBC #newsHack</a></h2><span class="company-badge">Times & Sunday Times</span>  <br>
@@ -552,7 +556,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/buildTheNews.html">
-    <img src=/img/BuildTheNews/interactive_debate.png alt="">
+    <img src="/img/BuildTheNews/interactive_debate.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/buildTheNews.html">Interactive databate #buildTheNews</a></h2><span class="company-badge">Times & Sunday Times</span>  <br>
@@ -565,7 +569,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/autoEdit.html">
-    <img src=/img/autoEdit/autoEditScreenShot_08.png alt="">
+    <img src="/img/autoEdit/autoEditScreenShot_08.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/autoEdit.html">autoEdit, digital paper-editing</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -578,7 +582,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/categories/tech/2013-12-02-sbv-csv/">
-    <img src=/img/sbv/sbv.jpeg alt="">
+    <img src="/img/sbv/sbv.jpeg" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/categories/tech/2013-12-02-sbv-csv/">.sbv to .csv</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -591,7 +595,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/simpleInvoice.html">
-    <img src=/img/simpleinvoice/1-simple_invoice-welcome-page.jpeg alt="">
+    <img src="/img/simpleinvoice/1-simple_invoice-welcome-page.jpeg" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/simpleInvoice.html">Simple Invoice</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -604,7 +608,7 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
 <hr>
 <div class="post-condensed-block">
   <a class="image-block" href="/popathon.html">
-    <img src=/img/popathon/popathon.png alt="">
+    <img src="/img/popathon/popathon.png" alt="" loading="lazy" decoding="async">
   </a>
   <div>
     <h2><a href="/popathon.html">Turning viewers into users #popathon</a></h2><span class="open-source-badge">Open Source</span>  <br>
@@ -627,33 +631,57 @@ Products and prototypes I've worked on over the years. Mix of personal projects 
       <footer class="footer">
     <nav>
         <ul class="contacts-list">
+            
             <li>
-                <a
-                    href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+                <a href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
                     class="author-social" target="_blank" rel="noopener noreferrer">
                     <i class="far fa-envelope"></i>
-                    E-mail</a> <span></span>
+                    E-mail</a>
             </li>
+            
+            
             <li>
-                <a 
-                    href="https://twitter.com/pietropassarell" target="_blank" rel="noopener noreferrer"> 
+                <a href="https://twitter.com/pietropassarell" target="_blank" rel="me noopener noreferrer">
                     <i class="fab fa-twitter"></i> Twitter</a>
             </li>
+            
             <li>
-                <a 
-                    href="https://github.com/pietrop" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/pietrop" target="_blank" rel="me noopener noreferrer">
                     <i class="fab fa-github"></i> GitHub</a>
             </li>
+            
             <li>
-                <a 
-                    href="https://uk.linkedin.com/in/pietropassarelli" target="_blank"
-                    rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+                <a href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i> Linkedin</a>
             </li>
-
+            
             <li>
-                <a 
-                    href="https://www.instagram.com/pietro.ps" target="_blank"
-                    rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.instagram.com/pietro.ps" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            
+            <li>
+                <a href="https://www.facebook.com/pietro.passarelli.5" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-facebook"></i> Facebook</a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/c/PietroPassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-youtube"></i> YouTube</a>
+            </li>
+            
+            <li>
+                <a href="https://vimeo.com/pietropassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-vimeo-v"></i> Vimeo</a>
+            </li>
+            
+            <li>
+                <a href="https://www.imdb.com/name/nm4761612/" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-imdb"></i> IMDb</a>
+            </li>
+            
+            <li>
+                <a href="/press.html"><i class="fas fa-newspaper"></i> Links</a>
             </li>
         </ul>
     </nav>
