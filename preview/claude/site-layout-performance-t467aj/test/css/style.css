@@ -1,0 +1,36 @@
+/* Nav */
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+ul.menu-list li {
+    display: inline;
+}
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+ul.contacts-list li {
+    display: inline;
+}
+
+
+.wrapper{
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}

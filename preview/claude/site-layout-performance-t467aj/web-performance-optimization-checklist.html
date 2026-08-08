@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <link href="https://gmpg.org/xfn/11" rel="profile"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A checklist to improve web performance of your site, base on a workshop I attended at MozFest a while back">
+  <link rel="canonical" href="https://www.pietropassarelli.net/web-performance-optimization-checklist.html">
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  <title>
+    Pietro - 🚀 Web Performance optimization checklist
+  </title>
+
+  <!-- CSS -->
+  <!-- Critical, same-origin CSS: kept render-blocking on purpose to avoid a flash of unstyled content -->
+  <link rel="stylesheet" href="/preview/claude/site-layout-performance-t467aj/public/css/style.css">
+  <link rel="stylesheet" href="/preview/claude/site-layout-performance-t467aj/public/css/post-element-condesed.css">
+  <link rel="stylesheet" href="/preview/claude/site-layout-performance-t467aj/public/css/dark-mode.css">
+  <link rel="stylesheet" href="/preview/claude/site-layout-performance-t467aj/public/css/badge.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Non-critical CSS: Font Awesome icons and syntax-highlight theme don't block first paint -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'">
+  <!-- Syntax highlight  -->
+  <link id="prism-css" rel="preload" as="style" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+  </noscript>
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/preview/claude/site-layout-performance-t467aj/public/apple-touch-icon-precomposed.png" defer>
+  <!-- <link rel="shortcut icon" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon.ico" async>
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon.ico"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-152.png"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-144.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-120.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-114.png"
+    async>
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-180.png"
+    async>
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-72.png"
+    async>
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-57.png" async>
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-32.png" sizes="32x32" async>
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png" async>
+  <meta name="theme-color" content="#ffffff">
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="/preview/claude/site-layout-performance-t467aj/manifest.json">
+  <link rel="icon" sizes="192x192" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-192.png" async>
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!--  -->
+  <!-- Open graph -->
+  <meta property="og:title" content="🚀 Web Performance optimization checklist">
+  <meta property="og:description" content="A checklist to improve web performance of your site, base on a workshop I attended at MozFest a while back">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.pietropassarelli.net/img/web-performance-optimization-checklist/mitchell-luo-FWoq_ldWlNQ-unsplash.jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <!-- Twitter -->
+  <meta name="twitter:title" content="🚀 Web Performance optimization checklist">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@pietropassarell">
+  <meta name="twitter:description" content="A checklist to improve web performance of your site, base on a workshop I attended at MozFest a while back">
+  <meta name="twitter:image" content="https://www.pietropassarelli.net/img/web-performance-optimization-checklist/mitchell-luo-FWoq_ldWlNQ-unsplash.jpeg">
+  <meta name="twitter:creator" content="@pietropassarell">
+
+  <!-- Structured data for entity/profile disambiguation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pietro Passarelli",
+    "url": "https://www.pietropassarelli.net",
+    "email": "pietro.passarelli@gmail.com",
+    "sameAs": ["https://twitter.com/pietropassarell","https://github.com/pietrop","https://uk.linkedin.com/in/pietropassarelli","https://www.instagram.com/pietro.ps","https://www.facebook.com/pietro.passarelli.5","https://www.youtube.com/c/PietroPassarelli","https://vimeo.com/pietropassarelli","https://www.imdb.com/name/nm4761612/","https://source.opennews.org/people/pietro-passarelli/"],
+    "subjectOf": "https://www.pietropassarelli.net/press.html",
+    "award": "Guardian Student Media Awards 2015 — Student Media Startup of the Year, for quickQuote"
+  }
+  </script>
+
+  
+
+  <!--  -->
+
+  
+
+</head>
+
+<body class="default-pages">
+  <div class="container">
+    <div class="wrapper">
+      <header class="header">
+        Pietro Passarelli 
+        
+        
+
+
+
+<nav class="nav">
+    <ul class="menu-list">
+        <li>
+            <a class="sidebar-nav-item"
+                href="/preview/claude/site-layout-performance-t467aj/">
+                About</a>
+        </li>
+        <li>
+            <a class="sidebar-nav-item active"
+                href="/preview/claude/site-layout-performance-t467aj/categories/blog" aria-current="page">
+                Blog</a>
+        </li>
+        
+        
+    </ul>
+</nav>
+
+      </header>
+      <main class="main"> 
+        
+<div class="post">
+	<h1 class="post-title">🚀 Web Performance optimization checklist </h1>
+	<span class="post-date">2021 Jul 16 
+		
+	</span> 
+	
+	<br>
+
+	
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	
+	<!-- social media -->
+	
+
+	
+
+
+
+
+	<!-- tech Stack -->
+	
+
+	<!-- image -->
+	
+	
+	<div class="image-wrapper">
+		<img src="/img/web-performance-optimization-checklist/mitchell-luo-FWoq_ldWlNQ-unsplash.jpeg" alt="A checklist to improve web performance of your site, base on a workshop I attended at MozFest a while back" />
+	</div>
+	
+	
+	<!-- description -->
+	
+	<br>
+	A checklist to improve web performance of your site, base on a workshop I attended at MozFest a while back
+	
+	<hr>
+
+	<!-- content -->
+	<p><em>Cover photo credit <a href="https://unsplash.com/photos/FWoq_ldWlNQ" target="_blank" rel="noopener noreferrer">unsplash</a></em></p>
+<h2>Performance checklist</h2>
+<ul>
+<li><input type="checkbox" id="checkbox0"><label for="checkbox0">Compress optimise images </label><a href="https://imageoptim.com/mac" target="_blank" rel="noopener noreferrer"><code>ImageOptim</code></a></li>
+<li><input type="checkbox" id="checkbox1"><label for="checkbox1">Image sprite </label><code>(?)</code> | Tool: <a href="http://www.spritecow.com/"><code>SpriteCow</code></a></li>
+<li><input type="checkbox" id="checkbox2"><label for="checkbox2">avoid CSS </label><code>@import</code> to avoid blocking request</li>
+<li><input type="checkbox" id="checkbox3"><label for="checkbox3">Move </label><code>&lt;script&gt;</code> tags to the end of the page.</li>
+<li><input type="checkbox" id="checkbox4"><label for="checkbox4">use </label><code>defer</code> for analytics library</li>
+<li><input type="checkbox" id="checkbox5"><label for="checkbox5">Mark your javascript as </label><code>deferred</code> or <code>async</code> (?)</li>
+<li><input type="checkbox" id="checkbox6"><label for="checkbox6">Use a CDN (eg Amazon Cloud front)</label></li>
+<li><input type="checkbox" id="checkbox7"><label for="checkbox7">Truncate </label><code>animate.css</code> to only include the animations we use</li>
+<li><input type="checkbox" id="checkbox8"><label for="checkbox8">Further compress Js. Use webpack gzip</label></li>
+<li><input type="checkbox" id="checkbox9"><label for="checkbox9">Check your assets</label></li>
+<li><input type="checkbox" id="checkbox10"><label for="checkbox10">Remove Bootstrap Js &amp; JQuery if not needed</label></li>
+<li><input type="checkbox" id="checkbox11"><label for="checkbox11">Any unused npm packages we can ditch? (and or tree shaking)</label></li>
+<li><input type="checkbox" id="checkbox12"><label for="checkbox12">compress splats</label></li>
+<li><input type="checkbox" id="checkbox13"><label for="checkbox13">Minify CSS</label></li>
+<li><input type="checkbox" id="checkbox14"><label for="checkbox14">Concatenate your CSS</label></li>
+<li><input type="checkbox" id="checkbox15"><label for="checkbox15">Minify Javascript</label></li>
+<li><input type="checkbox" id="checkbox16"><label for="checkbox16">Concatenate your Javascript</label></li>
+<li><input type="checkbox" id="checkbox17"><label for="checkbox17">Consider Removing polyfills for older browsers to reduce size. If not necessary.</label></li>
+</ul>
+<hr>
+<p>Notes from a MozFest session on web performance</p>
+<h2><strong>Web performance optimization</strong></h2>
+<h3><strong>1 image formats</strong></h3>
+<p>Eg SVG for icons and logosJPEG for photosPNG for everything else.</p>
+<h4><strong>1 a. icon fonts</strong></h4>
+<p>don’t use it.<a href="http://iconmoon.io/">iconmoon.io</a> eg get zip file from font awesome</p>
+<h3><strong>2 compress images /optimise images</strong></h3>
+<p>SVG: SVGOMGSVG/JPEG/PNG: Compressorosx: ImageOptimlinux: trimagewindows: fileOptimizer</p>
+<h3><strong>3 Use image sprites</strong></h3>
+<p>Sprites combine images into a single file.CSS code lets you use the images.</p>
+<p>Tool: <a href="http://www.spritecow.com/">SpriteCow</a></p>
+<h3><strong>4 Minify CSS &amp; Javascript</strong></h3>
+<p>Minifies for CSS and Javascript shorten variable names remove white spaces.Tool: <a href="https://cssminifier.com/" target="_blank" rel="noopener noreferrer">CSS Minifier</a> / <a href="https://javascript-minifier.com/" target="_blank" rel="noopener noreferrer">Javascript Minifier</a></p>
+<h3><strong>5 Concatenate your CSS &amp; Javascript</strong></h3>
+<p>concat minified CSS and JS improves HTTP request response time, it’s fewer files.</p>
+<h3><strong>6 avoid CSS @import</strong></h3>
+<p>Rather use <code>&lt;link&gt;</code> tag which allows you to download in parallel.rather then as a blocking request</p>
+<h3><strong>7 Move all your <code>&lt;script&gt;</code> tags to the end of the page.</strong></h3>
+<p>right before </body> tag. because these are sequentially downloaded</p>
+<h3><strong>8 Mark your javascript as deferred</strong></h3>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>script.js<span class="token punctuation">"</span></span> <span class="token attr-name">defer</span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code></pre>
+<p>if you only have one script tag. as it ignores the order</p>
+<p>async, keeps the order in which they appear</p>
+<p>means don’t stop importing the js code, it continue rendering the page</p>
+<h3><strong>9 Use a CDN</strong></h3>
+<p>eg cloud fare content distribution network</p>
+<h3><strong>10 Check your assets</strong></h3>
+<p>you might not need all the js you are using eg Jquery, might not be needed.</p>
+<p>Website: <a href="http://youmightnotneedjquery.com/">you might not need jquery</a></p>
+<hr>
+<h2>check list</h2>
+<pre><code>- [ ] Compress optimise images`ImageOptim`
+- [ ] Image sprite `(?)` | Tool: `SpriteCow`
+- [ ] avoid CSS `@import` to avoid blocking request
+- [ ] Move `&lt;script&gt;` tags to the end of the page.
+- [ ] use `defer` for analytics library
+- [ ] Mark your javascript as deferred or async (?)
+- [ ] Use a CDN (eg Amazon Cloud front)
+- [ ] truncate animate.css to only include the animations we use
+- [ ] Further compress Js. Use webpack gzip
+- [ ] Check your assets
+- [ ] Remove Bootstrap Js &amp; JQuery if not needed
+- [ ] Any unused npm packages we can ditch? (and or tree shaking)
+- [ ] compress splats
+- [ ] Minify CSS
+- [ ] Concatenate your CSS
+- [ ] Minify Javascript
+- [ ] Concatenate your Javascript
+- [ ] Consider Removing polyfills for older browsers to reduce size. If not necessary.
+</code></pre>
+
+
+
+	
+</div>
+        <hr>
+<p class="edit-on-github-link">
+	<small><a href="https://github.com/pietrop/pietrop.github.io/blob/master/./categories/ttqf/2021-07-16-web-performance-optimization-checklist.md">Edit this page on GitHub <i class="fab fa-github"></i></a></small>
+</p>
+      </main>
+      <footer class="footer">
+    <nav>
+        <ul class="contacts-list">
+            
+            <li>
+                <a href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+                    class="author-social" target="_blank" rel="noopener noreferrer">
+                    <i class="far fa-envelope"></i>
+                    E-mail</a>
+            </li>
+            
+            
+            <li>
+                <a href="https://twitter.com/pietropassarell" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            
+            <li>
+                <a href="https://github.com/pietrop" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub</a>
+            </li>
+            
+            <li>
+                <a href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i> Linkedin</a>
+            </li>
+            
+            <li>
+                <a href="https://www.instagram.com/pietro.ps" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            
+            <li>
+                <a href="https://www.facebook.com/pietro.passarelli.5" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-facebook"></i> Facebook</a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/c/PietroPassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-youtube"></i> YouTube</a>
+            </li>
+            
+            <li>
+                <a href="https://vimeo.com/pietropassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-vimeo-v"></i> Vimeo</a>
+            </li>
+            
+            <li>
+                <a href="https://www.imdb.com/name/nm4761612/" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-imdb"></i> IMDb</a>
+            </li>
+            
+            <li>
+                <a href="/preview/claude/site-layout-performance-t467aj/press.html"><i class="fas fa-newspaper"></i> Links</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+    </div>
+  </div>
+  <script>
+    // Logic to adjust syntax highlighting based on whether dark mode is on 
+    // in the system or not
+    const prismEl = document.querySelector('#prism-css');
+    const DARK = 'dark';
+    const LIGHT = 'light';
+    const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+
+    function init() {
+      const DARK = 'dark';
+      const LIGHT = 'light';
+      const isSystemDarkMode = matchMedia &&
+        matchMedia('(prefers-color-scheme: dark)').matches;
+
+      if (isSystemDarkMode) {
+        prismEl.href = PRISM_DARK_URL;
+      }
+
+      // Event listener to change with system change
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const changedColourScheme = e.matches ? DARK : LIGHT;
+        if (changedColourScheme === DARK) {
+          prismEl.href = PRISM_DARK_URL;
+        } else {
+          prismEl.href = PRISM_LIGHT_URL;
+        }
+      });
+    }
+
+    init();
+  </script>
+</body>
+
+</html>

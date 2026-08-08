@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <link href="https://gmpg.org/xfn/11" rel="profile"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A quick step by step how to use fenced code blocks in jekyll instead of liquid tags">
+  <link rel="canonical" href="https://www.pietropassarelli.net/jekyll-fenced-block.html">
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  <title>
+    Pietro - use fenced code blocks in jekyll
+  </title>
+
+  <!-- CSS -->
+  <!-- Critical, same-origin CSS: kept render-blocking on purpose to avoid a flash of unstyled content -->
+  <link rel="stylesheet" href="/preview/claude/site-layout-performance-t467aj/public/css/style.css">
+  <link rel="stylesheet" href="/preview/claude/site-layout-performance-t467aj/public/css/post-element-condesed.css">
+  <link rel="stylesheet" href="/preview/claude/site-layout-performance-t467aj/public/css/dark-mode.css">
+  <link rel="stylesheet" href="/preview/claude/site-layout-performance-t467aj/public/css/badge.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Non-critical CSS: Font Awesome icons and syntax-highlight theme don't block first paint -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" onload="this.onload=null;this.rel='stylesheet'">
+  <!-- Syntax highlight  -->
+  <link id="prism-css" rel="preload" as="style" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+  </noscript>
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="/preview/claude/site-layout-performance-t467aj/public/apple-touch-icon-precomposed.png" defer>
+  <!-- <link rel="shortcut icon" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico"> -->
+
+  <!-- ////////// Favicon ////////// -->
+  <!-- For old IEs -->
+  <link rel="shortcut icon" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon.ico" async>
+  <!-- For new browsers - multisize ico  -->
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon.ico"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-152.png"
+    async>
+  <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-144.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-120.png"
+    async>
+  <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-114.png"
+    async>
+  <!-- For iPhone 6+ -->
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-180.png"
+    async>
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-72.png"
+    async>
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-57.png" async>
+  <!-- For Old Chrome -->
+  <link rel="icon" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-32.png" sizes="32x32" async>
+  <!-- For IE10 Metro -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="favicon-144.png" async>
+  <meta name="theme-color" content="#ffffff">
+  <!-- Chrome for Android -->
+  <link rel="manifest" href="/preview/claude/site-layout-performance-t467aj/manifest.json">
+  <link rel="icon" sizes="192x192" href="/preview/claude/site-layout-performance-t467aj/public/favicon.ico/favicon-192.png" async>
+  <!-- ////////// Favicons end ////////// -->
+
+
+  <!--  -->
+  <!-- Open graph -->
+  <meta property="og:title" content="use fenced code blocks in jekyll">
+  <meta property="og:description" content="A quick step by step how to use fenced code blocks in jekyll instead of liquid tags">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.pietropassarelli.net/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <!-- Twitter -->
+  <meta name="twitter:title" content="use fenced code blocks in jekyll">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@pietropassarell">
+  <meta name="twitter:description" content="A quick step by step how to use fenced code blocks in jekyll instead of liquid tags">
+  <meta name="twitter:image" content="https://www.pietropassarelli.net/img/about/fahrul-razi-BR6lrzCPYPk-unsplash.jpeg">
+  <meta name="twitter:creator" content="@pietropassarell">
+
+  <!-- Structured data for entity/profile disambiguation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pietro Passarelli",
+    "url": "https://www.pietropassarelli.net",
+    "email": "pietro.passarelli@gmail.com",
+    "sameAs": ["https://twitter.com/pietropassarell","https://github.com/pietrop","https://uk.linkedin.com/in/pietropassarelli","https://www.instagram.com/pietro.ps","https://www.facebook.com/pietro.passarelli.5","https://www.youtube.com/c/PietroPassarelli","https://vimeo.com/pietropassarelli","https://www.imdb.com/name/nm4761612/","https://source.opennews.org/people/pietro-passarelli/"],
+    "subjectOf": "https://www.pietropassarelli.net/press.html",
+    "award": "Guardian Student Media Awards 2015 — Student Media Startup of the Year, for quickQuote"
+  }
+  </script>
+
+  
+
+  <!--  -->
+
+  
+
+</head>
+
+<body class="default-pages">
+  <div class="container">
+    <div class="wrapper">
+      <header class="header">
+        Pietro Passarelli 
+        
+        
+
+
+
+<nav class="nav">
+    <ul class="menu-list">
+        <li>
+            <a class="sidebar-nav-item"
+                href="/preview/claude/site-layout-performance-t467aj/">
+                About</a>
+        </li>
+        <li>
+            <a class="sidebar-nav-item active"
+                href="/preview/claude/site-layout-performance-t467aj/categories/blog" aria-current="page">
+                Blog</a>
+        </li>
+        
+        
+    </ul>
+</nav>
+
+      </header>
+      <main class="main"> 
+        
+<div class="post">
+	<h1 class="post-title">use fenced code blocks in jekyll </h1>
+	<span class="post-date">2015 May 31 
+		
+	</span> 
+	
+	<br>
+
+	
+
+	<!-- optional gitbook link -->
+	
+
+	<!-- project page -->
+	
+	<!-- social media -->
+	
+
+	
+
+
+
+
+	<!-- tech Stack -->
+	
+
+	<!-- image -->
+	
+	<!-- description -->
+	
+	<br>
+	A quick step by step how to use fenced code blocks in jekyll instead of liquid tags
+	
+	<hr>
+
+	<!-- content -->
+	<h2>Why?</h2>
+<p>First, thing first, why? I use markdown a lot, pretty much instead of using word, I write in <a href="https://daringfireball.net/projects/markdown/" target="_blank" rel="noopener noreferrer">markdown</a> and export mostly into <code>rtf</code>, <code>.docx</code>, or <code>.pdf</code> using <a href="https://pandoc.org/" target="_blank" rel="noopener noreferrer">pandoc</a> (blog post on this workflowto come soon), and being able to just draft something, without having to think about whether I need to use liquid tags or fended blocks, depending on whether I will then publish it onto my <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">jekyll site</a> (jekyll is a static site generator).</p>
+<p>So decided to install <a href="https://github.com/nono/Jekyll-plugins" target="_blank" rel="noopener noreferrer">a plugin from the jekyll site</a> to enable it, but it wasn't quiet working, enche the post here.</p>
+<h2>Fenced code blocks and liquid tags</h2>
+<p>Let's look at how to use fenced code blocks instead of liquid tags in jekyll.<br>
+But first, what's what?</p>
+<p>These are liquid tags and their default way for jekyll to display code with syntax hilight:</p>
+<hr>
+<p>{% highlight ruby %}<br>
+print &quot;hello world&quot;<br>
+{% endhighlight %}</p>
+<p>these are fenced code blocks</p>
+<hr>
+<p>```ruby</p>   
+<p>print "hello world" </p>  
+<p>```</p>   
+<hr>
+and both would render the code like this
+<pre class="language-ruby"><code class="language-ruby">print <span class="token string">"hello world"</span></code></pre>
+<h2>Quick install</h2>
+<h3>1.gem install redcarpet</h3>
+<p>in terminal:</p>
+<pre class="language-bash"><code class="language-bash">gem <span class="token function">install</span> redcarpet</code></pre>
+<h3>2.add redcarpet plugin in your jekyll project.</h3>
+<p>Then you need to add <code>redcarpet2</code> plugin in your jekyll project. which as simple as saving <a href="https://github.com/nono/Jekyll-plugins" target="_blank" rel="noopener noreferrer">redcarpet2_markdown.rb</a> in the <code>_plugins</code> folder(if you don't have the folder, just create one and remember te <code>_</code>).</p>
+<pre class="language-ruby"><code class="language-ruby"><span class="token keyword">require</span> <span class="token string">'fileutils'</span><br><span class="token keyword">require</span> <span class="token string">'digest/md5'</span><br><span class="token keyword">require</span> <span class="token string">'redcarpet'</span><br><span class="token keyword">require</span> <span class="token string">'albino'</span><br><br><span class="token constant">PYGMENTS_CACHE_DIR</span> <span class="token operator">=</span> <span class="token builtin">File</span><span class="token punctuation">.</span>expand_path<span class="token punctuation">(</span><span class="token string">'../../_cache'</span><span class="token punctuation">,</span> __FILE__<span class="token punctuation">)</span><br><span class="token constant">FileUtils</span><span class="token punctuation">.</span>mkdir_p<span class="token punctuation">(</span><span class="token constant">PYGMENTS_CACHE_DIR</span><span class="token punctuation">)</span><br><br><span class="token keyword">class</span> <span class="token class-name">Redcarpet2Markdown</span> <span class="token operator">&lt;</span> <span class="token constant">Redcarpet</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token constant">Render</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token constant">HTML</span><br>  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">block_code</span></span><span class="token punctuation">(</span>code<span class="token punctuation">,</span> lang<span class="token punctuation">)</span><br>    lang <span class="token operator">=</span> lang <span class="token operator">||</span> <span class="token string">"text"</span><br>    path <span class="token operator">=</span> <span class="token builtin">File</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token constant">PYGMENTS_CACHE_DIR</span><span class="token punctuation">,</span> <span class="token string">"<span class="token interpolation"><span class="token delimiter tag">#{</span>lang<span class="token delimiter tag">}</span></span>-<span class="token interpolation"><span class="token delimiter tag">#{</span><span class="token constant">Digest</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token constant">MD5</span><span class="token punctuation">.</span>hexdigest code<span class="token delimiter tag">}</span></span>.html"</span><span class="token punctuation">)</span><br>    cache<span class="token punctuation">(</span>path<span class="token punctuation">)</span> <span class="token keyword">do</span><br>      colorized <span class="token operator">=</span> <span class="token constant">Albino</span><span class="token punctuation">.</span>colorize<span class="token punctuation">(</span>code<span class="token punctuation">,</span> lang<span class="token punctuation">.</span>downcase<span class="token punctuation">)</span><br>      add_code_tags<span class="token punctuation">(</span>colorized<span class="token punctuation">,</span> lang<span class="token punctuation">)</span><br>    <span class="token keyword">end</span><br>  <span class="token keyword">end</span><br><br>  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">add_code_tags</span></span><span class="token punctuation">(</span>code<span class="token punctuation">,</span> lang<span class="token punctuation">)</span><br>    code<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token regex">/&lt;pre>/</span><span class="token punctuation">,</span> <span class="token string">"&lt;pre>&lt;code class=\"<span class="token interpolation"><span class="token delimiter tag">#{</span>lang<span class="token delimiter tag">}</span></span>\">"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><br>         sub<span class="token punctuation">(</span><span class="token regex">/&lt;\/pre>/</span><span class="token punctuation">,</span> <span class="token string">"&lt;/code>&lt;/pre>"</span><span class="token punctuation">)</span><br>  <span class="token keyword">end</span><br><br>  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">cache</span></span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><br>    <span class="token keyword">if</span> <span class="token builtin">File</span><span class="token punctuation">.</span>exist<span class="token operator">?</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><br>      <span class="token builtin">File</span><span class="token punctuation">.</span>read<span class="token punctuation">(</span>path<span class="token punctuation">)</span><br>    <span class="token keyword">else</span><br>      content <span class="token operator">=</span> <span class="token keyword">yield</span><br>      <span class="token builtin">File</span><span class="token punctuation">.</span>open<span class="token punctuation">(</span>path<span class="token punctuation">,</span> <span class="token string">'w'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token operator">|</span>f<span class="token operator">|</span> f<span class="token punctuation">.</span>print<span class="token punctuation">(</span>content<span class="token punctuation">)</span> <span class="token punctuation">}</span><br>      content<br>    <span class="token keyword">end</span><br>  <span class="token keyword">end</span><br><span class="token keyword">end</span><br><br><span class="token keyword">class</span> <span class="token class-name">Jekyll</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token constant">MarkdownConverter</span><br>  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">extensions</span></span><br>    <span class="token builtin">Hash</span><span class="token punctuation">[</span> <span class="token operator">*</span><span class="token variable">@config</span><span class="token punctuation">[</span><span class="token string">'redcarpet'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'extensions'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>map <span class="token punctuation">{</span><span class="token operator">|</span>e<span class="token operator">|</span> <span class="token punctuation">[</span>e<span class="token punctuation">.</span>to_sym<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">.</span>flatten <span class="token punctuation">]</span><br>  <span class="token keyword">end</span><br><br>  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">markdown</span></span><br>    <span class="token variable">@markdown</span> <span class="token operator">||</span><span class="token operator">=</span> <span class="token constant">Redcarpet</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token constant">Markdown</span><span class="token punctuation">.</span><span class="token keyword">new</span><span class="token punctuation">(</span><span class="token constant">Redcarpet2Markdown</span><span class="token punctuation">.</span><span class="token keyword">new</span><span class="token punctuation">(</span>extensions<span class="token punctuation">)</span><span class="token punctuation">,</span> extensions<span class="token punctuation">)</span><br>  <span class="token keyword">end</span><br><br>  <span class="token keyword">def</span> <span class="token method-definition"><span class="token function">convert</span></span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><br>    <span class="token keyword">return</span> <span class="token keyword">super</span> <span class="token keyword">unless</span> <span class="token variable">@config</span><span class="token punctuation">[</span><span class="token string">'markdown'</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">'redcarpet2'</span><br>    markdown<span class="token punctuation">.</span>render<span class="token punctuation">(</span>content<span class="token punctuation">)</span><br>  <span class="token keyword">end</span><br><span class="token keyword">end</span><br></code></pre>
+<h3>3.change config file</h3>
+<p>then in your config <code>_config.yml</code> file you need to add:</p>
+<pre class="language-ruby"><code class="language-ruby">markdown<span class="token punctuation">:</span> redcarpet<br>redcarpet<span class="token punctuation">:</span><br>  extensions<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"no_intra_emphasis"</span><span class="token punctuation">,</span> <span class="token string">"fenced_code_blocks"</span><span class="token punctuation">,</span> <span class="token string">"autolink"</span><span class="token punctuation">,</span> <span class="token string">"strikethrough"</span><span class="token punctuation">,</span> <span class="token string">"superscript"</span><span class="token punctuation">]</span><br></code></pre>
+<p>...and your done.</p>
+<h2>End notes</h2>
+<p>I took most of these installation steps are taken from <a href="https://stackoverflow.com/questions/13464590/github-flavored-markdown-and-pygments-highlighting-in-jekyll" target="_blank" rel="noopener noreferrer">stack overflow</a> however there the sudgestion was to write in the config file <code>markdown: redcarpet2</code> and it wasn't working for me, so I found that <a href="https://github.com/clayallsopp/rubymotion-tutorial/issues/30" target="_blank" rel="noopener noreferrer">it has been raised elsewhere</a> that you can just write <code>markdown: redcarpet</code> and it works just fine.</p>
+<p>Also, I've noticed that with this set up you can use both liquid tags and fenced blocks.</p>
+<h2>Updated</h2>
+<p>Github does nto support redcarpet anymore, uses kramdown by the default so I followed this to update and retain same settings described above.</p>
+<p>&quot;<a href="https://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/" target="_blank" rel="noopener noreferrer">Updating from redcarpet and Pygments to Kramdown and Rouge on Github Pages</a>&quot;</p>
+<p>In a nutshell</p>
+<p>in <code>_config.yml</code> change this</p>
+<pre class="language-yml"><code class="language-yml"><span class="token key atrule">highlighter</span><span class="token punctuation">:</span> pygments<br><span class="token key atrule">markdown</span><span class="token punctuation">:</span> redcarpet<br><span class="token key atrule">redcarpet</span><span class="token punctuation">:</span><br>  <span class="token key atrule">extensions</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"no_intra_emphasis"</span><span class="token punctuation">,</span> <span class="token string">"fenced_code_blocks"</span><span class="token punctuation">,</span> <span class="token string">"tables"</span><span class="token punctuation">,</span> <span class="token string">"with_toc_data"</span><span class="token punctuation">]</span></code></pre>
+<p>to this</p>
+<pre class="language-yml"><code class="language-yml"><span class="token key atrule">highlighter</span><span class="token punctuation">:</span> rouge<br><span class="token key atrule">markdown</span><span class="token punctuation">:</span> kramdown<br><span class="token key atrule">kramdown</span><span class="token punctuation">:</span><br>  <span class="token key atrule">input</span><span class="token punctuation">:</span> GFM<br>  <span class="token key atrule">auto_ids</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><br>  <span class="token key atrule">syntax_highlighter</span><span class="token punctuation">:</span> rouge</code></pre>
+<!-- Links -->
+
+
+
+	
+</div>
+        <hr>
+<p class="edit-on-github-link">
+	<small><a href="https://github.com/pietrop/pietrop.github.io/blob/master/./categories/ttqf/2015-05-31-jekyll-fenced-block-markdown.md">Edit this page on GitHub <i class="fab fa-github"></i></a></small>
+</p>
+      </main>
+      <footer class="footer">
+    <nav>
+        <ul class="contacts-list">
+            
+            <li>
+                <a href="mailto:pietro.passarelli@gmail.com?Subject=Hello&body=Hi Pietro, %0D%0A Was reading your website, and I've got a question..."
+                    class="author-social" target="_blank" rel="noopener noreferrer">
+                    <i class="far fa-envelope"></i>
+                    E-mail</a>
+            </li>
+            
+            
+            <li>
+                <a href="https://twitter.com/pietropassarell" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            
+            <li>
+                <a href="https://github.com/pietrop" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-github"></i> GitHub</a>
+            </li>
+            
+            <li>
+                <a href="https://uk.linkedin.com/in/pietropassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i> Linkedin</a>
+            </li>
+            
+            <li>
+                <a href="https://www.instagram.com/pietro.ps" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            
+            <li>
+                <a href="https://www.facebook.com/pietro.passarelli.5" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-facebook"></i> Facebook</a>
+            </li>
+            
+            <li>
+                <a href="https://www.youtube.com/c/PietroPassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-youtube"></i> YouTube</a>
+            </li>
+            
+            <li>
+                <a href="https://vimeo.com/pietropassarelli" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-vimeo-v"></i> Vimeo</a>
+            </li>
+            
+            <li>
+                <a href="https://www.imdb.com/name/nm4761612/" target="_blank" rel="me noopener noreferrer">
+                    <i class="fab fa-imdb"></i> IMDb</a>
+            </li>
+            
+            <li>
+                <a href="/preview/claude/site-layout-performance-t467aj/press.html"><i class="fas fa-newspaper"></i> Links</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+    </div>
+  </div>
+  <script>
+    // Logic to adjust syntax highlighting based on whether dark mode is on 
+    // in the system or not
+    const prismEl = document.querySelector('#prism-css');
+    const DARK = 'dark';
+    const LIGHT = 'light';
+    const PRISM_LIGHT_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism.css";
+    // https://unpkg.com/browse/prismjs@0.0.1/themes/ coy, dark, funky,okaidia, tomorrow, twilight
+    const PRISM_DARK_URL = "https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
+
+    function init() {
+      const DARK = 'dark';
+      const LIGHT = 'light';
+      const isSystemDarkMode = matchMedia &&
+        matchMedia('(prefers-color-scheme: dark)').matches;
+
+      if (isSystemDarkMode) {
+        prismEl.href = PRISM_DARK_URL;
+      }
+
+      // Event listener to change with system change
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const changedColourScheme = e.matches ? DARK : LIGHT;
+        if (changedColourScheme === DARK) {
+          prismEl.href = PRISM_DARK_URL;
+        } else {
+          prismEl.href = PRISM_LIGHT_URL;
+        }
+      });
+    }
+
+    init();
+  </script>
+</body>
+
+</html>
