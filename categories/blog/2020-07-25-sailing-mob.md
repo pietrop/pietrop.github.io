@@ -182,7 +182,7 @@ The point of a mnemonic here is that this is the part you don't want to be impro
 
 ## Common key parts of maneuvers
 
-In the section below we'll look at a few different maneuvers, but thought it would be useful to first highlight some common steps. Once you line the maneuvers up side by side, most of what looks like variation turns out to be different routes to the same final approach.
+In the section below we'll look at a few different maneuvers, but it's worth first highlighting some common steps. Once you line the maneuvers up side by side, most of what looks like variation turns out to be different routes to the same final approach.
 
 - **Turn your engine on**. If the engine fails, proceed to MOB under sail, otherwise furl in the sails.
 - If under sail can do *optional* **heave to**, to buy time to do “first response” steps described above.
@@ -353,8 +353,8 @@ Two conditions, both of which have to hold. This is the clearest example in the 
 - Head to wind
 - Jibe
 - Circle back to COB
-- If time furl the jib otherwise let it luff
-- Luff the main sail to stop the boat
+- If time, furl the jib; otherwise, let it luff
+- Luff the mainsail to stop the boat
 
 ![Quick Stop Diagram](/img/sailing-mob/asa-103-all-3-days-2018-30-638.jpg)
 
